@@ -37,7 +37,7 @@ Akelius wants the first part of a coach. It should help math teachers who lack c
 | D12 | **Accuracy is part of the cost**: wrong answers caught by the checks are re-answered by Sonnet, and that cost is counted | It shows that a cheap model with a high error rate isn't really cheap | Comparing models on price per call alone |
 | D13 | **The demo runs on the local Claude Code CLI**; production numbers are modelled, not spent | The prototype doesn't need real scale | – |
 | D14 | **Country flexibility:** content is keyed by a *concept* that doesn't depend on any standard. Each country's standard is one mapping file (its codes → concept + grade). We start with **Common Core (CCSS)**: it is widely used, well structured, in English and freely licensed | Countries teach the same math in different grades and under different codes. Adding a country is one YAML file, with no change to code or content | One curriculum hard-coded into the topics |
-| D15 | **Teacher's own language: moved to TODO** (user decision 16:58). The demo is English only | Saves build time. Multilingual answers are cheap with current models, but local notation and native-speaker review are the real work | Partial multilingual support with no quality check |
+| D15 | **Teacher's own language: moved to TODO**. The demo is English only | Saves build time. Multilingual answers are cheap with current models, but local notation and native-speaker review are the real work | Partial multilingual support with no quality check |
 | D16 | **Only openly licensed content and data** go into prompts or the repo (CC BY, CC BY-SA, CCSS public license). Every source has a `license` field, so licensed content could be enabled later through configuration. Links to free sites (Khan, Wolfram) are only links; none of their content is used | It keeps compliance simple, and the user asked for open content only for now | Copying NC or proprietary content |
 | D17 | **AI transparency:** every generated sheet and answer is labelled "AI-generated" and "not yet reviewed" | This matches the transparency duty in the EU AI Act; Akelius is EU-based | Unlabelled AI content |
 | D19 | **A feedback box for teachers:** free text about what they need, stored anonymously with the topic it was written on | We learn what to build next from the real users. The box warns teachers not to type personal details | Surveys or ratings (feel like judgment) |
@@ -120,14 +120,14 @@ No leaderboard measures these, so we use:
 - **Educator review workflow:** a page where reviewers approve sheets and promoted FAQs, which flips "not yet reviewed" to reviewed.
 - **Production LLM backend:** the Anthropic API (Haiku 5.5) or a hosted open-weight model, chosen by the eval.
 
-## 7. Discussion log (how the decisions evolved)
+## 7. Discussion log (how the decisions evolved, in order; the build clock started 16:46)
 
-- **16:20 — Is an LLM too expensive?** No. With a small model on the live path it costs about $0.01–0.03 per teacher per month; see cost-model.md.
-- **16:35 — Cap, caching, budget, accuracy:** a cap of 50 queries per teacher per month; a $2k budget enforced in code; accuracy counted as a cost through escalation. → D10–D12, cost-model.md.
-- **16:46 — Country standards:** sheets are keyed to concepts, and each country maps its standard onto them; we start with CCSS (D14). **Native language:** first planned as cheap and in scope, then moved to TODO to save time (D15). **Content:** open licences only, with a `license` field kept so licensed content can be added later (D16). **Plan reviewed against the brief:** added timestamps for "time spent", a section on how AI was used, AI labelling, input validation, smaller scope, and kept the brief out of git.
-- **16:52 — Question cache:** repeated questions are answered from the cache and popular ones are promoted into the sheets (D18).
-- **17:05 — Core principle from the user:** "build a super trustworthy and reliable system." It is now the guiding principle at the top of this file.
-- **16:58 — Strict matching:** only very similar questions reuse an answer (D18, ≥ 0.95). **Teacher feedback box** added (D19). **Sign-up and auth** moved to TODO.
+- **Is an LLM too expensive?** No. With a small model on the live path it costs about $0.01–0.03 per teacher per month; see cost-model.md.
+- **Cap, caching, budget, accuracy:** a cap of 50 queries per teacher per month; a $2k budget enforced in code; accuracy counted as a cost through escalation. → D10–D12, cost-model.md.
+- **Country standards:** sheets are keyed to concepts, and each country maps its standard onto them; we start with CCSS (D14). **Native language:** first planned as cheap and in scope, then moved to TODO to save time (D15). **Content:** open licences only, with a `license` field kept so licensed content can be added later (D16). **Plan reviewed against the brief:** added timestamps for "time spent", a section on how AI was used, AI labelling, input validation, smaller scope, and kept the brief out of git.
+- **Question cache:** repeated questions are answered from the cache and popular ones are promoted into the sheets (D18).
+- **Core principle from the user:** "build a super trustworthy and reliable system." It is now the guiding principle at the top of this file.
+- **Strict matching:** only very similar questions reuse an answer (D18, ≥ 0.95). **Teacher feedback box** added (D19). **Sign-up and auth** moved to TODO.
 
 ## 8. Open questions
 

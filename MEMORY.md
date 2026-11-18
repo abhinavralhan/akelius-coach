@@ -38,14 +38,15 @@ Each step ends with a commit and a step-log entry with **start and end times** (
 - **Achieved:** docs/research-notes.md, docs/cost-model.md, this file and CLAUDE.md.
 - **Next:** Step 1, once the user says go. That starts the 2-hour clock.
 
-### Step 1: repo setup — 16:46–16:55
+### Step 1: repo setup — 16:46–16:50
 - **Did:** `git init` (branch main) and the remote `origin` → github.com/abhinavralhan/akelius-coach (not pushed yet); `.venv` with fastapi, uvicorn, sympy and pyyaml (`requirements.txt`); `.gitignore`.
 - **Decided:** the assignment PDF stays local (gitignored), so the brief isn't published to GitHub. Plan v2 adds country standards (D14), the teacher's language (D15), open content only (D16), AI labelling (D17) and the question cache with promotion to the sheets (D18).
 - **Achieved:** first commit, containing the docs, the plan and this log.
 - **Next:** Step 2, the curriculum (concepts, CCSS mapping, CC BY excerpts, attribution).
 
-### Step 2: curriculum — 16:58–17:08
+### Step 2: curriculum — 16:50–16:53
 - **Did:** `curriculum/concepts.yaml` (27 standard-neutral concepts, grades 1–10); `curriculum/standards/ccss.yaml` (each CCSS code → grade + concept; a check confirms every concept is mapped); 3 grounding lessons in `curriculum/lessons/` (dividing fractions, multiplying negative numbers, the Pythagorean theorem), each with its OpenStax section as further reading; `curriculum/ATTRIBUTION.md`.
 - **Decided:** we write our own short lessons (CC BY) instead of copying OpenStax text (D20). Native language and sign-up/auth moved to the TODO list (research-notes §6). The question-cache match is strict (≥ 0.95, order-sensitive). Feedback box added (D19). The user set the core principle "trustworthy and reliable", now at the top of the research notes and in CLAUDE.md.
 - **Achieved:** all the arithmetic in the lessons is checked with Python. The topic map loads.
+- **Note:** the first times written for steps 1–2 were guesses, corrected here with `date`. From now on, all times come from the system clock.
 - **Next:** Step 3, `coach/llm.py` + `coach/sheet.py`, then generate 3 sheets.

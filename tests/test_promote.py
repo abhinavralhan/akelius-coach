@@ -17,7 +17,8 @@ class PromoteTest(unittest.TestCase):
         self.saved = sheet.CONTENT, promote.REVIEW
         sheet.CONTENT, promote.REVIEW = self.content, self.content / "faq_review"
         with qa.db() as con:
-            con.execute("INSERT INTO questions VALUES ('dividing-fractions','n','My student Lina in 6B is stuck','a',2,'t')")
+            con.execute("INSERT INTO questions (concept, norm, question, answer, hits, created) "
+                        "VALUES ('dividing-fractions','n','My student Lina in 6B is stuck','a',2,'t')")
 
     def tearDown(self):
         sheet.CONTENT, promote.REVIEW = self.saved

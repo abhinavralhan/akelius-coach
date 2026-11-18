@@ -31,6 +31,12 @@ def db():
         CREATE TABLE IF NOT EXISTS usage (teacher TEXT, month TEXT, count INTEGER, PRIMARY KEY (teacher, month));
         CREATE TABLE IF NOT EXISTS spend (month TEXT PRIMARY KEY, usd REAL);
         CREATE TABLE IF NOT EXISTS feedback (concept TEXT, text TEXT, created TEXT);""")
+    try:  # sig/len let the cache fetch only rows that could match (see ask); added to older DBs too
+        con.executescript("ALTER TABLE questions ADD COLUMN sig TEXT; ALTER TABLE questions ADD COLUMN len INTEGER;")
+    except sqlite3.OperationalError:
+        pass  # columns already exist
+    con.executescript("""CREATE INDEX IF NOT EXISTS q_exact ON questions (concept, norm);
+                         CREATE INDEX IF NOT EXISTS q_near ON questions (concept, sig, len);""")
     return con
 
 
@@ -38,10 +44,14 @@ def normalise(q):
     return re.sub(r"\s+", " ", q.lower()).strip(" ?.!")
 
 
+def signature(q):
+    """The numbers and math symbols of a question; near-identical questions must share it exactly."""
+    return " ".join(re.findall(r"[\d.]+|[-+*/^=<>√²³]", q))
+
+
 def is_same(a, b):
     """Near-identical only: the math (numbers, operators) must match exactly, the wording almost exactly."""
-    math = lambda s: re.findall(r"[\d.]+|[-+*/^=<>√²³]", s)
-    return math(a) == math(b) and difflib.SequenceMatcher(None, a, b).ratio() >= SIMILAR
+    return signature(a) == signature(b) and difflib.SequenceMatcher(None, a, b).ratio() >= SIMILAR
 
 
 def ask(concept, question, teacher, force=False):
@@ -59,9 +69,15 @@ def ask(concept, question, teacher, force=False):
         if used >= CAP:
             raise ValueError(f"you have used all {CAP} questions this month; the prep notes stay available")
         remaining = CAP - used - 1  # a query counts only once an answer is delivered (see _count)
-        for rowid, cached_q, cached_norm, answer in con.execute(
-                "SELECT rowid, question, norm, answer FROM questions WHERE concept=?", (concept,)).fetchall():
-            if cached_norm == norm or (not force and is_same(cached_norm, norm)):
+        # Only rows that can match: the exact text, or same math signature and a length a ratio >= 0.95 allows
+        # (2*min/(la+lb) >= 0.95 needs the lengths within ~10%). Indexed, so this stays fast as questions pile up.
+        rows = con.execute("SELECT rowid, question, norm, answer FROM questions WHERE concept=? AND norm=?",
+                           (concept, norm)).fetchall()
+        if not rows and not force:
+            rows = con.execute("SELECT rowid, question, norm, answer FROM questions WHERE concept=? AND sig=? "
+                               "AND len BETWEEN ? AND ?", (concept, signature(norm), int(len(norm) * .9), int(len(norm) / .9) + 1)).fetchall()
+        for rowid, cached_q, cached_norm, answer in rows:
+            if cached_norm == norm or is_same(cached_norm, norm):
                 con.execute("UPDATE questions SET hits=hits+1 WHERE rowid=?", (rowid,))
                 _count(con, teacher, month)
                 return {"answer": answer, "cached": True, "matched_question": cached_q, "remaining": remaining}
@@ -76,7 +92,8 @@ def ask(concept, question, teacher, force=False):
         raise RuntimeError("the answer contained a link the coach cannot vouch for, so it was not shown")
     with db() as con:
         con.execute("INSERT INTO spend VALUES (?,?) ON CONFLICT DO UPDATE SET usd=usd+excluded.usd", (month, cost))
-        con.execute("INSERT INTO questions VALUES (?,?,?,?,0,?)", (concept, norm, question, answer, datetime.now().isoformat()))
+        con.execute("INSERT INTO questions (concept, norm, question, answer, hits, created, sig, len) VALUES (?,?,?,?,0,?,?,?)",
+                    (concept, norm, question, answer, datetime.now().isoformat(), signature(norm), len(norm)))
         _count(con, teacher, month)
     return {"answer": answer, "cached": False, "matched_question": None, "remaining": remaining}
 

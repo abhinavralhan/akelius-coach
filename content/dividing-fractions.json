@@ -1,119 +1,232 @@
 {
-  "idea": "Dividing by a fraction asks how many of that fraction fit into the dividend. To compute it, multiply by the reciprocal of the divisor (flip the second fraction only). For example, 3/4 ÷ 2/5 = 3/4 · 5/2 = 15/8.",
-  "why": "a ÷ b is defined as the number x that, multiplied by b, gives a. For 3/4 ÷ 2/5 we want x with x · 2/5 = 3/4. Multiplying both sides by 5/2 undoes the 2/5, because 2/5 · 5/2 = 1. That leaves x = 3/4 · 5/2 = 15/8. So the flip is not a trick. It is the number that cancels the divisor. You can always check: 15/8 · 2/5 = 30/40 = 3/4. The \"how many fit\" idea agrees: 2 ÷ 1/4 = 8 because each whole holds 4 quarters, which is the same as 2 · 4.",
-  "explanations": [
+  "idea": "Dividing asks \"how many groups of the divisor fit into the dividend?\" For fractions the question is the same: 2 ÷ 1/4 asks how many quarters fit into 2. The shortcut is to multiply by the reciprocal of the divisor: a/b ÷ c/d = a/b · d/c.",
+  "why": "a ÷ b is the number x that gives a when multiplied by b. For 3/4 ÷ 2/5 we want x with x · 2/5 = 3/4. To undo \"times 2/5\" we multiply both sides by 5/2, because 2/5 · 5/2 = 1. That leaves x = 3/4 · 5/2 = 15/8. So the flip is not a trick: the reciprocal is the number that undoes the divisor. It also explains why dividing by a number less than 1 gives a bigger result: there are more small pieces than whole ones.",
+  "theory_example": {
+    "problem": "Work out 3/4 ÷ 2/5 and check the answer.",
+    "steps": "1. We want x with x · 2/5 = 3/4.\n2. Multiply both sides by the reciprocal of 2/5, which is 5/2: x = 3/4 · 5/2.\n3. Multiply numerators and denominators: 15/8.\n4. Check: 15/8 · 2/5 = 30/40 = 3/4. It works.\n5. 15/8 is 1 7/8, a bit more than 1. That makes sense: 2/5 is smaller than 3/4, so a little more than one 2/5 fits into 3/4.",
+    "expression": "Rational(3,4)/Rational(2,5)",
+    "answer": "15/8"
+  },
+  "lesson_outline": [
     {
-      "kind": "picture",
-      "text": "Draw a bar and shade 3/4 of it. Mark off pieces of size 1/2 along the shaded part. One half fits exactly once. The leftover is 1/4, which is half of a half. So 3/4 ÷ 1/2 = 1 and a half, or 3/2. Students can see that the answer is bigger than 3/4 because the pieces we measure with are fairly small."
+      "minutes": 4,
+      "activity": "Warm-up with whole numbers. Ask '6 ÷ 2: how many groups of 2 fit into 6?' Then ask 'how many halves fit into 1?' to lead into the first subtopic."
     },
     {
-      "kind": "story",
-      "text": "You have 2 pizzas and everyone gets a quarter of a pizza. How many people can you serve? Each pizza gives 4 quarters, so 2 pizzas give 8 servings. That is 2 ÷ 1/4 = 8. Notice you multiplied 2 by 4, and 4 is the reciprocal of 1/4. Dividing by a small piece gives many pieces."
+      "minutes": 9,
+      "activity": "Teach 'How many pieces fit?'. Show the bar for 2 ÷ 1/4 and let students count the quarters in each whole. Work the example together, then ask the check question."
     },
     {
-      "kind": "procedure",
-      "text": "Step 1: Keep the first fraction as it is. Step 2: Change the division sign to multiplication. Step 3: Flip only the second fraction (the divisor) to get its reciprocal. Step 4: Multiply the numerators and multiply the denominators, then simplify. Step 5: Check by multiplying your answer by the divisor. You should get the first fraction back. Example: 3/4 ÷ 2/5 = 3/4 · 5/2 = 15/8."
+      "minutes": 9,
+      "activity": "Teach 'Measuring part of a bar with a piece'. Shade 3/4 of a bar and measure it with halves. Find the leftover 1/4 and name it as half of a half. Work the example, then ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Multiply by the reciprocal'. Build the idea from x · 2/5 = 3/4, then show the shortcut. Work the example, stress that only the divisor is flipped, and ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Work the 3 extra examples together, mixing all subtopics, and let students call out the next step. Leave the last minutes for open questions."
     }
   ],
-  "student_questions": [
+  "subtopics": [
     {
-      "question": "But why do we flip the second fraction?",
-      "answer": "Dividing by 2/5 means finding the number that gives 3/4 when you multiply it by 2/5. To undo the multiplication by 2/5, we multiply by 5/2, because 2/5 times 5/2 is 1. The flipped fraction is just the one that cancels the divisor."
+      "title": "How many pieces fit?",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw two whole bars and cut each into 4 equal quarters. Count the quarters: 4 in the first bar, 4 in the second, so 8. So 2 ÷ 1/4 = 8."
+        },
+        {
+          "kind": "story",
+          "text": "You have 2 pizzas and every person gets a quarter of a pizza. How many people can you serve? Each pizza serves 4 people, so 2 pizzas serve 8. This is 2 ÷ 1/4 = 8, and it is the same as 2 · 4."
+        }
+      ],
+      "example": {
+        "problem": "How many quarters fit into 2? Work out 2 ÷ 1/4.",
+        "steps": "1. Division asks how many groups of the divisor fit into the dividend. Here: how many 1/4 fit into 2?\n2. One whole holds 4 quarters.\n3. Two wholes hold 2 · 4 = 8 quarters.\n4. So 2 ÷ 1/4 = 8.\n5. Check: 8 · 1/4 = 2.",
+        "expression": "2/Rational(1,4)",
+        "answer": "8"
+      },
+      "visual": {
+        "kind": "fractionbar",
+        "expr": "",
+        "a": 2,
+        "b": 1,
+        "c": 1,
+        "d": 4
+      },
+      "mistakes": [
+        {
+          "mistake": "Students say 2 ÷ 1/4 = 1/2 because 'division makes things smaller'.",
+          "response": "Ask them to count quarters in a drawing. There are 8, not 1/2. Say that dividing by a piece smaller than 1 gives more pieces, so the answer is bigger. Check by multiplying: 8 · 1/4 = 2."
+        },
+        {
+          "mistake": "Students divide the wrong way and answer 1/8, treating it as 1/4 ÷ 2.",
+          "response": "Have them read the problem aloud: 'how many quarters fit into 2?' The thing being measured is 2 and the measuring piece is 1/4. 1/4 ÷ 2 asks a different question, and its answer is 1/8."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why does dividing give a bigger number here?",
+          "answer": "Because the pieces are small. If you cut a pizza into quarters you get more pieces than you started with wholes. Dividing asks how many pieces fit, and many small pieces fit."
+        },
+        {
+          "question": "Is 2 ÷ 1/4 the same as 2 · 4?",
+          "answer": "Yes. Each whole holds 4 quarters, so you multiply by 4. That is the first sign of the reciprocal: 4 is the reciprocal of 1/4."
+        },
+        {
+          "question": "What if the number is not a whole number, like 1/2 ÷ 1/4?",
+          "answer": "Same question: how many quarters fit into half a bar? Half a bar is 2 quarters, so the answer is 2. We look at this next."
+        }
+      ],
+      "check_question": {
+        "question": "How many thirds fit into 3? Work out 3 ÷ 1/3.",
+        "solution": "Each whole holds 3 thirds, so 3 wholes hold 3 · 3 = 9 thirds. So 3 ÷ 1/3 = 9.",
+        "expression": "3/Rational(1,3)",
+        "answer": "9"
+      }
     },
     {
-      "question": "Why did my answer get bigger when I divided? Division makes things smaller!",
-      "answer": "That is true when you divide by a number bigger than 1. But dividing asks how many groups of the divisor fit. If the groups are smaller than 1, like quarters, more of them fit. Two wholes hold 8 quarters, so 2 ÷ 1/4 = 8, which is bigger than 2."
+      "title": "Measuring part of a bar with a piece",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a bar split into 4 equal parts and shade 3 of them (3/4). Use a 1/2 piece (2 parts) to measure it. One half fits once. The leftover is 1/4, which is half of a half. So 3/4 ÷ 1/2 = 1 1/2 = 3/2."
+        },
+        {
+          "kind": "story",
+          "text": "You have 3/4 of a metre of ribbon and each bracelet needs 1/2 a metre. You can make one whole bracelet, and the leftover 1/4 metre is half of what you need for another. So you get 1 1/2 bracelets' worth of ribbon."
+        }
+      ],
+      "example": {
+        "problem": "Work out 3/4 ÷ 1/2 using a bar.",
+        "steps": "1. Shade 3/4 of a bar (3 of 4 equal parts).\n2. Measure with pieces of size 1/2 (2 parts each).\n3. One half fits once, using 2 of the 3 shaded parts.\n4. Leftover: 1 part, which is 1/4. That is half of a half.\n5. So the answer is 1 + 1/2 = 1 1/2 = 3/2.\n6. Check: 3/2 · 1/2 = 3/4.",
+        "expression": "Rational(3,4)/Rational(1,2)",
+        "answer": "3/2"
+      },
+      "visual": {
+        "kind": "fractionbar",
+        "expr": "",
+        "a": 3,
+        "b": 4,
+        "c": 1,
+        "d": 2
+      },
+      "mistakes": [
+        {
+          "mistake": "Students say the leftover 1/4 counts as 1/4 of a piece, giving 1 1/4.",
+          "response": "Ask: 'What fraction of the measuring piece is the leftover?' The measuring piece is 1/2, and 1/4 is half of 1/2. So the extra amount is 1/2, not 1/4. Always measure the leftover against the divisor."
+        },
+        {
+          "mistake": "Students stop at 1 because only one whole half fits.",
+          "response": "Point to the leftover on the bar and ask whether it counts. Division asks how many pieces fit, including parts of a piece. Show that 1 1/2 · 1/2 = 3/4 and 1 · 1/2 is only 1/2."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is the answer bigger than 1 when 3/4 is less than 1?",
+          "answer": "The answer counts how many halves fit, not how big the amount is. 3/4 is more than one half, so more than one half fits. The answer tells us how many pieces."
+        },
+        {
+          "question": "Is a leftover piece allowed in division?",
+          "answer": "Yes. With fractions we can say what part of the piece is left. Here the leftover is half of a half, so we write 1 1/2."
+        },
+        {
+          "question": "Can I do this without drawing?",
+          "answer": "Yes. In the next part we get a rule that gives the same answer without a drawing. The drawing shows why the rule works."
+        }
+      ],
+      "check_question": {
+        "question": "Use a bar to find 1/2 ÷ 1/4. How many quarters fit into half a bar?",
+        "solution": "Half a bar is 2 quarters, so 2 quarters fit. 1/2 ÷ 1/4 = 2. Check: 2 · 1/4 = 1/2.",
+        "expression": "Rational(1,2)/Rational(1,4)",
+        "answer": "2"
+      }
     },
     {
-      "question": "Why can't I flip the first fraction instead?",
-      "answer": "The two numbers do different jobs. The divisor is the size of the group we are measuring with. Flipping the first one gives a different answer. For example, 3/4 ÷ 1/2 is 3/2, but flipping the first fraction would give 4/3 · 1/2 = 2/3. Checking by multiplication shows which one is right: 3/2 · 1/2 = 3/4."
-    },
-    {
-      "question": "How do I divide a whole number by a fraction, like 3 ÷ 1/5?",
-      "answer": "Write 3 as 3/1, or ask how many fifths fit in 3. Each whole has 5 fifths, so 3 wholes have 15. The rule gives the same result: 3 · 5/1 = 15."
+      "title": "Multiply by the reciprocal",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "1. Keep the first fraction. 2. Flip only the divisor (the second fraction) to get its reciprocal. 3. Change ÷ to ×. 4. Multiply numerators and denominators. 5. Simplify and check by multiplying back."
+        },
+        {
+          "kind": "story",
+          "text": "Dividing is undoing multiplying. If x · 2/5 = 3/4, we find x by doing the opposite of 'times 2/5'. Times 5/2 undoes it, because 2/5 · 5/2 = 1. So we apply times 5/2 to 3/4 and get x = 3/4 · 5/2 = 15/8."
+        }
+      ],
+      "example": {
+        "problem": "Work out 3/4 ÷ 2/5.",
+        "steps": "1. Keep 3/4 as it is.\n2. Flip the divisor: the reciprocal of 2/5 is 5/2.\n3. Change to multiplication: 3/4 · 5/2.\n4. Multiply: (3 · 5)/(4 · 2) = 15/8.\n5. Check: 15/8 · 2/5 = 30/40 = 3/4.",
+        "expression": "Rational(3,4)/Rational(2,5)",
+        "answer": "15/8"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students flip the first fraction, e.g. 3/4 ÷ 2/5 becomes 4/3 · 2/5.",
+          "response": "Go back to x · 2/5 = 3/4. We undo the multiplication by 2/5, so the 2/5 gets flipped. Tell them 'the divisor flips'. Check by multiplying back: the wrong answer does not give 3/4."
+        },
+        {
+          "mistake": "Students cross-cancel before flipping, e.g. cancel the 2 in 2/5 with the 4 in 3/4 in the original division.",
+          "response": "Cancelling is only allowed between numerators and denominators of a multiplication. First flip and change to ×, then cancel. After 3/4 · 5/2 nothing cancels here, and that is fine. Practising flip first, cancel second avoids the error."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why do we flip the second fraction?",
+          "answer": "Because we want the number that gives 3/4 when multiplied by 2/5. Multiplying by 5/2 undoes times 2/5, since 2/5 · 5/2 = 1. The flip is the undo step."
+        },
+        {
+          "question": "Why does dividing by a fraction give a bigger number?",
+          "answer": "The reciprocal of a fraction less than 1 is bigger than 1. So we multiply by a number greater than 1 and the result grows. In pictures, more small pieces fit."
+        },
+        {
+          "question": "What do I do with whole numbers, like 5 ÷ 2/3?",
+          "answer": "Write 5 as 5/1. Then 5/1 · 3/2 = 15/2. Every whole number is a fraction with denominator 1."
+        }
+      ],
+      "check_question": {
+        "question": "Work out 2/3 ÷ 3/5 and check it.",
+        "solution": "Flip the divisor: 3/5 becomes 5/3. Then 2/3 · 5/3 = 10/9. Check: 10/9 · 3/5 = 30/45 = 2/3.",
+        "expression": "Rational(2,3)/Rational(3,5)",
+        "answer": "10/9"
+      }
     }
   ],
-  "mistakes": [
+  "extra_examples": [
     {
-      "mistake": "Flipping the first fraction instead of the divisor, for example writing 3/4 ÷ 2/5 as 4/3 · 2/5.",
-      "response": "Ask the student to check by multiplying the answer by the divisor. It should give back the first number. When it does not, the class sees the error without it being a judgement. Remind them: the number after the division sign is the one that flips."
-    },
-    {
-      "mistake": "Expecting the answer to always be smaller than the starting number.",
-      "response": "Go back to a concrete question: how many quarters fit in 2? Let students predict first. If the divisor is less than 1, the answer is bigger than the dividend. Have them estimate before they calculate."
-    },
-    {
-      "mistake": "Cross-cancelling before flipping, for example cancelling a factor of the first numerator with the divisor's numerator in 3/4 ÷ 2/5, before turning it into multiplication.",
-      "response": "Say that cancelling is only allowed between a numerator and a denominator in a multiplication. So change to multiplication and flip first, then cancel. Show both orders on one example, so students see why the order matters: 3/4 ÷ 2/5 becomes 3/4 · 5/2 first, and only then can you look for common factors."
-    }
-  ],
-  "worked_examples": [
-    {
-      "problem": "2 ÷ 1/4",
-      "steps": "Ask: how many quarters fit into 2? Each whole holds 4 quarters, so 2 wholes hold 8. With the rule: 2 · 4/1 = 8. Both ways give the same answer.",
-      "expression": "2/Rational(1,4)",
-      "answer": "8"
-    },
-    {
-      "problem": "3/4 ÷ 2/5",
-      "steps": "We want x with x · 2/5 = 3/4. Multiply both sides by 5/2, so x = 3/4 · 5/2 = 15/8. Check: 15/8 · 2/5 = 30/40 = 3/4. The answer can be written as 1 7/8.",
-      "expression": "Rational(3,4)/Rational(2,5)",
-      "answer": "15/8"
-    },
-    {
-      "problem": "3/4 ÷ 1/2",
-      "steps": "Picture: shade 3/4 of a bar and measure it with halves. One half fits once and the leftover 1/4 is half of a half, so the answer is 1 1/2. Rule: 3/4 · 2/1 = 6/4 = 3/2.",
-      "expression": "Rational(3,4)/Rational(1,2)",
-      "answer": "3/2"
-    }
-  ],
-  "try_it": [
-    {
-      "problem": "3 ÷ 1/5",
-      "solution": "How many fifths fit in 3? Each whole has 5 fifths, so 3 · 5 = 15.",
+      "problem": "How many fifths fit into 3? Work out 3 ÷ 1/5.",
+      "solution": "Each whole holds 5 fifths, so 3 wholes hold 3 · 5 = 15 fifths. Check: 15 · 1/5 = 3.",
       "expression": "3/Rational(1,5)",
       "answer": "15"
     },
     {
-      "problem": "2/3 ÷ 4/9",
-      "solution": "Flip the divisor: 2/3 · 9/4 = 18/12 = 3/2. Check: 3/2 · 4/9 = 12/18 = 2/3.",
+      "problem": "Work out 2/3 ÷ 4/9.",
+      "solution": "Flip the divisor: 4/9 becomes 9/4. Then 2/3 · 9/4 = 18/12 = 3/2. Check: 3/2 · 4/9 = 12/18 = 2/3.",
       "expression": "Rational(2,3)/Rational(4,9)",
       "answer": "3/2"
     },
     {
-      "problem": "1/2 ÷ 3/4",
-      "solution": "Flip the divisor: 1/2 · 4/3 = 4/6 = 2/3. Here the answer is smaller than 1 because 3/4 is bigger than 1/2. Check: 2/3 · 3/4 = 6/12 = 1/2.",
+      "problem": "Work out 1/2 ÷ 3/4. Will the answer be bigger or smaller than 1?",
+      "solution": "Flip the divisor: 3/4 becomes 4/3. Then 1/2 · 4/3 = 4/6 = 2/3. The answer is smaller than 1 because 1/2 is less than 3/4, so less than one 3/4 fits into 1/2. Check: 2/3 · 3/4 = 6/12 = 1/2.",
       "expression": "Rational(1,2)/Rational(3,4)",
       "answer": "2/3"
-    }
-  ],
-  "lesson_outline": [
-    {
-      "minutes": 5,
-      "activity": "Warm-up: ask how many groups of 2 fit in 6, then how many quarters fit in 2. Students predict, then share, and notice that the answer can be bigger than the starting number."
-    },
-    {
-      "minutes": 10,
-      "activity": "Picture work: students draw a bar for 3/4 ÷ 1/2 and measure it with halves. Discuss the leftover quarter as half of a half and get 3/2."
-    },
-    {
-      "minutes": 10,
-      "activity": "Explain why the flip works with 3/4 ÷ 2/5: find x with x · 2/5 = 3/4, multiply both sides by 5/2, and check the result. Then write the procedure steps together."
-    },
-    {
-      "minutes": 10,
-      "activity": "Practice in pairs with the three Try it problems. Students check each answer by multiplying by the divisor. Walk around and watch for flipping the wrong fraction."
-    },
-    {
-      "minutes": 5,
-      "activity": "Wrap-up: go over the three common mistakes. Exit question: is 5 ÷ 1/3 bigger or smaller than 5, and why?"
     }
   ],
   "meta": {
     "concept": "dividing-fractions",
     "title": "Dividing fractions",
     "model": "sonnet",
-    "cost_usd": 0.04655,
+    "cost_usd": 0.12538,
     "generated": "2026-11-18",
     "grounded_on": "dividing-fractions.md",
     "license": "CC-BY-4.0",

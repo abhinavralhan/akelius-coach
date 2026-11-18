@@ -1,123 +1,232 @@
 {
-  "idea": "To add fractions with different denominators, first rewrite them as equivalent fractions that share a common denominator (same-size pieces). Then add the numerators and keep the denominator. For example, 1/2 + 1/3 = 3/6 + 2/6 = 5/6.",
-  "why": "A fraction's denominator names the size of the pieces, and the numerator counts them. You can only add things that are counted in the same unit, just as 3 apples + 2 oranges isn't 5 of either until you call them 'fruit'. Halves and thirds are different-sized pieces, so we can't combine their counts directly. Multiplying the top and bottom of a fraction by the same number multiplies it by 1 (for example 3/3), so its value doesn't change; only the piece size does. Once both fractions are cut into the same-sized pieces (sixths, say), we simply count the pieces: 3 sixths + 2 sixths = 5 sixths. The denominator stays the same because the piece size hasn't changed. It's still sixths, just more of them. That is why we add numerators but never add denominators.",
-  "explanations": [
-    {
-      "kind": "picture",
-      "text": "Draw two identical rectangles. Cut the first into 2 equal parts and shade 1 (that's 1/2). Cut the second into 3 equal parts and shade 1 (that's 1/3). Now cut both rectangles into 6 equal parts: draw 2 more lines through the halves' rectangle so each half has 3 sixths, and 1 more line through each third so each third has 2 sixths. The first shows 3 shaded sixths, the second shows 2 shaded sixths. Put the shaded pieces together: 5 of the 6 parts are shaded, so 1/2 + 1/3 = 5/6."
-    },
-    {
-      "kind": "story",
-      "text": "Two friends share a chocolate bar of the same size. Amira eats 1/2 of a bar. Ben eats 1/3 of another bar. How much did they eat in total? Their pieces are different sizes, so you can't just say '2 pieces'. A baker offers to re-cut both bars into sixths. Amira's half becomes 3 pieces; Ben's third becomes 2 pieces. Now every piece is the same size, so together they ate 3 + 2 = 5 pieces, which is 5/6 of a bar."
-    },
-    {
-      "kind": "procedure",
-      "text": "1) Find a common denominator: a number both denominators divide into. The product always works; the least common multiple keeps the numbers smaller (for 1/2 and 1/3, it is 6). 2) Rewrite each fraction with that denominator, multiplying top and bottom by the same number: 1/2 = 3/6 and 1/3 = 2/6. 3) Add the numerators and keep the denominator: 3/6 + 2/6 = 5/6. 4) Simplify if possible (divide top and bottom by a shared factor). 5) Check that the answer is reasonable: 5/6 is a bit more than 1/2, which makes sense."
-    }
-  ],
-  "student_questions": [
-    {
-      "question": "Why can't I just add the tops and add the bottoms, like 1/2 + 1/3 = 2/5?",
-      "answer": "Test it: 1/2 + 1/2 would be 2/4, which is 1/2. But half a pizza plus half a pizza is a whole pizza! So that rule can't be right. The bottom number tells us the size of the pieces, and when we put pieces together, their size doesn't change. We only change how many we have. So we add the tops and keep the bottom, once the pieces are the same size."
-    },
-    {
-      "question": "Why do I have to make the denominators the same?",
-      "answer": "Because you can only count things that are the same kind. Halves and thirds are different-sized pieces. If we cut both into sixths, they're the same size, and then we can just count: 3 sixths and 2 sixths make 5 sixths."
-    },
-    {
-      "question": "But changing 1/2 into 3/6 changes the fraction, doesn't it?",
-      "answer": "No, it's the same amount, just cut into smaller pieces. Multiplying top and bottom by 3 is the same as multiplying by 3/3, which equals 1. Multiplying by 1 never changes a value. In a picture, half the bar is shaded either way."
-    },
-    {
-      "question": "Do I have to use the smallest common denominator?",
-      "answer": "No. Any common denominator gives the right answer. For 1/4 + 1/6 you could use 24: 6/24 + 4/24 = 10/24, which simplifies to 5/12. Using the smallest one, 12, gives 3/12 + 2/12 = 5/12 straight away with less simplifying."
-    }
-  ],
-  "mistakes": [
-    {
-      "mistake": "Adding the numerators and the denominators: 1/2 + 1/3 = 2/5.",
-      "response": "Don't just say it's wrong. Ask: 'What is 1/2 + 1/2?' They know it's 1 whole, but the rule gives 2/4. Let them see the clash, then go back to the picture to show that the piece size doesn't change when pieces are combined."
-    },
-    {
-      "mistake": "Changing only the denominator, e.g. rewriting 1/2 as 1/6, without changing the numerator.",
-      "response": "Ask whether 1/6 of a bar is the same as half a bar. Draw both. Remind them that whatever you multiply the bottom by, you must also multiply the top by, so the fraction keeps its value: 1/2 = 3/6."
-    },
-    {
-      "mistake": "Forgetting to simplify, or stopping at a correct but unsimplified answer such as 10/24; or adding the numerators correctly but also adding the denominators after finding the common one, e.g. 3/6 + 2/6 = 5/12.",
-      "response": "For the second error, ask: 'We cut into sixths. After adding, are the pieces still sixths?' Yes, so the denominator stays 6. For simplifying, ask 'Do the top and bottom share a factor?' and show dividing both by it."
-    }
-  ],
-  "worked_examples": [
-    {
-      "problem": "Add 1/2 + 1/3.",
-      "steps": "The common denominator is 6. 1/2 = 3/6 (multiply top and bottom by 3). 1/3 = 2/6 (multiply top and bottom by 2). Add the numerators: 3 + 2 = 5, keeping the denominator 6. The answer is 5/6, which is already simplified.",
-      "expression": "Rational(1,2) + Rational(1,3)",
-      "answer": "5/6"
-    },
-    {
-      "problem": "Add 3/4 + 1/6.",
-      "steps": "The least common multiple of 4 and 6 is 12. 3/4 = 9/12 (multiply by 3). 1/6 = 2/12 (multiply by 2). Add: 9/12 + 2/12 = 11/12. Nothing common divides 11 and 12, so it is simplified.",
-      "expression": "Rational(3,4) + Rational(1,6)",
-      "answer": "11/12"
-    },
-    {
-      "problem": "Add 5/6 + 3/4.",
-      "steps": "The common denominator is 12. 5/6 = 10/12 and 3/4 = 9/12. Add: 10/12 + 9/12 = 19/12. This is an improper fraction, equal to 1 and 7/12. It is correct to leave it as 19/12 or write it as a mixed number.",
-      "expression": "Rational(5,6) + Rational(3,4)",
-      "answer": "19/12"
-    }
-  ],
-  "try_it": [
-    {
-      "problem": "Add 1/4 + 2/3.",
-      "solution": "The common denominator is 12. 1/4 = 3/12 and 2/3 = 8/12. Add: 3/12 + 8/12 = 11/12.",
-      "expression": "Rational(1,4) + Rational(2,3)",
-      "answer": "11/12"
-    },
-    {
-      "problem": "Add 1/6 + 1/3 + 1/2... first just 1/6 + 3/8.",
-      "solution": "The least common multiple of 6 and 8 is 24. 1/6 = 4/24 and 3/8 = 9/24. Add: 4/24 + 9/24 = 13/24.",
-      "expression": "Rational(1,6) + Rational(3,8)",
-      "answer": "13/24"
-    },
-    {
-      "problem": "Add 5/12 + 7/18.",
-      "solution": "The least common multiple of 12 and 18 is 36. 5/12 = 15/36 and 7/18 = 14/36. Add: 15/36 + 14/36 = 29/36.",
-      "expression": "Rational(5,12) + Rational(7,18)",
-      "answer": "29/36"
-    }
-  ],
+  "idea": "Fractions can only be added when their pieces are the same size, which means the same denominator. When the denominators differ, we rewrite each fraction as an equivalent fraction with a common denominator, then add the numerators and keep the denominator. Finally we simplify, and write the result as a mixed number if it is bigger than 1.",
+  "why": "The denominator names the size of the piece (halves, thirds, twelfths) and the numerator counts the pieces. Adding is counting pieces, and you can only count them together if they are the same kind, just as 2 apples and 3 oranges are not 5 apples. Multiplying top and bottom by the same number does not change a fraction's value, because it is multiplying by 1 (for example 4/4). So we can swap the pieces for smaller, equal-sized ones without changing the amount. Once the pieces match, we add the counts and the piece size stays the same.",
+  "theory_example": {
+    "problem": "Find 2/3 + 3/4.",
+    "steps": "1) The denominators 3 and 4 differ, so the pieces are different sizes. 2) Find a common denominator: the smallest number that both 3 and 4 divide into is 12. 3) Rewrite 2/3 as 8/12 (multiply top and bottom by 4). 4) Rewrite 3/4 as 9/12 (multiply top and bottom by 3). 5) Add the numerators and keep the denominator: 8/12 + 9/12 = 17/12. 6) 17 is prime, so 17/12 cannot be simplified. As a mixed number it is 1 and 5/12.",
+    "expression": "Rational(2,3)+Rational(3,4)",
+    "answer": "17/12"
+  },
   "lesson_outline": [
     {
-      "minutes": 5,
-      "activity": "Warm-up: ask whether 1/2 + 1/2 is 2/4. Review equivalent fractions with quick paper-strip folding (1/2 = 2/4 = 3/6)."
-    },
-    {
       "minutes": 8,
-      "activity": "Introduce the problem 1/2 + 1/3 with the picture: students draw two rectangles and re-cut both into sixths. Discuss why pieces must be the same size."
-    },
-    {
-      "minutes": 7,
-      "activity": "Teach the procedure with the worked example 3/4 + 1/6. Students copy the steps: common denominator, rewrite, add tops, simplify."
-    },
-    {
-      "minutes": 5,
-      "activity": "Address the 2/5 misconception directly: use the 1/2 + 1/2 check. Take a few student questions."
+      "activity": "Start with the question: can we add 1/2 and 1/3 right away? Let students guess, then show with paper strips or a drawing that halves and thirds are different sizes. Teach 'Why the pieces must match (equivalent fractions)'."
     },
     {
       "minutes": 10,
-      "activity": "Pairs practise the three try-it problems, drawing a quick picture or writing each step. The teacher circulates and uses the mistake responses."
+      "activity": "Teach 'Finding a common denominator and adding'. Work through 3/4 + 5/6 on the board, then let students try 1/4 + 2/3 in pairs as the check question."
+    },
+    {
+      "minutes": 7,
+      "activity": "Teach 'Simplifying and writing big answers as mixed numbers'. Work through 3/10 + 1/5, then ask the check question 1/6 + 1/2."
     },
     {
       "minutes": 5,
-      "activity": "Wrap-up: share answers, including 19/12 as an improper fraction. Each student writes one sentence on why the denominator stays the same."
+      "activity": "Recap the three steps together (match the denominators, add the tops, simplify). Ask students to say each step aloud and answer any leftover questions, using the 'why' of keeping the denominator the same."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra-examples and questions round: work the 3 extra examples with the class, asking students to tell you the next step each time. Leave time for their questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Why the pieces must match (equivalent fractions)",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw two identical bars. Cut one into 2 equal parts and shade 1 (that is 1/2). Cut the other into 3 equal parts and shade 1 (that is 1/3). The shaded pieces are different sizes, so we cannot just count '2 pieces'. Now cut both bars into 6 equal parts: 1/2 covers 3 of the sixths and 1/3 covers 2 of the sixths. Now the pieces match and we can count: 3 + 2 = 5 sixths."
+        },
+        {
+          "kind": "procedure",
+          "text": "To rewrite a fraction with a new denominator: ask 'what do I multiply the old denominator by to get the new one?' Multiply the top and the bottom by that same number. Example: to change 1/2 into sixths, 2 x 3 = 6, so 1/2 = (1x3)/(2x3) = 3/6. Doing the same to top and bottom is multiplying by 3/3, which is 1, so the value does not change."
+        }
+      ],
+      "example": {
+        "problem": "Find 1/2 + 1/3.",
+        "steps": "1) Denominators 2 and 3 differ. A common denominator is 6 (both 2 and 3 go into 6). 2) 1/2 = 3/6 (multiply top and bottom by 3). 3) 1/3 = 2/6 (multiply top and bottom by 2). 4) Add: 3/6 + 2/6 = 5/6.",
+        "expression": "Rational(1,2)+Rational(1,3)",
+        "answer": "5/6"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Adding the tops and the bottoms: 1/2 + 1/3 = 2/5.",
+          "response": "Do not say 'wrong' first. Ask: is 2/5 bigger or smaller than 1/2? It is smaller (2/5 is less than 1/2), yet we added something to 1/2. Then show the bars: the answer must be more than 1/2. Remind them the bottom is a piece size, not something to add."
+        },
+        {
+          "mistake": "Multiplying only the denominator (or only the numerator) when making an equivalent fraction, such as 1/2 = 1/6.",
+          "response": "Show with a bar that 1/6 is much smaller than 1/2. Say: what you do to the bottom you must also do to the top, so that the fraction keeps its value."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why can't I just add the bottoms?",
+          "answer": "The bottom does not count anything, it only tells the size of the pieces. If you have 1 half and 1 third, you do not suddenly have fifths. When the pieces are the same size, the size stays the same and we only count how many there are."
+        },
+        {
+          "question": "Why does multiplying top and bottom by the same number not change the fraction?",
+          "answer": "Because you are multiplying by something equal to 1, like 3/3. Cutting every piece into 3 smaller pieces gives 3 times as many pieces, but each one is 3 times smaller, so the amount is the same."
+        },
+        {
+          "question": "Does the common denominator have to be 6? Could I use 12?",
+          "answer": "Yes, 12 also works: 6/12 + 4/12 = 10/12, which simplifies to 5/6. The smallest one is just easier because the numbers stay small."
+        }
+      ],
+      "check_question": {
+        "question": "Write 2/3 as a fraction with denominator 12. What is the new numerator?",
+        "solution": "12 = 3 x 4, so multiply top and bottom by 4: 2/3 = 8/12. The new numerator is 8.",
+        "expression": "2*4",
+        "answer": "8"
+      }
+    },
+    {
+      "title": "Finding a common denominator and adding",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Step 1: list multiples of each denominator until you find the first one they share (the least common multiple). For 4 and 6: multiples of 4 are 4, 8, 12; multiples of 6 are 6, 12. So 12. Step 2: convert each fraction to that denominator. Step 3: add the numerators and keep the denominator. Step 4: simplify or write as a mixed number if needed."
+        },
+        {
+          "kind": "story",
+          "text": "Imagine one friend gives you 3 quarter-pizza slices and another gives you 5 slices that are each one-sixth of a pizza. You cannot say how many slices you have, since the slices are different sizes. Ask the pizza shop to cut everything into twelfths. Now the first gift is 9 small slices and the second is 10 small slices, so you have 19 small slices, each one twelfth of a pizza: 19/12 pizzas."
+        }
+      ],
+      "example": {
+        "problem": "Find 3/4 + 5/6.",
+        "steps": "1) Multiples of 4: 4, 8, 12. Multiples of 6: 6, 12. The least common denominator is 12. 2) 3/4 = 9/12 (multiply by 3). 3) 5/6 = 10/12 (multiply by 2). 4) Add: 9/12 + 10/12 = 19/12. 5) 19 is prime, so it cannot be simplified. As a mixed number: 1 and 7/12.",
+        "expression": "Rational(3,4)+Rational(5,6)",
+        "answer": "19/12"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Changing the denominators to 12 but forgetting to change the numerators, writing 3/12 + 5/12 = 8/12.",
+          "response": "Ask: is 3/12 the same amount as 3/4? Compare on a bar. Remind them that the numerator must change with the denominator, by multiplying both by the same number."
+        },
+        {
+          "mistake": "Adding the denominators as well after finding the common one: 9/12 + 10/12 = 19/24.",
+          "response": "Use the pizza story: if you add 9 slices and 10 slices of twelfths you have 19 slices, still twelfths. The slice size does not change when you count."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Do I always have to find the smallest common denominator?",
+          "answer": "No. Any common denominator works, for example 4 x 6 = 24. But the smallest keeps the numbers smaller and often means less simplifying at the end."
+        },
+        {
+          "question": "What if I just multiply the two denominators?",
+          "answer": "That always gives a common denominator and is a fine method. Here 4 x 6 = 24, so 18/24 + 20/24 = 38/24, which simplifies to 19/12. It is just a little more work to simplify."
+        },
+        {
+          "question": "Why do we keep the denominator the same when we add?",
+          "answer": "Because we are counting pieces of the same size. Adding 9 twelfths and 10 twelfths is like adding 9 apples and 10 apples: you get 19 apples, not 19 'twice-apples'."
+        }
+      ],
+      "check_question": {
+        "question": "Find 1/4 + 2/3.",
+        "solution": "The common denominator is 12. 1/4 = 3/12 and 2/3 = 8/12. Then 3/12 + 8/12 = 11/12.",
+        "expression": "Rational(1,4)+Rational(2,3)",
+        "answer": "11/12"
+      }
+    },
+    {
+      "title": "Simplifying and writing big answers as mixed numbers",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "After adding, check whether the numerator and denominator share a common factor. If they do, divide both by it (the largest one gives the simplest form in one go). If the numerator is bigger than the denominator, divide: the quotient is the whole number and the remainder is the new numerator. Example: 19/12 means 12 goes into 19 once with remainder 7, so 1 and 7/12."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw a bar split into 10 equal parts with 5 shaded. Draw a second bar of the same length split into 2 parts with 1 shaded. They look the same: 5/10 and 1/2 are the same amount. This shows that simplifying changes how we write the fraction, not how much it is."
+        }
+      ],
+      "example": {
+        "problem": "Find 3/10 + 1/5.",
+        "steps": "1) The common denominator is 10 (5 goes into 10). 2) 3/10 stays as it is. 3) 1/5 = 2/10 (multiply top and bottom by 2). 4) Add: 3/10 + 2/10 = 5/10. 5) Simplify: divide top and bottom by 5 to get 1/2.",
+        "expression": "Rational(3,10)+Rational(1,5)",
+        "answer": "1/2"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Stopping at 5/10 and treating it as finished.",
+          "response": "Say that 5/10 is correct but not in simplest form. Ask the class what number divides both 5 and 10, and show on the bar that 5/10 is half of the bar."
+        },
+        {
+          "mistake": "Writing 19/12 as 1 and 19/12, or turning it into 1 and 12/7 by dividing the wrong way round.",
+          "response": "Go back to the division: 12 goes into 19 one time, which leaves 7 left over. The leftover is the numerator and the denominator stays 12. So 1 and 7/12. Check by picturing 12 twelfths as one whole plus 7 twelfths."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Do I have to simplify? Isn't 5/10 right?",
+          "answer": "5/10 is the right amount. Simplifying is the usual way of writing the answer neatly, so everyone's answers look the same and are easier to compare. Always check what your teacher or the problem asks for."
+        },
+        {
+          "question": "How do I know if a fraction can be simplified more?",
+          "answer": "Check if the top and bottom share a factor bigger than 1. If you divide by the greatest common factor you are done in one step. If the numerator is prime and does not divide the denominator, like 17/12, it cannot be simplified."
+        },
+        {
+          "question": "Is an improper fraction like 19/12 wrong?",
+          "answer": "No, it is correct. It just means more than one whole. Some problems ask for a mixed number, 1 and 7/12, which says the same thing in another way."
+        }
+      ],
+      "check_question": {
+        "question": "Find 1/6 + 1/2 and simplify.",
+        "solution": "The common denominator is 6. 1/2 = 3/6. Then 1/6 + 3/6 = 4/6. Divide top and bottom by 2 to get 2/3.",
+        "expression": "Rational(1,6)+Rational(1,2)",
+        "answer": "2/3"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Find 2/5 + 1/2.",
+      "solution": "The common denominator is 10. 2/5 = 4/10 and 1/2 = 5/10. Then 4/10 + 5/10 = 9/10. It cannot be simplified.",
+      "expression": "Rational(2,5)+Rational(1,2)",
+      "answer": "9/10"
+    },
+    {
+      "problem": "Find 5/6 + 3/8 and write it as a mixed number.",
+      "solution": "The least common denominator is 24. 5/6 = 20/24 and 3/8 = 9/24. Then 20/24 + 9/24 = 29/24. 24 goes into 29 once with remainder 5, so the answer is 1 and 5/24.",
+      "expression": "Rational(5,6)+Rational(3,8)",
+      "answer": "29/24"
+    },
+    {
+      "problem": "Find 5/12 + 1/4 and simplify.",
+      "solution": "The common denominator is 12. 1/4 = 3/12. Then 5/12 + 3/12 = 8/12. Divide top and bottom by 4 to get 2/3.",
+      "expression": "Rational(5,12)+Rational(1,4)",
+      "answer": "2/3"
     }
   ],
   "meta": {
     "concept": "adding-fractions-unlike",
     "title": "Adding fractions with unlike denominators",
     "model": "sonnet",
-    "cost_usd": 0.0371,
+    "cost_usd": 0.08304,
     "generated": "2026-11-18",
     "grounded_on": null,
     "license": null,

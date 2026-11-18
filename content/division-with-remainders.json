@@ -1,119 +1,232 @@
 {
-  "idea": "Sometimes a number does not split into equal groups with nothing left over. Division with remainders tells us how many full equal groups we can make and how many are left over. We write a = b × q + r, where r is the remainder and r is less than b (and at least 0). For example, 17 ÷ 5 = 3 remainder 2, because 5 × 3 + 2 = 17.",
-  "why": "When we divide a by b, we take away as many full groups of b as we can. The leftovers are the remainder. The remainder must be smaller than b, because if r were b or more, we could make one more full group, and q would not be as large as it could be. So the rule a = b × q + r with 0 ≤ r < b gives exactly one answer for q and r. This also explains the check: multiply the groups by the group size, then add the leftovers, and you must get the starting number back. A remainder of 0 is the special case where everything shares equally, which is ordinary division.",
-  "explanations": [
+  "idea": "Sometimes a number cannot be shared or grouped exactly. Division with remainders asks: how many full groups can I make, and how many are left over? The answer has two parts, the quotient (full groups) and the remainder (what is left), and the remainder is always smaller than the number you divide by.",
+  "why": "Division finds the biggest multiple of the divisor that fits into the total without going over. What is left after taking that multiple away is the remainder. If the remainder were as big as the divisor, you could make one more full group, so the quotient would not be the biggest yet. That is why the remainder is always smaller than the divisor, and why every answer can be checked with: total = divisor x quotient + remainder.",
+  "theory_example": {
+    "problem": "Work out 59 divided by 7 with a remainder.",
+    "steps": "Count in sevens: 7, 14, 21, 28, 35, 42, 49, 56, 63. The biggest multiple that does not go over 59 is 56, which is 7 x 8. Take it away: 59 - 56 = 3. So the quotient is 8 and the remainder is 3. Check: 7 x 8 + 3 = 56 + 3 = 59. The remainder 3 is smaller than 7, so we are done.",
+    "expression": "59 - 7*8",
+    "answer": "3"
+  },
+  "lesson_outline": [
     {
-      "kind": "picture",
-      "text": "Draw 17 dots. Circle groups of 5: you can circle 3 groups, using 15 dots. Two dots sit outside any circle. Say: 3 full groups, 2 left over. Write 17 ÷ 5 = 3 R 2. Then show that if 5 or more dots were left outside, you could circle another group, so the leftover must be 0, 1, 2, 3 or 4."
+      "minutes": 6,
+      "activity": "Hook with real objects (counters or pencils): share 23 counters into groups of 4 and ask what is left. Use the subtopic Sharing equally and finding what is left over to name the quotient and the remainder."
     },
     {
-      "kind": "story",
-      "text": "There are 23 students and each minibus seats 6. Fill the buses one by one: 6, 12, 18, then a 4th bus would hold 24, which is too many. So 3 buses are full and 5 students are left over. Those 5 still need a ride, so the answer depends on the question: 3 full buses with 5 left over, or 4 buses are needed in total. Talk about how the meaning of the remainder changes with the question."
+      "minutes": 8,
+      "activity": "Teach the subtopic Checking with multiplication: find the biggest multiple of the divisor that fits, subtract, then check with divisor x quotient + remainder. Work the 47 divided by 8 example on the board with the bar picture."
     },
     {
-      "kind": "procedure",
-      "text": "To divide a by b: 1) Find the biggest multiple of b that is not more than a (count up in b's times table). 2) The number you multiplied b by is the quotient q. 3) Subtract that multiple from a to get the remainder r. 4) Check that r is less than b. 5) Check that b × q + r = a. Example: 38 ÷ 7. 7 × 5 = 35, and 7 × 6 = 42 is too big. So q = 5, r = 38 − 35 = 3. Check: 7 × 5 + 3 = 38."
+      "minutes": 8,
+      "activity": "Teach the subtopic What the remainder means in a story: work the minibus example, then contrast it with the bags-of-cookies version so students see when to round up and when to leave the remainder out."
+    },
+    {
+      "minutes": 8,
+      "activity": "Students work in pairs on the three check questions from the subtopics (29 divided by 6, 53 divided by 7, 25 children in cars of 4). Walk around, and ask pairs to explain how they know the remainder is small enough."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work the three extra examples together, mixing all the subtopics, and leave time for any student questions."
     }
   ],
-  "student_questions": [
+  "subtopics": [
     {
-      "question": "But why can't the remainder be bigger than the number we divide by?",
-      "answer": "If the leftover is as big as the group size, you can make another full group out of it. So you haven't made as many groups as you can. Try 17 ÷ 5 with 3 groups and 2 left, versus 2 groups and 7 left. The 7 left over could still make one more group of 5."
+      "title": "Sharing equally and finding what is left over",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "You have 23 sweets and 4 friends. Hand them out one round at a time: each round uses 4 sweets. After 5 rounds you have given out 20 and have 3 sweets left, which is not enough for another full round. So each friend gets 5 and 3 are left over. We write 23 divided by 4 is 5 remainder 3."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw one long bar for the total (23). Under it draw a shorter bar for the part that fits into full groups of 4 (20). The small piece that is left (3) is the remainder. The left-over bar is always shorter than one group."
+        }
+      ],
+      "example": {
+        "problem": "Share 23 sweets equally among 4 children. How many does each get, and how many are left?",
+        "steps": "Count in fours: 4, 8, 12, 16, 20, 24. 24 is too big, so use 20 = 4 x 5. Each child gets 5. Left over: 23 - 20 = 3. We write 23 divided by 4 = 5 remainder 3.",
+        "expression": "23 - 4*5",
+        "answer": "3"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Total;Shared out;Left over",
+        "a": 23,
+        "b": 20,
+        "c": 3,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Writing a remainder that is as big as or bigger than the divisor, for example 23 divided by 4 = 4 remainder 7.",
+          "response": "Ask: can you hand out another round of 4 from the 7 left? Yes, so the quotient can grow. Keep going until what is left is smaller than the group size."
+        },
+        {
+          "mistake": "Writing 23 divided by 4 = 5.3, treating the remainder as a decimal part.",
+          "response": "Say that the 3 counts left-over sweets, not tenths. Write it as 5 remainder 3 (or 5 r 3). Decimals are a different way to write the answer, and 23 divided by 4 as a decimal is 5.75."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why can't the remainder be bigger than what I divide by?",
+          "answer": "Because then you could make one more full group. The remainder is what is left when no full group fits any more."
+        },
+        {
+          "question": "Why is it called a remainder?",
+          "answer": "It is the part that remains, or is left behind, after we take away all the full groups."
+        },
+        {
+          "question": "Can the remainder be zero?",
+          "answer": "Yes. If it shares out exactly, nothing is left, for example 20 divided by 4 = 5 with remainder 0. That is just the division you already know."
+        }
+      ],
+      "check_question": {
+        "question": "29 sweets are shared among 6 children. How many are left over?",
+        "solution": "6 x 4 = 24 and 6 x 5 = 30 is too big. So each child gets 4 and 29 - 24 = 5 are left.",
+        "expression": "29 - 6*4",
+        "answer": "5"
+      }
     },
     {
-      "question": "Why do we get a remainder at all? Can't we just share the rest out?",
-      "answer": "Sometimes we can, and that gives fractions or decimals, like 17 ÷ 5 = 3.4. But with things that can't be split, such as people, buses or pencils, we use a remainder. Both ways describe the same leftover."
+      "title": "Checking with multiplication",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "1) List multiples of the divisor until the next one would go over the total. 2) Take the biggest multiple that fits. The number you multiplied by is the quotient. 3) Subtract that multiple from the total to get the remainder. 4) Check: divisor x quotient + remainder must equal the total, and the remainder must be smaller than the divisor."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw a bar for the total, 47. Mark hops of 8 along it: 8, 16, 24, 32, 40. The next hop would reach 48, past the end. You made 5 hops to reach 40, and there are 7 left to the end of the bar."
+        }
+      ],
+      "example": {
+        "problem": "Work out 47 divided by 8 and check your answer.",
+        "steps": "Multiples of 8: 8, 16, 24, 32, 40, 48. 48 is over 47, so use 40 = 8 x 5. The quotient is 5. The remainder is 47 - 40 = 7. Check: 8 x 5 + 7 = 40 + 7 = 47. And 7 is smaller than 8. So 47 divided by 8 = 5 remainder 7.",
+        "expression": "(47 - 7)/8",
+        "answer": "5"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Total;8 times 5;Remainder",
+        "a": 47,
+        "b": 40,
+        "c": 7,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Choosing a multiple that is too small, such as 8 x 4 = 32, and giving a remainder of 15.",
+          "response": "Have the student check the size of the remainder: 15 is bigger than 8, so another group of 8 still fits. Ask them to take one more group and see the remainder shrink to 7."
+        },
+        {
+          "mistake": "Choosing a multiple that goes over the total, such as 8 x 6 = 48, and then subtracting the wrong way round.",
+          "response": "Remind them the multiple must fit inside the total, so it can not be bigger than 47. Go back one multiple, to 40."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "How do I find the biggest multiple that fits?",
+          "answer": "Count up in the times table of the divisor and stop just before you pass the total. If you know a nearby multiple, start from there."
+        },
+        {
+          "question": "Do I really have to check every time?",
+          "answer": "It takes a few seconds and catches most slips. Multiply back, add the remainder, and you should land on the starting number."
+        },
+        {
+          "question": "What if I don't know my times tables well?",
+          "answer": "Skip count or build up from easier facts, such as 8 x 5 = 40 because 8 x 10 = 80 and half of that is 40. Speed comes with practice, and the method still works."
+        }
+      ],
+      "check_question": {
+        "question": "Work out 53 divided by 7. What is the remainder?",
+        "solution": "7 x 7 = 49 fits and 7 x 8 = 56 does not. So the quotient is 7 and the remainder is 53 - 49 = 4. Check: 49 + 4 = 53.",
+        "expression": "53 - 7*7",
+        "answer": "4"
+      }
     },
     {
-      "question": "What does it mean when the remainder is 0?",
-      "answer": "It means the number divides evenly. Everything fits into full groups with nothing left. For example 20 ÷ 5 = 4 R 0, so we just say 4."
-    },
-    {
-      "question": "Why do we multiply and add to check?",
-      "answer": "Because division undoes that. The full groups give b × q objects, and the leftovers are added on. Together they must be the number we started with."
+      "title": "What the remainder means in a story",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "30 students go on a trip and each minibus seats 8. Three buses seat 24 students, and 6 students are still standing. You can not leave them behind, so you need a fourth bus. But if you pack 30 cookies in bags of 8, the 6 extra cookies do not fill another bag, so you have 3 full bags. Same sum, different question, different answer."
+        },
+        {
+          "kind": "procedure",
+          "text": "1) Do the division with remainder. 2) Reread the question and ask what it wants: the number of full groups, or enough groups for everyone. 3) If it wants full groups, the quotient is the answer. 4) If it wants enough groups for everyone and the remainder is not zero, add one to the quotient. 5) Write the answer with the unit, such as buses."
+        }
+      ],
+      "example": {
+        "problem": "30 students go on a trip. Each minibus seats 8. How many minibuses are needed?",
+        "steps": "30 divided by 8: 8 x 3 = 24, and 30 - 24 = 6, so 3 remainder 6. Three buses leave 6 students without a seat. They need another bus, so we need 3 + 1 = 4 minibuses.",
+        "expression": "3 + 1",
+        "answer": "4"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Students;Seats in 3 buses;Without a seat",
+        "a": 30,
+        "b": 24,
+        "c": 6,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Answering 3 minibuses because the quotient is 3.",
+          "response": "Ask: where do the 6 left-over students sit? Show that the remainder is real people, so one more bus is needed."
+        },
+        {
+          "mistake": "Writing the answer as 3 remainder 6 buses.",
+          "response": "Say the answer to the question has to make sense in words. Say how many buses are needed: 4 buses. The remainder helps us decide, but it is not part of the final answer here."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "How do I know when to add one?",
+          "answer": "Ask whether the left-over things still need a place. People needing seats or boxes needing items: yes, add one. If the question asks only about full groups, do not add one."
+        },
+        {
+          "question": "Why does the same sum give different answers?",
+          "answer": "The sum 30 divided by 8 always gives 3 remainder 6. What we do with the 6 depends on what the question asks."
+        },
+        {
+          "question": "Can I write the left-over part as a fraction or decimal?",
+          "answer": "Yes, when the things can be cut up. 30 divided by 8 is 3 and 6 eighths, which is 3.75. For people or buses we cannot do that, so we use whole numbers and decide whether to round up."
+        }
+      ],
+      "check_question": {
+        "question": "25 children go to a park in cars that each seat 4 children. How many cars are needed?",
+        "solution": "25 divided by 4 is 6 remainder 1. Six cars seat 24 children, and 1 child is left, so we need one more car: 7 cars.",
+        "expression": "6 + 1",
+        "answer": "7"
+      }
     }
   ],
-  "mistakes": [
+  "extra_examples": [
     {
-      "mistake": "Writing a remainder that is too big, such as 25 ÷ 4 = 5 R 5.",
-      "response": "Ask: can you make another group of 4 from the 5 left? Let them check, see that they can, and fix it to 6 R 1. Remind them the remainder must be less than the divisor."
-    },
-    {
-      "mistake": "Rounding up to the next multiple, so 38 ÷ 7 gives q = 6 because 7 × 6 = 42 is closer to the number than... or subtracting a multiple that is too big and getting a negative remainder.",
-      "response": "Have them list multiples of 7: 7, 14, 21, 28, 35, 42. Ask which is the last one that does not go past 38. Use the rule that the multiple must be at most the starting number."
-    },
-    {
-      "mistake": "Mixing up the quotient and remainder, or forgetting to say what the remainder means, for example writing 3 R 2 when the bus question needs 4 buses.",
-      "response": "Ask them to re-read the question and say what the leftover is in words. Practice with a context: 'the 5 leftover students still need a bus.' Always label the answer."
-    }
-  ],
-  "worked_examples": [
-    {
-      "problem": "Work out 17 ÷ 5 with a remainder.",
-      "steps": "Count up in 5s: 5, 10, 15, 20. 15 is the largest not above 17, so q = 3. Remainder is 17 − 15 = 2. Since 2 < 5, this is fine. Check: 5 × 3 + 2 = 17.",
-      "expression": "3",
-      "answer": "3"
-    },
-    {
-      "problem": "Work out 38 ÷ 7. Give the quotient (the number of full groups of 7).",
-      "steps": "7 × 5 = 35 and 7 × 6 = 42 is too big, so q = 5. Remainder is 38 − 35 = 3. Check: 7 × 5 + 3 = 38.",
-      "expression": "5",
-      "answer": "5"
-    },
-    {
-      "problem": "There are 23 students and each minibus seats 6. How many buses are needed in total so that everyone has a seat?",
-      "steps": "23 ÷ 6 = 3 remainder 5, since 6 × 3 = 18 and 23 − 18 = 5. Three buses are full, and 5 students are left, who need one more bus. So 3 + 1 = 4 buses.",
-      "expression": "3 + 1",
-      "answer": "4"
-    }
-  ],
-  "try_it": [
-    {
-      "problem": "Find the remainder when 29 is divided by 4.",
-      "solution": "4 × 7 = 28 and 4 × 8 = 32 is too big. So the quotient is 7 and the remainder is 29 − 28 = 1. Check: 4 × 7 + 1 = 29.",
-      "expression": "29 - 4*7",
+      "problem": "Work out 100 divided by 9 with a remainder, and give the remainder.",
+      "solution": "9 x 11 = 99 and 9 x 12 = 108 is too big. So the quotient is 11 and the remainder is 100 - 99 = 1. Check: 99 + 1 = 100.",
+      "expression": "100 - 9*11",
       "answer": "1"
     },
     {
-      "problem": "Find the quotient when 53 is divided by 8 (how many full groups of 8).",
-      "solution": "8 × 6 = 48 and 8 × 7 = 56 is too big. So the quotient is 6 (remainder 5). Check: 8 × 6 + 5 = 53.",
-      "expression": "6",
+      "problem": "62 pencils are packed in boxes of 10. How many full boxes can be filled?",
+      "solution": "62 divided by 10 is 6 remainder 2. Six boxes are full and 2 pencils are left. The question asks only for full boxes, so the answer is 6.",
+      "expression": "(62 - 2)/10",
       "answer": "6"
     },
     {
-      "problem": "Pencils come in boxes of 12. You need 50 pencils. How many boxes must you buy?",
-      "solution": "50 ÷ 12 = 4 remainder 2, since 12 × 4 = 48. Four boxes give only 48 pencils, which is not enough, so you need one more box: 4 + 1 = 5 boxes.",
-      "expression": "4 + 1",
-      "answer": "5"
-    }
-  ],
-  "lesson_outline": [
-    {
-      "minutes": 5,
-      "activity": "Warm-up: share 13 counters between 4 students. Ask what is left over and whether it can be shared. Introduce the word remainder."
-    },
-    {
-      "minutes": 10,
-      "activity": "Picture and story: draw 17 dots in groups of 5, then the minibus problem. Write 17 ÷ 5 = 3 R 2 and discuss that the remainder must be smaller than the group size."
-    },
-    {
-      "minutes": 10,
-      "activity": "Procedure: model 38 ÷ 7 using multiples and the check b × q + r = a. Then students do 29 ÷ 4 with a partner."
-    },
-    {
-      "minutes": 10,
-      "activity": "Practice: students solve a mix of problems, including 53 ÷ 8 and the pencil box problem, and write what the remainder means."
-    },
-    {
-      "minutes": 5,
-      "activity": "Wrap-up: discuss mistakes, such as a remainder that is too big, and ask students to explain in their own words why the remainder is less than the divisor."
+      "problem": "38 people come to a party. Each table seats 5 people. How many tables are needed?",
+      "solution": "38 divided by 5 is 7 remainder 3, since 5 x 7 = 35. Seven tables seat 35 people and 3 have no seat, so one more table is needed: 8 tables.",
+      "expression": "7 + 1",
+      "answer": "8"
     }
   ],
   "meta": {
     "concept": "division-with-remainders",
     "title": "Division with remainders",
     "model": "sonnet",
-    "cost_usd": 0.03184,
+    "cost_usd": 0.09332,
     "generated": "2026-11-18",
     "grounded_on": null,
     "license": null,

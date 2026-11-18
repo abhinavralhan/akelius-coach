@@ -1,123 +1,232 @@
 {
-  "idea": "An exponent counts how many times a base is used as a factor: 2^4 = 2·2·2·2. The rules of exponents are shortcuts that come straight from this counting. (1) a^m · a^n = a^(m+n). (2) a^m / a^n = a^(m−n). (3) (a^m)^n = a^(m·n). (4) (ab)^n = a^n · b^n. (5) a^0 = 1 for a not 0. (6) a^(−n) = 1 / a^n.",
-  "why": "Each rule is just counting factors. In a^m · a^n you write m copies of a and then n more copies, so there are m+n copies in all: 2^3 · 2^2 = (2·2·2)(2·2) = 2^5. In a^m / a^n, n copies on top cancel n copies on the bottom, leaving m−n copies: 2^5 / 2^2 = (2·2·2·2·2)/(2·2) = 2^3. In (a^m)^n you have n groups, each holding m copies of a, so m·n copies: (3^2)^3 = (3·3)(3·3)(3·3) = 3^6. In (ab)^n each of the n factors of (ab) brings one a and one b, so you get n copies of each. Zero and negative exponents follow from keeping the division rule true: 2^3 / 2^3 = 2^(3−3) = 2^0, but any nonzero number divided by itself is 1, so 2^0 = 1. Likewise 2^2 / 2^3 = 2^(−1), and writing it out gives (2·2)/(2·2·2) = 1/2, so 2^(−1) = 1/2. The rules only work when the bases are the same (rules 1 and 2) and they do not apply to sums: (a+b)^n is not a^n + b^n.",
-  "explanations": [
-    {
-      "kind": "picture",
-      "text": "Draw 2^3 as a row of three 2s joined by dots, then 2^2 as a row of two 2s. Put the rows side by side and circle them as one long row: five 2s, so 2^5. For division, write 2^5 over 2^2 as a fraction, and cross out two 2s from the top against two 2s from the bottom. Three are left. For (3^2)^3, draw three boxes, each holding two 3s, and count six 3s in all."
-    },
-    {
-      "kind": "story",
-      "text": "Imagine a rumor that doubles every hour. After 3 hours, 2^3 = 8 people know it. If it keeps going for 2 more hours, that is 2 more doublings, so you multiply by 2^2, and the total is 2^5 = 32. Doublings add up, which is why exponents add when you multiply. Going backwards in time, 2 hours ago there were half as many as 1 hour ago, which is why 2^0 = 1 (the one person who started it) and 2^(−1) = 1/2 (half a person's worth, meaning before the start)."
-    },
-    {
-      "kind": "procedure",
-      "text": "Step 1: Check that the bases are the same. Step 2: Look at the operation. Multiplying same bases: add exponents. Dividing same bases: subtract exponents (top minus bottom). Power of a power: multiply exponents. Power of a product: give the exponent to each factor. Step 3: Handle zero and negatives: a^0 = 1, and a^(−n) = 1 / a^n. Step 4: If unsure, write out the factors and count them. For numbers, you can check by computing both sides."
-    }
-  ],
-  "student_questions": [
-    {
-      "question": "But why do we add the exponents when we multiply? Why not multiply them?",
-      "answer": "Because the exponent counts factors. 2^3 means three 2s and 2^2 means two 2s. Putting them together gives five 2s, so 3+2 = 5. Let's write it out: (2·2·2)(2·2). You can count five."
-    },
-    {
-      "question": "But why is anything to the power of 0 equal to 1? Shouldn't it be 0?",
-      "answer": "Zero copies of the base doesn't mean zero. It means you haven't multiplied anything yet, and the starting value for multiplying is 1. Also, 5^3 / 5^3 = 1 because it's a number divided by itself, and the subtraction rule gives 5^(3−3) = 5^0. For the rule to keep working, 5^0 must be 1."
-    },
-    {
-      "question": "But why does a negative exponent give a fraction? Is the answer negative?",
-      "answer": "No, the negative sign means 'flip', not 'make negative'. Each time you lower the exponent by 1 you divide by the base: 2^3 = 8, 2^2 = 4, 2^1 = 2, 2^0 = 1, then 2^(−1) = 1/2, 2^(−2) = 1/4. The pattern keeps going."
-    },
-    {
-      "question": "But why can't I add exponents in 2^3 · 3^2?",
-      "answer": "The rule counts copies of the same base. Here you have three 2s and two 3s, and those are different things, like 3 apples and 2 oranges. You just calculate: 8 · 9 = 72."
-    }
-  ],
-  "mistakes": [
-    {
-      "mistake": "Multiplying the exponents when multiplying powers: 2^3 · 2^4 = 2^12.",
-      "response": "Ask the student to write out both powers as factors and count. They will see 7 twos, so 2^7. Then contrast it with (2^3)^4, where multiplying is correct because you have 4 groups of 3 twos."
-    },
-    {
-      "mistake": "Multiplying the bases too: 2^3 · 2^4 = 4^7.",
-      "response": "Remind them the base tells what is being multiplied, and it doesn't change when you count more copies. Check with small numbers: 2^1 · 2^1 = 4, but 4^2 = 16. That shows the base must stay 2."
-    },
-    {
-      "mistake": "Treating (a+b)^2 as a^2 + b^2, or (−3)^2 as −9.",
-      "response": "Test with numbers: (1+2)^2 = 9, but 1^2 + 2^2 = 5. Show that (a+b)^2 means (a+b)(a+b). For (−3)^2, the parentheses mean the base is −3, so (−3)(−3) = 9. Without parentheses, −3^2 means −(3^2) = −9."
-    }
-  ],
-  "worked_examples": [
-    {
-      "problem": "Simplify and evaluate 2^3 · 2^4.",
-      "steps": "Same base 2, multiplying, so add exponents: 2^(3+4) = 2^7. Then 2^7 = 128. Check: 8 · 16 = 128.",
-      "expression": "2**3 * 2**4",
-      "answer": "128"
-    },
-    {
-      "problem": "Evaluate 5^6 / 5^4.",
-      "steps": "Same base 5, dividing, so subtract exponents: 5^(6−4) = 5^2 = 25. Check: 15625 / 625 = 25.",
-      "expression": "5**6 / 5**4",
-      "answer": "25"
-    },
-    {
-      "problem": "Evaluate (2^3)^2 · 2^(−2).",
-      "steps": "Power of a power: (2^3)^2 = 2^6. Then multiply by 2^(−2): 2^(6−2) = 2^4 = 16. Check: 64 · 1/4 = 16.",
-      "expression": "(2**3)**2 * 2**(-2)",
-      "answer": "16"
-    }
-  ],
-  "try_it": [
-    {
-      "problem": "Evaluate 3^2 · 3^3.",
-      "solution": "Same base, add exponents: 3^(2+3) = 3^5 = 243.",
-      "expression": "3**2 * 3**3",
-      "answer": "243"
-    },
-    {
-      "problem": "Evaluate (2^2)^3 / 2^4.",
-      "solution": "(2^2)^3 = 2^6. Then 2^6 / 2^4 = 2^2 = 4.",
-      "expression": "(2**2)**3 / 2**4",
-      "answer": "4"
-    },
-    {
-      "problem": "Evaluate 10^(−2) · 10^0 · 5^2.",
-      "solution": "10^(−2) = 1/100, 10^0 = 1, and 5^2 = 25. So (1/100) · 1 · 25 = 1/4.",
-      "expression": "Rational(1,100) * 1 * 25",
-      "answer": "1/4"
-    }
-  ],
+  "idea": "An exponent tells you how many copies of a base are multiplied together, so 2^4 means 2 x 2 x 2 x 2. The rules of exponents are shortcuts that come from counting those copies: multiplying powers of the same base adds the exponents, dividing subtracts them, and raising a power to a power multiplies them. Zero and negative exponents come from keeping those patterns going.",
+  "why": "Every rule is just counting repeated factors. 2^3 x 2^4 is (2x2x2) x (2x2x2x2), which is 7 twos, so the exponents add. Division cancels matching factors, so the exponents subtract. (2^3)^2 is two groups of three twos, which is 6 twos, so the exponents multiply. If the subtract rule keeps working, 2^3 / 2^3 = 2^0, but anything non-zero divided by itself is 1, so 2^0 = 1. Likewise 2^2 / 2^3 = 2^(-1), and cancelling gives 1/2, so a negative exponent means a reciprocal. Adding and subtracting exponents only works when the bases are the same, and the base cannot be zero when we divide.",
+  "theory_example": {
+    "problem": "Simplify (2^3 x 2^4) / 2^5 and find its value.",
+    "steps": "Step 1: Same base 2 in the product, so add the exponents: 2^3 x 2^4 = 2^(3+4) = 2^7. Step 2: Divide by 2^5, so subtract the exponents: 2^7 / 2^5 = 2^(7-5) = 2^2. Step 3: Evaluate 2^2 = 4. Check by counting: 7 twos on top, 5 cancel with the bottom, 2 twos are left, which is 4.",
+    "expression": "(2**3*2**4)/2**5",
+    "answer": "4"
+  },
   "lesson_outline": [
     {
       "minutes": 5,
-      "activity": "Warm-up: students write 2^4 and 3^3 as repeated multiplication and evaluate them. Name the base and the exponent."
-    },
-    {
-      "minutes": 10,
-      "activity": "Discover the product and quotient rules: students write out 2^3 · 2^2 and 2^5 / 2^2 as factors, count, and state the pattern in their own words."
+      "activity": "Warm-up: write 2^4 on the board and have students expand it as 2 x 2 x 2 x 2 and find its value (16). Name the base and the exponent. Then ask what 2^3 x 2^2 might be and let them expand and count before you give any rule."
     },
     {
       "minutes": 8,
-      "activity": "Power of a power and power of a product, using the boxes picture. Compare with the product rule so they see the difference between adding and multiplying exponents."
+      "activity": "Teach the subtopic 'Multiplying and dividing powers with the same base'. Use the expanding and cancelling picture first, then work the example together. Ask the check question."
     },
     {
-      "minutes": 7,
-      "activity": "Zero and negative exponents: build the table 2^3, 2^2, 2^1, 2^0, 2^(−1), 2^(−2) and watch the pattern of dividing by 2."
+      "minutes": 8,
+      "activity": "Teach the subtopic 'Power of a power and power of a product'. Use the groups story, then work the example with students calling out each step. Ask the check question."
     },
     {
-      "minutes": 7,
-      "activity": "Pairs practice with the three try-it problems. Students check each answer by computing both ways."
+      "minutes": 9,
+      "activity": "Teach the subtopic 'Zero and negative exponents'. Build the halving pattern on the board, show the graph of 2^x, then work the example. Ask the check question."
     },
     {
-      "minutes": 3,
-      "activity": "Exit ticket: one sentence on when you add exponents and when you multiply them."
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work the three extra_examples one at a time, letting students try each before you show the solution. Mix the subtopics, and leave time for any questions students still have."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Multiplying and dividing powers with the same base",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Write 3^5 x 3^2 as five 3s, then two more 3s, in one long row: 3x3x3x3x3 x 3x3. Count seven 3s, so it is 3^7. For division, write 3^5 / 3^2 as a fraction and cross out two 3s on top with two on the bottom. Three 3s remain, so it is 3^3."
+        },
+        {
+          "kind": "procedure",
+          "text": "Check that the bases match. If they do, multiplying means add the exponents and dividing means subtract the exponent of the bottom from the exponent of the top. Keep the base the same. Write a^m x a^n = a^(m+n) and a^m / a^n = a^(m-n)."
+        }
+      ],
+      "example": {
+        "problem": "Simplify 3^5 x 3^2 / 3^4 and find its value.",
+        "steps": "Step 1: Multiply the top: 3^5 x 3^2 = 3^(5+2) = 3^7. Step 2: Divide by 3^4: 3^7 / 3^4 = 3^(7-4) = 3^3. Step 3: Evaluate 3^3 = 27.",
+        "expression": "3**5*3**2/3**4",
+        "answer": "27"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Multiplying the exponents, so 3^5 x 3^2 = 3^10.",
+          "response": "Have the student expand it: five 3s and two 3s make seven 3s, not ten. Point out that multiplying exponents is for a power of a power, which is a different situation."
+        },
+        {
+          "mistake": "Multiplying the bases too, so 3^5 x 3^2 = 9^7.",
+          "response": "The base tells us what is being multiplied, and it does not change. Ask them to expand 3^2 x 3^1 = 9 x 3 = 27 and compare it with 9^3 = 729. They are not equal."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we add the exponents and not multiply them?",
+          "answer": "Because the exponent counts how many copies of the base there are. If you put a group of 5 copies next to a group of 2 copies, you have 5 + 2 copies in total."
+        },
+        {
+          "question": "Does this work if the bases are different, like 2^3 x 3^2?",
+          "answer": "No. The rule needs the same base, because only then are we counting the same kind of factor. You can still work out 8 x 9 = 72, but you cannot combine it into one power."
+        },
+        {
+          "question": "Can the exponent come out negative when we subtract?",
+          "answer": "Yes, for example 2^2 / 2^5 = 2^(-3). We will look at what that means in the last part of the lesson."
+        }
+      ],
+      "check_question": {
+        "question": "What is 2^7 / 2^3, written as a single power and as a number?",
+        "solution": "Subtract the exponents: 2^(7-3) = 2^4 = 16.",
+        "expression": "2**7/2**3",
+        "answer": "16"
+      }
+    },
+    {
+      "title": "Power of a power and power of a product",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Picture 3 boxes, each holding 2 bags, with each bag holding 5 coins. That is 5^2 in a box, repeated for 3 boxes: (5^2)^3 means three groups of two 5s, so six 5s in total, which is 5^6. Groups of groups means multiply the group counts: 2 x 3 = 6."
+        },
+        {
+          "kind": "procedure",
+          "text": "For a power of a power, multiply the exponents: (a^m)^n = a^(mn). For a power of a product, give the outside exponent to every factor inside the brackets: (ab)^n = a^n x b^n. If a factor already has an exponent, multiply that exponent by the outside one."
+        }
+      ],
+      "example": {
+        "problem": "Simplify (2^2 x 3)^3 and find its value.",
+        "steps": "Step 1: Give the outside exponent 3 to each factor: (2^2)^3 x 3^3. Step 2: Power of a power, so multiply the exponents: 2^(2x3) = 2^6. Step 3: Evaluate 2^6 = 64 and 3^3 = 27. Step 4: Multiply 64 x 27 = 1728. Check: 2^2 x 3 = 12 and 12^3 = 1728.",
+        "expression": "(2**2*3)**3",
+        "answer": "1728"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Adding the exponents in a power of a power, so (5^2)^3 = 5^5.",
+          "response": "Expand it: (5^2)^3 = 5^2 x 5^2 x 5^2. That is six 5s, so 5^6. Contrast with 5^2 x 5^3 where we add, because there it is a product of two powers and not a power being raised."
+        },
+        {
+          "mistake": "Applying the outside exponent only to the first factor, so (2x3)^2 = 2^2 x 3 = 12.",
+          "response": "Write (2x3)^2 as (2x3)(2x3). Both the 2 and the 3 appear twice, so it is 2^2 x 3^2 = 36. Remind them the exponent belongs to everything inside the brackets."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "How do I know whether to add or multiply the exponents?",
+          "answer": "Look at the shape. Two powers side by side, like a^2 x a^3, mean add. A power with another exponent outside the brackets, like (a^2)^3, means multiply."
+        },
+        {
+          "question": "Does (a + b)^2 equal a^2 + b^2?",
+          "answer": "No. The product rule only works for multiplication inside the brackets. (a + b)^2 means (a + b)(a + b), which gives a^2 + 2ab + b^2. Try a = 1 and b = 2: 9 is not 5."
+        },
+        {
+          "question": "Why do we get 1728 both ways?",
+          "answer": "Because both ways just count the same factors. 12 cubed is 12 x 12 x 12, and each 12 is 2 x 2 x 3, so you have six 2s and three 3s."
+        }
+      ],
+      "check_question": {
+        "question": "What is (5^2)^3 / 5^4 as a number?",
+        "solution": "(5^2)^3 = 5^6. Then 5^6 / 5^4 = 5^2 = 25.",
+        "expression": "(5**2)**3/5**4",
+        "answer": "25"
+      }
+    },
+    {
+      "title": "Zero and negative exponents",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Write a pattern going down: 2^3 = 8, 2^2 = 4, 2^1 = 2. Each step lowers the exponent by 1 and halves the answer. Keep going: 2^0 = 1, 2^(-1) = 1/2, 2^(-2) = 1/4, 2^(-3) = 1/8. So a^0 = 1 (for a not zero) and a^(-n) = 1 / a^n."
+        },
+        {
+          "kind": "picture",
+          "text": "Look at the graph of y = 2^x. It crosses the y-axis at 1, which is 2^0. To the left, the curve keeps getting closer to the x-axis but never goes below it or touches it, showing the values 1/2, 1/4, 1/8 and so on. Negative exponents give small positive numbers, not negative numbers."
+        }
+      ],
+      "example": {
+        "problem": "Find the value of 2^(-3).",
+        "steps": "Step 1: A negative exponent means the reciprocal, so 2^(-3) = 1 / 2^3. Step 2: 2^3 = 8. Step 3: So 2^(-3) = 1/8. Check with the rules: 2^0 / 2^3 = 1/8 and 2^(0-3) = 2^(-3).",
+        "expression": "2**(-3)",
+        "answer": "1/8"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "2**x",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Thinking a negative exponent makes the answer negative, so 2^(-3) = -8.",
+          "response": "Use the halving pattern: 8, 4, 2, 1, 1/2, 1/4, 1/8. The answer stays positive and gets smaller. The negative sign in the exponent tells us to take the reciprocal."
+        },
+        {
+          "mistake": "Saying 5^0 = 0.",
+          "response": "Use the subtraction rule: 5^2 / 5^2 = 25 / 25 = 1, and it also equals 5^(2-2) = 5^0. So 5^0 must be 1. It means no 5s are left to multiply, and an empty product is 1."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is anything to the power zero equal to 1?",
+          "answer": "Because a number divided by itself is 1, and the subtract rule turns that into exponent 0. It also fits the pattern: each step down divides by the base, so 2^1 = 2 divided by 2 gives 2^0 = 1."
+        },
+        {
+          "question": "Is 0^0 also 1?",
+          "answer": "That one is special and left undefined at this level. The rule a^0 = 1 is for bases that are not zero."
+        },
+        {
+          "question": "Why does a negative exponent flip the number?",
+          "answer": "Going down one exponent divides by the base each time. When we pass zero we keep dividing, so we get 1/2, then 1/4, which are the reciprocals of 2, 4 and so on."
+        }
+      ],
+      "check_question": {
+        "question": "What is 10^(-2) as a fraction?",
+        "solution": "10^(-2) = 1 / 10^2 = 1/100.",
+        "expression": "10**(-2)",
+        "answer": "1/100"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Simplify (3^2)^2 / 3^3 and find its value.",
+      "solution": "(3^2)^2 = 3^4. Then 3^4 / 3^3 = 3^(4-3) = 3^1 = 3.",
+      "expression": "(3**2)**2/3**3",
+      "answer": "3"
+    },
+    {
+      "problem": "Find the value of 5^(-2) x 5^4.",
+      "solution": "Same base, so add the exponents: -2 + 4 = 2. Then 5^2 = 25.",
+      "expression": "5**(-2)*5**4",
+      "answer": "25"
+    },
+    {
+      "problem": "Find the value of (2^(-1) x 4)^3.",
+      "solution": "Write 4 as 2^2. Then 2^(-1) x 2^2 = 2^1 = 2. Raise to the power 3: 2^3 = 8.",
+      "expression": "(2**(-1)*4)**3",
+      "answer": "8"
     }
   ],
   "meta": {
     "concept": "exponent-rules",
     "title": "Rules of exponents",
     "model": "sonnet",
-    "cost_usd": 0.03577,
+    "cost_usd": 0.10496,
     "generated": "2026-11-18",
     "grounded_on": null,
     "license": null,

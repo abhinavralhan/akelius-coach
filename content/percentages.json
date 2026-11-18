@@ -1,119 +1,232 @@
 {
-  "idea": "A percent is a number of parts out of 100. So 25% means 25 out of every 100, which is 25/100 or 0.25. To find a percent of an amount, multiply the amount by the percent written as a fraction or decimal.",
-  "why": "The word percent means \"per hundred\". Cutting a whole into 100 equal parts makes every percent a count of those small parts. 25% of 80 means: split 80 into 100 equal parts (each is 0.8), then take 25 of them, which gives 25 x 0.8 = 20. That is the same as 80 x 25/100. The same idea explains changes. Taking 15% off means keeping 85% of the price, so you multiply by 0.85. Adding 20% means you now have 120% of the original, so you multiply by 1.2. For percent change, you compare the change to the starting amount, because the percent says how big the change is relative to where you began. That is why percent change is (new - old) / old.",
-  "explanations": [
-    {
-      "kind": "picture",
-      "text": "Draw a 10 by 10 grid of 100 small squares and call it the whole. Shade 25 squares: that is 25%. Now say the whole grid is worth 80. Each small square is worth 0.8, so the 25 shaded squares are worth 20. You can also draw a bar split into 10 equal pieces. Each piece is 10%. Label the bar 0% to 100% above and 0 to 80 below, and students can read off 10% = 8, 50% = 40, and so on."
-    },
-    {
-      "kind": "story",
-      "text": "A shop has a jacket that costs 60 dollars and puts up a sign: 15% off. Ask students what they actually pay. The shop takes 15 of every 100 parts of the price away, so you keep 85 of every 100 parts. Ten percent of 60 is 6, and 5% is 3, so the discount is 9 dollars and you pay 51. Then tell them there is a quicker way: pay 85% of 60, which is 0.85 x 60 = 51. Both routes land on the same price."
-    },
-    {
-      "kind": "procedure",
-      "text": "To find a percent of an amount: 1) Write the percent as a fraction over 100 (or a decimal). 2) Multiply by the amount. For a percent increase or decrease: 1) Find the multiplier: 100% plus the increase, or 100% minus the decrease, written as a decimal. 2) Multiply the original amount by it. To find what percent one number is of another: 1) Divide the part by the whole. 2) Multiply by 100 and add the % sign. For percent change: 1) Subtract old from new. 2) Divide by the old number. 3) Multiply by 100."
-    }
-  ],
-  "student_questions": [
-    {
-      "question": "But why is percent always out of 100? Why not out of 10 or 50?",
-      "answer": "It is just an agreement, like using the same units for centimetres. When everyone uses 100, we can compare easily. 50 out of 80 and 60 out of 100 are hard to compare, but if both are turned into a percent, we see 62.5% and 60% straight away."
-    },
-    {
-      "question": "Why can a percent be more than 100%?",
-      "answer": "100% means the whole amount you started with. If you have more than the whole, you have more than 100%. If a plant was 20 cm tall and is now 40 cm, it is 200% of its old height. It is just two wholes."
-    },
-    {
-      "question": "If a price goes up 10% and then goes down 10%, why isn't it back to the start?",
-      "answer": "Because the two percentages are of different amounts. Start with 100. Up 10% gives 110. Down 10% takes 10% of 110, which is 11, so you get 99. The second percent is taken from a bigger number, so it removes more than the first added."
-    },
-    {
-      "question": "Why do we divide by the old number when we find percent change?",
-      "answer": "The percent says how big the change is compared to where you started. A change of 10 is big if you started with 20 but small if you started with 1000. So we compare the change to the starting amount."
-    }
-  ],
-  "mistakes": [
-    {
-      "mistake": "Students take 15% off 60 and then write 15 as the answer, or they subtract 15 from 60 as though it were 15 dollars.",
-      "response": "Ask them what 15% means: 15 out of every 100. Have them check with an easy case, such as 50% of 60 being 30. Then show that 15% of 60 is 9, not 15, and that the final price is 60 - 9 = 51."
-    },
-    {
-      "mistake": "Students add or subtract percents from different wholes, for example thinking up 10% then down 10% returns to the start.",
-      "response": "Have them try it with a real number like 100. Up 10% is 110, and 10% of 110 is 11, so the result is 99. Ask: what was each percent a percent of? Make 'of what?' a habit."
-    },
-    {
-      "mistake": "When finding percent change, students divide by the new number instead of the old one, or they find what percent the old is of the new.",
-      "response": "Use a doubling case. Going from 40 to 80 should be a 100% increase. Dividing by the old number gives 40/40 = 100%. Dividing by the new gives 40/80 = 50%, which is wrong. Remind them: the change is compared to the start."
-    }
-  ],
-  "worked_examples": [
-    {
-      "problem": "Find 25% of 80.",
-      "steps": "Write 25% as 25/100. Multiply by 80: 25/100 x 80 = 20. Check: 25% is one quarter, and one quarter of 80 is 20.",
-      "expression": "25/100*80",
-      "answer": "20"
-    },
-    {
-      "problem": "A jacket costs 60 dollars. It is on sale for 15% off. What is the sale price?",
-      "steps": "Taking 15% off means paying 100% - 15% = 85% of the price. Write 85% as 0.85, or 85/100. Multiply: 0.85 x 60 = 51. The sale price is 51 dollars. Check: 15% of 60 is 9, and 60 - 9 = 51.",
-      "expression": "60*(1-15/100)",
-      "answer": "51"
-    },
-    {
-      "problem": "A number goes from 40 to 50. What is the percent increase?",
-      "steps": "The change is 50 - 40 = 10. Compare it to the old number: 10/40 = 1/4. As a percent, 1/4 = 25/100 = 25%. The increase is 25%.",
-      "expression": "(50-40)/40*100",
-      "answer": "25"
-    }
-  ],
-  "try_it": [
-    {
-      "problem": "Find 30% of 150.",
-      "solution": "30% is 30/100. Multiply by 150: 30/100 x 150 = 45.",
-      "expression": "30/100*150",
-      "answer": "45"
-    },
-    {
-      "problem": "A book costs 35 dollars. The price goes up by 20%. What is the new price?",
-      "solution": "The new price is 120% of the old price, so multiply by 1.2 (or 120/100). 35 x 1.2 = 42 dollars.",
-      "expression": "35*(1+20/100)",
-      "answer": "42"
-    },
-    {
-      "problem": "A student got 18 questions right out of 24. What percent is that?",
-      "solution": "Divide the part by the whole: 18/24 = 3/4. Multiply by 100: 75%.",
-      "expression": "18/24*100",
-      "answer": "75"
-    }
-  ],
+  "idea": "A percent is a number out of 100. So 25% means 25 out of every 100, which is the fraction 25/100 or 1/4. Percentages let us compare parts of different-sized wholes on the same scale.",
+  "why": "Percent means per hundred, so 25% is simply 25/100. Finding a percent of a number is multiplying by that fraction. Finding what percent a part is just reverses this: you divide part by whole, then multiply by 100 to say it out of 100. A percent change compares the change to the starting amount, because the start is the whole (100%). That is why an increase of 20% means the new amount is 120% of the old, which is 1.2 times it.",
+  "theory_example": {
+    "problem": "A shirt costs 50 euros. It is reduced by 30%. What is the new price, and what percent of the old price is the new price?",
+    "steps": "Step 1: 30% of 50 = 30/100 x 50 = 15. The discount is 15 euros. Step 2: New price = 50 - 15 = 35 euros. Step 3: Check with the shortcut: paying 100% - 30% = 70% of the price, and 70/100 x 50 = 35. Step 4: What percent is 35 of 50? 35/50 x 100 = 70%.",
+    "expression": "50*(1-Rational(30,100))",
+    "answer": "35"
+  },
   "lesson_outline": [
     {
       "minutes": 5,
-      "activity": "Warm-up: show a 10 by 10 grid with some squares shaded. Ask students to say what fraction is shaded and then to write it out of 100. Introduce the word percent as per hundred."
+      "activity": "Opening with Percent of a number: draw a 10 by 10 grid on the board. Shade 25 squares and ask what fraction is shaded. Say that percent means out of 100, and write 25% = 25/100 = 1/4."
+    },
+    {
+      "minutes": 7,
+      "activity": "Teach Percent of a number: work through 25% of 80 with the bar picture, then give the class the check question to answer on paper or mini whiteboards."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach What percent is one number of another: do the example 18 out of 24 together, then ask the check question and compare answers in pairs."
     },
     {
       "minutes": 10,
-      "activity": "Teach percent of an amount using the grid and the bar picture. Work example 1 (25% of 80) together. Show the easy benchmarks: 50%, 25%, 10%, 1%."
+      "activity": "Teach Percent increase and decrease: work the example of a price of 60 rising by 20%. Show the bars, then the shortcut of multiplying by 1.2. Ask the check question and talk through the common mistakes."
     },
     {
       "minutes": 10,
-      "activity": "Discounts and increases with the jacket story. Work example 2 and show the multiplier idea (0.85 and 1.2). Pairs then try try-it problems 1 and 2."
+      "activity": "Extra examples and questions round: work the 3 extra examples with the class, letting students suggest the first step each time. Take open questions at the end."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Percent of a number",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a bar for the whole, 80, and split it into 4 equal parts of 20, since 25% is one quarter. One part is 25% of 80, which is 20. Show that 10% is the whole split into 10 parts, so 10% of 80 is 8."
+        },
+        {
+          "kind": "procedure",
+          "text": "Turn the percent into a fraction out of 100, then multiply. 25% of 80 = 25/100 x 80 = 0.25 x 80 = 20. The word 'of' means multiply."
+        }
+      ],
+      "example": {
+        "problem": "What is 25% of 80?",
+        "steps": "Step 1: Write 25% as 25/100 = 0.25. Step 2: Multiply by the whole: 0.25 x 80 = 20. Step 3: Check: 25% is a quarter, and a quarter of 80 is 20.",
+        "expression": "Rational(25,100)*80",
+        "answer": "20"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Whole;25 percent",
+        "a": 80,
+        "b": 20,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students divide by the percent number, for example 80 / 25, instead of using 25/100.",
+          "response": "Ask: is 25% of 80 more or less than 80? Then have them use 25% = a quarter to see the answer must be 20. Remind them that percent always means out of 100."
+        },
+        {
+          "mistake": "Students write 25% as 2.5 or 25 when multiplying.",
+          "response": "Show 25% as 25 out of 100 on the grid. It is 0.25, not 2.5. Have them estimate first: the answer should be smaller than 80."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why does 'of' mean multiply?",
+          "answer": "Half of 10 means 1/2 x 10. Taking a fraction of a number is multiplying by that fraction, and a percent is a fraction out of 100, so the same idea applies."
+        },
+        {
+          "question": "Can a percent be more than 100?",
+          "answer": "Yes. 150% of 80 is 1.5 x 80 = 120. It means more than the whole, such as one and a half times the amount."
+        },
+        {
+          "question": "Is there a quicker way to find 10%?",
+          "answer": "Yes. 10% is one tenth, so divide by 10. Then 20% is double that, and 5% is half of it."
+        }
+      ],
+      "check_question": {
+        "question": "What is 15% of 200?",
+        "solution": "15% is 15/100 = 0.15, and 0.15 x 200 = 30. Another way: 10% of 200 is 20, 5% is 10, and 20 + 10 = 30.",
+        "expression": "Rational(15,100)*200",
+        "answer": "30"
+      }
     },
     {
-      "minutes": 10,
-      "activity": "Percent change and what percent one number is of another. Work example 3, then try-it problem 3. Include the up 10% then down 10% puzzle and let students discover the answer 99."
+      "title": "What percent is one number of another",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "In a class of 24 students, 18 walked to school. To compare with another class of a different size, we ask how many would walk out of 100. 18 out of 24 is the same as 3 out of 4, which is 75 out of 100, so 75% walked."
+        },
+        {
+          "kind": "procedure",
+          "text": "Write part over whole as a fraction, divide, then multiply by 100 and add the percent sign. 18/24 = 0.75, and 0.75 x 100 = 75%. The whole always goes on the bottom."
+        }
+      ],
+      "example": {
+        "problem": "18 of the 24 students in a class walk to school. What percent walk?",
+        "steps": "Step 1: Part = 18 and whole = 24. Step 2: Divide: 18/24 = 3/4 = 0.75. Step 3: Multiply by 100: 0.75 x 100 = 75. Step 4: So 75% walk.",
+        "expression": "Rational(18,24)*100",
+        "answer": "75"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Whole;Part",
+        "a": 24,
+        "b": 18,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students divide the whole by the part, 24/18, or put the smaller number as the whole.",
+          "response": "Ask which number is 100%. The whole goes on the bottom. Check that the answer is under 100% when the part is smaller than the whole."
+        },
+        {
+          "mistake": "Students give 0.75 or 3/4 and forget to convert to a percent.",
+          "response": "Say that 0.75 means 75 out of 100, so multiply by 100 and write the percent sign. Ask them to read the answer in a sentence."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we multiply by 100?",
+          "answer": "The fraction 0.75 means 0.75 of the whole. A percent counts out of 100, so we scale up: 0.75 x 100 = 75 out of 100."
+        },
+        {
+          "question": "Which number is the whole?",
+          "answer": "The whole is the total, the amount you compare to. Look for words like 'of the class' or 'out of'. The number after 'of' is usually the whole."
+        },
+        {
+          "question": "Does it matter if the fraction does not divide neatly?",
+          "answer": "No. 1 out of 3 is 0.333..., about 33.3%. You can round the answer and say that it is about."
+        }
+      ],
+      "check_question": {
+        "question": "9 out of 36 apples are bad. What percent are bad?",
+        "solution": "9/36 = 1/4 = 0.25, and 0.25 x 100 = 25%.",
+        "expression": "Rational(9,36)*100",
+        "answer": "25"
+      }
     },
     {
-      "minutes": 5,
-      "activity": "Wrap-up: students write one sentence for 'a percent is a percent of what?'. Go over the three common mistakes and answer questions."
+      "title": "Percent increase and decrease",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a bar of 60 for the old price. An increase of 20% adds a piece that is one fifth of the bar, 12. The new bar is 72. Show the old bar as 100% and the new one as 120%."
+        },
+        {
+          "kind": "procedure",
+          "text": "Method A: find the change, 20% of 60 = 12, then add it: 60 + 12 = 72. Method B: multiply by the new percent in one step, 120% = 1.2, so 1.2 x 60 = 72. For a decrease of 20%, subtract, or multiply by 0.8."
+        }
+      ],
+      "example": {
+        "problem": "A price of 60 euros goes up by 20%. What is the new price?",
+        "steps": "Step 1: Find 20% of 60: 0.20 x 60 = 12. Step 2: Add the change to the old price: 60 + 12 = 72. Step 3: Check with the shortcut: 100% + 20% = 120%, and 1.2 x 60 = 72.",
+        "expression": "60*(1+Rational(20,100))",
+        "answer": "72"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Old;New",
+        "a": 60,
+        "b": 72,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students find the 20% but stop there, answering 12 instead of the new price.",
+          "response": "Ask what the question is asking for. 12 is the change, not the new price. Have them reread and add or subtract the change from the old price."
+        },
+        {
+          "mistake": "Students think an increase of 20% followed by a decrease of 20% brings back the start.",
+          "response": "Try it with 100: up 20% gives 120, and 20% of 120 is 24, so down gives 96. The second percent is of a bigger amount, so they do not cancel."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is a 20% increase the same as multiplying by 1.2?",
+          "answer": "The old price is 100%. Adding 20% makes 120%, which is 1.20 as a decimal. So the new price is 1.2 times the old."
+        },
+        {
+          "question": "A percent of what? Why the old amount?",
+          "answer": "The change is compared to where you started, so the starting amount is the 100%."
+        },
+        {
+          "question": "How do I find the percent change if I know both prices?",
+          "answer": "Find the change, new minus old, then divide by the old price and multiply by 100. From 60 to 72 the change is 12, and 12/60 x 100 = 20%."
+        }
+      ],
+      "check_question": {
+        "question": "A price of 50 euros is reduced by 10%. What is the new price?",
+        "solution": "10% of 50 = 5. Then 50 - 5 = 45 euros. Or 0.9 x 50 = 45.",
+        "expression": "50*(1-Rational(10,100))",
+        "answer": "45"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "What is 35% of 240?",
+      "solution": "35% = 35/100 = 0.35, and 0.35 x 240 = 84. Check: 10% of 240 is 24, so 30% is 72 and 5% is 12, and 72 + 12 = 84.",
+      "expression": "Rational(35,100)*240",
+      "answer": "84"
+    },
+    {
+      "problem": "A team won 14 of its 20 games. What percent of its games did it win?",
+      "solution": "Part = 14 and whole = 20. 14/20 = 0.7, and 0.7 x 100 = 70, so it won 70%.",
+      "expression": "Rational(14,20)*100",
+      "answer": "70"
+    },
+    {
+      "problem": "A jacket costs 80 euros. It is reduced by 25%. What is the sale price?",
+      "solution": "25% of 80 = 20. The sale price is 80 - 20 = 60 euros. Shortcut: 75% of 80 = 0.75 x 80 = 60.",
+      "expression": "80*(1-Rational(25,100))",
+      "answer": "60"
     }
   ],
   "meta": {
     "concept": "percentages",
     "title": "Percentages",
     "model": "sonnet",
-    "cost_usd": 0.03449,
+    "cost_usd": 0.05434,
     "generated": "2026-11-18",
     "grounded_on": null,
     "license": null,

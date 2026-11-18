@@ -1,123 +1,232 @@
 {
-  "idea": "A fraction is a number, a single point on the number line, not just \"some pieces of a pie\". 3/4 is the point you reach by cutting the distance from 0 to 1 into 4 equal parts and walking 3 of them. Different-looking fractions such as 3/4 and 6/8 can name the same point.",
-  "why": "The denominator tells you how many equal parts make one whole (the unit). The numerator tells you how many of those parts you count. Because the parts are equal, 3/4 always sits in the same spot: three steps of size 1/4. Cutting each fourth in half gives 8 equal parts, and the same distance now takes 6 of them, so 3/4 = 6/8. Multiplying top and bottom by the same number changes the size of the pieces and the count of pieces in opposite ways, so the total stays the same. Fractions bigger than 1, like 5/4, are just more steps: 4 steps reach 1, and one more goes past it. A fraction is also a division: 3/4 is the amount each person gets when 3 wholes are shared equally among 4, which is why a/b means a ÷ b. That is how a fraction can be a number in its own right, one that can be placed, compared and calculated with.",
-  "explanations": [
-    {
-      "kind": "picture",
-      "text": "Draw a number line from 0 to 2 with 0, 1 and 2 marked. Split the space from 0 to 1 into 4 equal parts and label the marks 1/4, 2/4, 3/4, 4/4. Point out that 4/4 lands exactly on 1. Continue past 1 to 5/4, 6/4, 7/4 and 8/4 (which is 2). Then draw a second line right below it, cut into 8 equal parts, and show that 6/8 sits directly below 3/4. Say: 'Same point, same number, different name.'"
-    },
-    {
-      "kind": "story",
-      "text": "Three equal chocolate bars are shared fairly among 4 friends. One way: cut every bar into 4 equal strips and give each friend 3 strips. Each strip is 1/4 of a bar, so each friend gets 3/4 of a bar. So 3 ÷ 4 = 3/4. Now ask: what if each friend gets 6 strips from bars cut into 8 pieces? Same amount of chocolate, so 6/8 = 3/4. The story shows a fraction is an amount, a quantity you can hold, not only a label for pieces."
-    },
-    {
-      "kind": "procedure",
-      "text": "To place a fraction a/b on the number line: (1) Draw 0 and 1. (2) Cut the space from 0 to 1 into b equal parts, where b is the denominator. (3) Starting at 0, count a parts, where a is the numerator. (4) Mark the point and label it a/b. If a is larger than b, keep going past 1 using more steps of the same size. To compare two fractions, place both on the same line, and the one further right is larger. To find an equal fraction, multiply or divide top and bottom by the same non-zero number."
-    }
-  ],
-  "student_questions": [
-    {
-      "question": "But why is 1/8 smaller than 1/4 when 8 is bigger than 4?",
-      "answer": "The denominator says how many equal pieces the one whole is cut into. More pieces means each piece is smaller. Think of sharing one pizza among 8 people versus 4 people: with 8 people each slice is smaller. So 1/8 is less than 1/4."
-    },
-    {
-      "question": "Why do the top and bottom both have to be multiplied by the same number?",
-      "answer": "Multiplying the bottom by 2 cuts each piece in half, so there are twice as many pieces. To cover the same distance you now need twice as many of them, so the top doubles too. If you changed only one, you would be describing a different distance, and the point would move on the number line."
-    },
-    {
-      "question": "Is 5/4 really a number? I thought you can't take more than the whole.",
-      "answer": "Yes, it is a number. Each step is 1/4 long, and 4 steps reach 1. If you take 5 steps you go one step past 1, so 5/4 is 1 and 1/4. It lives on the number line just right of 1. Think of 5 quarter-hour blocks: that is an hour and a quarter."
-    },
-    {
-      "question": "Is 3/4 the same as 3 divided by 4?",
-      "answer": "Yes. If you share 3 wholes equally among 4 people, each gets 3/4. The fraction bar is a division sign in another form. This is why a whole number like 2 can be written 2/1 or 6/3: it is a division that works out to that number."
-    }
-  ],
-  "mistakes": [
-    {
-      "mistake": "Thinking a bigger denominator means a bigger fraction, so 1/8 > 1/4.",
-      "response": "Ask the student to fold a paper strip into 4 parts and another into 8 parts, then compare one part from each. Let them see that more parts make smaller parts. Then put 1/4 and 1/8 on a number line together."
-    },
-    {
-      "mistake": "Adding to the top and bottom to get an equal fraction, such as 3/4 = 5/6 (adding 2 to both).",
-      "response": "Place 3/4 and 5/6 on the same number line and show they are at different points. Then contrast with multiplying: 3/4 and 6/8 land in the same place. Say that equal fractions come from cutting the pieces smaller or joining them larger, which is multiplying or dividing, never adding."
-    },
-    {
-      "mistake": "Drawing parts that are not equal and still calling them fractions, or counting tick marks instead of the gaps on a number line.",
-      "response": "Remind students that fractions need equal parts. Use a line from 0 to 1 and have them count the spaces between marks, not the marks. A quick check: 'Do all the pieces have the same length?' and 'Count the jumps from 0.'"
-    }
-  ],
-  "worked_examples": [
-    {
-      "problem": "Where does 3/5 go on the number line between 0 and 1, and what number does it equal as a decimal?",
-      "steps": "Cut the space from 0 to 1 into 5 equal parts. Each part is 1/5 long. Count 3 parts from 0 to find 3/5. As a division, 3/5 means 3 ÷ 5. Since 1/5 = 0.2, three of them make 3 × 0.2 = 0.6.",
-      "expression": "3/5",
-      "answer": "3/5"
-    },
-    {
-      "problem": "Show that 2/3 and 8/12 are the same number.",
-      "steps": "Cut each third into 4 equal parts. The whole is then cut into 3 × 4 = 12 parts, and the 2 thirds become 2 × 4 = 8 of the small parts. So 2/3 = 8/12. Check by division: 8 ÷ 4 = 2 and 12 ÷ 4 = 3, which gives back 2/3.",
-      "expression": "(2*4)/(3*4)",
-      "answer": "2/3"
-    },
-    {
-      "problem": "Three equal pizzas are shared fairly among 5 people. How much pizza does each person get, and is it more or less than half a pizza?",
-      "steps": "Each person gets 3 ÷ 5 = 3/5 of a pizza. To compare with 1/2, use the common denominator 10: 3/5 = 6/10 and 1/2 = 5/10. Since 6/10 is more than 5/10, each person gets a little more than half a pizza. The difference is 6/10 - 5/10 = 1/10.",
-      "expression": "Rational(3,5) - Rational(1,2)",
-      "answer": "1/10"
-    }
-  ],
-  "try_it": [
-    {
-      "problem": "Four equal sandwiches are shared fairly among 8 people. What fraction of a sandwich does each person get, written in simplest form?",
-      "solution": "Each person gets 4 ÷ 8 = 4/8. Divide top and bottom by 4 to get 1/2.",
-      "expression": "Rational(4,8)",
-      "answer": "1/2"
-    },
-    {
-      "problem": "Write 9/4 as a whole number plus a fraction, then give the value of its fractional part.",
-      "solution": "4 fits into 9 twice with 1 left over, so 9/4 = 2 and 1/4. The fractional part is 1/4. Check: 2 + 1/4 = 9/4.",
-      "expression": "Rational(9,4) - 2",
-      "answer": "1/4"
-    },
-    {
-      "problem": "Which is larger, 5/6 or 3/4? Give the difference between them.",
-      "solution": "Use the common denominator 12: 5/6 = 10/12 and 3/4 = 9/12. So 5/6 is larger, by 10/12 - 9/12 = 1/12.",
-      "expression": "Rational(5,6) - Rational(3,4)",
-      "answer": "1/12"
-    }
-  ],
+  "idea": "A fraction is a number, just like 2 or 7. It sits at one exact point on the number line. The bottom number says how many equal parts one whole is cut into, and the top number says how many of those parts we count. A fraction such as 3/4 also means 3 divided by 4.",
+  "why": "When we cut 1 into b equal parts, each part has a size of its own, written 1/b. Counting a of those parts gives a/b. Because the parts are equal, a/b has a fixed place on the number line. Two fractions can have different names and still be the same point. Cutting each part into 2 smaller parts doubles both the number of parts counted and the number of parts in the whole, so the size does not change. That is why 2/3 = 4/6. To compare fractions, give them the same size of part (a common denominator), then compare the counts.",
+  "theory_example": {
+    "problem": "Show that 3/4 is a number: say what it means, where it sits on the number line, and how it compares with 2/3.",
+    "steps": "1) Cut the whole (0 to 1) into 4 equal parts. Each part is 1/4. 2) Count 3 of them: 3/4. This is the point three quarters of the way from 0 to 1. 3) It also equals 3 divided by 4 = 0.75. 4) To compare with 2/3, use twelfths: 3/4 = 9/12 and 2/3 = 8/12. 9 twelfths is more than 8 twelfths, so 3/4 > 2/3. The difference is 9/12 - 8/12 = 1/12.",
+    "expression": "Rational(3,4) - Rational(2,3)",
+    "answer": "1/12"
+  },
   "lesson_outline": [
     {
-      "activity": "Warm-up: students fold a paper strip into halves and fourths, label it as 0 to 1, and say what they notice about the pieces.",
-      "minutes": 5
+      "minutes": 5,
+      "activity": "Hook. Fold a paper strip into 4 equal parts and ask what one part should be called. Collect their words, then name it 1/4. This opens the subtopic 'A fraction names equal parts of a whole'."
     },
     {
-      "activity": "Teach the picture: build a number line with fourths on the board, including 4/4 = 1 and fractions past 1 such as 5/4.",
-      "minutes": 8
+      "minutes": 8,
+      "activity": "Teach 'A fraction names equal parts of a whole'. Draw the 3/8 pizza bar from the example. Stress that the parts must be equal. Ask the check question and let students answer on mini whiteboards or in their notebooks."
     },
     {
-      "activity": "Chocolate-bar sharing story: 3 bars among 4 friends, linking fractions with division.",
-      "minutes": 7
+      "minutes": 9,
+      "activity": "Teach 'Fractions live on the number line'. Draw a line from 0 to 2 on the board. Cut each unit into fourths and walk to 3/4 and then 5/4. Say that fractions are numbers with a position, and that they can be bigger than 1. Ask the check question."
     },
     {
-      "activity": "Equal fractions: line up fourths and eighths and show 3/4 = 6/8. Discuss why you multiply or divide top and bottom.",
-      "minutes": 8
+      "minutes": 8,
+      "activity": "Teach 'Equivalent fractions and comparing'. Show 2/3 = 8/12 and 3/4 = 9/12 with the same strip folded two ways. Students then compare a pair of their own with a neighbor. Ask the check question."
     },
     {
-      "activity": "Try it: students work the three practice problems in pairs while the teacher circulates.",
-      "minutes": 8
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Work through the 3 extra examples together, one at a time, letting students suggest the first step. Take questions at the end and name one thing that was tricky."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "A fraction names equal parts of a whole",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw one bar and cut it into 8 pieces of the same size. Colour 3 pieces. Say: the bottom number 8 names the size of each piece (eighths). The top number 3 counts how many pieces we have. So 3/8. If the pieces are not the same size, we cannot call them eighths."
+        },
+        {
+          "kind": "story",
+          "text": "A pizza is cut into 8 equal slices and you eat 3. Ask: how much of the pizza did you eat? Not '3 slices' but a number for the amount of pizza. That number is 3/8. If the pizza were cut into 4 equal slices, one slice would be a bigger piece, 1/4."
+        }
+      ],
+      "example": {
+        "problem": "A chocolate bar has 8 equal pieces. Maya eats 3 pieces. What fraction of the bar did she eat, and what fraction is left?",
+        "steps": "1) The bar is cut into 8 equal pieces, so each piece is 1/8. 2) Maya ate 3 pieces: 3/8. 3) Pieces left: 8 - 3 = 5, so 5/8 is left. 4) Check: 3/8 + 5/8 = 8/8 = 1 whole bar.",
+        "expression": "Rational(3,8)",
+        "answer": "3/8"
+      },
+      "visual": {
+        "kind": "fractionbar",
+        "expr": "",
+        "a": 3,
+        "b": 8,
+        "c": 1,
+        "d": 8
+      },
+      "mistakes": [
+        {
+          "mistake": "Students count the pieces without checking they are equal, so a bar cut into 3 unequal pieces with 1 shaded is called 1/3.",
+          "response": "Ask them to compare the pieces by folding or measuring. Say: a fraction needs equal parts, because only then does the bottom number tell us the size of a piece. Let them redraw the bar fairly."
+        },
+        {
+          "mistake": "Students write the fraction upside down, for example 8/3 for 3 shaded out of 8.",
+          "response": "Use the words: 3 out of 8 pieces, 3 eighths. Say the bottom number names the kind of piece and the top number counts them. Have them say it aloud before they write it."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is the bottom number bigger when the pieces are smaller?",
+          "answer": "Because the bottom number tells how many equal pieces fit in one whole. More pieces share the same whole, so each piece is smaller. Eighths are smaller than fourths because 8 pieces fit into the same bar."
+        },
+        {
+          "question": "Is 3/8 really a number, or just a picture?",
+          "answer": "It is a number, just like 3 or 0.5. It has a size, you can add it, and you can put it on a number line. The bar is only a way to see it."
+        },
+        {
+          "question": "Why do we need the parts to be equal?",
+          "answer": "If the pieces are different sizes, '3 pieces' could be a big amount or a small amount. Equal pieces make the count mean the same thing for everyone."
+        }
+      ],
+      "check_question": {
+        "question": "A ribbon is cut into 5 equal pieces and you use 2. What fraction of the ribbon did you use?",
+        "solution": "Each piece is 1/5. You used 2 of them, so 2/5 of the ribbon.",
+        "expression": "Rational(2,5)",
+        "answer": "2/5"
+      }
     },
     {
-      "activity": "Exit talk: students answer 'Why is 1/8 smaller than 1/4?' in one sentence and share one thing they learned.",
-      "minutes": 4
+      "title": "Fractions live on the number line",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a number line from 0 to 2 with 0, 1 and 2 marked. Cut each unit between whole numbers into 4 equal steps. Label the marks 1/4, 2/4, 3/4, 4/4 (which is 1), 5/4 and so on. Point out that 4/4 lands exactly on 1, and that 5/4 is just past 1."
+        },
+        {
+          "kind": "procedure",
+          "text": "To place a/b: 1) Look at the bottom number b and cut each unit into b equal steps. 2) Start at 0 and take a steps of size 1/b. 3) Stop and mark the point. If a is bigger than b, you pass 1 and keep going. For example, 5/4 is 4 steps to reach 1, then 1 more step."
+        }
+      ],
+      "example": {
+        "problem": "Where does 5/4 go on the number line? Write it as a mixed number too.",
+        "steps": "1) The bottom number is 4, so cut each unit into 4 equal steps of size 1/4. 2) Take 5 steps from 0. 3) After 4 steps we are at 4/4 = 1. 4) One more step gives 1 and 1/4. 5) So 5/4 sits one quarter past 1, between 1 and 2.",
+        "expression": "Rational(5,4)",
+        "answer": "5/4"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students think a fraction is always less than 1, so 5/4 'can't exist'.",
+          "response": "Walk the steps on the number line. Say: the top number just counts steps, and nothing says we must stop at 1. Show 4/4 = 1 and then one more quarter."
+        },
+        {
+          "mistake": "Students count the marks instead of the gaps, so they place 3/4 one mark too far or too near.",
+          "response": "Remind them the fraction counts steps from 0, not dots. Use a finger or a counter that hops: one hop of size 1/4, then another. Count the hops aloud."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we start counting at 0 and not at 1?",
+          "answer": "Because 0 is where we start measuring, like the zero on a ruler. 3/4 means three quarter-steps from 0."
+        },
+        {
+          "question": "Is 4/4 the same as 1?",
+          "answer": "Yes. Four quarter-steps from 0 take us exactly to 1. It is one whole, written another way."
+        },
+        {
+          "question": "Can I write a fraction as a division?",
+          "answer": "Yes. a/b means a divided by b. 3/4 is 3 shared into 4 equal parts, which is also 0.75, and that sits at the same point on the line."
+        }
+      ],
+      "check_question": {
+        "question": "Where is 7/4 on the number line? Is it before or after 1?",
+        "solution": "Cut each unit into quarters and take 7 steps. After 4 steps we are at 1, and 3 more steps get us to 1 and 3/4. So 7/4 is after 1.",
+        "expression": "Rational(7,4)",
+        "answer": "7/4"
+      }
+    },
+    {
+      "title": "Equivalent fractions and comparing",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw two equal bars. Cut the first into 3 parts and shade 2. Cut the second into 6 parts and shade 4. The shaded lengths match. Say: cutting every part in two gave twice as many parts, and twice as many shaded ones, but the same amount."
+        },
+        {
+          "kind": "procedure",
+          "text": "To compare two fractions, give them the same denominator. 1) Find a number both bottoms divide into (for 3 and 4 that is 12). 2) Multiply top and bottom of each fraction by the same number to get twelfths. 3) Compare the tops: the bigger top is the bigger fraction."
+        }
+      ],
+      "example": {
+        "problem": "Which is larger, 2/3 or 3/4? By how much?",
+        "steps": "1) Both 3 and 4 go into 12, so use twelfths. 2) 2/3 = (2 x 4)/(3 x 4) = 8/12. 3) 3/4 = (3 x 3)/(4 x 3) = 9/12. 4) 9 twelfths is more than 8 twelfths, so 3/4 is larger. 5) The difference is 9/12 - 8/12 = 1/12.",
+        "expression": "Rational(3,4) - Rational(2,3)",
+        "answer": "1/12"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students multiply only the bottom (or only the top) to make an equivalent fraction, for example 2/3 = 2/6.",
+          "response": "Show on a bar that 2/6 is smaller than 2/3. Say: whatever we multiply the bottom by, we must multiply the top by too, because we are cutting every part into smaller pieces and counting all of them."
+        },
+        {
+          "mistake": "Students compare fractions by looking at the bottom numbers only and say 1/8 is bigger than 1/4 because 8 is bigger than 4.",
+          "response": "Draw two bars with 1/4 and 1/8 shaded. Ask which shaded part is longer. Remind them that more pieces in the whole means smaller pieces."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why does multiplying top and bottom by the same number not change the fraction?",
+          "answer": "Multiplying top and bottom by the same number is the same as multiplying by 1, like 4/4. Multiplying by 1 leaves the value alone. On the bar, we just cut each part into more, smaller pieces and count them all."
+        },
+        {
+          "question": "Why do we need the same bottom number to compare?",
+          "answer": "Pieces of the same size can be compared by counting. Eighths and fifths are different sizes, so counting them doesn't tell us which total is larger. Same size first, then count."
+        },
+        {
+          "question": "Do I always have to use the smallest common bottom number?",
+          "answer": "No. Any common one works, such as 24 for 3 and 4. The smallest is just easier, because the numbers stay small."
+        }
+      ],
+      "check_question": {
+        "question": "Which is larger, 1/2 or 3/5? Use tenths.",
+        "solution": "1/2 = 5/10 and 3/5 = 6/10. Six tenths is more than five tenths, so 3/5 is larger. The difference is 1/10.",
+        "expression": "Rational(3,5) - Rational(1,2)",
+        "answer": "1/10"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Which is larger, 5/8 or 3/5? By how much?",
+      "solution": "Use 40 as the common bottom. 5/8 = 25/40 and 3/5 = 24/40. 25 is more than 24, so 5/8 is larger by 1/40.",
+      "expression": "Rational(5,8) - Rational(3,5)",
+      "answer": "1/40"
+    },
+    {
+      "problem": "Write 7/3 as a mixed number and say where it is on the number line.",
+      "solution": "Cut each unit into thirds. 3 thirds make 1, so 6 thirds make 2, and one more third gives 2 and 1/3. It lies a third of the way past 2, between 2 and 3.",
+      "expression": "Rational(7,3)",
+      "answer": "7/3"
+    },
+    {
+      "problem": "Find the missing number: 3/5 = ?/20.",
+      "solution": "The bottom changed from 5 to 20, so it was multiplied by 4. Multiply the top by 4 too: 3 x 4 = 12. So 3/5 = 12/20.",
+      "expression": "3*4",
+      "answer": "12"
     }
   ],
   "meta": {
     "concept": "fractions-as-numbers",
     "title": "Fractions as numbers",
     "model": "sonnet",
-    "cost_usd": 0.03665,
+    "cost_usd": 0.07223,
     "generated": "2026-11-18",
     "grounded_on": null,
     "license": null,

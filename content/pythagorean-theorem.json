@@ -1,127 +1,232 @@
 {
-  "idea": "In a right triangle with legs a and b and hypotenuse c (the side opposite the right angle), a² + b² = c². It only works for right triangles, and the hypotenuse is always the longest side.",
-  "why": "Take a big square with side a + b. Put four copies of the right triangle inside it, one in each corner. The empty space in the middle is a tilted square with side c, so its area is c². Now rearrange the same four triangles into two a-by-b rectangles. The empty space is now two squares, one with area a² and one with area b². The big square and the four triangles are the same in both pictures, so the empty areas must be equal: c² = a² + b². The theorem is a statement about area, which is why the sides get squared and not just added. The converse also holds: if a² + b² = c², the triangle has a right angle. That is why builders use 3-4-5 to check corners.",
-  "explanations": [
+  "idea": "In a right triangle, the two sides that meet at the right angle are the legs (a and b). The longest side, across from the right angle, is the hypotenuse (c). The square of the hypotenuse equals the sum of the squares of the legs: a² + b² = c². It works only for right triangles.",
+  "why": "Take a big square with side a + b and put four copies of the right triangle inside it. Arranged one way, the empty space is one tilted square with side c, so its area is c². Move the same four triangles into two a-by-b rectangles. Now the empty space is two squares, a² and b². The big square and the four triangles are the same in both pictures, so the empty areas must match: c² = a² + b². Squares are about area, which is why we add squares and not lengths. Taking the square root at the end turns the area c² back into the length c.",
+  "theory_example": {
+    "problem": "A right triangle has legs 5 and 12. Find the hypotenuse, then check that a triangle with sides 5, 12 and 13 has a right angle.",
+    "steps": "1) The legs are a = 5 and b = 12, so c is unknown.\n2) a² + b² = 25 + 144 = 169.\n3) c² = 169, so c = √169 = 13.\n4) Converse: the sides 5, 12, 13 satisfy 5² + 12² = 13², because 25 + 144 = 169. So the triangle has a right angle.",
+    "expression": "sqrt(5**2 + 12**2)",
+    "answer": "13"
+  },
+  "lesson_outline": [
     {
-      "kind": "picture",
-      "text": "Draw a square with side a + b. In the first drawing, put a right triangle in each corner so the empty middle is a tilted square with side c. In the second drawing, push the triangles together into two a-by-b rectangles, so the empty space is a small a-by-a square and a b-by-b square. Shade the empty parts in both drawings. Same big square, same four triangles, so the shaded areas match: c² = a² + b²."
+      "minutes": 5,
+      "activity": "Hook and vocabulary. Draw a right triangle with legs 3 and 4 and ask for guesses about the long side. Name the legs and the hypotenuse. Say that the hypotenuse is opposite the right angle and is always the longest side. Use the start of 'Finding the hypotenuse'."
     },
     {
-      "kind": "story",
-      "text": "A builder wants a corner of a room to be exactly square. She marks 3 metres along one wall and 4 metres along the other, then measures between the two marks. If the distance is exactly 5 metres, the corner is a right angle, because 9 + 16 = 25. If it is more or less than 5, the corner is not square. This is the converse of the theorem at work."
+      "minutes": 10,
+      "activity": "Teach 'Finding the hypotenuse'. Show the rearrangement picture (two arrangements of four triangles in an a+b square) briefly. Then work the 3-4-5 example step by step on the board. Finish with the check question."
     },
     {
-      "kind": "procedure",
-      "text": "1. Check that the triangle has a right angle. 2. Find the hypotenuse, the side opposite the right angle. Call it c. 3. Write a² + b² = c². 4. To find c, add the squares of the legs and take the square root. To find a leg, subtract the square of the known leg from c², then take the square root. 5. Check that c is the longest side."
+      "minutes": 8,
+      "activity": "Teach 'Finding a missing leg'. Start from the known hypotenuse 10 and leg 6, and subtract instead of adding. Compare the two procedures side by side on the board. Finish with the check question."
+    },
+    {
+      "minutes": 7,
+      "activity": "Teach 'Checking for a right angle (the converse)'. Test 5, 12, 13 and then a non-right set. Mention that builders use 3-4-5 to check corners. Finish with the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Work the three extra examples, mixing the subtopics. Let students try each before you show the solution. Use the rest of the time for student questions."
     }
   ],
-  "student_questions": [
+  "subtopics": [
     {
-      "question": "But why do we square the sides? Why not just add them?",
-      "answer": "The theorem is about area. It says the square built on the hypotenuse has the same area as the two squares on the legs put together. Adding plain lengths doesn't match that. Try 3 and 4: 3 + 4 = 7, not 5. But 9 + 16 = 25, and the square root of 25 is 5."
+      "title": "Finding the hypotenuse",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a big square with side a + b. Put four copies of the triangle in the corners so a tilted square is left in the middle. That tilted square has side c, so its area is c². Draw the same big square again, with the triangles pushed into two a-by-b rectangles. Now the empty space is a square a² and a square b². Same big square, same four triangles, so the empty areas are equal: c² = a² + b²."
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: Check there is a right angle and find the two legs. Step 2: Square each leg. Step 3: Add the two squares. Step 4: Take the square root of the sum. Step 5: Write the unit and check that c is longer than both legs."
+        }
+      ],
+      "example": {
+        "problem": "A right triangle has legs 3 and 4. Find the hypotenuse.",
+        "steps": "1) a = 3, b = 4.\n2) a² = 9 and b² = 16.\n3) c² = 9 + 16 = 25.\n4) c = √25 = 5.\n5) 5 is longer than both legs, so it makes sense.",
+        "expression": "sqrt(3**2 + 4**2)",
+        "answer": "5"
+      },
+      "visual": {
+        "kind": "triangle",
+        "expr": "",
+        "a": 3,
+        "b": 4,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Adding the sides instead of the squares, e.g. 3 + 4 = 7 so c = 7.",
+          "response": "Ask whether the hypotenuse could be 7 when the legs are 3 and 4. Then show 9 + 16 = 25 and √25 = 5. Remind students that the theorem is about areas of squares, not lengths."
+        },
+        {
+          "mistake": "Stopping at c² = 25 and writing c = 25.",
+          "response": "Ask students what 25 measures. It is an area, but we want a length. Ask which number times itself gives 25. Make 'take the square root' the last step every time."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why do we square the sides?",
+          "answer": "Because the rule is about areas. If you build a real square on each side of the triangle, the two small squares together have exactly the same area as the big square on the hypotenuse. That is the rearrangement picture."
+        },
+        {
+          "question": "Does it matter which leg is a and which is b?",
+          "answer": "No. Adding is in any order, so a² + b² is the same as b² + a². Only c is special: it must be the side opposite the right angle."
+        },
+        {
+          "question": "Why is the hypotenuse the longest side?",
+          "answer": "c² = a² + b² is bigger than a² alone and bigger than b² alone. So c is bigger than each leg. Also, the biggest angle (90°) is opposite the longest side."
+        }
+      ],
+      "check_question": {
+        "question": "A right triangle has legs 9 and 12. How long is the hypotenuse?",
+        "solution": "9² + 12² = 81 + 144 = 225, and √225 = 15.",
+        "expression": "sqrt(9**2 + 12**2)",
+        "answer": "15"
+      }
     },
     {
-      "question": "Does it work for any triangle?",
-      "answer": "No, only for right triangles. The picture proof depends on the right angle, because that is what makes the middle space a true square. If the triangle has no right angle, a² + b² will not equal c²."
+      "title": "Finding a missing leg",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Start from a² + b² = c² and move the known leg's square to the other side. For example, b² = c² − a². So: square the hypotenuse, square the known leg, subtract (the hypotenuse square always comes first), then take the square root."
+        },
+        {
+          "kind": "story",
+          "text": "A 10-metre ladder leans on a wall with its foot 6 metres from the wall. How high up the wall does it reach? The ladder is the hypotenuse because it is across from the right angle where the wall meets the ground. The ladder is longer than the distance from the wall, so we take away the small square from the big one."
+        }
+      ],
+      "example": {
+        "problem": "A right triangle has hypotenuse 10 and one leg 6. Find the other leg.",
+        "steps": "1) c = 10 and a = 6, so b is unknown.\n2) c² = 100 and a² = 36.\n3) b² = 100 − 36 = 64.\n4) b = √64 = 8.\n5) 8 is shorter than 10, so it makes sense.",
+        "expression": "sqrt(10**2 - 6**2)",
+        "answer": "8"
+      },
+      "visual": {
+        "kind": "triangle",
+        "expr": "",
+        "a": 6,
+        "b": 8,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Adding the squares again: 36 + 100 = 136.",
+          "response": "Ask which side is the hypotenuse. It is already the sum, so we are looking for a part of it. Show c² = a² + b² and then ask what b² is if we take a² away."
+        },
+        {
+          "mistake": "Using a leg as c, e.g. treating 6 as the hypotenuse.",
+          "response": "Have students mark the right angle, then trace the side opposite to it. That side is c. It is also the longest side, so the largest number in the problem is usually c."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "How do I know whether to add or subtract?",
+          "answer": "Ask what you are looking for. If it is the hypotenuse (the longest side), add the squares. If it is a leg, subtract the leg square from the hypotenuse square."
+        },
+        {
+          "question": "Can I get a negative answer when I subtract?",
+          "answer": "If you do c² − a² the right way round, no. If it comes out negative, the hypotenuse was probably mixed up with a leg."
+        },
+        {
+          "question": "What if the square root is not a whole number?",
+          "answer": "That is fine. For example √20 is a perfectly good length. You can leave it as √20 or use a calculator for a decimal."
+        }
+      ],
+      "check_question": {
+        "question": "The hypotenuse is 17 and one leg is 8. How long is the other leg?",
+        "solution": "17² − 8² = 289 − 64 = 225, and √225 = 15.",
+        "expression": "sqrt(17**2 - 8**2)",
+        "answer": "15"
+      }
     },
     {
-      "question": "How do I know which side is c?",
-      "answer": "c is the hypotenuse, the side across from the right angle. It does not touch the right angle, and it is always the longest side. The two legs are the sides that form the right angle."
-    },
-    {
-      "question": "Why do we take a square root at the end?",
-      "answer": "Because the equation gives us c², the area of the square, not the side length c. The square root undoes the squaring and gives the side. For example, c² = 25 means c = 5."
+      "title": "Checking for a right angle (the converse)",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "A builder wants to check that a wall corner is square. She measures 3 units along one wall and 4 along the other. If the distance between the two marks is exactly 5, then 9 + 16 = 25 works and the corner is a right angle. If it is not 5, the corner is not square."
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: Find the longest side and call it c. Step 2: Square the two shorter sides and add them. Step 3: Square the longest side. Step 4: If the two results are equal, the triangle has a right angle. If they are not equal, it does not."
+        }
+      ],
+      "example": {
+        "problem": "Is a triangle with sides 5, 12 and 13 a right triangle?",
+        "steps": "1) The longest side is 13, so c = 13.\n2) 5² + 12² = 25 + 144 = 169.\n3) 13² = 169.\n4) The two results are equal, so yes, it is a right triangle. The right angle is opposite the side 13.",
+        "expression": "5**2 + 12**2",
+        "answer": "169"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Testing with the wrong side as c, e.g. checking 13² + 5² = 12².",
+          "response": "Remind students that c is always the longest side. Have them circle the largest number first, before doing any squaring."
+        },
+        {
+          "mistake": "Using the theorem on a triangle without a right angle and thinking it must hold, e.g. a triangle with sides 6, 7 and 9.",
+          "response": "Show that 6² + 7² = 85 but 9² = 81, so the two do not match. The theorem only holds when there is a right angle. When the two numbers differ, there is no right angle."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why does the test work backwards too?",
+          "answer": "Three side lengths fix the shape of a triangle. If a² + b² = c², the right triangle with legs a and b has hypotenuse c, so it is the same triangle as yours. So yours has a right angle too."
+        },
+        {
+          "question": "What do I do if the two numbers are close but not equal?",
+          "answer": "Then it is not a right triangle. The test needs exact equality. If a² + b² is bigger than c², the angle is smaller than 90°. If it is smaller, the angle is bigger than 90°."
+        },
+        {
+          "question": "Do the sides have to be whole numbers?",
+          "answer": "No. Whole-number sets like 3-4-5 are just easy to work with. Any three lengths can be tested the same way."
+        }
+      ],
+      "check_question": {
+        "question": "A triangle has sides 8, 15 and 17. Find 8² + 15². Is it a right triangle?",
+        "solution": "8² + 15² = 64 + 225 = 289, and 17² = 289. They are equal, so yes, it is a right triangle.",
+        "expression": "8**2 + 15**2",
+        "answer": "289"
+      }
     }
   ],
-  "mistakes": [
+  "extra_examples": [
     {
-      "mistake": "Adding the sides instead of the squares, for example 3 + 4 = 5.",
-      "response": "Ask the student to check it: 3 + 4 is 7, not 5. Then show 9 + 16 = 25 and √25 = 5. Point back to the area picture to show that the squares are what get added."
+      "problem": "A right triangle has legs 7 and 24. Find the hypotenuse.",
+      "solution": "7² + 24² = 49 + 576 = 625, and √625 = 25.",
+      "expression": "sqrt(7**2 + 24**2)",
+      "answer": "25"
     },
     {
-      "mistake": "Using a leg as c, for example treating the side 6 as the hypotenuse when the hypotenuse is 10.",
-      "response": "Ask: where is the right angle, and which side is across from it? Have students mark c on the diagram before writing any numbers. Remind them that c must be the longest side."
-    },
-    {
-      "mistake": "Forgetting the square root at the end, for example answering 25 instead of 5.",
-      "response": "Ask: is 25 a length or an area? Then have the student check that 5² + ... fits, or that the answer is a plausible side length compared with the other sides. Encourage writing c² = 25 first, then c = 5."
-    },
-    {
-      "mistake": "Using the theorem on a triangle that has no right angle.",
-      "response": "Ask: how do we know this triangle has a right angle? If nothing says so, we can't use the theorem. Show a quick example where a² + b² ≠ c² for a non-right triangle."
-    }
-  ],
-  "worked_examples": [
-    {
-      "problem": "A right triangle has legs 3 and 4. Find the hypotenuse.",
-      "steps": "Write a² + b² = c². Put in the legs: 3² + 4² = c². That is 9 + 16 = 25, so c² = 25. Take the square root: c = 5.",
-      "expression": "sqrt(3**2 + 4**2)",
-      "answer": "5"
-    },
-    {
-      "problem": "A right triangle has legs 5 and 12. Find the hypotenuse.",
-      "steps": "5² + 12² = c². That is 25 + 144 = 169, so c² = 169. The square root is c = 13.",
-      "expression": "sqrt(5**2 + 12**2)",
-      "answer": "13"
-    },
-    {
-      "problem": "A right triangle has hypotenuse 10 and one leg 6. Find the other leg.",
-      "steps": "a² + 6² = 10². So a² + 36 = 100, and a² = 100 − 36 = 64. Take the square root: a = 8.",
-      "expression": "sqrt(10**2 - 6**2)",
-      "answer": "8"
-    }
-  ],
-  "try_it": [
-    {
-      "problem": "A right triangle has legs 6 and 8. Find the hypotenuse.",
-      "solution": "6² + 8² = 36 + 64 = 100, so c = √100 = 10.",
-      "expression": "sqrt(6**2 + 8**2)",
-      "answer": "10"
-    },
-    {
-      "problem": "A right triangle has hypotenuse 13 and one leg 5. Find the other leg.",
-      "solution": "b² = 13² − 5² = 169 − 25 = 144, so b = √144 = 12.",
+      "problem": "A 13 m ladder leans against a wall. Its foot is 5 m from the wall. How high up the wall does it reach?",
+      "solution": "The ladder is the hypotenuse, so c = 13. The height is a leg: 13² − 5² = 169 − 25 = 144, and √144 = 12 m.",
       "expression": "sqrt(13**2 - 5**2)",
       "answer": "12"
     },
     {
-      "problem": "A right triangle has legs 1 and 1. Find the hypotenuse. Give the exact value.",
-      "solution": "1² + 1² = 2, so c = √2. This is not a whole number, so leave it as a square root.",
-      "expression": "sqrt(1**2 + 1**2)",
-      "answer": "sqrt(2)"
-    }
-  ],
-  "lesson_outline": [
-    {
-      "minutes": 5,
-      "activity": "Warm-up: ask what a right triangle is. Have students name the legs and the hypotenuse on a sketch."
-    },
-    {
-      "minutes": 10,
-      "activity": "Area proof: draw or cut out the two arrangements of four triangles in an (a + b) square. Students explain why the empty areas are equal."
-    },
-    {
-      "minutes": 8,
-      "activity": "Worked examples: 3-4-5 and 5-12-13 for the hypotenuse, then 10 and 6 for a missing leg."
-    },
-    {
-      "minutes": 10,
-      "activity": "Try it: students work the three problems in pairs, marking c first and checking that it is the longest side."
-    },
-    {
-      "minutes": 4,
-      "activity": "Common mistakes: discuss adding the sides instead of the squares, using a leg as c, forgetting the square root, and using the theorem without a right angle."
-    },
-    {
-      "minutes": 3,
-      "activity": "Wrap-up: the converse and the builder's 3-4-5 check. Ask students to tell a partner one sentence about when the theorem applies."
+      "problem": "Is a triangle with sides 20, 21 and 29 a right triangle? Give the length of the longest side if it is.",
+      "solution": "The longest side is 29. 20² + 21² = 400 + 441 = 841, and 29² = 841. They are equal, so it is a right triangle, and the hypotenuse is 29.",
+      "expression": "sqrt(20**2 + 21**2)",
+      "answer": "29"
     }
   ],
   "meta": {
     "concept": "pythagorean-theorem",
     "title": "The Pythagorean theorem",
     "model": "sonnet",
-    "cost_usd": 0.03786,
+    "cost_usd": 0.06244,
     "generated": "2026-11-18",
     "grounded_on": "pythagorean-theorem.md",
     "license": "CC-BY-4.0",

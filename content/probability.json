@@ -1,127 +1,232 @@
 {
-  "idea": "The probability of an event is a number from 0 to 1 that tells how likely it is. When all outcomes are equally likely, probability = (number of outcomes we want) / (total number of possible outcomes). 0 means impossible, 1 means certain, and 1/2 means even chance.",
-  "why": "Probability is a fair share of the possible outcomes. If there are 6 equally likely outcomes and 1 of them is the one we want, that outcome gets 1 out of 6 equal shares, so 1/6. Every outcome counts the same, so we can just count. The wanted outcomes are part of the whole set of outcomes, so the fraction can never be below 0 or above 1. Also, either an event happens or it does not, so P(event) + P(not event) = 1, because the wanted outcomes and the unwanted outcomes together make up all outcomes. This only works when outcomes are equally likely; if they are not (for example, a spinner with unequal sections), counting outcomes alone gives the wrong answer. In the long run, repeating an experiment many times gives results that settle near this number, but not exactly on it in any short run.",
-  "explanations": [
-    {
-      "kind": "picture",
-      "text": "Draw a bag with 10 equal-size marbles: 3 red and 7 blue. Draw all 10 as circles in a row and shade the 3 red ones. The shaded part is 3 out of 10 equal pieces, so P(red) = 3/10. Then draw a number line from 0 to 1 with 'impossible' at 0, 'even chance' at 1/2, and 'certain' at 1, and place 3/10 a bit left of the middle."
-    },
-    {
-      "kind": "story",
-      "text": "Imagine a class raffle where each of the 20 students writes their name on an identical slip of paper and all go into a hat. Your teacher pulls out one slip without looking. Your slip is one of 20 equally likely slips, so your chance is 1 out of 20, or 1/20. If you and your two friends have a shared prize, 3 of the 20 slips count as winning, so the chance is 3/20. Chance of the prize going to someone else is 17/20, and 3/20 + 17/20 = 1."
-    },
-    {
-      "kind": "procedure",
-      "text": "Step 1: Say what the event is in words. Step 2: List or count all possible outcomes and check they are equally likely. Step 3: Count the outcomes that match the event. Step 4: Write the fraction wanted over total. Step 5: Simplify if you can. Step 6: Check it is between 0 and 1, and that it makes sense (a likely event should give a number near 1)."
-    }
-  ],
-  "student_questions": [
-    {
-      "question": "But why is the probability of heads 1/2? It could just be heads or tails, so isn't it 50-50 whatever happens?",
-      "answer": "Good thinking, and for a fair coin that is exactly right. There are 2 outcomes, they are equally likely, and 1 is heads, so 1/2. The key word is equally likely. If the coin were bent so heads came up more, the two outcomes would not be equal and we could not just count."
-    },
-    {
-      "question": "I flipped a coin and got heads 5 times in a row. Isn't tails due now?",
-      "answer": "No. The coin has no memory. Each flip is a fresh start, and the chance of tails on the next flip is still 1/2. Over many flips the share of heads and tails evens out in proportion, but the coin does not try to make up for the past."
-    },
-    {
-      "question": "Why can't probability be more than 1?",
-      "answer": "Because the outcomes we want are only part of all the outcomes. The best case is that every outcome is one we want, which gives total over total, which is 1. Nothing can be more certain than certain."
-    },
-    {
-      "question": "Why do we say 1/6 for a die when I might roll a 6 ten times in a row, or never?",
-      "answer": "1/6 does not promise what will happen in a few rolls. It describes how likely each roll is. Try it many times and the share of sixes tends to get close to 1/6, but short runs can be quite different."
-    },
-    {
-      "question": "Can I write a probability as a decimal or percent?",
-      "answer": "Yes. 1/4 is the same as 0.25 and 25%. They are just different ways of writing the same number between 0 and 1."
-    }
-  ],
-  "mistakes": [
-    {
-      "mistake": "Writing the probability as wanted over unwanted, for example 3 red and 7 blue marbles giving P(red) = 3/7.",
-      "response": "Ask, 'How many marbles are in the bag altogether?' Have them shade all 10 in a drawing and see that the bottom number is the total, 10, not just the blue ones. Say: the bottom number is everything that could happen."
-    },
-    {
-      "mistake": "Treating outcomes as equally likely when they are not, such as saying the chance of rain is 1/2 because it either rains or it doesn't.",
-      "response": "Ask whether the two outcomes are equally likely. Compare with a spinner split into a big section and a small section: 2 outcomes, but not 1/2 each. Counting outcomes only works when each has the same chance."
-    },
-    {
-      "mistake": "Counting outcomes wrongly, such as saying two dice sum to 7 has probability 1/11 because the sums 2 to 12 are 11 possibilities, or thinking the gambler's fallacy that past results change the next one.",
-      "response": "For the sums, the 11 sums are not equally likely. List all 36 pairs of dice in a grid and count those that make 7 (6 of them) to get 6/36 = 1/6. For the past-results idea, have students flip a coin a few times and record that after a run of heads the next flip is still a toss-up."
-    }
-  ],
-  "worked_examples": [
-    {
-      "problem": "A bag has 3 red, 5 blue and 2 green marbles. One marble is picked without looking. What is the probability it is blue?",
-      "steps": "Total marbles = 3 + 5 + 2 = 10. Blue marbles = 5. All marbles are equally likely to be picked. P(blue) = 5/10 = 1/2.",
-      "expression": "Rational(5,10)",
-      "answer": "1/2"
-    },
-    {
-      "problem": "A fair six-sided die is rolled. What is the probability of getting a number greater than 4?",
-      "steps": "Possible outcomes: 1, 2, 3, 4, 5, 6, so 6 in total. Numbers greater than 4: 5 and 6, so 2 outcomes. P = 2/6 = 1/3.",
-      "expression": "Rational(2,6)",
-      "answer": "1/3"
-    },
-    {
-      "problem": "The probability that a bus is on time is 7/10. What is the probability that it is not on time?",
-      "steps": "On time and not on time cover everything, so their probabilities add to 1. P(not on time) = 1 - 7/10 = 3/10.",
-      "expression": "1 - Rational(7,10)",
-      "answer": "3/10"
-    }
-  ],
-  "try_it": [
-    {
-      "problem": "A box has 4 yellow and 8 purple counters. One is picked without looking. What is the probability it is yellow?",
-      "solution": "Total = 4 + 8 = 12. Yellow = 4. P = 4/12 = 1/3.",
-      "expression": "Rational(4,12)",
-      "answer": "1/3"
-    },
-    {
-      "problem": "A fair die is rolled. What is the probability of getting an even number?",
-      "solution": "Even numbers are 2, 4, 6, so 3 outcomes out of 6. P = 3/6 = 1/2.",
-      "expression": "Rational(3,6)",
-      "answer": "1/2"
-    },
-    {
-      "problem": "The probability that it snows on a given day is 3/20. What is the probability that it does not snow?",
-      "solution": "P(not snow) = 1 - 3/20 = 17/20.",
-      "expression": "1 - Rational(3,20)",
-      "answer": "17/20"
-    }
-  ],
+  "idea": "Probability measures how likely an event is, using a number from 0 (impossible) to 1 (certain). When all outcomes are equally likely, the probability of an event is the number of outcomes we want divided by the total number of outcomes. We can write it as a fraction, a decimal or a percentage.",
+  "why": "If every outcome is equally likely, each one gets the same share of the total chance. Counting the outcomes you want and putting them over all outcomes adds up those equal shares, so the result is a fraction of the whole. All outcomes together make the whole, which is 1. That is why the chances of an event happening and of it not happening add to 1, and why you can find the chance that something does not happen by subtracting from 1. Over many trials, about that fraction of the trials will show the event, which is why expected count = probability x number of trials.",
+  "theory_example": {
+    "problem": "A spinner has 8 equal sections numbered 1 to 8. Find the probability of landing on a number greater than 5, the probability of not doing so, and how many times you would expect it in 80 spins.",
+    "steps": "1. All 8 sections are equally likely, so there are 8 outcomes in total. 2. Numbers greater than 5 are 6, 7 and 8, which is 3 outcomes. 3. P(greater than 5) = 3/8. 4. P(not greater than 5) = 1 - 3/8 = 5/8. Check: 1, 2, 3, 4, 5 are 5 sections, so 5/8. 5. Expected count in 80 spins = 3/8 x 80 = 30.",
+    "expression": "Rational(3,8)",
+    "answer": "3/8"
+  },
   "lesson_outline": [
     {
       "minutes": 5,
-      "activity": "Warm-up: Ask students to sort statements like 'the sun rises tomorrow', 'a fair coin lands heads', 'I roll a 7 on a normal die' on a line from impossible to certain. Introduce the 0 to 1 scale."
-    },
-    {
-      "minutes": 10,
-      "activity": "Teach the idea with the marble bag picture: wanted over total, with equally likely outcomes. Work example 1 together."
+      "activity": "Warm-up: ask the class how likely a coin is to land heads, or that the sun rises tomorrow, or that they grow a tail. Draw a line from 0 to 1 and place their answers on it. This leads into Probability as a fraction."
     },
     {
       "minutes": 8,
-      "activity": "Worked examples 2 and 3 on the board. Name the 'not' rule: P(not) = 1 - P. Pause for the question 'why must outcomes be equally likely?'"
+      "activity": "Teach Probability as a fraction. Show the bag of 10 marbles (3 red, 2 blue, 5 green) and the bar picture. Work the example together, then ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach Chances that do not happen: the complement. Use the same bag and the bars for red and not red. Show that the two chances add to 1, and ask the check question."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach Expected counts in many trials. Use the die rolled 60 times with its bars. Stress that 'expected' means about, not exactly. Optionally let pairs roll a die 12 times and compare with the expected 2. Ask the check question."
     },
     {
       "minutes": 10,
-      "activity": "Pairs do the three Try it problems. Walk around and listen for wanted over unwanted errors."
+      "activity": "Extra examples and questions round: work the 3 extra examples on the board, letting students try each before you show the solution, and take any open questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Probability as a fraction",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw 10 marbles in a row: 3 red, 2 blue, 5 green. Point out that picking blindly gives each marble the same chance. Circle the 3 red ones: 3 out of 10 marbles, so the probability is 3/10."
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: list or count all possible outcomes (the bottom number). Step 2: count the outcomes that match what you want (the top number). Step 3: write wanted over total and simplify if possible. Always check the outcomes are equally likely."
+        }
+      ],
+      "example": {
+        "problem": "A bag holds 3 red, 2 blue and 5 green marbles. One marble is picked without looking. What is the probability that it is red?",
+        "steps": "1. Total marbles = 3 + 2 + 5 = 10. 2. Red marbles = 3. 3. P(red) = 3/10, which is 0.3 or 30%.",
+        "expression": "Rational(3,10)",
+        "answer": "3/10"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Red;Blue;Green",
+        "a": 3,
+        "b": 2,
+        "c": 5,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students write the wanted number over the other outcomes, e.g. 3/7 for red (3 red to 7 not red).",
+          "response": "Ask: out of all the marbles in the bag, how many could I pick? Always put the total on the bottom, counting the wanted ones too. Show the 3/7 as odds-style comparison and the 3/10 as the part of the whole."
+        },
+        {
+          "mistake": "Students say the chance is 1/3 because there are 3 colours.",
+          "response": "Colours are not equally likely here because there are different numbers of marbles. Ask what would change if the bag had 1 red and 99 green. Equal chance is for each marble, not each colour."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why does the bottom number have to be all the outcomes?",
+          "answer": "Because probability says what part of all the possibilities is the one we want. A part of a whole needs the whole on the bottom, just like a fraction of a pizza."
+        },
+        {
+          "question": "Can a probability be written as a decimal or a percent?",
+          "answer": "Yes. 3/10 is 0.3 or 30%. They are the same number written in different ways."
+        },
+        {
+          "question": "If the probability is 3/10, does that mean I will get red once in every 10 picks?",
+          "answer": "Not exactly. It means red is likely to come up about 3 times in 10 picks over a long run, but a short run can differ."
+        }
+      ],
+      "check_question": {
+        "question": "Using the same bag, what is the probability of picking a blue marble?",
+        "solution": "There are 2 blue marbles out of 10, so P(blue) = 2/10 = 1/5.",
+        "expression": "Rational(1,5)",
+        "answer": "1/5"
+      }
     },
     {
-      "minutes": 5,
-      "activity": "Hands-on: each pair flips a coin or rolls a die 20 times, records results, and compares with the predicted probability. Discuss why results are close but not exact, and the 'coin has no memory' idea."
+      "title": "Chances that do not happen: the complement",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Use the bars Red 3 and Not red 7 for the 10 marbles. Together they fill the whole bag of 10, so their chances 3/10 and 7/10 add to 1 (the whole)."
+        },
+        {
+          "kind": "story",
+          "text": "Tell the class: the weather forecast says a 30% chance of rain. Either it rains or it does not, and nothing else can happen. The whole is 100%, so the chance of no rain is 100% - 30% = 70%."
+        }
+      ],
+      "example": {
+        "problem": "A bag holds 3 red, 2 blue and 5 green marbles. What is the probability of picking a marble that is not red?",
+        "steps": "1. P(red) = 3/10. 2. Not red is everything else, so P(not red) = 1 - 3/10 = 7/10. 3. Check by counting: 2 blue + 5 green = 7 marbles out of 10, which is 7/10.",
+        "expression": "1 - Rational(3,10)",
+        "answer": "7/10"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Red;Not red",
+        "a": 3,
+        "b": 7,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students subtract from 100 or from 10 instead of from 1, e.g. 10 - 3/10.",
+          "response": "Remind them the whole for probability is 1. Ask them to write 1 as 10/10 so that 10/10 - 3/10 = 7/10."
+        },
+        {
+          "mistake": "Students think not red means only one other colour, e.g. just blue.",
+          "response": "Not red means every outcome that is not red. Have them list all outcomes: blue and green are both included."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do the chances add up to 1?",
+          "answer": "Because one of the outcomes must happen. Together all the outcomes are the whole, and the whole is 1."
+        },
+        {
+          "question": "Why not just count the other marbles?",
+          "answer": "You can, and it gives the same answer. Subtracting from 1 is a shortcut that is handy when there are many outcomes, because you only need to know P of the event."
+        },
+        {
+          "question": "Can a probability be bigger than 1?",
+          "answer": "No. 1 means certain. A part of the outcomes can never be bigger than all of them."
+        }
+      ],
+      "check_question": {
+        "question": "The chance a bus is late is 0.2. What is the chance it is not late?",
+        "solution": "1 - 0.2 = 0.8.",
+        "expression": "1 - Rational(2,10)",
+        "answer": "4/5"
+      }
     },
     {
-      "minutes": 2,
-      "activity": "Exit question: 'A bag has 2 red and 6 blue marbles. What is the chance of picking red? Of not red?'"
+      "title": "Expected counts in many trials",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Expected number = probability x number of trials. First find the probability as a fraction, then multiply by how many times you try. Say clearly that the result is what we expect on average, not a promise."
+        },
+        {
+          "kind": "story",
+          "text": "Imagine rolling a die 60 times. A six is one of 6 equally likely faces, so about one roll in six is a six. Split the 60 rolls into 6 equal groups: each face gets about one group, 10 rolls. So we expect about 10 sixes."
+        }
+      ],
+      "example": {
+        "problem": "A fair die is rolled 60 times. About how many sixes do you expect?",
+        "steps": "1. P(six) = 1/6. 2. Expected sixes = 1/6 x 60. 3. 60 / 6 = 10. So we expect about 10 sixes.",
+        "expression": "Rational(1,6)*60",
+        "answer": "10"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Sixes;Other rolls",
+        "a": 10,
+        "b": 50,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students think exactly 10 sixes must happen in 60 rolls.",
+          "response": "Let them roll a die in pairs, then compare. Results will be near, but usually not exactly, 10. Expected means the long-run average."
+        },
+        {
+          "mistake": "Students divide the number of trials by the probability, or add them, instead of multiplying.",
+          "response": "Use a simple case: P = 1/2 and 10 flips. We expect 5 heads, which is half of 10, so we multiply by 1/2 (or take a half of)."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "If I roll 6 times, will I get exactly one six?",
+          "answer": "Not necessarily. You expect one, but you might get none or two. The more rolls, the closer the share of sixes tends to get to 1/6."
+        },
+        {
+          "question": "Why do we multiply?",
+          "answer": "Because probability is a fraction of the trials. Finding a fraction of an amount means multiplying, like 1/6 of 60."
+        },
+        {
+          "question": "Does the die remember my last roll?",
+          "answer": "No. Each roll is independent, so past results do not change the next chance."
+        }
+      ],
+      "check_question": {
+        "question": "A fair coin is flipped 50 times. About how many heads do you expect?",
+        "solution": "P(heads) = 1/2, and 1/2 x 50 = 25.",
+        "expression": "Rational(1,2)*50",
+        "answer": "25"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "A card is picked at random from cards numbered 1 to 20. What is the probability that it is a multiple of 5?",
+      "solution": "Multiples of 5 from 1 to 20 are 5, 10, 15, 20, so 4 outcomes out of 20. P = 4/20 = 1/5.",
+      "expression": "Rational(4,20)",
+      "answer": "1/5"
+    },
+    {
+      "problem": "The probability that a train is late is 15/100. What is the probability that it is on time?",
+      "solution": "On time is the opposite of late, so P = 1 - 15/100 = 85/100 = 17/20.",
+      "expression": "1 - Rational(15,100)",
+      "answer": "17/20"
+    },
+    {
+      "problem": "A fair die is rolled 120 times. About how many times do you expect a prime number (2, 3 or 5)?",
+      "solution": "There are 3 prime faces out of 6, so P = 3/6 = 1/2. Expected count = 1/2 x 120 = 60.",
+      "expression": "Rational(3,6)*120",
+      "answer": "60"
     }
   ],
   "meta": {
     "concept": "probability",
     "title": "Simple probability",
     "model": "sonnet",
-    "cost_usd": 0.03447,
+    "cost_usd": 0.0717,
     "generated": "2026-11-18",
     "grounded_on": null,
     "license": null,

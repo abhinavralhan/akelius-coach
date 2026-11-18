@@ -1,123 +1,232 @@
 {
-  "idea": "In our number system, a digit's value depends on its place. Each place is worth 10 times the place to its right. So in 347, the 3 means 3 hundreds (300), the 4 means 4 tens (40), and the 7 means 7 ones (7). 347 = 300 + 40 + 7.",
-  "why": "We only have ten digits, 0 to 9, but we want to write any number. The trick is to group. Ten ones make one ten, ten tens make one hundred, ten hundreds make one thousand. When a place reaches 10, we trade those 10 for 1 of the next place to the left. That is why we never write a digit bigger than 9 in one place. The position tells us the size of the group, and the digit tells us how many groups. This is why 0 matters: in 305 the 0 holds the tens place open, so the 3 still means hundreds. Without it, 35 and 305 would look alike. And it is why 40 is 4 tens, not just 4: moving a digit one place left makes it worth 10 times as much.",
-  "explanations": [
+  "idea": "Place value means a digit's worth depends on where it sits in the number. In a three-digit number, the right-hand digit counts ones, the middle digit counts tens (groups of 10), and the left-hand digit counts hundreds (groups of 100). So in 347 the 3 is worth 300, the 4 is worth 40 and the 7 is worth 7.",
+  "why": "We count in groups of ten. Ten ones are bundled into one ten, and ten tens are bundled into one hundred. Each place is worth ten times the place to its right. A digit tells how many groups of that size there are, and the position tells the size of the group. That is why the same digit 4 is worth 4, 40 or 400 in different places. It is also why a zero matters: it holds a place open so the other digits keep their sizes. Without it, 406 would look like 46.",
+  "theory_example": {
+    "problem": "Write 347 as hundreds, tens and ones, and find what each digit is worth.",
+    "steps": "Step 1: Read the places from the right. 7 is in the ones place, 4 is in the tens place, 3 is in the hundreds place. Step 2: The 3 means 3 hundreds, which is 3 x 100 = 300. Step 3: The 4 means 4 tens, which is 4 x 10 = 40. Step 4: The 7 means 7 ones, which is 7 x 1 = 7. Step 5: Add the values back together: 300 + 40 + 7 = 347.",
+    "expression": "3*100 + 4*10 + 7",
+    "answer": "347"
+  },
+  "subtopics": [
     {
-      "kind": "picture",
-      "text": "Draw three columns labeled Hundreds, Tens, Ones. For 347, draw 3 big squares in the hundreds column, 4 long sticks in the tens column and 7 small dots in the ones column. Point out that a long stick looks like 10 dots in a row, and a big square looks like 10 sticks side by side. Then write the digits 3, 4, 7 under the columns so students see the digits count the pieces."
+      "title": "Ones, tens and hundreds as groups",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw single small squares for ones. Circle every 10 squares and call that circle a ten, drawn as a long stick. Draw 10 sticks together as a flat square called a hundred. Show 23 as 2 sticks and 3 single squares. Students see that a ten is a bundle of ten ones, not a new kind of thing."
+        },
+        {
+          "kind": "story",
+          "text": "A shop packs eggs in boxes of 10. If you have 23 eggs, you fill 2 full boxes and have 3 eggs left over. The boxes are the tens and the loose eggs are the ones. When there are 10 loose eggs, you must pack them into another box. That is why no place can hold more than 9."
+        }
+      ],
+      "example": {
+        "problem": "There are 2 bundles of 10 sticks and 3 loose sticks. How many sticks are there?",
+        "steps": "Step 1: 2 bundles of 10 is 2 x 10 = 20. Step 2: Add the 3 loose sticks: 20 + 3 = 23. Step 3: Write 2 in the tens place and 3 in the ones place: 23.",
+        "expression": "2*10 + 3",
+        "answer": "23"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Tens;Ones",
+        "a": 20,
+        "b": 3,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students say 23 is a 2 and a 3, and they do not see that the 2 means 20.",
+          "response": "Go back to the bundles. Ask them to count the sticks in the bundles only. They get 20. Then say that the 2 in 23 tells you how many bundles there are, not how many sticks."
+        },
+        {
+          "mistake": "Students write 10 or more in one place, for example 2 tens and 13 ones as 213.",
+          "response": "Ask them to pack the ones into bundles of 10. 13 ones is 1 ten and 3 ones. So 2 tens and 13 ones becomes 3 tens and 3 ones, which is 33."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is it called a ten if it is made of ones?",
+          "answer": "It is a name for a bundle of ten ones. We bundle things so that big numbers are easier to count and write, just like a box of 10 eggs."
+        },
+        {
+          "question": "Why do we bundle in tens and not in fives or twelves?",
+          "answer": "We could bundle in other sizes, and some cultures did. Our number system uses ten, probably because we have ten fingers. Once everyone agrees, the writing works the same way for all numbers."
+        },
+        {
+          "question": "Is the 2 in 23 really 2 or is it 20?",
+          "answer": "On its own the digit is 2. In the tens place it counts 2 tens, so it is worth 20. The place changes what the digit is worth."
+        }
+      ],
+      "check_question": {
+        "question": "There are 4 bundles of ten and 6 loose ones. What number is it?",
+        "solution": "4 tens is 40. Add 6 ones to get 46.",
+        "expression": "4*10 + 6",
+        "answer": "46"
+      }
     },
     {
-      "kind": "story",
-      "text": "Imagine a bakery that sells cookies singly, in boxes of 10, and in crates of 10 boxes (100 cookies). The baker has 3 crates, 4 boxes and 7 loose cookies. Her sign says 347. If she bakes 3 more loose cookies, she has 10 loose ones, so she packs them into a new box. Now she has 3 crates, 5 boxes and 0 loose cookies: 350. The story shows why we trade 10 of one thing for 1 of the next. The 0 is on the sign to say there are no loose cookies."
+      "title": "Finding the value of a digit",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Use these steps. First, point to the digit. Second, name its place by counting from the right: ones, tens, hundreds. Third, multiply the digit by the size of that place: 1, 10 or 100. Fourth, say the value aloud, for example 'eight tens is eighty'."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw a place-value chart with three columns headed Hundreds, Tens and Ones. Write 584 with one digit under each heading. Draw a bar for each column, with the length matching the value: 500, 80 and 4. The long bar for the 5 shows students that the left-hand digit is worth the most."
+        }
+      ],
+      "example": {
+        "problem": "What is the value of the digit 8 in 584?",
+        "steps": "Step 1: Name the places from the right: 4 is ones, 8 is tens, 5 is hundreds. Step 2: The 8 is in the tens place. Step 3: Multiply: 8 x 10 = 80. Step 4: So the 8 is worth 80. The whole number is 500 + 80 + 4 = 584.",
+        "expression": "8*10",
+        "answer": "80"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Hundreds;Tens;Ones",
+        "a": 500,
+        "b": 80,
+        "c": 4,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students say the 8 in 584 is worth 8, because that is the digit they see.",
+          "response": "Ask how many ones are in 8 tens. Have them count the bundles by tens: 10, 20, ... 80. Then explain that the digit says how many, and the place says what size they are."
+        },
+        {
+          "mistake": "Students count places from the left, so they call the 5 in 584 the ones digit.",
+          "response": "Remind them that the ones place is always at the right-hand end, because that is where we start counting. Have them write the headings Ones, Tens and Hundreds over the digits from the right."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we count from the right?",
+          "answer": "The ones place is the starting place, and it is always at the right end. Bigger places are added going left. This also holds when a number gets longer, so the ones digit stays in the same spot."
+        },
+        {
+          "question": "Is the 5 in 584 more important than the 4?",
+          "answer": "The 5 is worth more, because it counts hundreds and the 4 counts ones. Every digit is needed to write the number correctly."
+        },
+        {
+          "question": "Does the digit 8 always mean 80?",
+          "answer": "No. In 584 it is worth 80, in 800 it is worth 800, and in 38 it is worth 8. It depends on the place."
+        }
+      ],
+      "check_question": {
+        "question": "What is the value of the digit 6 in 267?",
+        "solution": "6 is in the tens place, so it is 6 x 10 = 60.",
+        "expression": "6*10",
+        "answer": "60"
+      }
     },
     {
-      "kind": "procedure",
-      "text": "To find the value of a digit: 1) Write the number in a place value chart, one digit per column, lining up from the right. 2) Name the column the digit is in (ones, tens, hundreds). 3) Multiply the digit by the column value. For the 4 in 347: it is in the tens column, 4 x 10 = 40. 4) To write the number in expanded form, do this for every digit and add: 300 + 40 + 7."
-    }
-  ],
-  "student_questions": [
-    {
-      "question": "But why is the 4 in 347 worth 40 and not 4?",
-      "answer": "Because of where it sits. The 4 is in the tens place, so it counts groups of ten. 4 groups of ten is 40. If it sat in the ones place, like in 7 4... I mean in 304, it would be just 4 ones."
-    },
-    {
-      "question": "Why do we need zero in a number like 305?",
-      "answer": "The zero is a placeholder. It says there are no tens. Without it we would write 35, and the 3 would slide into the tens place and be worth 30 instead of 300. The zero keeps every other digit in its right place."
-    },
-    {
-      "question": "Why do we group in tens and not in some other number?",
-      "answer": "Long ago people counted on ten fingers, so ten became the natural group size. Other group sizes work too, and computers use twos. But in our system, every place is worth 10 times the one to its right."
-    },
-    {
-      "question": "Is the 5 in 55 worth the same both times?",
-      "answer": "No. The right 5 is in the ones place, so it is worth 5. The left 5 is in the tens place, so it is worth 50. Same digit, different place, different value. Together, 50 + 5 = 55."
-    }
-  ],
-  "mistakes": [
-    {
-      "mistake": "Saying the value of the 4 in 347 is 4, reading the digit instead of its place value.",
-      "response": "Ask, 'How many tens are there?' Have the student build 347 with sticks and dots and count. Then write 4 tens = 40. Repeat with another digit until they say the place name first."
-    },
-    {
-      "mistake": "Writing a number like three hundred five as 35 or 3005 by writing what they hear.",
-      "response": "Use a three-column chart. Ask: how many hundreds? 3. How many tens? 0. How many ones? 5. Fill each column, then read off 305. Point out the zero holds the tens place."
-    },
-    {
-      "mistake": "Mixing up the order of places, for example thinking the leftmost digit is the ones place.",
-      "response": "Tell students to start from the right: ones first, then tens, then hundreds. Have them label each column above the number, from the right, before answering any question. Show that the biggest place is on the left."
-    }
-  ],
-  "worked_examples": [
-    {
-      "problem": "What is the value of the 6 in 862?",
-      "steps": "Write 862 in a chart: 8 in hundreds, 6 in tens, 2 in ones. The 6 is in the tens place. Its value is 6 x 10 = 60.",
-      "expression": "6*10",
-      "answer": "60"
-    },
-    {
-      "problem": "Write 5,284 in expanded form and check that it adds back to the number.",
-      "steps": "Places from the left: thousands, hundreds, tens, ones. 5 thousands = 5000, 2 hundreds = 200, 8 tens = 80, 4 ones = 4. Add: 5000 + 200 + 80 + 4 = 5284.",
-      "expression": "5000+200+80+4",
-      "answer": "5284"
-    },
-    {
-      "problem": "A number has 3 hundreds, 0 tens and 9 ones. What is the number?",
-      "steps": "3 hundreds = 300. 0 tens = 0. 9 ones = 9. Add: 300 + 0 + 9 = 309. The 0 keeps the 3 in the hundreds place.",
-      "expression": "3*100+0*10+9",
-      "answer": "309"
-    }
-  ],
-  "try_it": [
-    {
-      "problem": "What is the value of the 7 in 573?",
-      "solution": "Write the chart: 5 hundreds, 7 tens, 3 ones. The 7 is in the tens place, so its value is 7 x 10 = 70.",
-      "expression": "7*10",
-      "answer": "70"
-    },
-    {
-      "problem": "What number is 4 hundreds + 2 tens + 6 ones?",
-      "solution": "4 x 100 = 400, 2 x 10 = 20, 6 x 1 = 6. Add: 400 + 20 + 6 = 426.",
-      "expression": "4*100+2*10+6",
-      "answer": "426"
-    },
-    {
-      "problem": "What number is 7 thousands + 0 hundreds + 5 tens + 1 one?",
-      "solution": "7 x 1000 = 7000, 0 hundreds = 0, 5 x 10 = 50, 1 x 1 = 1. Add: 7000 + 0 + 50 + 1 = 7051.",
-      "expression": "7*1000+0*100+5*10+1",
-      "answer": "7051"
+      "title": "Zero as a place holder",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Imagine a bus with three seats in a row, labeled hundreds, tens and ones. Zero is a child who sits in the middle seat to hold it, so the others keep their places. If the middle child leaves and the others slide over, 406 becomes 46. The number is now much smaller, so the zero was doing an important job."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw the three-column chart with Hundreds, Tens and Ones. Put 4 under Hundreds, 0 under Tens and 6 under Ones. For the 0, draw an empty column with no sticks. The bars are 400, 0 and 6. Then write 46 beside it with 4 under Tens and 6 under Ones, and ask which bar picture is smaller."
+        }
+      ],
+      "example": {
+        "problem": "Write the number made of 4 hundreds, 0 tens and 6 ones.",
+        "steps": "Step 1: 4 hundreds is 4 x 100 = 400. Step 2: 0 tens is 0 x 10 = 0. Step 3: 6 ones is 6. Step 4: Add: 400 + 0 + 6 = 406. Step 5: Write 4 in the hundreds place, 0 in the tens place, 6 in the ones place: 406.",
+        "expression": "4*100 + 0*10 + 6",
+        "answer": "406"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Hundreds;Tens;Ones",
+        "a": 400,
+        "b": 0,
+        "c": 6,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students write 4 hundreds and 6 ones as 46, leaving out the zero.",
+          "response": "Have them fill in the chart. Ask what goes in the tens column, and they say none, so we write 0. Then compare 46 and 406 with sticks to show how far apart they are."
+        },
+        {
+          "mistake": "Students write the number as 4006, because they write 400 and then 6 next to it.",
+          "response": "Ask how many digits are needed for 3 places. Have them fill the chart with one digit per place. Then tell them each place holds exactly one digit."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "If zero means nothing, why do we write it?",
+          "answer": "It means there are no tens, and we need to say so. It keeps the 4 in the hundreds place. Without it, the 4 would slide over and be worth only 40."
+        },
+        {
+          "question": "Is 406 the same as 46?",
+          "answer": "No. 406 is four hundred and six. 46 is forty-six. They are very different, and the zero is the reason."
+        },
+        {
+          "question": "Can zero be in the ones place too?",
+          "answer": "Yes. In 460 there are 4 hundreds, 6 tens and 0 ones. The zero keeps the 4 and the 6 in their places."
+        }
+      ],
+      "check_question": {
+        "question": "What number is 7 hundreds, 0 tens and 3 ones?",
+        "solution": "700 + 0 + 3 = 703.",
+        "expression": "7*100 + 0*10 + 3",
+        "answer": "703"
+      }
     }
   ],
   "lesson_outline": [
     {
       "minutes": 5,
-      "activity": "Warm-up: show 23 as 2 sticks and 3 dots. Ask how many in all. Then show 32 with the same pieces and ask what changed."
+      "activity": "Opening: Say the idea in your own words. Show 347 on the board and ask what the 4 is worth. Take two or three guesses without correcting them yet. Use the theory example with 347 as a preview."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Ones, tens and hundreds as groups'. Draw 23 as bundles and singles, or use real sticks. Do the example, show the bars, and ask the check question."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Finding the value of a digit'. Draw the Hundreds, Tens and Ones chart with 584. Do the example for the digit 8, show the bars, and discuss the two mistakes. Ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Zero as a place holder'. Build 406 in the chart, then compare it with 46. Show the bars, then ask the check question."
     },
     {
       "minutes": 10,
-      "activity": "Build numbers with sticks, dots and squares. Trade 10 dots for a stick and 10 sticks for a square. Introduce the Hundreds, Tens, Ones chart."
+      "activity": "Extra examples and questions round: work through the 3 extra examples with the class. Let students answer aloud before you show the solution. Use the remaining time for questions."
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Write the number with 6 hundreds, 2 tens and 9 ones.",
+      "solution": "6 hundreds is 600, 2 tens is 20, and 9 ones is 9. Then 600 + 20 + 9 = 629.",
+      "expression": "6*100 + 2*10 + 9",
+      "answer": "629"
     },
     {
-      "minutes": 10,
-      "activity": "Teach the procedure with 347 and 862. Students say the place name first, then the value. Write expanded form together."
+      "problem": "What is the value of the digit 5 in 253?",
+      "solution": "The 5 is in the tens place. 5 x 10 = 50.",
+      "expression": "5*10",
+      "answer": "50"
     },
     {
-      "minutes": 5,
-      "activity": "The zero: build 305 and 350 side by side. Discuss why the zero is needed."
-    },
-    {
-      "minutes": 7,
-      "activity": "Pairs practice: one student says a number, the partner writes the chart and the expanded form. Swap. Teacher circulates and uses the mistake responses."
-    },
-    {
-      "minutes": 3,
-      "activity": "Wrap-up: ask 'In 55, why is one 5 worth more than the other?' Students answer on a slip of paper."
+      "problem": "Add the value of the digit 9 in 905 and the value of the digit 9 in 693. What is the total?",
+      "solution": "In 905 the 9 is in the hundreds place, so it is worth 900. In 693 the 9 is in the tens place, so it is worth 90. Then 900 + 90 = 990.",
+      "expression": "9*100 + 9*10",
+      "answer": "990"
     }
   ],
   "meta": {
     "concept": "place-value",
     "title": "Place value (ones",
     "model": "sonnet",
-    "cost_usd": 0.03137,
+    "cost_usd": 0.06818,
     "generated": "2026-11-18",
     "grounded_on": null,
     "license": null,

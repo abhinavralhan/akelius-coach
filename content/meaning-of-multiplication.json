@@ -1,123 +1,232 @@
 {
-  "idea": "Multiplication means counting equal groups: a × b is the total when you have a groups with b in each group. It is a fast way to do repeated addition, and it also describes rows and columns in an array and equal-sized jumps on a number line.",
-  "why": "When every group has the same size, adding the same number again and again gives the same total as multiplying. 4 × 3 means 3 + 3 + 3 + 3 = 12, and that is exactly what multiplying does, only faster. An array shows why order does not change the total. 3 rows of 4 can be turned on its side to make 4 rows of 3, and no counters were added or removed, so 3 × 4 = 4 × 3. Multiplying by 1 gives the same number (one group of 5 is 5), and multiplying by 0 gives 0 (no groups, or groups with nothing in them, means nothing in total). The method only works when the groups are equal. If the groups are different sizes, you add them instead.",
-  "explanations": [
+  "idea": "Multiplication is a fast way to count when the same amount is repeated. 4 × 3 means 4 groups with 3 in each group, so 3 + 3 + 3 + 3 = 12. It also describes rows and columns in an array, and \"times as many\" comparisons.",
+  "why": "Adding the same number again and again gets long, so we name that pattern with one symbol. In a × b, the first number says how many equal groups and the second says how many are in each group. The answer is the total. It works only when every group is the same size. An array shows that 3 rows of 5 and 5 rows of 3 are the same set of objects counted two ways, so the order of the factors does not change the total. \"3 times as many\" means taking the amount 3 times, so it uses the same idea.",
+  "theory_example": {
+    "problem": "There are 4 bags with 3 apples in each bag. How many apples are there in total?",
+    "steps": "1. The bags are equal groups: 4 groups, 3 in each.\n2. Write it as repeated addition: 3 + 3 + 3 + 3 = 12.\n3. Write it as multiplication: 4 × 3 = 12.\n4. Check with an array: 4 rows of 3 dots make 12 dots. Turned on its side it is 3 rows of 4, and 3 × 4 = 12 too.",
+    "expression": "4*3",
+    "answer": "12"
+  },
+  "subtopics": [
     {
-      "kind": "picture",
-      "text": "Draw 3 rows of 4 dots. Say: 3 rows, 4 dots in each row, 12 dots in all. Write 3 × 4 = 12. Now turn the page on its side. You see 4 rows of 3 dots, still 12 dots, so 4 × 3 = 12. Draw a number line too: 4 jumps of size 3 land on 12."
+      "title": "Equal groups and repeated addition",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Four friends each bring 3 stickers to a swap. Ask: how many stickers are on the table? Students will add 3 + 3 + 3 + 3. Say: 'We can write that shorter: 4 groups of 3, which is 4 × 3.'"
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: find how many groups. Step 2: find how many are in each group. Step 3: check that the groups are equal. Step 4: write groups × size in each group, and add repeatedly to find the total."
+        }
+      ],
+      "example": {
+        "problem": "There are 4 bags with 3 apples in each bag. How many apples are there altogether?",
+        "steps": "4 groups, 3 in each group. Repeated addition: 3 + 3 + 3 + 3 = 12. Multiplication: 4 × 3 = 12.",
+        "expression": "4*3",
+        "answer": "12"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Bag 1;Bag 2;Bag 3;Bag 4",
+        "a": 3,
+        "b": 3,
+        "c": 3,
+        "d": 3
+      },
+      "mistakes": [
+        {
+          "mistake": "Students add the two numbers: 4 + 3 = 7.",
+          "response": "Ask them to draw the 4 bags and put 3 apples in each, then count. Compare with 7. Say: 'The 4 tells us how many bags, not how many apples.'"
+        },
+        {
+          "mistake": "Students use multiplication when the groups are not equal, such as bags with 3, 2, 5 and 4 apples.",
+          "response": "Ask: 'Are all the groups the same size?' Show that multiplication needs equal groups. For unequal groups, they add the different numbers."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we need multiplication if we can just add?",
+          "answer": "Adding works, but it gets very long. For 20 bags of 3, multiplication is much quicker to write and to work out."
+        },
+        {
+          "question": "Is 4 × 3 four groups of three or three groups of four?",
+          "answer": "By the usual way of reading it, 4 × 3 is 4 groups of 3. The total is 12 either way, and the next part of the lesson shows why."
+        },
+        {
+          "question": "What does the × sign mean?",
+          "answer": "Read it as 'groups of' or 'times'. 4 × 3 is '4 groups of 3'."
+        }
+      ],
+      "check_question": {
+        "question": "There are 5 plates with 2 cookies on each plate. Write it as repeated addition and as multiplication. How many cookies are there?",
+        "solution": "2 + 2 + 2 + 2 + 2 = 10, and 5 × 2 = 10.",
+        "expression": "5*2",
+        "answer": "10"
+      }
     },
     {
-      "kind": "story",
-      "text": "There are 5 plates and each plate has 2 cookies. How many cookies? Students may count 2, 4, 6, 8, 10. Say: 5 plates with 2 cookies each is 5 groups of 2, written 5 × 2 = 10. Then ask what changes if there are 2 plates with 5 cookies each. The total is still 10, but the picture is different: 2 groups of 5."
+      "title": "Arrays: rows and columns",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw 3 rows of 5 dots. Count the dots by rows: 5 + 5 + 5 = 15. Turn the page on its side: now there are 5 rows of 3, so 3 + 3 + 3 + 3 + 3 = 15. It is the same dots, so 3 × 5 = 5 × 3."
+        },
+        {
+          "kind": "story",
+          "text": "A cinema has 3 rows with 5 seats in each row. Count the seats row by row. Then count column by column: there are 5 columns with 3 seats each. Same seats, same total."
+        }
+      ],
+      "example": {
+        "problem": "A tray has 3 rows of 5 muffins. How many muffins are on the tray? Then count by columns to check.",
+        "steps": "By rows: 3 groups of 5 makes 3 × 5 = 15. By columns: there are 5 columns with 3 muffins in each, so 5 × 3 = 15. Both ways give 15.",
+        "expression": "3*5",
+        "answer": "15"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students count the objects on the edge twice, or miss some, when counting the array.",
+          "response": "Have them count row by row and say each row's total aloud: 5, 10, 15. Then check with the multiplication fact."
+        },
+        {
+          "mistake": "Students think 3 × 5 and 5 × 3 describe the same picture.",
+          "response": "Say that the picture is different: 3 rows of 5 versus 5 rows of 3. The totals are equal. Turn the drawing around to show this."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Does the order of the numbers really not matter?",
+          "answer": "For the total, it does not. Turning an array on its side swaps rows and columns but keeps all the dots. The meaning is different, though: 3 groups of 5 is not the same story as 5 groups of 3."
+        },
+        {
+          "question": "Why is it called an array?",
+          "answer": "An array is the name for objects arranged in neat rows and columns, like seats, egg cartons or windows."
+        },
+        {
+          "question": "Can I use an array for big numbers?",
+          "answer": "Yes. You can sketch it with a rectangle and write the number of rows and columns on the sides. You do not need to draw every dot."
+        }
+      ],
+      "check_question": {
+        "question": "An egg carton has 2 rows of 6 eggs. How many eggs are in the carton? What multiplication do you get by counting the columns instead?",
+        "solution": "2 × 6 = 12. By columns there are 6 columns of 2 eggs, so 6 × 2 = 12.",
+        "expression": "2*6",
+        "answer": "12"
+      }
     },
     {
-      "kind": "procedure",
-      "text": "Step 1: Ask what the groups are and how many there are. Step 2: Check that every group has the same size. Step 3: Write the repeated addition, for example 6 + 6 + 6. Step 4: Write it as multiplication: 3 groups of 6 is 3 × 6. Step 5: Find the total, 18, and say it with the unit: 18 apples."
-    }
-  ],
-  "student_questions": [
-    {
-      "question": "Why is 3 × 4 the same as 4 × 3 when the stories are different?",
-      "answer": "The stories are different, but the total is the same. Look at 3 rows of 4 dots. Turn it on its side and it is 4 rows of 3 dots. Nothing was added or taken away, so both are 12."
-    },
-    {
-      "question": "Why is any number times 0 equal to 0?",
-      "answer": "3 × 0 means 3 groups with nothing in each group. If you add 0 + 0 + 0 you get 0. There is nothing there to count."
-    },
-    {
-      "question": "Why does multiplying not always make the number bigger?",
-      "answer": "Multiplying by 1 keeps the number the same, because one group of 7 is 7. Multiplying by 0 gives 0, which is smaller. Later, when you multiply by a fraction like a half, the answer is smaller too. It only grows when you have more than one whole group."
-    },
-    {
-      "question": "Why do we need multiplication if we can just add?",
-      "answer": "You can add, and the answer is the same. But for 8 groups of 6, writing 6 + 6 + 6 + 6 + 6 + 6 + 6 + 6 is long and easy to get wrong. Multiplication is a shorter way to write and work out the same thing."
-    }
-  ],
-  "mistakes": [
-    {
-      "mistake": "Adding the two numbers instead of multiplying, for example 4 × 3 = 7.",
-      "response": "Ask the student to draw 4 groups of 3 and count everything. They will find 12. Then show the 4 groups as 3 + 3 + 3 + 3 so they see that the number of groups and the group size play different roles."
-    },
-    {
-      "mistake": "Using unequal groups and still writing a multiplication, such as 3 plates with 2, 3 and 4 cookies written as 3 × 3.",
-      "response": "Ask: are all the plates the same? Explain that multiplication needs equal groups. Here we add 2 + 3 + 4 = 9. Let them make the groups equal and compare."
-    },
-    {
-      "mistake": "Thinking that 5 × 0 = 5, or that multiplying always makes the number bigger.",
-      "response": "Draw 5 plates with no cookies on any of them. Ask how many cookies there are. Then do 5 × 1 with one cookie on each plate. Let the pictures show the difference."
-    }
-  ],
-  "worked_examples": [
-    {
-      "problem": "There are 4 bags with 6 marbles in each bag. How many marbles are there in all?",
-      "steps": "The 4 bags are 4 equal groups, and each group has 6 marbles. Write the repeated addition: 6 + 6 + 6 + 6 = 24. Write it as multiplication: 4 × 6 = 24.",
-      "expression": "4*6",
-      "answer": "24"
-    },
-    {
-      "problem": "A tray has 3 rows of 5 muffins. How many muffins are on the tray?",
-      "steps": "Draw the array: 3 rows, 5 muffins in each row. Count by fives: 5, 10, 15. This is 3 × 5 = 15. Check by turning the tray: 5 rows of 3 is also 15.",
-      "expression": "3*5",
-      "answer": "15"
-    },
-    {
-      "problem": "A frog jumps 7 times and each jump is 2 metres long. How far does it go?",
-      "steps": "Mark 7 jumps of size 2 on a number line: 2, 4, 6, 8, 10, 12, 14. That is 7 groups of 2, so 7 × 2 = 14 metres.",
-      "expression": "7*2",
-      "answer": "14"
-    }
-  ],
-  "try_it": [
-    {
-      "problem": "There are 5 boxes with 4 pencils in each box. How many pencils are there in all?",
-      "solution": "5 groups of 4 is 4 + 4 + 4 + 4 + 4 = 20, so 5 × 4 = 20.",
-      "expression": "5*4",
-      "answer": "20"
-    },
-    {
-      "problem": "A garden has 6 rows of 3 plants. How many plants are there?",
-      "solution": "6 rows with 3 in each row: 3 + 3 + 3 + 3 + 3 + 3 = 18, so 6 × 3 = 18.",
-      "expression": "6*3",
-      "answer": "18"
-    },
-    {
-      "problem": "A rabbit hops 8 times and each hop is 2 metres. How far does it hop in all?",
-      "solution": "8 jumps of size 2: 2 × 8 = 16 metres.",
-      "expression": "8*2",
-      "answer": "16"
+      "title": "Times as many: comparing amounts",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a short bar for red pencils, 4 units long. Draw a blue bar that is 3 of those short bars end to end. The blue bar is 3 times as long as the red bar: 3 × 4 = 12."
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: find the amount you are comparing with. Step 2: find how many times as many. Step 3: take that amount that many times, which is the same as multiplying. Step 4: say the answer with its unit."
+        }
+      ],
+      "example": {
+        "problem": "Mia has 4 red pencils. Sam has 3 times as many pencils as Mia. How many pencils does Sam have?",
+        "steps": "Mia has 4. 'Three times as many' means 3 groups of 4. 4 + 4 + 4 = 12, so 3 × 4 = 12. Sam has 12 pencils.",
+        "expression": "3*4",
+        "answer": "12"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Mia;Sam",
+        "a": 4,
+        "b": 12,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students add: 'three times as many' becomes 4 + 3 = 7.",
+          "response": "Draw Mia's bar and ask Sam's bar to be made of 3 copies of it. They will see that Sam's bar is much longer than 7. Remind them that 'times' means equal copies."
+        },
+        {
+          "mistake": "Students think 'times as many' has the same meaning as 'more than'.",
+          "response": "Contrast 'Sam has 3 more than Mia' (4 + 3 = 7) with 'Sam has 3 times as many' (3 × 4 = 12). Draw both as bars."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Is 'times' the same as 'groups of'?",
+          "answer": "In these problems, yes. '3 times as many as 4' is 3 groups of 4, so 3 × 4."
+        },
+        {
+          "question": "Can something be 1 times as many?",
+          "answer": "Yes. 1 times as many is just one group, so you get the same amount. 1 × 4 = 4."
+        },
+        {
+          "question": "Why is multiplying here a comparison and not a total?",
+          "answer": "Here the question is how big one amount is compared with another. We still find it by taking equal copies of the smaller amount."
+        }
+      ],
+      "check_question": {
+        "question": "A ribbon is 5 cm long. A second ribbon is 6 times as long. How long is the second ribbon?",
+        "solution": "6 groups of 5 cm: 6 × 5 = 30 cm.",
+        "expression": "6*5",
+        "answer": "30"
+      }
     }
   ],
   "lesson_outline": [
     {
       "minutes": 5,
-      "activity": "Warm-up: show 3 plates with 2 counters each. Ask how many counters and how they counted. Collect counting and adding answers."
+      "activity": "Hook with 'Equal groups and repeated addition': show 4 bags with 3 apples each (drawn or real objects). Ask students how many apples there are and let them add. Then introduce 4 × 3 as shorthand."
     },
     {
-      "minutes": 10,
-      "activity": "Introduce 'groups of' and the × sign. Build 4 groups of 3 with counters, write 3 + 3 + 3 + 3 and 4 × 3. Do worked example 1."
+      "minutes": 9,
+      "activity": "Teach 'Equal groups and repeated addition': go through the worked example and the bar picture. Students draw their own groups and write both the addition and the multiplication. Ask the check question and address the mistake of adding 4 + 3."
     },
     {
       "minutes": 8,
-      "activity": "Arrays and the number line: draw 3 rows of 5, turn it on its side, and show 3 × 5 = 5 × 3. Do worked examples 2 and 3."
+      "activity": "Teach 'Arrays: rows and columns': draw 3 rows of 5 dots, count by rows, then turn the page to count by columns. Students make an array for another fact. Ask the check question about the egg carton."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Times as many: comparing amounts': use the Mia and Sam bars to show 3 times as many. Contrast with 'more than'. Ask the ribbon check question."
     },
     {
       "minutes": 10,
-      "activity": "Pairs practise the try-it problems. Each pair draws a picture and writes both the repeated addition and the multiplication."
+      "activity": "Extra examples and questions round: work the 3 extra examples with the class, mixing all three subtopics. Invite students to explain which picture they would draw, and answer their questions."
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "There are 6 plates with 2 cookies on each plate. How many cookies are there? Write it as repeated addition and as multiplication.",
+      "solution": "6 equal groups of 2. Repeated addition: 2 + 2 + 2 + 2 + 2 + 2 = 12. Multiplication: 6 × 2 = 12.",
+      "expression": "6*2",
+      "answer": "12"
     },
     {
-      "minutes": 4,
-      "activity": "Talk about unequal groups, and about times 0 and times 1, using the common mistakes and student questions."
+      "problem": "A window has 4 rows of 7 panes. How many panes are there? What is the multiplication if you count by columns?",
+      "solution": "By rows: 4 × 7 = 28. By columns: 7 columns of 4 panes, so 7 × 4 = 28. There are 28 panes.",
+      "expression": "4*7",
+      "answer": "28"
     },
     {
-      "minutes": 3,
-      "activity": "Wrap-up: each student writes one story for 4 × 5 and shows the picture. Share one or two."
+      "problem": "A pencil is 5 cm long. A ruler is 6 times as long as the pencil. How long is the ruler?",
+      "solution": "'6 times as long' means 6 copies of 5 cm. 6 × 5 = 30. The ruler is 30 cm long.",
+      "expression": "6*5",
+      "answer": "30"
     }
   ],
   "meta": {
     "concept": "meaning-of-multiplication",
     "title": "What multiplication means",
     "model": "sonnet",
-    "cost_usd": 0.03052,
+    "cost_usd": 0.06002,
     "generated": "2026-11-18",
     "grounded_on": null,
     "license": null,

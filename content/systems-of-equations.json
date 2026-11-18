@@ -1,123 +1,232 @@
 {
-  "idea": "A system of linear equations is two (or more) equations that must be true at the same time. For two unknowns, the solution is the pair of numbers (x, y) that makes both equations true. Graphically, it is the point where the two lines cross.",
-  "why": "Each equation alone has endless solutions: every point on its line. Asking for both at once keeps only the points the two lines share. Two different lines that are not parallel share exactly one point, so one pair of numbers remains. Substitution works because if y equals something, you may swap that something in for y without changing the truth. Elimination works because adding equal amounts to both sides of an equation keeps it true. So adding two true equations gives another true equation, and if the y-terms are opposites they cancel and leave one unknown. Every step turns a true statement into another true statement, so the final answer still satisfies the originals. You can always check by putting it back into both.",
-  "explanations": [
-    {
-      "kind": "picture",
-      "text": "Draw the line x + y = 10 on a grid. It passes through (0,10), (4,6), (6,4), (10,0). Now draw x - y = 2 through (2,0), (6,4), (8,6). The lines cross at exactly one point, (6,4). Say: every point on a line is a solution to that one equation, and the crossing point is the only point on both lines."
-    },
-    {
-      "kind": "story",
-      "text": "At a bakery, one muffin and one coffee cost 7 dollars in total. Two muffins and one coffee cost 11 dollars. The second order has exactly one extra muffin, and it costs 4 dollars more. So a muffin is 4 dollars, and the coffee is 3 dollars. Comparing two orders to see what the difference tells you is exactly what elimination does."
-    },
-    {
-      "kind": "procedure",
-      "text": "Elimination: 1) Line up the equations with x under x, y under y, and numbers under numbers. 2) Multiply one or both equations so that one letter has matching coefficients, equal or opposite. 3) Add or subtract the equations to make that letter disappear. 4) Solve the one-unknown equation. 5) Put the value into an original equation to find the other unknown. 6) Check in both equations. Substitution: if one equation is already y = something, replace y in the other with that something, solve, then find the other value."
-    }
-  ],
-  "student_questions": [
-    {
-      "question": "Why can I add two equations together? It feels like cheating.",
-      "answer": "Each equation says two amounts are equal. If you add equal amounts to equal amounts, the totals are still equal. So adding the left sides and adding the right sides is allowed. It is the same as adding the same number to both sides, except that the number is written in a different way."
-    },
-    {
-      "question": "Why do I need two equations for two unknowns?",
-      "answer": "One equation like x + y = 10 has endless solutions: 1 and 9, 2 and 8, 3 and 7, and so on. A second equation is a second clue that rules out all but one pair. With one clue you cannot pin down two numbers."
-    },
-    {
-      "question": "Does it matter whether I use substitution or elimination?",
-      "answer": "No. Both give the same answer, because both keep every step true. Substitution is handy when one letter is already alone, like y = 2x + 1. Elimination is handy when the equations are lined up with x and y on the left."
-    },
-    {
-      "question": "What if the letters do not cancel, or I end up with something odd like 0 = 5?",
-      "answer": "If you get a false statement like 0 = 5, the lines are parallel and never meet, so there is no solution. If you get a true statement like 0 = 0, both equations describe the same line, so there are infinitely many solutions. Neither means you made a mistake; it is the answer."
-    }
-  ],
-  "mistakes": [
-    {
-      "mistake": "Finding x and then stopping, forgetting to find y.",
-      "response": "Ask: what does the solution need to be? Remind students that the answer is a pair, and the point (x, y) must work in both equations. Have them always write the pair and check it."
-    },
-    {
-      "mistake": "Subtracting equations and only changing the sign of the first term, for example 3x + 2y minus (x - y) written as 2x + y.",
-      "response": "Show subtraction with brackets: (3x + 2y) - (x - y) = 3x + 2y - x + y = 2x + 3y. Or suggest multiplying the second equation by -1 and then adding, which makes sign errors easier to see."
-    },
-    {
-      "mistake": "Multiplying only one term of an equation when scaling it, for example turning x - y = 1 into 3x - 3y = 1.",
-      "response": "Say: the equation is a balance, so everything on both sides must be multiplied. Write it as 3(x - y) = 3(1) and then expand to get 3x - 3y = 3."
-    }
-  ],
-  "worked_examples": [
-    {
-      "problem": "Two numbers add to 10 and their difference is 2. Find the larger number. That is, solve x + y = 10 and x - y = 2 for x.",
-      "steps": "The y-terms are already opposites. Add the equations: (x + y) + (x - y) = 10 + 2, so 2x = 12 and x = 6. Then y = 10 - 6 = 4. Check: 6 + 4 = 10 and 6 - 4 = 2. Both are true.",
-      "expression": "(10 + 2)/2",
-      "answer": "6"
-    },
-    {
-      "problem": "Solve y = 2x + 1 and 3x + y = 16. Find y.",
-      "steps": "Substitute 2x + 1 for y in the second equation: 3x + (2x + 1) = 16. So 5x + 1 = 16, 5x = 15, x = 3. Then y = 2(3) + 1 = 7. Check: 3(3) + 7 = 16. True.",
-      "expression": "2*(16 - 1)/5 + 1",
-      "answer": "7"
-    },
-    {
-      "problem": "Solve 2x + 3y = 12 and x - y = 1. Find x.",
-      "steps": "Multiply the second equation by 3 to get 3x - 3y = 3. Add this to the first equation: 2x + 3y + 3x - 3y = 12 + 3, so 5x = 15 and x = 3. Then y = x - 1 = 2. Check: 2(3) + 3(2) = 12 and 3 - 2 = 1. Both true.",
-      "expression": "(12 + 3)/5",
-      "answer": "3"
-    }
-  ],
-  "try_it": [
-    {
-      "problem": "Two adult tickets and one child ticket cost 11 dollars. One adult ticket and one child ticket cost 7 dollars. What is the price of one adult ticket?",
-      "solution": "Subtract the second equation from the first: (2a + c) - (a + c) = 11 - 7, so a = 4. The child ticket is 7 - 4 = 3. Check: 2(4) + 3 = 11.",
-      "expression": "11 - 7",
-      "answer": "4"
-    },
-    {
-      "problem": "Solve y = x + 3 and 2x + y = 12. Find y.",
-      "solution": "Substitute: 2x + (x + 3) = 12, so 3x = 9 and x = 3. Then y = 3 + 3 = 6. Check: 2(3) + 6 = 12.",
-      "expression": "(12 - 3)/3 + 3",
-      "answer": "6"
-    },
-    {
-      "problem": "Solve 3x + 2y = 16 and x + 2y = 8. Find y.",
-      "solution": "Subtract the second equation from the first: 2x = 8, so x = 4. Put into x + 2y = 8: 4 + 2y = 8, so y = 2. Check: 3(4) + 2(2) = 16.",
-      "expression": "(8 - (16 - 8)/2)/2",
-      "answer": "2"
-    }
-  ],
+  "idea": "A system of linear equations is two linear equations that must be true at the same time. The solution is the pair (x, y) that makes both equations true. On a graph it is the point where the two lines cross.",
+  "why": "Each equation is a rule that picks out a whole line of (x, y) pairs. A pair that satisfies both rules sits on both lines, so it is where they cross. Substitution works because if y equals an expression, you can swap that expression in for y without changing the other equation, which leaves one equation with one unknown. Elimination works because adding or subtracting equal quantities on both sides keeps equations true. So we combine the two equations so that one letter cancels.",
+  "theory_example": {
+    "problem": "Solve y = 2x + 1 and y = -x + 4.",
+    "steps": "Both expressions equal y, so they equal each other: 2x + 1 = -x + 4. Add x to both sides: 3x + 1 = 4. Subtract 1: 3x = 3, so x = 1. Put x = 1 into y = 2x + 1: y = 3. Check in the other equation: -1 + 4 = 3, which is true. The lines cross at (1, 3).",
+    "expression": "1",
+    "answer": "1"
+  },
   "lesson_outline": [
     {
       "minutes": 5,
-      "activity": "Warm-up: Ask for two numbers that add to 10. List many pairs. Then add the clue that they differ by 2 and find the only pair, 6 and 4."
+      "activity": "Open with the phone plan story from Solving by graphing. Ask when the two plans cost the same. Say that today students find the one pair of numbers that works for two rules at once."
     },
     {
       "minutes": 8,
-      "activity": "Picture: Draw both lines on a grid, plot points, and show that they cross at (6,4). Discuss why one crossing point means one solution."
+      "activity": "Teach Solving by graphing. Show y = 2x + 1 and y = -x + 4. Have students make a small table of values for each line and spot the crossing point (1, 3). Check it in both equations."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach Substitution. Work through y = 3x - 2 and 2x + y = 13 on the board, one step at a time. Stress the last step: find y, then check in both equations. Ask the check question."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach Elimination. Work through 2x + 3y = 12 and 4x - 3y = 6. Show why adding makes y vanish. Ask the check question, then mention that sometimes you first multiply an equation."
     },
     {
       "minutes": 10,
-      "activity": "Teach elimination with the muffin and coffee story, then work example 1 and example 3 on the board, checking each answer in both equations."
+      "activity": "Extra examples and questions round. Work the three extra examples, letting students choose the method (graphing, substitution or elimination) and suggest the first step. Leave time for open questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Solving by graphing",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Phone plan A costs 1 dollar plus 2 dollars per gigabyte: y = 2x + 1. Plan B is cheaper per gigabyte but costs more to start: y = -x + 4 is not realistic, so say instead that two friends are walking and the lines show their positions. The point where the lines meet is the moment and place where both friends are at the same spot. Ask: what has to be true about both rules at that moment? Both give the same y for the same x."
+        },
+        {
+          "kind": "procedure",
+          "text": "Make a table of values for each equation, for example x = 0, 1, 2. Plot the points and draw each line with a ruler. Find the crossing point and read off (x, y). Always check by putting x and y into both equations, because a drawing can be slightly off."
+        }
+      ],
+      "example": {
+        "problem": "Solve by graphing: y = 2x + 1 and y = -x + 4.",
+        "steps": "Line 1: x = 0 gives y = 1, x = 1 gives y = 3, x = 2 gives y = 5. Line 2: x = 0 gives y = 4, x = 1 gives y = 3, x = 2 gives y = 2. Both tables contain the point (1, 3). Check: 2(1) + 1 = 3 and -1 + 4 = 3. The solution is x = 1, y = 3.",
+        "expression": "1",
+        "answer": "1"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "2*x + 1; -x + 4",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students read the crossing point only roughly and give an answer such as (1, 3.2) or do not check it.",
+          "response": "Praise the idea, then ask them to put the point into both equations. If either fails, the reading was off. Explain that graphs give a good guess and algebra confirms it."
+        },
+        {
+          "mistake": "Students give only the x-value, or swap the order and write (3, 1).",
+          "response": "Remind them the solution is a point, so it needs both coordinates, x first and then y. Have them label the point on the graph by walking along the x-axis first."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why does the crossing point solve both equations?",
+          "answer": "Every point on a line makes that line's equation true. The crossing point is on both lines, so it makes both equations true."
+        },
+        {
+          "question": "What if the lines never cross?",
+          "answer": "If the lines are parallel, there is no pair that works for both, so the system has no solution. For example y = x + 1 and y = x + 3 are always 2 apart."
+        },
+        {
+          "question": "What if the lines are the same line?",
+          "answer": "Then every point on the line works, so there are infinitely many solutions. For example y = x + 1 and 2y = 2x + 2 are the same line."
+        }
+      ],
+      "check_question": {
+        "question": "Where do y = x + 2 and y = -x + 4 cross? Give the y-value.",
+        "solution": "Set x + 2 = -x + 4, so 2x = 2 and x = 1. Then y = 1 + 2 = 3. The point is (1, 3), so y = 3.",
+        "expression": "3",
+        "answer": "3"
+      }
     },
     {
-      "minutes": 7,
-      "activity": "Teach substitution with worked example 2. Ask students when each method is easier."
+      "title": "Substitution",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Pick the equation where one letter is already alone, or easy to get alone. Replace that letter in the other equation with the expression. Solve the one-letter equation. Put the value back into the first equation to get the other letter. Check in both equations."
+        },
+        {
+          "kind": "story",
+          "text": "Think of swapping a banknote for its worth. If I tell you that y is the same as 3x - 2, then wherever the other rule says y, you may write 3x - 2 instead, like swapping a word for its meaning. Then only x is left, and you can solve."
+        }
+      ],
+      "example": {
+        "problem": "Solve y = 3x - 2 and 2x + y = 13.",
+        "steps": "Replace y in the second equation by 3x - 2: 2x + (3x - 2) = 13. Combine: 5x - 2 = 13. Add 2: 5x = 15, so x = 3. Then y = 3(3) - 2 = 7. Check: 2(3) + 7 = 13, which is true. The solution is x = 3, y = 7.",
+        "expression": "3",
+        "answer": "3"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students substitute the expression back into the same equation it came from, and get something like 3x - 2 = 3x - 2, which tells them nothing.",
+          "response": "Say that is fine, it is just true, but it uses the same rule twice. Ask them to use the other equation, because the expression must go into the equation it did not come from."
+        },
+        {
+          "mistake": "Students forget the brackets when substituting, for example writing 2x + 3x - 2 = 13 when the expression is subtracted or multiplied, or stop after finding x.",
+          "response": "Encourage writing the expression in brackets every time. Remind them that the solution has two numbers, so find y too and check in both equations."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "How do I know which letter to get alone?",
+          "answer": "Choose whichever is easiest, usually a letter with coefficient 1 or one that is already alone. Any choice gives the same answer."
+        },
+        {
+          "question": "Why can I just swap y for 3x - 2?",
+          "answer": "Because the first equation says they are equal. Swapping equal things does not change whether the second equation is true."
+        },
+        {
+          "question": "Do I get the same answer if I substitute the other way round?",
+          "answer": "Yes. Solutions do not depend on the method. That is a good way to check."
+        }
+      ],
+      "check_question": {
+        "question": "Solve y = 2x and x + y = 9. What is x?",
+        "solution": "Replace y by 2x: x + 2x = 9, so 3x = 9 and x = 3. Then y = 6. Check: 3 + 6 = 9.",
+        "expression": "3",
+        "answer": "3"
+      }
     },
     {
-      "minutes": 8,
-      "activity": "Students work the three Try it problems in pairs. Walk around and ask them to check in both equations."
+      "title": "Elimination",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Picture two balance scales, each with equal weight on both sides. Put the two scales together: the left sides combined still balance the right sides combined. In 2x + 3y = 12 and 4x - 3y = 6, the +3y on one scale and the -3y on the other cancel when combined, leaving 6x = 18."
+        },
+        {
+          "kind": "procedure",
+          "text": "Line up the equations with x under x, y under y. Look for a letter with opposite coefficients (add) or the same coefficients (subtract). If there is none, multiply one or both equations by a number to make one. Add or subtract to remove that letter, solve for the other, then put the value back to find the second letter and check."
+        }
+      ],
+      "example": {
+        "problem": "Solve 2x + 3y = 12 and 4x - 3y = 6.",
+        "steps": "The y terms are +3y and -3y, so add the equations: (2x + 4x) + (3y - 3y) = 12 + 6, which gives 6x = 18, so x = 3. Put x = 3 into 2x + 3y = 12: 6 + 3y = 12, so 3y = 6 and y = 2. Check in the other equation: 4(3) - 3(2) = 12 - 6 = 6, which is true. The solution is x = 3, y = 2.",
+        "expression": "3",
+        "answer": "3"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "When subtracting equations, students subtract only the first term or forget that subtracting -3y gives +3y, so they get wrong signs.",
+          "response": "Suggest writing the subtraction with brackets, or changing the signs of the whole second equation and then adding. Practise one example slowly together."
+        },
+        {
+          "mistake": "Students multiply only one side of an equation, or only one term, when making coefficients match.",
+          "response": "Remind them that an equation is a balance: whatever you do to one side you do to every term on both sides. Show 2x + 2y = 14 coming from x + y = 7 multiplied by 2 throughout."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why am I allowed to add two equations?",
+          "answer": "Each equation says two amounts are equal. Adding equal amounts to equal amounts keeps them equal."
+        },
+        {
+          "question": "What if no letter cancels?",
+          "answer": "Multiply one or both equations by a number so that one letter has the same (or opposite) coefficient in both. Then add or subtract."
+        },
+        {
+          "question": "Should I use elimination or substitution?",
+          "answer": "Use substitution when a letter is already alone. Use elimination when both equations are in the form ax + by = c. Both give the same answer."
+        }
+      ],
+      "check_question": {
+        "question": "Solve x + y = 10 and x - y = 2. What is x?",
+        "solution": "Add the equations: 2x = 12, so x = 6. Then y = 10 - 6 = 4. Check: 6 - 4 = 2.",
+        "expression": "6",
+        "answer": "6"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Solve x + y = 11 and x - y = 3. Find x.",
+      "solution": "Add the equations: 2x = 14, so x = 7. Then y = 11 - 7 = 4. Check: 7 - 4 = 3.",
+      "expression": "7",
+      "answer": "7"
     },
     {
-      "minutes": 2,
-      "activity": "Wrap-up: Students say in their own words why adding two equations is allowed. Mention parallel lines (no solution) as a preview."
+      "problem": "Solve y = 2x - 1 and 3x + y = 14. Find y.",
+      "solution": "Substitute: 3x + (2x - 1) = 14, so 5x = 15 and x = 3. Then y = 2(3) - 1 = 5. Check: 3(3) + 5 = 14.",
+      "expression": "5",
+      "answer": "5"
+    },
+    {
+      "problem": "Solve 3x + 2y = 16 and x + y = 7. Find x.",
+      "solution": "Multiply the second equation by 2: 2x + 2y = 14. Subtract it from the first: x = 2. Then y = 7 - 2 = 5. Check: 3(2) + 2(5) = 16.",
+      "expression": "2",
+      "answer": "2"
     }
   ],
   "meta": {
     "concept": "systems-of-equations",
     "title": "Systems of linear equations",
     "model": "sonnet",
-    "cost_usd": 0.0408,
+    "cost_usd": 0.11329,
     "generated": "2026-11-18",
     "grounded_on": null,
     "license": null,

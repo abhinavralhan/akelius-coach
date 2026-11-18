@@ -68,7 +68,7 @@ def ask(concept, question, teacher, force=False):
         if spent >= BUDGET:
             raise ValueError("the coach has reached its monthly budget; prep notes and earlier answers still work")
     s = sheets.get(concept)
-    context = {k: s[k] for k in ("idea", "why", "explanations", "mistakes", "student_questions")}
+    context = {k: s[k] for k in ("idea", "why", "subtopics")}
     answer, cost = complete(SYSTEM, f"Topic: {s['meta']['title']}\nPrep sheet: {context}\n\nTeacher's question: {question}",
                             model=ASK_MODEL)
     if re.search(r"https?://|www\.", answer):

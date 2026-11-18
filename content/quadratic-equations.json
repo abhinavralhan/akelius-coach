@@ -1,119 +1,232 @@
 {
-  "idea": "A quadratic equation ax^2 + bx + c = 0 can have up to two solutions. To solve it, rewrite it so one side is zero, then either factor it and use the fact that a product is zero only when one factor is zero, or use the quadratic formula x = (-b ± sqrt(b^2 - 4ac)) / (2a), which works every time.",
-  "why": "Factoring works because of the zero-product property. If two numbers multiply to give 0, at least one of them must be 0. So (x - 2)(x - 3) = 0 means x - 2 = 0 or x - 3 = 0. This only works when the other side is exactly 0, because a product equal to 6, for example, tells us nothing about the individual factors. The quadratic formula comes from completing the square. Take ax^2 + bx + c = 0 and divide by a. Then add the same amount to both sides so the left side becomes a perfect square: (x + b/(2a))^2 = (b^2 - 4ac)/(4a^2). Taking square roots gives two answers, plus and minus, and that is where the ± comes from. The part under the root, b^2 - 4ac (the discriminant), tells you how many real solutions there are. If it is positive there are two. If it is zero there is one. If it is negative there are none, because you cannot take the square root of a negative number among real numbers. Graphically, the solutions are where the parabola y = ax^2 + bx + c crosses the x-axis, and a parabola can cross it twice, touch it once, or miss it.",
-  "explanations": [
-    {
-      "kind": "picture",
-      "text": "Draw the parabola y = x^2 - 5x + 6. It is a U-shape that dips below the x-axis. Mark where it crosses the axis, at x = 2 and x = 3. Say: solving the equation x^2 - 5x + 6 = 0 means asking where the height of the curve is zero. Then slide the whole curve up and down by hand. At one height it just touches the axis (one solution). Higher up it misses the axis completely (no real solutions). This links the number of solutions to the discriminant."
-    },
-    {
-      "kind": "story",
-      "text": "Tell the story of a ball thrown up from a balcony. Its height is modelled by a quadratic. Ask: when is the ball at ground level? There are two moments where the height is zero. One is after the ball has gone up and come back down. The other is a mathematical answer, perhaps at a negative time, which would be before the throw, so we discard it. The story shows why a quadratic can give two answers and why we must check which ones make sense in the situation."
-    },
-    {
-      "kind": "procedure",
-      "text": "Step 1: Move everything to one side so the equation reads ax^2 + bx + c = 0. Step 2: Try to factor. Look for two numbers that multiply to c and add to b (when a = 1). Step 3: If it factors, set each bracket equal to 0 and solve each. Step 4: If it does not factor easily, use the formula. Write down a, b, c with their signs, work out b^2 - 4ac first, then finish. Step 5: Put each answer back into the original equation to check."
-    }
-  ],
-  "student_questions": [
-    {
-      "question": "Why do we have to make one side zero first?",
-      "answer": "Because zero is special. If A times B equals 0, then A is 0 or B is 0. If A times B equals 6, then A could be 2, or 3, or 12, or one half, and so on. So the factors tell us nothing. Getting zero on one side is what lets us split the problem into two easy ones."
-    },
-    {
-      "question": "Why are there two answers? Can I just give one?",
-      "answer": "The curve is a U-shape, so it usually crosses the x-axis on both sides of its lowest point. Each crossing is a solution. If you give only one, the equation is only half solved. Sometimes in a real situation one answer doesn't fit, like a negative length, but you still find both before deciding."
-    },
-    {
-      "question": "Why is there a plus-or-minus in the formula?",
-      "answer": "Because both 3 and -3 square to 9. When we undo a square we get two possibilities. That plus-or-minus is the two crossing points, one on each side of the middle of the U."
-    },
-    {
-      "question": "Why can't I just divide both sides by x to solve x^2 = 3x?",
-      "answer": "Dividing by x quietly assumes x is not 0. But x = 0 does work, since 0 = 0. Dividing throws that solution away. Instead move everything to one side, x^2 - 3x = 0, factor to x(x - 3) = 0, and you get both x = 0 and x = 3."
-    }
-  ],
-  "mistakes": [
-    {
-      "mistake": "Solving x(x - 3) = 4 by saying x = 4 or x - 3 = 4.",
-      "response": "Ask: what would x = 4 give? 4 times 1 is 4, which works by luck, but x = 7 from the other bracket gives 7 times 4 = 28, which is wrong. Remind students that the zero-product rule only works for 0. Have them move the 4 across to get x^2 - 3x - 4 = 0 and then factor."
-    },
-    {
-      "mistake": "Finding only one solution, or losing x = 0 by dividing by x.",
-      "response": "Ask students to check by substituting. Show that the missing value also works. Then show the factoring route, which keeps both. Encourage the habit: a quadratic has up to two solutions, so always ask where the second one is."
-    },
-    {
-      "mistake": "Sign errors in the formula, such as using b instead of -b, or getting b^2 wrong when b is negative (writing -5^2 = -25).",
-      "response": "Have students write a, b, c with their signs on the page first. Then put brackets in when substituting, so (-5)^2 = 25. Suggest computing b^2 - 4ac on its own line before anything else."
-    }
-  ],
-  "worked_examples": [
-    {
-      "problem": "Solve x^2 - 5x + 6 = 0 and give the larger solution.",
-      "steps": "The equation already has 0 on one side. Look for two numbers that multiply to 6 and add to -5. They are -2 and -3. So (x - 2)(x - 3) = 0. Then x - 2 = 0 or x - 3 = 0, giving x = 2 or x = 3. Check x = 3: 9 - 15 + 6 = 0. Good. The larger solution is 3. The same answer comes from the formula: (5 + sqrt(25 - 24)) / 2 = (5 + 1) / 2 = 3.",
-      "expression": "(5 + sqrt(25 - 24))/2",
-      "answer": "3"
-    },
-    {
-      "problem": "Solve 2x^2 + 3x - 2 = 0 and give the larger solution.",
-      "steps": "Here a = 2, b = 3, c = -2. The discriminant is b^2 - 4ac = 9 - 4(2)(-2) = 9 + 16 = 25, and its square root is 5. So x = (-3 ± 5) / 4. That gives x = 2/4 = 1/2 or x = -8/4 = -2. The larger one is 1/2. Check by factoring: (2x - 1)(x + 2) = 2x^2 + 4x - x - 2 = 2x^2 + 3x - 2. Good.",
-      "expression": "(-3 + sqrt(9 + 16))/4",
-      "answer": "1/2"
-    },
-    {
-      "problem": "Solve x^2 - 6x + 7 = 0 and give the larger solution.",
-      "steps": "No two whole numbers multiply to 7 and add to -6, so use the formula. a = 1, b = -6, c = 7. The discriminant is 36 - 28 = 8, and sqrt(8) = 2 sqrt(2). So x = (6 ± 2 sqrt(2)) / 2 = 3 ± sqrt(2). The larger solution is 3 + sqrt(2), which is about 4.41. Note that the answer is not a whole number, which is why factoring did not work.",
-      "expression": "(6 + sqrt(36 - 28))/2",
-      "answer": "3 + sqrt(2)"
-    }
-  ],
-  "try_it": [
-    {
-      "problem": "Solve x^2 + 2x - 15 = 0 and give the larger solution.",
-      "solution": "Factor: two numbers that multiply to -15 and add to 2 are 5 and -3. So (x + 5)(x - 3) = 0, giving x = -5 or x = 3. The larger solution is 3. Check: 9 + 6 - 15 = 0.",
-      "expression": "(-2 + sqrt(4 + 60))/2",
-      "answer": "3"
-    },
-    {
-      "problem": "Solve x^2 - 4x - 1 = 0 and give the larger solution.",
-      "solution": "It does not factor with whole numbers, so use the formula with a = 1, b = -4, c = -1. The discriminant is 16 + 4 = 20, and sqrt(20) = 2 sqrt(5). So x = (4 ± 2 sqrt(5)) / 2 = 2 ± sqrt(5). The larger solution is 2 + sqrt(5).",
-      "expression": "(4 + sqrt(16 + 4))/2",
-      "answer": "2 + sqrt(5)"
-    },
-    {
-      "problem": "Solve 3x^2 - 7x + 2 = 0 and give the smaller solution.",
-      "solution": "a = 3, b = -7, c = 2. The discriminant is 49 - 24 = 25, and its square root is 5. So x = (7 ± 5) / 6, giving x = 2 or x = 1/3. The smaller solution is 1/3. Check by factoring: (3x - 1)(x - 2) = 3x^2 - 6x - x + 2 = 3x^2 - 7x + 2.",
-      "expression": "(7 - sqrt(49 - 24))/6",
-      "answer": "1/3"
-    }
-  ],
+  "idea": "A quadratic equation has the form ax^2 + bx + c = 0 with a not zero. Solving it means finding every x that makes the left side equal to 0. On a graph, these x-values are where the parabola y = ax^2 + bx + c crosses the x-axis. There can be two solutions, one, or none.",
+  "why": "Factoring works because of one fact: if two numbers multiply to 0, at least one of them is 0. So (x - 2)(x - 3) = 0 forces x - 2 = 0 or x - 3 = 0. Completing the square works because (x + p)^2 is easy to undo with a square root, so we rewrite the equation into that shape. The quadratic formula is completing the square done once, in general, so it always works, even when factoring is hard to see. The part under the root, b^2 - 4ac (the discriminant), tells you how many real solutions there are: positive gives two, zero gives one, negative gives none.",
+  "theory_example": {
+    "problem": "Solve x^2 - 2x - 3 = 0.",
+    "steps": "Look for two numbers that multiply to -3 and add to -2. They are -3 and +1. So x^2 - 2x - 3 = (x - 3)(x + 1) = 0. Either x - 3 = 0 or x + 1 = 0, so x = 3 or x = -1. Check x = 3: 9 - 6 - 3 = 0. Check x = -1: 1 + 2 - 3 = 0. Both work.",
+    "expression": "3",
+    "answer": "3"
+  },
   "lesson_outline": [
     {
-      "minutes": 5,
-      "activity": "Warm-up with the picture: draw a parabola and ask where it crosses the x-axis. Link crossing points to solutions of the equation. Show a parabola with two, one and zero crossings."
+      "minutes": 4,
+      "activity": "Open with the idea: solving a quadratic means finding where the parabola meets the x-axis. Walk through the theory example x^2 - 2x - 3 = 0 and check both answers by substituting."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach Solving by factoring. Draw the parabola, explain the 'product is zero' idea, work the example, then ask the check question."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach Completing the square and square roots. Show why (x - 2)^2 = 5 is easy to solve, work the example, then ask the check question."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach The quadratic formula. Compute the discriminant first, work the example, then ask the check question."
     },
     {
       "minutes": 10,
-      "activity": "Factoring and the zero-product rule: work through x^2 - 5x + 6 = 0 together. Stress why the other side must be 0, using the contrast of A times B = 0 and A times B = 6."
+      "activity": "Extra examples and questions round: work the 3 extra examples with the class (let students choose the method), then take open questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Solving by factoring",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Step 1: move everything to one side so it equals 0. Step 2: factor into two brackets. For x^2 + bx + c, find two numbers that multiply to c and add to b. Step 3: set each bracket equal to 0 and solve. Step 4: substitute back to check."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw the parabola y = x^2 - 5x + 6. It crosses the x-axis at 2 and 3. At those points y is 0, which is exactly what the equation asks for. The factored form (x - 2)(x - 3) shows those two crossing points directly."
+        }
+      ],
+      "example": {
+        "problem": "Solve x^2 - 5x + 6 = 0.",
+        "steps": "Find two numbers that multiply to 6 and add to -5: they are -2 and -3. So (x - 2)(x - 3) = 0. Then x - 2 = 0 or x - 3 = 0, so x = 2 or x = 3. Check x = 2: 4 - 10 + 6 = 0. Check x = 3: 9 - 15 + 6 = 0.",
+        "expression": "3",
+        "answer": "3"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "x**2 - 5*x + 6",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students solve x(x - 3) = 6 by saying x = 6 or x - 3 = 6.",
+          "response": "Remind them the trick only works when the other side is 0. Ask: what numbers multiply to 6? Many pairs do. Move the 6 across first: x^2 - 3x - 6 = 0, which is a different problem."
+        },
+        {
+          "mistake": "Students get the sign wrong: from (x - 2)(x - 3) = 0 they write x = -2 or x = -3.",
+          "response": "Have them substitute x = -2 into the bracket x - 2 and see it gives -4, not 0. The solution is the value that makes the bracket zero, so the sign flips."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why can we split it into two equations?",
+          "answer": "Because if two numbers multiply to 0, one of them must be 0. If neither were 0, the product could not be 0. So either the first bracket is 0 or the second is."
+        },
+        {
+          "question": "Why do we need the right side to be 0?",
+          "answer": "Zero is special. Only with 0 do we know something about the factors. If the product is 6, the factors could be 2 and 3, or 1 and 6, or 12 and one half, so we learn nothing."
+        },
+        {
+          "question": "What if I can't find the numbers?",
+          "answer": "Not every quadratic factors neatly. That is fine. The next two methods, completing the square and the quadratic formula, work every time."
+        }
+      ],
+      "check_question": {
+        "question": "Solve x^2 + x - 12 = 0. What is the positive solution?",
+        "solution": "Numbers that multiply to -12 and add to 1 are 4 and -3. So (x + 4)(x - 3) = 0, giving x = -4 or x = 3. The positive solution is 3.",
+        "expression": "3",
+        "answer": "3"
+      }
     },
     {
-      "minutes": 10,
-      "activity": "The quadratic formula: work 2x^2 + 3x - 2 = 0 on the board. Students write a, b, c with signs and compute the discriminant on its own line. Briefly say where the plus-or-minus comes from."
+      "title": "Completing the square and square roots",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Step 1: get x^2 + bx alone on the left, constant on the right. Step 2: add (b/2)^2 to both sides. Step 3: the left side is now (x + b/2)^2. Step 4: take the square root of both sides, remembering plus and minus. Step 5: solve for x."
+        },
+        {
+          "kind": "picture",
+          "text": "Picture x^2 + 6x as a square of side x plus two strips of 3 by x. Together they are an L-shape. Add a small 3 by 3 square in the corner and it becomes a full square of side x + 3. That small square is the 'completing' part, and it is (6/2)^2 = 9."
+        }
+      ],
+      "example": {
+        "problem": "Solve x^2 - 4x - 1 = 0.",
+        "steps": "Move the constant: x^2 - 4x = 1. Half of -4 is -2, and (-2)^2 = 4. Add 4 to both sides: x^2 - 4x + 4 = 5. The left side is (x - 2)^2, so (x - 2)^2 = 5. Take square roots: x - 2 = sqrt(5) or x - 2 = -sqrt(5). So x = 2 + sqrt(5) or x = 2 - sqrt(5). That is about 4.24 or -0.24.",
+        "expression": "2 + sqrt(5)",
+        "answer": "2 + sqrt(5)"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "x**2 - 4*x - 1",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students add the square to only one side.",
+          "response": "Use the balance idea: whatever you do to one side you must do to the other. Check by expanding (x - 2)^2 and seeing the extra 4 must be paid for on the right."
+        },
+        {
+          "mistake": "Students forget the minus root and give only x = 2 + sqrt(5).",
+          "response": "Ask: what squares to 5? Both sqrt(5) and -sqrt(5). Point to the graph, which crosses the axis twice, once on each side of x = 2."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we add half of b, squared?",
+          "answer": "Because (x + p)^2 expands to x^2 + 2px + p^2. The middle term is 2p, so p is half of b. The p^2 is the missing piece we add."
+        },
+        {
+          "question": "Why plus or minus when we take the square root?",
+          "answer": "Both a positive and a negative number give the same square. 3 times 3 is 9 and so is (-3) times (-3). So both answers are real solutions."
+        },
+        {
+          "question": "Why not just factor?",
+          "answer": "Because this one does not factor with whole numbers. Completing the square still works, and it gives exact answers with square roots."
+        }
+      ],
+      "check_question": {
+        "question": "Solve (x + 1)^2 = 4. What is the positive solution?",
+        "solution": "Take square roots: x + 1 = 2 or x + 1 = -2. So x = 1 or x = -3. The positive solution is 1.",
+        "expression": "1",
+        "answer": "1"
+      }
     },
     {
-      "minutes": 10,
-      "activity": "Students work in pairs on the three Try it problems, checking each answer by substituting it back. Walk around and watch for the common mistakes. Use x^2 - 6x + 7 = 0 to show answers that are not whole numbers."
+      "title": "The quadratic formula",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "For ax^2 + bx + c = 0, x = (-b plus or minus sqrt(b^2 - 4ac)) / (2a). Step 1: write down a, b and c with their signs. Step 2: compute the discriminant b^2 - 4ac. Step 3: put everything into the formula. Step 4: simplify, giving both the plus and the minus answer."
+        },
+        {
+          "kind": "story",
+          "text": "Tell students the formula is a machine built from completing the square. Someone did the work once for the letters a, b and c, so now you just feed in numbers. Whatever quadratic you have, the machine gives the answers. The discriminant is the warning light: positive means two answers, zero means one, negative means none on the real number line."
+        }
+      ],
+      "example": {
+        "problem": "Solve 2x^2 + 3x - 2 = 0.",
+        "steps": "Here a = 2, b = 3, c = -2. Discriminant: 3^2 - 4(2)(-2) = 9 + 16 = 25. Then x = (-3 plus or minus 5) / 4. Plus: (-3 + 5)/4 = 2/4 = 1/2. Minus: (-3 - 5)/4 = -8/4 = -2. Check x = 1/2: 2(1/4) + 3/2 - 2 = 1/2 + 3/2 - 2 = 0.",
+        "expression": "Rational(1, 2)",
+        "answer": "1/2"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "2*x**2 + 3*x - 2",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students forget signs, for example using b = 3 but c = 2 instead of -2, so the discriminant becomes 9 - 16.",
+          "response": "Have them write a = , b = , c = with signs before using the formula. Also remind them that -4ac with c negative becomes plus."
+        },
+        {
+          "mistake": "Students divide only part of the expression by 2a, for example writing -3 + 5/4.",
+          "response": "Show that the whole top is divided by 2a. Suggest working out the top first as one number, then dividing, or putting the top in brackets."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Where does the formula come from?",
+          "answer": "From completing the square on ax^2 + bx + c = 0 with letters instead of numbers. It is the same steps you just did, done once for all quadratics."
+        },
+        {
+          "question": "What if the number under the square root is negative?",
+          "answer": "Then there are no real solutions. On the graph, the parabola never touches the x-axis. In later years you will meet complex numbers for these cases."
+        },
+        {
+          "question": "Which method should I use?",
+          "answer": "If it factors easily, factor. If it is x^2 equals something, use square roots. Otherwise the formula always works."
+        }
+      ],
+      "check_question": {
+        "question": "Use the formula to solve x^2 - 4x + 1 = 0. What is the larger solution?",
+        "solution": "a = 1, b = -4, c = 1. Discriminant: 16 - 4 = 12, and sqrt(12) = 2 sqrt(3). So x = (4 plus or minus 2 sqrt(3)) / 2 = 2 plus or minus sqrt(3). The larger solution is 2 + sqrt(3).",
+        "expression": "2 + sqrt(3)",
+        "answer": "2 + sqrt(3)"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Solve x^2 + 2x - 8 = 0 (factoring). Give the positive solution.",
+      "solution": "Numbers that multiply to -8 and add to 2 are 4 and -2. So (x + 4)(x - 2) = 0, giving x = -4 or x = 2. The positive solution is 2.",
+      "expression": "2",
+      "answer": "2"
     },
     {
-      "minutes": 5,
-      "activity": "Wrap-up: discuss the discriminant (two, one or no real solutions) and the ball-throw story. Ask students to say aloud when to factor and when to use the formula."
+      "problem": "Solve x^2 + 6x + 1 = 0 by completing the square. Give the larger solution.",
+      "solution": "x^2 + 6x = -1. Add 9 to both sides: (x + 3)^2 = 8. So x + 3 = plus or minus 2 sqrt(2), and x = -3 plus or minus 2 sqrt(2). The larger solution is -3 + 2 sqrt(2).",
+      "expression": "-3 + 2*sqrt(2)",
+      "answer": "-3 + 2*sqrt(2)"
+    },
+    {
+      "problem": "Solve 3x^2 - 5x + 2 = 0 with the quadratic formula. Give the larger solution.",
+      "solution": "a = 3, b = -5, c = 2. Discriminant: 25 - 24 = 1. So x = (5 plus or minus 1) / 6, giving x = 1 or x = 2/3. The larger solution is 1.",
+      "expression": "1",
+      "answer": "1"
     }
   ],
   "meta": {
     "concept": "quadratic-equations",
     "title": "Solving quadratic equations",
     "model": "sonnet",
-    "cost_usd": 0.04883,
+    "cost_usd": 0.14021,
     "generated": "2026-11-18",
     "grounded_on": null,
     "license": null,

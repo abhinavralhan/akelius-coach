@@ -18,13 +18,14 @@ button { cursor:pointer; } button.primary { background:var(--accent); color:var(
 .layout { display:grid; grid-template-columns:minmax(0,1fr) 340px; gap:24px; max-width:1200px; margin:0 auto; padding:16px; }
 @media (max-width: 900px) { .layout { grid-template-columns:1fr; } }
 main section { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 20px; margin-bottom:16px; }
-main h2 { font-size:1.05rem; margin:0 0 8px; color:var(--accent); }
+main h2 { font-size:1.1rem; margin:0 0 8px; color:var(--accent); } main h3 { font-size:.98rem; margin:16px 0 6px; } section[id] { scroll-margin-top:12px; }
 .banner { background:var(--warnbg); color:var(--warn); border-radius:8px; padding:10px 14px; margin-bottom:16px; font-size:.92rem; }
 .muted { color:var(--muted); font-size:.9rem; }
 aside { position:sticky; top:16px; align-self:start; }
 aside details { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 16px; margin-bottom:12px; }
 aside summary { cursor:pointer; font-weight:600; }
 aside textarea { width:100%; min-height:80px; margin:8px 0; }
+.notes { width:100%; min-height:90px; } .sketch { width:100%; height:260px; border:1px dashed var(--line); border-radius:8px; touch-action:none; background:var(--bg); }
 .answer { white-space:pre-wrap; border-left:3px solid var(--accent); padding:4px 10px; margin-top:8px; }
 .board { width:100%; max-width:560px; aspect-ratio:4/3; }
 .controls { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:8px 0; }
@@ -80,95 +81,164 @@ async function loadTopics() {
   const sel = $('topic'); sel.append(new Option('Choose a topic…', ''));
   for (const g of [...new Set(topics.map(t => t.grade))]) {
     const og = document.createElement('optgroup'); og.label = `Grade ${g}`;
-    topics.filter(t => t.grade === g).forEach(t => og.append(new Option(`${t.title}${t.ready ? '' : ' (prepared on first open)'}`, t.concept)));
+    topics.filter(t => t.grade === g).forEach(t => og.append(new Option(`${t.title}${t.ready ? '' : ' (coming soon)'}`, t.concept)));
     sel.append(og);
   }
   sel.onchange = () => sel.value && openTopic(sel.value);
 }
 
-const SECTIONS = [['idea','The idea in plain words'],['why','Why it works'],['explanations','Three ways to explain it'],
-  ['student_questions','Questions your students may ask'],['mistakes','Common mistakes and how to respond'],
-  ['worked_examples','Worked examples'],['try_it','Try it yourself'],['lesson_outline','A 40-minute lesson']];
+const KIND = {picture: 'With a picture', story: 'With a story', procedure: 'Step by step'};
+const add = (parent, ...kids) => { parent.append(...kids); return parent; };
 
 async function openTopic(id) {
   current = topics.find(t => t.concept === id);
   const main = $('notes'); main.replaceChildren(el('p', current.ready ? 'Loading…' : 'Preparing these notes for the first time and checking every answer. This can take a minute…', 'muted'));
   let s; try { s = await api(`/api/sheet/${id}`); current.ready = true; } catch (e) { main.replaceChildren(el('p', e.message, 'banner')); return; }
-  main.replaceChildren();
-  const m = s.meta;
-  main.append(el('div', `Written by AI and checked automatically (every worked answer is recomputed). Not yet reviewed by a math educator. ` +
+  const m = s.meta; main.replaceChildren();
+  main.append(el('div', 'Written by AI and checked automatically (every answer is recomputed). Not yet reviewed by a math educator. ' +
     (m.grounded_on ? 'Based on a checked lesson text.' : 'No checked lesson text exists for this topic yet, so read with extra care.'), 'banner'));
-  const head = el('section'); head.append(el('h2', m.title), el('p', `Grade ${current.grade} · ${current.code} (Common Core)`, 'muted')); main.append(head);
-  for (const [key, label] of SECTIONS) {
-    const sec = el('section'); sec.append(el('h2', label)); const v = s[key];
-    if (typeof v === 'string') sec.append(el('p', v));
-    else if (key === 'explanations') v.forEach(x => { sec.append(el('h3', {picture:'With a picture', story:'With a story', procedure:'Step by step'}[x.kind])); sec.append(el('p', x.text)); });
-    else if (key === 'student_questions') v.forEach(x => { sec.append(el('p', `“${x.question}”`)); sec.append(el('p', x.answer, 'answer')); });
-    else if (key === 'mistakes') { const ul = el('ul'); v.forEach(x => { const li = el('li'); li.append(el('strong', x.mistake), el('div', x.response)); ul.append(li); }); sec.append(ul); }
-    else if (key === 'worked_examples') v.forEach(x => { sec.append(el('h3', x.problem)); sec.append(el('p', x.steps)); sec.append(el('p', `Answer: ${x.answer}`, 'muted')); });
-    else if (key === 'try_it') v.forEach(x => { const d = el('details'); d.append(el('summary', x.problem), el('p', x.solution)); sec.append(d); });
-    else if (key === 'lesson_outline') { const ol = el('ol'); v.forEach(x => ol.append(el('li', `${x.minutes} min: ${x.activity}`))); sec.append(ol); }
+
+  // 1. What this lesson covers + the 40-minute plan (the core of the class)
+  const top = add(el('section'), el('h2', m.title), el('p', `Grade ${current.grade} · ${current.code} (Common Core)`, 'muted'), el('h3', 'What this lesson covers'));
+  const toc = el('ol'); s.subtopics.forEach((t, i) => { const a = el('a', t.title); a.href = `#part-${i + 1}`; toc.append(add(el('li'), a)); });
+  top.append(toc, el('h3', 'Your 40-minute lesson plan'));
+  const plan = el('ol'); s.lesson_outline.forEach(x => plan.append(el('li', `${x.minutes} min: ${x.activity}`))); top.append(plan, notesBox(`${id}:lesson`, 'My notes for this lesson'), sketchPad(`${id}:sketch`)); main.append(top);
+
+  // 2. Short theory + example (for the teacher, before class)
+  const th = add(el('section'), el('h2', 'Short theory'), el('p', s.idea), el('h3', 'Why it works'), el('p', s.why), el('h3', 'Example'));
+  exampleBlock(th, s.theory_example); main.append(th);
+
+  // 3. Each subtopic, in teaching order
+  s.subtopics.forEach((t, i) => {
+    const sec = add(el('section'), el('h2', `Part ${i + 1}: ${t.title}`)); sec.id = `part-${i + 1}`;
+    sec.append(el('h3', 'Two ways to explain it'));
+    t.ways_to_explain.forEach(w => sec.append(el('p', `${KIND[w.kind]}: ${w.text}`)));
+    sec.append(el('h3', 'Example')); exampleBlock(sec, t.example); sec.append(drawing(current.visual, t.visual));
+    sec.append(el('h3', 'Common mistakes'));
+    const ul = el('ul'); t.mistakes.forEach(x => ul.append(add(el('li'), el('strong', x.mistake), el('div', x.response)))); sec.append(ul);
+    sec.append(el('h3', 'Questions students may ask'));
+    t.student_questions.forEach(x => sec.append(el('p', `“${x.question}”`), el('p', x.answer, 'answer')));
+    sec.append(el('h3', 'Check question for the class'), el('p', t.check_question.question),
+      add(el('details'), el('summary', 'Show answer'), el('p', t.check_question.solution)));
+    sec.append(notesBox(`${id}:part${i + 1}`, `My notes for part ${i + 1}`));
     main.append(sec);
-    if (key === 'try_it' && current.visual) main.append(drawSection(current.visual));
-  }
-  if (s.teacher_faq?.length) { const sec = el('section'); sec.append(el('h2', 'Questions other teachers asked')); s.teacher_faq.forEach(x => { sec.append(el('p', `“${x.question}”`)); sec.append(el('p', x.answer, 'answer')); }); main.append(sec); }
-  const res = el('section'); res.append(el('h2', 'More resources')); const ul = el('ul');
-  s.resources.forEach(r => { const li = el('li'); const a = el('a', r.name); a.href = r.url; a.target = '_blank'; a.rel = 'noopener'; li.append(a); ul.append(li); });
-  res.append(ul); main.append(res);
-  const ex = $('explain'); ex.replaceChildren(new Option('Choose a part…', '')); SECTIONS.slice(0, 5).forEach(([k, l]) => ex.append(new Option(l, l)));
+  });
+
+  // 4. Last 10 minutes: extra examples and questions round
+  const ex = add(el('section'), el('h2', 'Last 10 minutes: extra examples and questions'));
+  s.extra_examples.forEach(x => ex.append(el('p', x.problem), add(el('details'), el('summary', 'Show solution'), el('p', x.solution))));
+  main.append(ex);
+
+  if (s.teacher_faq?.length) { const f = add(el('section'), el('h2', 'Questions other teachers asked')); s.teacher_faq.forEach(x => f.append(el('p', `“${x.question}”`), el('p', x.answer, 'answer'))); main.append(f); }
+  const res = add(el('section'), el('h2', 'More resources')); const rl = el('ul');
+  s.resources.forEach(r => { const a = el('a', r.name); a.href = r.url; a.target = '_blank'; a.rel = 'noopener'; rl.append(add(el('li'), a)); });
+  res.append(rl); main.append(res);
+  const exp = $('explain'); exp.replaceChildren(new Option('Choose a part…', ''), new Option('Short theory', 'Short theory'));
+  s.subtopics.forEach((t, i) => exp.append(new Option(`Part ${i + 1}: ${t.title}`, t.title)));
 }
 
-// ---- Draw & explore: fixed JSXGraph templates. The model never writes drawing code. ----
-function drawSection(kind) {
-  const sec = el('section'); sec.append(el('h2', 'Draw and explore'));
-  const controls = el('div', null, 'controls'); const box = el('div', null, 'board jxgbox'); box.id = 'board' + Date.now();
-  sec.append(el('p', {graph:'Type a function and press Draw. Use it on the board or project it.', triangle:'Drag the corners. The squares of the sides update live.',
-    numberline:'Move the sliders to show adding and multiplying with negative numbers.', fractionbar:'Set two fractions to see how many pieces of the second fit into the first.'}[kind], 'muted'), controls, box);
-  requestAnimationFrame(() => TEMPLATES[kind](box.id, controls));
-  return sec;
+function exampleBlock(parent, x) { parent.append(el('p', x.problem), el('p', x.steps), el('p', `Answer: ${x.answer}`, 'muted')); }
+
+// ---- Teacher's own notes and sketches: kept only in this browser, never sent to the server. ----
+// shortcut: device-only storage; move to the teacher's account once sign-in exists (see TODO).
+const store = {get: k => { try { return localStorage.getItem('coach:' + k); } catch { return null; } },
+               set: (k, v) => { try { localStorage.setItem('coach:' + k, v); } catch {} }};
+function notesBox(key, label) {
+  const t = el('textarea'); t.className = 'notes'; t.value = store.get(key) || ''; t.setAttribute('aria-label', label);
+  t.placeholder = 'Your own points, examples or reminders. Saved only on this device.';
+  t.oninput = () => store.set(key, t.value);
+  return add(el('div'), el('h3', label), t);
+}
+function sketchPad(key) {
+  const cv = el('canvas'); cv.className = 'sketch'; cv.setAttribute('aria-label', 'Sketch pad for your own drawings');
+  const ctx = cv.getContext('2d'); let down = false;
+  const fit = () => { const r = cv.getBoundingClientRect(); cv.width = r.width; cv.height = r.height; const img = store.get(key);
+    if (img) { const i = new Image(); i.onload = () => ctx.drawImage(i, 0, 0); i.src = img; } };
+  const pos = e => { const r = cv.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; };
+  cv.onpointerdown = e => { down = true; cv.setPointerCapture(e.pointerId); ctx.beginPath(); ctx.moveTo(...pos(e)); };
+  cv.onpointermove = e => { if (!down) return; ctx.lineWidth = 2.5; ctx.lineCap = 'round'; ctx.strokeStyle = getComputedStyle(document.body).color; ctx.lineTo(...pos(e)); ctx.stroke(); };
+  cv.onpointerup = () => { down = false; store.set(key, cv.toDataURL()); };
+  const clear = el('button', 'Clear'); clear.onclick = () => { ctx.clearRect(0, 0, cv.width, cv.height); store.set(key, ''); };
+  const save = el('button', 'Download image'); save.onclick = () => { const a = el('a'); a.href = cv.toDataURL(); a.download = `${key.replace(':', '-')}.png`; a.click(); };
+  requestAnimationFrame(fit);
+  return add(el('div'), el('h3', 'My sketch pad'), el('p', 'Draw with a mouse, pen or finger. Saved only on this device.', 'muted noprint'), cv, add(el('div', null, 'controls noprint'), clear, save));
+}
+
+// ---- Drawings: fixed JSXGraph templates filled with checked values. The model never writes drawing code. ----
+function drawing(kind, p) {
+  // Only where the sheet asks for one, and only if it actually draws: an empty chart is never shown.
+  if (!p || p.kind === 'none' || p.kind !== kind || !TEMPLATES[kind]) return document.createDocumentFragment();
+  const box = el('div', null, 'board jxgbox'); box.id = 'board' + Math.random().toString(36).slice(2);
+  const controls = el('div', null, 'controls noprint');
+  const wrap = add(el('div'), el('p', {graph: 'Change the function and press Draw.', triangle: 'Drag the corners.', numberline: 'Move the sliders.',
+    fractionbar: 'Change the fractions and press Show.', bars: 'Change the values and press Show.'}[kind], 'muted noprint'), controls, box);
+  requestAnimationFrame(() => { try { if (TEMPLATES[kind](box.id, controls, p) === false) wrap.remove(); } catch { wrap.remove(); } });
+  return wrap;
 }
 const input = (controls, label, value, cls) => { const l = el('label', label + ' '); const i = el('input'); i.value = value; if (cls) i.className = cls; l.append(i); controls.append(l); return i; };
-const board = (id, bb, axis = true) => JXG.JSXGraph.initBoard(id, {boundingbox: bb, axis, showCopyright:false, showNavigation:false, keepAspectRatio: false});
+const button = (controls, label, fn) => { const b = el('button', label); b.onclick = fn; controls.append(b); fn(); };
+const board = (id, bb, axis = true) => JXG.JSXGraph.initBoard(id, {boundingbox: bb, axis, showCopyright: false, showNavigation: false, keepAspectRatio: false});
+const txt = (b, x, y, t) => b.create('text', [x, y, t], {fontSize: 14, display: 'internal'});  // internal = SVG text, never HTML
 const TEMPLATES = {
-  graph(id, c) {
-    const f = input(c, 'f(x) =', current.concept === 'quadratic-equations' ? 'x^2 - 2*x - 3' : '2*x + 1', 'wide');
-    const b = board(id, [-10, 10, 10, -10]); let g = null; const btn = el('button', 'Draw'); c.append(btn);
-    const draw = () => { try { const fn = b.jc.snippet(f.value, true, 'x', true); if (g) b.removeObject(g); g = b.create('functiongraph', [fn], {strokeWidth: 3}); f.setCustomValidity(''); } catch { f.setCustomValidity('Could not read that function'); f.reportValidity(); } };
-    btn.onclick = draw; draw();
-  },
-  triangle(id) {
-    const b = board(id, [-1, 9, 11, -1]);
-    const C = b.create('point', [0, 0], {name: '', fixed: true, size: 2});
-    const B = b.create('glider', [6, 0, b.defaultAxes.x], {name: 'drag', size: 4});
-    const A = b.create('glider', [0, 4, b.defaultAxes.y], {name: 'drag', size: 4});
-    b.create('polygon', [C, B, A], {fillOpacity: .15});
-    b.create('text', [5, 8, () => { const a = A.Y(), bb = B.X(), c2 = a * a + bb * bb;
-      return `a = ${a.toFixed(1)}, b = ${bb.toFixed(1)} → a² + b² = ${(a * a).toFixed(1)} + ${(bb * bb).toFixed(1)} = ${c2.toFixed(1)} = c², so c = ${Math.sqrt(c2).toFixed(2)}`; }], {fontSize: 14});
-  },
-  numberline(id) {
-    const b = board(id, [-11, 4, 11, -3]);
-    const a = b.create('slider', [[-10, 3], [-4, 3], [-5, 2, 5]], {name: 'a', snapWidth: 1});
-    const k = b.create('slider', [[2, 3], [8, 3], [-5, -3, 5]], {name: 'b', snapWidth: 1});
-    b.create('arrow', [[0, .5], [() => a.Value(), .5]], {strokeWidth: 3, strokeColor: '#2f6f8f'});
-    b.create('arrow', [[() => a.Value(), 1], [() => a.Value() + k.Value(), 1]], {strokeWidth: 3, strokeColor: '#c0392b'});
-    b.create('text', [-10, -1.5, () => `a + b = ${a.Value()} + (${k.Value()}) = ${a.Value() + k.Value()}      a · b = ${a.Value()} · (${k.Value()}) = ${a.Value() * k.Value()}`], {fontSize: 14});
-  },
-  fractionbar(id, c) {
-    const [n1, d1, n2, d2] = [input(c, 'first', 3), input(c, '/', 4), input(c, '÷', 1), input(c, '/', 2)];
-    const btn = el('button', 'Show'); c.append(btn); const out = el('p', null, 'muted'); c.append(out);
-    let b = null;
+  graph(id, c, p) {
+    if (!p.expr.trim()) return false;
+    const f = input(c, 'f(x) =', p.expr, 'wide'); const b = board(id, [-10, 10, 10, -10]); let curves = [];
     const draw = () => {
-      const [a, bb, cc, dd] = [n1, d1, n2, d2].map(i => parseInt(i.value, 10));
+      const funcs = f.value.split(';').map(e => e.trim().replace(/\bpi\b/g, 'PI')).filter(Boolean).map(e => b.jc.snippet(e, true, 'x', true));
+      const ys = funcs.flatMap(fn => Array.from({length: 81}, (_, i) => fn(-10 + i / 4))).filter(Number.isFinite);
+      if (!ys.length) throw new Error('nothing to draw');
+      const lo = Math.max(-1000, Math.min(-1, ...ys)), hi = Math.min(1000, Math.max(1, ...ys)), pad = (hi - lo) * .1;
+      curves.forEach(g => b.removeObject(g)); b.setBoundingBox([-10, hi + pad, 10, lo - pad], false);
+      curves = funcs.map(fn => b.create('functiongraph', [fn], {strokeWidth: 3}));
+    };
+    draw();  // first draw: a failure removes the whole drawing (see drawing())
+    const btn = el('button', 'Draw'); c.append(btn);
+    btn.onclick = () => { try { draw(); f.setCustomValidity(''); } catch { f.setCustomValidity('Could not read that function'); f.reportValidity(); } };
+  },
+  triangle(id, c, p) {
+    const b = board(id, [-1, 10, 13, -1]);
+    const C = b.create('point', [0, 0], {name: '', fixed: true, size: 2});
+    const B = b.create('glider', [p.b || 4, 0, b.defaultAxes.x], {name: 'drag', size: 4});
+    const A = b.create('glider', [0, p.a || 3, b.defaultAxes.y], {name: 'drag', size: 4});
+    b.create('polygon', [C, B, A], {fillOpacity: .15});
+    txt(b, .5, 9.3, () => { const a = A.Y(), bb = B.X(), c2 = a * a + bb * bb;
+      return `a = ${a.toFixed(1)}, b = ${bb.toFixed(1)}: a² + b² = ${(a * a).toFixed(1)} + ${(bb * bb).toFixed(1)} = ${c2.toFixed(1)}, so c = ${Math.sqrt(c2).toFixed(2)}`; });
+  },
+  numberline(id, c, p) {
+    const b = board(id, [-22, 5, 22, -4]);
+    const a = b.create('slider', [[-20, 4], [-6, 4], [-20, p.a, 20]], {name: 'a', snapWidth: 1});
+    const k = b.create('slider', [[4, 4], [18, 4], [-20, p.b, 20]], {name: 'b', snapWidth: 1});
+    b.create('arrow', [[0, .6], [() => a.Value(), .6]], {strokeWidth: 3, strokeColor: '#2f6f8f'});
+    b.create('arrow', [[() => a.Value(), 1.4], [() => a.Value() + k.Value(), 1.4]], {strokeWidth: 3, strokeColor: '#c0392b'});
+    txt(b, -21, -2.5, () => `a + b = ${a.Value()} + (${k.Value()}) = ${a.Value() + k.Value()}` + (p.c === 1 ? `      a · b = ${a.Value()} · (${k.Value()}) = ${a.Value() * k.Value()}` : ''));
+  },
+  fractionbar(id, c, p) {
+    if (![p.a, p.b, p.c, p.d].every(v => Number.isInteger(v) && v > 0)) return false;
+    const ins = [input(c, '', p.a), input(c, '/', p.b), input(c, '÷', p.c), input(c, '/', p.d)];
+    const out = el('p', null, 'muted'); let b = null;
+    button(c, 'Show', () => {
+      const [a, bb, cc, dd] = ins.map(i => parseInt(i.value, 10));
       if (![a, bb, cc, dd].every(v => v > 0 && v <= 24)) { out.textContent = 'Use whole numbers from 1 to 24.'; return; }
-      if (b) JXG.JSXGraph.freeBoard(b); b = board(id, [-.1, 3, 2.1, -1], false);
-      const first = a / bb, piece = cc / dd;
-      for (let i = 0; i < Math.ceil(Math.max(1, first)); i++) b.create('polygon', [[i, 2], [i + 1, 2], [i + 1, 1.5], [i, 1.5]], {fillOpacity: 0, borders: {strokeColor: '#888'}, vertices: {visible: false}});
+      const first = a / bb, piece = cc / dd, wholes = Math.ceil(Math.max(1, first));
+      if (b) JXG.JSXGraph.freeBoard(b); b = board(id, [-.1, 3, wholes + .1, -1], false);
+      for (let i = 0; i < wholes; i++) b.create('polygon', [[i, 2], [i + 1, 2], [i + 1, 1.5], [i, 1.5]], {fillOpacity: 0, borders: {strokeColor: '#888'}, vertices: {visible: false}});
       b.create('polygon', [[0, 2], [first, 2], [first, 1.5], [0, 1.5]], {fillColor: '#2f6f8f', fillOpacity: .4, vertices: {visible: false}});
       for (let x = 0, i = 0; x < first - 1e-9; x += piece, i++) b.create('polygon', [[x, 1.2], [Math.min(x + piece, first), 1.2], [Math.min(x + piece, first), .7], [x, .7]], {fillColor: i % 2 ? '#e67e22' : '#f5b041', fillOpacity: .7, vertices: {visible: false}});
-      const g = (p, q) => q ? g(q, p % q) : p, num = a * dd, den = bb * cc, k = g(num, den);
-      out.textContent = `${a}/${bb} ÷ ${cc}/${dd}: pieces of size ${cc}/${dd} that fit into ${a}/${bb} = ${num / k}/${den / k} (≈ ${(num / den).toFixed(2)})`;
-    };
-    btn.onclick = draw; draw();
+      const g = (x, y) => y ? g(y, x % y) : x, num = a * dd, den = bb * cc, k = g(num, den);
+      out.textContent = `Blue: ${a}/${bb}. Orange pieces: ${cc}/${dd} each. ${a}/${bb} ÷ ${cc}/${dd} = ${num / k}/${den / k} (≈ ${(num / den).toFixed(2)}) pieces fit.`;
+    });
+    c.append(out);
+  },
+  bars(id, c, p) {
+    const labels = p.expr.split(';').map(s => s.trim()).filter(Boolean).slice(0, 4);
+    if (!labels.length || ![p.a, p.b, p.c, p.d].slice(0, labels.length).some(v => v > 0)) return false;
+    const ins = labels.map((l, i) => input(c, l, [p.a, p.b, p.c, p.d][i])); let b = null;
+    button(c, 'Show', () => {
+      const v = ins.map(i => Math.max(0, parseFloat(i.value) || 0)), max = Math.max(1, ...v);
+      if (b) JXG.JSXGraph.freeBoard(b); b = board(id, [-.5, max * 1.25, labels.length, -max * .18], false);
+      v.forEach((h, i) => { b.create('polygon', [[i, 0], [i + .7, 0], [i + .7, h], [i, h]], {fillColor: '#2f6f8f', fillOpacity: .5, vertices: {visible: false}});
+        txt(b, i, -max * .08, labels[i]); txt(b, i, h + max * .06, String(h)); });
+    });
   },
 };
 
@@ -189,7 +259,7 @@ async function ask(question, force = false) {
   $('askbtn').disabled = false;
 }
 $('askbtn').onclick = () => { const q = $('question').value.trim(); if (q) ask(q); };
-$('explain').onchange = e => e.target.value && ask(`Explain the part "${e.target.value}" in a different way.`);
+$('explain').onchange = e => e.target.value && ask(`Explain "${e.target.value}" in a different way.`);
 $('fbbtn').onclick = async () => {
   try { await api('/api/feedback', {concept: current?.concept, text: $('feedback').value}); $('feedback').value = ''; $('fbdone').textContent = 'Thank you, we read every message.'; }
   catch (e) { $('fbdone').textContent = e.message; }

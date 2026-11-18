@@ -1,123 +1,232 @@
 {
-  "idea": "Equivalent fractions are different names for the same amount. Multiplying or dividing the numerator and denominator by the same non-zero number gives a fraction that sits at the same point on the number line. For example, 1/2 = 2/4 = 3/6 = 50/100.",
-  "why": "A fraction a/b means a pieces, each of size 1/b. If you cut every piece into n smaller equal parts, the whole has b×n parts and you hold a×n of them. The pieces are smaller, but there are more of them, so the amount is unchanged. In symbols, (a×n)/(b×n) = (a/b)×(n/n) = (a/b)×1 = a/b. Multiplying by n/n is multiplying by 1, which never changes a value. Adding the same number to top and bottom does not work, because that is not multiplying by 1. Dividing top and bottom by a common factor is the same idea in reverse (simplifying).",
-  "explanations": [
+  "idea": "Equivalent fractions are different fraction names for the same amount, such as 1/2, 2/4 and 3/6. You make one by multiplying the top and bottom by the same non-zero number, and you go back to a simpler one by dividing the top and bottom by the same number.",
+  "why": "A fraction a/b means a pieces, each of size 1/b. If you cut every piece into n smaller equal parts, you get n times as many pieces (a×n), and each piece is n times smaller (the whole is now in b×n parts). The amount is unchanged. Multiplying top and bottom by n is the same as multiplying the fraction by n/n, which is 1, and multiplying by 1 never changes a value. Dividing top and bottom by a common factor undoes this. Adding the same number to top and bottom does not work, because that is not multiplying by 1.",
+  "theory_example": {
+    "problem": "Write 3/4 as a fraction with denominator 12. Then simplify your answer back.",
+    "steps": "Step 1: Compare the denominators. 4 × 3 = 12, so the multiplier is 3. Step 2: Multiply the numerator by the same number: 3 × 3 = 9. Step 3: So 3/4 = 9/12. Step 4: To go back, divide top and bottom by 3: 9 ÷ 3 = 3 and 12 ÷ 3 = 4, giving 3/4 again. The amount never changed, only how many pieces we cut it into.",
+    "expression": "3*(12/4)",
+    "answer": "9"
+  },
+  "subtopics": [
     {
-      "kind": "picture",
-      "text": "Draw two identical rectangles. Split the first into 2 equal columns and shade 1. Split the second into 4 equal columns (draw one extra line through each column) and shade 2. The shaded area is the same in both. Say: we cut each piece in 2, so there are twice as many pieces in total and twice as many shaded, but the shaded area is unchanged. Repeat with a number line from 0 to 1, marking 1/2, 2/4, 3/6 at the same point."
+      "title": "What equivalent fractions are",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw two identical bars. Shade half of the first bar (1 of 2 parts). Cut the second bar into 4 equal parts and shade 2 of them. The shaded lengths match exactly. Do it again with 6 parts and 3 shaded. Same shaded amount, different names."
+        },
+        {
+          "kind": "story",
+          "text": "Two friends have identical chocolate bars. One breaks hers into 2 pieces and eats 1. The other breaks his into 4 pieces and eats 2. Ask who ate more. Students will see they ate the same amount, even though the numbers look different."
+        }
+      ],
+      "example": {
+        "problem": "How many sixths are equal to 1/2?",
+        "steps": "Picture a bar cut into 6 equal parts. Half of the bar is half of the 6 parts, which is 3 parts. So 1/2 = 3/6. Check with the pattern: 1/2 = 2/4 = 3/6, where each time the top and bottom grow together.",
+        "expression": "1*6/2",
+        "answer": "3"
+      },
+      "visual": {
+        "kind": "fractionbar",
+        "expr": "",
+        "a": 1,
+        "b": 2,
+        "c": 1,
+        "d": 2
+      },
+      "mistakes": [
+        {
+          "mistake": "Students think 1/2 and 2/4 are different because the numbers are different, or that 2/4 is bigger because 2 and 4 are bigger.",
+          "response": "Go back to the two bars and lay them side by side. Say: the numbers are names, the shaded length is the amount. Ask students to point to where the shading ends on each bar."
+        },
+        {
+          "mistake": "Students think the bigger the denominator, the bigger the fraction.",
+          "response": "Compare 1/2 and 1/4 with bars. More pieces means each piece is smaller. Then connect back: in 2/4 there are more pieces, but they are smaller, so the total matches 1/2."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why do they look different if they are the same?",
+          "answer": "They are different names for one amount, like 'two quarters' and 'one half', or a nickname and a full name. The size is the same."
+        },
+        {
+          "question": "How many equivalent fractions does 1/2 have?",
+          "answer": "As many as you like. 1/2, 2/4, 3/6, 4/8, and so on without end, because you can keep cutting the pieces smaller."
+        },
+        {
+          "question": "Is 1/2 the 'real' one?",
+          "answer": "None is more real. 1/2 is the simplest to write, so we often prefer it, but they all have the same value."
+        }
+      ],
+      "check_question": {
+        "question": "Fill in the missing number: 1/2 = ?/6",
+        "solution": "The whole is cut into 6 parts instead of 2, which is 3 times as many parts, so the numerator is 1 × 3 = 3. So 1/2 = 3/6.",
+        "expression": "1*6/2",
+        "answer": "3"
+      }
     },
     {
-      "kind": "story",
-      "text": "Two friends share identical chocolate bars. Sam breaks his bar into 3 big pieces and eats 2, so he eats 2/3. Priya's bar has been scored into 6 smaller pieces, and she eats 4. Who ate more? Neither: Priya's pieces are half the size, so she needed twice as many. 2/3 = 4/6. Same chocolate, different counting. Money works too: 50 cents is 1/2 of a dollar, and so is 2 quarters out of 4."
+      "title": "Making equivalent fractions by multiplying",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "1) Look at the denominators and find what you multiplied by (for example 3 to 12 is × 4). 2) Multiply the numerator by the same number. 3) Write the new fraction. The rule: whatever you do to the bottom, do to the top."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw a bar with 3 parts and shade 2. Now draw lines to cut every part into 4 smaller parts. There are now 12 parts, and the shaded part has 2 × 4 = 8 small parts. So 2/3 = 8/12. Every piece was cut in the same way, shaded or not."
+        }
+      ],
+      "example": {
+        "problem": "Find the missing number: 2/3 = ?/12",
+        "steps": "Step 1: Compare the denominators: 3 × 4 = 12, so the multiplier is 4. Step 2: Multiply the numerator by 4: 2 × 4 = 8. Step 3: So 2/3 = 8/12. Check: divide 8 and 12 by 4 to get 2/3 again.",
+        "expression": "2*(12/3)",
+        "answer": "8"
+      },
+      "visual": {
+        "kind": "fractionbar",
+        "expr": "",
+        "a": 2,
+        "b": 3,
+        "c": 1,
+        "d": 3
+      },
+      "mistakes": [
+        {
+          "mistake": "Adding instead of multiplying, for example turning 2/3 into 5/6 by adding 3 to both numbers.",
+          "response": "Test it with a picture: 5/6 is not the same length as 2/3. Explain that cutting each piece into equal smaller pieces is multiplying, not adding. Show 2/3 on a bar and cut it up to get 8/12."
+        },
+        {
+          "mistake": "Multiplying only the denominator, or only the numerator.",
+          "response": "Ask: if I cut each piece into 4 but only change the bottom, how many shaded pieces did I lose? Show that the shaded count must grow too. Repeat: both numbers, same multiplier."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do I have to do the same thing to the top and the bottom?",
+          "answer": "Because we cut every piece the same way. The bottom counts the pieces in the whole, and the top counts the pieces we take. If we cut all pieces in 4, both counts become 4 times bigger."
+        },
+        {
+          "question": "Isn't multiplying supposed to make things bigger?",
+          "answer": "It makes the numbers bigger, but the fraction stays the same size. We multiplied by 4/4, which equals 1, and times 1 changes nothing."
+        },
+        {
+          "question": "How do I know what to multiply by?",
+          "answer": "Look at the two denominators and ask what times the first one gives the second. 3 times what is 12? It is 4. Then use 4 on the top as well."
+        }
+      ],
+      "check_question": {
+        "question": "Fill in the missing number: 3/5 = ?/20",
+        "solution": "5 × 4 = 20, so the multiplier is 4. Then 3 × 4 = 12. So 3/5 = 12/20.",
+        "expression": "3*(20/5)",
+        "answer": "12"
+      }
     },
     {
-      "kind": "procedure",
-      "text": "To make an equivalent fraction: 1) Choose a non-zero number n, or work out what is needed, e.g. to turn 3/4 into a fraction with denominator 20, ask 4 × ? = 20, so n = 5. 2) Multiply the numerator and the denominator by n: 3×5 = 15 and 4×5 = 20, so 3/4 = 15/20. 3) To simplify, divide both by a common factor, ideally the greatest one: 18/24, both divisible by 6, gives 3/4. 4) To check two fractions, cross-multiply: a/b = c/d when a×d = b×c."
-    }
-  ],
-  "student_questions": [
-    {
-      "question": "But if the numbers get bigger, how can it be the same fraction?",
-      "answer": "The top and bottom numbers are counting pieces, and the pieces got smaller. More pieces, each smaller, makes the same total amount. Look at the picture: the shaded area didn't change, only how many lines we drew."
-    },
-    {
-      "question": "Why do I have to do the same thing to the top and the bottom?",
-      "answer": "Doing the same multiplication to both is the same as multiplying the fraction by 1, like 3/3 or 5/5. Multiplying by 1 changes how it looks, not what it is. If you only change one number, you multiply by something that is not 1, so the value changes."
-    },
-    {
-      "question": "Why can't I add 2 to the top and the bottom? 1/2 becomes 3/4, that seems fair.",
-      "answer": "Test it: 1/2 is half a pizza, but 3/4 is more than half. Adding changes the size of the amount, while multiplying by n/n does not. Only multiplying or dividing both numbers by the same number keeps the value."
-    },
-    {
-      "question": "Is there only one equivalent fraction for each fraction?",
-      "answer": "No, there are endlessly many. Multiply top and bottom by 2, 3, 4, and so on, and you get a new one each time. They all land at the same point on the number line."
-    }
-  ],
-  "mistakes": [
-    {
-      "mistake": "Adding the same number to the numerator and denominator, e.g. 2/3 = 4/5.",
-      "response": "Don't just say it's wrong. Have the student draw both on strips or a number line and see they differ. Then contrast: adding changes the amount, multiplying by 2/2 does not. Ask: what did we do to get from 1/2 to 2/4?"
-    },
-    {
-      "mistake": "Multiplying only the denominator, or only the numerator, e.g. 3/4 = 3/8.",
-      "response": "Ask which is bigger, 3 quarters or 3 eighths of a pizza. Eighths are smaller pieces, so 3/8 is less. Remind them that the fraction must be multiplied by n/n, so both numbers change."
-    },
-    {
-      "mistake": "Thinking simplifying only works once, or stopping early, e.g. 12/24 = 6/12 and calling it done.",
-      "response": "Ask: can the top and bottom both be divided by something again? 6/12 = 3/6 = 1/2. Teach finding the greatest common factor, or simply repeat dividing until the only common factor is 1. The answer 6/12 is not wrong, just not fully simplified."
-    }
-  ],
-  "worked_examples": [
-    {
-      "problem": "Write a fraction equivalent to 2/3 with denominator 12.",
-      "steps": "Ask what 3 must be multiplied by to get 12: 3 × 4 = 12. Multiply the top by 4 as well: 2 × 4 = 8. So 2/3 = 8/12. Check: 8/12 divided by 4 on top and bottom gives 2/3.",
-      "expression": "2*4",
-      "answer": "8"
-    },
-    {
-      "problem": "Simplify 18/24 fully. Give the numerator of the answer.",
-      "steps": "The greatest common factor of 18 and 24 is 6. Divide the top: 18 ÷ 6 = 3. Divide the bottom: 24 ÷ 6 = 4. So 18/24 = 3/4, and no common factor greater than 1 remains.",
-      "expression": "18/6",
-      "answer": "3"
-    },
-    {
-      "problem": "Are 5/8 and 15/24 equivalent? Find the number that 5/8 is multiplied by, n/n, to get 15/24.",
-      "steps": "8 × 3 = 24 and 5 × 3 = 15, so 5/8 = 15/24. They are equivalent, with n = 3. Cross-check: 5 × 24 = 120 and 8 × 15 = 120, which are equal.",
-      "expression": "15/5",
-      "answer": "3"
-    }
-  ],
-  "try_it": [
-    {
-      "problem": "Fill in the blank: 3/5 = ?/20.",
-      "solution": "5 × 4 = 20, so multiply the top by 4 as well: 3 × 4 = 12. So 3/5 = 12/20.",
-      "expression": "3*4",
-      "answer": "12"
-    },
-    {
-      "problem": "Simplify 28/42 fully. What is the denominator of the answer?",
-      "solution": "The greatest common factor of 28 and 42 is 14. 28 ÷ 14 = 2 and 42 ÷ 14 = 3. So 28/42 = 2/3, and the denominator is 3.",
-      "expression": "42/14",
-      "answer": "3"
-    },
-    {
-      "problem": "7/9 = 35/?. Find the missing denominator.",
-      "solution": "7 × 5 = 35, so multiply the bottom by 5 as well: 9 × 5 = 45. So 7/9 = 35/45.",
-      "expression": "9*5",
-      "answer": "45"
+      "title": "Simplifying by dividing",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "1) Find a number that divides both the top and bottom exactly (a common factor). 2) Divide both by it. 3) Check whether another common factor is left. Stop when the only common factor is 1. Using the biggest common factor gets there in one step."
+        },
+        {
+          "kind": "story",
+          "text": "Eight children sit in 4 pairs, and 6 of the children wear red. Rather than say '6 out of 8', group them in pairs: 3 pairs out of 4 pairs wear red. Grouping into equal bundles gives the same fraction with smaller numbers: 6/8 = 3/4."
+        }
+      ],
+      "example": {
+        "problem": "Simplify 6/8.",
+        "steps": "Step 1: Find a common factor of 6 and 8. Both are even, so 2 works. Step 2: Divide both by 2: 6 ÷ 2 = 3 and 8 ÷ 2 = 4. Step 3: So 6/8 = 3/4. Step 4: Check: 3 and 4 share no factor except 1, so we are done.",
+        "expression": "6/8",
+        "answer": "3/4"
+      },
+      "visual": {
+        "kind": "fractionbar",
+        "expr": "",
+        "a": 6,
+        "b": 8,
+        "c": 1,
+        "d": 8
+      },
+      "mistakes": [
+        {
+          "mistake": "Dividing only the top or only the bottom, or subtracting the same number from both, for example 6/8 becoming 4/6 by subtracting 2.",
+          "response": "Show 6/8 on a bar and group the pieces in pairs: 3 groups shaded out of 4 groups. Say the rule: divide, not subtract, and divide both numbers by the same number."
+        },
+        {
+          "mistake": "Stopping too early, for example writing 12/18 = 6/9 and leaving it there.",
+          "response": "Ask: do 6 and 9 share a factor? Yes, 3. Teach students to check at the end whether the top and bottom still share a factor. 12/18 = 6/9 = 2/3."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we simplify at all?",
+          "answer": "Smaller numbers are easier to read, compare and calculate with. It also makes it clear when two fractions are really the same."
+        },
+        {
+          "question": "Can I divide by any number?",
+          "answer": "Only by a number that divides both the top and the bottom exactly, so you still get whole numbers. For 6/8 you can use 2, but not 3, since 3 does not divide 8."
+        },
+        {
+          "question": "How do I know when I am finished?",
+          "answer": "When the top and bottom have no common factor except 1. For 3/4, nothing but 1 divides both, so it is simplest."
+        }
+      ],
+      "check_question": {
+        "question": "Simplify 10/15.",
+        "solution": "Both 10 and 15 are divisible by 5. 10 ÷ 5 = 2 and 15 ÷ 5 = 3. So 10/15 = 2/3.",
+        "expression": "10/15",
+        "answer": "2/3"
+      }
     }
   ],
   "lesson_outline": [
     {
       "minutes": 5,
-      "activity": "Warm-up: show a bar split into 2 parts with 1 shaded, and another split into 4 with 2 shaded. Ask: same or different? Collect ideas without correcting yet."
+      "activity": "Hook with the chocolate bar story, then draw two bars on the board (1/2 and 2/4) and ask students what they notice. Uses the subtopic 'What equivalent fractions are'."
+    },
+    {
+      "minutes": 7,
+      "activity": "Work through 1/2 = ?/6 with the bar picture, show the fraction bar, take the mistake about bigger numbers, then ask the check question. Uses 'What equivalent fractions are'."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach the 'same to top and bottom' procedure with the 2/3 = ?/12 example and the cutting picture. Address the adding mistake. Students try the check question on paper or mini whiteboards. Uses 'Making equivalent fractions by multiplying'."
+    },
+    {
+      "minutes": 9,
+      "activity": "Reverse the process: simplify 6/8 by dividing by 2 using the pairs story. Show the fraction bar, discuss when to stop, and ask the check question 10/15. Uses 'Simplifying by dividing'."
     },
     {
       "minutes": 10,
-      "activity": "Fraction strips or paper folding: students fold strips into halves, quarters and eighths and line them up to find matching amounts. Record the pairs, such as 1/2 = 2/4 = 4/8."
+      "activity": "Extra examples and questions round: work the three extra examples together, one at a time, letting students suggest the first step each time, then take any remaining questions."
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Find the missing number: 5/6 = ?/18",
+      "solution": "6 × 3 = 18, so the multiplier is 3. Multiply the numerator: 5 × 3 = 15. So 5/6 = 15/18.",
+      "expression": "5*(18/6)",
+      "answer": "15"
     },
     {
-      "minutes": 8,
-      "activity": "Teach the idea: multiplying top and bottom by the same number is multiplying by 1. Work through examples 1 and 2 on the board. Link back to the strips."
+      "problem": "Simplify 18/24.",
+      "solution": "The biggest common factor of 18 and 24 is 6. 18 ÷ 6 = 3 and 24 ÷ 6 = 4. So 18/24 = 3/4. (Dividing by 2 and then by 3 also works.)",
+      "expression": "18/24",
+      "answer": "3/4"
     },
     {
-      "minutes": 4,
-      "activity": "Address the 'add the same number' misconception: test 1/2 and 3/4 on the strips and discuss what went wrong."
-    },
-    {
-      "minutes": 10,
-      "activity": "Practice: students work through the three Try it problems in pairs, then add their own pair of equivalent fractions for a partner to check."
-    },
-    {
-      "minutes": 3,
-      "activity": "Wrap-up: each student writes on an exit slip how they know 3/6 and 1/2 are the same, using a picture or words."
+      "problem": "Are 4/6 and 10/15 equivalent? If so, what simple fraction are they both equal to?",
+      "solution": "Simplify 4/6: divide by 2 to get 2/3. Simplify 10/15: divide by 5 to get 2/3. Both simplify to 2/3, so they are equivalent.",
+      "expression": "4/6",
+      "answer": "2/3"
     }
   ],
   "meta": {
     "concept": "equivalent-fractions",
     "title": "Equivalent fractions",
     "model": "sonnet",
-    "cost_usd": 0.03378,
+    "cost_usd": 0.13643,
     "generated": "2026-11-18",
     "grounded_on": null,
     "license": null,

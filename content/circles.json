@@ -1,123 +1,232 @@
 {
-  "idea": "The circumference of a circle is C = 2πr (or πd), and its area is A = πr². The number π is the same for every circle: it is the ratio of circumference to diameter, about 3.14. Circumference is a length (measured in cm, m); area is the space inside (measured in cm², m²).",
-  "why": "Circumference: take any circle and measure around it and across it (the diameter). The ratio circumference ÷ diameter is always the same number, because all circles are scaled copies of each other. We call that number π. So C = πd = 2πr. Area: cut a circle into many thin wedges and lay them alternately side by side. They form a shape close to a rectangle. Its length is about half the circumference (πr), because half the wedges point up and half point down. Its height is about r. So area ≈ πr × r = πr². With more, thinner wedges the shape gets closer to a true rectangle, so the formula is exact. This also explains why area has r squared: doubling the radius doubles the circumference but multiplies the area by 4.",
-  "explanations": [
+  "idea": "The circumference is the distance around a circle, and the area is the space inside it. Both depend on the radius r (centre to edge) and on the number pi, which is about 3.14. Circumference C = 2·pi·r (or pi·d), and area A = pi·r².",
+  "why": "Pi is defined as circumference ÷ diameter, and this ratio is the same for every circle, big or small. So C = pi·d, and since d = 2r, C = 2·pi·r. For area, cut a circle into many thin sectors and lay them side by side, alternating up and down. They make a shape close to a parallelogram. Its base is half the circumference (pi·r) and its height is r, so the area is pi·r·r = pi·r². Because area uses r squared, doubling the radius makes the area 4 times bigger, but the circumference only 2 times bigger.",
+  "theory_example": {
+    "problem": "A circular garden has radius 6 m. Find the fence length around it and the area of grass inside. Leave pi in the answers.",
+    "steps": "Fence = circumference: C = 2·pi·6 = 12·pi m. Grass = area: A = pi·6² = 36·pi m². Check units: length in m, area in m². As decimals (pi ≈ 3.14): C ≈ 37.7 m, A ≈ 113.1 m².",
+    "expression": "36*pi",
+    "answer": "36*pi"
+  },
+  "lesson_outline": [
     {
-      "kind": "picture",
-      "text": "Draw a circle and cut it into 8 or 16 equal wedges (pizza slices). Arrange them point-up, point-down, alternating, so they interlock into a bumpy rectangle. Label the height r (the radius) and the length half the circumference, which is πr. Rectangle area = length × height = πr × r = πr². Have students do this with a paper circle if possible."
+      "minutes": 5,
+      "activity": "Open with the subtopic 'Circumference and pi'. Draw a circle, label radius and diameter, and ask how far around it might be. Show that it is a little more than 3 diameters."
     },
     {
-      "kind": "story",
-      "text": "Imagine a bicycle wheel rolling one full turn along the ground. The distance it travels is exactly the circumference. If the wheel is 70 cm across, it travels a bit more than 3 times that, about 3.14 × 70 ≈ 220 cm, in one turn. Every wheel, big or small, travels π times its width in one turn. That is what π means. Now imagine painting the flat face of the wheel: the paint needed is the area, which depends on r × r, so a wheel twice as wide needs four times the paint."
+      "minutes": 9,
+      "activity": "Teach 'Circumference and pi' fully: give the formula in both forms, work the example, and show the straight-line graph of C against d. Ask the check question."
     },
     {
-      "kind": "procedure",
-      "text": "Step 1: Decide what is asked. Distance around is circumference; space inside is area. Step 2: Find the radius. If given the diameter, halve it. Step 3: For circumference, compute 2 × π × r. For area, first square r, then multiply by π. Step 4: Write the unit: cm for circumference, cm² for area. Step 5: Leave the answer in terms of π for an exact value, or use 3.14 or a calculator for an approximation, and check it is sensible."
+      "minutes": 9,
+      "activity": "Teach 'Area of a circle': show the sector-rearranging picture, then the formula, the example, and the curved graph of A against r. Stress that r is squared. Ask the check question."
+    },
+    {
+      "minutes": 7,
+      "activity": "Teach 'Working backwards from C or A': find r first, then the other measure. Work the example together and ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work the 3 extra examples together, mixing all subtopics, and leave time for students' questions."
     }
   ],
-  "student_questions": [
+  "subtopics": [
     {
-      "question": "But why is π always the same number for every circle?",
-      "answer": "Because all circles have the same shape, just bigger or smaller, like zooming a photo. When you zoom, the distance around and the distance across grow by the same factor, so their ratio never changes. That fixed ratio is π."
+      "title": "Circumference and pi",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a circle with a diameter. Imagine a string laid around the edge, then straightened. It is a bit more than 3 diameters long (3.14...). That 'a bit more than 3' is pi, so C = pi × d. Since d = 2r, C = 2·pi·r."
+        },
+        {
+          "kind": "procedure",
+          "text": "1) Find the radius or diameter. 2) If you have r, use C = 2·pi·r. If you have d, use C = pi·d. 3) Write the answer in length units, either as a multiple of pi or as a decimal with pi ≈ 3.14."
+        }
+      ],
+      "example": {
+        "problem": "A circle has radius 4 cm. Find its circumference.",
+        "steps": "C = 2·pi·r = 2·pi·4 = 8·pi cm. With pi ≈ 3.14: 8 × 3.14 ≈ 25.1 cm.",
+        "expression": "8*pi",
+        "answer": "8*pi"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "pi*x",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Using the radius in C = pi·d without doubling it.",
+          "response": "Ask: is d the whole way across or half way? Have them mark the diameter on the drawing, then say 'diameter first' before every calculation."
+        },
+        {
+          "mistake": "Writing the circumference in square units.",
+          "response": "Ask whether we are measuring a distance along a line or a space inside. Distance around is a length, so cm, not cm²."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why is pi never a nice whole number?",
+          "answer": "Pi is the exact ratio of circumference to diameter, and that ratio just is not a whole number or a simple fraction. Its decimals go on forever without repeating. So we keep the symbol pi for the exact answer, or use 3.14 for an approximation."
+        },
+        {
+          "question": "Why do we leave the answer as 8·pi sometimes?",
+          "answer": "8·pi is the exact value. A decimal like 25.1 is rounded. Leaving pi keeps the answer exact, and we only round at the end when a real measurement is needed."
+        },
+        {
+          "question": "Does it work for any circle?",
+          "answer": "Yes. Circumference ÷ diameter is the same for every circle, which is why one formula works for all of them. On the graph, the points lie on a straight line through the origin, and the slope is pi."
+        }
+      ],
+      "check_question": {
+        "question": "A circle has diameter 9 m. What is its circumference?",
+        "solution": "C = pi·d = 9·pi m, about 28.3 m.",
+        "expression": "9*pi",
+        "answer": "9*pi"
+      }
     },
     {
-      "question": "But why is the area r times r and not just r?",
-      "answer": "Area measures square units, so it has two directions, like length times width. In the wedge rectangle, one side is r and the other is πr. Both depend on the radius, which gives r × r. That is why doubling the radius makes the area four times bigger."
+      "title": "Area of a circle",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Cut a circle into thin sectors like pizza slices and lay them side by side, alternating up and down. They make a near-parallelogram with base half the circumference (pi·r) and height r. Area = base × height = pi·r·r = pi·r²."
+        },
+        {
+          "kind": "procedure",
+          "text": "1) Find the radius (halve the diameter if you were given it). 2) Square the radius: r × r. 3) Multiply by pi. 4) Write the answer in square units."
+        }
+      ],
+      "example": {
+        "problem": "A circle has radius 5 cm. Find its area.",
+        "steps": "A = pi·r² = pi·5² = pi·25 = 25·pi cm². With pi ≈ 3.14: about 78.5 cm².",
+        "expression": "25*pi",
+        "answer": "25*pi"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "pi*x**2",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Calculating pi·(2r) or pi·r·2 instead of pi·r².",
+          "response": "Write r² as r × r in full. Test with r = 5: the correct area is 25·pi, but pi·5·2 gives 10·pi, which is the wrong size. Compare with the picture of squares inside the circle."
+        },
+        {
+          "mistake": "Using the diameter as r, for example area of a circle with d = 10 as pi·10².",
+          "response": "Ask which measure the formula needs. The radius is half the diameter, so r = 5 and the area is 25·pi, not 100·pi."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is r squared and not just r?",
+          "answer": "Area measures two directions, like length times width. A circle's size grows in both directions as r grows, so r appears twice: r·r."
+        },
+        {
+          "question": "If I double the radius, does the area double?",
+          "answer": "No, it becomes 4 times bigger. Radius 5 gives 25·pi, radius 10 gives 100·pi. The curve on the graph gets steeper, unlike the straight line for circumference."
+        },
+        {
+          "question": "Why do we get pi in the area as well?",
+          "answer": "The rearranged slices have a base of half the circumference, which is pi·r. So pi comes in through the circumference, and the height r multiplies it."
+        }
+      ],
+      "check_question": {
+        "question": "A circle has radius 3 cm. What is its area?",
+        "solution": "A = pi·3² = 9·pi cm², about 28.3 cm².",
+        "expression": "9*pi",
+        "answer": "9*pi"
+      }
     },
     {
-      "question": "Is π exactly 3.14 or 22/7?",
-      "answer": "No. Both are only close approximations. π is a never-ending decimal that does not repeat, 3.14159... We use 3.14 or 22/7 to get a handy estimate. Writing π in the answer keeps it exact."
-    },
-    {
-      "question": "Why do we get two formulas for circumference, 2πr and πd?",
-      "answer": "They are the same thing. The diameter is twice the radius, d = 2r, so πd = π × 2r = 2πr. Use whichever matches what you are given."
+      "title": "Working backwards from C or A",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "A farmer knows the rope around a round pond is 18·pi m long and asks how much water surface there is. The rope length tells us the radius first: undo C = 2·pi·r to get r. Once we know r, the area follows."
+        },
+        {
+          "kind": "procedure",
+          "text": "1) Given C: r = C ÷ (2·pi). Given A: r² = A ÷ pi, then take the square root. 2) With r known, compute the other measure. 3) Check by putting r back into the original formula."
+        }
+      ],
+      "example": {
+        "problem": "A circle has circumference 18·pi cm. Find its area.",
+        "steps": "C = 2·pi·r, so 18·pi = 2·pi·r, giving r = 18·pi ÷ (2·pi) = 9 cm. Then A = pi·r² = pi·81 = 81·pi cm². Check: 2·pi·9 = 18·pi. ✓.",
+        "expression": "81*pi",
+        "answer": "81*pi"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Dividing C by pi and calling the result the radius.",
+          "response": "C ÷ pi gives the diameter. Ask students to halve it, or divide by 2·pi in one step, and check by substituting back."
+        },
+        {
+          "mistake": "Forgetting the square root when starting from the area, e.g. A = 49·pi, so r = 49.",
+          "response": "Divide by pi to get r² = 49, then ask which number times itself is 49. Then r = 7. Check: pi·7² = 49·pi."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do the pi's cancel?",
+          "answer": "18·pi ÷ (2·pi) is like 18 apples ÷ 2 apples. The same factor on top and bottom cancels, leaving 9."
+        },
+        {
+          "question": "Can I use the decimal 3.14 here instead?",
+          "answer": "Yes, but the answer will be rounded and r may come out messy. Keeping pi gives clean numbers like 9 and 81·pi."
+        },
+        {
+          "question": "Why find the radius first?",
+          "answer": "Both formulas are built from r. If you know either C or A, you can get r, and r then unlocks the other one."
+        }
+      ],
+      "check_question": {
+        "question": "A circle has area 49·pi cm². What is its circumference?",
+        "solution": "r² = 49, so r = 7. C = 2·pi·7 = 14·pi cm.",
+        "expression": "14*pi",
+        "answer": "14*pi"
+      }
     }
   ],
-  "mistakes": [
+  "extra_examples": [
     {
-      "mistake": "Using the diameter in place of the radius in A = πr², for example squaring 10 when the diameter is 10.",
-      "response": "Ask, 'What does r stand for?' and have them sketch the circle and mark the radius as the line from the centre to the edge. Make halving the diameter the first written step every time."
+      "problem": "A circle has diameter 12 cm. Find its circumference.",
+      "solution": "C = pi·d = 12·pi cm, about 37.7 cm.",
+      "expression": "12*pi",
+      "answer": "12*pi"
     },
     {
-      "mistake": "Computing (πr)² or 2πr² instead of π × r², or mixing up the formulas, for example giving area when asked for circumference.",
-      "response": "Show that the square applies only to r. Practise with r = 3: r² = 9 first, then × π. Also ask 'is this a length or a space?' and check the units: cm for circumference, cm² for area."
-    },
-    {
-      "mistake": "Forgetting units, or writing cm instead of cm² for area.",
-      "response": "Link units to the picture: circumference is a string around the edge, measured in cm; area is covered by little 1 cm squares, so cm². Ask students to write the unit before they calculate."
-    }
-  ],
-  "worked_examples": [
-    {
-      "problem": "Find the circumference of a circle with radius 5 cm. Give the exact value.",
-      "steps": "Use C = 2πr. Substitute r = 5: C = 2 × π × 5 = 10π cm. (About 31.4 cm.)",
-      "expression": "10*pi",
-      "answer": "10*pi"
-    },
-    {
-      "problem": "Find the area of a circle with diameter 12 cm. Give the exact value.",
-      "steps": "The radius is half of the diameter: r = 6. Use A = πr² = π × 6² = 36π cm². (About 113.1 cm².)",
+      "problem": "A circle has diameter 12 cm. Find its area.",
+      "solution": "r = 12 ÷ 2 = 6 cm. A = pi·6² = 36·pi cm², about 113.1 cm².",
       "expression": "36*pi",
       "answer": "36*pi"
     },
     {
-      "problem": "A circle has a circumference of 18π cm. Find its radius and then its area.",
-      "steps": "C = 2πr = 18π, so 2r = 18 and r = 9. Then A = πr² = π × 81 = 81π cm².",
-      "expression": "81*pi",
-      "answer": "81*pi"
-    }
-  ],
-  "try_it": [
-    {
-      "problem": "Find the circumference of a circle with diameter 9 cm. Give the exact value.",
-      "solution": "C = πd = π × 9 = 9π cm.",
-      "expression": "9*pi",
-      "answer": "9*pi"
-    },
-    {
-      "problem": "Find the area of a circle with radius 7 cm. Give the exact value.",
-      "solution": "A = πr² = π × 49 = 49π cm².",
-      "expression": "49*pi",
-      "answer": "49*pi"
-    },
-    {
-      "problem": "A circle has circumference 16π cm. Find its area as an exact value.",
-      "solution": "2πr = 16π, so r = 8. A = π × 8² = 64π cm².",
-      "expression": "64*pi",
-      "answer": "64*pi"
-    }
-  ],
-  "lesson_outline": [
-    {
-      "minutes": 5,
-      "activity": "Hook: bring a few round objects (cups, lids). Students measure around and across with string and ruler, then divide. Notice the ratio is about 3."
-    },
-    {
-      "minutes": 7,
-      "activity": "Name π as that ratio. Build C = πd = 2πr. Do worked example 1 on the board."
-    },
-    {
-      "minutes": 8,
-      "activity": "Area discovery: cut a paper circle into wedges, rearrange into a near-rectangle, and derive A = πr². Discuss why r is squared."
-    },
-    {
-      "minutes": 7,
-      "activity": "Worked examples 2 and 3. Stress halving the diameter first and writing units (cm and cm²)."
-    },
-    {
-      "minutes": 10,
-      "activity": "Students work on the three Try it problems in pairs; the teacher circulates and uses the common mistakes list to respond."
-    },
-    {
-      "minutes": 3,
-      "activity": "Wrap up: students say aloud the difference between circumference and area, and one sentence on why π is the same for all circles."
+      "problem": "A circle has circumference 10·pi m. Find its area.",
+      "solution": "2·pi·r = 10·pi, so r = 5 m. A = pi·5² = 25·pi m², about 78.5 m².",
+      "expression": "25*pi",
+      "answer": "25*pi"
     }
   ],
   "meta": {
     "concept": "circles",
     "title": "Circumference and area of a circle",
     "model": "sonnet",
-    "cost_usd": 0.0295,
+    "cost_usd": 0.06971,
     "generated": "2026-11-18",
     "grounded_on": null,
     "license": null,

@@ -1,127 +1,232 @@
 {
-  "idea": "A whole-number exponent tells you how many copies of a base to multiply together. 2^5 means 2 × 2 × 2 × 2 × 2 = 32. The exponent counts the copies of the base, not the number you multiply by. Also: a^0 = 1 for any nonzero a, and a^(-n) = 1/(a^n).",
-  "why": "Exponents are repeated multiplication, the way multiplication is repeated addition. The rules come from counting copies. a^m × a^n: you write m copies, then n more, so m+n copies in all, giving a^(m+n). Dividing a^m by a^n cancels n copies from the top and leaves m−n copies, so a^m / a^n = a^(m−n). Now keep that pattern going. 2^3=8, 2^2=4, 2^1=2: each step down divides by 2. The next step gives 2^0 = 2/2 = 1, and then 2^(-1) = 1/2. So a^0 = 1 and negative exponents mean reciprocals, because that is the only choice that keeps the division rule true. For (a^m)^n you have n groups of m copies, so m×n copies in all.",
-  "explanations": [
-    {
-      "kind": "picture",
-      "text": "Draw 3^4 as a tree. Start with 1 box. Each box splits into 3 boxes, and you do that 4 times: 3, 9, 27, 81. Label each row with its exponent: 3^1, 3^2, 3^3, 3^4. Students can see that the exponent counts the rows (the number of times you multiply by 3). Another picture: 5^2 is a 5 by 5 square of dots, and 5^3 is a 5 by 5 by 5 cube. This is where the words 'squared' and 'cubed' come from."
-    },
-    {
-      "kind": "story",
-      "text": "A rumor spreads. Today you tell 2 friends. Tomorrow each of them tells 2 new people, then each of those tells 2 more. After 1 day, 2 people hear it. After 2 days, 2×2 = 4 new people hear it. After 3 days, 8. After 5 days, 2^5 = 32 new people hear it. The exponent is the number of days, and the base 2 is the number of people each person tells. Run it backwards for the zero case: 1 day before the first telling there is just 1 person, the one who started it. That is 2^0 = 1."
-    },
-    {
-      "kind": "procedure",
-      "text": "To evaluate a^n for a whole number n: 1) Name the base (the number being multiplied) and the exponent (how many copies). 2) Write out the copies: a × a × ... × a, with n copies. 3) Multiply left to right, step by step. 4) Check: the exponent 0 gives 1, and the exponent 1 gives the base itself. For a negative exponent, flip first: a^(-n) = 1/(a^n), then evaluate a^n. Watch the sign: (-2)^3 = (-2)(-2)(-2) = -8, but -2^3 means -(2^3) = -8 as well, while (-2)^2 = 4 and -2^2 = -4. Only what is directly next to the exponent is the base."
-    }
-  ],
-  "student_questions": [
-    {
-      "question": "But why is anything to the power 0 equal to 1? Shouldn't it be 0?",
-      "answer": "Look at the pattern going down: 2^3 is 8, 2^2 is 4, 2^1 is 2. Each time the exponent drops by one, we divide by 2. So the next one is 2 divided by 2, which is 1. Also, 2^0 means 'no 2s multiplied.' When you multiply nothing at all, you start from 1, the number that does not change a product. So the answer is 1, not 0."
-    },
-    {
-      "question": "Why isn't 2^3 equal to 2 × 3?",
-      "answer": "2 × 3 means 3 copies of 2 added: 2+2+2 = 6. 2^3 means 3 copies of 2 multiplied: 2×2×2 = 8. The exponent tells you how many copies of the base to write down, and the operation between the copies is multiplication."
-    },
-    {
-      "question": "Why do we add the exponents when we multiply, like 2^3 × 2^4 = 2^7?",
-      "answer": "Write it out. 2^3 is 2×2×2, and 2^4 is 2×2×2×2. Put them side by side and you have 7 twos multiplied together, which is 2^7. You are just counting how many copies there are altogether. This only works when the bases are the same."
-    },
-    {
-      "question": "Why does a negative exponent make a fraction and not a negative number?",
-      "answer": "The exponent says how many times to divide by the base, not that the answer is negative. Continuing the pattern: 2^1 = 2, 2^0 = 1, 2^(-1) = 1/2, 2^(-2) = 1/4. The numbers keep halving and stay positive. So 2^(-3) = 1/(2^3) = 1/8."
-    }
-  ],
-  "mistakes": [
-    {
-      "mistake": "Multiplying the base by the exponent: writing 4^3 = 12.",
-      "response": "Ask the student to write 4^3 out as 4 × 4 × 4 and compute it: 16, then 64. Then ask what 4 × 3 would mean (4+4+4). Have them say 'three copies of 4, multiplied.' Using small cases such as 2^3 = 8 versus 2×3 = 6 helps, since the two answers differ."
-    },
-    {
-      "mistake": "Sign errors with negatives: reading (-3)^2 as -9, or confusing -3^2 with (-3)^2.",
-      "response": "Show that the base is whatever sits right under the exponent. (-3)^2 = (-3)(-3) = 9 because the parentheses make -3 the base. -3^2 means -(3×3) = -9, since only the 3 is squared. Have students write both with the copies spelled out, and say aloud 'negative times negative is positive.'"
-    },
-    {
-      "mistake": "Applying the product rule to different bases or adding the bases: 2^3 × 3^2 = 6^5, or 2^3 × 2^4 = 4^7.",
-      "response": "Go back to copies. 2^3 × 3^2 = 8 × 9 = 72, while 6^5 = 7776, so the shortcut fails. Explain that adding exponents only counts copies of the same base. And when the base is the same, the base stays: 2^3 × 2^4 = 2^7, not 4^7, because we are not making new twos, only counting them."
-    }
-  ],
-  "worked_examples": [
-    {
-      "problem": "Evaluate 3^4.",
-      "steps": "The base is 3 and the exponent is 4, so write four 3s: 3 × 3 × 3 × 3. Multiply step by step: 3×3 = 9, 9×3 = 27, 27×3 = 81.",
-      "expression": "3**4",
-      "answer": "81"
-    },
-    {
-      "problem": "Simplify 2^3 × 2^4 and give its value.",
-      "steps": "The bases are the same, so add the exponents: 3 + 4 = 7, giving 2^7. Check by counting copies: three 2s and four 2s make seven 2s. Then 2^7 = 128 (2, 4, 8, 16, 32, 64, 128).",
-      "expression": "2**3*2**4",
-      "answer": "128"
-    },
-    {
-      "problem": "Evaluate 5^(-2) + 4^0.",
-      "steps": "A negative exponent means a reciprocal: 5^(-2) = 1/(5^2) = 1/25. Any nonzero number to the power 0 is 1, so 4^0 = 1. Add: 1/25 + 1 = 26/25.",
-      "expression": "Rational(1,25) + 1",
-      "answer": "26/25"
-    }
-  ],
-  "try_it": [
-    {
-      "problem": "Evaluate 6^3.",
-      "solution": "Write three 6s: 6 × 6 × 6. 6×6 = 36, and 36×6 = 216.",
-      "expression": "6**3",
-      "answer": "216"
-    },
-    {
-      "problem": "Evaluate (-2)^5.",
-      "solution": "Five copies of -2: (-2)(-2) = 4, 4×(-2) = -8, -8×(-2) = 16, 16×(-2) = -32. An odd number of negatives gives a negative answer.",
-      "expression": "(-2)**5",
-      "answer": "-32"
-    },
-    {
-      "problem": "Evaluate 10^5 / 10^3 using the division rule.",
-      "solution": "Same base, so subtract exponents: 5 − 3 = 2, giving 10^2 = 100. Check: 100000 / 1000 = 100.",
-      "expression": "10**5/10**3",
-      "answer": "100"
-    }
-  ],
+  "idea": "An exponent tells you how many times to use a number as a factor. In 2^5 the base 2 is multiplied by itself 5 times, so 2^5 = 2·2·2·2·2 = 32. Exponents give short rules for multiplying and dividing powers, and for 0 as an exponent.",
+  "why": "Every rule comes from counting factors. 2^3·2^4 is (2·2·2)·(2·2·2·2), which is 7 twos, so you add exponents. Dividing cancels matching factors, so you subtract exponents. If you divide 2^3 by 2^3 you get 1 by cancelling everything, and the subtraction rule gives 2^0. So 2^0 must be 1. The rules are not arbitrary. They are shortcuts for counting factors.",
+  "theory_example": {
+    "problem": "Simplify and evaluate (2^3 · 2^2) / 2^4.",
+    "steps": "Top: 2^3·2^2 = 2^(3+2) = 2^5, which is five 2s multiplied. Divide by 2^4: four of the five 2s cancel, so 2^(5-4) = 2^1. Check by numbers: 2^5 = 32, 2^4 = 16, and 32/16 = 2.",
+    "expression": "2**3*2**2/2**4",
+    "answer": "2"
+  },
   "lesson_outline": [
     {
       "minutes": 5,
-      "activity": "Warm-up: the rumor story. Students work out how many people hear it each day (2, 4, 8, 16) and notice the repeated multiplication."
+      "activity": "Warm-up. Ask: how could we write 2·2·2·2·2 more briefly? Introduce base and exponent and name them. This leads into 'Exponents as repeated multiplication'."
     },
     {
       "minutes": 8,
-      "activity": "Introduce base and exponent with the tree picture and the square/cube pictures. Write 3^4 out as 3×3×3×3 together. Contrast 4^3 with 4×3."
+      "activity": "Teach 'Exponents as repeated multiplication'. Work the 2^5 example, write the factors out in full, and show the graph of 2^x so students see how fast it grows. Finish with the check question."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Rules for multiplying and dividing powers'. Always write the factors out first, then show the shortcut. Do the 2^3·2^4 example, then a division and a power of a power. Use the check question."
     },
     {
       "minutes": 8,
-      "activity": "Discover the product and division rules by writing out copies (2^3 × 2^4, 2^5 / 2^2). Students state the rule in their own words."
+      "activity": "Teach 'Zero exponent and negative bases'. Show 2^3/2^3 = 1 to explain 2^0. Then contrast (-3)^2 with -3^2 and work the example. Use the check question."
     },
     {
-      "minutes": 6,
-      "activity": "The pattern going down: 2^3, 2^2, 2^1, then 2^0 and 2^(-1), 2^(-2). Agree why a^0 = 1 and what a negative exponent means."
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Work the 3 extra examples with the class, mixing all subtopics, and let students try each before you show the solution. Take any remaining questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Exponents as repeated multiplication",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Read a^n as 'a used as a factor n times'. Step 1: write a n times. Step 2: multiply. For 2^5 write 2·2·2·2·2, then multiply step by step: 4, 8, 16, 32."
+        },
+        {
+          "kind": "story",
+          "text": "A rumour: one person tells 2 people, and each of them tells 2 more, and so on. After 1 round 2 people know, after 2 rounds 4, after 3 rounds 8. After 5 rounds new listeners number 2^5 = 32. Each round multiplies by 2 again."
+        }
+      ],
+      "example": {
+        "problem": "Evaluate 2^5 and say what the base and the exponent are.",
+        "steps": "The base is 2 and the exponent is 5. Write 2·2·2·2·2. Multiply stepwise: 2·2 = 4, 4·2 = 8, 8·2 = 16, 16·2 = 32.",
+        "expression": "2**5",
+        "answer": "32"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "2**x",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students compute 2^5 as 2·5 = 10.",
+          "response": "Ask them to write out the factors: 2·2·2·2·2. Point out that 2·5 is five 2s added. Then contrast 2+2+2+2+2 = 10 with 2·2·2·2·2 = 32."
+        },
+        {
+          "mistake": "Students think 3^4 = 3·4 = 12 or 4^3 = 12 and treat 3^4 and 4^3 as the same.",
+          "response": "Have them expand both: 3·3·3·3 = 81 and 4·4·4 = 64. Order matters because the base and the exponent play different roles."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is the little number written up high?",
+          "answer": "It is only a shorthand. The raised number is a quick way to say 'how many times', so we do not need to write 2·2·2·2·2 every time."
+        },
+        {
+          "question": "What is a number to the power of 1?",
+          "answer": "It is just the number itself, because it is used as a factor once. 7^1 = 7."
+        },
+        {
+          "question": "Why does 2^x go up so fast on the graph?",
+          "answer": "Each step to the right multiplies the height by 2, not adds 2. Doubling over and over grows much faster than adding."
+        }
+      ],
+      "check_question": {
+        "question": "What is 3^4? Write out the factors first.",
+        "solution": "3·3·3·3 = 9·3·3 = 27·3 = 81.",
+        "expression": "3**4",
+        "answer": "81"
+      }
     },
     {
-      "minutes": 4,
-      "activity": "Sign care: compare (-3)^2 with -3^2 and (-2)^3 on the board. Pairs check each other."
+      "title": "Rules for multiplying and dividing powers",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw 2^3 as three 2s in a row and 2^4 as four 2s in a row. Put them side by side with a multiplication sign. Count the 2s: 7 in total. So 2^3·2^4 = 2^7. For division, write the factors as a fraction and cross out the matching 2s on top and bottom, then count what is left."
+        },
+        {
+          "kind": "procedure",
+          "text": "Same base: multiplying means add the exponents, a^m·a^n = a^(m+n). Dividing means subtract, a^m/a^n = a^(m-n), when m is at least n. A power of a power means multiply the exponents, (a^m)^n = a^(m·n). The rules only work when the bases are the same, or when you use the rule on the exponents of the same base."
+        }
+      ],
+      "example": {
+        "problem": "Evaluate 2^3 · 2^4. Then simplify (3^2)^3.",
+        "steps": "2^3·2^4 = 2^(3+4) = 2^7 = 128. Check: 8·16 = 128. For (3^2)^3: that is 3^2·3^2·3^2 = 3^(2+2+2) = 3^6, which equals 3^(2·3) = 729.",
+        "expression": "2**3*2**4",
+        "answer": "128"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students write 2^3·2^4 = 4^7, multiplying the bases and the exponents.",
+          "response": "Ask: what is 2^3·2^4 as plain numbers? 8·16 = 128, but 4^7 = 16384. Then show that the base stays 2 because we are counting the number of 2s."
+        },
+        {
+          "mistake": "Students write (2^3)^2 = 2^5, adding instead of multiplying.",
+          "response": "Expand it: (2^3)^2 = 2^3·2^3 = 2·2·2·2·2·2 = 2^6. Two groups of three 2s gives 6 twos. Adding is for multiplying powers; multiplying exponents is for a power of a power."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we add the exponents instead of multiplying them?",
+          "answer": "You are joining two lists of factors into one longer list. 3 twos and 4 twos make 7 twos, and joining lists means adding their lengths."
+        },
+        {
+          "question": "Can I use the rule for 2^3·3^4?",
+          "answer": "No. The rule needs the same base, because it counts the same factor. 2^3·3^4 has to be worked out as 8·81 = 648."
+        },
+        {
+          "question": "Why do we subtract when dividing?",
+          "answer": "Each matching factor on the bottom cancels one on top. If there are 5 twos on top and 4 on the bottom, 4 pairs cancel and one 2 is left: 2^(5-4) = 2."
+        }
+      ],
+      "check_question": {
+        "question": "Simplify 5^6 / 5^4 and give its value.",
+        "solution": "Subtract the exponents: 5^(6-4) = 5^2 = 25.",
+        "expression": "5**6/5**4",
+        "answer": "25"
+      }
     },
     {
-      "minutes": 7,
-      "activity": "Try it: students do the three problems on their own, then compare with a partner and explain one answer aloud."
+      "title": "Zero exponent and negative bases",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Use the division rule on a power divided by itself. 2^3/2^3 = 2^(3-3) = 2^0. But any non-zero number divided by itself is 1, so 2^0 = 1. This works for any base except 0, so 5^0 = 1 and 100^0 = 1."
+        },
+        {
+          "kind": "picture",
+          "text": "Write the powers of 2 in a row: 2^3 = 8, 2^2 = 4, 2^1 = 2, 2^0 = ?. Each step to the right divides by 2: 8, 4, 2, so the next number is 1. For negative bases, write (-3)^2 = (-3)·(-3) = 9 with the brackets drawn around the whole base, and -3^2 = -(3·3) = -9 where only the 3 gets the exponent."
+        }
+      ],
+      "example": {
+        "problem": "Evaluate (-3)^2 - 3^2 + 4^0.",
+        "steps": "(-3)^2 = (-3)·(-3) = 9, since the brackets make -3 the base. 3^2 = 9, and the minus sign in front is subtraction. 4^0 = 1. So 9 - 9 + 1 = 1.",
+        "expression": "(-3)**2 - 3**2 + 4**0",
+        "answer": "1"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students say 5^0 = 0.",
+          "response": "Show the pattern 125, 25, 5, then ?. Each step divides by 5, so the next is 1. Also say that 0 factors does not mean 0, it means the 'empty product', which is 1."
+        },
+        {
+          "mistake": "Students read -3^2 as 9, ignoring that the exponent applies only to the 3.",
+          "response": "Point to the brackets. With (-3)^2 the base is -3, so the answer is 9. Without brackets, the exponent acts first and the minus stays outside: -(3^2) = -9."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why isn't 0 to the power 0 also 1?",
+          "answer": "Good question. It is left undefined in school math, because the rules pull it in different directions. For now we use the zero exponent only on numbers that are not 0."
+        },
+        {
+          "question": "Why does an even power of a negative give a positive?",
+          "answer": "Negatives cancel in pairs. (-3)^2 has two negatives, which make a positive, and (-3)^3 has three negatives, so one is left over and the answer is negative: -27."
+        },
+        {
+          "question": "Does the rule say anything about a negative exponent?",
+          "answer": "This lesson uses only whole-number exponents, 0, 1, 2 and so on. Negative exponents come later, and the same pattern of dividing at each step is what explains them."
+        }
+      ],
+      "check_question": {
+        "question": "What is (-2)^3 + 7^0?",
+        "solution": "(-2)^3 = (-2)·(-2)·(-2) = 4·(-2) = -8. 7^0 = 1. So -8 + 1 = -7.",
+        "expression": "(-2)**3 + 7**0",
+        "answer": "-7"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Evaluate 2^3 · 3^2.",
+      "solution": "The bases differ, so work out each power. 2^3 = 8 and 3^2 = 9. Then 8·9 = 72.",
+      "expression": "2**3*3**2",
+      "answer": "72"
     },
     {
-      "minutes": 2,
-      "activity": "Exit question: 'Explain in one sentence why 2^3 is not 6.'"
+      "problem": "Simplify 7^5 / 7^3 and give its value.",
+      "solution": "Same base, so subtract: 7^(5-3) = 7^2 = 49.",
+      "expression": "7**5/7**3",
+      "answer": "49"
+    },
+    {
+      "problem": "Evaluate (-2)^5 + 3^0.",
+      "solution": "(-2)^5 has five negative factors, so the result is negative: -32. 3^0 = 1. So -32 + 1 = -31.",
+      "expression": "(-2)**5 + 3**0",
+      "answer": "-31"
     }
   ],
   "meta": {
     "concept": "exponents",
     "title": "Whole-number exponents",
     "model": "sonnet",
-    "cost_usd": 0.03762,
+    "cost_usd": 0.05651,
     "generated": "2026-11-18",
     "grounded_on": null,
     "license": null,

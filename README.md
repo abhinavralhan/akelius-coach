@@ -1,15 +1,20 @@
 # Lesson Prep Coach: a math coach for teachers
 
-Math teachers who lack confidence in a topic open the coach the evening before a lesson, pick the topic, and get **prep notes**:
-- the idea in plain words, and **why it works**;
-- three ways to explain it;
-- the questions students will ask, with answers;
-- common mistakes;
-- worked examples and try-it problems;
-- an interactive drawing they can adjust;
-- a 40-minute lesson plan.
+Math teachers who lack confidence in a topic open the coach the evening before a lesson, pick the topic, and get **prep notes laid out the way the lesson is taught**:
 
-It is not a chatbot. The notes are the product. An optional side panel lets a teacher ask one question or get a part explained differently.
+1. **What the lesson covers**: the 2–3 subtopics, plus a **40-minute lesson plan** (the core of the class). The last 10 minutes are always an extra-examples and questions round.
+2. **Short theory**: the idea, why it works, and one worked example. This is a refresher for the teacher.
+3. **Each subtopic, in teaching order**:
+   - 2 ways to explain it;
+   - a worked example, with an interactive drawing where one helps;
+   - 2 common mistakes and how to respond;
+   - 3 questions students may ask, with answers;
+   - a check question for the class.
+4. **Extra examples** for the final 10 minutes.
+
+Teachers can add **their own notes** to the lesson and to each part, and use a **sketch pad**. Both are saved only in their browser.
+
+It is not a chatbot. The notes are the product. An optional side panel lets a teacher ask one question or have a part explained differently.
 
 Built as a prototype for the Akelius assignment "AI engineer, math teacher coach". The guiding principle: **trustworthy and reliable before anything else.** A teacher repeats what the coach says in front of a class, so a wrong answer is worse than no answer.
 
@@ -20,7 +25,7 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/uvicorn coach.server:app --port 8000      # open http://127.0.0.1:8000
 ```
 
-You need the [Claude Code CLI](https://claude.com/claude-code), logged in. It is the development LLM backend (see "Design"). All 27 topics (grades 1–10) have notes pre-generated and checked in `content/`. A topic added later is generated, checked and cached the first time someone opens it (fallback).
+You need the [Claude Code CLI](https://claude.com/claude-code), logged in. It is the development LLM backend (see "Design"). 26 of 27 topics (grades 1–10) have notes pre-generated and checked in `content/` (`right-triangle-trig` is pending: the generation run hit an account usage limit). Live, only these are served (D28). To generate a missing topic on first open in development, start with `COACH_ALLOW_GENERATE=1`.
 
 ```bash
 .venv/bin/python -m unittest tests.test_check tests.test_qa   # 9 tests, no LLM calls
@@ -42,8 +47,8 @@ The teachers in the brief learn alone, dislike chatbots, and don't want tests, s
 Each section of the prep notes answers one of these. The full reasoning, with 23 decisions and the alternatives rejected, is in [docs/research-notes.md](docs/research-notes.md).
 
 - **The notes come first, the AI second.** The main view is only the notes, printable. "Ask the coach", "explain differently" and "tell us what you need" sit in a side panel.
-- **No tests or scores.** Try-it problems have a "show solution" button. Nothing is recorded about the teacher.
-- **Interactive drawings** (JSXGraph, open source) come from four fixed templates: function graph, draggable right triangle, number line, fraction bars. Teachers adjust them (type a function, drag a corner, set fractions) to fit their class.
+- **No tests or scores for the teacher.** Check questions are for the teacher's students. Answers are behind "show answer", and nothing is recorded or scored.
+- **Drawings where they help** (JSXGraph, open source). Never empty: a drawing that can't render is removed. They come from five fixed templates: function graph, draggable right triangle, number line, fraction bars, bar chart. The AI supplies only the values, matched to that subtopic's example; the checker validates them, and the teacher can edit them. Every concept has a template.
 - **Country-neutral content.** Notes are keyed to a math *concept*. A country's standard is one mapping file (`curriculum/standards/ccss.yaml`: code → grade → concept). The demo uses Common Core, grades 1–10 (27 concepts).
 
 ## Design and trade-offs
@@ -84,8 +89,8 @@ Full list: [docs/research-notes.md §6](docs/research-notes.md).
 ## How we know the coach gives good answers
 
 1. **Grounding:** notes are generated from lessons we checked by hand (their arithmetic is verified with Python).
-2. **A deterministic gate:** `coach/check.py` recomputes every worked example and try-it answer with SymPy. All 27 sheets passed on the first try. Tests prove the gate catches a wrong answer, an injected expression, a model-written URL and a missing section.
-3. **Eval** ([evals/results.md](evals/results.md)): 10 teacher questions across grades 3–9 go through the live pipeline. They include traps: a student's wrong answer to correct, a notation trap (−3² vs (−3)²) and an off-topic question. Claude Sonnet grades each answer on a fixed rubric. **Result: correct 10/10, explains why 9/10 (the 1 is the off-topic question, where there is nothing to explain), plain language 10/10, respectful 10/10, honest about scope 10/10.** The first run caught a flaw in the eval itself (the judge couldn't see the sheet the answers referred to), and the results file documents the fix. Limits: a small sample, a same-family judge, English only.
+2. **A deterministic gate:** `coach/check.py` enforces the structure: a 40-minute plan ending with the 10-minute round, and every part in every subtopic. It recomputes every example, check question and extra example with SymPy, and validates every drawing's values. All 27 sheets passed on the first try. Tests prove the gate catches a wrong answer, an injected expression, a model-written URL and a missing section.
+3. **Eval** ([evals/results.md](evals/results.md)): 10 teacher questions across grades 3–9 go through the live pipeline. They include traps: a student's wrong answer to correct, a notation trap (−3² vs (−3)²) and an off-topic question. Claude Sonnet grades each answer on a fixed rubric. **Result (on the previous sheet structure; rerun pending): correct 10/10, explains why 9/10 (the 1 is the off-topic question, where there is nothing to explain), plain language 10/10, respectful 10/10, honest about scope 10/10.** The first run caught a flaw in the eval itself (the judge couldn't see the sheet the answers referred to), and the results file documents the fix. Limits: a small sample, a same-family judge, English only.
 4. **Honesty in the product:** everything AI-written says so and shows "not yet reviewed". Failures show a plain message, never a broken answer.
 
 ## Cost per teacher per month, and how to lower it
@@ -104,6 +109,7 @@ Full model with every assumption and a script to rerun: [docs/cost-model.md](doc
 - **Prep notes** are the same for every teacher and contain nothing personal.
 - **When a teacher asks a question**, the question, the topic and the topic's notes are sent to the AI provider (in this prototype Anthropic, through the Claude Code CLI). Nothing that identifies the teacher is sent.
 - **Stored on our server** (SQLite): each question and its answer (to reuse for the next teacher), a count of questions per random ID per month, the monthly AI spend, and feedback text. The feedback box asks teachers not to write personal details.
+- **Teachers' own notes and sketches** stay in their browser (local storage). They are never sent to our server or to the AI.
 - **Not collected:** names, emails, locations, scores, progress.
 - **AI transparency:** all generated content is labelled as written by AI and not yet reviewed, in line with the EU AI Act's transparency duties. Akelius is EU-based.
 - **Production notes:** choose an LLM provider with EU data processing and no training on inputs; add a retention period for stored questions and feedback.

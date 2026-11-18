@@ -2,30 +2,30 @@
 # A country's standard maps onto these in curriculum/standards/<code>.yaml.
 # visual: an interactive drawing template (web/index.html) - fixed code, never model-written.
 # lesson: our own short grounding lesson (CC BY 4.0); only some concepts have one yet.
-- {id: add-subtract-within-20, title: Adding and subtracting within 20}
-- {id: place-value, title: Place value (ones, tens, hundreds)}
-- {id: meaning-of-multiplication, title: What multiplication means}
+- {id: add-subtract-within-20, title: Adding and subtracting within 20, visual: numberline}
+- {id: place-value, title: Place value (ones, tens, hundreds), visual: bars}
+- {id: meaning-of-multiplication, title: What multiplication means, visual: bars}
 - {id: fractions-as-numbers, title: Fractions as numbers, visual: fractionbar}
 - {id: equivalent-fractions, title: Equivalent fractions, visual: fractionbar}
-- {id: division-with-remainders, title: Division with remainders}
-- {id: adding-fractions-unlike, title: Adding fractions with unlike denominators}
-- {id: multiplying-fractions, title: Multiplying fractions}
-- {id: decimal-operations, title: Operations with decimals}
+- {id: division-with-remainders, title: Division with remainders, visual: bars}
+- {id: adding-fractions-unlike, title: Adding fractions with unlike denominators, visual: fractionbar}
+- {id: multiplying-fractions, title: Multiplying fractions, visual: fractionbar}
+- {id: decimal-operations, title: Operations with decimals, visual: bars}
 - {id: dividing-fractions, title: Dividing fractions, lesson: dividing-fractions.md, license: CC-BY-4.0, visual: fractionbar}
-- {id: ratios, title: Ratios and rates}
-- {id: percentages, title: Percentages}
-- {id: exponents, title: Whole-number exponents}
+- {id: ratios, title: Ratios and rates, visual: bars}
+- {id: percentages, title: Percentages, visual: bars}
+- {id: exponents, title: Whole-number exponents, visual: graph}
 - {id: adding-negative-numbers, title: Adding and subtracting negative numbers, visual: numberline}
 - {id: multiplying-negative-numbers, title: Multiplying and dividing negative numbers, lesson: multiplying-negative-numbers.md, license: CC-BY-4.0, visual: numberline}
 - {id: linear-equations, title: Solving linear equations, visual: graph}
-- {id: circles, title: Circumference and area of a circle}
-- {id: probability, title: Simple probability}
+- {id: circles, title: Circumference and area of a circle, visual: graph}
+- {id: probability, title: Simple probability, visual: bars}
 - {id: pythagorean-theorem, title: The Pythagorean theorem, lesson: pythagorean-theorem.md, license: CC-BY-4.0, visual: triangle}
 - {id: slope, title: Slope and linear functions, visual: graph}
 - {id: systems-of-equations, title: Systems of linear equations, visual: graph}
-- {id: exponent-rules, title: Rules of exponents}
-- {id: polynomials, title: Adding and multiplying polynomials}
+- {id: exponent-rules, title: Rules of exponents, visual: graph}
+- {id: polynomials, title: Adding and multiplying polynomials, visual: graph}
 - {id: quadratic-equations, title: Solving quadratic equations, visual: graph}
 - {id: functions, title: What a function is, visual: graph}
-- {id: similar-triangles, title: Similar triangles}
+- {id: similar-triangles, title: Similar triangles, visual: triangle}
 - {id: right-triangle-trig, title: Sine, cosine and tangent in right triangles, visual: triangle}

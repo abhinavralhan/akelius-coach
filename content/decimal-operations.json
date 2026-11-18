@@ -1,119 +1,228 @@
 {
-  "idea": "Decimals follow the same place-value rules as whole numbers. To add or subtract, line up matching places (the decimal points). To multiply, multiply as if there were no decimal points, then put the point back so the answer has as many decimal places as the two factors together. To divide, scale both numbers by the same power of 10 so you are dividing by a whole number.",
-  "why": "Each digit's value depends on its place: tenths are ten times smaller than ones, and hundredths are ten times smaller than tenths. Adding or subtracting only makes sense for the same kind of unit (tenths with tenths, hundredths with hundredths), so we line up the places. For multiplication, 0.3 x 0.04 is (3 tenths) x (4 hundredths) = 12 thousandths = 0.012. Tenths times hundredths gives thousandths, which is why we count decimal places (1 + 2 = 3). For division, multiplying both numbers by 10 or 100 does not change the quotient: 6.3 / 0.9 = (6.3 x 10) / (0.9 x 10) = 63 / 9. So we can swap a decimal divisor for a whole number without changing the answer.",
-  "explanations": [
-    {
-      "kind": "picture",
-      "text": "Draw a place-value chart with columns Ones | . | Tenths | Hundredths. Write 2.35 and 1.4 one under the other, with 1.4 written as 1.40. Because the points and columns line up, you can add column by column: 5 hundredths, then 7 tenths, then 3 ones, giving 3.75. For multiplication, draw a 10 by 10 grid as 1 whole. Shade 0.3 of the width and 0.4 of the height: the overlap is 12 small squares out of 100, so 0.3 x 0.4 = 0.12."
-    },
-    {
-      "kind": "story",
-      "text": "You buy a drink for 2.35 and a snack for 1.40. Money makes decimals natural: 2.35 is 2 dollars and 35 cents, and 1.40 is 1 dollar and 40 cents. You add dollars to dollars and cents to cents, never cents to dollars. That is exactly why the decimal points must line up. For division: you have 6 dollars and want half-dollar coins. How many half-dollars are in 6? 12. So 6 / 0.5 = 12, and dividing by a half doubles."
-    },
-    {
-      "kind": "procedure",
-      "text": "Add or subtract: 1) Write the numbers with the decimal points in a vertical line. 2) Fill in empty places with zeros. 3) Add or subtract as with whole numbers. 4) Bring the point straight down. Multiply: 1) Ignore the points and multiply the whole numbers. 2) Count the decimal places in both factors together. 3) Put the point so the answer has that many places. Divide: 1) Move the decimal point in the divisor right until it is whole. 2) Move the point in the dividend the same number of places. 3) Divide, placing the point in the answer directly above the point in the dividend."
-    }
-  ],
-  "student_questions": [
-    {
-      "question": "Why do we line up the decimal points when adding, but not when multiplying?",
-      "answer": "Adding only works with the same size of unit: tenths with tenths, hundredths with hundredths. Lining up the points puts same-size units in the same column. In multiplication we are not combining like units. Tenths times hundredths makes a new unit, thousandths, so we count places afterwards instead."
-    },
-    {
-      "question": "Why is 0.3 x 0.4 smaller than both 0.3 and 0.4? I thought multiplying makes things bigger.",
-      "answer": "Multiplying by a number less than 1 means taking only a part of something. 0.4 x 0.3 is 4 tenths of 0.3, so it is a part of 0.3 and must be smaller. The answer is 0.12."
-    },
-    {
-      "question": "Why can we move the decimal point in both numbers when dividing?",
-      "answer": "Because multiplying both numbers by 10 keeps the answer the same. 6.3 / 0.9 asks how many 0.9s fit in 6.3. If everything is ten times bigger, the same number of pieces still fit: 63 / 9 = 7. It is like measuring in millimeters instead of centimeters: the number of times one length fits into the other does not change."
-    },
-    {
-      "question": "Why do 0.5 and 0.50 mean the same thing?",
-      "answer": "5 tenths is the same amount as 50 hundredths. Writing a zero at the end of the decimal part does not change the value, it only cuts the same amount into smaller pieces. That is why we can add zeros to line up columns."
-    }
-  ],
-  "mistakes": [
-    {
-      "mistake": "Lining up numbers by their right-hand digits instead of the decimal points, e.g. writing 2.35 + 1.4 with the 4 under the 5 and getting 2.49.",
-      "response": "Ask: what does the 4 stand for in 1.4? Tenths. And the 5 in 2.35? Hundredths. Can we add them directly? Have the student rewrite 1.4 as 1.40 and see that the 4 sits under the 3. Money helps: 1.40 versus 1.04."
-    },
-    {
-      "mistake": "Misplacing the point in multiplication, e.g. 0.3 x 0.4 = 1.2, or 0.3 x 0.04 = 0.12 because they only counted one place.",
-      "response": "Have the student estimate first: 0.3 is about a third and 0.4 is a bit less than a half, so the answer should be small, near 0.1. Then 1.2 clearly cannot be right. Then return to counting places in both factors: 1 + 1 = 2 places, so 12 becomes 0.12."
-    },
-    {
-      "mistake": "When dividing by a decimal, moving the point in the divisor but not in the dividend, e.g. treating 6.3 / 0.9 as 6.3 / 9 = 0.7.",
-      "response": "Remind them that both numbers must be scaled by the same factor. Ask them to check by multiplying: does 0.9 x 0.7 give 6.3? No, it gives 0.63. Then redo it as 63 / 9 = 7 and check 0.9 x 7 = 6.3."
-    }
-  ],
-  "worked_examples": [
-    {
-      "problem": "Add 2.35 + 1.4",
-      "steps": "Line up the points and write 1.4 as 1.40. Hundredths: 5 + 0 = 5. Tenths: 3 + 4 = 7. Ones: 2 + 1 = 3. Bring down the point: 3.75.",
-      "expression": "Rational(235,100) + Rational(14,10)",
-      "answer": "15/4"
-    },
-    {
-      "problem": "Multiply 0.3 x 0.04",
-      "steps": "Ignore the points: 3 x 4 = 12. Count decimal places: 0.3 has 1, 0.04 has 2, total 3. So 12 becomes 0.012 (three places, so add a zero at the front). Check: 3 tenths of 4 hundredths is 12 thousandths.",
-      "expression": "Rational(3,10) * Rational(4,100)",
-      "answer": "3/250"
-    },
-    {
-      "problem": "Divide 6.3 / 0.9",
-      "steps": "Multiply both numbers by 10 so the divisor is whole: 63 / 9. 63 / 9 = 7. Check: 0.9 x 7 = 6.3.",
-      "expression": "Rational(63,10) / Rational(9,10)",
-      "answer": "7"
-    }
-  ],
-  "try_it": [
-    {
-      "problem": "Subtract 5.2 - 1.75",
-      "solution": "Write 5.2 as 5.20 and line up the points. 5.20 - 1.75 = 3.45.",
-      "expression": "Rational(52,10) - Rational(175,100)",
-      "answer": "69/20"
-    },
-    {
-      "problem": "Multiply 1.2 x 0.5",
-      "solution": "12 x 5 = 60. There are 1 + 1 = 2 decimal places, so 0.60 = 0.6.",
-      "expression": "Rational(12,10) * Rational(5,10)",
-      "answer": "3/5"
-    },
-    {
-      "problem": "Divide 4.5 / 0.15",
-      "solution": "Multiply both by 100: 450 / 15 = 30. Check: 0.15 x 30 = 4.5.",
-      "expression": "Rational(45,10) / Rational(15,100)",
-      "answer": "30"
-    }
-  ],
+  "idea": "Decimals are numbers written with place value to the right of the point: tenths, hundredths and so on. Adding and subtracting works just like whole numbers, as long as equal place values are lined up. Multiplying and dividing can be done as whole-number work, then the decimal point is put back using place-value reasoning.",
+  "why": "A decimal is a whole number counted in a smaller unit. 3.4 is 34 tenths, and 2.75 is 275 hundredths. You can only add or subtract amounts counted in the same unit, so we line up the points, or write 3.4 as 3.40, to count both in hundredths. For multiplication, 1.2 x 3.5 is (12 tenths) x (35 tenths). That gives 12 x 35 = 420 pieces of size 'a tenth of a tenth', which is a hundredth, so 420 hundredths = 4.20. For division, 7.2 / 0.6 asks 'how many 0.6s fit in 7.2?'. Multiplying both numbers by 10 gives 72 / 6, which asks the same thing with every piece ten times bigger, so the answer does not change. This turns a decimal divisor into a whole number.",
+  "theory_example": {
+    "problem": "Ribbon costs 3.5 per metre. Mia buys 2.4 metres and pays with a 10 note. How much change does she get?",
+    "steps": "Step 1: Cost = 3.5 x 2.4. Ignore the points: 35 x 24 = 840. Each factor has 1 decimal place, so the product has 2: 8.40 = 8.4. Estimate check: 3.5 x 2 = 7, and a bit more, so 8.4 is sensible. Step 2: Change = 10 - 8.4. Write 10 as 10.0 and line up the points: 10.0 - 8.4 = 1.6. Mia gets 1.6 change.",
+    "expression": "10 - Rational(35,10)*Rational(24,10)",
+    "answer": "8/5"
+  },
   "lesson_outline": [
     {
-      "minutes": 5,
-      "activity": "Warm-up with money: add 2.35 + 1.40 and discuss why dollars go with dollars. Ask what 0.5 and 0.50 mean."
+      "minutes": 10,
+      "activity": "Teach 'Adding and subtracting decimals'. Ask the class to guess 3.4 + 2.75, then show the bars in hundredths and the column method with points lined up. Work the example together and ask the check question."
     },
     {
       "minutes": 10,
-      "activity": "Add and subtract: place-value chart, line up the points, pad with zeros. Work 2.35 + 1.4 together, then students try 5.2 - 1.75 in pairs."
+      "activity": "Teach 'Multiplying decimals'. Start with an estimate, then multiply as whole numbers and place the point by counting decimal places. Use the tenths-times-tenths picture to explain why. Finish with the check question."
     },
     {
       "minutes": 10,
-      "activity": "Multiply: 10 by 10 grid for 0.3 x 0.4, then the count-the-places rule with 0.3 x 0.04. Estimate first each time."
+      "activity": "Teach 'Dividing decimals'. Ask 'how many 0.6s fit in 7.2?', then multiply both numbers by 10 and divide 72 by 6. Take the student questions and ask the check question."
     },
     {
       "minutes": 10,
-      "activity": "Divide: ask how many 0.5s fit in 6, then scale both numbers by 10 with 6.3 / 0.9. Check each answer by multiplying."
+      "activity": "Extra examples and questions round. Work the three extra examples on the board, mixing all three subtopics. Let students try each before you show the solution, and leave time for any questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Adding and subtracting decimals",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw bars in hundredths. 3.4 is 340 hundredths and 2.75 is 275 hundredths. Put them side by side and show the total bar of 615 hundredths, which is 6.15. This shows that we add amounts counted in the same unit."
+        },
+        {
+          "kind": "procedure",
+          "text": "Write the numbers in a column with the decimal points exactly under each other. Fill gaps with zeros (3.4 becomes 3.40). Add or subtract from the right as with whole numbers, regrouping when needed. Bring the point straight down into the answer."
+        }
+      ],
+      "example": {
+        "problem": "Work out 3.4 + 2.75.",
+        "steps": "Write 3.4 as 3.40 so both numbers have two decimal places. Line up the points: 3.40 + 2.75. Hundredths: 0 + 5 = 5. Tenths: 4 + 7 = 11, so write 1 and carry 1. Ones: 3 + 2 + 1 = 6. Bring the point down: 6.15.",
+        "expression": "Rational(34,10) + Rational(275,100)",
+        "answer": "123/20"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "First x100;Second x100;Total x100",
+        "a": 340,
+        "b": 275,
+        "c": 615,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Lining up the right-hand digits instead of the points, so 3.4 + 2.75 is worked as 275 + 34 and gives 3.09.",
+          "response": "Ask which digit in each number is the tenths digit. Then show that 4 tenths and 7 tenths must be added together. Have them write the trailing zero (3.40) and use squared paper so each place has its own column."
+        },
+        {
+          "mistake": "Subtracting a decimal from a whole number, such as 5 - 2.35, by writing 5 with no places and getting 2.65 wrongly or giving up.",
+          "response": "Show that 5 is the same as 5.00. Write it as 5.00 - 2.35 with the points lined up, and then regroup as usual to get 2.65. Check by adding 2.35 + 2.65 = 5."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we have to line up the decimal points?",
+          "answer": "Because the point sits between the ones and the tenths. Lining up the points puts ones under ones and tenths under tenths. You can only add things of the same size, just like you add dollars to dollars and not dollars to cents."
+        },
+        {
+          "question": "Is it okay to add a zero on the end of 3.4?",
+          "answer": "Yes. 3.4 means 4 tenths, and 3.40 means 4 tenths and 0 hundredths. It is the same amount, only written with more places so the columns match."
+        },
+        {
+          "question": "Why does the point just come straight down in the answer?",
+          "answer": "Because the places do not change when we add. Ones stay ones and tenths stay tenths, so the point stays between them."
+        }
+      ],
+      "check_question": {
+        "question": "What is 5.6 - 2.35?",
+        "solution": "Write 5.6 as 5.60. Then 5.60 - 2.35: hundredths 0 - 5 needs regrouping, giving 10 - 5 = 5. Tenths: 5 - 3 = 2. Ones: 5 - 2 = 3. The answer is 3.25. Check: 3.25 + 2.35 = 5.60.",
+        "expression": "Rational(56,10) - Rational(235,100)",
+        "answer": "13/4"
+      }
     },
     {
-      "minutes": 5,
-      "activity": "Exit check: students do one question of each type, then talk through the most common mistakes."
+      "title": "Multiplying decimals",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a 1 by 1 square cut into a 10 by 10 grid. 0.3 x 0.2 is the overlap of 3 columns and 2 rows, which is 6 small squares out of 100, so 0.06. Tenths of tenths are hundredths, so the answer has 2 decimal places."
+        },
+        {
+          "kind": "procedure",
+          "text": "Estimate first. Ignore the decimal points and multiply as whole numbers. Count the total number of decimal places in both factors. Put that many decimal places in the answer, counting from the right. Compare with your estimate."
+        }
+      ],
+      "example": {
+        "problem": "Work out 1.2 x 3.5.",
+        "steps": "Estimate: about 1 x 3.5, a bit more, so about 4. Ignore the points: 12 x 35 = 420. 1.2 has 1 decimal place and 3.5 has 1, so the answer has 2. 420 becomes 4.20, which is 4.2. This matches the estimate.",
+        "expression": "Rational(12,10)*Rational(35,10)",
+        "answer": "21/5"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Lining up the decimal points as in addition, or keeping only one decimal place, so 0.3 x 0.2 becomes 0.6.",
+          "response": "Use the 10 by 10 grid: 3 columns by 2 rows is 6 small squares out of 100, which is 0.06. Remind them that for multiplying we count decimal places and do not line up points."
+        },
+        {
+          "mistake": "Believing multiplication always makes a number bigger, so they are surprised that 0.5 x 0.4 = 0.2 is smaller than both factors.",
+          "response": "Say 0.5 x 0.4 means half of 0.4. Taking a part of a number gives less than the whole. Use the estimate habit to see this, and ask 'is it more or less than 1 times this number?'"
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we ignore the decimal points at first?",
+          "answer": "Because 1.2 is 12 tenths and 3.5 is 35 tenths. Multiplying 12 by 35 gives the count of tiny pieces. Then we work out how big each piece is, a tenth of a tenth, which is a hundredth."
+        },
+        {
+          "question": "Why do we add the number of decimal places?",
+          "answer": "Each factor with one decimal place is measured in tenths. A tenth of a tenth is a hundredth, which has two places. In general the places add up."
+        },
+        {
+          "question": "What if the answer ends in a zero, like 420 becoming 4.20?",
+          "answer": "You can drop the final zero after the point. 4.20 and 4.2 are the same number. Zeros before the last digit of a whole number matter, but trailing zeros after the point do not."
+        }
+      ],
+      "check_question": {
+        "question": "What is 0.3 x 0.2?",
+        "solution": "3 x 2 = 6. There are 1 + 1 = 2 decimal places, so the answer is 0.06. Picture: 6 small squares out of 100.",
+        "expression": "Rational(3,10)*Rational(2,10)",
+        "answer": "3/50"
+      }
+    },
+    {
+      "title": "Dividing decimals",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "A shop has 7.2 metres of ribbon and cuts it into pieces of 0.6 metres. How many pieces? If we measure in tenths of a metre, the ribbon is 72 tenths and each piece is 6 tenths. So it is 72 divided by 6 = 12 pieces. Changing the unit did not change the number of pieces."
+        },
+        {
+          "kind": "procedure",
+          "text": "Multiply the divisor by a power of 10 to make it a whole number. Multiply the dividend by the same power of 10. Now divide as with whole numbers. Put the point in the answer straight above the point in the new dividend, if there is one. Check by multiplying the answer by the original divisor."
+        }
+      ],
+      "example": {
+        "problem": "Work out 7.2 / 0.6.",
+        "steps": "The divisor 0.6 has one decimal place, so multiply both numbers by 10. 7.2 becomes 72 and 0.6 becomes 6. Now 72 / 6 = 12. Check: 12 x 0.6 = 7.2.",
+        "expression": "Rational(72,10)/Rational(6,10)",
+        "answer": "12"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Moving the decimal point in the divisor only, so 7.2 / 0.6 is worked as 7.2 / 6 = 1.2.",
+          "response": "Remind them both numbers must be scaled by the same amount. Ask: 'how many 0.6s fit in 7.2?' and show 12 x 0.6 = 7.2, so 1.2 cannot be right."
+        },
+        {
+          "mistake": "Believing division always makes a number smaller, so they doubt that 7.2 / 0.6 is bigger than 7.2.",
+          "response": "Ask how many 0.6s fit into 7.2. Since 0.6 is less than 1, many fit, more than 7. Dividing by a number less than 1 gives a bigger answer."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why can we multiply both numbers by 10 and still get the same answer?",
+          "answer": "Division asks how many times one amount fits in another. If we make both amounts ten times bigger, the same number of copies still fit. It is like measuring in millimetres instead of centimetres."
+        },
+        {
+          "question": "Why do we not need to change the answer back afterwards?",
+          "answer": "The answer counts how many pieces fit. That count was never in tenths. It is the same whether we count in metres or in tenths of metres."
+        },
+        {
+          "question": "What if the dividend does not have enough decimal places, like 9 / 0.25?",
+          "answer": "Write 9 as 9.00. Multiply both by 100 to get 900 / 25 = 36."
+        }
+      ],
+      "check_question": {
+        "question": "What is 3.6 / 0.4?",
+        "solution": "Multiply both by 10 to get 36 / 4 = 9. Check: 9 x 0.4 = 3.6.",
+        "expression": "Rational(36,10)/Rational(4,10)",
+        "answer": "9"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Work out 12.5 - 4.78.",
+      "solution": "Write 12.5 as 12.50 and line up the points. 12.50 - 4.78: hundredths 0 - 8 needs regrouping, giving 10 - 8 = 2. Tenths: 4 - 7 needs regrouping, giving 14 - 7 = 7. Ones: 11 - 4 = 7 and then 1 in the tens place after regrouping. The answer is 7.72. Check: 7.72 + 4.78 = 12.50.",
+      "expression": "Rational(125,10) - Rational(478,100)",
+      "answer": "193/25"
+    },
+    {
+      "problem": "Work out 0.35 x 0.8.",
+      "solution": "Estimate: about 0.4 x 0.8 which is a bit more than 0.3. Ignore the points: 35 x 8 = 280. There are 2 + 1 = 3 decimal places, so 280 becomes 0.280 = 0.28.",
+      "expression": "Rational(35,100)*Rational(8,10)",
+      "answer": "7/25"
+    },
+    {
+      "problem": "A rope 4.5 m long is cut into pieces 0.15 m long. How many pieces are there?",
+      "solution": "We need 4.5 / 0.15. Multiply both numbers by 100 to get 450 / 15 = 30. Check: 30 x 0.15 = 4.5. There are 30 pieces.",
+      "expression": "Rational(45,10)/Rational(15,100)",
+      "answer": "30"
     }
   ],
   "meta": {
     "concept": "decimal-operations",
     "title": "Operations with decimals",
     "model": "sonnet",
-    "cost_usd": 0.08486,
+    "cost_usd": 0.09014,
     "generated": "2026-11-18",
     "grounded_on": null,
     "license": null,

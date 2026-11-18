@@ -47,6 +47,8 @@ def get_sheet(concept: str):
         return sheet.get(concept)
     except KeyError:
         raise HTTPException(404, "unknown topic")
+    except LookupError:
+        raise HTTPException(404, "These notes are being prepared and checked. They will be available soon.")
     except (RuntimeError, ValueError) as e:  # model failed or the sheet failed a check: show nothing unverified
         raise HTTPException(502, f"We could not prepare a sheet we can vouch for. Please try again later. ({e})")
 
@@ -55,6 +57,8 @@ def get_sheet(concept: str):
 def ask(body: Ask):
     try:
         return qa.ask(body.concept, body.question, body.teacher, body.force)
+    except LookupError:
+        raise HTTPException(404, "These notes are being prepared and checked. They will be available soon.")
     except ValueError as e:
         raise HTTPException(400, str(e))
     except RuntimeError as e:

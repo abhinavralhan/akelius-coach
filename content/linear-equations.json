@@ -1,123 +1,232 @@
 {
-  "idea": "Solving a linear equation means finding the value of the unknown that makes both sides equal. You do it by doing the same thing to both sides, step by step, until the unknown is alone: x = number.",
-  "why": "An equation says two expressions have the same value, like a balanced scale. If you add, subtract, multiply or divide both sides by the same number (not dividing by zero), the balance stays true, so the new equation has exactly the same solution as the old one. Each step is also reversible: you can undo it by doing the opposite. So we use opposite operations (undo + with -, undo × with ÷) to peel away everything around x. The last line x = 4 is just the original equation in its simplest form, and substituting 4 back into the original checks it.",
-  "explanations": [
-    {
-      "kind": "picture",
-      "text": "Draw a balance scale. On the left pan: 3 bags (each holding x) and 2 loose counters. On the right pan: 14 counters. Take 2 counters off each side and the scale stays level: 3 bags = 12 counters. Now split each pan into 3 equal groups: 1 bag = 4 counters. So x = 4."
-    },
-    {
-      "kind": "story",
-      "text": "A taxi charges a fixed 2 dollars to start, plus 3 dollars per kilometre. The ride cost 14 dollars. How far did it go? Take off the starting fee: 12 dollars is left, all from the per-kilometre part. 12 divided by 3 is 4 km. In symbols: 3x + 2 = 14, so 3x = 12, so x = 4."
-    },
-    {
-      "kind": "procedure",
-      "text": "1) Expand brackets and collect like terms on each side if needed. 2) If x appears on both sides, add or subtract to gather the x terms on one side. 3) Undo adding or subtracting by doing the opposite to both sides. 4) Undo multiplying by dividing both sides by the coefficient of x. 5) Check by substituting your answer into the original equation."
-    }
-  ],
-  "student_questions": [
-    {
-      "question": "Why can I do the same thing to both sides?",
-      "answer": "Because the equation says the two sides are equal. If two things are equal and you do the same thing to both, they are still equal, like adding the same weight to both pans of a level scale."
-    },
-    {
-      "question": "Why do we use the opposite operation?",
-      "answer": "We want x alone. If x has 2 added to it, subtracting 2 cancels that and leaves x. Adding 2 and subtracting 2 undo each other, so the opposite is the step that removes it."
-    },
-    {
-      "question": "Why does the sign change when a number moves across the equals sign?",
-      "answer": "Nothing really moves. You are subtracting the same number from both sides. For x + 5 = 9, subtract 5 from both sides: the 5 vanishes on the left and shows up as minus 5 on the right. It looks like it jumped and flipped, but it was subtracted from both sides."
-    },
-    {
-      "question": "How do I know my answer is right?",
-      "answer": "Put it back into the original equation. If both sides give the same number, it works. For 3x + 2 = 14 with x = 4: 3 times 4 plus 2 is 14, and 14 equals 14."
-    }
-  ],
-  "mistakes": [
-    {
-      "mistake": "Doing an operation to only one side, e.g. subtracting 2 from the left but not the right.",
-      "response": "Go back to the balance picture and ask, 'What happened to the other pan?' Have the student write the step on both sides, in a column, each time."
-    },
-    {
-      "mistake": "Undoing in a messy order, or dividing only one term: 3x + 2 = 14 becomes x + 2 = 14/3 or x + 2 = 14 ÷ 3 wrongly.",
-      "response": "Remind them that dividing by 3 must apply to every term on both sides. Easier: subtract 2 first to get 3x = 12, then divide. Let them check their answer by substituting, so they find the error themselves."
-    },
-    {
-      "mistake": "Sign errors with negatives, e.g. from x - 5 = 2 writing x = -3, or from -2x = 8 writing x = 4.",
-      "response": "Ask them to substitute. For x = -3: -3 - 5 = -8, not 2. Then show that x - 5 = 2 needs adding 5 to both sides, and that -2x = 8 needs dividing by -2, giving x = -4."
-    }
-  ],
-  "worked_examples": [
-    {
-      "problem": "Solve 3x + 2 = 14.",
-      "steps": "Subtract 2 from both sides: 3x = 12. Divide both sides by 3: x = 4. Check: 3(4) + 2 = 14.",
-      "expression": "(14 - 2)/3",
-      "answer": "4"
-    },
-    {
-      "problem": "Solve 5x - 7 = 2x + 8.",
-      "steps": "Subtract 2x from both sides: 3x - 7 = 8. Add 7 to both sides: 3x = 15. Divide by 3: x = 5. Check: 5(5) - 7 = 18 and 2(5) + 8 = 18.",
-      "expression": "(8 + 7)/(5 - 2)",
-      "answer": "5"
-    },
-    {
-      "problem": "Solve 2(x + 3) = 5x - 3.",
-      "steps": "Expand: 2x + 6 = 5x - 3. Subtract 2x from both sides: 6 = 3x - 3. Add 3 to both sides: 9 = 3x. Divide by 3: x = 3. Check: 2(6) = 12 and 5(3) - 3 = 12.",
-      "expression": "(6 + 3)/(5 - 2)",
-      "answer": "3"
-    }
-  ],
-  "try_it": [
-    {
-      "problem": "Solve 4x + 5 = 29.",
-      "solution": "Subtract 5: 4x = 24. Divide by 4: x = 6.",
-      "expression": "(29 - 5)/4",
-      "answer": "6"
-    },
-    {
-      "problem": "Solve 7x - 3 = 3x + 9.",
-      "solution": "Subtract 3x: 4x - 3 = 9. Add 3: 4x = 12. Divide by 4: x = 3.",
-      "expression": "(9 + 3)/(7 - 3)",
-      "answer": "3"
-    },
-    {
-      "problem": "Solve 3(x - 2) = 2x + 1.",
-      "solution": "Expand: 3x - 6 = 2x + 1. Subtract 2x: x - 6 = 1. Add 6: x = 7. Check: 3(5) = 15 and 2(7) + 1 = 15.",
-      "expression": "1 + 6",
-      "answer": "7"
-    }
-  ],
+  "idea": "A linear equation says two expressions are equal, and we want the value of x that makes it true. We solve it by doing the same thing to both sides until x stands alone. Each step keeps the equation true, so the last line, x = a number, is the answer.",
+  "why": "An equation is like a balanced scale. If you add, subtract, multiply or divide both sides by the same number (not zero for multiplying or dividing), the balance stays and the solutions do not change. Every step we use undoes something that was done to x: subtract to undo adding, divide to undo multiplying. Working backwards through the operations leaves x alone. On a graph, each side is a line, and the solution is the x-value where the two lines cross. Putting the answer back into the original equation always checks it.",
+  "theory_example": {
+    "problem": "Solve 3(x - 2) + 4 = 2x + 7.",
+    "steps": "Expand the bracket: 3x - 6 + 4 = 2x + 7. Combine the numbers on the left: 3x - 2 = 2x + 7. Subtract 2x from both sides: x - 2 = 7. Add 2 to both sides: x = 9. Check: left side is 3(9 - 2) + 4 = 21 + 4 = 25. Right side is 2(9) + 7 = 25. They match.",
+    "expression": "9",
+    "answer": "9"
+  },
   "lesson_outline": [
     {
       "minutes": 5,
-      "activity": "Warm-up with the balance picture: 3 bags and 2 counters equal 14 counters. Students say what to remove from each side."
+      "activity": "Open with a balance-scale picture on the board. Say that an equation is a scale that is level, and that whatever we do to one side we must do to the other. Use the idea and why notes above. Ask students for a number that makes x + 3 = 8 true."
     },
     {
       "minutes": 8,
-      "activity": "Teach the idea: do the same to both sides, use opposites. Work through 3x + 2 = 14 on the board, including the check."
+      "activity": "Teach the subtopic 'Two-step equations: undo in reverse order'. Work through 3x + 5 = 20 together, then show the graph where y = 3x + 5 meets y = 20. Ask the check question."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach the subtopic 'Unknowns on both sides'. Work through 5x - 4 = 2x + 8, then show the graph where the two lines cross. Let students suggest each step before you write it. Ask the check question."
     },
     {
       "minutes": 8,
-      "activity": "Worked example 2 (x on both sides), with students suggesting each step. Discuss why we subtract 2x from both sides."
-    },
-    {
-      "minutes": 5,
-      "activity": "Worked example 3 with brackets. Expand first, then continue as before."
+      "activity": "Teach the subtopic 'Brackets and fractions, then check'. Work through 2(x + 3) = 5x - 9. Stress expanding first and substituting back to check. Ask the check question."
     },
     {
       "minutes": 10,
-      "activity": "Students work the three Try it problems in pairs, writing each step on both sides and checking by substitution."
+      "activity": "Extra examples and questions round. Put the three extra examples on the board one at a time. Let students try each in pairs for a minute or two, then go through the solution together. Leave the last minutes for any student questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Two-step equations: undo in reverse order",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Think of getting dressed: socks, then shoes. To undo it you take off the shoes first, then the socks. In 3x + 5 = 20, x was multiplied by 3 and then 5 was added. To undo it, take away the 5 first, then divide by 3."
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: Add or subtract to remove the number added to or subtracted from the x term, on both sides. Step 2: Divide both sides by the number multiplying x. Step 3: Put the answer back into the original equation to check."
+        }
+      ],
+      "example": {
+        "problem": "Solve 3x + 5 = 20.",
+        "steps": "Subtract 5 from both sides: 3x = 15. Divide both sides by 3: x = 5. Check: 3(5) + 5 = 20. Correct.",
+        "expression": "5",
+        "answer": "5"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "3*x + 5; 20",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Subtracting 5 from only one side, for example writing 3x = 20 after the first step.",
+          "response": "Go back to the scale picture. If you take 5 off one pan only, it tips. Ask the student to take 5 from both sides and see that 20 becomes 15."
+        },
+        {
+          "mistake": "Dividing only one term by 3, for example 3x + 5 = 20 becoming x + 5 = 20/3.",
+          "response": "Say that dividing both sides means dividing every term. Better still, do the subtraction first so that only one term is left on each side, then divide."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we subtract the 5 first and not divide by 3 first?",
+          "answer": "You can divide first, but then you must divide every term, so you get x + 5/3 = 20/3, which is harder. Removing the added number first leaves 3x = 15, which is clean. Both ways give x = 5."
+        },
+        {
+          "question": "Why can we do something to both sides?",
+          "answer": "Because the two sides are equal. If two things weigh the same and you add the same weight to each, they still weigh the same. So the equation stays true."
+        },
+        {
+          "question": "Do we always have to check the answer?",
+          "answer": "You don't have to, but it is a quick way to be sure. Put your x back into the original equation. If both sides give the same number, you are right."
+        }
+      ],
+      "check_question": {
+        "question": "Solve 2x + 7 = 19.",
+        "solution": "Subtract 7 from both sides: 2x = 12. Divide by 2: x = 6. Check: 2(6) + 7 = 19.",
+        "expression": "6",
+        "answer": "6"
+      }
     },
     {
-      "minutes": 4,
-      "activity": "Go over answers and discuss the common mistakes, especially signs and one-sided steps."
+      "title": "Unknowns on both sides",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a scale with 5 x-blocks and a minus 4 on the left, and 2 x-blocks and 8 on the right. Remove 2 x-blocks from each side so that the x-blocks are only on the left. Then deal with the numbers as in a two-step equation. On a graph, the two sides are two lines, and the solution is the x-value where they cross."
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: Move the x terms to one side by subtracting the smaller x term from both sides. Step 2: Move the plain numbers to the other side by adding or subtracting. Step 3: Divide by the number in front of x. Step 4: Check in the original equation."
+        }
+      ],
+      "example": {
+        "problem": "Solve 5x - 4 = 2x + 8.",
+        "steps": "Subtract 2x from both sides: 3x - 4 = 8. Add 4 to both sides: 3x = 12. Divide by 3: x = 4. Check: left is 5(4) - 4 = 16, right is 2(4) + 8 = 16. The two lines y = 5x - 4 and y = 2x + 8 cross at x = 4, where y = 16.",
+        "expression": "4",
+        "answer": "4"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "5*x - 4; 2*x + 8",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Moving a term across the equals sign without changing its sign, for example 5x - 4 = 2x + 8 becoming 5x + 2x = 8 - 4.",
+          "response": "Avoid the phrase 'move it across'. Say 'subtract 2x from both sides' and write it under both sides, so students see the 2x vanish from the right and appear as minus 2x on the left."
+        },
+        {
+          "mistake": "Subtracting the larger x term, which leaves a negative x, and then stopping at -x = something.",
+          "response": "Tell them it is not wrong, just one more step. If -x = -4, multiply or divide both sides by -1 to get x = 4. Suggest subtracting the smaller x term to avoid this."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Which side should I put the x terms on?",
+          "answer": "Either side works and gives the same answer. Many people choose the side that keeps the x coefficient positive, which means subtracting the smaller x term."
+        },
+        {
+          "question": "What does the graph have to do with solving?",
+          "answer": "Each side of the equation is a line. A point where the lines cross has the same height on both lines, which means the two sides are equal. The x of that point is the solution."
+        },
+        {
+          "question": "What if the x terms cancel out completely?",
+          "answer": "Then either the equation is always true, for example x + 1 = x + 1, or never true, for example x + 1 = x + 2. Those are special cases and we do not need them today."
+        }
+      ],
+      "check_question": {
+        "question": "Solve 6x - 1 = 2x + 11.",
+        "solution": "Subtract 2x from both sides: 4x - 1 = 11. Add 1: 4x = 12. Divide by 4: x = 3. Check: 6(3) - 1 = 17 and 2(3) + 11 = 17.",
+        "expression": "3",
+        "answer": "3"
+      }
+    },
+    {
+      "title": "Brackets and fractions, then check",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Step 1: Expand any brackets by multiplying every term inside by the number outside. Step 2: Combine like terms on each side. Step 3: Solve as before. If there is a fraction such as x/3, multiply every term on both sides by 3 to clear it. Step 4: Check in the original equation."
+        },
+        {
+          "kind": "story",
+          "text": "A bracket is a parcel. 2(x + 3) means two parcels, each holding an x and a 3. Open the parcels and you get 2 x's and 6 ones, so 2x + 6. Once the parcels are open, you solve the equation as usual."
+        }
+      ],
+      "example": {
+        "problem": "Solve 2(x + 3) = 5x - 9.",
+        "steps": "Expand the bracket: 2x + 6 = 5x - 9. Subtract 2x from both sides: 6 = 3x - 9. Add 9 to both sides: 15 = 3x. Divide by 3: x = 5. Check: left is 2(5 + 3) = 16, right is 5(5) - 9 = 16.",
+        "expression": "5",
+        "answer": "5"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Multiplying only the first term in the bracket, for example 2(x + 3) becoming 2x + 3.",
+          "response": "Bring back the parcel picture: 2 parcels each contain a 3, so there are 6 ones. Ask the student to substitute x = 1 into both 2(x + 3) and 2x + 3 to see that they differ."
+        },
+        {
+          "mistake": "Making a sign error when the bracket has a minus, for example 3(x - 2) becoming 3x - 2.",
+          "response": "Remind them the 3 multiplies the -2 as well, giving -6. Have them write the arrows from the 3 to each term before expanding."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do I multiply everything inside the bracket?",
+          "answer": "Because the number outside multiplies the whole bracket, which is the whole sum inside. 2(x + 3) means two copies of x + 3, so you get two x's and two 3's."
+        },
+        {
+          "question": "How do I deal with a fraction like x/3 + 2 = 7?",
+          "answer": "First subtract 2 from both sides to get x/3 = 5. Then multiply both sides by 3 to get x = 15. You could also multiply every term by 3 at the start, which gives x + 6 = 21, and x = 15 again."
+        },
+        {
+          "question": "Why is it important to check the answer when there are brackets?",
+          "answer": "Brackets and signs are where slips happen. Putting your answer in the original equation catches those slips, because both sides must give the same number."
+        }
+      ],
+      "check_question": {
+        "question": "Solve 3(x + 1) = 2x + 9.",
+        "solution": "Expand: 3x + 3 = 2x + 9. Subtract 2x: x + 3 = 9. Subtract 3: x = 6. Check: 3(7) = 21 and 2(6) + 9 = 21.",
+        "expression": "6",
+        "answer": "6"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Solve 4x - 7 = 21.",
+      "solution": "Add 7 to both sides: 4x = 28. Divide by 4: x = 7. Check: 4(7) - 7 = 21.",
+      "expression": "7",
+      "answer": "7"
+    },
+    {
+      "problem": "Solve 7x + 2 = 3x + 18.",
+      "solution": "Subtract 3x from both sides: 4x + 2 = 18. Subtract 2: 4x = 16. Divide by 4: x = 4. Check: 7(4) + 2 = 30 and 3(4) + 18 = 30.",
+      "expression": "4",
+      "answer": "4"
+    },
+    {
+      "problem": "Solve 3(2x - 1) = 4x + 9.",
+      "solution": "Expand: 6x - 3 = 4x + 9. Subtract 4x: 2x - 3 = 9. Add 3: 2x = 12. Divide by 2: x = 6. Check: 3(11) = 33 and 4(6) + 9 = 33.",
+      "expression": "6",
+      "answer": "6"
     }
   ],
   "meta": {
     "concept": "linear-equations",
     "title": "Solving linear equations",
     "model": "sonnet",
-    "cost_usd": 0.02927,
+    "cost_usd": 0.06123,
     "generated": "2026-11-18",
     "grounded_on": null,
     "license": null,

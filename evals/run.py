@@ -51,7 +51,7 @@ def main():
 
 def _context(concept):  # the same sheet sections the live pipeline sends (see coach/qa.py)
     s = sheet.get(concept)
-    return {k: s[k] for k in ("idea", "why", "explanations", "mistakes", "student_questions")}
+    return {k: s[k] for k in ("idea", "why", "subtopics")}
 
 
 def _spent():

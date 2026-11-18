@@ -122,3 +122,9 @@ Each step ends with a commit and a step-log entry with **start and end times** (
 ### Step 16: library generated (90/97)
 - **Achieved:** 90 of 97 sheets generated and verified (0 failing checks); library cost $8.26; drawings in 171 of 270 subtopics (shown only where useful).
 - **Open:** 7 grade 9–10 topics (compound-probability, congruent-triangles, data-spread, distance-midpoint, parallel-lines-angles, radicals, volume-of-solids) hit the Claude account's monthly spend limit; they show "coming soon". Regenerate after the limit resets: run `python -m coach.sheet <id>` for each.
+
+### Step 17: audit fixes, README, demo GIF, push
+- **Audit fixes (one commit each):** promoted FAQs go to a review queue before going live (#1); indexed question cache (#2); atomic `sheet.save()` shared by all writers (#3); errors logged, not shown to teachers (#4); trimmed live context, about 6× fewer tokens (#5); stale topic responses ignored (#6); `tests/test_api.py`, with the real server in a thread and a fake model (#7); dead code removed (#8–#11). 19 unit/API tests + 3 notes tests pass.
+- **README** rewritten: crisp; maps every delivery item and the 4 review criteria; tools, limitations, future scope.
+- **docs/demo.gif:** 16 frames recorded from the real app by `docs/make_demo_gif.py` (Playwright, dev-only). The first real-browser check: all features render.
+- **Open:** 7 topics pending (spend limit), eval rerun on the trimmed context, YouTube key.

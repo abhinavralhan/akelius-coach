@@ -32,7 +32,7 @@ def main():
         except Exception as e:  # a refused or failed answer is scored, not hidden
             answer = f"(no answer: {e})"
         cost += _spent() - before
-        grade, judge_cost = complete(JUDGE, f"Prep sheet the answerer saw: {_context(c['concept'])}\n\n"
+        grade, judge_cost = complete(JUDGE, f"Prep sheet the answerer saw: {_context(c['concept'], c['question'])}\n\n"
                                      f"Question: {c['question']}\nExpected: {c['expect']}\nAnswer: {answer}",
                                      model="sonnet", schema=SCHEMA)
         cost += judge_cost
@@ -49,9 +49,8 @@ def main():
     (HERE / "results.md").write_text("\n".join(out) + "\n")
 
 
-def _context(concept):  # the same sheet sections the live pipeline sends (see coach/qa.py)
-    s = sheet.get(concept)
-    return {k: s[k] for k in ("idea", "why", "subtopics")}
+def _context(concept, question):  # exactly what the live pipeline sends (coach/qa.py)
+    return qa.context(sheet.get(concept), question)
 
 
 def _spent():

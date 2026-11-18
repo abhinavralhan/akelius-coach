@@ -54,6 +54,16 @@ def is_same(a, b):
     return signature(a) == signature(b) and difflib.SequenceMatcher(None, a, b).ratio() >= SIMILAR
 
 
+def context(s, question):
+    """Only what the answer needs: the short theory and part titles, plus the full part the question names
+    (as "explain differently" always does). Sending the whole sheet tripled the tokens per answer."""
+    ctx = {k: s[k] for k in ("idea", "why", "theory_example")} | {"parts": [t["title"] for t in s["subtopics"]]}
+    named = [t for t in s["subtopics"] if t["title"].lower() in question.lower()]
+    if named:
+        ctx["part"] = {k: v for k, v in named[0].items() if k != "visual"}
+    return ctx
+
+
 def ask(concept, question, teacher, force=False):
     """Return {answer, cached, matched_question, remaining}. Raises ValueError for a request we refuse."""
     question = question.strip()
@@ -85,8 +95,7 @@ def ask(concept, question, teacher, force=False):
         if spent >= BUDGET:
             raise ValueError("the coach has reached its monthly budget; prep notes and earlier answers still work")
     s = sheets.get(concept)
-    context = {k: s[k] for k in ("idea", "why", "subtopics")}
-    answer, cost = complete(SYSTEM, f"Topic: {s['meta']['title']}\nPrep sheet: {context}\n\nTeacher's question: {question}",
+    answer, cost = complete(SYSTEM, f"Topic: {s['meta']['title']}\nPrep sheet: {context(s, question)}\n\nTeacher's question: {question}",
                             model=ASK_MODEL)
     if re.search(r"https?://|www\.", answer):
         raise RuntimeError("the answer contained a link the coach cannot vouch for, so it was not shown")

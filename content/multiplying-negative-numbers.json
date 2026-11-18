@@ -1,0 +1,145 @@
+{
+  "idea": "A positive times a negative is negative (repeated addition). A negative times a negative is positive. Division follows the same sign rule: same signs give a positive result, different signs give a negative result. Zero is neither positive nor negative.",
+  "why": "Multiplying by a positive whole number is repeated addition, so 3 · (−2) = (−2) + (−2) + (−2) = −6. That is why positive times negative is negative. For two negatives, we want the usual rules (such as the distributive law) to keep working. Look at (−1) · (−2) + (−1) · 2. By the distributive law this equals (−1) · ((−2) + 2) = (−1) · 0 = 0. Since (−1) · 2 = −2, the other term (−1) · (−2) must be 2, because only 2 added to −2 gives 0. So negative times negative has to be positive, or the arithmetic would stop being consistent. Division follows multiplication: a ÷ b is the number that, multiplied by b, gives a. For example (−12) ÷ (−3) = 4 because 4 · (−3) = −12. So the sign rules for division are the same as for multiplication.",
+  "explanations": [
+    {
+      "kind": "picture",
+      "text": "Draw a number line and write the list 3 · (−2) = −6, 2 · (−2) = −4, 1 · (−2) = −2, 0 · (−2) = 0 in a column. Point out that each time the first factor goes down by 1, the product goes up by 2. Keep the pattern going below zero: (−1) · (−2) = 2, (−2) · (−2) = 4. Mark each product as a dot on the number line so students see the dots climbing steadily from −6 through 0 and into the positives."
+    },
+    {
+      "kind": "story",
+      "text": "Say you are losing 2 kg per week, so your change is −2 kg per week. In 3 weeks you will have changed by 3 · (−2) = −6 kg. Now look backwards: three weeks ago is −3 weeks. Then you were 6 kg heavier, so (−3) · (−2) = +6. Going backwards in time while losing weight means being heavier, which is positive."
+    },
+    {
+      "kind": "procedure",
+      "text": "Step 1: Ignore the signs and multiply or divide the plain numbers. Step 2: Look at the signs. Same signs (both positive or both negative) give a positive result. Different signs give a negative result. Step 3: Write the sign in front. Step 4: Check by multiplying back, for example (−12) ÷ (−3) = 4 because 4 · (−3) = −12. Remember that 0 times or divided into anything is 0, and zero has no sign."
+    }
+  ],
+  "student_questions": [
+    {
+      "question": "But why is a negative times a negative positive? It feels made up.",
+      "answer": "It is not a free choice. We want the usual rules to keep working. We know (−1) · 2 = −2. The distributive law gives (−1) · (−2) + (−1) · 2 = (−1) · 0 = 0. So (−1) · (−2) has to be the number that cancels −2, which is 2. Also, the pattern 3 · (−2) = −6, 2 · (−2) = −4, 1 · (−2) = −2, 0 · (−2) = 0 keeps going up by 2, so the next answers are 2 and 4."
+    },
+    {
+      "question": "Why does the sign rule work for division too?",
+      "answer": "Because division is the opposite of multiplication. (−12) ÷ (−3) asks: what number times −3 gives −12? That is 4, because 4 · (−3) = −12. Every division can be checked by multiplying back, so the sign rules match."
+    },
+    {
+      "question": "So two negatives make a positive. Why is (−3) + (−4) not 7?",
+      "answer": "The rule is only for multiplying and dividing. Adding is combining amounts: a debt of 3 plus a debt of 4 is a debt of 7, so (−3) + (−4) = −7."
+    },
+    {
+      "question": "Is zero positive or negative?",
+      "answer": "Neither. Zero has no sign. That is why 0 · (−5) = 0 and not −0 or anything else. It is the turning point between negative and positive numbers."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Applying 'two negatives make a positive' to addition: writing (−3) + (−4) = 7.",
+      "response": "Ask what it means: owing 3 and owing 4 more. Do you owe 7 or have 7? Show it on a number line, starting at −3 and moving 4 more to the left to reach −7. Say clearly that the sign rule is for multiplying and dividing."
+    },
+    {
+      "mistake": "Confusing −3² = −9 with (−3)² = 9.",
+      "response": "Show that the exponent applies only to what it touches. In −3² only the 3 is squared, then the minus is applied: −(3 · 3) = −9. In (−3)² the brackets mean (−3) · (−3) = 9. Have students write the multiplication out in full each time."
+    },
+    {
+      "mistake": "Getting the sign wrong in division, for example (−12) ÷ (−3) = −4.",
+      "response": "Have students check by multiplying back. Is (−4) · (−3) = −12? No, it is 12. But 4 · (−3) = −12, so the answer is 4. Remind them that same signs give a positive result, different signs a negative."
+    }
+  ],
+  "worked_examples": [
+    {
+      "problem": "Calculate 3 · (−2).",
+      "steps": "Multiplying by a positive number is repeated addition: 3 · (−2) = (−2) + (−2) + (−2) = −6. Different signs, so the result is negative.",
+      "expression": "3*(-2)",
+      "answer": "-6"
+    },
+    {
+      "problem": "Calculate (−3) · (−2).",
+      "steps": "Multiply the plain numbers: 3 · 2 = 6. The signs are the same (both negative), so the result is positive. Check with the story: losing 2 kg per week, three weeks ago you were 6 kg heavier.",
+      "expression": "(-3)*(-2)",
+      "answer": "6"
+    },
+    {
+      "problem": "Calculate (−12) ÷ (−3).",
+      "steps": "Divide the plain numbers: 12 ÷ 3 = 4. Same signs, so the result is positive. Check: 4 · (−3) = −12.",
+      "expression": "(-12)/(-3)",
+      "answer": "4"
+    }
+  ],
+  "try_it": [
+    {
+      "problem": "Calculate (−5) · 4.",
+      "solution": "Different signs give a negative result. 5 · 4 = 20, so the answer is −20.",
+      "expression": "(-5)*4",
+      "answer": "-20"
+    },
+    {
+      "problem": "Calculate (−6) · (−7).",
+      "solution": "Same signs give a positive result. 6 · 7 = 42.",
+      "expression": "(-6)*(-7)",
+      "answer": "42"
+    },
+    {
+      "problem": "Calculate 20 ÷ (−4).",
+      "solution": "Different signs give a negative result. 20 ÷ 4 = 5, so the answer is −5. Check: (−5) · (−4) = 20.",
+      "expression": "20/(-4)",
+      "answer": "-5"
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: repeated addition. Students compute 3 · (−2) as (−2) + (−2) + (−2) and say what sign positive times negative gives."
+    },
+    {
+      "minutes": 10,
+      "activity": "Pattern: write 3 · (−2), 2 · (−2), 1 · (−2), 0 · (−2) and continue the pattern to (−1) · (−2) and (−2) · (−2). Discuss why the products rise by 2 each time."
+    },
+    {
+      "minutes": 5,
+      "activity": "Story: losing 2 kg per week, and three weeks ago you were 6 kg heavier. Optionally show the distributive law argument for stronger classes."
+    },
+    {
+      "minutes": 8,
+      "activity": "Division as the reverse of multiplication. Work (−12) ÷ (−3) = 4 and check by multiplying back. State the sign rule together."
+    },
+    {
+      "minutes": 7,
+      "activity": "Practice: the three try-it problems in pairs, then discuss the common mistakes (−3) + (−4) and −3² versus (−3)²."
+    },
+    {
+      "minutes": 5,
+      "activity": "Wrap-up: students write in their own words the rule for same and different signs and what zero does. Collect questions."
+    }
+  ],
+  "meta": {
+    "concept": "multiplying-negative-numbers",
+    "title": "Multiplying and dividing negative numbers",
+    "model": "sonnet",
+    "cost_usd": 0.04038,
+    "generated": "2026-11-18",
+    "grounded_on": "multiplying-negative-numbers.md",
+    "license": "CC-BY-4.0",
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Multiplying+and+dividing+negative+numbers"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Multiplying+and+dividing+negative+numbers"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Multiplying+and+dividing+negative+numbers"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Multiplying+and+dividing+negative+numbers"
+    }
+  ]
+}

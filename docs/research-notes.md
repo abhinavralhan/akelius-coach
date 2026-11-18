@@ -42,6 +42,8 @@ Akelius wants the first part of a coach. It should help math teachers who lack c
 | D17 | **AI transparency:** every generated sheet and answer is labelled "AI-generated" and "not yet reviewed" | This matches the transparency duty in the EU AI Act; Akelius is EU-based | Unlabelled AI content |
 | D19 | **A feedback box for teachers:** free text about what they need, stored anonymously with the topic it was written on | We learn what to build next from the real users. The box warns teachers not to type personal details | Surveys or ratings (feel like judgment) |
 | D20 | **Grounding lessons are short texts we wrote ourselves** (released CC BY 4.0), each linking to the matching OpenStax section | The brief allows "a few short lessons you write". It's faster and safer than quoting OpenStax from memory | Verbatim OpenStax excerpts (no time to fetch and check them) |
+| D21 | **The main view is only the prep notes for the chosen topic** (printable). "Ask the coach", "explain differently" and feedback sit in a secondary side tab | The core job is preparing a lesson, and teachers dislike chatbots. The notes must be useful without ever touching the AI | A chat-first or mixed layout |
+| D22 | **The question cache also needs the numbers and math symbols to match exactly**, on top of ≥ 0.95 similarity | Character similarity alone could treat "why is 1/2 > 1/3" and "why is 1/3 > 1/2" as the same question | Similarity score only |
 | D18 | **Question cache with promotion and a very strict match:** a cached answer is reused only for an exact match after normalisation, or a near-identical one (character similarity ≥ 0.95, order-sensitive). The matched question is always shown. The most-asked questions are promoted into the static sheets in order of demand | Typed questions drive the cost; promoted questions become free for all later teachers. The strict, order-sensitive match means "why is 1/2 > 1/3" never reuses the answer to "why is 1/3 > 1/2" | A looser word-overlap match (risks wrong answers); embedding search (extra model and cost; the upgrade path once we see which paraphrases get missed) |
 
 ## 2. Teacher problems (product hypothesis)
@@ -127,6 +129,7 @@ No leaderboard measures these, so we use:
 - **Country standards:** sheets are keyed to concepts, and each country maps its standard onto them; we start with CCSS (D14). **Native language:** first planned as cheap and in scope, then moved to TODO to save time (D15). **Content:** open licences only, with a `license` field kept so licensed content can be added later (D16). **Plan reviewed against the brief:** added timestamps for "time spent", a section on how AI was used, AI labelling, input validation, smaller scope, and kept the brief out of git.
 - **Question cache:** repeated questions are answered from the cache and popular ones are promoted into the sheets (D18).
 - **Core principle from the user:** "build a super trustworthy and reliable system." It is now the guiding principle at the top of this file.
+- **Main view = notes only:** the side tab holds the AI features (D21). **Exact math match** added to the question cache (D22).
 - **Strict matching:** only very similar questions reuse an answer (D18, ≥ 0.95). **Teacher feedback box** added (D19). **Sign-up and auth** moved to TODO.
 
 ## 8. Open questions

@@ -50,3 +50,13 @@ Each step ends with a commit and a step-log entry with **start and end times** (
 - **Achieved:** all the arithmetic in the lessons is checked with Python. The topic map loads.
 - **Note:** the first times written for steps 1–2 were guesses, corrected here with `date`. From now on, all times come from the system clock.
 - **Next:** Step 3, `coach/llm.py` + `coach/sheet.py`, then generate 3 sheets.
+
+### Step 3: LLM boundary + sheet generator — 16:53–16:56
+- **Did:** `coach/llm.py`, the only place a model is called. It uses the Claude CLI in a lean mode (no tools, no MCP, custom system prompt, so about 1k tokens of overhead instead of about 23k), takes a JSON schema for structured output, returns the real `total_cost_usd`, and raises on any failure. `coach/sheet.py` holds the sheet schema and a grounded prompt; it generates with Sonnet, runs `verify()` and caches the sheet only if it passes. Every sheet carries meta: `ai_generated`, `reviewed: false`, model, cost, grounding lesson, license.
+- **Achieved:** 3 sheets in `content/` (dividing fractions, multiplying negative numbers, Pythagoras). All passed the checks first time, at $0.038–0.047 each (the cost model assumed $0.12, so it is conservative).
+- **Next:** Step 4.
+
+### Step 4: quality gate + resources — done alongside step 3, 16:53–16:56
+- **Did:** `coach/check.py` checks that every section is present, that there are exactly 3 explanations, that every worked example and try-it answer is right (SymPy), and that there are no model-written URLs. Model expressions are whitelisted (characters + `sqrt`, `pi`, `Rational`) before SymPy sees them, because `sympify` evaluates code. `coach/resources.py` builds Khan Academy, Wolfram|Alpha, GeoGebra and Wikipedia links from fixed templates. `tests/test_check.py` has 5 tests, all passing: correct sheet passes, wrong answer caught, code injection rejected, URL rejected, missing section caught.
+- **Decided (D21, user):** the main view is only the prep notes for a topic. Ask, explain-differently and feedback go in a secondary side tab, because teachers dislike chatbots and the job is lesson prep.
+- **Next:** Step 5, the server + UI. `coach/qa.py` (cap, budget stop, strict question cache, Haiku) is already written.

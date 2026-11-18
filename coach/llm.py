@@ -17,7 +17,7 @@ def complete(system, prompt, model="haiku", schema=None):
     try:
         r = subprocess.run(cmd, input=prompt, capture_output=True, text=True, timeout=300)
         d = json.loads(r.stdout)
-    except (OSError, subprocess.TimeoutExpired, json.JSONDecodeError) as e:  # OSError: no CLI installed (e.g. in Docker)
+    except (subprocess.TimeoutExpired, json.JSONDecodeError) as e:
         raise RuntimeError(f"LLM call failed: {e}") from e
     out = d.get("structured_output") if schema else d.get("result")
     if d.get("is_error") or not out:

@@ -49,7 +49,7 @@ def attach(concept_ids, key):
         s = json.loads(path.read_text())
         s["videos"] = top_videos(sheet.CONCEPTS[cid]["title"], grades[cid], key)
         s["meta"]["videos_fetched"] = date.today().isoformat()
-        path.write_text(json.dumps(s, indent=2, ensure_ascii=False))
+        sheet.save(cid, s)
         print(cid, len(s["videos"]), "videos")
 
 

@@ -90,10 +90,16 @@ def generate(concept_id, model=SHEET_MODEL):
     sheet["meta"] = {"concept": concept_id, "title": c["title"], "model": model, "cost_usd": round(cost, 5),
                      "generated": date.today().isoformat(), "grounded_on": c.get("lesson"),
                      "license": c.get("license"), "ai_generated": True, "reviewed": False}
-    sheet["resources"] = links(c["title"])
-    CONTENT.mkdir(exist_ok=True)
-    (CONTENT / f"{concept_id}.json").write_text(json.dumps(sheet, indent=2, ensure_ascii=False))
+    save(concept_id, sheet)
     return sheet
+
+
+def save(concept_id, sheet):
+    """Write all-or-nothing: a crash or a reader mid-write never sees a half-written sheet."""
+    CONTENT.mkdir(exist_ok=True)
+    tmp = CONTENT / f".{concept_id}.json.tmp"
+    tmp.write_text(json.dumps(sheet, indent=2, ensure_ascii=False))
+    os.replace(tmp, CONTENT / f"{concept_id}.json")
 
 
 def get(concept_id):
@@ -104,11 +110,12 @@ def get(concept_id):
     path = CONTENT / f"{concept_id}.json"
     if path.exists():
         s = json.loads(path.read_text())
-        s["resources"] = links(CONCEPTS[concept_id]["title"])  # always from the current templates
-        return s
-    if os.environ.get("COACH_ALLOW_GENERATE") != "1":
+    elif os.environ.get("COACH_ALLOW_GENERATE") == "1":
+        s = generate(concept_id)
+    else:
         raise LookupError("these notes are not ready yet")
-    return generate(concept_id)
+    s["resources"] = links(CONCEPTS[concept_id]["title"])  # always from the current templates
+    return s
 
 
 if __name__ == "__main__":  # python -m coach.sheet <concept-id> ...

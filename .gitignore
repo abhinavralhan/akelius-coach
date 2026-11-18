@@ -6,3 +6,4 @@ data/*.db
 .DS_Store
 # assignment brief stays local, not published
 *assignment*.pdf
+content/.*.tmp

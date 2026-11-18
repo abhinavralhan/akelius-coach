@@ -32,11 +32,11 @@ Each step ends with a commit and a step-log entry with **start and end times** (
 
 ## Step log
 
-### Step 0: research and planning (prep, before the 2-hour clock) — done 2026-11-18
+### Step 0: setup and research — 16:04–16:46 (2026-11-18)
 - **Did:** read the assignment; worked out the teacher problems; researched open-source model math quality, LLM prices and online resource licenses; built the cost model.
 - **Decided:** decisions D1–D13 in research-notes.md. Main ones: a prep sheet instead of a chat; shared, cached sheets; a small model on the live path; a cap of 50 queries per teacher per month; a $2k budget enforced in code; copy text only from CC BY sources and link to the rest; SymPy for verification; no accounts.
 - **Achieved:** docs/research-notes.md, docs/cost-model.md, this file and CLAUDE.md.
-- **Next:** Step 1, once the user says go. That starts the 2-hour clock.
+- **Next:** Step 1 (the build).
 
 ### Step 1: repo setup — 16:46–16:50
 - **Did:** `git init` (branch main) and the remote `origin` → github.com/abhinavralhan/akelius-coach (not pushed yet); `.venv` with fastapi, uvicorn, sympy and pyyaml (`requirements.txt`); `.gitignore`.
@@ -128,3 +128,6 @@ Each step ends with a commit and a step-log entry with **start and end times** (
 - **README** rewritten: crisp; maps every delivery item and the 4 review criteria; tools, limitations, future scope.
 - **docs/demo.gif:** 16 frames recorded from the real app by `docs/make_demo_gif.py` (Playwright, dev-only). The first real-browser check: all features render.
 - **Open:** 7 topics pending (spend limit), eval rerun on the trimmed context, YouTube key.
+
+### Step 18: time record corrected
+- **Did:** the README and this log now state the real timeline. The work started at 16:04 with setup and research (16:04–16:46), then the build (16:46–17:52): about 1 h 50 min in total. Earlier versions wrongly called the research "not clocked".

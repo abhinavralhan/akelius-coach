@@ -35,7 +35,7 @@ Generating notes and live answers needs the [Claude Code CLI](https://claude.com
 | How to run it | "Run" above |
 | Design and trade-offs | "How it works" below; 29 decisions with the alternatives rejected in [docs/research-notes.md](docs/research-notes.md) §1 |
 | What was skipped, and why | "Limitations" and "Future scope" below |
-| Time spent | Build: 16:46–17:50 by the git log (about 1 h). Research and planning came before, in the same session, not clocked. Per-step times in [MEMORY.md](MEMORY.md) |
+| Time spent | **16:04–17:52, about 1 h 50 min in total, within the 2 hours.** 16:04–16:46: setup and research (teacher problems, model quality and prices, licences, cost model, plan). 16:46–17:52: build, tests, eval, docs (times from the git log). Per-step times in [MEMORY.md](MEMORY.md) |
 | How we know the answers are good | 1) Notes are grounded in checked lessons. 2) **Every** example, check question and extra example is recomputed with SymPy, and a sheet that fails is never saved (90/90 pass). 3) The structure is enforced by code. 4) Eval: 10 teacher questions with traps, graded by a stronger model: **correct 10/10**. The eval caught one real error ("usually" instead of "never"), now fixed. See [evals/results.md](evals/results.md) |
 | Cost per teacher per month, and how to lower it | **~$0.006** realistic, **≤ $0.04** worst case (50 questions a month). $2k a month is a hard limit in code. Notes are made once ($8.26 for 90 topics) and shared by all teachers. Lowered by caching, trimmed context, a small model on the live path, and Batch API for notes. Full model: [docs/cost-model.md](docs/cost-model.md) |
 | What data the coach handles, and where it goes | See "Data, in plain language" below |

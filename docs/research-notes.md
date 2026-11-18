@@ -1,7 +1,7 @@
 # Research notes and thought process
 
 The thinking behind the coach: what we found and why we decided what we did. This file is kept up to date as the work goes on.
-Started 2026-11-18. This research was prep and is **not** part of the 2-hour build.
+Started 2026-11-18 at 16:04 (setup and research, 16:04–16:46); the build ran 16:46–17:52.
 
 ---
 
@@ -130,7 +130,7 @@ No leaderboard measures these, so we use:
 - **Educator review workflow:** a page where reviewers approve sheets and promoted FAQs, which flips "not yet reviewed" to reviewed.
 - **Production LLM backend:** the Anthropic API (Haiku 5.5) or a hosted open-weight model, chosen by the eval.
 
-## 7. Discussion log (each user prompt, how it shaped the design, in order)
+## 7. Discussion log (each user prompt, how it shaped the design, in order; work started 16:04)
 
 | # | User prompt (short) | What changed |
 |---|---|---|
@@ -164,6 +164,7 @@ No leaderboard measures these, so we use:
 | 29 | Remove the "Written by AI … not yet reviewed" warning from the notes | D17 updated: banner removed from the notes page; the AI label stays on live answers in the side panel, and `ai_generated`/`reviewed` stay in every sheet's metadata |
 | 30 | Complete generation; meanwhile test everything apart from it; commit when done | Full test pass (below). Eval run 3 found a real imprecision ("usually" instead of "never"); answer prompt tightened; run 4 passes. Measured cost per answer rose to $0.00125, recorded in cost-model.md with the fix |
 | 31 | Fix the audit findings; a crisp README with a demo GIF covering the brief's delivery items, tools, limitations, future scope and the 4 review criteria; push when done | All 11 audit findings fixed (one commit each); README rewritten; docs/demo.gif recorded from the real app with Playwright |
+| 32 | State clearly that the work started at 16:04 with setup and research | README time line corrected: 16:04–17:52, about 1 h 50 min in total |
 
 ## 8. Open questions
 

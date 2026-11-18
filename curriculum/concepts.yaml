@@ -29,3 +29,73 @@
 - {id: functions, title: What a function is, visual: graph}
 - {id: similar-triangles, title: Similar triangles, visual: triangle}
 - {id: right-triangle-trig, title: Sine, cosine and tangent in right triangles, visual: triangle}
+- {id: addition-subtraction-word-problems, title: Addition and subtraction word problems, visual: bars}
+- {id: properties-of-addition, title: "Properties of addition (order and grouping)", visual: bars}
+- {id: subtraction-as-missing-addend, title: Subtraction as finding a missing addend, visual: numberline}
+- {id: tens-and-ones, title: Tens and ones, visual: bars}
+- {id: comparing-two-digit-numbers, title: Comparing two-digit numbers, visual: bars}
+- {id: adding-within-100, title: Adding within 100, visual: numberline}
+- {id: measuring-length, title: Comparing and measuring length, visual: bars}
+- {id: halves-and-quarters, title: Halves and quarters of shapes, visual: fractionbar}
+- {id: two-step-word-problems, title: Two-step word problems, visual: bars}
+- {id: mental-math-within-20, title: Mental strategies within 20, visual: numberline}
+- {id: odd-and-even, title: Odd and even numbers, visual: bars}
+- {id: arrays-repeated-addition, title: Arrays and repeated addition, visual: bars}
+- {id: adding-subtracting-within-100, title: Adding and subtracting within 100, visual: numberline}
+- {id: adding-subtracting-within-1000, title: Adding and subtracting within 1000, visual: bars}
+- {id: money, title: Counting money, visual: bars}
+- {id: bar-graphs, title: Picture graphs and bar graphs, visual: bars}
+- {id: meaning-of-division, title: What division means, visual: bars}
+- {id: properties-of-multiplication, title: Properties of multiplication, visual: bars}
+- {id: multiplication-facts, title: Multiplication facts within 100, visual: bars}
+- {id: four-operations-word-problems, title: Two-step problems with all four operations, visual: bars}
+- {id: rounding, title: Rounding to the nearest 10 or 100, visual: numberline}
+- {id: comparing-fractions, title: Comparing fractions, visual: fractionbar}
+- {id: area-of-rectangles, title: Area of rectangles, visual: bars}
+- {id: perimeter, title: Perimeter, visual: bars}
+- {id: multiplicative-comparison, title: "Multiplicative comparison (times as many)", visual: bars}
+- {id: factors-and-multiples, title: "Factors, multiples and prime numbers", visual: bars}
+- {id: multi-digit-place-value, title: Reading and comparing large numbers, visual: bars}
+- {id: multi-digit-multiplication, title: Multi-digit multiplication, visual: bars}
+- {id: comparing-unlike-fractions, title: Comparing fractions with different denominators, visual: fractionbar}
+- {id: adding-like-fractions, title: Adding and subtracting fractions and mixed numbers, visual: fractionbar}
+- {id: decimals-and-fractions, title: "Decimals as fractions (tenths and hundredths)", visual: bars}
+- {id: angles, title: Angles and measuring in degrees, visual: triangle}
+- {id: order-of-operations, title: Order of operations and brackets, visual: bars}
+- {id: powers-of-ten, title: Multiplying and dividing by powers of ten, visual: bars}
+- {id: comparing-decimals, title: Reading and comparing decimals, visual: bars}
+- {id: long-division, title: Long division, visual: bars}
+- {id: fractions-as-division, title: Fractions as division, visual: fractionbar}
+- {id: volume, title: Volume of rectangular prisms, visual: bars}
+- {id: coordinate-plane, title: The coordinate plane, visual: graph}
+- {id: gcf-and-lcm, title: Greatest common factor and least common multiple, visual: bars}
+- {id: integers-number-line, title: Negative numbers on the number line, visual: numberline}
+- {id: absolute-value, title: Absolute value, visual: numberline}
+- {id: algebraic-expressions, title: Writing and evaluating expressions, visual: graph}
+- {id: area-of-triangles, title: Area of triangles and quadrilaterals, visual: triangle}
+- {id: mean-median-mode, title: "Mean, median and mode", visual: bars}
+- {id: proportional-relationships, title: Proportional relationships, visual: graph}
+- {id: percent-change, title: "Percent increase, decrease and discounts", visual: bars}
+- {id: simplifying-expressions, title: Simplifying expressions and like terms, visual: bars}
+- {id: inequalities, title: Solving inequalities, visual: numberline}
+- {id: surface-area-volume, title: Surface area and volume, visual: bars}
+- {id: irrational-numbers, title: Rational and irrational numbers, visual: numberline}
+- {id: square-roots, title: Square roots and cube roots, visual: graph}
+- {id: scientific-notation, title: Scientific notation, visual: bars}
+- {id: multi-step-equations, title: Multi-step linear equations, visual: graph}
+- {id: transformations, title: "Translations, reflections and rotations", visual: graph}
+- {id: scatter-plots, title: Scatter plots and trends, visual: graph}
+- {id: factoring, title: Factoring expressions, visual: graph}
+- {id: writing-equations, title: Writing equations from word problems, visual: graph}
+- {id: linear-inequalities-graphing, title: Graphing linear inequalities, visual: graph}
+- {id: interpreting-graphs, title: Reading key features of graphs, visual: graph}
+- {id: exponential-growth, title: Linear and exponential growth, visual: graph}
+- {id: radicals, title: Radicals and rational exponents, visual: graph}
+- {id: data-spread, title: "Spread of data (range and interquartile range)", visual: bars}
+- {id: parallel-lines-angles, title: Angles and parallel lines, visual: triangle}
+- {id: triangle-theorems, title: Triangle angle sum and other triangle facts, visual: triangle}
+- {id: congruent-triangles, title: "Congruent triangles (SSS, SAS, ASA)", visual: triangle}
+- {id: circle-angles, title: Angles in circles, visual: graph}
+- {id: distance-midpoint, title: Distance and midpoint on the coordinate plane, visual: graph}
+- {id: volume-of-solids, title: "Volume of cylinders, cones and spheres", visual: bars}
+- {id: compound-probability, title: Probability of two events, visual: bars}

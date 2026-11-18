@@ -157,6 +157,7 @@ No leaderboard measures these, so we use:
 | 23 | A space for teachers' own notes, and/or a canvas like Excalidraw for their thoughts; all notes prepared before going live; 20–30 minutes left | D27: notes per lesson and per part + a sketch pad, stored only on the device. D28: live serves only pre-generated, checked sheets. Full Excalidraw → TODO |
 | 24 | Commit now; add a grade field and a separate, dynamic topic field for that grade; brief, useful commit messages | The picker is now two fields: grade, then the topics for that grade, both built from the standard's mapping file |
 | 25 | The teacher's notes should be a tab on the main page, separate from the notes we provide | D27 updated: "Prep notes" and "My notes" tabs; the teacher's notes and sketch pad live only in "My notes" |
+| 26 | Each grade should have 8–10 topics, all pre-generated; commit after every change | 97 concepts (9–10 per grade, each with a CCSS code); all pre-generated before launch (D28). One commit per change |
 
 ## 8. Open questions
 

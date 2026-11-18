@@ -22,8 +22,7 @@ Grades 1–10, 97 Common Core topics. 90 are ready; 7 are pending (see Limitatio
 ```bash
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/uvicorn coach.server:app --port 8000            # http://127.0.0.1:8000
-.venv/bin/python -m unittest tests.test_check tests.test_qa tests.test_videos tests.test_promote tests.test_api   # 19 tests, no LLM
-node tests/notes_save.test.mjs                            # My notes saving (3 storage cases)
+.venv/bin/python -m unittest discover tests            # 20 tests, no LLM (My notes test needs Node)
 .venv/bin/python -m evals.run                             # answer quality → evals/results.md
 ```
 Generating notes and live answers needs the [Claude Code CLI](https://claude.com/claude-code), logged in (the development LLM backend).

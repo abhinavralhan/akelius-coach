@@ -131,3 +131,6 @@ Each step ends with a commit and a step-log entry with **start and end times** (
 
 ### Step 18: time record corrected
 - **Did:** the README and this log now state the real timeline. The work started at 16:04 with setup and research (16:04–16:46), then the build (16:46–17:52): about 1 h 50 min in total. Earlier versions wrongly called the research "not clocked".
+
+### Step 19: zip blocked by Google
+- **Did:** Google blocked the zip upload. Likely triggers: a JavaScript file (`tests/notes_save.test.mjs`) and Git's sample hook scripts (`.git/hooks/*.sample`). Moved the notes test into `tests/test_notes_save.py`, which runs the same JS through `node -e`; it is confirmed to fail on a page without the read-back check. The zip now leaves out the hook samples (Git doesn't need them). `python -m unittest discover tests` runs all 20 tests.

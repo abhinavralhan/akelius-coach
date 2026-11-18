@@ -77,3 +77,9 @@ Each step ends with a commit and a step-log entry with **start and end times** (
 - **Achieved:** correct 10/10, explains why 9/10 (the off-topic case; a rubric limit), plain 10/10, respectful 10/10, honest scope 10/10. Run cost: $0.16.
 - **Learned:** run 1 scored honest scope 8/10. The judge didn't see the sheet, so it flagged real references to the sheet as invented. Fixed the eval (the judge now sees the same context). Documented in the results file.
 - **Next:** Step 7, finish the README, then zip and push.
+
+### Step 7: README + delivery — 17:05–17:06
+- **Did:** README.md covers every item the brief asks for: how to run, product decisions, design and trade-offs, what was skipped, answer quality (tests + eval), cost per teacher and how to lower it, data in plain language, licences, how AI was used, time spent. Checked the README's run steps from a clean start (server up, 6 topics ready). Added the first measured costs and eval results to docs/cost-model.md. Built the zip with `.git`, excluding `.venv`, the local DB and the assignment PDF.
+- **Achieved:** the prototype is complete and runs. 9/9 tests pass. Eval run 2 passes every case except one rubric limit.
+- **Open:** not pushed to GitHub yet (waiting for the user's go). Drawings not yet checked by eye in a browser.
+- **Next (future scope):** research-notes §6: native language, sign-up/auth, educator review screen, more country standards, semantic matching, production LLM backend.

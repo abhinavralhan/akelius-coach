@@ -1,0 +1,32 @@
+# Common Core State Standards for Mathematics (US). Codes and grades -> concept ids.
+# High-school standards have no grade; we use the usual course placement (grade 9 or 10).
+# Source: corestandards.org, public license: free to use with attribution.
+name: Common Core State Standards (US)
+map:
+- {code: 1.OA.C.6, grade: 1, concept: add-subtract-within-20}
+- {code: 2.NBT.A.1, grade: 2, concept: place-value}
+- {code: 3.OA.A.1, grade: 3, concept: meaning-of-multiplication}
+- {code: 3.NF.A.1, grade: 3, concept: fractions-as-numbers}
+- {code: 4.NF.A.1, grade: 4, concept: equivalent-fractions}
+- {code: 4.NBT.B.6, grade: 4, concept: division-with-remainders}
+- {code: 5.NF.A.1, grade: 5, concept: adding-fractions-unlike}
+- {code: 5.NF.B.4, grade: 5, concept: multiplying-fractions}
+- {code: 5.NBT.B.7, grade: 5, concept: decimal-operations}
+- {code: 6.NS.A.1, grade: 6, concept: dividing-fractions}
+- {code: 6.RP.A.1, grade: 6, concept: ratios}
+- {code: 6.RP.A.3c, grade: 6, concept: percentages}
+- {code: 6.EE.A.1, grade: 6, concept: exponents}
+- {code: 7.NS.A.1, grade: 7, concept: adding-negative-numbers}
+- {code: 7.NS.A.2, grade: 7, concept: multiplying-negative-numbers}
+- {code: 7.EE.B.4a, grade: 7, concept: linear-equations}
+- {code: 7.G.B.4, grade: 7, concept: circles}
+- {code: 7.SP.C.5, grade: 7, concept: probability}
+- {code: 8.G.B.7, grade: 8, concept: pythagorean-theorem}
+- {code: 8.F.B.4, grade: 8, concept: slope}
+- {code: 8.EE.C.8, grade: 8, concept: systems-of-equations}
+- {code: 8.EE.A.1, grade: 8, concept: exponent-rules}
+- {code: HSA.APR.A.1, grade: 9, concept: polynomials}
+- {code: HSA.REI.B.4, grade: 9, concept: quadratic-equations}
+- {code: HSF.IF.A.1, grade: 9, concept: functions}
+- {code: HSG.SRT.A.2, grade: 10, concept: similar-triangles}
+- {code: HSG.SRT.C.8, grade: 10, concept: right-triangle-trig}

@@ -1,0 +1,30 @@
+# Standard-neutral math concepts. Sheets, caches and links are keyed by concept id.
+# A country's standard maps onto these in curriculum/standards/<code>.yaml.
+# lesson: our own short grounding lesson (CC BY 4.0); only some concepts have one yet.
+- {id: add-subtract-within-20, title: Adding and subtracting within 20}
+- {id: place-value, title: Place value (ones, tens, hundreds)}
+- {id: meaning-of-multiplication, title: What multiplication means}
+- {id: fractions-as-numbers, title: Fractions as numbers}
+- {id: equivalent-fractions, title: Equivalent fractions}
+- {id: division-with-remainders, title: Division with remainders}
+- {id: adding-fractions-unlike, title: Adding fractions with unlike denominators}
+- {id: multiplying-fractions, title: Multiplying fractions}
+- {id: decimal-operations, title: Operations with decimals}
+- {id: dividing-fractions, title: Dividing fractions, lesson: dividing-fractions.md, license: CC-BY-4.0}
+- {id: ratios, title: Ratios and rates}
+- {id: percentages, title: Percentages}
+- {id: exponents, title: Whole-number exponents}
+- {id: adding-negative-numbers, title: Adding and subtracting negative numbers}
+- {id: multiplying-negative-numbers, title: Multiplying and dividing negative numbers, lesson: multiplying-negative-numbers.md, license: CC-BY-4.0}
+- {id: linear-equations, title: Solving linear equations}
+- {id: circles, title: Circumference and area of a circle}
+- {id: probability, title: Simple probability}
+- {id: pythagorean-theorem, title: The Pythagorean theorem, lesson: pythagorean-theorem.md, license: CC-BY-4.0}
+- {id: slope, title: Slope and linear functions}
+- {id: systems-of-equations, title: Systems of linear equations}
+- {id: exponent-rules, title: Rules of exponents}
+- {id: polynomials, title: Adding and multiplying polynomials}
+- {id: quadratic-equations, title: Solving quadratic equations}
+- {id: functions, title: What a function is}
+- {id: similar-triangles, title: Similar triangles}
+- {id: right-triangle-trig, title: Sine, cosine and tangent in right triangles}

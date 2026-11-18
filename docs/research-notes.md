@@ -5,6 +5,16 @@ Started 2026-11-18. This research was prep and is **not** part of the 2-hour bui
 
 ---
 
+## Guiding principle: trustworthy and reliable before anything else
+
+Teachers who lack confidence will repeat what the coach tells them in front of a class. A wrong answer does more harm than no answer. So:
+- **Grounded:** sheets are generated from checked lessons, not from the model's memory alone.
+- **Verified:** the math in worked examples is recomputed with SymPy; any mismatch blocks the sheet.
+- **Honest:** everything AI-generated is labelled "not yet reviewed" until an educator approves it; the model is told to say when it isn't sure.
+- **No invented links:** URLs come from fixed templates only.
+- **Strict reuse:** a cached answer is reused only for a near-identical question, and the matched question is shown.
+- **Fails safely:** if the model fails, returns invalid output or the budget is reached, the coach says so plainly; nothing broken is cached or shown.
+
 ## 0. The brief in one paragraph
 
 Akelius wants the first part of a coach. It should help math teachers who lack confidence refresh their knowledge and prepare lessons. The teachers learn alone in a browser, dislike chatbots, and don't want tests, scores or certificates. There will be 20k–50k of them, so cost per teacher matters. We get a 2-hour timebox. We choose what the coach does and what material it uses, and we explain and defend those choices. The reviewers judge product judgment, architecture, LLM use (quality and cost), and documentation and compliance.
@@ -27,10 +37,12 @@ Akelius wants the first part of a coach. It should help math teachers who lack c
 | D12 | **Accuracy is part of the cost**: wrong answers caught by the checks are re-answered by Sonnet, and that cost is counted | It shows that a cheap model with a high error rate isn't really cheap | Comparing models on price per call alone |
 | D13 | **The demo runs on the local Claude Code CLI**; production numbers are modelled, not spent | The prototype doesn't need real scale | – |
 | D14 | **Country flexibility:** content is keyed by a *concept* that doesn't depend on any standard. Each country's standard is one mapping file (its codes → concept + grade). We start with **Common Core (CCSS)**: it is widely used, well structured, in English and freely licensed | Countries teach the same math in different grades and under different codes. Adding a country is one YAML file, with no change to code or content | One curriculum hard-coded into the topics |
-| D15 | **The teacher's own language is in scope now, for the cheap part:** the coach answers in the language of the question, the cache key includes the language, and the UI uses `dir=auto` for right-to-left scripts. **Future scope:** country-specific notation (decimal comma, ÷ vs :, Eastern Arabic numerals), native-speaker review, translated UI | Multilingual models make this nearly free. What's hard is local math conventions and checking quality, and those need native reviewers | English only (excludes most of Akelius's teachers) |
+| D15 | **Teacher's own language: moved to TODO** (user decision 16:58). The demo is English only | Saves build time. Multilingual answers are cheap with current models, but local notation and native-speaker review are the real work | Partial multilingual support with no quality check |
 | D16 | **Only openly licensed content and data** go into prompts or the repo (CC BY, CC BY-SA, CCSS public license). Every source has a `license` field, so licensed content could be enabled later through configuration. Links to free sites (Khan, Wolfram) are only links; none of their content is used | It keeps compliance simple, and the user asked for open content only for now | Copying NC or proprietary content |
 | D17 | **AI transparency:** every generated sheet and answer is labelled "AI-generated" and "not yet reviewed" | This matches the transparency duty in the EU AI Act; Akelius is EU-based | Unlabelled AI content |
-| D18 | **Question cache with promotion:** repeated and near-identical questions are answered from the cache, and the most-asked questions are promoted into the static sheets in order of demand | Typed questions are the main cost driver. Every promoted question becomes free for all later teachers, and the sheets improve based on what teachers actually ask. The matched question is always shown, so a near match can't silently answer a different question (e.g. "why is 1/2 > 1/3" vs "why is 1/3 > 1/2") | Embedding search (needs an extra model and cost; planned as the upgrade once we see which paraphrases the word match misses) |
+| D19 | **A feedback box for teachers:** free text about what they need, stored anonymously with the topic it was written on | We learn what to build next from the real users. The box warns teachers not to type personal details | Surveys or ratings (feel like judgment) |
+| D20 | **Grounding lessons are short texts we wrote ourselves** (released CC BY 4.0), each linking to the matching OpenStax section | The brief allows "a few short lessons you write". It's faster and safer than quoting OpenStax from memory | Verbatim OpenStax excerpts (no time to fetch and check them) |
+| D18 | **Question cache with promotion and a very strict match:** a cached answer is reused only for an exact match after normalisation, or a near-identical one (character similarity ≥ 0.95, order-sensitive). The matched question is always shown. The most-asked questions are promoted into the static sheets in order of demand | Typed questions drive the cost; promoted questions become free for all later teachers. The strict, order-sensitive match means "why is 1/2 > 1/3" never reuses the answer to "why is 1/3 > 1/2" | A looser word-overlap match (risks wrong answers); embedding search (extra model and cost; the upgrade path once we see which paraphrases get missed) |
 
 ## 2. Teacher problems (product hypothesis)
 
@@ -98,7 +110,26 @@ No leaderboard measures these, so we use:
 | GeoGebra | free for non-commercial use | Link to interactive models |
 | NRICH, CK-12 | copyrighted / CC BY-NC | Link only |
 
-## 6. Open questions
+## 6. Future scope (TODO)
+
+- **The teacher's own language:** answer in the language of the question; include the language in the cache key; `dir=auto` for right-to-left scripts; country-specific notation (decimal comma, ÷ vs :, Eastern Arabic numerals); native-speaker review; translated UI. Token cost differs by script, see cost-model.md.
+- **Sign-up and authentication:** needed for a cap that can't be bypassed, and for a teacher to find their own past sheets. Prefer Akelius's existing login (SSO) over our own accounts; keep only a pseudonymous ID.
+- **More country standards:** one mapping file per country in `curriculum/standards/`.
+- **Licensed content:** the `license` field already exists on every source; it would need an allow-list setting and an agreement with the rights holder.
+- **Semantic question matching:** multilingual embeddings, once our logs show which paraphrases the strict match misses.
+- **Educator review workflow:** a page where reviewers approve sheets and promoted FAQs, which flips "not yet reviewed" to reviewed.
+- **Production LLM backend:** the Anthropic API (Haiku 5.5) or a hosted open-weight model, chosen by the eval.
+
+## 7. Discussion log (how the decisions evolved)
+
+- **16:20 — Is an LLM too expensive?** No. With a small model on the live path it costs about $0.01–0.03 per teacher per month; see cost-model.md.
+- **16:35 — Cap, caching, budget, accuracy:** a cap of 50 queries per teacher per month; a $2k budget enforced in code; accuracy counted as a cost through escalation. → D10–D12, cost-model.md.
+- **16:46 — Country standards:** sheets are keyed to concepts, and each country maps its standard onto them; we start with CCSS (D14). **Native language:** first planned as cheap and in scope, then moved to TODO to save time (D15). **Content:** open licences only, with a `license` field kept so licensed content can be added later (D16). **Plan reviewed against the brief:** added timestamps for "time spent", a section on how AI was used, AI labelling, input validation, smaller scope, and kept the brief out of git.
+- **16:52 — Question cache:** repeated questions are answered from the cache and popular ones are promoted into the sheets (D18).
+- **17:05 — Core principle from the user:** "build a super trustworthy and reliable system." It is now the guiding principle at the top of this file.
+- **16:58 — Strict matching:** only very similar questions reuse an answer (D18, ≥ 0.95). **Teacher feedback box** added (D19). **Sign-up and auth** moved to TODO.
+
+## 8. Open questions
 
 - **For Akelius:** does Akelius count as commercial or non-commercial under CC BY-NC? This decides whether Khan Academy, CK-12 and IM v.360 content could be copied rather than only linked.
 - **For Akelius:** which languages and countries come first? Do they need data to stay in a region, which would decide whether we self-host?

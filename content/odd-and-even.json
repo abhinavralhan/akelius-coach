@@ -228,27 +228,5 @@
     "license": null,
     "ai_generated": true,
     "reviewed": false
-  },
-  "resources": [
-    {
-      "name": "Khan Academy (videos, practice)",
-      "url": "https://www.khanacademy.org/search?page_search_query=Odd+and+even+numbers"
-    },
-    {
-      "name": "Wolfram|Alpha (check a calculation)",
-      "url": "https://www.wolframalpha.com/input?i=Odd+and+even+numbers"
-    },
-    {
-      "name": "GeoGebra (interactive models)",
-      "url": "https://www.geogebra.org/search/Odd+and+even+numbers"
-    },
-    {
-      "name": "Wikipedia (background)",
-      "url": "https://en.wikipedia.org/w/index.php?search=Odd+and+even+numbers"
-    },
-    {
-      "name": "YouTube (search videos)",
-      "url": "https://www.youtube.com/results?search_query=Odd+and+even+numbers+math"
-    }
-  ]
+  }
 }

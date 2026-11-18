@@ -232,23 +232,5 @@
     "license": null,
     "ai_generated": true,
     "reviewed": false
-  },
-  "resources": [
-    {
-      "name": "Khan Academy (videos, practice)",
-      "url": "https://www.khanacademy.org/search?page_search_query=Ratios+and+rates"
-    },
-    {
-      "name": "Wolfram|Alpha (check a calculation)",
-      "url": "https://www.wolframalpha.com/input?i=Ratios+and+rates"
-    },
-    {
-      "name": "GeoGebra (interactive models)",
-      "url": "https://www.geogebra.org/search/Ratios+and+rates"
-    },
-    {
-      "name": "Wikipedia (background)",
-      "url": "https://en.wikipedia.org/w/index.php?search=Ratios+and+rates"
-    }
-  ]
+  }
 }

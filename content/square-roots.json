@@ -232,27 +232,5 @@
     "license": null,
     "ai_generated": true,
     "reviewed": false
-  },
-  "resources": [
-    {
-      "name": "Khan Academy (videos, practice)",
-      "url": "https://www.khanacademy.org/search?page_search_query=Square+roots+and+cube+roots"
-    },
-    {
-      "name": "Wolfram|Alpha (check a calculation)",
-      "url": "https://www.wolframalpha.com/input?i=Square+roots+and+cube+roots"
-    },
-    {
-      "name": "GeoGebra (interactive models)",
-      "url": "https://www.geogebra.org/search/Square+roots+and+cube+roots"
-    },
-    {
-      "name": "Wikipedia (background)",
-      "url": "https://en.wikipedia.org/w/index.php?search=Square+roots+and+cube+roots"
-    },
-    {
-      "name": "YouTube (search videos)",
-      "url": "https://www.youtube.com/results?search_query=Square+roots+and+cube+roots+math"
-    }
-  ]
+  }
 }

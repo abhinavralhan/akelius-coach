@@ -232,27 +232,5 @@
     "license": null,
     "ai_generated": true,
     "reviewed": false
-  },
-  "resources": [
-    {
-      "name": "Khan Academy (videos, practice)",
-      "url": "https://www.khanacademy.org/search?page_search_query=Solving+inequalities"
-    },
-    {
-      "name": "Wolfram|Alpha (check a calculation)",
-      "url": "https://www.wolframalpha.com/input?i=Solving+inequalities"
-    },
-    {
-      "name": "GeoGebra (interactive models)",
-      "url": "https://www.geogebra.org/search/Solving+inequalities"
-    },
-    {
-      "name": "Wikipedia (background)",
-      "url": "https://en.wikipedia.org/w/index.php?search=Solving+inequalities"
-    },
-    {
-      "name": "YouTube (search videos)",
-      "url": "https://www.youtube.com/results?search_query=Solving+inequalities+math"
-    }
-  ]
+  }
 }

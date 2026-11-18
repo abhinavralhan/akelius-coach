@@ -39,8 +39,7 @@ def topics(standard: str = "ccss"):
     std = yaml.safe_load(path.read_text())
     return {"standard": std["name"], "topics": [
         {**m, "title": sheet.CONCEPTS[m["concept"]]["title"], "visual": sheet.CONCEPTS[m["concept"]].get("visual"),
-         "ready": (sheet.CONTENT / f"{m['concept']}.json").exists(),
-         "grounded": bool(sheet.CONCEPTS[m["concept"]].get("lesson"))} for m in std["map"]]}
+         "ready": (sheet.CONTENT / f"{m['concept']}.json").exists()} for m in std["map"]]}
 
 
 @app.get("/api/sheet/{concept}")

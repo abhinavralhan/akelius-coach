@@ -232,27 +232,5 @@
     "license": null,
     "ai_generated": true,
     "reviewed": false
-  },
-  "resources": [
-    {
-      "name": "Khan Academy (videos, practice)",
-      "url": "https://www.khanacademy.org/search?page_search_query=Area+of+rectangles"
-    },
-    {
-      "name": "Wolfram|Alpha (check a calculation)",
-      "url": "https://www.wolframalpha.com/input?i=Area+of+rectangles"
-    },
-    {
-      "name": "GeoGebra (interactive models)",
-      "url": "https://www.geogebra.org/search/Area+of+rectangles"
-    },
-    {
-      "name": "Wikipedia (background)",
-      "url": "https://en.wikipedia.org/w/index.php?search=Area+of+rectangles"
-    },
-    {
-      "name": "YouTube (search videos)",
-      "url": "https://www.youtube.com/results?search_query=Area+of+rectangles+math"
-    }
-  ]
+  }
 }

@@ -232,27 +232,5 @@
     "license": null,
     "ai_generated": true,
     "reviewed": false
-  },
-  "resources": [
-    {
-      "name": "Khan Academy (videos, practice)",
-      "url": "https://www.khanacademy.org/search?page_search_query=Decimals+as+fractions+%28tenths+and+hundredths%29"
-    },
-    {
-      "name": "Wolfram|Alpha (check a calculation)",
-      "url": "https://www.wolframalpha.com/input?i=Decimals+as+fractions+%28tenths+and+hundredths%29"
-    },
-    {
-      "name": "GeoGebra (interactive models)",
-      "url": "https://www.geogebra.org/search/Decimals+as+fractions+%28tenths+and+hundredths%29"
-    },
-    {
-      "name": "Wikipedia (background)",
-      "url": "https://en.wikipedia.org/w/index.php?search=Decimals+as+fractions+%28tenths+and+hundredths%29"
-    },
-    {
-      "name": "YouTube (search videos)",
-      "url": "https://www.youtube.com/results?search_query=Decimals+as+fractions+%28tenths+and+hundredths%29+math"
-    }
-  ]
+  }
 }

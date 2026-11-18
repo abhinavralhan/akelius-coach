@@ -232,23 +232,5 @@
     "license": "CC-BY-4.0",
     "ai_generated": true,
     "reviewed": false
-  },
-  "resources": [
-    {
-      "name": "Khan Academy (videos, practice)",
-      "url": "https://www.khanacademy.org/search?page_search_query=Multiplying+and+dividing+negative+numbers"
-    },
-    {
-      "name": "Wolfram|Alpha (check a calculation)",
-      "url": "https://www.wolframalpha.com/input?i=Multiplying+and+dividing+negative+numbers"
-    },
-    {
-      "name": "GeoGebra (interactive models)",
-      "url": "https://www.geogebra.org/search/Multiplying+and+dividing+negative+numbers"
-    },
-    {
-      "name": "Wikipedia (background)",
-      "url": "https://en.wikipedia.org/w/index.php?search=Multiplying+and+dividing+negative+numbers"
-    }
-  ]
+  }
 }

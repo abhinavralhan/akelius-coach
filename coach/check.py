@@ -10,14 +10,14 @@ SAFE_CHARS = re.compile(r"^[0-9a-zA-Z+\-*/^().,\s]*$")
 SAFE_NAMES = {"sqrt", "pi", "Rational"}
 
 
-def _value(expr):
-    if not SAFE_CHARS.match(expr) or set(re.findall(r"[A-Za-z_]+", expr)) - SAFE_NAMES:
-        raise ValueError(f"unsafe or unsupported expression: {expr!r}")
-    return sympify(expr.replace("^", "**"))
-
-
 def _safe_expr(expr, extra=()):
     return bool(SAFE_CHARS.match(expr)) and not set(re.findall(r"[A-Za-z_]+", expr)) - SAFE_NAMES - set(extra)
+
+
+def _value(expr):
+    if not _safe_expr(expr):
+        raise ValueError(f"unsafe or unsupported expression: {expr!r}")
+    return sympify(expr.replace("^", "**"))
 
 
 def _visual_errors(v, template):

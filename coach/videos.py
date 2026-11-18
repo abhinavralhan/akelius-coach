@@ -9,6 +9,8 @@ import urllib.parse
 import urllib.request
 from datetime import date
 
+import yaml
+
 from coach import sheet
 
 SEARCH = "https://www.googleapis.com/youtube/v3/search"
@@ -40,7 +42,7 @@ def top_videos(title, grade, key, get=_get_json, n=3):
 
 
 def attach(concept_ids, key):
-    grades = {m["concept"]: m["grade"] for m in __import__("yaml").safe_load(
+    grades = {m["concept"]: m["grade"] for m in yaml.safe_load(
         (sheet.ROOT / "curriculum/standards/ccss.yaml").read_text())["map"]}
     for cid in concept_ids:
         path = sheet.CONTENT / f"{cid}.json"

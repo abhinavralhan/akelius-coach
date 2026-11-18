@@ -57,12 +57,12 @@ def ask(concept, question, teacher, force=False):
         used = (con.execute("SELECT count FROM usage WHERE teacher=? AND month=?", (teacher, month)).fetchone() or [0])[0]
         if used >= CAP:
             raise ValueError(f"you have used all {CAP} questions this month; the prep notes stay available")
-        con.execute("INSERT INTO usage VALUES (?,?,1) ON CONFLICT DO UPDATE SET count=count+1", (teacher, month))
-        remaining = CAP - used - 1
+        remaining = CAP - used - 1  # a query counts only once an answer is delivered (see _count)
         for rowid, cached_q, cached_norm, answer in con.execute(
                 "SELECT rowid, question, norm, answer FROM questions WHERE concept=?", (concept,)).fetchall():
             if cached_norm == norm or (not force and is_same(cached_norm, norm)):
                 con.execute("UPDATE questions SET hits=hits+1 WHERE rowid=?", (rowid,))
+                _count(con, teacher, month)
                 return {"answer": answer, "cached": True, "matched_question": cached_q, "remaining": remaining}
         spent = (con.execute("SELECT usd FROM spend WHERE month=?", (month,)).fetchone() or [0])[0]
         if spent >= BUDGET:
@@ -76,7 +76,12 @@ def ask(concept, question, teacher, force=False):
     with db() as con:
         con.execute("INSERT INTO spend VALUES (?,?) ON CONFLICT DO UPDATE SET usd=usd+excluded.usd", (month, cost))
         con.execute("INSERT INTO questions VALUES (?,?,?,?,0,?)", (concept, norm, question, answer, datetime.now().isoformat()))
+        _count(con, teacher, month)
     return {"answer": answer, "cached": False, "matched_question": None, "remaining": remaining}
+
+
+def _count(con, teacher, month):
+    con.execute("INSERT INTO usage VALUES (?,?,1) ON CONFLICT DO UPDATE SET count=count+1", (teacher, month))
 
 
 def feedback(concept, text):

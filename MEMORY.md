@@ -60,3 +60,14 @@ Each step ends with a commit and a step-log entry with **start and end times** (
 - **Did:** `coach/check.py` checks that every section is present, that there are exactly 3 explanations, that every worked example and try-it answer is right (SymPy), and that there are no model-written URLs. Model expressions are whitelisted (characters + `sqrt`, `pi`, `Rational`) before SymPy sees them, because `sympify` evaluates code. `coach/resources.py` builds Khan Academy, Wolfram|Alpha, GeoGebra and Wikipedia links from fixed templates. `tests/test_check.py` has 5 tests, all passing: correct sheet passes, wrong answer caught, code injection rejected, URL rejected, missing section caught.
 - **Decided (D21, user):** the main view is only the prep notes for a topic. Ask, explain-differently and feedback go in a secondary side tab, because teachers dislike chatbots and the job is lesson prep.
 - **Next:** Step 5, the server + UI. `coach/qa.py` (cap, budget stop, strict question cache, Haiku) is already written.
+
+### Step 5: server, UI, question cache, cap, budget, feedback, drawings — 16:56–17:02
+- **Did:**
+  - `coach/server.py`: a thin FastAPI layer (topics by standard, sheet, ask, feedback). Unchecked output is never shown: a model or check failure returns a plain message, and nothing is cached.
+  - `coach/qa.py`: input validation → monthly cap (50) → strict question cache (exact match, or ≥ 0.95 similarity **and** identical numbers and math symbols) → hard budget stop → Haiku. Spend is recorded from the real CLI cost. A query counts against the cap only when an answer is delivered. Data lives in SQLite: questions with hit counts, usage, spend, feedback.
+  - `coach/promote.py`: the most-asked questions per concept go into that sheet's `teacher_faq`, ordered by demand.
+  - `web/index.html`: the main view is only the prep notes (D21), printable, with an "AI-generated, not reviewed" banner. "Draw and explore" uses fixed JSXGraph templates (D23): function graph, draggable right triangle, number line, fraction bars. The side panel holds "Ask the coach", explain-differently and feedback. All model text is inserted as text, never as HTML.
+  - `tests/test_qa.py`: strict matching, cap, budget stop (and that a refused query isn't counted), input validation. 9/9 tests pass.
+- **Achieved:** tested against a throwaway DB. The first question cost $0.00085 with Haiku (the model predicted $0.00081). A repeated question was served from the cache at $0. Bad inputs are rejected. Feedback is saved. Promotion works. The JS passes `node --check`.
+- **Not yet verified:** how the drawings look in a real browser.
+- **Next:** Step 6, evals.

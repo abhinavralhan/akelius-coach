@@ -44,6 +44,7 @@ Akelius wants the first part of a coach. It should help math teachers who lack c
 | D20 | **Grounding lessons are short texts we wrote ourselves** (released CC BY 4.0), each linking to the matching OpenStax section | The brief allows "a few short lessons you write". It's faster and safer than quoting OpenStax from memory | Verbatim OpenStax excerpts (no time to fetch and check them) |
 | D21 | **The main view is only the prep notes for the chosen topic** (printable). "Ask the coach", "explain differently" and feedback sit in a secondary side tab | The core job is preparing a lesson, and teachers dislike chatbots. The notes must be useful without ever touching the AI | A chat-first or mixed layout |
 | D22 | **The question cache also needs the numbers and math symbols to match exactly**, on top of ≥ 0.95 similarity | Character similarity alone could treat "why is 1/2 > 1/3" and "why is 1/3 > 1/2" as the same question | Similarity score only |
+| D23 | **Interactive drawings on the lesson page use JSXGraph** (open source, LGPL/MIT) through 4 fixed templates: function graph (the teacher types a function), draggable right triangle, number line with sliders, fraction bars (the teacher sets the fractions). Each concept names its template in `concepts.yaml` | Teachers can adjust the drawing for their own class. The templates are fixed code, so the model never writes drawing code. JSXGraph parses typed functions with its own parser, not `eval` | GeoGebra embed (free for non-commercial use only, so it stays a link); Desmos (proprietary, needs an API key); Wolfram\|Alpha images (proprietary, needs a key); Excalidraw free drawing (heavy; TODO) |
 | D18 | **Question cache with promotion and a very strict match:** a cached answer is reused only for an exact match after normalisation, or a near-identical one (character similarity ≥ 0.95, order-sensitive). The matched question is always shown. The most-asked questions are promoted into the static sheets in order of demand | Typed questions drive the cost; promoted questions become free for all later teachers. The strict, order-sensitive match means "why is 1/2 > 1/3" never reuses the answer to "why is 1/3 > 1/2" | A looser word-overlap match (risks wrong answers); embedding search (extra model and cost; the upgrade path once we see which paraphrases get missed) |
 
 ## 2. Teacher problems (product hypothesis)
@@ -118,19 +119,28 @@ No leaderboard measures these, so we use:
 - **Sign-up and authentication:** needed for a cap that can't be bypassed, and for a teacher to find their own past sheets. Prefer Akelius's existing login (SSO) over our own accounts; keep only a pseudonymous ID.
 - **More country standards:** one mapping file per country in `curriculum/standards/`.
 - **Licensed content:** the `license` field already exists on every source; it would need an allow-list setting and an agreement with the rights holder.
+- **Free-hand whiteboard:** Excalidraw (MIT) for sketching on the lesson page.
 - **Semantic question matching:** multilingual embeddings, once our logs show which paraphrases the strict match misses.
 - **Educator review workflow:** a page where reviewers approve sheets and promoted FAQs, which flips "not yet reviewed" to reviewed.
 - **Production LLM backend:** the Anthropic API (Haiku 5.5) or a hosted open-weight model, chosen by the eval.
 
-## 7. Discussion log (how the decisions evolved, in order; the build clock started 16:46)
+## 7. Discussion log (each user prompt, how it shaped the design, in order)
 
-- **Is an LLM too expensive?** No. With a small model on the live path it costs about $0.01–0.03 per teacher per month; see cost-model.md.
-- **Cap, caching, budget, accuracy:** a cap of 50 queries per teacher per month; a $2k budget enforced in code; accuracy counted as a cost through escalation. → D10–D12, cost-model.md.
-- **Country standards:** sheets are keyed to concepts, and each country maps its standard onto them; we start with CCSS (D14). **Native language:** first planned as cheap and in scope, then moved to TODO to save time (D15). **Content:** open licences only, with a `license` field kept so licensed content can be added later (D16). **Plan reviewed against the brief:** added timestamps for "time spent", a section on how AI was used, AI labelling, input validation, smaller scope, and kept the brief out of git.
-- **Question cache:** repeated questions are answered from the cache and popular ones are promoted into the sheets (D18).
-- **Core principle from the user:** "build a super trustworthy and reliable system." It is now the guiding principle at the top of this file.
-- **Main view = notes only:** the side tab holds the AI features (D21). **Exact math match** added to the question cache (D22).
-- **Strict matching:** only very similar questions reuse an answer (D18, ≥ 0.95). **Teacher feedback box** added (D19). **Sign-up and auth** moved to TODO.
+| # | User prompt (short) | What changed |
+|---|---|---|
+| 1 | Build a coach that helps teachers prepare; think hard about their problems; read the brief | Teacher problems (§2), a prep sheet instead of a chat (D1) |
+| 2 | An LLM is needed because questions keep coming; is that too expensive for 50k teachers? Compare open-source models (llm-stats.com) | Cost research (§3), model quality research (§4), live LLM features (D2) |
+| 3 | Cover math up to grade 10; Python; use the local Claude CLI for development | Grade 1–10 scope (D6), swappable LLM function (D5) |
+| 4 | Use online resources (Wolfram, Khan Academy…); enrichment is key; write down the thinking | Enrichment licence table (§5), this file |
+| 5 | Cap 50 queries per teacher per month, use caching, $2k budget, include accuracy in the cost | cost-model.md, D10–D13 |
+| 6 | Plan against the 4 review criteria; keep a MEMORY.md step log (critical) | MEMORY.md plan and step log, CLAUDE.md |
+| 7 | Countries have their own standards; native-language questions; open content only; check the plan against the brief | D14 (concept + country mapping), D16 (open only), plan v2 (timestamps, AI-use section, labels, input validation, smaller scope) |
+| 8 | Question cache for similar or repeated questions, promoted into the static pages by demand | D18 |
+| 9 | Native language → TODO; very strict matching; a teacher feedback box; sign-up/auth → TODO | D15, D18 (≥ 0.95), D19, §6 |
+| 10 | "The core idea is to build a super trustworthy and reliable system" | The guiding principle at the top of this file; CLAUDE.md rule; corrected guessed timestamps to real clock times |
+| 11 | The core job is lesson prep, so the static page must be very helpful; dislike of chatbots → AI in a side tab, the main tab shows only the notes | D21; exact math match in the question cache (D22) |
+| 12 | Tools like Wolfram or open-source materials so teachers can draw and customise graphs embedded in the lesson page | D23 (JSXGraph templates) |
+| 13 | Keep this document updated with my prompts | This table is updated after every prompt |
 
 ## 8. Open questions
 

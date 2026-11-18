@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson Prep Coach</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.10.1/jsxgraph.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.10.1/jsxgraphcore.js"></script>
+<style>
+:root { --bg:#fbfaf7; --fg:#1f2328; --muted:#5b6470; --card:#fff; --line:#e3e0d8; --accent:#2f6f8f; --warn:#8a5a00; --warnbg:#fff4dc; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#16181b; --fg:#e8e6e1; --muted:#a3abb5; --card:#1f2226; --line:#33373d; --accent:#7fb8d6; --warn:#f0c46b; --warnbg:#2e2614; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.55 system-ui, sans-serif; }
+header { padding:16px; border-bottom:1px solid var(--line); display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+header h1 { font-size:1.15rem; margin:0 auto 0 0; }
+select, button, textarea, input { font:inherit; color:inherit; background:var(--card); border:1px solid var(--line); border-radius:8px; padding:8px 10px; }
+button { cursor:pointer; } button.primary { background:var(--accent); color:var(--bg); border-color:var(--accent); }
+.layout { display:grid; grid-template-columns:minmax(0,1fr) 340px; gap:24px; max-width:1200px; margin:0 auto; padding:16px; }
+@media (max-width: 900px) { .layout { grid-template-columns:1fr; } }
+main section { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 20px; margin-bottom:16px; }
+main h2 { font-size:1.05rem; margin:0 0 8px; color:var(--accent); }
+.banner { background:var(--warnbg); color:var(--warn); border-radius:8px; padding:10px 14px; margin-bottom:16px; font-size:.92rem; }
+.muted { color:var(--muted); font-size:.9rem; }
+aside { position:sticky; top:16px; align-self:start; }
+aside details { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 16px; margin-bottom:12px; }
+aside summary { cursor:pointer; font-weight:600; }
+aside textarea { width:100%; min-height:80px; margin:8px 0; }
+.answer { white-space:pre-wrap; border-left:3px solid var(--accent); padding:4px 10px; margin-top:8px; }
+.board { width:100%; max-width:560px; aspect-ratio:4/3; }
+.controls { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:8px 0; }
+.controls input { width:80px; } .controls input.wide { width:220px; }
+ol, ul { padding-left:1.3em; } li { margin-bottom:6px; }
+@media print { header, aside, .noprint { display:none; } .layout { display:block; } main section { break-inside:avoid; border:none; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Lesson Prep Coach</h1>
+  <label class="muted" for="topic">Topic</label>
+  <select id="topic" aria-label="Choose a topic"></select>
+  <button class="noprint" onclick="print()">Print notes</button>
+</header>
+<div class="layout">
+  <main id="notes"><p class="muted">Choose a topic to see your prep notes.</p></main>
+  <aside class="noprint" aria-label="Optional help">
+    <details open>
+      <summary>Ask the coach</summary>
+      <p class="muted">Optional. One question, one answer. <span id="remaining"></span></p>
+      <label for="explain" class="muted">Explain a part differently</label>
+      <select id="explain" style="width:100%"><option value="">Choose a part…</option></select>
+      <label for="question" class="muted">Or type your own question</label>
+      <textarea id="question" maxlength="500" placeholder="e.g. How do I explain why we flip the second fraction?"></textarea>
+      <button class="primary" id="askbtn">Ask</button>
+      <div id="answer" aria-live="polite"></div>
+    </details>
+    <details>
+      <summary>Tell us what you need</summary>
+      <p class="muted">What would help you prepare? Please don't include names or personal details.</p>
+      <textarea id="feedback" maxlength="2000"></textarea>
+      <button id="fbbtn">Send</button> <span id="fbdone" class="muted" aria-live="polite"></span>
+    </details>
+  </aside>
+</div>
+<script>
+const $ = id => document.getElementById(id);
+const el = (tag, text, cls) => { const e = document.createElement(tag); if (text != null) e.textContent = text; if (cls) e.className = cls; return e; };
+let teacher; try { teacher = localStorage.getItem('coachTeacher') || crypto.randomUUID(); localStorage.setItem('coachTeacher', teacher); } catch { teacher = crypto.randomUUID(); }
+let topics = [], current = null;
+
+async function api(path, body) {
+  const r = await fetch(path, body ? {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(body)} : {});
+  const d = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(d.detail || 'Something went wrong.');
+  return d;
+}
+
+async function loadTopics() {
+  const d = await api('/api/topics?standard=ccss');
+  topics = d.topics;
+  const sel = $('topic'); sel.append(new Option('Choose a topic…', ''));
+  for (const g of [...new Set(topics.map(t => t.grade))]) {
+    const og = document.createElement('optgroup'); og.label = `Grade ${g}`;
+    topics.filter(t => t.grade === g).forEach(t => og.append(new Option(`${t.title}${t.ready ? '' : ' (prepared on first open)'}`, t.concept)));
+    sel.append(og);
+  }
+  sel.onchange = () => sel.value && openTopic(sel.value);
+}
+
+const SECTIONS = [['idea','The idea in plain words'],['why','Why it works'],['explanations','Three ways to explain it'],
+  ['student_questions','Questions your students may ask'],['mistakes','Common mistakes and how to respond'],
+  ['worked_examples','Worked examples'],['try_it','Try it yourself'],['lesson_outline','A 40-minute lesson']];
+
+async function openTopic(id) {
+  current = topics.find(t => t.concept === id);
+  const main = $('notes'); main.replaceChildren(el('p', current.ready ? 'Loading…' : 'Preparing these notes for the first time and checking every answer. This can take a minute…', 'muted'));
+  let s; try { s = await api(`/api/sheet/${id}`); current.ready = true; } catch (e) { main.replaceChildren(el('p', e.message, 'banner')); return; }
+  main.replaceChildren();
+  const m = s.meta;
+  main.append(el('div', `Written by AI and checked automatically (every worked answer is recomputed). Not yet reviewed by a math educator. ` +
+    (m.grounded_on ? 'Based on a checked lesson text.' : 'No checked lesson text exists for this topic yet, so read with extra care.'), 'banner'));
+  const head = el('section'); head.append(el('h2', m.title), el('p', `Grade ${current.grade} · ${current.code} (Common Core)`, 'muted')); main.append(head);
+  for (const [key, label] of SECTIONS) {
+    const sec = el('section'); sec.append(el('h2', label)); const v = s[key];
+    if (typeof v === 'string') sec.append(el('p', v));
+    else if (key === 'explanations') v.forEach(x => { sec.append(el('h3', {picture:'With a picture', story:'With a story', procedure:'Step by step'}[x.kind])); sec.append(el('p', x.text)); });
+    else if (key === 'student_questions') v.forEach(x => { sec.append(el('p', `“${x.question}”`)); sec.append(el('p', x.answer, 'answer')); });
+    else if (key === 'mistakes') { const ul = el('ul'); v.forEach(x => { const li = el('li'); li.append(el('strong', x.mistake), el('div', x.response)); ul.append(li); }); sec.append(ul); }
+    else if (key === 'worked_examples') v.forEach(x => { sec.append(el('h3', x.problem)); sec.append(el('p', x.steps)); sec.append(el('p', `Answer: ${x.answer}`, 'muted')); });
+    else if (key === 'try_it') v.forEach(x => { const d = el('details'); d.append(el('summary', x.problem), el('p', x.solution)); sec.append(d); });
+    else if (key === 'lesson_outline') { const ol = el('ol'); v.forEach(x => ol.append(el('li', `${x.minutes} min: ${x.activity}`))); sec.append(ol); }
+    main.append(sec);
+    if (key === 'try_it' && current.visual) main.append(drawSection(current.visual));
+  }
+  if (s.teacher_faq?.length) { const sec = el('section'); sec.append(el('h2', 'Questions other teachers asked')); s.teacher_faq.forEach(x => { sec.append(el('p', `“${x.question}”`)); sec.append(el('p', x.answer, 'answer')); }); main.append(sec); }
+  const res = el('section'); res.append(el('h2', 'More resources')); const ul = el('ul');
+  s.resources.forEach(r => { const li = el('li'); const a = el('a', r.name); a.href = r.url; a.target = '_blank'; a.rel = 'noopener'; li.append(a); ul.append(li); });
+  res.append(ul); main.append(res);
+  const ex = $('explain'); ex.replaceChildren(new Option('Choose a part…', '')); SECTIONS.slice(0, 5).forEach(([k, l]) => ex.append(new Option(l, l)));
+}
+
+// ---- Draw & explore: fixed JSXGraph templates. The model never writes drawing code. ----
+function drawSection(kind) {
+  const sec = el('section'); sec.append(el('h2', 'Draw and explore'));
+  const controls = el('div', null, 'controls'); const box = el('div', null, 'board jxgbox'); box.id = 'board' + Date.now();
+  sec.append(el('p', {graph:'Type a function and press Draw. Use it on the board or project it.', triangle:'Drag the corners. The squares of the sides update live.',
+    numberline:'Move the sliders to show adding and multiplying with negative numbers.', fractionbar:'Set two fractions to see how many pieces of the second fit into the first.'}[kind], 'muted'), controls, box);
+  requestAnimationFrame(() => TEMPLATES[kind](box.id, controls));
+  return sec;
+}
+const input = (controls, label, value, cls) => { const l = el('label', label + ' '); const i = el('input'); i.value = value; if (cls) i.className = cls; l.append(i); controls.append(l); return i; };
+const board = (id, bb, axis = true) => JXG.JSXGraph.initBoard(id, {boundingbox: bb, axis, showCopyright:false, showNavigation:false, keepAspectRatio: false});
+const TEMPLATES = {
+  graph(id, c) {
+    const f = input(c, 'f(x) =', current.concept === 'quadratic-equations' ? 'x^2 - 2*x - 3' : '2*x + 1', 'wide');
+    const b = board(id, [-10, 10, 10, -10]); let g = null; const btn = el('button', 'Draw'); c.append(btn);
+    const draw = () => { try { const fn = b.jc.snippet(f.value, true, 'x', true); if (g) b.removeObject(g); g = b.create('functiongraph', [fn], {strokeWidth: 3}); f.setCustomValidity(''); } catch { f.setCustomValidity('Could not read that function'); f.reportValidity(); } };
+    btn.onclick = draw; draw();
+  },
+  triangle(id) {
+    const b = board(id, [-1, 9, 11, -1]);
+    const C = b.create('point', [0, 0], {name: '', fixed: true, size: 2});
+    const B = b.create('glider', [6, 0, b.defaultAxes.x], {name: 'drag', size: 4});
+    const A = b.create('glider', [0, 4, b.defaultAxes.y], {name: 'drag', size: 4});
+    b.create('polygon', [C, B, A], {fillOpacity: .15});
+    b.create('text', [5, 8, () => { const a = A.Y(), bb = B.X(), c2 = a * a + bb * bb;
+      return `a = ${a.toFixed(1)}, b = ${bb.toFixed(1)} → a² + b² = ${(a * a).toFixed(1)} + ${(bb * bb).toFixed(1)} = ${c2.toFixed(1)} = c², so c = ${Math.sqrt(c2).toFixed(2)}`; }], {fontSize: 14});
+  },
+  numberline(id) {
+    const b = board(id, [-11, 4, 11, -3]);
+    const a = b.create('slider', [[-10, 3], [-4, 3], [-5, 2, 5]], {name: 'a', snapWidth: 1});
+    const k = b.create('slider', [[2, 3], [8, 3], [-5, -3, 5]], {name: 'b', snapWidth: 1});
+    b.create('arrow', [[0, .5], [() => a.Value(), .5]], {strokeWidth: 3, strokeColor: '#2f6f8f'});
+    b.create('arrow', [[() => a.Value(), 1], [() => a.Value() + k.Value(), 1]], {strokeWidth: 3, strokeColor: '#c0392b'});
+    b.create('text', [-10, -1.5, () => `a + b = ${a.Value()} + (${k.Value()}) = ${a.Value() + k.Value()}      a · b = ${a.Value()} · (${k.Value()}) = ${a.Value() * k.Value()}`], {fontSize: 14});
+  },
+  fractionbar(id, c) {
+    const [n1, d1, n2, d2] = [input(c, 'first', 3), input(c, '/', 4), input(c, '÷', 1), input(c, '/', 2)];
+    const btn = el('button', 'Show'); c.append(btn); const out = el('p', null, 'muted'); c.append(out);
+    let b = null;
+    const draw = () => {
+      const [a, bb, cc, dd] = [n1, d1, n2, d2].map(i => parseInt(i.value, 10));
+      if (![a, bb, cc, dd].every(v => v > 0 && v <= 24)) { out.textContent = 'Use whole numbers from 1 to 24.'; return; }
+      if (b) JXG.JSXGraph.freeBoard(b); b = board(id, [-.1, 3, 2.1, -1], false);
+      const first = a / bb, piece = cc / dd;
+      for (let i = 0; i < Math.ceil(Math.max(1, first)); i++) b.create('polygon', [[i, 2], [i + 1, 2], [i + 1, 1.5], [i, 1.5]], {fillOpacity: 0, borders: {strokeColor: '#888'}, vertices: {visible: false}});
+      b.create('polygon', [[0, 2], [first, 2], [first, 1.5], [0, 1.5]], {fillColor: '#2f6f8f', fillOpacity: .4, vertices: {visible: false}});
+      for (let x = 0, i = 0; x < first - 1e-9; x += piece, i++) b.create('polygon', [[x, 1.2], [Math.min(x + piece, first), 1.2], [Math.min(x + piece, first), .7], [x, .7]], {fillColor: i % 2 ? '#e67e22' : '#f5b041', fillOpacity: .7, vertices: {visible: false}});
+      const g = (p, q) => q ? g(q, p % q) : p, num = a * dd, den = bb * cc, k = g(num, den);
+      out.textContent = `${a}/${bb} ÷ ${cc}/${dd}: pieces of size ${cc}/${dd} that fit into ${a}/${bb} = ${num / k}/${den / k} (≈ ${(num / den).toFixed(2)})`;
+    };
+    btn.onclick = draw; draw();
+  },
+};
+
+// ---- Ask the coach (side tab) ----
+async function ask(question, force = false) {
+  if (!current) { $('answer').replaceChildren(el('p', 'Choose a topic first.', 'muted')); return; }
+  $('answer').replaceChildren(el('p', 'Thinking…', 'muted')); $('askbtn').disabled = true;
+  try {
+    const d = await api('/api/ask', {concept: current.concept, question, teacher, force});
+    const parts = [];
+    if (d.cached && d.matched_question !== question) {
+      parts.push(el('p', `Answer to a very similar question: “${d.matched_question}”`, 'muted'));
+      const again = el('button', 'Ask mine anyway'); again.onclick = () => ask(question, true); parts.push(again);
+    }
+    parts.push(el('div', d.answer, 'answer'), el('p', 'AI answer, not reviewed by an educator.', 'muted'));
+    $('answer').replaceChildren(...parts); $('remaining').textContent = `${d.remaining} questions left this month.`;
+  } catch (e) { $('answer').replaceChildren(el('p', e.message, 'banner')); }
+  $('askbtn').disabled = false;
+}
+$('askbtn').onclick = () => { const q = $('question').value.trim(); if (q) ask(q); };
+$('explain').onchange = e => e.target.value && ask(`Explain the part "${e.target.value}" in a different way.`);
+$('fbbtn').onclick = async () => {
+  try { await api('/api/feedback', {concept: current?.concept, text: $('feedback').value}); $('feedback').value = ''; $('fbdone').textContent = 'Thank you, we read every message.'; }
+  catch (e) { $('fbdone').textContent = e.message; }
+};
+loadTopics();
+</script>
+</body>
+</html>

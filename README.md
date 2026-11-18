@@ -12,7 +12,7 @@ Math teachers who lack confidence in a topic open the coach the evening before a
    - a check question for the class.
 4. **Extra examples** for the final 10 minutes.
 
-Teachers can add **their own notes** to the lesson and to each part, and use a **sketch pad**. Both are saved only in their browser.
+A separate **My notes** tab holds the teacher's own notes (for the lesson and each part) and a **sketch pad**, kept apart from the notes we provide and saved only in their browser.
 
 It is not a chatbot. The notes are the product. An optional side panel lets a teacher ask one question or have a part explained differently.
 

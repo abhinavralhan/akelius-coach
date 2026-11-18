@@ -98,3 +98,6 @@ Each step ends with a commit and a step-log entry with **start and end times** (
 ### Step 10: grade + topic picker
 - **Did:** split the single topic dropdown into a **Grade** field and a **Topic** field. The topic list is rebuilt from the chosen grade (disabled until a grade is picked). Both are built from the standard's mapping file via `/api/topics`, so a new standard or topic needs no UI change.
 - **Next:** regenerate `right-triangle-trig`, rerun the eval on the new structure, push when the user says go.
+
+### Step 11: "My notes" tab
+- **Did:** the main area has two tabs: **Prep notes** (ours) and **My notes** (the teacher's notes for the lesson and each part, plus the sketch pad). The teacher's material no longer sits inside our sections. The tab is built when opened, so the sketch pad gets its real size. Storage is unchanged (browser only).

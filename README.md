@@ -95,6 +95,8 @@ Key trade-offs:
 
 ## Future scope
 
+**Next important step: Docker.** A container image (app, curriculum and prepared notes, non-root user, a volume for the database) for one-command deployment. It needs a production LLM backend in `coach/llm.py`, because the Claude CLI used in development can't be logged in inside a container.
+
 Answers in the teacher's own language (and local notation) · login (Akelius SSO) so notes follow the teacher and the cap holds · an educator review screen · more country standards · semantic question matching · a self-hosted Excalidraw whiteboard · a production LLM backend (Anthropic API or a hosted open-weight model, chosen by the eval).
 
 ---

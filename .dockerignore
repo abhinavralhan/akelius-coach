@@ -1,0 +1,10 @@
+.venv
+.git
+data
+content/faq_review
+docs
+evals
+tests
+*.zip
+*.pdf
+**/__pycache__

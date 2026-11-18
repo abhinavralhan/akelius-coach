@@ -1,0 +1,262 @@
+{
+  "idea": "The three angles inside any triangle always add up to 180 degrees, so if you know two angles you can find the third. Some triangles have extra facts: an isosceles triangle has two equal sides and two equal angles, an equilateral triangle has three equal sides and three 60 degree angles, and a right triangle has sides linked by a^2 + b^2 = c^2.",
+  "why": "Draw a line through one corner parallel to the opposite side. The alternate angles made with the two other sides equal the triangle's two other angles. Together with the corner's own angle they make a straight line, which is 180 degrees. That is why the sum is 180 for every triangle. Equal sides face equal angles, which gives the isosceles and equilateral facts. The exterior angle is 180 minus its inside neighbour, and the other two angles also add up to 180 minus that neighbour, so the exterior angle equals the sum of the two far inside angles. For a right triangle, squares built on the two legs have the same total area as the square on the hypotenuse. That is the Pythagorean theorem, and it only holds when one angle is 90 degrees.",
+  "theory_example": {
+    "problem": "An isosceles triangle has a top (apex) angle of 40 degrees. Find each base angle, then the exterior angle at one base corner.",
+    "steps": "The three angles add to 180, so the two base angles together are 180 - 40 = 140. In an isosceles triangle the two base angles are equal, so each is 140 / 2 = 70 degrees. The exterior angle at a base corner is 180 - 70 = 110 degrees. Check: it also equals the two far inside angles, 40 + 70 = 110.",
+    "expression": "(180 - 40)/2",
+    "answer": "70"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 6,
+      "activity": "Start with the paper-tearing demonstration from the subtopic 'The three angles add up to 180 degrees'. Have each student draw any triangle, tear off the three corners and put them side by side to make a straight line. Ask what they notice."
+    },
+    {
+      "minutes": 5,
+      "activity": "Work the example from 'The three angles add up to 180 degrees' on the board (47 and 85 degrees). Then ask its check question and let students answer on mini whiteboards or by showing fingers."
+    },
+    {
+      "minutes": 7,
+      "activity": "Teach 'Isosceles and equilateral triangles'. Mark equal sides with ticks and equal angles with arcs, then work the example with a base angle of 50 degrees. Use the story or picture explanation."
+    },
+    {
+      "minutes": 7,
+      "activity": "Teach 'Right triangles and the Pythagorean theorem'. Draw the 3-4-5 triangle with the squares on each side, count the unit squares (9 + 16 = 25), then work the example. Mention that the other two angles add to 90."
+    },
+    {
+      "minutes": 5,
+      "activity": "Ask the check questions for the isosceles and right-triangle subtopics. Walk around and use the 'common mistakes' notes for any wrong answers you see."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Put the 3 extra examples on the board one at a time (exterior angle, isosceles, missing leg). Let students try each before you show the solution. Use the last minutes for open questions, using the student-question answers as a guide."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "The three angles add up to 180 degrees",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw any triangle on paper and colour the three corners differently. Tear the corners off and place them with their points together. They always fit along a straight line, and a straight line is 180 degrees. Then show the reason: draw a line through the top corner parallel to the bottom side. The two 'Z' (alternate) angles it makes match the two bottom angles, so the three angles sit together on the straight line."
+        },
+        {
+          "kind": "procedure",
+          "text": "To find a missing angle: 1) add the two angles you know, 2) subtract that total from 180, 3) check by adding all three, which should give 180. Tell students that if the three angles do not add to 180, either the figure is not a triangle or there is an arithmetic slip."
+        }
+      ],
+      "example": {
+        "problem": "A triangle has angles of 47 degrees and 85 degrees. Find the third angle.",
+        "steps": "Add the known angles: 47 + 85 = 132. Subtract from 180: 180 - 132 = 48. Check: 47 + 85 + 48 = 180.",
+        "expression": "180 - 47 - 85",
+        "answer": "48"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Using 360 instead of 180, mixing up triangles and four-sided shapes (quadrilaterals).",
+          "response": "Say 'a triangle is half of a straight line, 180; a four-sided shape is two triangles, 360'. Let them tear the corners again and see a straight line, not a full turn."
+        },
+        {
+          "mistake": "Subtracting only one of the known angles from 180, for example 180 - 47 = 133, and stopping.",
+          "response": "Ask them to add all three angles and see if they get 180. Their check fails (47 + 85 + 133 is more than 180), which shows them they need to subtract both known angles."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why is it always 180 and not sometimes different?",
+          "answer": "Because of parallel lines. If you draw a line through one corner parallel to the opposite side, the angles on that line match the other two angles of the triangle. All three then sit on a straight line, which is 180. That works for any triangle you can draw."
+        },
+        {
+          "question": "Does it work for very big or very skinny triangles?",
+          "answer": "Yes. A skinny triangle has one tiny angle and two big ones, but the total is still 180. The size of the sides does not change the angle total."
+        },
+        {
+          "question": "Can a triangle have two right angles?",
+          "answer": "No. Two right angles already make 90 + 90 = 180, so there would be nothing left for the third angle, and the sides would never meet."
+        }
+      ],
+      "check_question": {
+        "question": "A triangle has a 90 degree angle and a 35 degree angle. What is the third angle?",
+        "solution": "90 + 35 = 125, and 180 - 125 = 55 degrees.",
+        "expression": "180 - 90 - 35",
+        "answer": "55"
+      }
+    },
+    {
+      "title": "Isosceles and equilateral triangles",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Picture a see-saw made of two equal planks meeting at the top, like a tent. Both planks lean down at the same steepness, so the two bottom angles must be the same. Equal sides always lie opposite equal angles. If all three planks are equal, all three angles are equal, and since they add to 180, each is 60."
+        },
+        {
+          "kind": "procedure",
+          "text": "Isosceles with a known apex (top) angle: subtract it from 180, then halve the rest to get each base angle. Isosceles with a known base angle: double it, subtract from 180 to get the apex angle. Equilateral: every angle is 180 / 3 = 60."
+        }
+      ],
+      "example": {
+        "problem": "An isosceles triangle has two equal base angles of 50 degrees each. Find the apex (top) angle.",
+        "steps": "The two base angles total 50 + 50 = 100. The three angles add to 180, so the apex angle is 180 - 100 = 80 degrees. Check: 50 + 50 + 80 = 180.",
+        "expression": "180 - 2*50",
+        "answer": "80"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Treating the given angle as the apex angle when it is a base angle, or the other way round, so they halve when they should double.",
+          "response": "Have them sketch the triangle first and mark the given angle. Ask: 'Is this angle one of the two equal ones?' If yes, it appears twice in the sum."
+        },
+        {
+          "mistake": "Thinking an equilateral triangle has angles of 90 degrees, or that a 'big' equilateral triangle has bigger angles.",
+          "response": "Remind them 3 equal angles must share 180, so 180 / 3 = 60. Size changes the sides, never the angles."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "How do I know which sides are equal?",
+          "answer": "Look for the small tick marks on the sides in a diagram. Sides with the same number of ticks are equal. The angles opposite those sides are equal too."
+        },
+        {
+          "question": "Is an equilateral triangle also isosceles?",
+          "answer": "Yes. Isosceles means at least two equal sides, and an equilateral triangle has three equal sides, so it has two equal sides as well."
+        },
+        {
+          "question": "Why must the base angles be equal?",
+          "answer": "If you fold the isosceles triangle down the middle, the two equal sides land on each other, and so do the two base angles. They match exactly, so they are equal."
+        }
+      ],
+      "check_question": {
+        "question": "An isosceles triangle has an apex angle of 100 degrees. What is each base angle?",
+        "solution": "The base angles total 180 - 100 = 80. Each one is 80 / 2 = 40 degrees.",
+        "expression": "(180 - 100)/2",
+        "answer": "40"
+      }
+    },
+    {
+      "title": "Right triangles and the Pythagorean theorem",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a right triangle with legs 3 and 4. Build a square on each side: a 3 by 3 square (9 small squares), a 4 by 4 square (16 small squares) and a square on the longest side (the hypotenuse). The two small squares together have 9 + 16 = 25 small squares, exactly as many as the big one, so the big square has side 5. In symbols, a^2 + b^2 = c^2."
+        },
+        {
+          "kind": "procedure",
+          "text": "To find the hypotenuse: 1) square both legs, 2) add the squares, 3) take the square root. To find a missing leg: square the hypotenuse, subtract the square of the known leg, then take the square root. The hypotenuse is always the side opposite the right angle and the longest side."
+        }
+      ],
+      "example": {
+        "problem": "A right triangle has legs of 3 and 4. Find the hypotenuse.",
+        "steps": "Square the legs: 3^2 = 9 and 4^2 = 16. Add: 9 + 16 = 25. Take the square root: the square root of 25 is 5. The hypotenuse is 5. Check that it is the longest side: 5 is bigger than 3 and 4.",
+        "expression": "sqrt(3**2 + 4**2)",
+        "answer": "5"
+      },
+      "visual": {
+        "kind": "triangle",
+        "expr": "",
+        "a": 3,
+        "b": 4,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Adding the sides without squaring them: 3 + 4 = 7, or forgetting to take the square root and answering 25.",
+          "response": "Ask 'does 7 make sense?' A straight path from one end to the other is shorter than going along both legs, but 7 is the same as walking both legs. Go back to the squares picture. For 25, remind them that 25 is an area, and the side length is the square root."
+        },
+        {
+          "mistake": "Using the theorem to find a leg by adding, for example with hypotenuse 13 and leg 5, writing 13^2 + 5^2.",
+          "response": "Show that the hypotenuse is the longest side, so it is c in a^2 + b^2 = c^2 and sits alone. A leg needs subtraction: 13^2 - 5^2 = 169 - 25 = 144, and the square root is 12."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Does it work for every triangle?",
+          "answer": "Only for right triangles, those with a 90 degree angle. In other triangles, a^2 + b^2 does not equal c^2."
+        },
+        {
+          "question": "Which side is c?",
+          "answer": "The hypotenuse, the longest side, which is directly across from the right angle. The other two sides, the legs, are a and b, and it does not matter which is which."
+        },
+        {
+          "question": "Why do we square the numbers?",
+          "answer": "Because the theorem is about areas of squares. The squares on the two shorter sides together fill exactly the square on the longest side. We take a square root at the end to turn the area back into a length."
+        }
+      ],
+      "check_question": {
+        "question": "A right triangle has legs 5 and 12. What is the hypotenuse?",
+        "solution": "5^2 + 12^2 = 25 + 144 = 169. The square root of 169 is 13.",
+        "expression": "sqrt(5**2 + 12**2)",
+        "answer": "13"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "A triangle has angles of 55 degrees and 65 degrees. Find the exterior angle at the third corner (the angle formed by extending one side past that corner).",
+      "solution": "The third inside angle is 180 - 55 - 65 = 60 degrees. The exterior angle and this inside angle make a straight line, so the exterior angle is 180 - 60 = 120 degrees. Shortcut: the exterior angle equals the two far inside angles added, 55 + 65 = 120.",
+      "expression": "55 + 65",
+      "answer": "120"
+    },
+    {
+      "problem": "An isosceles triangle has two equal base angles of 35 degrees. Find the apex angle.",
+      "solution": "The base angles total 35 + 35 = 70. The apex angle is 180 - 70 = 110 degrees. Check: 35 + 35 + 110 = 180.",
+      "expression": "180 - 2*35",
+      "answer": "110"
+    },
+    {
+      "problem": "A right triangle has a hypotenuse of 13 and one leg of 5. Find the other leg.",
+      "solution": "Use a^2 + b^2 = c^2 with c = 13 and a = 5. So b^2 = 13^2 - 5^2 = 169 - 25 = 144. The square root of 144 is 12, so the other leg is 12.",
+      "expression": "sqrt(13**2 - 5**2)",
+      "answer": "12"
+    }
+  ],
+  "meta": {
+    "concept": "triangle-theorems",
+    "title": "Triangle angle sum and other triangle facts",
+    "model": "sonnet",
+    "cost_usd": 0.06706,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Triangle+angle+sum+and+other+triangle+facts"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Triangle+angle+sum+and+other+triangle+facts"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Triangle+angle+sum+and+other+triangle+facts"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Triangle+angle+sum+and+other+triangle+facts"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Triangle+angle+sum+and+other+triangle+facts+math"
+    }
+  ]
+}

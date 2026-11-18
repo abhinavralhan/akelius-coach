@@ -1,0 +1,262 @@
+{
+  "idea": "A transformation moves a shape on the coordinate grid. A translation slides every point the same distance in the same direction, a reflection flips the shape over a mirror line, and a rotation turns it by a set angle around a fixed centre. In all three, the shape keeps its size and its angles, so the image is congruent to the original.",
+  "why": "Each transformation has a rule for coordinates, and the rule works because of how the move is built. A translation adds the same numbers to every point, so every point moves the same way. A reflection keeps each point the same distance from the mirror line, but on the other side. That is why reflecting in the x-axis keeps x and changes the sign of y. A rotation about the origin keeps each point's distance from the origin. A quarter turn swaps the horizontal and vertical legs of the right triangle that the point makes with the axes, and one of the two legs changes direction. That gives (x, y) -> (-y, x) for 90 degrees anticlockwise. Distances are never stretched, so size and shape stay the same.",
+  "theory_example": {
+    "problem": "Point P is at (3, 2). Translate it by (1, -4), then reflect the result in the y-axis, then rotate that result 90 degrees anticlockwise about the origin. Where does P end up?",
+    "steps": "Step 1, translate by (1, -4): add 1 to x and -4 to y, so (3, 2) -> (4, -2). Step 2, reflect in the y-axis: x changes sign and y stays, so (4, -2) -> (-4, -2). Step 3, rotate 90 degrees anticlockwise about the origin using (x, y) -> (-y, x): (-4, -2) -> (2, -4). The final point is (2, -4).",
+    "expression": "2",
+    "answer": "2"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 4,
+      "activity": "Hook and overview. Draw a small triangle on a grid and ask how you could describe moving it to a new place without drawing it. Name the three moves: slide, flip, turn. Read the idea in one or two sentences and show the quick chain from the theory example as a preview."
+    },
+    {
+      "minutes": 7,
+      "activity": "Teach the subtopic 'Translations'. Use the picture explanation first, then work the example (triangle moved by (3, -4)) step by step on the board. Ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach the subtopic 'Reflections'. Start with the folded-paper picture, then the coordinate rules. Work the example of the line y = 2x + 1 reflected in the x-axis and use its graph. Ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach the subtopic 'Rotations'. Use the quarter-turn picture with the right triangle, then the rule procedure. Work the example of (4, 1) turned 90 degrees anticlockwise. Ask the check question."
+    },
+    {
+      "minutes": 3,
+      "activity": "Mixed recap. Put up the theory example (translate, reflect, rotate P = (3, 2)) and let students call out each step, using the rules from all three subtopics."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Work the 3 extra examples on the board one at a time, giving students a minute to try each before you show the solution. Use the remaining time for student questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Translations",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Picture a chess piece sliding across the board. Every square of the piece moves the same number of steps right or left and the same number up or down. The vector (3, -4) says: 3 steps right, 4 steps down. The piece does not turn or flip."
+        },
+        {
+          "kind": "procedure",
+          "text": "To translate by (a, b): add a to every x-coordinate and b to every y-coordinate. Do each vertex of the shape, plot the new points, and join them in the same order. Positive a means right, negative a means left. Positive b means up, negative b means down."
+        }
+      ],
+      "example": {
+        "problem": "Triangle ABC has A(1, 2), B(4, 2), C(1, 5). Translate it by (3, -4). Find the image of C.",
+        "steps": "Add 3 to each x and -4 to each y. A(1, 2) -> (4, -2). B(4, 2) -> (7, -2). C(1, 5) -> (1 + 3, 5 - 4) = (4, 1). So C' = (4, 1). The triangle has the same size and shape, just moved 3 right and 4 down.",
+        "expression": "1+3",
+        "answer": "4"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students mix up the order and add the first number to y, or move down when the number is positive.",
+          "response": "Say it aloud: first number is across (x), second number is up or down (y). Have them walk the move with a finger on the grid: across first, then up or down, before writing the answer."
+        },
+        {
+          "mistake": "Students translate only one vertex, or only some of them, so the shape comes out distorted.",
+          "response": "Point out that every point must move by the same vector. Ask them to check: does each new point sit exactly the same number of squares from its old point? Tabulate old and new vertices in two columns."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Does the shape change when we translate it?",
+          "answer": "No. Size, shape, angles and even the direction it faces stay the same. Only its position changes."
+        },
+        {
+          "question": "What does the minus sign in (3, -4) mean?",
+          "answer": "It is direction. A minus on the first number means left. A minus on the second number means down. So (3, -4) is 3 right and 4 down."
+        },
+        {
+          "question": "Do I have to move the whole shape, or just the corners?",
+          "answer": "Just move the corners, then join them in the same order. The straight sides between them move automatically."
+        }
+      ],
+      "check_question": {
+        "question": "Point (-2, 5) is translated by (4, -7). Where is the image?",
+        "solution": "Add 4 to x: -2 + 4 = 2. Add -7 to y: 5 - 7 = -2. The image is (2, -2).",
+        "expression": "5-7",
+        "answer": "-2"
+      }
+    },
+    {
+      "title": "Reflections",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Fold the paper along the mirror line. Each point lands on its image, and the image is exactly as far from the fold as the original, on the other side, with the line between them at a right angle to the fold. For the x-axis as the mirror, a point 3 above the axis lands 3 below it. So x stays and y changes sign."
+        },
+        {
+          "kind": "procedure",
+          "text": "Reflect in the x-axis: (x, y) -> (x, -y). Reflect in the y-axis: (x, y) -> (-x, y). Reflect in the line y = x: (x, y) -> (y, x). Apply the rule to each vertex or to two points on a line, then plot and join."
+        }
+      ],
+      "example": {
+        "problem": "Reflect the line y = 2x + 1 in the x-axis. Use the points (0, 1) and (2, 5) on the line to find its image.",
+        "steps": "Reflect in the x-axis: (x, y) -> (x, -y). (0, 1) -> (0, -1). (2, 5) -> (2, -5). The slope of the image line is (-5 - (-1)) / (2 - 0) = -2, and it crosses the y-axis at -1. So the image is y = -2x - 1. Equivalently, every y-value of the original is replaced by its negative. The image of (2, 5) is (2, -5).",
+        "expression": "-5",
+        "answer": "-5"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "2*x + 1; -2*x - 1",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students change the wrong coordinate, for example changing x's sign when reflecting in the x-axis.",
+          "response": "Go back to the fold picture. The x-axis is a horizontal mirror, so points move up or down, which is a change in y. Ask: does a point move sideways or vertically when you flip it over a horizontal line?"
+        },
+        {
+          "mistake": "Students slide the shape to the other side of the mirror line instead of flipping it, so the image faces the same way.",
+          "response": "Use tracing paper or a folded sheet. Check distances: each point and its image must be the same distance from the mirror, on opposite sides, and the order of the vertices is reversed (clockwise becomes anticlockwise)."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "What if a point is already on the mirror line?",
+          "answer": "It stays where it is. Its distance from the mirror is zero, so its image is itself."
+        },
+        {
+          "question": "Why does reflecting in the y-axis only change x?",
+          "answer": "The y-axis is a vertical mirror, so points swap sides left to right. Their height stays the same, so y is unchanged and x changes sign."
+        },
+        {
+          "question": "Is the reflected shape the same size as the original?",
+          "answer": "Yes. Every point keeps its distance from the mirror, so lengths and angles are unchanged. The shape is just facing the opposite way."
+        }
+      ],
+      "check_question": {
+        "question": "Reflect the point (5, 2) in the line y = x. Where does it go?",
+        "solution": "Reflection in y = x swaps the coordinates: (5, 2) -> (2, 5). The y-coordinate of the image is 5.",
+        "expression": "5",
+        "answer": "5"
+      }
+    },
+    {
+      "title": "Rotations",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw the point (4, 1) and join it to the origin, then draw the right triangle with legs 4 across and 1 up. Turn the whole figure a quarter turn anticlockwise. The leg that went across now goes up, and the leg that went up now goes left. So the point lands at (-1, 4). The distance to the origin is unchanged."
+        },
+        {
+          "kind": "procedure",
+          "text": "About the origin: 90 degrees anticlockwise: (x, y) -> (-y, x). 90 degrees clockwise: (x, y) -> (y, -x). 180 degrees either way: (x, y) -> (-x, -y). To rotate a shape, rotate each vertex, plot, and join. A rotation needs three things: the centre, the angle and the direction."
+        }
+      ],
+      "example": {
+        "problem": "Rotate the point (4, 1) by 90 degrees anticlockwise about the origin.",
+        "steps": "Use (x, y) -> (-y, x). Here x = 4 and y = 1. The new x is -y = -1. The new y is x = 4. The image is (-1, 4). Check: the distance from the origin is sqrt(16 + 1) before, and sqrt(1 + 16) after, so they match.",
+        "expression": "-1",
+        "answer": "-1"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students rotate the wrong way, clockwise instead of anticlockwise.",
+          "response": "Show the direction with a clock: anticlockwise is the opposite way to the clock hands. Check with a sketch: (4, 1) is on the right, and a quarter turn anticlockwise should put it at the top, so the answer must have a positive y and a negative x."
+        },
+        {
+          "mistake": "Students swap the coordinates but forget the sign change, writing (1, 4) instead of (-1, 4).",
+          "response": "Swapping alone is a reflection in y = x, not a rotation. Ask which quadrant the point should land in after a quarter turn, then fix the sign to match."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Does the centre of rotation matter?",
+          "answer": "Yes. The shape turns around the centre, so a different centre gives a different image. Today we only use the origin, where the coordinate rules work simply."
+        },
+        {
+          "question": "Is turning 180 degrees clockwise different from 180 degrees anticlockwise?",
+          "answer": "No. Half a turn ends in the same place either way: (x, y) -> (-x, -y)."
+        },
+        {
+          "question": "How can I check my rotation?",
+          "answer": "Check that the point is the same distance from the centre, and that the line from the centre to the point has turned by a right angle. A quick sketch of the quadrant also helps."
+        }
+      ],
+      "check_question": {
+        "question": "Rotate (2, -3) by 90 degrees clockwise about the origin. Where does it go?",
+        "solution": "Use (x, y) -> (y, -x). With x = 2 and y = -3, the image is (-3, -2). The x-coordinate is -3.",
+        "expression": "-3",
+        "answer": "-3"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Translate the point (-2, 5) by (4, -7). Where does it land? Give the y-coordinate.",
+      "solution": "Add 4 to x: -2 + 4 = 2. Add -7 to y: 5 - 7 = -2. The image is (2, -2).",
+      "expression": "5-7",
+      "answer": "-2"
+    },
+    {
+      "problem": "Reflect the point (3, -4) in the y-axis, then rotate the result 180 degrees about the origin. Give the x-coordinate of the final point.",
+      "solution": "Reflect in the y-axis: (3, -4) -> (-3, -4). Rotate 180 degrees with (x, y) -> (-x, -y): (-3, -4) -> (3, 4). The final point is (3, 4), so the x-coordinate is 3.",
+      "expression": "3",
+      "answer": "3"
+    },
+    {
+      "problem": "Rotate the point (-3, 2) by 90 degrees anticlockwise about the origin, then translate it by (5, 1). Give the y-coordinate of the final point.",
+      "solution": "Rotate with (x, y) -> (-y, x): (-3, 2) -> (-2, -3). Translate by (5, 1): (-2 + 5, -3 + 1) = (3, -2). The y-coordinate is -2.",
+      "expression": "-3+1",
+      "answer": "-2"
+    }
+  ],
+  "meta": {
+    "concept": "transformations",
+    "title": "Translations, reflections and rotations",
+    "model": "sonnet",
+    "cost_usd": 0.06793,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Translations%2C+reflections+and+rotations"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Translations%2C+reflections+and+rotations"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Translations%2C+reflections+and+rotations"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Translations%2C+reflections+and+rotations"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Translations%2C+reflections+and+rotations+math"
+    }
+  ]
+}

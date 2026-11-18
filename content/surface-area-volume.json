@@ -1,0 +1,258 @@
+{
+  "idea": "Volume tells how much space a solid takes up inside, measured in cubic units. Surface area tells how much material it takes to cover the outside, measured in square units. For boxes and cylinders, volume is the base area times the height. Surface area is the sum of the areas of all the outside faces.",
+  "why": "A box is built from layers. Each layer is a rectangle of l by w unit cubes, so one layer holds l×w cubes. With h layers stacked up, the total is l×w×h. That is base area times height, and the same idea works for a cylinder, whose base is a circle. Surface area is a different question. Imagine unfolding the solid into a flat net. Its area is the sum of the flat pieces, so you just add up the faces. That is why the units differ. Volume counts cubes (cubic units). Surface area counts flat squares (square units).",
+  "theory_example": {
+    "problem": "A box is 6 cm long, 4 cm wide and 3 cm high. Find its volume and its surface area.",
+    "steps": "Volume: the base is 6 × 4 = 24 square cm. There are 3 layers, so V = 24 × 3 = 72 cubic cm. Surface area: a box has 3 pairs of matching faces. Top and bottom: 6 × 4 = 24 each. Front and back: 6 × 3 = 18 each. Left and right: 4 × 3 = 12 each. Add one of each kind: 24 + 18 + 12 = 54. Double it, because every face has a twin: 2 × 54 = 108 square cm.",
+    "expression": "2*(6*4+6*3+4*3)",
+    "answer": "108"
+  },
+  "subtopics": [
+    {
+      "title": "Volume of a box",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a 4 by 3 rectangle of small squares on the board. This is one layer, with 12 cubes. Say: 'The box is 2 layers tall, so we stack a second layer of 12 on top.' Count 12 + 12 = 24. Then show that 4 × 3 × 2 gives the same number."
+        },
+        {
+          "kind": "story",
+          "text": "Packing a gift box with sugar cubes. The first row along the bottom holds 4 cubes. Fill the bottom with 3 rows, which makes 12. Then keep stacking until the box is full. The box is 2 cubes tall, so there are 2 full layers. The number of sugar cubes is the volume."
+        }
+      ],
+      "example": {
+        "problem": "A box is 4 cm long, 3 cm wide and 2 cm high. What is its volume?",
+        "steps": "Find the area of the base: 4 × 3 = 12 square cm. This is how many cubes fit in one layer. The box is 2 cm tall, so there are 2 layers. Multiply: 12 × 2 = 24. The volume is 24 cubic cm.",
+        "expression": "4*3*2",
+        "answer": "24"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Layer 1;Layer 2;Whole box",
+        "a": 12,
+        "b": 12,
+        "c": 24,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Adding the lengths instead of multiplying (4 + 3 + 2 = 9).",
+          "response": "Go back to the cubes. Ask: 'How many cubes are in one layer? Does adding 4 and 3 give the cubes in a 4 by 3 rectangle?' Have them draw it and count 12. Then they see that volume counts cubes, which needs multiplication."
+        },
+        {
+          "mistake": "Writing the answer in cm or cm² instead of cm³.",
+          "response": "Ask what is being counted. Cubes are counted, so the unit is a cube: cubic cm. A length is a line, an area is flat squares, and a volume is cubes."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we multiply and not add?",
+          "answer": "Each layer has the same number of cubes, and we have several equal layers. Equal groups mean multiplication, like 2 groups of 12."
+        },
+        {
+          "question": "Does it matter which side I call length, width or height?",
+          "answer": "No. 4 × 3 × 2 gives the same answer in any order. You can pick any face as the base and use the remaining side as the height."
+        },
+        {
+          "question": "What if the sides are not whole numbers, like 2.5 cm?",
+          "answer": "The rule is the same: multiply the three sides. The cubes just get cut into parts. For example 2.5 × 2 × 2 = 10."
+        }
+      ],
+      "check_question": {
+        "question": "A box is 5 cm long, 2 cm wide and 3 cm high. What is its volume?",
+        "solution": "Base: 5 × 2 = 10. Height 3, so 10 × 3 = 30 cubic cm.",
+        "expression": "5*2*3",
+        "answer": "30"
+      }
+    },
+    {
+      "title": "Surface area of a box",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Bring a real box, such as a cereal box, and cut or unfold it into a flat net. Point to the 6 rectangles. Group them in pairs: top and bottom, front and back, left and right. Label each rectangle's area, then add all 6."
+        },
+        {
+          "kind": "procedure",
+          "text": "1. Write the three different face areas: l×w, l×h, w×h. 2. Add them. 3. Double the sum, because each face has an identical twin on the opposite side. 4. Write the answer in square units. Check by counting that you used 6 faces in all."
+        }
+      ],
+      "example": {
+        "problem": "A box is 5 cm long, 3 cm wide and 2 cm high. Find its surface area.",
+        "steps": "Top and bottom: 5 × 3 = 15 each, so 2 × 15 = 30. Front and back: 5 × 2 = 10 each, so 2 × 10 = 20. Left and right: 3 × 2 = 6 each, so 2 × 6 = 12. Add: 30 + 20 + 12 = 62. The surface area is 62 square cm.",
+        "expression": "2*(5*3+5*2+3*2)",
+        "answer": "62"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Top and bottom;Front and back;Two sides;Total",
+        "a": 30,
+        "b": 20,
+        "c": 12,
+        "d": 62
+      },
+      "mistakes": [
+        {
+          "mistake": "Counting only 3 faces and forgetting the twins on the opposite sides.",
+          "response": "Hold up the box and have students touch every face while counting to 6. Ask: 'Where is the twin of this face?' Then remind them to double the sum."
+        },
+        {
+          "mistake": "Confusing surface area with volume, for example multiplying 5 × 3 × 2 = 30.",
+          "response": "Ask: 'Are we filling the box or wrapping it?' Wrapping needs flat paper, so we add areas of faces. Filling needs cubes, so we multiply the three sides."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is surface area in square units?",
+          "answer": "We are covering the outside with flat squares of paper, each 1 cm by 1 cm. So we count squares, not cubes."
+        },
+        {
+          "question": "Is there a shortcut formula?",
+          "answer": "Yes: 2(lw + lh + wh). It is just the pairs of faces written compactly. If the formula feels hard, find the faces one at a time."
+        },
+        {
+          "question": "Do we always use all 6 faces?",
+          "answer": "For a closed box, yes. If the question is about an open-top box or a tank without a lid, leave out the missing face. Read the question carefully."
+        }
+      ],
+      "check_question": {
+        "question": "A box is 4 cm long, 2 cm wide and 1 cm high. What is its surface area?",
+        "solution": "Top and bottom: 2 × 8 = 16. Front and back: 2 × 4 = 8. Sides: 2 × 2 = 4. Total 16 + 8 + 4 = 28 square cm.",
+        "expression": "2*(4*2+4*1+2*1)",
+        "answer": "28"
+      }
+    },
+    {
+      "title": "Cylinders: volume and surface area",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a cylinder as a stack of thin circular coins. One coin has area πr². Stack h of them and the volume is πr² × h, the same 'base area times height' as the box. For surface area, draw the net: two circles plus one rectangle, which is the label peeled off a can. The rectangle is as wide as the circle's edge, 2πr, and as tall as the cylinder, h."
+        },
+        {
+          "kind": "procedure",
+          "text": "Volume: 1. Find the base area πr². 2. Multiply by the height. Surface area: 1. Two circles: 2 × πr². 2. Curved side: circumference 2πr times height h. 3. Add the parts. Remember r is half the diameter."
+        }
+      ],
+      "example": {
+        "problem": "A cylinder has radius 3 cm and height 5 cm. Find its volume and total surface area. Leave π in the answers.",
+        "steps": "Volume: base area = π × 3² = 9π. Times height: 9π × 5 = 45π cubic cm. Surface area: two circles = 2 × 9π = 18π. Curved side = 2π × 3 × 5 = 30π. Total = 18π + 30π = 48π square cm.",
+        "expression": "2*pi*3**2+2*pi*3*5",
+        "answer": "48*pi"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Using the diameter in place of the radius, or forgetting to square the radius in πr².",
+          "response": "Ask students to circle the radius first. If the problem gives the diameter, halve it before anything else. Remind them that the area of a circle is 'r times r times π', not 'r times π'."
+        },
+        {
+          "mistake": "Forgetting the two circles in the surface area and giving only the curved side.",
+          "response": "Show the net again, or hold a can. Ask: 'Can you see the lid and the bottom? They need covering too.' Then have students count 3 pieces: two circles and one rectangle."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is the curved side a rectangle?",
+          "answer": "Peel the label off a can and lay it flat. It is a rectangle. Its height is the can's height, and its length is the distance around the circle, 2πr."
+        },
+        {
+          "question": "Why do we leave π in the answer?",
+          "answer": "π is not a neat decimal, so 45π is exact. If you need a decimal, use 3.14 at the end: 45 × 3.14 = 141.3."
+        },
+        {
+          "question": "Is this really the same as the box formula?",
+          "answer": "Yes. Both are base area times height. The box base is l × w, and the cylinder base is πr²."
+        }
+      ],
+      "check_question": {
+        "question": "A cylinder has radius 2 cm and height 3 cm. What is its volume? Leave π in the answer.",
+        "solution": "Base area = π × 2² = 4π. Times height 3: 12π cubic cm.",
+        "expression": "pi*2**2*3",
+        "answer": "12*pi"
+      }
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up with a real box or cereal packet. Ask: 'How much cereal does it hold, and how much cardboard was used to make it?' Name the two ideas: filling (volume) and covering (surface area). Do not give formulas yet. Collect guesses on the board."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Volume of a box'. Draw one layer of 4 by 3 squares, then stack 2 layers. Work through the example (4×3×2 = 24) and show the bar picture of 12, 12 and 24. Ask the check question and let students answer on mini whiteboards or by talking to a neighbour."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Surface area of a box'. Unfold the real box into a net and label the three pairs of faces. Work through the example (5, 3, 2 gives 62) and show the bar picture. Stress cm² against cm³. Ask the check question."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Cylinders: volume and surface area'. Draw the coin stack for volume, then peel a paper label off a can or roll for the net. Work through the example (r = 3, h = 5). Point out the two mistakes to watch for, then ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra-examples and questions round. Work through the 3 extra examples together. Let students try each one first, then take answers and talk through the steps. Leave time for students' own questions, and use the 'why' answers from the subtopics."
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "A fish tank is 50 cm long, 30 cm wide and 40 cm high. How many litres of water does it hold when full? (1 litre = 1000 cubic cm)",
+      "solution": "Volume = 50 × 30 × 40 = 60 000 cubic cm. Divide by 1000 to get litres: 60 litres.",
+      "expression": "50*30*40/1000",
+      "answer": "60"
+    },
+    {
+      "problem": "A cube has sides of 3 cm. How much paper is needed to wrap it completely?",
+      "solution": "A cube has 6 identical square faces. Each face is 3 × 3 = 9 square cm. Total: 6 × 9 = 54 square cm.",
+      "expression": "6*3*3",
+      "answer": "54"
+    },
+    {
+      "problem": "A closed cylinder has radius 2 cm and height 5 cm. Find its total surface area. Leave π in the answer.",
+      "solution": "Two circles: 2 × π × 2² = 8π. Curved side: 2π × 2 × 5 = 20π. Total: 8π + 20π = 28π square cm.",
+      "expression": "2*pi*2**2+2*pi*2*5",
+      "answer": "28*pi"
+    }
+  ],
+  "meta": {
+    "concept": "surface-area-volume",
+    "title": "Surface area and volume",
+    "model": "sonnet",
+    "cost_usd": 0.13903,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Surface+area+and+volume"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Surface+area+and+volume"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Surface+area+and+volume"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Surface+area+and+volume"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Surface+area+and+volume+math"
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "idea": "Factoring means rewriting a sum as a product, for example x² - 5x + 6 as (x - 2)(x - 3). It is expanding run backwards. In this lesson students learn three moves: take out a common factor, factor x² + bx + c, and factor a difference of squares.",
+  "why": "Factoring works because multiplication spreads over addition (the distributive law). Expanding (x + p)(x + q) gives x² + (p + q)x + pq, so to factor x² + bx + c we look for two numbers that multiply to c and add to b. A product is zero only when one factor is zero, so the factors also show where the graph crosses the x-axis. The difference of squares is the case p = -q, where the middle terms cancel: (x - a)(x + a) = x² - a². Students can always check by expanding, or by trying a number for x.",
+  "theory_example": {
+    "problem": "Factor 3x² - 12 completely, then check by putting x = 3 into both forms.",
+    "steps": "Step 1: Both terms share the factor 3, so 3x² - 12 = 3(x² - 4). Step 2: x² - 4 is a difference of squares, x² - 2², so x² - 4 = (x - 2)(x + 2). Step 3: Together, 3x² - 12 = 3(x - 2)(x + 2). Check at x = 3: the original gives 3·9 - 12 = 15. The factored form gives 3·1·5 = 15. They match.",
+    "expression": "3*(3-2)*(3+2)",
+    "answer": "15"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Open with the idea that factoring is multiplying backwards. Expand 3(x + 2) on the board, then ask the class how to go back from 3x + 6. Use the theory example only as a short preview."
+    },
+    {
+      "minutes": 7,
+      "activity": "Teach 'Taking out a common factor'. Use the rectangle picture, work the example together, then ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Teach 'Factoring x² + bx + c'. Use the number-pair procedure and the graph, work the example, address the sign mistake, then ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Difference of squares'. Use the square-cut-out picture and the graph, work the example, then ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work the 3 extra examples with the class, mixing all three subtopics. Let students try each first, then check by trying a number for x. Take any questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Taking out a common factor",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a rectangle with area 12x² + 18x, split into a part of area 12x² and a part of area 18x. Both parts have the same height 6x. Their widths are 2x and 3, so the whole rectangle is 6x tall and (2x + 3) wide. Its area is 6x(2x + 3)."
+        },
+        {
+          "kind": "procedure",
+          "text": "1) Find the biggest number that divides every coefficient. 2) Find the lowest power of x that every term has. 3) Write that common factor outside brackets. 4) Divide each term by it and write the results inside. 5) Expand to check."
+        }
+      ],
+      "example": {
+        "problem": "Factor 12x² + 18x and check at x = 1.",
+        "steps": "The biggest number dividing 12 and 18 is 6. Both terms contain x, so the common factor is 6x. 12x² ÷ 6x = 2x and 18x ÷ 6x = 3. So 12x² + 18x = 6x(2x + 3). Check at x = 1: the original is 12 + 18 = 30, and 6·1·(2 + 3) = 30.",
+        "expression": "6*1*(2*1+3)",
+        "answer": "30"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Taking out only part of the common factor, e.g. 12x² + 18x = 2x(6x + 9).",
+          "response": "Say that 2x(6x + 9) is true but not finished, because 6x + 9 still has a common factor of 3. Ask 'Can anything else come out of the bracket?' and keep going until nothing can."
+        },
+        {
+          "mistake": "Forgetting the 1 when a whole term is taken out, e.g. 5x² + 5x = 5x(x) instead of 5x(x + 1).",
+          "response": "Have them expand their answer. 5x·x gives only 5x², so a term is missing. Remind them that dividing a term by itself leaves 1, not nothing."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why does the common factor go outside the brackets?",
+          "answer": "Because multiplying it back in is the distributive law. 6x(2x + 3) means 6x times 2x plus 6x times 3, which gives us the original expression."
+        },
+        {
+          "question": "Does the answer really change if I factor? It looks different.",
+          "answer": "The value is exactly the same. Try x = 1: both forms give 30. Factoring changes how it looks, not what it is."
+        },
+        {
+          "question": "How do I know I have taken out the biggest factor?",
+          "answer": "Look inside the brackets. If the numbers there share no common factor, and the terms don't all share x, you are done."
+        }
+      ],
+      "check_question": {
+        "question": "Factor 8x + 12, then check at x = 1.",
+        "solution": "The biggest common number is 4, so 8x + 12 = 4(2x + 3). At x = 1: 8 + 12 = 20 and 4·5 = 20.",
+        "expression": "4*(2+3)",
+        "answer": "20"
+      }
+    },
+    {
+      "title": "Factoring x² + bx + c",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "To factor x² + bx + c, find two numbers that multiply to c and add to b. Call them p and q, and write (x + p)(x + q). List the factor pairs of c, then pick the pair with the right sum. Expand to check."
+        },
+        {
+          "kind": "picture",
+          "text": "Look at the graph of y = x² - 5x + 6. It crosses the x-axis at x = 2 and x = 3. Those are exactly the numbers in the factors (x - 2)(x - 3), because a factor is zero there. So the graph agrees with the factoring."
+        }
+      ],
+      "example": {
+        "problem": "Factor x² - 5x + 6 and check at x = 5.",
+        "steps": "We need two numbers that multiply to +6 and add to -5. The pairs for 6 are 1·6, 2·3, -1·-6, -2·-3. Only -2 and -3 add to -5. So x² - 5x + 6 = (x - 2)(x - 3). Check at x = 5: the original is 25 - 25 + 6 = 6, and (5 - 2)(5 - 3) = 3·2 = 6.",
+        "expression": "(5-2)*(5-3)",
+        "answer": "6"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "x**2 - 5*x + 6",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Getting the signs wrong, e.g. writing (x + 2)(x + 3) for x² - 5x + 6.",
+          "response": "Have them expand it: they get x² + 5x + 6, which has the wrong middle sign. When c is positive and b is negative, both numbers are negative. Always expand to check."
+        },
+        {
+          "mistake": "Finding numbers that add to c and multiply to b, which is the wrong way round.",
+          "response": "Use the phrase 'multiply to the last number, add to the middle number'. Point to the expansion x² + (p + q)x + pq to show which is which."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why do the numbers multiply to c and add to b?",
+          "answer": "Expand (x + p)(x + q). You get x² + px + qx + pq. The middle terms combine to (p + q)x and the last term is pq. So p + q must be b and pq must be c."
+        },
+        {
+          "question": "What if I can't find two numbers that work?",
+          "answer": "Then this expression may not factor with whole numbers. Check the pairs once more carefully. Some expressions simply don't factor nicely, and that is okay."
+        },
+        {
+          "question": "Why does the graph cross at 2 and 3 and not at -2 and -3?",
+          "answer": "Because (x - 2) is zero when x = 2. The sign flips: the factor (x - 2) gives the crossing point x = +2."
+        }
+      ],
+      "check_question": {
+        "question": "Factor x² + 5x + 6 and check at x = 1.",
+        "solution": "We need two numbers that multiply to 6 and add to 5: these are 2 and 3. So x² + 5x + 6 = (x + 2)(x + 3). At x = 1: 1 + 5 + 6 = 12 and 3·4 = 12.",
+        "expression": "(1+2)*(1+3)",
+        "answer": "12"
+      }
+    },
+    {
+      "title": "Difference of squares",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a big square of side x with area x². Cut a small square of side 4 from a corner, leaving area x² - 16. Rearrange the L-shape into one rectangle with sides (x - 4) and (x + 4). So x² - 16 = (x - 4)(x + 4)."
+        },
+        {
+          "kind": "procedure",
+          "text": "1) Check that there are two perfect squares and a minus sign between them. 2) Take the square root of each, here x and 4. 3) Write (x - 4)(x + 4). 4) Expand to see that the middle terms cancel."
+        }
+      ],
+      "example": {
+        "problem": "Factor x² - 16 and check at x = 5.",
+        "steps": "x² is x squared and 16 is 4 squared, with a minus between them. So x² - 16 = (x - 4)(x + 4). Expanding: x² + 4x - 4x - 16 = x² - 16, so the middle terms cancel. Check at x = 5: the original is 25 - 16 = 9, and (5 - 4)(5 + 4) = 1·9 = 9. The graph of y = x² - 16 crosses the x-axis at -4 and 4.",
+        "expression": "(5-4)*(5+4)",
+        "answer": "9"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "x**2 - 16",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Trying to factor a sum of squares, e.g. x² + 16 = (x + 4)(x + 4).",
+          "response": "Expand (x + 4)(x + 4): it gives x² + 8x + 16, not x² + 16. The pattern needs a minus sign. In school math x² + 16 does not factor."
+        },
+        {
+          "mistake": "Writing (x - 4)² for x² - 16.",
+          "response": "Expand (x - 4)²: you get x² - 8x + 16. The two brackets must have different signs, one plus and one minus, so the middle terms cancel."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why do the middle terms disappear?",
+          "answer": "Because one bracket has +4 and the other has -4. The terms 4x and -4x cancel each other, leaving only x² - 16."
+        },
+        {
+          "question": "Does this work with numbers other than squares like 16?",
+          "answer": "It works for any perfect square, such as 9, 25 or 49. If the number isn't a perfect square, like 10, it won't factor with whole numbers."
+        },
+        {
+          "question": "Why does the graph cross at both -4 and 4?",
+          "answer": "Because the factors (x - 4) and (x + 4) are zero at x = 4 and x = -4. Each factor gives one crossing."
+        }
+      ],
+      "check_question": {
+        "question": "Factor x² - 25 and check at x = 6.",
+        "solution": "x² - 25 = x² - 5² = (x - 5)(x + 5). At x = 6: 36 - 25 = 11 and (1)(11) = 11.",
+        "expression": "(6-5)*(6+5)",
+        "answer": "11"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Factor 2x² - 8x and check at x = 5.",
+      "solution": "The common factor is 2x. 2x² ÷ 2x = x and -8x ÷ 2x = -4. So 2x² - 8x = 2x(x - 4). At x = 5: 50 - 40 = 10 and 2·5·1 = 10.",
+      "expression": "2*5*(5-4)",
+      "answer": "10"
+    },
+    {
+      "problem": "Factor x² + 2x - 15 and check at x = 4.",
+      "solution": "We need two numbers that multiply to -15 and add to 2. These are 5 and -3. So x² + 2x - 15 = (x + 5)(x - 3). At x = 4: 16 + 8 - 15 = 9 and 9·1 = 9.",
+      "expression": "(4+5)*(4-3)",
+      "answer": "9"
+    },
+    {
+      "problem": "Factor 5x² - 45 completely and check at x = 4.",
+      "solution": "Take out 5: 5x² - 45 = 5(x² - 9). Then x² - 9 = (x - 3)(x + 3). So 5x² - 45 = 5(x - 3)(x + 3). At x = 4: 80 - 45 = 35 and 5·1·7 = 35.",
+      "expression": "5*(4-3)*(4+3)",
+      "answer": "35"
+    }
+  ],
+  "meta": {
+    "concept": "factoring",
+    "title": "Factoring expressions",
+    "model": "sonnet",
+    "cost_usd": 0.14719,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Factoring+expressions"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Factoring+expressions"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Factoring+expressions"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Factoring+expressions"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Factoring+expressions+math"
+    }
+  ]
+}

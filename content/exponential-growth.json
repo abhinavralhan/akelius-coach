@@ -1,0 +1,258 @@
+{
+  "idea": "Linear growth means a quantity goes up by the same amount each step (you add). Exponential growth means it goes up by the same factor each step (you multiply). Linear growth draws a straight line; exponential growth draws a curve that starts gently and then climbs faster and faster.",
+  "why": "Adding the same amount each step gives start + amount × steps, and the graph is a straight line because the rise per step never changes. Multiplying by the same factor each step means after n steps you have multiplied n times, so start × factor^n. Each step's increase is a share of what you already have, so a bigger amount grows by more, and that is why the curve bends upward. A multiplier always beats an adder in the long run, because the added amount stays fixed while the multiplied amount keeps getting bigger. It may still start behind.",
+  "theory_example": {
+    "problem": "A plant is 4 cm tall and grows 2 cm each week. A pile of 4 coins triples every week. Compare both after 3 weeks.",
+    "steps": "Plant (linear): add 2 each week, so height = 4 + 2×3 = 10 cm. Coins (exponential): multiply by 3 each week, so coins = 4 × 3 × 3 × 3 = 4 × 3^3 = 4 × 27 = 108. Week by week the plant goes 4, 6, 8, 10 (same gap each time). The coins go 4, 12, 36, 108 (same ratio each time). Same start, but the multiplying one has pulled far ahead.",
+    "expression": "4*3**3",
+    "answer": "108"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up. Write two lists on the board: 5, 8, 11, 14 and 5, 10, 20, 40. Ask what each list does to get the next number. Collect words like 'add 3' and 'times 2'. Name the two types of growth. You can use the theory example (plant and coins) as your story."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Linear growth: adding the same amount each step'. Do the savings example with a table, then draw the straight line. Ask the check question."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Exponential growth: multiplying by the same factor each step'. Do the doubling example with a table, then draw the curve. Stress that the exponent counts the number of multiplications. Ask the check question."
+    },
+    {
+      "minutes": 7,
+      "activity": "Teach 'Comparing the two: who is ahead and when'. Show both graphs on one set of axes and find the week where the curve passes the line. Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Work the three extra examples with the class (linear, exponential with a percent, and a comparison), letting students suggest the first step each time. Leave the last minutes for student questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Linear growth: adding the same amount each step",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "You have 5 euros and save 3 euros every week. Week 0 you have 5, week 1 you have 8, week 2 you have 11. The jar goes up by the same 3 each time. After 6 weeks you have added 3 six times, so 5 + 3×6 = 23 euros."
+        },
+        {
+          "kind": "procedure",
+          "text": "Rule: value = start + (amount added each step) × (number of steps). Step 1: find the start value. Step 2: find the amount added per step. Step 3: multiply that amount by the number of steps and add the start. On a graph, the start is where the line crosses the vertical axis and the amount added is the steepness (slope)."
+        }
+      ],
+      "example": {
+        "problem": "Mia has 5 euros and saves 3 euros each week. How much does she have after 6 weeks?",
+        "steps": "Start = 5. Added each week = 3. Steps = 6. Value = 5 + 3×6 = 5 + 18 = 23. The graph is y = 5 + 3x, a straight line that starts at 5 and rises 3 for each 1 step to the right.",
+        "expression": "5+3*6",
+        "answer": "23"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "5 + 3*x",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students forget the start value and write 3×6 = 18.",
+          "response": "Ask: 'What did Mia have before she saved anything?' Point to week 0 in the table. The line starts at 5, not at 0."
+        },
+        {
+          "mistake": "Students count the starting row as a step and use 7 steps for 'after 6 weeks'.",
+          "response": "Draw jumps between the table rows. Week 0 to week 6 is 6 jumps. Steps are the jumps, not the rows."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is it a straight line?",
+          "answer": "Every step to the right makes the value go up by exactly 3. Same run, same rise, every time. That is what a straight line is."
+        },
+        {
+          "question": "Can linear growth go down?",
+          "answer": "Yes. If you add a negative number, like -2 each step, the line slopes downward. We call that linear decrease. Today we focus on going up."
+        },
+        {
+          "question": "Is the 3 the same as the slope?",
+          "answer": "Yes. The slope is how much the value changes for each 1 step to the right. Here it is 3."
+        }
+      ],
+      "check_question": {
+        "question": "A value starts at 10 and goes up by 4 each step. What is it after 5 steps?",
+        "solution": "10 + 4×5 = 10 + 20 = 30.",
+        "expression": "10+4*5",
+        "answer": "30"
+      }
+    },
+    {
+      "title": "Exponential growth: multiplying by the same factor each step",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "A video is shared with 5 people on day 0. Every day, each person who has it sends it to one new person, so the number of people doubles. Day 1: 10, day 2: 20, day 3: 40. The more people who have it, the more new people get it each day, so the daily growth keeps getting bigger."
+        },
+        {
+          "kind": "procedure",
+          "text": "Rule: value = start × factor^(number of steps). Step 1: find the start. Step 2: find the factor, which is what you multiply by each step (doubling means 2, tripling means 3). Step 3: work out the power first, then multiply by the start. For 5 doubling 6 times: 2^6 = 64, then 5 × 64 = 320. Check by writing the table: 5, 10, 20, 40, 80, 160, 320."
+        }
+      ],
+      "example": {
+        "problem": "A video starts with 5 viewers and the number doubles every day. How many viewers are there after 6 days?",
+        "steps": "Start = 5. Factor = 2. Steps = 6. Value = 5 × 2^6. Do the power first: 2^6 = 64. Then 5 × 64 = 320. Table check: 5, 10, 20, 40, 80, 160, 320. The graph y = 5×2^x starts at 5 and bends upward, getting steeper each step.",
+        "expression": "5*2**6",
+        "answer": "320"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "5*2**x",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students multiply the start by the factor and the steps: 5 × 2 × 6 = 60.",
+          "response": "Ask them to continue the table 5, 10, 20, 40... and compare with 60. The exponent means 'multiply by 2 six times', not 'times 6'."
+        },
+        {
+          "mistake": "Students write (5×2)^6, applying the power to the start as well.",
+          "response": "Order of operations: the power belongs only to the 2. Only the factor is repeated. The start is used once. Use the table to see that day 1 is 10, not 10^1 growth of the whole thing."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why does the curve get steeper?",
+          "answer": "Each step adds a share of what you already have. When you have 40 you add 40 more. When you have 160 you add 160 more. Bigger amounts add bigger jumps."
+        },
+        {
+          "question": "What does 2^6 really mean?",
+          "answer": "2 × 2 × 2 × 2 × 2 × 2, six twos multiplied together. That equals 64."
+        },
+        {
+          "question": "What is the factor if something grows by 10% each step?",
+          "answer": "1.1. You keep 100% and add 10%, which is 110% of the old amount, and 110% is 1.1 as a decimal."
+        }
+      ],
+      "check_question": {
+        "question": "A value starts at 3 and doubles every step. What is it after 4 steps?",
+        "solution": "3 × 2^4 = 3 × 16 = 48. Table check: 3, 6, 12, 24, 48.",
+        "expression": "3*2**4",
+        "answer": "48"
+      }
+    },
+    {
+      "title": "Comparing the two: who is ahead and when",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a line and a curve on the same axes. Let the line start higher, like 20 + 10x, and the curve start lower, like 5×2^x. Show that they get closer, cross, and then the curve shoots away above the line. Mark the crossing point on the board."
+        },
+        {
+          "kind": "procedure",
+          "text": "Build a table with a row for each rule: week 0 to week 6. Fill in both rows. Look for the first week where the exponential value is larger. Linear: 20, 30, 40, 50, 60, 70, 80. Exponential: 5, 10, 20, 40, 80, 160, 320. At week 3 it is 50 against 40, so the line is still ahead. At week 4 it is 60 against 80, so the curve is ahead from then on."
+        }
+      ],
+      "example": {
+        "problem": "Plan A: 20 + 10x. Plan B: 5×2^x. In which week is Plan B first bigger than Plan A?",
+        "steps": "Week 0: A = 20, B = 5. Week 1: A = 30, B = 10. Week 2: A = 40, B = 20. Week 3: A = 50, B = 40. Week 4: A = 60, B = 80. B is first bigger at week 4. After that the gap only grows: week 5 is 70 against 160.",
+        "expression": "4",
+        "answer": "4"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "20 + 10*x; 5*2**x",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students say exponential growth is always bigger.",
+          "response": "Show weeks 0 to 3 in the table, where the line is ahead. Exponential growth wins in the long run, but it can start behind."
+        },
+        {
+          "mistake": "Students say a steep graph must be exponential.",
+          "response": "A straight line can be steep too. Ask what the steps look like: same amount added each time (linear) or same factor each time (exponential)."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Will the curve ever fall back below the line?",
+          "answer": "Not for these rules. After the crossing point, the curve's jumps are bigger than the line's jumps each step, so the gap keeps growing."
+        },
+        {
+          "question": "Is there a real-life example of exponential growth?",
+          "answer": "Money earning interest, a virus spreading early on, or a rumour sharing online. Each has a result that depends on how much there already is."
+        },
+        {
+          "question": "Does exponential growth go on forever in real life?",
+          "answer": "No. Real things run out of room, people, or resources. The math rule is exact, but real situations only follow it for a while."
+        }
+      ],
+      "check_question": {
+        "question": "For 20 + 10x and 5×2^x, what is the value of the exponential one at week 5, and is it above the line?",
+        "solution": "5 × 2^5 = 5 × 32 = 160. The line gives 20 + 50 = 70. So yes, 160 is above 70.",
+        "expression": "5*2**5",
+        "answer": "160"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "A tree is 30 cm tall and grows 5 cm each year. How tall is it after 8 years?",
+      "solution": "This adds the same amount each year, so it is linear. Height = 30 + 5×8 = 30 + 40 = 70 cm.",
+      "expression": "30+5*8",
+      "answer": "70"
+    },
+    {
+      "problem": "A savings account has 200 euros and grows by 10% each year. How much is in it after 2 years?",
+      "solution": "Growing by 10% means the factor is 1.1 each year, so this is exponential. Year 1: 200 × 1.1 = 220. Year 2: 220 × 1.1 = 242. Or: 200 × 1.1^2 = 200 × 1.21 = 242 euros.",
+      "expression": "200*Rational(11,10)**2",
+      "answer": "242"
+    },
+    {
+      "problem": "Plan A costs 100 + 20x. Plan B costs 10×2^x. In which week is Plan B first bigger than Plan A?",
+      "solution": "Make a table. Week 0: 100 and 10. Week 1: 120 and 20. Week 2: 140 and 40. Week 3: 160 and 80. Week 4: 180 and 160 (A is still ahead). Week 5: 200 and 320. B is first bigger at week 5.",
+      "expression": "5",
+      "answer": "5"
+    }
+  ],
+  "meta": {
+    "concept": "exponential-growth",
+    "title": "Linear and exponential growth",
+    "model": "sonnet",
+    "cost_usd": 0.06655,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Linear+and+exponential+growth"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Linear+and+exponential+growth"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Linear+and+exponential+growth"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Linear+and+exponential+growth"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Linear+and+exponential+growth+math"
+    }
+  ]
+}

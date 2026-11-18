@@ -1,0 +1,258 @@
+{
+  "idea": "A graph is a picture of a rule. Reading its key features means noticing where it crosses the axes (intercepts), whether it goes up or down as you move right (increasing or decreasing, which for a line is its slope), and for a curve like a parabola, its turning point (vertex), which is the highest or lowest value.",
+  "why": "Every point on a graph is a pair (x, y) that fits the rule. The y-axis is where x = 0, so the y-intercept is the rule's value at 0. The x-axis is where y = 0, so x-intercepts are the solutions of \"rule = 0\". Slope is the change in y for each 1 step right, so its sign tells you whether the graph rises or falls. A parabola falls and then rises (or the reverse), so it must turn once, and that turning point is the lowest or highest value. Each feature answers a real question: where does it start, where does it reach zero, is it growing, what is the most or least?",
+  "theory_example": {
+    "problem": "Read the key features of y = x^2 - 2x - 3.",
+    "steps": "1) y-intercept: put x = 0, so y = -3. The point is (0, -3). 2) x-intercepts: solve x^2 - 2x - 3 = 0. Factor: (x - 3)(x + 1) = 0, so x = 3 or x = -1. The points are (3, 0) and (-1, 0). 3) Vertex: the parabola is symmetric, so the vertex sits halfway between the x-intercepts, at x = (3 + (-1))/2 = 1. Then y = 1 - 2 - 3 = -4. The vertex is (1, -4), and it is the lowest point because the x^2 term is positive (the parabola opens upward). 4) Behaviour: decreasing for x < 1 and increasing for x > 1. The minimum value is -4.",
+    "expression": "1 - 2 - 3",
+    "answer": "-4"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: sketch a simple line and a parabola on the board. Ask 'What do you notice? Where does it start, where does it cross the axes, is it going up or down?' Collect student words and tell them today those words get names."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Intercepts': use the two ways to explain, then work the example y = 2x - 4 with the drawing. Ask the check question and have students answer on mini whiteboards or on paper."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Increasing, decreasing and slope': use the two ways to explain, then work the example with both lines on the drawing. Ask students to trace each line with a finger left to right. Ask the check question."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Turning point (vertex) of a parabola': use the two ways to explain, then work the example y = x^2 - 4x + 3 with the drawing, linking back to intercepts. Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work the three extra examples together (let students try each for a minute first), then take open questions and revisit any student question from earlier."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Intercepts",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a line crossing both axes. Circle the spot where it crosses the vertical y-axis and say 'here we have not moved sideways at all, so x = 0'. Circle the spot where it crosses the horizontal x-axis and say 'here we are neither above nor below the axis, so y = 0'."
+        },
+        {
+          "kind": "procedure",
+          "text": "To find the y-intercept, put x = 0 in the rule and calculate y. To find the x-intercept, put y = 0 and solve for x. Write each as a point: (0, something) and (something, 0)."
+        }
+      ],
+      "example": {
+        "problem": "Find the intercepts of y = 2x - 4.",
+        "steps": "y-intercept: x = 0 gives y = 2(0) - 4 = -4, so the point is (0, -4). x-intercept: y = 0 gives 0 = 2x - 4, so 2x = 4 and x = 2, so the point is (2, 0). Check on the drawing: the line crosses the y-axis at -4 and the x-axis at 2.",
+        "expression": "2",
+        "answer": "2"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "2*x - 4",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students swap them: they put y = 0 to find the y-intercept, or give the x-intercept as (0, 2).",
+          "response": "Ask 'On the y-axis, how far left or right are you?' (not at all, so x = 0). Have them say the sentence 'the y-intercept is where x is zero' aloud and check the point sits on the right axis."
+        },
+        {
+          "mistake": "Students give only a number, like '-4', and cannot say whether it is an x or y value.",
+          "response": "Ask them to write the intercept as a point (x, y) and to mark it on the sketch. Say that a point on an axis always has one coordinate equal to zero."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we put x = 0 to find the y-intercept?",
+          "answer": "The y-axis is the line where x is 0 everywhere. So any point on the y-axis has x = 0. The graph meets that axis exactly when we use x = 0 in the rule."
+        },
+        {
+          "question": "Can a graph have more than one x-intercept?",
+          "answer": "Yes. A line has at most one (unless it lies on the axis), but curves like parabolas can cross the x-axis twice, once, or never."
+        },
+        {
+          "question": "Can a function have two y-intercepts?",
+          "answer": "Not a function. For each x there is only one y, and x = 0 is a single input, so it gives just one y value."
+        }
+      ],
+      "check_question": {
+        "question": "A line has the rule y = 3x - 6. Where does it cross the x-axis?",
+        "solution": "Put y = 0: 0 = 3x - 6, so 3x = 6 and x = 2. It crosses at (2, 0).",
+        "expression": "2",
+        "answer": "2"
+      }
+    },
+    {
+      "title": "Increasing, decreasing and slope",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Imagine walking along the graph from left to right, like reading a line of text. If you are climbing a hill, the graph is increasing. If you are walking downhill, it is decreasing. The steeper the hill, the bigger the slope number. A negative slope means downhill."
+        },
+        {
+          "kind": "procedure",
+          "text": "Pick two points on the line, left one first. Slope = (change in y) / (change in x). Positive means the line rises, negative means it falls. For a rule y = mx + b, the slope is m and the y-intercept is b."
+        }
+      ],
+      "example": {
+        "problem": "Look at the lines y = 2x + 1 and y = -x + 4. Give each slope, say whether each rises or falls, and find the y-value where they cross.",
+        "steps": "For y = 2x + 1 the slope is 2: go 1 step right and y goes up 2, so it is increasing. For y = -x + 4 the slope is -1: go 1 step right and y goes down 1, so it is decreasing. They cross where the y-values are equal: 2x + 1 = -x + 4, so 3x = 3 and x = 1. Then y = 2(1) + 1 = 3. Check with the other: -1 + 4 = 3. They cross at (1, 3).",
+        "expression": "2*1 + 1",
+        "answer": "3"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "2*x + 1; -x + 4",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students read the graph from right to left, or from the top down, and call a rising line decreasing.",
+          "response": "Agree on the rule: always read left to right, like a sentence. Ask students to trace the line with a finger in that direction and say 'going up' or 'going down'."
+        },
+        {
+          "mistake": "Students think a negative slope means a 'small' slope, so -5 is gentler than -1.",
+          "response": "Separate the sign from the size. The sign tells the direction (down). The size, 5 or 1, tells the steepness. So -5 is a steep downhill and -1 a gentle one."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "What does a slope of 2 really mean?",
+          "answer": "For every 1 step you move right, the graph goes up 2. Two steps right gives 4 up, and so on. It is a constant rate."
+        },
+        {
+          "question": "What if the line is flat?",
+          "answer": "Then y never changes, so the change in y is 0 and the slope is 0. It is neither increasing nor decreasing."
+        },
+        {
+          "question": "Why do the two lines cross at only one point?",
+          "answer": "At the crossing both rules give the same y for the same x. For two lines with different slopes that happens at just one x value. Here it was x = 1."
+        }
+      ],
+      "check_question": {
+        "question": "What is the slope of y = -3x + 2, and is the graph rising or falling?",
+        "solution": "The slope is the number in front of x, which is -3. It is negative, so the graph falls as you move right (steeply, 3 down for every 1 across).",
+        "expression": "-3",
+        "answer": "-3"
+      }
+    },
+    {
+      "title": "Turning point (vertex) of a parabola",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a U-shaped parabola. Mark the bottom point. Show that the left side is a mirror image of the right side. Put an arrow down on the left (decreasing), a dot at the bottom, then an arrow up on the right (increasing). The bottom dot is the vertex and its y-value is the minimum."
+        },
+        {
+          "kind": "procedure",
+          "text": "Find the x-intercepts by solving the rule = 0. The vertex is halfway between them, so its x is their average. Put that x into the rule to get the y. If the x^2 term is positive the vertex is the lowest point (minimum). If it is negative, it is the highest point (maximum). The y-intercept is the value at x = 0."
+        }
+      ],
+      "example": {
+        "problem": "Find the intercepts and the vertex of y = x^2 - 4x + 3, and say whether the vertex is a minimum or maximum.",
+        "steps": "y-intercept: x = 0 gives y = 3, so (0, 3). x-intercepts: x^2 - 4x + 3 = 0 factors as (x - 1)(x - 3) = 0, so x = 1 or x = 3. Vertex: halfway between 1 and 3 is x = 2. Then y = 4 - 8 + 3 = -1. The vertex is (2, -1). The x^2 term is positive, so the parabola opens upward and the vertex is the minimum. The minimum value is -1. The graph decreases for x < 2 and increases for x > 2.",
+        "expression": "2**2 - 4*2 + 3",
+        "answer": "-1"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "x**2 - 4*x + 3",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students give the vertex as just the y-value, or just the x-value, e.g. 'the vertex is -1'.",
+          "response": "Remind them that the vertex is a point with two coordinates. Ask 'Where is it left or right, and how high or low?' Then they say (2, -1) and the minimum value is -1."
+        },
+        {
+          "mistake": "Students say the vertex is at the y-intercept, or put the vertex at x = 0.",
+          "response": "Have them look at the drawing: the y-intercept (0, 3) is high on the left side, but the vertex is lower at (2, -1). The vertex is the turning point, not the point on the y-axis, unless the curve happens to turn there."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is the vertex exactly halfway between the x-intercepts?",
+          "answer": "A parabola is symmetric, like a mirror. The two x-intercepts are mirror images of each other, so the mirror line, which passes through the vertex, is exactly halfway between them."
+        },
+        {
+          "question": "What if the parabola does not touch the x-axis?",
+          "answer": "Then there are no x-intercepts. It still has a vertex. For example y = x^2 + 1 has its lowest point at (0, 1), which is above the axis."
+        },
+        {
+          "question": "Is the vertex always the lowest point?",
+          "answer": "No. It is the lowest point if the parabola opens up (positive x^2 term) and the highest point if it opens down (negative x^2 term)."
+        }
+      ],
+      "check_question": {
+        "question": "The parabola y = (x - 1)^2 + 2 has its vertex at (1, 2) and opens upward. What is its minimum value?",
+        "solution": "The minimum is the y-value of the vertex. (x - 1)^2 is never negative, so the smallest y is 0 + 2 = 2, reached at x = 1.",
+        "expression": "2",
+        "answer": "2"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Read the key features of y = x^2 - 4: the x-intercepts, the y-intercept, and the minimum value.",
+      "solution": "x-intercepts: x^2 - 4 = 0 gives x = 2 or x = -2, so (2, 0) and (-2, 0). y-intercept: x = 0 gives y = -4, so (0, -4). The vertex is halfway between -2 and 2, so x = 0, and the vertex is (0, -4). The parabola opens upward, so the minimum value is -4.",
+      "expression": "0**2 - 4",
+      "answer": "-4"
+    },
+    {
+      "problem": "A straight line passes through (0, 5) and (2, 1). Find its slope and where it crosses the x-axis.",
+      "solution": "Slope = (1 - 5)/(2 - 0) = -4/2 = -2, so the line is decreasing. The y-intercept is 5, so the rule is y = -2x + 5. For the x-intercept put y = 0: 0 = -2x + 5, so x = 5/2. It crosses the x-axis at (5/2, 0).",
+      "expression": "Rational(5, 2)",
+      "answer": "5/2"
+    },
+    {
+      "problem": "The water level in a tank is h = 50 - 5t, where h is in cm and t in minutes. Say what the intercepts and slope mean, and when the tank is empty.",
+      "solution": "The h-intercept (t = 0) is 50: the tank starts with 50 cm of water. The slope is -5: the level falls 5 cm every minute, so the graph is decreasing. The t-intercept is where h = 0: 50 - 5t = 0, so t = 10. The tank is empty after 10 minutes.",
+      "expression": "50/5",
+      "answer": "10"
+    }
+  ],
+  "meta": {
+    "concept": "interpreting-graphs",
+    "title": "Reading key features of graphs",
+    "model": "sonnet",
+    "cost_usd": 0.0677,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Reading+key+features+of+graphs"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Reading+key+features+of+graphs"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Reading+key+features+of+graphs"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Reading+key+features+of+graphs"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Reading+key+features+of+graphs+math"
+    }
+  ]
+}

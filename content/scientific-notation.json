@@ -1,0 +1,258 @@
+{
+  "idea": "Scientific notation writes a number as a value from 1 up to (but not including) 10, multiplied by a power of 10. For example, 45,000,000 is 4.5 x 10^7 and 0.00032 is 3.2 x 10^-4. It is a short, standard way to write very large or very small numbers.",
+  "why": "Multiplying by 10 moves every digit one place to the left. Dividing by 10 moves every digit one place to the right. So 4.5 x 10^7 means \"start at 4.5 and shift the digits 7 places left\", which gives 45,000,000. A negative exponent means dividing by 10 that many times, which shifts the digits right and makes a small number. Because the first part is always between 1 and 10, the exponent tells you the size of the number (its order of magnitude). That makes numbers easy to compare: look at the exponent first, then the front number.",
+  "theory_example": {
+    "problem": "The Sun is about 150,000,000 km from Earth. Write this in scientific notation.",
+    "steps": "1. Find where the decimal point is now: 150,000,000. (at the far right). 2. Move it left until there is exactly one non-zero digit in front of it: 1.50000000, which is 1.5. 3. Count the moves: 8 places. 4. Write 1.5 x 10^8. 5. Check: 1.5 x 100,000,000 = 150,000,000. Correct.",
+    "expression": "Rational(3,2)*10**8",
+    "answer": "150000000"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Opener: write 3,000,000 and 0.000002 on the board and ask how many zeros each has. Show how tiring they are to read. Then say you will learn a short way to write them. Uses the idea and the why from your theory notes."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Writing large numbers'. Work the example together, moving the decimal point left and counting the moves. Ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Writing small numbers'. Show that moving the decimal point right gives a negative exponent. Work the example together and ask the check question."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Comparing numbers in scientific notation'. Show the bars picture, compare exponents first and then front numbers. Work the example and ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work the 3 extra examples with the class, mixing large, small and comparing. Let students try each one before you show the solution. Leave time for their questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Writing large numbers",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Step 1: find the decimal point (at the end of a whole number). Step 2: move it left until only one non-zero digit is in front of it. Step 3: count how many places you moved. That count is the exponent of 10. Step 4: drop the trailing zeros and write the number as front number x 10^count."
+        },
+        {
+          "kind": "story",
+          "text": "Imagine a number is a train of digits and the decimal point is the engine. Each step you move the engine left, the train is 10 times shorter, so you must pay back with one more 10 multiplied. Stop when there is one digit in front of the engine. The number of steps you took is the exponent."
+        }
+      ],
+      "example": {
+        "problem": "Write 45,000,000 in scientific notation.",
+        "steps": "1. The decimal point is at the end: 45,000,000. 2. Move it left until one non-zero digit is in front: 4.5. 3. You moved it 7 places. 4. So 45,000,000 = 4.5 x 10^7. 5. Check: 4.5 x 10,000,000 = 45,000,000.",
+        "expression": "Rational(9,2)*10**7",
+        "answer": "45000000"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Writing 45 x 10^6 and calling it scientific notation.",
+          "response": "It is equal to the right number, but the front number must be at least 1 and less than 10. Ask: is 45 between 1 and 10? Move the decimal one more place to get 4.5 x 10^7."
+        },
+        {
+          "mistake": "Counting the zeros instead of the places moved (writing 4.5 x 10^6 because there are 6 zeros).",
+          "response": "Have them count the moves of the decimal point, not the zeros. Check by multiplying back: 4.5 x 10^6 is 4,500,000, which is not the original number."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why do we need this?",
+          "answer": "Some numbers are huge, like the distance to the Sun, and counting zeros is slow and easy to get wrong. Scientific notation is short and lets us see the size at a glance."
+        },
+        {
+          "question": "Why does the front number have to be between 1 and 10?",
+          "answer": "So that everyone writes a number the same way. Then the exponent alone tells you how big the number is."
+        },
+        {
+          "question": "What happens with a number like 7,000?",
+          "answer": "The front number is just 7, so it is 7 x 10^3. You can think of 7.0 x 10^3. The decimal point moved 3 places."
+        }
+      ],
+      "check_question": {
+        "question": "Write 7,200,000 in scientific notation.",
+        "solution": "Move the decimal point 6 places left to get 7.2. So 7,200,000 = 7.2 x 10^6.",
+        "expression": "Rational(72,10)*10**6",
+        "answer": "7200000"
+      }
+    },
+    {
+      "title": "Writing small numbers",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Step 1: find the decimal point. Step 2: move it right until one non-zero digit is in front of it. Step 3: count the moves. Step 4: the exponent is negative that count. So 0.00032 becomes 3.2 x 10^-4."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw a place-value strip: tenths, hundredths, thousandths, ten-thousandths. Put the 3 of 0.00032 in the ten-thousandths box. That box is 10^-4, so the number is 3.2 of those boxes: 3.2 x 10^-4. The exponent tells which place the first non-zero digit sits in."
+        }
+      ],
+      "example": {
+        "problem": "Write 0.00032 in scientific notation.",
+        "steps": "1. Move the decimal point right until one non-zero digit is in front: 0.00032 becomes 3.2. 2. You moved it 4 places. 3. Because the number is smaller than 1, the exponent is negative: -4. 4. So 0.00032 = 3.2 x 10^-4. 5. Check: 3.2 divided by 10,000 = 0.00032.",
+        "expression": "Rational(32,10)*10**(-4)",
+        "answer": "1/3125"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Using a positive exponent for a small number (3.2 x 10^4).",
+          "response": "Ask: is 3.2 x 10^4 big or small? It is 32,000. A number smaller than 1 needs a negative exponent: small number, negative exponent."
+        },
+        {
+          "mistake": "Getting the count off by one, such as 3.2 x 10^-5 for 0.00032.",
+          "response": "Have them count the moves of the decimal point from 0.00032 to 3.2 carefully, one jump per digit passed. Check by dividing: 3.2 divided by 10 five times is 0.000032, which is too small."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why is the exponent negative?",
+          "answer": "10^-4 means 1 divided by 10,000. Every step to the right of the decimal point divides by 10 once more, so the exponent goes down."
+        },
+        {
+          "question": "Is a negative exponent a negative number?",
+          "answer": "No. 3.2 x 10^-4 is still positive, it is just small. The minus sign is only in the exponent."
+        },
+        {
+          "question": "How do I know whether the exponent is positive or negative?",
+          "answer": "If the number is 10 or more, the exponent is positive. If it is smaller than 1, it is negative. If it is between 1 and 10, the exponent is 0."
+        }
+      ],
+      "check_question": {
+        "question": "Write 0.0009 in scientific notation.",
+        "solution": "Move the decimal point 4 places right to get 9. So 0.0009 = 9 x 10^-4.",
+        "expression": "9*10**(-4)",
+        "answer": "9/10000"
+      }
+    },
+    {
+      "title": "Comparing numbers in scientific notation",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Step 1: compare the exponents. The larger exponent is the larger number, as long as all are positive-sized front numbers between 1 and 10. Step 2: if the exponents are the same, compare the front numbers. This works for negative exponents as well: 10^-2 is bigger than 10^-5."
+        },
+        {
+          "kind": "story",
+          "text": "Think of the exponent as the number of digits in a number, like how many floors a building has, and the front number as how far up the last floor you are. A 3-floor building is taller than a 2-floor building, even if you are on the top of the 2nd floor. Only when the floors are equal do you compare how high up you are."
+        }
+      ],
+      "example": {
+        "problem": "Order from least to greatest: A = 4.5 x 10^2, B = 8 x 10^1, C = 3 x 10^2, D = 9.5 x 10^1. What is the value of the greatest?",
+        "steps": "1. Compare the exponents. B and D have exponent 1, A and C have exponent 2. 2. So B and D are less than A and C. 3. Compare B and D: 8 is less than 9.5, so B is less than D. 4. Compare A and C: 3 is less than 4.5, so C is less than A. 5. The order is B, D, C, A. 6. The greatest is A = 4.5 x 100 = 450.",
+        "expression": "Rational(9,2)*10**2",
+        "answer": "450"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "A;B;C;D",
+        "a": 450,
+        "b": 80,
+        "c": 300,
+        "d": 95
+      },
+      "mistakes": [
+        {
+          "mistake": "Comparing front numbers first, so 9.5 x 10^1 is said to be greater than 3 x 10^2 because 9.5 is more than 3.",
+          "response": "Have them write both as ordinary numbers: 95 and 300. The exponent matters first because it sets the size."
+        },
+        {
+          "mistake": "With negative exponents, thinking 10^-5 is bigger than 10^-2 because 5 is bigger than 2.",
+          "response": "Write them as decimals: 0.00001 and 0.01. A larger negative exponent means a smaller number. Use a number line to show -2 is to the right of -5."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we look at the exponent first?",
+          "answer": "Because each step in the exponent multiplies the number by 10. A change of one in the exponent is a bigger change than any front number between 1 and 10 can make up for."
+        },
+        {
+          "question": "What if the exponents are the same?",
+          "answer": "Then both numbers are shifted by the same amount, so just compare the front numbers. 6 x 10^3 is bigger than 4 x 10^3."
+        },
+        {
+          "question": "Can I just turn them into ordinary numbers?",
+          "answer": "Yes, for small cases that is a good check. But with numbers like 10^20 it is not practical, which is why we compare exponents."
+        }
+      ],
+      "check_question": {
+        "question": "Which is greater: 5 x 10^3 or 8 x 10^2? Give the value of the greater one.",
+        "solution": "The exponent 3 is greater than 2, so 5 x 10^3 is greater. Its value is 5,000, and the other is 800.",
+        "expression": "5*10**3",
+        "answer": "5000"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Write 0.0000708 in scientific notation.",
+      "solution": "Move the decimal point 5 places right to get 7.08. The number is smaller than 1, so the exponent is -5. The answer is 7.08 x 10^-5.",
+      "expression": "Rational(708,100)*10**(-5)",
+      "answer": "177/2500000"
+    },
+    {
+      "problem": "Write 3.9 x 10^4 as an ordinary number.",
+      "solution": "The exponent 4 is positive, so move the decimal point 4 places right: 3.9 becomes 39,000. Check: 3.9 x 10,000 = 39,000.",
+      "expression": "Rational(39,10)*10**4",
+      "answer": "39000"
+    },
+    {
+      "problem": "Which is larger, 6.1 x 10^-3 or 2.5 x 10^-2? Give the value of the larger one as a fraction.",
+      "solution": "Compare exponents: -2 is greater than -3, so 2.5 x 10^-2 is larger. As a decimal it is 0.025, which is 1/40. The other one is 0.0061.",
+      "expression": "Rational(25,10)*10**(-2)",
+      "answer": "1/40"
+    }
+  ],
+  "meta": {
+    "concept": "scientific-notation",
+    "title": "Scientific notation",
+    "model": "sonnet",
+    "cost_usd": 0.06221,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Scientific+notation"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Scientific+notation"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Scientific+notation"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Scientific+notation"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Scientific+notation+math"
+    }
+  ]
+}

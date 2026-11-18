@@ -1,0 +1,258 @@
+{
+  "idea": "Solving an inequality means finding every number that makes a statement like 2x + 1 > 7 true. You solve it almost exactly like an equation, balancing both sides, but the answer is a whole range of numbers (x > 3), not a single number. There is one new rule: if you multiply or divide both sides by a negative number, the inequality sign flips.",
+  "why": "Adding or subtracting the same number on both sides, or multiplying or dividing by a positive number, keeps the order of numbers the same, so a true statement stays true. Multiplying by a negative reflects the number line through zero, so bigger numbers become smaller. For example, -1 < 2 is true, but multiplying both sides by -1 gives 1 < -2, which is false. Flipping the sign (1 > -2) fixes it. The boundary number is where both sides are equal. With < or > the boundary is not a solution; with <= or >= it is.",
+  "theory_example": {
+    "problem": "Solve 5 - 2x <= 11.",
+    "steps": "Subtract 5 from both sides: -2x <= 6. Divide both sides by -2. It is negative, so flip the sign: x >= -3. Check x = 0: 5 - 0 = 5, and 5 <= 11 is true. Check x = -4: 5 + 8 = 13, and 13 <= 11 is false. Check the boundary x = -3: 5 + 6 = 11, and 11 <= 11 is true, so -3 is included.",
+    "expression": "-3",
+    "answer": "-3"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Hook: ask 'I am thinking of a number. Twice it plus 1 is more than 7. What could it be?' Collect guesses (4, 10, 3.5) and notice that many numbers work. Say that today we find all of them at once."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Solving like an equation': work the example 3x + 4 < 19 step by step on the board, then ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Flipping the sign with a negative': start with the -1 < 2 demonstration, work the example -2x + 1 >= 8 style steps shown there, then ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Showing and checking answers on a number line': draw the number line for 2x + 1 > 7, explain open and closed circles, and test values on both sides of the boundary. Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work the three extra examples with the class (let students try each first), and answer any questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Solving like an equation",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "A seesaw is tilted with the right side lower. If you add the same weight to both sides, or take the same weight off both sides, the same side stays lower. Doing the same thing to both sides keeps the tilt. Then we peel away numbers around x until x is alone."
+        },
+        {
+          "kind": "procedure",
+          "text": "Treat the sign like an equals sign: 1) undo addition or subtraction, 2) undo multiplication or division by a positive number, 3) keep the sign pointing the same way, 4) check one number from your answer."
+        }
+      ],
+      "example": {
+        "problem": "Solve 3x + 4 < 19.",
+        "steps": "Subtract 4 from both sides: 3x < 15. Divide both sides by 3 (positive, so the sign stays): x < 5. Check x = 0: 4 < 19 is true. Check x = 5: 19 < 19 is false, so 5 is not included.",
+        "expression": "5",
+        "answer": "5"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students change the sign to = partway through and write x = 5.",
+          "response": "Say that the sign is part of the sentence and must be written on every line. Ask 'Is only 5 a solution, or are 4 and 3 too?' so they see it is a range."
+        },
+        {
+          "mistake": "Students subtract 4 from one side only, writing 3x < 19 - 4 correctly but then 3x < 15 and x < 15.",
+          "response": "Ask them to say what was done to both sides at each step, and always finish by checking a test number in the original inequality."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why can I do the same thing to both sides?",
+          "answer": "Because it keeps the comparison true. If one side is smaller than the other, adding 4 to both still leaves the same one smaller."
+        },
+        {
+          "question": "Why is the answer not just one number?",
+          "answer": "Because many numbers make the statement true. 4, 3, 0 and -10 all work for 3x + 4 < 19, so the answer describes all of them."
+        },
+        {
+          "question": "Is x = 5 an answer here?",
+          "answer": "No. At 5 we get 19 < 19, which is false. The sign < means strictly less, so 5 is the boundary but is not included."
+        }
+      ],
+      "check_question": {
+        "question": "Solve 2x - 5 > 7.",
+        "solution": "Add 5: 2x > 12. Divide by 2: x > 6. The boundary number is 6.",
+        "expression": "6",
+        "answer": "6"
+      }
+    },
+    {
+      "title": "Flipping the sign with a negative",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Test with numbers first: 1 < 2 is true. Multiply both sides by -1: -1 and -2. Now -1 > -2, so the sign had to flip. Then state the rule: multiply or divide by a negative means flip the sign."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw a number line with 1 and 2, 1 on the left. Reflect it through zero: 1 goes to -1 and 2 goes to -2, and now -2 is on the left. The order is reversed, so < becomes >."
+        }
+      ],
+      "example": {
+        "problem": "Solve -2x + 1 >= 9.",
+        "steps": "Subtract 1 from both sides: -2x >= 8. Divide both sides by -2, a negative number, so flip the sign: x <= -4. Check x = -5: -2(-5) + 1 = 11, and 11 >= 9 is true. Check x = 0: 1 >= 9 is false. Check x = -4: 8 + 1 = 9, true.",
+        "expression": "-4",
+        "answer": "-4"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students flip the sign when subtracting a negative or when a negative number appears, for example flipping at -2x + 1 >= 9 after subtracting 1.",
+          "response": "Stress that you flip only when you multiply or divide both sides by a negative. Ask 'What did we just do to both sides?'"
+        },
+        {
+          "mistake": "Students divide by -2 and forget to flip, writing x >= -4.",
+          "response": "Have them check a test number. x = 0 gives 1 >= 9, which is false, so the answer must be wrong. The check catches it."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why does the sign flip?",
+          "answer": "Multiplying by a negative reverses the order of numbers. 1 is less than 2, but -1 is greater than -2. The sign flips to keep the statement true."
+        },
+        {
+          "question": "Could I avoid flipping?",
+          "answer": "Yes. Add 2x to both sides instead: 1 >= 9 + 2x, so -8 >= 2x, so -4 >= x, which means x <= -4. The same answer, with no negative division."
+        },
+        {
+          "question": "Do I flip when the number I add or subtract is negative?",
+          "answer": "No. Adding or subtracting never flips the sign, whatever the number. Only multiplying or dividing by a negative does."
+        }
+      ],
+      "check_question": {
+        "question": "Solve -3x <= 12.",
+        "solution": "Divide both sides by -3 and flip the sign: x >= -4. The boundary number is -4.",
+        "expression": "-4",
+        "answer": "-4"
+      }
+    },
+    {
+      "title": "Showing and checking answers on a number line",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a number line. Put a circle at the boundary: open if the boundary is not included (< or >), filled in if it is (<= or >=). Draw an arrow toward the side where the solutions are. Every number on the arrow makes the inequality true."
+        },
+        {
+          "kind": "procedure",
+          "text": "Check the answer with two test numbers: one from the shaded side, which should work in the original inequality, and one from the unshaded side, which should fail. Also test the boundary to confirm whether it is included."
+        }
+      ],
+      "example": {
+        "problem": "Solve 2x + 1 > 7, show it on a number line, and test 5.",
+        "steps": "Subtract 1: 2x > 6. Divide by 2: x > 3. On the number line put an open circle at 3 and an arrow to the right. Test x = 5 (on the arrow): 2(5) + 1 = 11, and 11 > 7 is true. Test x = 3: 7 > 7 is false, which is why the circle is open. Test x = 2: 5 > 7 is false.",
+        "expression": "3",
+        "answer": "3"
+      },
+      "visual": {
+        "kind": "numberline",
+        "expr": "",
+        "a": 3,
+        "b": 5,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students use a filled circle for a strict inequality like x > 3.",
+          "response": "Ask 'Does 3 make 2x + 1 > 7 true?' It gives 7 > 7, so no. An open circle means 'not included'."
+        },
+        {
+          "mistake": "Students shade the wrong direction, for example drawing x > 3 with an arrow to the left.",
+          "response": "Have them pick a point on their arrow and test it in the original inequality. If it fails, the arrow is wrong. Remember that larger numbers are to the right."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we need to test numbers if we solved it correctly?",
+          "answer": "It catches slips, like forgetting to flip the sign. It takes about ten seconds and gives certainty."
+        },
+        {
+          "question": "What does the arrow mean?",
+          "answer": "It means the solutions go on forever in that direction. Every number on the arrow works."
+        },
+        {
+          "question": "What do I write for the open and closed circle in words?",
+          "answer": "Open: 'not including'. Closed: 'including'. So x >= 3 has a closed circle at 3 and an arrow to the right."
+        }
+      ],
+      "check_question": {
+        "question": "Is 3 a solution of 2x + 1 > 7? Would it be if the sign were >=?",
+        "solution": "For >, 2(3) + 1 = 7 and 7 > 7 is false, so no. For >=, 7 >= 7 is true, so yes. The boundary is 3.",
+        "expression": "3",
+        "answer": "3"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Solve 5x - 3 <= 12.",
+      "solution": "Add 3: 5x <= 15. Divide by 5 (positive, no flip): x <= 3. Check x = 3: 15 - 3 = 12, and 12 <= 12 is true.",
+      "expression": "3",
+      "answer": "3"
+    },
+    {
+      "problem": "Solve 7 - 3x < 1.",
+      "solution": "Subtract 7: -3x < -6. Divide by -3 and flip the sign: x > 2. Check x = 3: 7 - 9 = -2, and -2 < 1 is true. Check x = 2: 1 < 1 is false, so 2 is not included (open circle).",
+      "expression": "2",
+      "answer": "2"
+    },
+    {
+      "problem": "Solve -x/2 > 3 and say where the circle goes on the number line.",
+      "solution": "Multiply both sides by -2 and flip the sign: x < -6. Open circle at -6 and an arrow to the left. Check x = -8: -(-8)/2 = 4, and 4 > 3 is true.",
+      "expression": "-6",
+      "answer": "-6"
+    }
+  ],
+  "meta": {
+    "concept": "inequalities",
+    "title": "Solving inequalities",
+    "model": "sonnet",
+    "cost_usd": 0.1209,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Solving+inequalities"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Solving+inequalities"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Solving+inequalities"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Solving+inequalities"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Solving+inequalities+math"
+    }
+  ]
+}

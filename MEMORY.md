@@ -118,3 +118,7 @@ Each step ends with a commit and a step-log entry with **start and end times** (
 - **Eval:** run 3 caught a real error (a "usually" hedge on Pythagoras). Answer prompt tightened ("always"/"never" for exact facts, a reason for every rule); run 4: correct 10/10, explains why 9/10 (the off-topic rubric limit). History in evals/results.md.
 - **Not tested:** rendering in a real browser (no headless Chrome on this machine).
 - **Found:** per-answer cost up to $0.00125 with the richer sheets; the next fix is to send only the relevant subtopic (cost-model.md).
+
+### Step 16: library generated (90/97)
+- **Achieved:** 90 of 97 sheets generated and verified (0 failing checks); library cost $8.26; drawings in 171 of 270 subtopics (shown only where useful).
+- **Open:** 7 grade 9–10 topics (compound-probability, congruent-triangles, data-spread, distance-midpoint, parallel-lines-angles, radicals, volume-of-solids) hit the Claude account's monthly spend limit; they show "coming soon". Regenerate after the limit resets: run `python -m coach.sheet <id>` for each.

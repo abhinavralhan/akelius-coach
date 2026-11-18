@@ -1,0 +1,254 @@
+{
+  "idea": "Simplifying an expression means rewriting it in a shorter form that has the same value. We do this by collecting like terms. Like terms have exactly the same letter part (x and 5x, or y² and 3y²), so their numbers (coefficients) can be added or subtracted. Terms with different letter parts stay separate.",
+  "why": "A letter stands for a number, so 3x means \"three lots of x\". Three lots of x plus two lots of x is five lots of x, just as 3 apples plus 2 apples is 5 apples. This is the distributive law run backwards: 3x + 2x = (3 + 2)x. Apples and pears can't be merged into one kind of fruit, and in the same way x and y, or x and x², are different kinds of thing. Brackets come first, because a(b + c) = ab + ac spreads the multiplier over every term inside. A good check: the original and the simplified expression must give the same value for any number you try.",
+  "theory_example": {
+    "problem": "Simplify 3x + 2y + 5x − y + 4 − 1, then check with x = 2 and y = 1.",
+    "steps": "Group by type, keeping each sign with its term. x terms: 3x + 5x = 8x. y terms: 2y − y = y (that is 1y). Numbers: 4 − 1 = 3. Simplified: 8x + y + 3. Check with x = 2, y = 1. Original: 6 + 2 + 10 − 1 + 4 − 1 = 20. Simplified: 16 + 1 + 3 = 20. They match.",
+    "expression": "8*2+1+3",
+    "answer": "20"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 8,
+      "activity": "Teach 'Like terms: what can be combined'. Start with the apples and pears story, then show the bar picture of 3x and 2x joining into 5x. Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Teach 'Collecting like terms'. Work the example on the board, circling each term with its sign. Have students do the check question on mini-whiteboards or paper."
+    },
+    {
+      "minutes": 12,
+      "activity": "Teach 'Simplifying with brackets'. Expand first, then collect, using the example. Let students try the check question in pairs, then discuss the common mistakes."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work through the 3 extra examples (mixing all three subtopics), and take student questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Like terms: what can be combined",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Say x is a bag of apples and y is a bag of pears. 3 bags of apples and 2 more bags of apples make 5 bags of apples: 3x + 2x = 5x. But 3 bags of apples and 2 bags of pears are not '5 bags of something', so we write 3x + 2y and leave it. Like terms are the same kind of bag."
+        },
+        {
+          "kind": "procedure",
+          "text": "Cover the number in front of each term and look only at the letter part. If the letter parts are exactly the same (x and x, y² and y²), the terms are like terms. x and x² are different, and x and xy are different. A number on its own, like 7, is only like another plain number."
+        }
+      ],
+      "example": {
+        "problem": "Can 3x + 2x be combined? Can 3x + 2y? Check 3x + 2x with x = 10.",
+        "steps": "3x and 2x have the same letter part x, so they are like terms: 3x + 2x = (3 + 2)x = 5x. 3x and 2y have different letters, so 3x + 2y cannot be shortened. Check with x = 10: 3x = 30, 2x = 20, and 30 + 20 = 50, which equals 5x = 50.",
+        "expression": "3*10+2*10",
+        "answer": "50"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "3x;2x;5x",
+        "a": 30,
+        "b": 20,
+        "c": 50,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Writing 3x + 2y = 5xy (or 5x, or 5y).",
+          "response": "Go back to apples and pears: 3 apples and 2 pears is not 5 apples. Try x = 1, y = 1 on both sides if needed, then try x = 2, y = 3: 3x + 2y = 12 but 5xy = 30. They differ, so they can't be equal."
+        },
+        {
+          "mistake": "Treating x and x² as like terms, writing x + x² = x³ or 2x².",
+          "response": "Show with x = 3: x + x² = 3 + 9 = 12, but 2x² = 18 and x³ = 27. x is a length-type quantity and x² is an area-type quantity, so they stay separate."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why can't I add 3x and 2y?",
+          "answer": "Because we don't know that x and y are the same number. If x were 10 and y were 1, the sum would be 32, not '5 of something'. Only the same letter lets us count them together."
+        },
+        {
+          "question": "Is x the same as 1x?",
+          "answer": "Yes. If there is no number in front, the number is 1. That's why x + 4x = 5x."
+        },
+        {
+          "question": "Is 5 a like term with 5x?",
+          "answer": "No. 5 is just a number and 5x is five lots of an unknown. They are different kinds, so 5x + 5 stays as it is."
+        }
+      ],
+      "check_question": {
+        "question": "Which of these are like terms of 4y: 4x, y, 7y², −3y, 9?",
+        "solution": "y and −3y have exactly the same letter part y. 4x has a different letter, 7y² has y squared, and 9 is a plain number. So there are 2 like terms.",
+        "expression": "2",
+        "answer": "2"
+      }
+    },
+    {
+      "title": "Collecting like terms",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Step 1: circle or underline each type of term differently, taking the sign in front with each term. Step 2: add or subtract the numbers for each type. Step 3: write the results together. A term with no sign in front is positive. Finally, check by trying a number."
+        },
+        {
+          "kind": "story",
+          "text": "Think of money: you have 6 bags of coins (6a), 3 loose pounds, then you gain 2 more bags and owe 5 pounds. Bags go with bags: 6a + 2a = 8a. Loose pounds go with loose pounds: 3 − 5 = −2, so you're 2 pounds in debt. Altogether 8a − 2."
+        }
+      ],
+      "example": {
+        "problem": "Simplify 6a + 3 + 2a − 5, then check with a = 3.",
+        "steps": "a terms: 6a + 2a = 8a. Numbers: 3 − 5 = −2. Simplified: 8a − 2. Check with a = 3. Original: 18 + 3 + 6 − 5 = 22. Simplified: 24 − 2 = 22. They match.",
+        "expression": "8*3-2",
+        "answer": "22"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Dropping the sign: 6a + 3 + 2a − 5 becomes 8a + 2.",
+          "response": "Remind students the sign belongs to the term after it, so it is −5, not 5. Rewrite as 6a + 3 + 2a + (−5), then 3 + (−5) = −2. A check with a = 3 shows 8a + 2 gives 26, not 22."
+        },
+        {
+          "mistake": "Combining everything into one term, e.g. 8a − 2 = 6a.",
+          "response": "Ask what 8a − 2 would be if a = 3: it's 22, while 6a is 18. Letter terms and plain numbers are different kinds, so they stay as two parts."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Does the order of the terms matter?",
+          "answer": "Not for the value, as long as each term keeps its own sign. 6a + 3 + 2a − 5 is the same as 6a + 2a + 3 − 5. Moving a term means moving its sign with it."
+        },
+        {
+          "question": "What if the terms cancel out completely, like 3x − 3x?",
+          "answer": "3x − 3x = 0x = 0. Then that part just disappears. For example 3x − 3x + 4 simplifies to 4."
+        },
+        {
+          "question": "How do I know when I'm finished simplifying?",
+          "answer": "When no two terms have the same letter part. Each kind of term appears just once."
+        }
+      ],
+      "check_question": {
+        "question": "Simplify 5m + 2 + m − 7, then check with m = 2.",
+        "solution": "m terms: 5m + m = 6m (remember m is 1m). Numbers: 2 − 7 = −5. Simplified: 6m − 5. Check m = 2: original 10 + 2 + 2 − 7 = 7, simplified 12 − 5 = 7.",
+        "expression": "6*2-5",
+        "answer": "7"
+      }
+    },
+    {
+      "title": "Simplifying with brackets",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a rectangle with width 2 and length split into x and 3, so total length x + 3. Its area is 2(x + 3). Cutting it into two rectangles gives areas 2x and 6. So 2(x + 3) = 2x + 6. The 2 multiplies every term inside the bracket."
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: expand each bracket by multiplying the outside number by every term inside, watching signs. Step 2: collect like terms as before. Step 3: check with a number, which also catches mistakes with brackets."
+        }
+      ],
+      "example": {
+        "problem": "Simplify 2(x + 3) + 3x − 4, then check with x = 4.",
+        "steps": "Expand: 2(x + 3) = 2x + 6. The expression is now 2x + 6 + 3x − 4. x terms: 2x + 3x = 5x. Numbers: 6 − 4 = 2. Simplified: 5x + 2. Check with x = 4. Original: 2(7) + 12 − 4 = 22. Simplified: 20 + 2 = 22. They match.",
+        "expression": "5*4+2",
+        "answer": "22"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Only multiplying the first term: 2(x + 3) = 2x + 3.",
+          "response": "Use the rectangle picture or test with x = 1: 2(1 + 3) = 8 but 2x + 3 = 5. The 2 multiplies both x and 3, giving 2x + 6."
+        },
+        {
+          "mistake": "Sign errors with a negative outside the bracket: 3(x − 2) = 3x − 2, or −(x − 2) = −x − 2.",
+          "response": "Multiply each term including its sign: 3(x − 2) = 3x − 6, and −(x − 2) = −x + 2. Test with x = 3: 3(1) = 3 and 3x − 6 = 3. Good."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do I multiply everything in the bracket?",
+          "answer": "The bracket means 'the whole of x + 3, taken 2 times'. Two lots of x plus 3 is two x's and two 3's, so 2x + 6."
+        },
+        {
+          "question": "Do I expand first or collect first?",
+          "answer": "Expand the brackets first, because the terms inside a bracket can't be combined with outside terms until the bracket is gone. Then collect like terms."
+        },
+        {
+          "question": "What if there's a minus in front of the bracket?",
+          "answer": "A minus in front means multiply by −1, which flips every sign inside. So 5 − (x + 2) = 5 − x − 2 = 3 − x."
+        }
+      ],
+      "check_question": {
+        "question": "Simplify 3(x − 2) + 2x, then check with x = 3.",
+        "solution": "Expand: 3(x − 2) = 3x − 6. Then 3x − 6 + 2x = 5x − 6. Check x = 3: original 3(1) + 6 = 9, simplified 15 − 6 = 9.",
+        "expression": "5*3-6",
+        "answer": "9"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Simplify 7x + 2y − 3x + 5y, then find its value when x = 2 and y = 1.",
+      "solution": "x terms: 7x − 3x = 4x. y terms: 2y + 5y = 7y. Simplified: 4x + 7y. With x = 2, y = 1: 8 + 7 = 15. Check the original: 14 + 2 − 6 + 5 = 15.",
+      "expression": "4*2+7*1",
+      "answer": "15"
+    },
+    {
+      "problem": "Simplify 4(a + 2) − 2a + 1, then find its value when a = 5.",
+      "solution": "Expand: 4a + 8 − 2a + 1. a terms: 4a − 2a = 2a. Numbers: 8 + 1 = 9. Simplified: 2a + 9. With a = 5: 10 + 9 = 19. Check the original: 4(7) − 10 + 1 = 19.",
+      "expression": "2*5+9",
+      "answer": "19"
+    },
+    {
+      "problem": "Simplify 2x² + 3x + x² − x, then find its value when x = 2.",
+      "solution": "x² terms: 2x² + x² = 3x². x terms: 3x − x = 2x. Simplified: 3x² + 2x (x² and x are not like terms). With x = 2: 12 + 4 = 16. Check the original: 8 + 6 + 4 − 2 = 16.",
+      "expression": "3*2**2+2*2",
+      "answer": "16"
+    }
+  ],
+  "meta": {
+    "concept": "simplifying-expressions",
+    "title": "Simplifying expressions and like terms",
+    "model": "sonnet",
+    "cost_usd": 0.15091,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Simplifying+expressions+and+like+terms"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Simplifying+expressions+and+like+terms"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Simplifying+expressions+and+like+terms"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Simplifying+expressions+and+like+terms"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Simplifying+expressions+and+like+terms+math"
+    }
+  ]
+}

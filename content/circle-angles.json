@@ -1,0 +1,258 @@
+{
+  "idea": "Angles in circles are about how an angle at the centre, an angle on the edge (the circumference) and a four-sided shape inside a circle are linked. The key facts: an angle at the centre is double the angle at the edge on the same arc; an angle in a semicircle is 90°; and opposite angles of a cyclic quadrilateral add to 180°.",
+  "why": "Draw the radii from the centre to the points on the circle. Radii are equal, so the triangles you get are isosceles, and the base angles match. Adding up the angles in these triangles shows that the central angle is exactly twice the edge angle. The semicircle fact is the special case where the central angle is a straight line, 180°, so half of it is 90°. For a cyclic quadrilateral, the two opposite angles look at arcs that together make the whole circle (360° at the centre), so their halves add to 180°.",
+  "theory_example": {
+    "problem": "Points A, B, C lie on a circle with centre O. Angle AOB = 100°, and C is on the major arc (the long way round). Find angle ACB. Then a point D is placed on the minor arc AB, so ACBD is a cyclic quadrilateral. Find angle ADB.",
+    "steps": "1. The angle at the centre is 100° and stands on arc AB. The angle at the edge on the same arc is half of it: 100 ÷ 2 = 50°, so angle ACB = 50°.\n2. ACBD is a cyclic quadrilateral, and angles C and D are opposite each other. Opposite angles add to 180°.\n3. Angle ADB = 180 − 50 = 130°.",
+    "expression": "180-100/2",
+    "answer": "130"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up. Draw a circle on the board with centre O and two points A and B. Ask students what angles they can see. Introduce the words centre, circumference, arc and chord. Use the first subtopic, Central angle and inscribed angle, to set up the language."
+    },
+    {
+      "minutes": 10,
+      "activity": "Teach Central angle and inscribed angle. Draw the picture, show the worked example (120° at the centre gives 60° at the edge), and move a point C along the major arc to show the angle stays the same. Ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach Angle in a semicircle. Draw a diameter and a point on the edge. Link it to the previous idea: the central angle is 180°. Work the example, then the check question."
+    },
+    {
+      "minutes": 7,
+      "activity": "Teach Cyclic quadrilateral. Draw four points on a circle and mark opposite angles. Work the example (85° opposite 95°), then the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Work the three extra examples together, mixing all three subtopics, and leave time for student questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Central angle and inscribed angle",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a circle with centre O and an arc AB. Mark the angle AOB at the centre. Now pick a point C on the edge, far from the arc, and draw CA and CB. Say: the angle at C looks at the same arc as the angle at O, but it is exactly half as big. Slide C to a few places on the major arc (the long way round) and show that the angle at C does not change."
+        },
+        {
+          "kind": "procedure",
+          "text": "Steps: 1) Find the arc the angle stands on (the arc between the two ends of the angle). 2) Check which angle is at the centre and which is on the edge. 3) Edge angle = centre angle ÷ 2, or centre angle = edge angle × 2. 4) Check that both angles stand on the same arc."
+        }
+      ],
+      "example": {
+        "problem": "O is the centre of a circle. Angle AOB = 120°. C is a point on the major arc. Find angle ACB.",
+        "steps": "1. Angle AOB is at the centre and angle ACB is on the edge. Both stand on arc AB.\n2. The edge angle is half the centre angle.\n3. Angle ACB = 120 ÷ 2 = 60°.",
+        "expression": "120/2",
+        "answer": "60"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students double the wrong way, for example finding the centre angle by halving.",
+          "response": "Ask: which angle should be bigger? The centre angle is always the bigger one, so it is the edge angle that is halved. Have them check that their answer makes the centre angle larger."
+        },
+        {
+          "mistake": "Students use the rule when the two angles stand on different arcs, or when the edge point is on the minor arc.",
+          "response": "Ask them to trace the arc with a finger from A to B, starting from the angle's own point of view. The edge angle must look at the same arc as the centre angle. For a point on the other side, the edge angle is half of the reflex angle (the 360° − 120° = 240° one), which is 120°."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why is the angle at the centre double?",
+          "answer": "Join C to O. The triangles OAC and OBC are isosceles because OA, OB and OC are all radii. Each outside angle at O is double the base angle at C in its triangle. Add them up and the whole centre angle is double the whole edge angle."
+        },
+        {
+          "question": "Does it matter where C is on the circle?",
+          "answer": "No, as long as C is on the same side of AB as the arc you are using. The angle at C stays the same wherever you put it on that arc."
+        },
+        {
+          "question": "What if the centre angle is bigger than 180°?",
+          "answer": "The rule still works. Take the angle at O that stands on the arc you are looking at, even if it is reflex, and halve it."
+        }
+      ],
+      "check_question": {
+        "question": "An angle at the edge of a circle is 40°. It stands on the same arc as an angle at the centre. How big is the angle at the centre?",
+        "solution": "The centre angle is double the edge angle: 40 × 2 = 80°.",
+        "expression": "40*2",
+        "answer": "80"
+      }
+    },
+    {
+      "title": "Angle in a semicircle",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Imagine a stage shaped like a half circle. Two friends stand at the ends of the straight edge (the diameter), and a third person walks anywhere along the curved edge. However they walk, the angle between the two friends, as seen by the walker, is always a perfect right angle. It is like a corner of a square that never changes."
+        },
+        {
+          "kind": "procedure",
+          "text": "Steps: 1) Check that one side of the triangle is a diameter (it passes through the centre). 2) Then the angle opposite the diameter, at the edge, is 90°. 3) Use the angle sum of the triangle (180°) to find the other angles."
+        }
+      ],
+      "example": {
+        "problem": "AB is a diameter of a circle. C is on the circle. Angle CAB = 35°. Find angle ABC.",
+        "steps": "1. AB is a diameter, so the angle at C (angle ACB) is 90°.\n2. The angles in triangle ABC add to 180°.\n3. Angle ABC = 180 − 90 − 35 = 55°.",
+        "expression": "180-90-35",
+        "answer": "55"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students put the 90° at the wrong corner, for example at A or at the centre.",
+          "response": "Say: the right angle is always opposite the diameter. Have them put a finger on the diameter and then point to the corner that is straight across from it."
+        },
+        {
+          "mistake": "Students use the rule when the side is a chord that is not a diameter.",
+          "response": "Ask: does this side go through the centre? If not, the angle opposite is not 90°. Draw a short chord next to it to show that the angle changes."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is it 90°?",
+          "answer": "The diameter makes a straight line through the centre, so the angle at the centre is 180°. The edge angle is half of the centre angle, and half of 180° is 90°."
+        },
+        {
+          "question": "Does the triangle always have to be a right triangle?",
+          "answer": "Yes. If one side is a diameter and the third point is on the circle, you always get a right angle at that third point."
+        },
+        {
+          "question": "Can I use it the other way round?",
+          "answer": "Yes. If a triangle in a circle has a right angle, the side opposite it is a diameter."
+        }
+      ],
+      "check_question": {
+        "question": "AB is a diameter and C is on the circle. Angle CBA = 50°. What is angle CAB?",
+        "solution": "Angle ACB = 90° (semicircle). So angle CAB = 180 − 90 − 50 = 40°.",
+        "expression": "180-90-50",
+        "answer": "40"
+      }
+    },
+    {
+      "title": "Cyclic quadrilateral",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw four points A, B, C, D on a circle and join them in order to make a four-sided shape. Colour angle A and angle C (opposite corners) in the same colour. Show that each one looks at an arc, and the two arcs together make the whole circle. So the two angles together are half of 360°, which is 180°."
+        },
+        {
+          "kind": "procedure",
+          "text": "Steps: 1) Check that all four corners are on the circle. 2) Find the pair of opposite angles (not neighbours). 3) Opposite angles add to 180°, so the missing angle = 180° − the angle opposite. 4) Do the same for the other pair, B and D."
+        }
+      ],
+      "example": {
+        "problem": "ABCD is a cyclic quadrilateral. Angle A = 85°. Find angle C.",
+        "steps": "1. Angles A and C are opposite corners of a cyclic quadrilateral.\n2. Opposite angles add to 180°.\n3. Angle C = 180 − 85 = 95°.",
+        "expression": "180-85",
+        "answer": "95"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students add neighbouring angles to get 180°.",
+          "response": "Ask them to point at the two angles. If they share a side, they are neighbours, and that rule does not apply. Opposite means across the shape, not touching."
+        },
+        {
+          "mistake": "Students use the rule for a quadrilateral whose corners are not all on the circle.",
+          "response": "Ask: are all four corners on the circle? If one is inside or outside, the rule does not hold. The total of all four angles is still 360°, though."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do opposite angles add to 180°?",
+          "answer": "Each angle at the edge is half the centre angle on its arc. The two arcs together are the whole circle, 360° at the centre. Half of 360° is 180°."
+        },
+        {
+          "question": "What does cyclic mean?",
+          "answer": "It means all the corners lie on one circle. The word comes from the same root as cycle."
+        },
+        {
+          "question": "Do the other angles, B and D, also add to 180°?",
+          "answer": "Yes. Each pair of opposite angles adds to 180°. Together, all four add up to 360°."
+        }
+      ],
+      "check_question": {
+        "question": "In a cyclic quadrilateral PQRS, angle Q = 110°. What is angle S?",
+        "solution": "Q and S are opposite, so S = 180 − 110 = 70°.",
+        "expression": "180-110",
+        "answer": "70"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "O is the centre of a circle. Angle AOB = 150°. Point C is on the major arc. Find angle ACB.",
+      "solution": "The edge angle is half the centre angle on the same arc: 150 ÷ 2 = 75°.",
+      "expression": "150/2",
+      "answer": "75"
+    },
+    {
+      "problem": "PQ is a diameter of a circle and R is on the circle. Angle RPQ = 28°. Find angle PQR.",
+      "solution": "Angle PRQ = 90° (angle in a semicircle). Then angle PQR = 180 − 90 − 28 = 62°.",
+      "expression": "180-90-28",
+      "answer": "62"
+    },
+    {
+      "problem": "ABCD is a cyclic quadrilateral. Angle A = 2x + 10 and angle C = x + 50. Find x.",
+      "solution": "A and C are opposite, so they add to 180°. (2x + 10) + (x + 50) = 180, so 3x + 60 = 180, 3x = 120, x = 40.",
+      "expression": "(180-60)/3",
+      "answer": "40"
+    }
+  ],
+  "meta": {
+    "concept": "circle-angles",
+    "title": "Angles in circles",
+    "model": "sonnet",
+    "cost_usd": 0.05414,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Angles+in+circles"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Angles+in+circles"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Angles+in+circles"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Angles+in+circles"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Angles+in+circles+math"
+    }
+  ]
+}

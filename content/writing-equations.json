@@ -1,0 +1,258 @@
+{
+  "idea": "A word problem describes a situation in sentences. An equation says the same thing in symbols: you choose a letter for the unknown, turn each phrase into math, and join the parts with an equals sign where the story says two amounts are the same. Writing the equation comes first and solving it comes second.",
+  "why": "An equation is a sentence saying two amounts are equal. Words like \"is\", \"gives\", \"costs in total\" and \"the same as\" show where the equals sign goes. The other phrases name amounts: \"twice a number\" is 2n, \"5 more than\" adds 5, and \"per\" means multiply by a rate. If every phrase is translated faithfully and the unknown is clearly defined, solving the equation gives exactly the number the story asks about. Checking the answer back in the story catches translation slips.",
+  "theory_example": {
+    "problem": "A taxi charges a $3 starting fee plus $2 for each kilometre. A trip costs $19 in total. How many kilometres was the trip?",
+    "steps": "1. Let x = number of kilometres. 2. Kilometre cost = 2 dollars per km times x km = 2x. 3. Total = starting fee + kilometre cost = 3 + 2x. 4. The story says the total is 19, so 3 + 2x = 19. 5. Subtract 3 from both sides: 2x = 16. 6. Divide by 2: x = 8. 7. Check in the story: 3 + 2*8 = 19. Yes.",
+    "expression": "(19-3)/2",
+    "answer": "8"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up for 'Words to symbols and the unknown'. Write phrases on the board (a number plus 5, twice a number, 5 less than a number) and have students say the symbols. Stress that the first step is always 'Let x = ...'."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Words to symbols and the unknown'. Work the example 'a number doubled, then plus 5, gives 17' step by step. Ask the check question and walk around to see answers."
+    },
+    {
+      "minutes": 10,
+      "activity": "Teach 'Fixed amount plus a rate'. Build 10 + 2x = 24 from the phone plan story, then show the graph: the line 2x + 10 meets the line 24 at x = 7. Take student questions and ask the check question."
+    },
+    {
+      "minutes": 7,
+      "activity": "Teach 'Two amounts that must be equal'. Build 5 + 3x = 9 + 2x from the two ride plans, show the graph where the lines cross at x = 4, and ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work the 3 extra examples with the class (let students suggest 'Let x = ...' and the equation before you reveal it), then answer any remaining questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Words to symbols and the unknown",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Three moves: (1) Underline what you are asked to find and write 'Let n = ...' with the meaning. (2) Translate phrase by phrase: 'twice a number' is 2n, 'increased by 5' is +5, 'is' or 'gives' is =. (3) Read your equation back in words and see if it matches the story."
+        },
+        {
+          "kind": "story",
+          "text": "Tell students: you are a translator between English and math. A good translator does not skip words and does not change the order of meaning. 'Twice a number, then plus 5, gives 17' becomes 2n + 5 = 17, word for word in the same order."
+        }
+      ],
+      "example": {
+        "problem": "A number doubled and then increased by 5 gives 17. Find the number.",
+        "steps": "1. Let n = the number. 2. Doubled: 2n. 3. Increased by 5: 2n + 5. 4. 'Gives 17' means = 17, so 2n + 5 = 17. 5. Subtract 5: 2n = 12. 6. Divide by 2: n = 6. 7. Check: 2*6 + 5 = 17.",
+        "expression": "(17-5)/2",
+        "answer": "6"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Writing '5 less than x' as 5 - x (keeping the words in the same order).",
+          "response": "Use numbers: ask 'What is 5 less than 12?' Students say 7, which is 12 - 5. So '5 less than x' is x - 5. The phrase 'less than' flips the order."
+        },
+        {
+          "mistake": "Starting to write numbers and letters without saying what the letter means (or using x for two different things).",
+          "response": "Ask 'What does x stand for?' and have them write 'Let x = ...' with units before anything else. A letter without a meaning cannot be checked."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we have to use a letter at all?",
+          "answer": "Because we do not know the number yet. The letter is a name for the mystery number so we can write the story in math and then work it out."
+        },
+        {
+          "question": "Can I use n instead of x?",
+          "answer": "Yes. Any letter works. Pick one that helps you remember, like n for number or d for days, and say what it means."
+        },
+        {
+          "question": "How do I know where the equals sign goes?",
+          "answer": "Look for words like 'is', 'gives', 'equals', 'costs in total'. They connect two amounts that are the same. Everything before it makes one side, and the amount after it is the other."
+        }
+      ],
+      "check_question": {
+        "question": "Three more than a number tripled is 24. Write an equation and find the number. (Tripled first, then add 3.)",
+        "solution": "Let n = the number. Tripled is 3n, plus 3 is 3n + 3 = 24. Subtract 3: 3n = 21, so n = 7. Check: 3*7 + 3 = 24.",
+        "expression": "(24-3)/3",
+        "answer": "7"
+      }
+    },
+    {
+      "title": "Fixed amount plus a rate",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "A phone plan charges $10 every month no matter what, plus $2 for each gigabyte you use. The $10 is the same every month, so it stands alone. The $2 happens again for every GB, so it multiplies the number of GB: 2x. The bill is 10 + 2x."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw the graph of the bill 2x + 10 against GB used. It starts at height 10 (the fixed fee, when x = 0) and climbs 2 for every 1 GB. Draw a horizontal line at 24 (the bill we were given). Where the lines meet tells us how many GB: x = 7."
+        }
+      ],
+      "example": {
+        "problem": "A phone plan costs $10 per month plus $2 for each GB used. This month's bill was $24. How many GB were used?",
+        "steps": "1. Let x = GB used. 2. Cost of data = 2x. 3. Bill = fixed fee + data cost = 10 + 2x. 4. The bill was 24, so 10 + 2x = 24. 5. Subtract 10: 2x = 14. 6. Divide by 2: x = 7. 7. Check: 10 + 2*7 = 24.",
+        "expression": "(24-10)/2",
+        "answer": "7"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "2*x + 10; 24",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Multiplying the fixed fee too, writing 2(x + 10) or 2x + 20.",
+          "response": "Ask 'Does the $10 happen once or for every GB?' It happens once, so it is added alone. Test with x = 1 GB: the bill is $12, and 10 + 2*1 = 12 works."
+        },
+        {
+          "mistake": "Setting the equation equal to the wrong thing, for example 2x = 24 (forgetting the fixed fee is part of the 24).",
+          "response": "Ask 'What does the $24 include?' It is the whole bill, fixed fee and data. So the whole bill expression 10 + 2x must equal 24."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we subtract 10 first?",
+          "answer": "The 10 is added on to the data cost. To get the data cost alone, 2x, we take the 10 away from the whole bill: 24 - 10 = 14 is what the data cost."
+        },
+        {
+          "question": "What does the number in front of x mean?",
+          "answer": "It is the rate: how much is added for each 1 unit of x. Here each GB adds $2."
+        },
+        {
+          "question": "What does the graph tell us that the equation doesn't?",
+          "answer": "It shows the whole story: what the bill is for any number of GB. Our answer is just the point where the bill line reaches 24."
+        }
+      ],
+      "check_question": {
+        "question": "A gym charges $15 to join plus $5 per visit. Rosa paid $50 in total. Write the equation and find how many visits.",
+        "solution": "Let v = visits. Cost = 15 + 5v. So 15 + 5v = 50. Subtract 15: 5v = 35, so v = 7. Check: 15 + 35 = 50.",
+        "expression": "(50-15)/5",
+        "answer": "7"
+      }
+    },
+    {
+      "title": "Two amounts that must be equal",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "When a story asks 'when are two things equal?', write an expression for each thing using the same letter, then put an equals sign between them. Solve by collecting x terms on one side and numbers on the other. Finally say what the answer means in the story."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw both costs as lines on one graph. Plan A: 3x + 5. Plan B: 2x + 9. B starts higher but climbs more slowly. The lines cross at x = 4, which is where the costs are the same ($17). The crossing point is the solution of the equation."
+        }
+      ],
+      "example": {
+        "problem": "Plan A costs $5 plus $3 per ride. Plan B costs $9 plus $2 per ride. For how many rides do the two plans cost the same?",
+        "steps": "1. Let x = number of rides. 2. Plan A: 5 + 3x. 3. Plan B: 9 + 2x. 4. Same cost: 5 + 3x = 9 + 2x. 5. Subtract 2x from both sides: 5 + x = 9. 6. Subtract 5: x = 4. 7. Check: A = 5 + 12 = 17 and B = 9 + 8 = 17.",
+        "expression": "(9-5)/(3-2)",
+        "answer": "4"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "3*x + 5; 2*x + 9",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Giving the cost ($17) as the answer instead of the number of rides.",
+          "response": "Reread the question together: 'for how many rides?' x is the answer. The $17 is what each plan costs at that point; it is a nice check but not the question."
+        },
+        {
+          "mistake": "When moving 2x across the equals sign, adding it instead of subtracting (getting 5 + 5x = 9).",
+          "response": "Remind that whatever you do to one side you do to the other. To remove 2x from the right, subtract 2x from both sides. Check by putting x = 4 into the equation."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do both plans use the same letter x?",
+          "answer": "Because we are comparing them for the same number of rides. The same x lets us ask 'when do they match?'"
+        },
+        {
+          "question": "What happens after 4 rides?",
+          "answer": "Plan A keeps rising faster ($3 per ride versus $2), so it becomes more expensive. Before 4 rides, A is cheaper. The graph shows this: the steeper line is above after the crossing."
+        },
+        {
+          "question": "Can there be no answer?",
+          "answer": "Yes, if the lines never meet, for example two plans with the same rate but different fees. That is more than we need today, but it is a good thing to notice."
+        }
+      ],
+      "check_question": {
+        "question": "Gym A costs $20 to join plus $4 per visit. Gym B has no joining fee and costs $8 per visit. After how many visits do they cost the same?",
+        "solution": "Let x = visits. A = 20 + 4x, B = 8x. Set equal: 20 + 4x = 8x. Subtract 4x: 20 = 4x, so x = 5. Check: A = 40 and B = 40.",
+        "expression": "20/(8-4)",
+        "answer": "5"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Ana is 3 years older than twice Ben's age. Ana is 19. How old is Ben?",
+      "solution": "Let b = Ben's age. Ana = 2b + 3. So 2b + 3 = 19. Subtract 3: 2b = 16, so b = 8. Check: 2*8 + 3 = 19.",
+      "expression": "(19-3)/2",
+      "answer": "8"
+    },
+    {
+      "problem": "Five concert tickets plus a $4 booking fee cost $29 in total. What is the price of one ticket?",
+      "solution": "Let x = price of one ticket. Five tickets cost 5x, plus the fee: 5x + 4 = 29. Subtract 4: 5x = 25, so x = 5. Check: 25 + 4 = 29.",
+      "expression": "(29-4)/5",
+      "answer": "5"
+    },
+    {
+      "problem": "Mia has $12 and saves $3 each week. Leo has $30 and spends $3 each week. After how many weeks do they have the same amount? (Leo spends so his amount goes down: 30 - 3x... use 30 - 3x and 12 + 3x.)",
+      "solution": "Let w = weeks. Mia = 12 + 3w. Leo = 30 - 3w. Set equal: 12 + 3w = 30 - 3w. Add 3w: 12 + 6w = 30. Subtract 12: 6w = 18, so w = 3. Check: Mia = 21 and Leo = 21.",
+      "expression": "(30-12)/(3+3)",
+      "answer": "3"
+    }
+  ],
+  "meta": {
+    "concept": "writing-equations",
+    "title": "Writing equations from word problems",
+    "model": "sonnet",
+    "cost_usd": 0.12388,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Writing+equations+from+word+problems"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Writing+equations+from+word+problems"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Writing+equations+from+word+problems"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Writing+equations+from+word+problems"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Writing+equations+from+word+problems+math"
+    }
+  ]
+}

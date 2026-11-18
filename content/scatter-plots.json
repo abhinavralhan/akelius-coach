@@ -1,0 +1,258 @@
+{
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: ask whether people who study more get higher scores. Draw axes and plot the five study-hours points (1,52), (2,58), (3,65), (4,70), (5,78) one at a time. Ask what they notice. This leads into the subtopic Reading a scatter plot and describing the trend."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach Reading a scatter plot and describing the trend. Name the direction (positive, negative, none) and measure the rate (points per hour) using the worked example. Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Teach Drawing a line of best fit and finding its equation. Draw the line by eye, pick two points on it, find slope and intercept, and write y = 6.5x + 45.5. Let pairs do the slope step themselves. Ask the check question."
+    },
+    {
+      "minutes": 7,
+      "activity": "Teach Using the line to make predictions. Predict the score for 6 hours, then discuss why 20 hours gives an impossible answer. Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: put the three extra examples on the board one at a time, give students a minute to try each, then go through it. Use any remaining time for open questions."
+    }
+  ],
+  "idea": "A scatter plot shows pairs of numbers as dots, one dot per person or thing, so we can see whether two quantities are linked. If the dots drift upward from left to right the trend is positive, if they drift downward it is negative, and if they form a shapeless cloud there is no trend. When the dots roughly follow a straight line, we can draw a line of best fit and use its equation to make predictions.",
+  "why": "Real data is never exactly on a line, but a line passing close to all the dots, with about as many dots above as below, captures the overall pattern. Its slope tells us how much y changes on average for each 1 step in x, and its intercept tells us where the pattern starts at x = 0. Because the line is a rule y = mx + b, we can feed in a new x and get a predicted y. The prediction is only trustworthy near the data we have, and a trend does not by itself prove that one thing causes the other.",
+  "theory_example": {
+    "problem": "A car's age (years) and value (thousand dollars) were recorded: (1,20), (2,18), (3,14), (4,11), (5,8). Describe the trend, find a line of best fit, and predict the value at 6 years.",
+    "steps": "1. The dots go down as age goes up, so the trend is negative. 2. Draw a line close to all dots. Use the first and last dots: slope = (8 - 20) / (5 - 1) = -12/4 = -3. 3. Intercept: 20 = -3(1) + b, so b = 23. Line: y = -3x + 23. 4. Check another dot: at x = 3 the line gives 14, which matches. 5. Predict at x = 6: y = -3(6) + 23 = 5, so about 5 thousand dollars.",
+    "expression": "-3*6+23",
+    "answer": "5"
+  },
+  "subtopics": [
+    {
+      "title": "Reading a scatter plot and describing the trend",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Plot the five study dots (hours across, score up). Run a finger along the dots from left to right: they climb, so the trend is positive. Then sketch a second plot where dots fall (hours of TV vs score, say) for negative, and a random cloud for no trend."
+        },
+        {
+          "kind": "procedure",
+          "text": "To describe a trend: 1) Say what each axis measures. 2) Look left to right: up is positive, down is negative, no pattern is none. 3) Say how tight the dots are (close to a line is a strong trend). 4) To measure the rate, take two dots, divide the change in y by the change in x."
+        }
+      ],
+      "example": {
+        "problem": "Study hours and test scores: (1,52), (3,65), (5,78). Describe the trend and say how many points the score rises per extra hour, using the first and last dots.",
+        "steps": "1. As hours go up, scores go up, so the trend is positive. 2. Change in score = 78 - 52 = 26. 3. Change in hours = 5 - 1 = 4. 4. Rate = 26 / 4 = 6.5 points per hour.",
+        "expression": "(78-52)/(5-1)",
+        "answer": "13/2"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students say the trend is negative because the numbers on the y-axis are 'getting bigger going up', or mix up which direction counts as positive.",
+          "response": "Always read left to right, like reading a sentence. Ask: as x increases, what does y do? Going up means positive, going down means negative."
+        },
+        {
+          "mistake": "Students say there is no trend because the dots are not exactly on a line.",
+          "response": "Say that real data is messy. Ask whether the dots overall drift in one direction. If yes, there is a trend, just not a perfect one."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we call it a positive trend if it is not a good thing, like more pollution?",
+          "answer": "Positive here just means both quantities go up together. It says nothing about good or bad. Two things rising together is positive, even if the thing rising is pollution."
+        },
+        {
+          "question": "Does a trend mean one thing causes the other?",
+          "answer": "No. Ice cream sales and sunburns both go up in summer, but ice cream does not cause sunburn. A trend shows a link, and we need more evidence to say why."
+        },
+        {
+          "question": "What if one dot is far away from all the others?",
+          "answer": "That dot is called an outlier. We notice it and ask why. It might be a mistake or a special case. We usually draw the line to fit the main group of dots."
+        }
+      ],
+      "check_question": {
+        "question": "Dots: (2,30), (4,24), (6,18). Is the trend positive or negative, and how much does y change for each 1 step in x?",
+        "solution": "As x goes up, y goes down, so negative. Change in y = 18 - 30 = -12 over a change in x of 6 - 2 = 4, so -12/4 = -3. y drops by 3 for each step in x.",
+        "expression": "(18-30)/(6-2)",
+        "answer": "-3"
+      }
+    },
+    {
+      "title": "Drawing a line of best fit and finding its equation",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Lay a ruler (or a spaghetti strand) on the plot so it runs through the middle of the dots, with about as many dots above as below. Draw it. Now it is a graph of a line, and we can read two points off it to find the equation."
+        },
+        {
+          "kind": "procedure",
+          "text": "1) Draw the line by eye through the middle of the dots. 2) Choose two points on the line that are easy to read. 3) Slope m = change in y / change in x. 4) Put one point into y = mx + b and solve for b. 5) Check by testing another dot: the line should be close to it, not necessarily exactly on it."
+        }
+      ],
+      "example": {
+        "problem": "A line of best fit goes through (1,52) and (5,78) for the study-hours data. Find its equation and the intercept b.",
+        "steps": "1. Slope m = (78 - 52) / (5 - 1) = 26/4 = 6.5. 2. Use y = 6.5x + b with the point (1,52): 52 = 6.5 + b, so b = 45.5. 3. The line is y = 6.5x + 45.5. 4. Check the dot (4,70): the line gives 6.5(4) + 45.5 = 71.5, which is close to 70. Good.",
+        "expression": "52-Rational(13,2)*1",
+        "answer": "91/2"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "6.5*x + 45.5",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students pick two actual data dots instead of points on their line, or insist the line must go through as many dots as possible, even when it tilts the wrong way.",
+          "response": "Say the line is a summary, not a connect-the-dots. It is fine if it misses every dot. What matters is that it follows the overall direction with dots balanced on both sides."
+        },
+        {
+          "mistake": "Students compute the slope as change in x over change in y, or subtract in a different order on top and bottom.",
+          "response": "Slope is rise over run: up-down change (y) goes on top. Use the same order of subtraction on top and bottom, and check the sign against the picture: a rising line must have positive slope."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Is there only one correct line of best fit?",
+          "answer": "By eye, different people draw slightly different lines, and that is okay. There is a method called least squares that gives one exact line, but any sensible line near the dots gives similar predictions."
+        },
+        {
+          "question": "Why is there a +45.5 at the end? What does it mean?",
+          "answer": "It is the value of y when x is 0. Here it is the score for someone who studied 0 hours, as the line says. It is where the line crosses the y-axis."
+        },
+        {
+          "question": "Why can I use any two points on the line?",
+          "answer": "Because a straight line has the same steepness everywhere. Any two points give the same slope. Choose points far apart that are easy to read, so small reading errors matter less."
+        }
+      ],
+      "check_question": {
+        "question": "A line of best fit passes through (2,10) and (6,22). What is its slope, and what is the intercept b?",
+        "solution": "Slope = (22 - 10) / (6 - 2) = 12/4 = 3. Then 10 = 3(2) + b, so b = 4. Line: y = 3x + 4. The key number asked here is the slope.",
+        "expression": "(22-10)/(6-2)",
+        "answer": "3"
+      }
+    },
+    {
+      "title": "Using the line to make predictions",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Imagine a friend who has gained about 6.5 points for every hour of study so far. If she studies 6 hours, you guess she will be around where the pattern says. That is the line talking. But if you ask what happens after 20 hours of studying in one week, the story breaks: scores cannot go above 100, and she would be exhausted. The line only knows about the hours we measured."
+        },
+        {
+          "kind": "procedure",
+          "text": "To predict: 1) Write the line y = mx + b. 2) Put the new x in place of x. 3) Calculate y. 4) Ask: is x inside the range of our data (interpolation, fairly reliable) or far outside it (extrapolation, risky)? 5) Ask if the answer makes sense, for example a score above 100 cannot happen."
+        }
+      ],
+      "example": {
+        "problem": "Using y = 6.5x + 45.5, predict the score for a student who studies 6 hours. Is this a reliable prediction?",
+        "steps": "1. Substitute x = 6: y = 6.5(6) + 45.5. 2. 6.5 times 6 = 39. 3. 39 + 45.5 = 84.5. 4. The data went from 1 to 5 hours, so 6 hours is just a little beyond, and the prediction is reasonable. At 20 hours the line gives 175.5, impossible for a test out of 100, so we would not trust it there.",
+        "expression": "Rational(13,2)*6+Rational(91,2)",
+        "answer": "169/2"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "6.5*x + 45.5",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students trust any prediction, even far outside the data, such as a score of 175 after 20 hours.",
+          "response": "Ask whether the answer makes sense in the real world. Explain that the line is only trusted near the data, and that real patterns often level off."
+        },
+        {
+          "mistake": "Students substitute the number for y instead of x, or forget to multiply the slope by x before adding b.",
+          "response": "Write the rule in words first: score = 6.5 times hours + 45.5. Then ask which one the question gave you, and put that number in its place."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Is the prediction guaranteed to be right?",
+          "answer": "No. It is a best guess from the pattern. Real students will land above or below the line, so we say 'about 84.5'."
+        },
+        {
+          "question": "What if I know the score and want the hours?",
+          "answer": "Put the score in for y and solve for x. For example 71.5 = 6.5x + 45.5 gives 26 = 6.5x, so x = 4 hours."
+        },
+        {
+          "question": "Why is going outside the data riskier than inside?",
+          "answer": "Inside the data we have seen the pattern hold. Outside, we are assuming it continues forever, and in real life things level off or change, like scores that cannot pass 100."
+        }
+      ],
+      "check_question": {
+        "question": "For the line y = -3x + 23 (car value in thousand dollars, x in years), what is the predicted value at 4 years?",
+        "solution": "y = -3(4) + 23 = -12 + 23 = 11, so about 11 thousand dollars.",
+        "expression": "-3*4+23",
+        "answer": "11"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Hot chocolate sales fall as temperature rises. A line of best fit is y = -2x + 50, where x is the temperature in degrees and y is cups sold. Predict the sales at 10 degrees and say whether the trend is positive or negative.",
+      "solution": "The slope is -2, so the trend is negative. Substitute x = 10: y = -2(10) + 50 = -20 + 50 = 30 cups.",
+      "expression": "-2*10+50",
+      "answer": "30"
+    },
+    {
+      "problem": "A line of best fit passes through (2,10) and (6,22). What is the slope, and what does it mean if x is weeks and y is plant height in cm?",
+      "solution": "Slope = (22 - 10) / (6 - 2) = 12/4 = 3. The plant grows about 3 cm per week.",
+      "expression": "(22-10)/(6-2)",
+      "answer": "3"
+    },
+    {
+      "problem": "A line of best fit is y = 4x + 12, where x is hours of practice and y is points scored. How many hours of practice does the line say are needed to score 40 points?",
+      "solution": "Set 40 = 4x + 12. Subtract 12: 28 = 4x. Divide by 4: x = 7 hours.",
+      "expression": "(40-12)/4",
+      "answer": "7"
+    }
+  ],
+  "meta": {
+    "concept": "scatter-plots",
+    "title": "Scatter plots and trends",
+    "model": "sonnet",
+    "cost_usd": 0.12996,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Scatter+plots+and+trends"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Scatter+plots+and+trends"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Scatter+plots+and+trends"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Scatter+plots+and+trends"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Scatter+plots+and+trends+math"
+    }
+  ]
+}

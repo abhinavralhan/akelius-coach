@@ -108,3 +108,6 @@ Each step ends with a commit and a step-log entry with **start and end times** (
 
 ### Step 13: reliable saving in My notes
 - **Did:** Save button + autosave (1 s after typing stops). Every write is read back from localStorage; the status line says "All notes saved … at HH:MM" only when confirmed, otherwise "Not saved …" with the text kept on screen. Pending notes are saved before switching tab or topic; a warning appears before leaving with unsaved notes; "Download my notes" gives a .txt backup. The sketch pad uses the same path. `tests/notes_save.test.mjs` runs the real page code against fake storage: normal, throwing (private mode), silently dropping — 3/3 pass.
+
+### Step 14: removed the AI warning banner from the notes page
+- **Did:** removed the "Written by AI and checked automatically … read with extra care" banner at the user's request. Kept: the AI label on live answers, and the `ai_generated`/`reviewed` metadata. D17 updated: educator review and a terms-of-use notice now carry the transparency duty before launch.

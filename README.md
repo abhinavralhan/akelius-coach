@@ -93,7 +93,7 @@ Full list: [docs/research-notes.md §6](docs/research-notes.md).
 1. **Grounding:** notes are generated from lessons we checked by hand (their arithmetic is verified with Python).
 2. **A deterministic gate:** `coach/check.py` enforces the structure: a 40-minute plan ending with the 10-minute round, and every part in every subtopic. It recomputes every example, check question and extra example with SymPy, and validates every drawing's values. All 27 sheets passed on the first try. Tests prove the gate catches a wrong answer, an injected expression, a model-written URL and a missing section.
 3. **Eval** ([evals/results.md](evals/results.md)): 10 teacher questions across grades 3–9 go through the live pipeline. They include traps: a student's wrong answer to correct, a notation trap (−3² vs (−3)²) and an off-topic question. Claude Sonnet grades each answer on a fixed rubric. **Result (on the previous sheet structure; rerun pending): correct 10/10, explains why 9/10 (the 1 is the off-topic question, where there is nothing to explain), plain language 10/10, respectful 10/10, honest about scope 10/10.** The first run caught a flaw in the eval itself (the judge couldn't see the sheet the answers referred to), and the results file documents the fix. Limits: a small sample, a same-family judge, English only.
-4. **Honesty in the product:** everything AI-written says so and shows "not yet reviewed". Failures show a plain message, never a broken answer.
+4. **Honesty in the product:** live answers are labelled as AI answers, and failures show a plain message, never a broken answer.
 
 ## Cost per teacher per month, and how to lower it
 
@@ -114,7 +114,7 @@ Full model with every assumption and a script to rerun: [docs/cost-model.md](doc
 - **YouTube videos** are looked up when content is prepared, not when a teacher visits. A teacher's browser contacts YouTube only if they click a video link.
 - **Teachers' own notes and sketches** stay in their browser (local storage). They are never sent to our server or to the AI.
 - **Not collected:** names, emails, locations, scores, progress.
-- **AI transparency:** all generated content is labelled as written by AI and not yet reviewed, in line with the EU AI Act's transparency duties. Akelius is EU-based.
+- **AI transparency:** live answers are labelled as AI answers, and each sheet's metadata records that it is AI-generated and whether an educator has reviewed it. The notes page no longer shows a banner (product decision), so before launch every sheet should be reviewed by an educator, and the terms of use should say the content is AI-assisted (EU AI Act transparency; Akelius is EU-based).
 - **Production notes:** choose an LLM provider with EU data processing and no training on inputs; add a retention period for stored questions and feedback.
 
 ## Content and licences

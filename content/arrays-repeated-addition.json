@@ -1,0 +1,258 @@
+{
+  "idea": "Repeated addition means adding the same number again and again, such as 4 + 4 + 4. An array is a neat arrangement of objects in equal rows and equal columns, and it shows repeated addition in a picture: each row is one group. The total can be written as an addition sentence or as a multiplication sentence, so 3 rows of 4 is 4 + 4 + 4 = 12, which is 3 x 4 = 12.",
+  "why": "Multiplication is a short way to write adding equal groups. In an array every row has the same number of objects, so counting row by row is the same as adding that number once for each row. The objects also line up in columns, so you can count column by column instead. The same objects are counted either way, so the total does not change. That is why 3 rows of 4 and 4 rows of 3 both give 12.",
+  "theory_example": {
+    "problem": "A tray has 3 rows of muffins with 4 muffins in each row. How many muffins are there?",
+    "steps": "1. Draw the array: 3 rows, 4 muffins in each row. 2. Each row is one group of 4. 3. Add one group for each row: 4 + 4 + 4. 4. 4 + 4 = 8, and 8 + 4 = 12. 5. Write it as multiplication: 3 rows of 4 is 3 x 4 = 12. 6. Turn the tray a quarter turn: now there are 4 rows of 3, and 3 + 3 + 3 + 3 = 12 as well.",
+    "expression": "4+4+4",
+    "answer": "12"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up using the subtopic Repeated addition of equal groups: show 3 plates with 4 counters on each (or draw them). Ask how many counters there are in all and how the students worked it out. Collect their ways and point out the ones that added 4 + 4 + 4."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach the subtopic Repeated addition of equal groups: use the story and the procedure, work the example together, show the bar picture, then ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach the subtopic Arrays: rows and columns: have students build an array with counters or draw dots, then read it as rows. Work the example, discuss the two mistakes, then ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach the subtopic Turning an array around: students build 3 rows of 4, turn the paper a quarter turn and recount. Show the bar picture of both totals, work the example, then ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work the 3 extra examples with the class (mixing all three subtopics), asking students to draw each array first. Leave the last minutes for open questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Repeated addition of equal groups",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "3 friends each have a bag with 4 marbles. To find all the marbles, add bag by bag: 4, then 4 more is 8, then 4 more is 12. When every bag has the same number, we add the same number again and again. That is repeated addition."
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: find how many groups. Step 2: find how many are in each group. Step 3: write the group size once for each group, with plus signs between. Step 4: add from left to right. Always check that the groups really are equal."
+        }
+      ],
+      "example": {
+        "problem": "There are 5 cups with 2 straws in each cup. How many straws are there?",
+        "steps": "1. There are 5 groups (cups). 2. Each group has 2 straws. 3. Write 2 five times: 2 + 2 + 2 + 2 + 2. 4. Add step by step: 2, 4, 6, 8, 10. 5. There are 10 straws.",
+        "expression": "2+2+2+2+2",
+        "answer": "10"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Group 1;Group 2;Group 3",
+        "a": 4,
+        "b": 4,
+        "c": 4,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "A student writes 3 + 4 for 3 groups of 4, adding the number of groups to the group size.",
+          "response": "Ask them to draw the 3 groups and count the objects. Then show that 3 + 4 would only be 7 objects, while the picture has 12. Say: the group size is written once for each group."
+        },
+        {
+          "mistake": "A student adds groups that are not equal, such as 4 + 4 + 3, and calls it repeated addition.",
+          "response": "Say that repeated addition needs the same number each time. The sum 4 + 4 + 3 is still a correct addition, but it is not a multiplication. Ask them to find which group is different and fix it."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we add the same number many times?",
+          "answer": "Because each group has the same size, and to count everything we need to include every group. Adding one group at a time makes sure we count each group once."
+        },
+        {
+          "question": "Is 4 + 4 + 4 different from 3 groups of 4?",
+          "answer": "No, it is the same thing written two ways. 4 + 4 + 4 is the addition sentence, and 3 groups of 4 is the words for it."
+        },
+        {
+          "question": "Can I just count them one by one instead?",
+          "answer": "Yes, and you will get the same answer. Repeated addition is a faster way, because you count in jumps of the group size instead of one at a time."
+        }
+      ],
+      "check_question": {
+        "question": "There are 4 boxes with 3 pencils in each box. Write a repeated addition sentence and say how many pencils there are.",
+        "solution": "There are 4 groups of 3, so 3 + 3 + 3 + 3 = 12 pencils.",
+        "expression": "3+3+3+3",
+        "answer": "12"
+      }
+    },
+    {
+      "title": "Arrays: rows and columns",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw dots in neat lines. Rows go across, like rows of seats in a cinema. Columns go up and down, like columns holding up a building. Draw a ring around each row. Every ring is one group, and every ring has the same number of dots."
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: count the rows. Step 2: count the dots in one row. Step 3: write the number in one row once for each row and add. Step 4: write the multiplication sentence: number of rows x number in each row. In this lesson 3 x 4 means 3 rows of 4."
+        }
+      ],
+      "example": {
+        "problem": "A garden has 5 rows of 3 flowers. How many flowers are there in all?",
+        "steps": "1. Draw 5 rows with 3 flowers in each row. 2. Each row is a group of 3. 3. Write 3 five times: 3 + 3 + 3 + 3 + 3. 4. Add: 3, 6, 9, 12, 15. 5. The multiplication sentence is 5 x 3 = 15. 6. There are 15 flowers.",
+        "expression": "3+3+3+3+3",
+        "answer": "15"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "A student mixes up rows and columns and says that 5 rows of 3 has 3 rows.",
+          "response": "Have them trace a row with a finger going across and a column going down. Remind them: rows go across like lines of writing. Then ask them to name the rows and columns in their own array."
+        },
+        {
+          "mistake": "A student draws an array whose rows are uneven, for example 3 dots in one row and 4 in the next.",
+          "response": "Ask them to check that every row has the same number and that the dots line up in columns. Say that an array must be neat and equal, or the total cannot be found by repeated addition."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we need to line the objects up neatly?",
+          "answer": "A neat array makes the equal groups easy to see, and it is easy to count rows and columns. If the objects are messy, we may miss some or count some twice."
+        },
+        {
+          "question": "Does the array have to be dots?",
+          "answer": "No. It can be any objects: stickers, chairs, windows, tiles. What matters is equal rows and equal columns."
+        },
+        {
+          "question": "Which number comes first in 5 x 3?",
+          "answer": "In this lesson the first number is the number of rows and the second is how many are in each row, so 5 x 3 is 5 rows of 3. Some books write it the other way. Both ways give 15, and we will see why in the next part."
+        }
+      ],
+      "check_question": {
+        "question": "An array has 2 rows with 6 dots in each row. Write a repeated addition sentence and find the total.",
+        "solution": "There are 2 rows of 6, so 6 + 6 = 12 dots.",
+        "expression": "6+6",
+        "answer": "12"
+      }
+    },
+    {
+      "title": "Turning an array around",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw an array with 3 rows of 4. Turn the paper a quarter turn. Now it looks like 4 rows of 3. No dot was added or taken away, so the total is the same. The rows have become columns and the columns have become rows."
+        },
+        {
+          "kind": "story",
+          "text": "A teacher sets out chairs in 3 rows of 4. A helper stands at the side and sees 4 rows of 3. Both of them count the same chairs, so both get 12. Where you stand does not change how many chairs there are."
+        }
+      ],
+      "example": {
+        "problem": "An array has 3 rows of 4 dots. Write two repeated addition sentences for it and find the total.",
+        "steps": "1. Count by rows: 3 rows of 4 gives 4 + 4 + 4 = 12. 2. Turn the array: now there are 4 rows of 3. 3. Count by the new rows: 3 + 3 + 3 + 3 = 12. 4. Both sentences give 12, so 3 x 4 = 4 x 3 = 12.",
+        "expression": "3+3+3+3",
+        "answer": "12"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "3 rows of 4;4 rows of 3",
+        "a": 12,
+        "b": 12,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "A student thinks that 3 rows of 4 and 4 rows of 3 give different totals because the pictures look different.",
+          "response": "Let them build 3 rows of 4 with counters, turn it, and recount. The pictures look different but the counters are the same. Use this to show that the order can be swapped."
+        },
+        {
+          "mistake": "A student says that swapping the order works for everything, including 5 + 2 - 1 and 1 - 2 + 5, or thinks it also works for subtraction.",
+          "response": "Say that for adding and for multiplying, the order can be swapped. Show a quick example with subtraction: 5 - 2 is 3, but 2 - 5 is not 3. So this idea only covers adding and multiplying."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why does turning the array not change the total?",
+          "answer": "Because we are not adding or removing anything. It is the same dots, just viewed in a different direction. We are counting the same set in a different order."
+        },
+        {
+          "question": "So does this mean 3 x 4 and 4 x 3 mean the same thing?",
+          "answer": "They give the same total, 12. They describe different pictures, 3 rows of 4 and 4 rows of 3, but the number of objects is the same."
+        },
+        {
+          "question": "How does that help me?",
+          "answer": "It means you only have to learn half as many facts. If you know 3 x 4, you also know 4 x 3. You can also pick the order that is easier to add: 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 is long, but 10 + 10 is short."
+        }
+      ],
+      "check_question": {
+        "question": "You know that 2 rows of 5 is 10. How many are there in 5 rows of 2, and how do you know?",
+        "solution": "There are 10. Turning the array of 2 rows of 5 gives 5 rows of 2, with the same dots, so 2 + 2 + 2 + 2 + 2 = 10.",
+        "expression": "2+2+2+2+2",
+        "answer": "10"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "There are 6 bags with 2 apples in each bag. Write a repeated addition sentence and find how many apples there are.",
+      "solution": "There are 6 groups of 2, so 2 + 2 + 2 + 2 + 2 + 2. Adding gives 2, 4, 6, 8, 10, 12. There are 12 apples.",
+      "expression": "2+2+2+2+2+2",
+      "answer": "12"
+    },
+    {
+      "problem": "A sticker sheet has 4 rows of 5 stickers. How many stickers are on the sheet?",
+      "solution": "There are 4 rows, each with 5 stickers. So 5 + 5 + 5 + 5 = 20, or 4 x 5 = 20. There are 20 stickers.",
+      "expression": "5+5+5+5",
+      "answer": "20"
+    },
+    {
+      "problem": "An array has 3 rows of 7 dots. Find the total, then turn the array and write the new repeated addition sentence.",
+      "solution": "3 rows of 7: 7 + 7 + 7 = 21. Turning the array gives 7 rows of 3: 3 + 3 + 3 + 3 + 3 + 3 + 3 = 21. The total is the same, 21.",
+      "expression": "7+7+7",
+      "answer": "21"
+    }
+  ],
+  "meta": {
+    "concept": "arrays-repeated-addition",
+    "title": "Arrays and repeated addition",
+    "model": "sonnet",
+    "cost_usd": 0.13305,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Arrays+and+repeated+addition"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Arrays+and+repeated+addition"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Arrays+and+repeated+addition"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Arrays+and+repeated+addition"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Arrays+and+repeated+addition+math"
+    }
+  ]
+}

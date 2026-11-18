@@ -1,0 +1,258 @@
+{
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: put a handful of real or play coins and notes on a desk. Ask students to name each one and say what it is worth. Write the values on the board in cents (1, 5, 10, 25, 100, 500). This opens 'Coin and note values: counting a mixed handful'."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Coin and note values: counting a mixed handful'. Work the example (3 quarters, 2 dimes, 1 nickel, 4 pennies) and show the bar drawing. Sort coins from biggest to smallest and count on. Finish with the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Adding prices to find a total'. Work the pencil case and notebook example. Show the bar drawing. Have students add cents first, then dollars, and say the total in dollars and cents. Finish with the check question."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Making change by counting up'. Act it out with a shopkeeper and a customer using play money. Work the example (pay $10 for $6.35), show the bar drawing, and compare counting up with subtracting. Finish with the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Work the 3 extra examples one at a time. Let students try each first, then share methods. Leave the last few minutes for any questions students have."
+    }
+  ],
+  "idea": "Counting money means finding the total value of coins and notes. Each piece has its own value, so we do not count pieces, we add up values. We can work in cents, which makes everything whole numbers, then write the answer in dollars and cents.",
+  "why": "A coin is a name for an amount: a dime is 10 cents, so 3 dimes is 3 groups of 10, which is 30 cents. Counting money is therefore multiplication and addition of values. Sorting from largest to smallest and counting on keeps the sums easy, because big jumps come first and the small ones are left for last. Change works because paying is a missing-addend problem: cost + change = amount paid. Counting up from the cost to the amount paid finds the missing part without a hard subtraction. Working in cents avoids decimal mistakes: 100 cents make 1 dollar, so 785 cents is 7 dollars and 85 cents.",
+  "theory_example": {
+    "problem": "Lena has one $5 note, two $1 coins, three quarters and one dime. How much money does she have?",
+    "steps": "Write each value in cents: $5 note = 500, two $1 coins = 2 x 100 = 200, three quarters = 3 x 25 = 75, one dime = 10. Add largest first: 500 + 200 = 700. 700 + 75 = 775. 775 + 10 = 785 cents. 785 cents = 7 dollars and 85 cents = $7.85.",
+    "expression": "500 + 2*100 + 3*25 + 10",
+    "answer": "785"
+  },
+  "subtopics": [
+    {
+      "title": "Coin and note values: counting a mixed handful",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Step 1: sort the money from biggest value to smallest. Step 2: for each kind, multiply the number of pieces by its value (3 quarters = 3 x 25 = 75). Step 3: add the amounts, biggest first. Step 4: say the total in cents, then in dollars and cents (100 cents = 1 dollar)."
+        },
+        {
+          "kind": "picture",
+          "text": "Lay the coins out in rows by kind. Under each row write its total, for example 25, 50, 75 under the quarters as you point to each coin. Then the rows become a short list of numbers to add. This shows that a row of coins is just a skip-count."
+        }
+      ],
+      "example": {
+        "problem": "Count 3 quarters, 2 dimes, 1 nickel and 4 pennies.",
+        "steps": "Quarters: 3 x 25 = 75. Dimes: 2 x 10 = 20. Nickel: 1 x 5 = 5. Pennies: 4 x 1 = 4. Add: 75 + 20 = 95. 95 + 5 = 100. 100 + 4 = 104 cents, which is $1.04.",
+        "expression": "3*25 + 2*10 + 5 + 4",
+        "answer": "104"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Quarters;Dimes;Nickel;Pennies",
+        "a": 75,
+        "b": 20,
+        "c": 5,
+        "d": 4
+      },
+      "mistakes": [
+        {
+          "mistake": "Counting the number of coins instead of their value (for example, saying 10 for 3 + 2 + 1 + 4 coins).",
+          "response": "Ask 'Is a quarter worth the same as a penny?' Then have the student write the value under each coin before adding. Say that we count value, not pieces."
+        },
+        {
+          "mistake": "Writing 104 cents as $1.4 or $104.",
+          "response": "Go back to 100 cents = 1 dollar. Split 104 into 100 and 4: one dollar and four cents, so $1.04. Cents always take two places after the point."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why is a nickel worth 5 if it is bigger than a dime?",
+          "answer": "The size of a coin does not tell its value. Value is a number we agree on. A dime is small but worth 10 cents, and a nickel is bigger but worth 5."
+        },
+        {
+          "question": "Why do we count the big coins first?",
+          "answer": "Big values make big jumps, so the sum is easier. Then the small coins are left to add on at the end. You can count in any order and get the same total, but this order makes fewer mistakes."
+        },
+        {
+          "question": "Why do we change dollars to cents?",
+          "answer": "Then everything is a whole number and we can add without worrying about the decimal point. At the end we turn it back: every 100 cents is 1 dollar."
+        }
+      ],
+      "check_question": {
+        "question": "How much is 2 quarters, 3 dimes and 2 pennies?",
+        "solution": "2 x 25 = 50, 3 x 10 = 30, 2 x 1 = 2. 50 + 30 + 2 = 82 cents.",
+        "expression": "2*25 + 3*10 + 2",
+        "answer": "82"
+      }
+    },
+    {
+      "title": "Adding prices to find a total",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "You are at a school shop with a friend. You pick up a pencil case for $3.45 and a notebook for $2.80. The cashier needs to know how much to ask for. She adds the two prices together. Ask students what they would say the total is before you show the method."
+        },
+        {
+          "kind": "procedure",
+          "text": "Change both prices to cents (345 and 280), or add the cents first and then the dollars. Line up the digits by place value, add the ones, then the tens, then the hundreds, and regroup when a column reaches 10. Write the answer back as dollars and cents."
+        }
+      ],
+      "example": {
+        "problem": "A pencil case costs $3.45 and a notebook costs $2.80. What is the total?",
+        "steps": "Write in cents: 345 and 280. Add the cents part: 45 + 80 = 125 cents = 1 dollar and 25 cents. Add the dollars: 3 + 2 = 5, then 1 more from the cents: 6. The total is 6 dollars and 25 cents. Check: 345 + 280 = 625 cents = $6.25.",
+        "expression": "345 + 280",
+        "answer": "625"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Pencil case;Notebook;Total",
+        "a": 345,
+        "b": 280,
+        "c": 625,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Lining up the numbers wrongly, for example adding 3.45 and 2.8 as if 2.8 meant 2 dollars and 8 cents.",
+          "response": "Write 2.80 with the zero, so both prices have two cent digits. Line up the decimal points and add the columns."
+        },
+        {
+          "mistake": "Forgetting to carry when the cents add up to more than 100.",
+          "response": "Ask 'How many cents make a dollar?' Show that 125 cents is 1 dollar and 25 cents. Move that dollar over to the dollar column."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we add the cents first?",
+          "answer": "Because they are the smallest part and might make a new dollar. If we know that first, we can carry it into the dollars. It is the same as adding ones before tens."
+        },
+        {
+          "question": "Why can I write $2.8 but my teacher wants $2.80?",
+          "answer": "They are the same amount. With money we always write two digits for cents, so it is clear that it is 80 cents and not 8 cents."
+        },
+        {
+          "question": "Can I use a calculator?",
+          "answer": "Yes, for checking. But practise the method by hand first, because you need to understand why the answer makes sense. Ask yourself: is it about 3 + 3 = 6? Then $6.25 is a good answer."
+        }
+      ],
+      "check_question": {
+        "question": "A sandwich costs $4.30 and a drink costs $1.95. What is the total?",
+        "solution": "430 + 195 = 625 cents, which is $6.25. Check by rounding: about 4 + 2 = 6.",
+        "expression": "430 + 195",
+        "answer": "625"
+      }
+    },
+    {
+      "title": "Making change by counting up",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "You are the shopkeeper. A customer buys something for $6.35 and gives you a $10 note. You do not take money out of the note. You hand back coins while saying numbers, starting at the price, until you reach $10. The coins you handed over are the change."
+        },
+        {
+          "kind": "procedure",
+          "text": "Start at the price. Count up to the next easy number, such as the next 10 cents, 50 cents or dollar, then go up to the amount paid in big jumps. Add up your jumps to get the change. Check: price + change should equal the amount paid."
+        }
+      ],
+      "example": {
+        "problem": "Mia buys a book for $6.35 and pays with a $10 note. What is her change?",
+        "steps": "Start at $6.35. Add 5 cents to reach $6.40. Add 10 cents to reach $6.50. Add 50 cents to reach $7.00. Add 3 dollars to reach $10.00. Jumps: 5 + 10 + 50 + 300 = 365 cents. Change is $3.65. Check: 635 + 365 = 1000 cents = $10.",
+        "expression": "1000 - 635",
+        "answer": "365"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Cost;Change;Paid",
+        "a": 635,
+        "b": 365,
+        "c": 1000,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Subtracting the wrong way or lining up the digits wrongly, for example getting $4.35 or $3.75.",
+          "response": "Have the student check by adding: does cost + change give the amount paid? If it does not, the change is wrong. Then show counting up with a number line."
+        },
+        {
+          "mistake": "Forgetting a jump, so the change is too small.",
+          "response": "Have the student list the jumps and say where each one ends. The last landing spot must be the amount paid, here $10.00."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why count up instead of just subtract?",
+          "answer": "Counting up uses small, easy jumps and no borrowing. Both ways give the same answer. Use whichever one you trust, and check with the other."
+        },
+        {
+          "question": "Why does adding check a subtraction?",
+          "answer": "Because paying is cost plus change. If cost + change equals what was paid, the change is right. Addition and subtraction undo each other."
+        },
+        {
+          "question": "Is there only one way to give change?",
+          "answer": "The amount is always the same, $3.65. But the coins can differ. You could give three $1 coins, two quarters, a dime and a nickel, or other coins that add up to 365."
+        }
+      ],
+      "check_question": {
+        "question": "A snack costs $2.60. You pay with $5. What is your change?",
+        "solution": "Count up from 2.60: 40 cents to $3, then $2 to $5. 40 + 200 = 240 cents, so the change is $2.40. Check: 260 + 240 = 500.",
+        "expression": "500 - 260",
+        "answer": "240"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Sam has 2 dimes, 3 nickels and 7 pennies. How many cents does he have?",
+      "solution": "2 x 10 = 20, 3 x 5 = 15, 7 x 1 = 7. 20 + 15 + 7 = 42 cents.",
+      "expression": "2*10 + 3*5 + 7",
+      "answer": "42"
+    },
+    {
+      "problem": "An apple costs $1.35 and a juice costs $2.40. You pay with a $5 note. What is your change?",
+      "solution": "Total: 135 + 240 = 375 cents. Change: count up from 375 to 500. 25 cents to reach $4.00, then $1 to reach $5.00, so 25 + 100 = 125 cents, which is $1.25. Check: 375 + 125 = 500.",
+      "expression": "500 - (135 + 240)",
+      "answer": "125"
+    },
+    {
+      "problem": "A piggy bank has 4 quarters, 6 dimes and three $1 coins. How many cents is that, and how many dollars and cents?",
+      "solution": "4 x 25 = 100, 6 x 10 = 60, 3 x 100 = 300. 100 + 60 + 300 = 460 cents, which is $4.60.",
+      "expression": "4*25 + 6*10 + 3*100",
+      "answer": "460"
+    }
+  ],
+  "meta": {
+    "concept": "money",
+    "title": "Counting money",
+    "model": "sonnet",
+    "cost_usd": 0.05821,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Counting+money"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Counting+money"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Counting+money"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Counting+money"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Counting+money+math"
+    }
+  ]
+}

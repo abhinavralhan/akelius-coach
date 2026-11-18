@@ -1,0 +1,254 @@
+{
+  "idea": "A whole number is even if it can be split into pairs with nothing left over, and odd if exactly one is left over. Even numbers end in 0, 2, 4, 6 or 8. Odd numbers end in 1, 3, 5, 7 or 9. Once you know this, you can predict whether a sum or a product is odd or even without working it out.",
+  "why": "Every whole number is either 2 times something (even) or 2 times something plus 1 (odd). Pairing is the picture of this: even means everything is paired, odd means one single is left. The last-digit rule works because 10, 100, 1000 and so on are all even, so only the ones digit can decide. The sum rules come from pairing too: two odd numbers each have one single left over, and those two singles pair up, so the sum is even. In a product, one even factor means the pairs are already there, so the product is even.",
+  "theory_example": {
+    "problem": "Is 27 + 14 + 9 odd or even? Predict first, then check by adding.",
+    "steps": "Step 1: 27 is odd, 14 is even, 9 is odd. Step 2: odd + odd = even, so 27 + 9 is even. Step 3: even + even = even, so adding 14 keeps it even. Prediction: even. Step 4: Check: 27 + 14 = 41, and 41 + 9 = 50. 50 ends in 0, so it is even.",
+    "expression": "27 + 14 + 9",
+    "answer": "50"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 10,
+      "activity": "Teach 'Pairing: what odd and even mean'. Have students draw dots for 6, 7, 9 and 12 and circle pairs. Show the bars picture. Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Teach 'The last digit tells you'. Write several big numbers on the board and let students decide odd or even from the ones digit. Explain why only the last digit matters. Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Teach 'Adding and multiplying odd and even numbers'. Let students test rules with small numbers, then write the rules together. Show the bars picture. Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work through the 3 extra examples, asking students to predict odd or even before calculating. Leave time for student questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Pairing: what odd and even mean",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw 7 dots and circle them in pairs. Three pairs are circled and one dot is left alone, so 7 is odd. Draw 6 dots: three pairs and nothing left, so 6 is even. Do 0 dots too: nothing is left over, so 0 is even."
+        },
+        {
+          "kind": "story",
+          "text": "Students are picking dance partners. With 14 students everyone has a partner, so 14 is even. If 9 students come, four pairs dance and one student is left without a partner, so 9 is odd."
+        }
+      ],
+      "example": {
+        "problem": "Is 14 even or odd? Is 9 even or odd?",
+        "steps": "Step 1: Split 14 into pairs: 14 / 2 = 7 pairs with nothing left, so 14 is even. Step 2: Split 9 into pairs: 4 pairs use 8, and 1 is left over (9 - 2*4 = 1), so 9 is odd.",
+        "expression": "9 - 2*4",
+        "answer": "1"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Even 6;Odd 7",
+        "a": 6,
+        "b": 7,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students say 0 is not even, or that it is neither.",
+          "response": "Go back to pairing: 0 dots, nothing left over, so 0 is even. Also on the number line, 0 sits between -1 and 1 and fits the odd-even-odd pattern."
+        },
+        {
+          "mistake": "Students call a number odd because it is big, or even because it looks 'round'.",
+          "response": "Ask them to pair it up, or to look at the ones digit. Size does not matter, only whether there is a leftover."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why is 0 even?",
+          "answer": "Even means you can make pairs with nothing left over. With zero things, there is nothing left over. Also 0 = 2 times 0."
+        },
+        {
+          "question": "Can a number be both odd and even?",
+          "answer": "No. Either one is left over after pairing or none is. It is always exactly one of them."
+        },
+        {
+          "question": "Are negative numbers odd or even?",
+          "answer": "The same rule works. -4 is even and -7 is odd. The pattern odd, even, odd, even continues on the number line in both directions."
+        }
+      ],
+      "check_question": {
+        "question": "If you pair up 11 counters, how many are left over, and is 11 odd or even?",
+        "solution": "5 pairs use 10 counters, so 1 is left over. 11 is odd.",
+        "expression": "11 - 2*5",
+        "answer": "1"
+      }
+    },
+    {
+      "title": "The last digit tells you",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Look only at the ones digit. If it is 0, 2, 4, 6 or 8, the number is even. If it is 1, 3, 5, 7 or 9, the number is odd. Ignore all the other digits."
+        },
+        {
+          "kind": "picture",
+          "text": "Write 3,486,257 as 3,486,250 + 7. Show that 3,486,250 is a whole number of tens, and tens are made of pairs (10 = 5 pairs). So all of it is paired up, and only the 7 can leave a single. 7 is odd, so the whole number is odd."
+        }
+      ],
+      "example": {
+        "problem": "Is 3,486,257 odd or even?",
+        "steps": "Step 1: Find the ones digit: 7. Step 2: 7 is odd. Step 3: So 3,486,257 is odd. Check: 3,486,257 - 2*1,743,128 = 1, so one is left over.",
+        "expression": "3486257 - 2*1743128",
+        "answer": "1"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students look at the first digit, for example saying 27 is even because it starts with 2.",
+          "response": "Split 27 as 20 + 7. The 20 is paired up, but 7 leaves a single. Only the last digit matters."
+        },
+        {
+          "mistake": "Students think a number with many even digits is even, like 2,461.",
+          "response": "Ask them to circle the ones digit only. Here it is 1, so the number is odd, whatever the other digits are."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why only the last digit?",
+          "answer": "Because tens, hundreds, thousands are all made of pairs, since 10 is even. Only the ones can leave a single."
+        },
+        {
+          "question": "Does this work for a really big number?",
+          "answer": "Yes, for any whole number, however big. Just check the ones digit."
+        },
+        {
+          "question": "What about decimals like 4.5?",
+          "answer": "Odd and even are only for whole numbers. 4.5 is neither."
+        }
+      ],
+      "check_question": {
+        "question": "Is 5,018 odd or even? What is half of it?",
+        "solution": "The ones digit is 8, so it is even. Half of it is 5018 / 2 = 2509.",
+        "expression": "5018/2",
+        "answer": "2509"
+      }
+    },
+    {
+      "title": "Adding and multiplying odd and even numbers",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Sums: even + even = even, odd + odd = even, odd + even = odd. Products: if any factor is even, the product is even. Only odd x odd gives odd. Have students test each rule with two small numbers of their own."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw 3 dots with one single, and 5 dots with one single. Put them together: the two singles now form a pair, so 3 + 5 = 8 is even. With 3 and 4 there is only one single, and it stays single, so 7 is odd."
+        }
+      ],
+      "example": {
+        "problem": "Is 7 x 8 + 5 odd or even?",
+        "steps": "Step 1: 7 x 8 has an even factor (8), so it is even. Step 2: even + odd = odd. Prediction: odd. Step 3: Check: 7 x 8 = 56, and 56 + 5 = 61. 61 ends in 1, so it is odd.",
+        "expression": "7*8 + 5",
+        "answer": "61"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "7 times 8;5;Total",
+        "a": 56,
+        "b": 5,
+        "c": 61,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students say odd + odd = odd.",
+          "response": "Use pairing: 3 + 5, each has a single, and the two singles make a pair. So the sum is even. Try 3 + 5 = 8 together."
+        },
+        {
+          "mistake": "Students say odd x odd = even, or think the product of an odd and an even is odd.",
+          "response": "Test with 3 x 5 = 15, which is odd. And 3 x 4 = 12 is even. Any even factor gives an even product, because 4 means pairs are already there."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is odd x odd odd?",
+          "answer": "An odd number is 2 times something plus 1. Multiply two of those and every part is paired except 1 x 1 = 1, so one single is left."
+        },
+        {
+          "question": "Do I have to learn these rules by heart?",
+          "answer": "You can work them out with small numbers like 3 and 5, or with dots. Using them often helps you remember."
+        },
+        {
+          "question": "Does this work with three or more numbers?",
+          "answer": "Yes. Add two at a time. Or count the odd numbers: an even count of odd numbers gives an even sum."
+        }
+      ],
+      "check_question": {
+        "question": "Is 13 + 27 odd or even? What is the sum?",
+        "solution": "Both are odd, and odd + odd = even. Check: 13 + 27 = 40, which is even.",
+        "expression": "13 + 27",
+        "answer": "40"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Is 1,000,001 + 2,000 odd or even? Find the sum.",
+      "solution": "1,000,001 is odd and 2,000 is even, so odd + even = odd. The sum is 1,002,001, which ends in 1, so it is odd.",
+      "expression": "1000001 + 2000",
+      "answer": "1002001"
+    },
+    {
+      "problem": "Without calculating first, is 15 x 23 x 8 odd or even? Then find it.",
+      "solution": "8 is even, so the product is even. Check: 15 x 23 = 345, and 345 x 8 = 2760, which ends in 0, so it is even.",
+      "expression": "15*23*8",
+      "answer": "2760"
+    },
+    {
+      "problem": "Add the numbers 1 to 10. Is the sum odd or even?",
+      "solution": "There are 5 odd numbers (1, 3, 5, 7, 9) and 5 is an odd count, so the sum is odd. Check: 10 x 11 / 2 = 55, which is odd.",
+      "expression": "10*11/2",
+      "answer": "55"
+    }
+  ],
+  "meta": {
+    "concept": "odd-and-even",
+    "title": "Odd and even numbers",
+    "model": "sonnet",
+    "cost_usd": 0.13373,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Odd+and+even+numbers"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Odd+and+even+numbers"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Odd+and+even+numbers"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Odd+and+even+numbers"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Odd+and+even+numbers+math"
+    }
+  ]
+}

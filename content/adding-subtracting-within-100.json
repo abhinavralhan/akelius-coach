@@ -1,0 +1,258 @@
+{
+  "idea": "Adding and subtracting within 100 means working with numbers up to 100 by thinking in tens and ones. We split numbers into tens and ones, combine or take away each part, and trade 10 ones for 1 ten (or 1 ten for 10 ones) when we need to. Students also learn that addition and subtraction undo each other, so they can check their own answers.",
+  "why": "Our number system is built on groups of ten: 47 really is 4 tens and 7 ones. Adding tens to tens and ones to ones works because each place keeps its own value. When the ones make 10 or more, 10 ones are worth exactly 1 ten, so we trade them for a ten in the next column. That is all \"carrying\" is. Subtraction mirrors this: if there are not enough ones to take away, we break 1 ten into 10 ones, so the total stays the same. Because subtraction asks \"what must I add to get back?\", adding the answer to the amount taken away should give the starting number. That is why checking works.",
+  "theory_example": {
+    "problem": "Find 47 + 28, then find 75 - 28 and see what happens.",
+    "steps": "Split into tens and ones: 47 = 40 + 7 and 28 = 20 + 8. Add the tens: 40 + 20 = 60. Add the ones: 7 + 8 = 15. Combine: 60 + 15 = 75 (the 15 ones are 1 ten and 5 ones). Now subtract: 75 - 28. There are only 5 ones and we need to take away 8, so trade 1 ten for 10 ones: 75 = 6 tens and 15 ones. Take away 2 tens and 8 ones: 6 tens - 2 tens = 4 tens, 15 ones - 8 ones = 7 ones. The result is 47, the number we started with. Addition and subtraction undo each other.",
+    "expression": "47+28",
+    "answer": "75"
+  },
+  "subtopics": [
+    {
+      "title": "Making a ten",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a number line. Start at 8. Ask: how far to the next ten? 2. Jump +2 to land on 10. We still have 7 - 2 = 5 left to add, so jump +5 to land on 15. Two jumps, 8 + 7 = 15. Tens are easy landing spots because they are easy to count on from."
+        },
+        {
+          "kind": "procedure",
+          "text": "1) Look at the two numbers and pick the bigger one, 8. 2) Ask how many more it needs to make 10 (2). 3) Take that 2 from the other number: 7 split into 2 and 5. 4) Add: 8 + 2 = 10, then 10 + 5 = 15. Say it aloud: 'fill the ten first, then add what is left'."
+        }
+      ],
+      "example": {
+        "problem": "Work out 8 + 7 by making a ten.",
+        "steps": "8 needs 2 more to make 10. Split 7 into 2 and 5. 8 + 2 = 10. 10 + 5 = 15. So 8 + 7 = 15.",
+        "expression": "8+7",
+        "answer": "15"
+      },
+      "visual": {
+        "kind": "numberline",
+        "expr": "",
+        "a": 8,
+        "b": 7,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students split 7 into the wrong parts, for example adding 3 to 8 to get 11 and then getting lost.",
+          "response": "Go back to 'how many does 8 need to reach 10?'. Use counters or fingers to show 8 and 2 more fill the ten. Then ask 'how much of the 7 is left?'."
+        },
+        {
+          "mistake": "When counting on, students count the starting number as the first step, so 8 + 7 comes out as 14.",
+          "response": "On the number line, point to the jumps, not to the numbers. Start standing on 8, then count the hops: 1, 2, 3 ... 7. Let a student physically hop along a floor number line."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we go to 10 and not another number?",
+          "answer": "Ten is the friendliest number. Adding to 10 is easy, and after 10 the tens and ones are clearly separated. You could jump somewhere else, but 10 makes the next step simple."
+        },
+        {
+          "question": "Do I have to split the smaller number?",
+          "answer": "Usually yes, because it is easier to see how little the bigger number needs to reach ten. But 8 + 7 and 7 + 8 are the same, so you can start from either number."
+        },
+        {
+          "question": "Is this a trick or the real way?",
+          "answer": "It is a real way. Adding is just putting amounts together, and we may put them together in any order or grouping. We are splitting 7 into 2 + 5 and adding the parts one at a time."
+        }
+      ],
+      "check_question": {
+        "question": "Use making a ten to work out 9 + 6. How much does 9 need to reach 10?",
+        "solution": "9 needs 1 to reach 10. Split 6 into 1 and 5. 9 + 1 = 10, then 10 + 5 = 15.",
+        "expression": "9+6",
+        "answer": "15"
+      }
+    },
+    {
+      "title": "Adding two-digit numbers",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw 47 as 4 ten-sticks and 7 single cubes, and 28 as 2 ten-sticks and 8 cubes. Put the sticks together: 6 sticks. Put the cubes together: 15 cubes. Circle 10 of the cubes and swap them for 1 more stick. Now there are 7 sticks and 5 cubes: 75."
+        },
+        {
+          "kind": "procedure",
+          "text": "Write the numbers one under the other, with tens under tens and ones under ones. Add the ones first: 7 + 8 = 15. Write 5 in the ones place and carry 1 ten. Add the tens: 4 + 2 + the carried 1 = 7. The answer is 75. Explain that the carried 1 is a real ten, which is why it goes in the tens column."
+        }
+      ],
+      "example": {
+        "problem": "Work out 47 + 28.",
+        "steps": "Tens and ones: 40 + 7 and 20 + 8. Ones: 7 + 8 = 15, which is 1 ten and 5 ones. Tens: 40 + 20 = 60. Add the extra ten: 60 + 10 = 70. Add the 5 ones: 75.",
+        "expression": "47+28",
+        "answer": "75"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Forgetting the carried ten, so 47 + 28 comes out as 65.",
+          "response": "Ask the student to check with an estimate: 47 is nearly 50 and 28 is nearly 30, so the answer should be about 80. 65 is too small. Then show the ten sticks again, with 15 ones becoming 1 ten and 5 ones."
+        },
+        {
+          "mistake": "Writing 15 in the ones column, giving 6 tens and 15 ones written as 615.",
+          "response": "Ask how many digits can sit in one place. Only one. 15 ones is 1 ten and 5 ones, so the 1 moves to the tens column. Use place-value cards to trade the ones for a ten."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we start with the ones?",
+          "answer": "Because the ones might make a new ten, and that ten has to be added with the tens. If you start with the tens you can still do it, but you have to go back and change your answer. Starting with the ones avoids that."
+        },
+        {
+          "question": "Why does the 1 go on top of the tens?",
+          "answer": "Because it is a ten, not a one. 10 ones are worth the same as 1 ten, so we move them to the tens column."
+        },
+        {
+          "question": "Can I do it without carrying?",
+          "answer": "Yes. You can add the tens (60), add the ones (15) and then add 60 + 15 = 75. It is the same maths written out in a different way."
+        }
+      ],
+      "check_question": {
+        "question": "What is 36 + 29? Say how many tens and ones you get before you combine them.",
+        "solution": "Tens: 30 + 20 = 50. Ones: 6 + 9 = 15. Then 50 + 15 = 65.",
+        "expression": "36+29",
+        "answer": "65"
+      }
+    },
+    {
+      "title": "Subtracting two-digit numbers and checking",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "You have 62 stickers: 6 packs of ten and 2 loose ones. A friend asks for 37, which is 3 packs and 7 loose stickers. You only have 2 loose ones, so you open one pack. Now you have 5 packs and 12 loose stickers. Give away 7 loose, leaving 5 loose. Give away 3 packs, leaving 2 packs. You have 2 packs and 5 loose: 25. Opening the pack does not change how many stickers you own, only how they are grouped."
+        },
+        {
+          "kind": "procedure",
+          "text": "1) Look at the ones: can we take 7 from 2? No. 2) Trade 1 ten for 10 ones: 6 tens 2 ones becomes 5 tens 12 ones. 3) Subtract the ones: 12 - 7 = 5. 4) Subtract the tens: 5 - 3 = 2. 5) Answer 25. 6) Check by adding the answer to the number you took away: 25 + 37 = 62, which is the number we started with."
+        }
+      ],
+      "example": {
+        "problem": "Work out 62 - 37 and check the answer.",
+        "steps": "62 is 6 tens and 2 ones. We cannot take 7 ones from 2 ones, so trade 1 ten for 10 ones: 5 tens and 12 ones. 12 - 7 = 5 ones. 5 tens - 3 tens = 2 tens. The answer is 25. Check: 25 + 37 = 62, which is the starting number.",
+        "expression": "62-37",
+        "answer": "25"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Taking the smaller digit from the bigger one in each column, so 62 - 37 becomes 35 (7 - 2 = 5 and 6 - 3 = 3).",
+          "response": "Ask: 'If I have 2 stickers, can I give away 7?' Show with sticker packs that you must open a ten. Let the student check by adding 35 + 37 and see that it does not make 62."
+        },
+        {
+          "mistake": "Trading a ten for ones but forgetting to reduce the tens, so the tens stay 6 and the answer comes out as 35 or 45.",
+          "response": "Use ten-sticks. Physically remove one stick and replace it with 10 cubes, then count what is left in the tens place. Say 'I took one ten, so there are five tens left'."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why can I not just flip the numbers and do 7 - 2?",
+          "answer": "Because 62 - 37 means start at 62 and take away 37. Flipping the digits changes the numbers you are taking from. The 7 belongs to the 37 you are taking away, and the 2 belongs to 62."
+        },
+        {
+          "question": "Why does the ten become 10 ones, not 1?",
+          "answer": "One ten is worth ten ones. You are swapping one ten-stick for ten single cubes. The amount stays the same, only the grouping changes."
+        },
+        {
+          "question": "Why does checking with adding work?",
+          "answer": "Subtracting 37 from 62 leaves 25. If we then put the 37 back, we should be back at 62. That is why 25 + 37 must equal 62."
+        }
+      ],
+      "check_question": {
+        "question": "What is 53 - 28? Check your answer by adding.",
+        "solution": "Trade 1 ten for 10 ones: 53 is 4 tens and 13 ones. 13 - 8 = 5 and 4 - 2 = 2, so the answer is 25. Check: 25 + 28 = 53.",
+        "expression": "53-28",
+        "answer": "25"
+      }
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up for Making a ten: ask quick questions like 9 + 4 and 8 + 6. Ask students to say how much the first number needs to reach 10."
+    },
+    {
+      "minutes": 7,
+      "activity": "Teach Making a ten: work through 8 + 7 on the number line, point to each jump, then let students try 9 + 6 as the check question."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach Adding two-digit numbers: model 47 + 28 with ten-sticks and cubes or place-value cards, then write it in columns. Ask the check question 36 + 29."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach Subtracting two-digit numbers and checking: tell the sticker-pack story for 62 - 37, then check by adding 25 + 37. Ask the check question 53 - 28."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work through the three extra examples together, mixing adding and subtracting, and leave time for students' questions."
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Work out 35 + 49.",
+      "solution": "Ones: 5 + 9 = 14, which is 1 ten and 4 ones. Tens: 30 + 40 = 70. Add the extra ten: 80. Add the 4 ones: 84.",
+      "expression": "35+49",
+      "answer": "84"
+    },
+    {
+      "problem": "Work out 81 - 46 and check your answer.",
+      "solution": "81 is 8 tens and 1 one. Trade 1 ten for 10 ones: 7 tens and 11 ones. 11 - 6 = 5 and 7 - 4 = 3, so the answer is 35. Check: 35 + 46 = 81.",
+      "expression": "81-46",
+      "answer": "35"
+    },
+    {
+      "problem": "Work out 90 - 47.",
+      "solution": "90 is 9 tens and 0 ones. Trade 1 ten for 10 ones: 8 tens and 10 ones. 10 - 7 = 3 and 8 - 4 = 4, so the answer is 43. Check: 43 + 47 = 90.",
+      "expression": "90-47",
+      "answer": "43"
+    }
+  ],
+  "meta": {
+    "concept": "adding-subtracting-within-100",
+    "title": "Adding and subtracting within 100",
+    "model": "sonnet",
+    "cost_usd": 0.1425,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Adding+and+subtracting+within+100"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Adding+and+subtracting+within+100"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Adding+and+subtracting+within+100"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Adding+and+subtracting+within+100"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Adding+and+subtracting+within+100+math"
+    }
+  ]
+}

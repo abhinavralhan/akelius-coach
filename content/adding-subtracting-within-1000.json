@@ -1,0 +1,258 @@
+{
+  "idea": "Adding and subtracting within 1000 means working with three-digit numbers by handling hundreds, tens and ones separately. When a column has too many (10 or more) we carry to the next place. When a column does not have enough, we regroup (borrow) from the next place. Subtraction can always be checked by adding back.",
+  "why": "Each digit stands for a value: 346 is 3 hundreds, 4 tens and 6 ones. We add like with like (ones with ones, tens with tens), because 6 ones and 9 ones are both ones, and together they make 15 ones. Ten ones are exactly one ten, so we trade them up. That trade is carrying. Borrowing is the same trade in reverse: one ten becomes ten ones, and the number's total value does not change, only how it is written. Subtraction undoes addition, so if 635 - 289 = 346, then 346 + 289 must give 635. That is why adding back works as a check.",
+  "theory_example": {
+    "problem": "Add 346 + 289, then check the answer by subtracting.",
+    "steps": "Ones: 6 + 9 = 15 ones. Write 5, carry 1 ten. Tens: 4 + 8 + 1 (carried) = 13 tens. Write 3, carry 1 hundred. Hundreds: 3 + 2 + 1 (carried) = 6. So 346 + 289 = 635. Check: 635 - 289. Ones: 5 is less than 9, so regroup: 3 tens 5 ones becomes 2 tens 15 ones. 15 - 9 = 6. Tens: 2 - 8 is not possible, so regroup: 6 hundreds 2 tens becomes 5 hundreds 12 tens. 12 - 8 = 4. Hundreds: 5 - 2 = 3. Result 346, which matches the start.",
+    "expression": "346+289",
+    "answer": "635"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up using 'Adding three-digit numbers with carrying'. Write 300 + 200, then 340 + 250, then 46 + 38 on the board. Ask students to say what each digit is worth (hundreds, tens, ones). This shows that we add like places."
+    },
+    {
+      "minutes": 10,
+      "activity": "Teach 'Adding three-digit numbers with carrying'. Work through 256 + 178 together using place value columns and the bar picture. Ask students to say out loud when ten ones become one ten. Then let pairs try one similar sum of their own choice and swap."
+    },
+    {
+      "minutes": 10,
+      "activity": "Teach 'Subtracting three-digit numbers with regrouping'. Work through 503 - 267 with the bar picture, spending time on the zero in the tens place. Show the regrouping as 5 hundreds 0 tens 3 ones becoming 4 hundreds 9 tens 13 ones. Students copy and solve it with you step by step."
+    },
+    {
+      "minutes": 5,
+      "activity": "Teach 'Checking by adding back'. Do 612 - 375 on the board, then add the answer to 375 to see if you get 612. Ask the class what it means if you do not get 612."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Use the 3 extra_examples in order: a carrying sum, a subtraction across a zero, and a two-step word problem. Let students try each one first, then show the steps. Leave a few minutes for any questions students have."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Adding three-digit numbers with carrying",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Line up the numbers so hundreds, tens and ones are in columns. Start with the ones. Add each column. If the total is 10 or more, write the ones digit and carry the 1 to the next column on the left. Add the carried 1 along with the next column's digits."
+        },
+        {
+          "kind": "story",
+          "text": "Imagine you have coins: ones are single coins, tens are bundles of 10 coins, hundreds are big boxes of 100. When you have 14 single coins, you pack 10 of them into a bundle and keep 4 loose. That bundle goes with the other bundles. Carrying is just packing."
+        }
+      ],
+      "example": {
+        "problem": "256 + 178",
+        "steps": "Ones: 6 + 8 = 14. Write 4, carry 1 ten. Tens: 5 + 7 + 1 = 13. Write 3, carry 1 hundred. Hundreds: 2 + 1 + 1 = 4. The answer is 434.",
+        "expression": "256+178",
+        "answer": "434"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "First;Second;Total",
+        "a": 256,
+        "b": 178,
+        "c": 434,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Forgetting to add the carried 1 in the next column, for example getting 424 for 256 + 178.",
+          "response": "Ask the student to write the small carried 1 above the next column so it is visible. Then ask, 'What did we make when we packed 10 ones?' Let them find the missing ten themselves."
+        },
+        {
+          "mistake": "Writing both digits of a column total, such as 14 in the ones place, so the answer looks like 3714 or similar.",
+          "response": "Remind them each column has room for one digit. Say, 'Fourteen ones is one ten and four ones. Where does the ten go?' Use coins or place value blocks if needed."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we start from the ones and not the hundreds?",
+          "answer": "Because ones can make a new ten, and tens can make a new hundred. If we start on the left, we might have to go back and change our work. Starting on the right means the carrying flows in the right direction. (You can add from the left too, but then you must be ready to fix earlier digits.)"
+        },
+        {
+          "question": "Why do we write only one number and carry the other?",
+          "answer": "Each place can only hold one digit, from 0 to 9. When you reach 10, you have a new unit of the next size up, so it moves to the next column."
+        },
+        {
+          "question": "Can the carry be bigger than 1?",
+          "answer": "Not when adding two numbers. The biggest column total is 9 + 9 + 1 = 19, so you carry at most 1."
+        }
+      ],
+      "check_question": {
+        "question": "What is 364 + 258? Say which columns needed a carry.",
+        "solution": "Ones: 4 + 8 = 12, write 2, carry 1. Tens: 6 + 5 + 1 = 12, write 2, carry 1. Hundreds: 3 + 2 + 1 = 6. Answer 622. Both the ones and tens columns carried.",
+        "expression": "364+258",
+        "answer": "622"
+      }
+    },
+    {
+      "title": "Subtracting three-digit numbers with regrouping",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw 503 as 5 big squares (hundreds), 0 tens and 3 dots (ones). To take away 7 ones you need more dots. Break one big square into 10 tens, then break one ten into 10 ones. Now you have 4 squares, 9 tens and 13 ones. Taking away 267 is now easy column by column."
+        },
+        {
+          "kind": "procedure",
+          "text": "Start with the ones. If the top digit is smaller than the bottom digit, regroup: take 1 from the next place to the left and add 10 to this column. If that next place is 0, go one place further left and regroup in two steps. Then subtract each column."
+        }
+      ],
+      "example": {
+        "problem": "503 - 267",
+        "steps": "Ones: 3 is less than 7. The tens place is 0, so take 1 hundred. 503 becomes 4 hundreds, 10 tens, 3 ones. Take 1 of those tens: 4 hundreds, 9 tens, 13 ones. Ones: 13 - 7 = 6. Tens: 9 - 6 = 3. Hundreds: 4 - 2 = 2. The answer is 236.",
+        "expression": "503-267",
+        "answer": "236"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Start;Take away;Left",
+        "a": 503,
+        "b": 267,
+        "c": 236,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Subtracting the smaller digit from the larger in each column, for example 3 - 7 written as 7 - 3 = 4.",
+          "response": "Ask, 'If you have 3 sweets and need to give away 7, can you?' Then show that we need to regroup, and use the dots and squares drawing. The order matters in subtraction."
+        },
+        {
+          "mistake": "Regrouping across a zero but forgetting to reduce the hundreds, or leaving the tens as 10 instead of 9.",
+          "response": "Write the regrouped number in expanded form on the board: 4 hundreds, 9 tens, 13 ones. Ask the student to check that it still adds up to 503."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why can't I just take the small number from the big number?",
+          "answer": "Because subtraction means taking the bottom number away from the top. Taking 7 from 3 is a different question from taking 3 from 7. So we make the 3 bigger by regrouping."
+        },
+        {
+          "question": "Why does the 0 become 9?",
+          "answer": "First the hundred becomes 10 tens. Then one of those tens becomes 10 ones. That leaves 9 tens. The total value is still 503."
+        },
+        {
+          "question": "Does regrouping change the number?",
+          "answer": "No. 503 and 4 hundreds, 9 tens, 13 ones are the same amount, written differently. It is like swapping a 10-dollar note for ten 1-dollar coins."
+        }
+      ],
+      "check_question": {
+        "question": "What is 402 - 158? Tell me what you do with the tens place.",
+        "solution": "Ones: 2 is less than 8. Tens place is 0, so regroup from the hundreds: 3 hundreds, 9 tens, 12 ones. Ones: 12 - 8 = 4. Tens: 9 - 5 = 4. Hundreds: 3 - 1 = 2. Answer 244.",
+        "expression": "402-158",
+        "answer": "244"
+      }
+    },
+    {
+      "title": "Checking by adding back",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "You had 612 stickers and gave 375 to friends. You counted 237 left. To check, imagine your friends give all 375 back. Do you have 612 again? 237 + 375 should be exactly what you started with."
+        },
+        {
+          "kind": "procedure",
+          "text": "After subtracting, add your answer to the number you subtracted. The sum should equal the starting number. If it does not, find the column where the mistake happened and redo it. For addition, you can check by subtracting one of the numbers from the total."
+        }
+      ],
+      "example": {
+        "problem": "Subtract 612 - 375 and check your answer.",
+        "steps": "Ones: 2 is less than 5. Regroup: 6 hundreds 0 tens... first, 612 is 6 hundreds, 1 ten, 2 ones. Take 1 ten: 6 hundreds, 0 tens, 12 ones. 12 - 5 = 7. Tens: 0 is less than 7. Take 1 hundred: 5 hundreds, 10 tens. 10 - 7 = 3. Hundreds: 5 - 3 = 2. Answer 237. Check: 237 + 375: ones 7 + 5 = 12, write 2, carry 1. Tens 3 + 7 + 1 = 11, write 1, carry 1. Hundreds 2 + 3 + 1 = 6. We get 612, so the answer is right.",
+        "expression": "612-375",
+        "answer": "237"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Adding the answer to the starting number instead of to the number subtracted.",
+          "response": "Draw the three bars: whole, part taken, part left. Show that the two parts (taken and left) add up to the whole. Ask which two numbers are the parts."
+        },
+        {
+          "mistake": "Doing the check but not trusting it when it does not match, so the student just changes the answer to fit.",
+          "response": "Praise the check for catching something. Then ask the student to find which column is different and redo only that column."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why does adding back work?",
+          "answer": "Subtraction and addition are opposites. If the whole minus one part is the other part, then the two parts together make the whole."
+        },
+        {
+          "question": "Do I have to check every answer?",
+          "answer": "No, but it is a good habit when you are unsure, or when a problem has a zero or several regroupings. It only takes a moment."
+        },
+        {
+          "question": "Can I check an addition in the same way?",
+          "answer": "Yes. If 346 + 289 = 635, then 635 - 289 should give 346. You take away one of the parts and see if the other part is left."
+        }
+      ],
+      "check_question": {
+        "question": "A student says 704 - 128 = 586. How can we check it without redoing it?",
+        "solution": "Add back: 586 + 128. Ones 6 + 8 = 14, write 4 carry 1. Tens 8 + 2 + 1 = 11, write 1 carry 1. Hundreds 5 + 1 + 1 = 7. That gives 714, not 704, so 586 is wrong. The correct answer is 576.",
+        "expression": "704-128",
+        "answer": "576"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Add 478 + 256.",
+      "solution": "Ones: 8 + 6 = 14, write 4, carry 1. Tens: 7 + 5 + 1 = 13, write 3, carry 1. Hundreds: 4 + 2 + 1 = 7. The answer is 734.",
+      "expression": "478+256",
+      "answer": "734"
+    },
+    {
+      "problem": "Subtract 700 - 384.",
+      "solution": "Ones: 0 is less than 4. Tens is 0 too, so regroup from the hundreds: 6 hundreds, 9 tens, 10 ones. Ones: 10 - 4 = 6. Tens: 9 - 8 = 1. Hundreds: 6 - 3 = 3. The answer is 316. Check: 316 + 384 = 700.",
+      "expression": "700-384",
+      "answer": "316"
+    },
+    {
+      "problem": "A library has 462 books. It gives away 138 old books and then buys 275 new ones. How many books does it have now?",
+      "solution": "First subtract: 462 - 138 = 324 (ones 12 - 8 = 4 after regrouping, tens 5 - 3 = 2, hundreds 3 - 1 = 2... checking: 462 becomes 3 hundreds, 15 tens, 12 ones, so tens 15 - 3 = 12... see the next line for the clean version). Clean version: 462 - 138: ones 2 is less than 8, so regroup: 5 tens 12 ones. 12 - 8 = 4. Tens: 5 - 3 = 2. Hundreds: 4 - 1 = 3. That gives 324. Then add: 324 + 275. Ones 4 + 5 = 9. Tens 2 + 7 = 9. Hundreds 3 + 2 = 5. The answer is 599 books.",
+      "expression": "462-138+275",
+      "answer": "599"
+    }
+  ],
+  "meta": {
+    "concept": "adding-subtracting-within-1000",
+    "title": "Adding and subtracting within 1000",
+    "model": "sonnet",
+    "cost_usd": 0.06461,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Adding+and+subtracting+within+1000"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Adding+and+subtracting+within+1000"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Adding+and+subtracting+within+1000"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Adding+and+subtracting+within+1000"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Adding+and+subtracting+within+1000+math"
+    }
+  ]
+}

@@ -107,7 +107,9 @@ async function openTopic(id) {
   if (pending.size) saveAll();
   current = topics.find(t => t.concept === id);
   const main = $('notes'); main.replaceChildren(el('p', current.ready ? 'Loading…' : 'Preparing these notes for the first time and checking every answer. This can take a minute…', 'muted'));
-  let s; try { s = await api(`/api/sheet/${id}`); current.ready = true; } catch (e) { main.replaceChildren(el('p', e.message, 'banner')); return; }
+  let s; try { s = await api(`/api/sheet/${id}`); } catch (e) { if (current.concept === id) main.replaceChildren(el('p', e.message, 'banner')); return; }
+  if (current.concept !== id) return;  // the teacher picked another topic meanwhile: never show (or save notes against) stale notes
+  current.ready = true;
   sheet = s; const m = s.meta; main.replaceChildren();
   if (!$('mine').hidden) renderMine();
 

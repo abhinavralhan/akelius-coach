@@ -111,3 +111,10 @@ Each step ends with a commit and a step-log entry with **start and end times** (
 
 ### Step 14: removed the AI warning banner from the notes page
 - **Did:** removed the "Written by AI and checked automatically … read with extra care" banner at the user's request. Kept: the AI label on live answers, and the `ai_generated`/`reviewed` metadata. D17 updated: educator review and a terms-of-use notice now carry the transparency duty before launch.
+
+### Step 15: full test pass (generation still running)
+- **Offline:** 15/15 Python unit tests; notes-save test 3/3; page JS syntax ok; curriculum consistent (97 concepts, unique CCSS codes, 9–10 per grade, every concept has a template); every finished sheet (49 at the time) passes `verify()`.
+- **API end to end** (throwaway DB, port 8766): 18/18. Index, topics (97), path-traversal standard rejected, ready sheet with all sections + YouTube link, not-ready sheet → "being prepared" 404 with no generation, ask on not-ready → 404, unknown → 404, live Haiku answer, near-identical question served from the cache with the matched question shown, input validation (short/long/bad id), feedback saved/rejected, spend recorded from the real cost ($0.00125), usage counts delivered answers only.
+- **Eval:** run 3 caught a real error (a "usually" hedge on Pythagoras). Answer prompt tightened ("always"/"never" for exact facts, a reason for every rule); run 4: correct 10/10, explains why 9/10 (the off-topic rubric limit). History in evals/results.md.
+- **Not tested:** rendering in a real browser (no headless Chrome on this machine).
+- **Found:** per-answer cost up to $0.00125 with the richer sheets; the next fix is to send only the relevant subtopic (cost-model.md).

@@ -1,0 +1,258 @@
+{
+  "idea": "Negative numbers are the numbers to the left of zero on the number line. Each negative number is the mirror image of a positive number: -3 is as far left of zero as 3 is right of it. On the number line, the further right a number sits, the greater it is.",
+  "why": "The number line is a ruler with zero as the starting point. Positive numbers count steps to the right, and negative numbers count the same steps to the left. Because the line is ordered, left to right means smaller to greater. That is why -8 is less than -2, even though 8 is more than 2. -8 is further left, so it is further below zero. The mirror picture explains opposites: they sit the same distance from zero on opposite sides.",
+  "theory_example": {
+    "problem": "Place -4, 3, -1 and 0 on a number line and list them from least to greatest. Which is the least?",
+    "steps": "Draw a line and mark 0 in the middle. Put 3 three steps to the right of zero. Put -1 one step left of zero. Put -4 four steps left of zero. Read from left to right: -4, -1, 0, 3. The leftmost number is the least, so the least is -4.",
+    "expression": "-4",
+    "answer": "-4"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Hook with a thermometer or a lift going below ground. Ask: what is the temperature if it is 3 degrees below zero? Introduce that numbers can go below zero. Draw the line with 0 in the middle. This opens Placing and reading negative numbers."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach Placing and reading negative numbers. Work the example of -3 and 4 on the board. Have students come up and mark numbers. Then ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach Comparing and ordering numbers. Use the example of -5 and -2. Say aloud: further right means greater. Have students order three numbers on mini whiteboards. Then ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach Opposites and distance from zero. Use the example of -6 and 6 as mirror images. Ask students to give the opposite of several numbers. Then ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Work the 3 extra examples with the class, one at a time. Let students try each one first and share their reasoning. Spend any remaining time on student questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Placing and reading negative numbers",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Think of a lift in a building with a basement. Ground floor is 0. Floor 3 is three floors up. Basement 3 is three floors down, and we write it as -3. The number line is the lift shaft turned on its side: up becomes right and down becomes left."
+        },
+        {
+          "kind": "procedure",
+          "text": "To place a number: 1) Find zero. 2) Look at the sign. A plus sign or no sign means go right. A minus sign means go left. 3) Count that many equal steps from zero. 4) Mark the point and write the number under it."
+        }
+      ],
+      "example": {
+        "problem": "Mark -3 and 4 on a number line.",
+        "steps": "Draw a line and mark 0. Mark equal steps on both sides. For 4, count 4 steps right of zero and mark it. For -3, count 3 steps left of zero and mark it. The two points are on opposite sides of zero.",
+        "expression": "-3",
+        "answer": "-3"
+      },
+      "visual": {
+        "kind": "numberline",
+        "expr": "",
+        "a": -3,
+        "b": 4,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students put -3 to the right of zero, or count the steps starting at 1 instead of at 0.",
+          "response": "Go back to the lift or the thermometer. Ask: is -3 above or below zero? Have them put a finger on 0 and say 'zero, one, two, three' while moving left. The first step lands on -1."
+        },
+        {
+          "mistake": "Students space the marks unevenly, so -1 and -2 look different from 1 and 2.",
+          "response": "Show that the steps must all be the same size, like a ruler. Use squared paper, or have students mark the steps first and only then label them."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why do we need numbers below zero?",
+          "answer": "Because zero is not always the bottom. Temperatures drop below freezing, a bank account can be overdrawn, and places can be below sea level. Negative numbers let us describe those."
+        },
+        {
+          "question": "Is zero positive or negative?",
+          "answer": "Neither. Zero is the dividing point between positive numbers on the right and negative numbers on the left."
+        },
+        {
+          "question": "Does the line stop at -10?",
+          "answer": "No. It goes on forever in both directions. We only draw the part we need."
+        }
+      ],
+      "check_question": {
+        "question": "Start at 0 and move 5 steps to the left. Which number are you on?",
+        "solution": "Moving left means going negative. Five steps left of zero is -5.",
+        "expression": "-5",
+        "answer": "-5"
+      }
+    },
+    {
+      "title": "Comparing and ordering numbers",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw the number line and put an arrow on it pointing right, labelled 'greater'. Any number is greater than every number to its left. Put -5 and -2 on the line and see that -2 is to the right of -5, so -2 is greater."
+        },
+        {
+          "kind": "story",
+          "text": "Say it is -5 degrees in one town and -2 degrees in another. The second town is less cold, so its temperature is higher. Being less cold means being closer to zero, and that is further right on the line."
+        }
+      ],
+      "example": {
+        "problem": "Which is greater, -5 or -2?",
+        "steps": "Mark both numbers on a number line. -5 is five steps left of zero. -2 is two steps left of zero. -2 is further right than -5. The number further right is greater, so -2 is greater than -5. We write -5 < -2.",
+        "expression": "-2",
+        "answer": "-2"
+      },
+      "visual": {
+        "kind": "numberline",
+        "expr": "",
+        "a": -5,
+        "b": -2,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students say -5 is greater than -2 because 5 is greater than 2.",
+          "response": "Don't say they are wrong about 5 and 2. Say that with negatives, the bigger digit means further below zero. Ask which temperature they would rather have, -5 or -2. Then place both on the line."
+        },
+        {
+          "mistake": "Students think every negative number is greater than every positive number, or that all negatives are equal.",
+          "response": "Place a negative and a positive on the line. Any negative is left of zero and any positive is right of zero, so every negative is less than every positive."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is -10 less than -1 when 10 is more than 1?",
+          "answer": "-10 is ten steps below zero and -1 is only one step below. Being deeper below zero means being lower. On the line, -10 is far to the left."
+        },
+        {
+          "question": "How do I remember which way the arrow sign points?",
+          "answer": "The small end of < points to the smaller number. So -5 < -2 reads 'minus five is less than minus two'."
+        },
+        {
+          "question": "Is 0 greater than -3?",
+          "answer": "Yes. Zero is to the right of -3 on the line, so 0 is greater."
+        }
+      ],
+      "check_question": {
+        "question": "Which is greater, -9 or -10?",
+        "solution": "-9 is one step to the right of -10 on the number line, so -9 is greater.",
+        "expression": "-9",
+        "answer": "-9"
+      }
+    },
+    {
+      "title": "Opposites and distance from zero",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Fold the number line at zero like a piece of paper. Each number lands on its opposite: 6 on -6, 2 on -2. Opposites are mirror images, with the same distance from zero on opposite sides."
+        },
+        {
+          "kind": "procedure",
+          "text": "To find the opposite of a number, change its sign. The opposite of 6 is -6, and the opposite of -6 is 6. The distance from zero is how many steps you count to reach zero, and it is never negative. -6 and 6 are both 6 steps from zero."
+        }
+      ],
+      "example": {
+        "problem": "Find the opposite of -6 and say how far each of -6 and 6 is from zero.",
+        "steps": "Mark -6 and 6 on a number line. They are mirror images across zero. The opposite of -6 is 6. Count from zero to 6: 6 steps. Count from zero to -6: also 6 steps. Both are 6 steps from zero.",
+        "expression": "6",
+        "answer": "6"
+      },
+      "visual": {
+        "kind": "numberline",
+        "expr": "",
+        "a": -6,
+        "b": 6,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students say the opposite of -6 is -6, or that the opposite of a negative is still negative.",
+          "response": "Use the mirror fold. -6 is on the left, so its mirror image has to be on the right, at 6. Changing the sign of -6 gives 6."
+        },
+        {
+          "mistake": "Students say -6 is 'minus 6 steps' from zero and so is closer than 6.",
+          "response": "A distance counts steps, so it can't be negative. Walk it in the room: 6 steps left or 6 steps right is the same walk. Both numbers are 6 away."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why does the opposite of a negative become positive?",
+          "answer": "The opposite is the mirror image across zero. If a number is on the left, its mirror image is on the right, so it is positive."
+        },
+        {
+          "question": "What is the opposite of zero?",
+          "answer": "Zero itself. It sits on the fold, so it doesn't move."
+        },
+        {
+          "question": "If -6 and 6 are the same distance from zero, are they equal?",
+          "answer": "No. They are the same distance away, but on different sides. They are different numbers, and 6 is greater."
+        }
+      ],
+      "check_question": {
+        "question": "What is the opposite of -11?",
+        "solution": "Change the sign. The opposite of -11 is 11, its mirror image on the right of zero.",
+        "expression": "-(-11)",
+        "answer": "11"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "A diver is at -12 metres and a fish is at -8 metres (below sea level shown as negative). Which is higher up? Give its position.",
+      "solution": "Place -12 and -8 on a number line. -8 is further right, so it is greater, meaning higher. The fish is higher, at -8.",
+      "expression": "-8",
+      "answer": "-8"
+    },
+    {
+      "problem": "Put -3, 2, -7 and 0 in order from least to greatest. Which number comes second?",
+      "solution": "Read left to right on the number line: -7, -3, 0, 2. The second number is -3.",
+      "expression": "-3",
+      "answer": "-3"
+    },
+    {
+      "problem": "What is the opposite of -9, and how many steps is it from zero?",
+      "solution": "Change the sign: the opposite of -9 is 9. It is 9 steps from zero, just as -9 is.",
+      "expression": "9",
+      "answer": "9"
+    }
+  ],
+  "meta": {
+    "concept": "integers-number-line",
+    "title": "Negative numbers on the number line",
+    "model": "sonnet",
+    "cost_usd": 0.05233,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Negative+numbers+on+the+number+line"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Negative+numbers+on+the+number+line"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Negative+numbers+on+the+number+line"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Negative+numbers+on+the+number+line"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Negative+numbers+on+the+number+line+math"
+    }
+  ]
+}

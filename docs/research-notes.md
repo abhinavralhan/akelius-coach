@@ -162,6 +162,7 @@ No leaderboard measures these, so we use:
 | 27 | Links to the top 3 YouTube videos for the exact topic at the bottom of the page; commit when it works | D29 |
 | 28 | No save button on My notes; it should be a super reliable feature | D27 updated: Save button, read-back-verified saves, status line, autosave, warning before leaving, Download my notes |
 | 29 | Remove the "Written by AI … not yet reviewed" warning from the notes | D17 updated: banner removed from the notes page; the AI label stays on live answers in the side panel, and `ai_generated`/`reviewed` stay in every sheet's metadata |
+| 30 | Complete generation; meanwhile test everything apart from it; commit when done | Full test pass (below). Eval run 3 found a real imprecision ("usually" instead of "never"); answer prompt tightened; run 4 passes. Measured cost per answer rose to $0.00125, recorded in cost-model.md with the fix |
 
 ## 8. Open questions
 

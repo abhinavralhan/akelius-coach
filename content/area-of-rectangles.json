@@ -1,0 +1,258 @@
+{
+  "idea": "The area of a rectangle tells us how much flat space it covers. We measure it in square units, such as square centimetres. For a rectangle, area = length × width.",
+  "why": "Picture a rectangle 4 units long and 3 units wide covered in unit squares. It has 3 rows with 4 squares in each row, so the count is 4 + 4 + 4 = 3 × 4 = 12. Multiplying is just fast counting of equal rows. This works for any lengths, even when we can't draw every square. It also explains the missing-side method: if the area is the number of squares and each row holds a known number, dividing by it gives the number of rows.",
+  "theory_example": {
+    "problem": "A floor is 6 m long and 4 m wide. How many square metres of floor is there to cover?",
+    "steps": "1. Picture the floor covered in squares that are 1 m by 1 m.\n2. One row along the length holds 6 squares.\n3. There are 4 such rows across the width.\n4. Total squares = 6 × 4 = 24.\n5. So the area is 24 square metres (24 m²).",
+    "expression": "6*4",
+    "answer": "24"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Start with a hook: ask how many square tiles would cover the desk or a sheet of paper. Say that this covering is called area. Use 'Counting unit squares' to introduce the idea."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Counting unit squares'. Draw a 4 by 3 grid on the board and count the squares. Then count by rows (4+4+4) and show it is 3 × 4. Ask the class the check question."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Area = length × width'. Work the 8 cm by 5 cm example and show the bars picture of length, width and area. Stress square units. Ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Finding a missing side'. Work the area 54, width 6 example and show that division undoes multiplication. Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work through the 3 extra examples with the class, letting students suggest the first step. Leave time for their questions, and use any of the three subtopics to answer them."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Counting unit squares",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a rectangle on a grid, 4 squares across and 3 down. Count all the squares: 12. Then circle each row of 4 and notice that there are 3 equal rows."
+        },
+        {
+          "kind": "story",
+          "text": "Tell the class you are tiling a small floor with square tiles. The number of tiles needed is the area. Bigger floor, more tiles."
+        }
+      ],
+      "example": {
+        "problem": "A rectangle on a grid is 4 squares long and 3 squares wide. What is its area?",
+        "steps": "1. Each small square is 1 square unit.\n2. Count the squares in one row: 4.\n3. There are 3 rows.\n4. 4 + 4 + 4 = 12, which is 3 × 4.\n5. The area is 12 square units.",
+        "expression": "4*3",
+        "answer": "12"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students count only the squares around the edge.",
+          "response": "Ask them to put a finger on a middle square: is it covered? Area means all the covered space, so count the inside too. Count by rows to avoid missing any."
+        },
+        {
+          "mistake": "Students write the answer as '12' with no unit or as '12 units'.",
+          "response": "Say 'square units' aloud each time, because we are counting squares. A length is counted in units; an area is counted in square units."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we use squares and not circles or triangles?",
+          "answer": "Squares fit together with no gaps and no overlaps, and they stack neatly into rows. That makes counting easy and consistent for everyone."
+        },
+        {
+          "question": "Is area the same as perimeter?",
+          "answer": "No. Perimeter is the distance around the edge, like a fence. Area is the space inside, like the grass. They are measured differently."
+        },
+        {
+          "question": "Do the squares have to be big?",
+          "answer": "No, but they must all be the same size. We pick a unit, such as 1 cm by 1 cm, and count how many of them fit."
+        }
+      ],
+      "check_question": {
+        "question": "A rectangle on a grid has 5 squares in each row and 2 rows. What is its area?",
+        "solution": "There are 2 rows of 5 squares, so 5 × 2 = 10 square units.",
+        "expression": "5*2",
+        "answer": "10"
+      }
+    },
+    {
+      "title": "Area = length × width",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "1. Find the length and the width, in the same unit.\n2. Multiply them.\n3. Write the answer in square units, such as cm²."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw an 8 cm by 5 cm rectangle and mark just one row of 8 squares and one column of 5 squares. Say that the row and column tell us the whole shape: 5 rows of 8 give 40 squares, so we don't need to draw them all."
+        }
+      ],
+      "example": {
+        "problem": "A rectangle is 8 cm long and 5 cm wide. Find its area.",
+        "steps": "1. Length = 8 cm, width = 5 cm, both in centimetres.\n2. Area = length × width = 8 × 5.\n3. 8 × 5 = 40.\n4. The area is 40 square centimetres (40 cm²).",
+        "expression": "8*5",
+        "answer": "40"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Length cm;Width cm;Area sq cm",
+        "a": 8,
+        "b": 5,
+        "c": 40,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students add length and width (8 + 5 = 13) instead of multiplying.",
+          "response": "Go back to the rows picture: 5 rows of 8 squares is 5 groups of 8, which is multiplication. Adding the two sides is closer to perimeter, and that would also need doubling."
+        },
+        {
+          "mistake": "Students multiply numbers in different units, such as 2 m by 50 cm.",
+          "response": "Ask them to change both lengths to the same unit first, for example 200 cm × 50 cm or 2 m × 0.5 m, then multiply."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is it times and not plus?",
+          "answer": "Because the shape is made of equal rows. 5 rows of 8 squares is 5 groups of 8, and multiplication is the quick way to count equal groups."
+        },
+        {
+          "question": "Why is the unit cm² and not cm?",
+          "answer": "We are counting squares that are 1 cm by 1 cm. Multiplying cm by cm gives cm², which means square centimetres."
+        },
+        {
+          "question": "Does it matter which side I call the length?",
+          "answer": "No. 8 × 5 and 5 × 8 are both 40. Turning the rectangle on its side does not change how many squares fit."
+        }
+      ],
+      "check_question": {
+        "question": "What is the area of a rectangle 7 cm long and 6 cm wide?",
+        "solution": "7 × 6 = 42, so the area is 42 square centimetres.",
+        "expression": "7*6",
+        "answer": "42"
+      }
+    },
+    {
+      "title": "Finding a missing side",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Tell the class a rug has an area of 54 square feet and is 6 feet wide. Ask how long it must be. Each row of squares is 6 squares, and there are 54 squares in all, so we split 54 into rows of 6."
+        },
+        {
+          "kind": "procedure",
+          "text": "1. Write area = length × width.\n2. Put in the numbers you know.\n3. Divide the area by the known side to find the missing side.\n4. Check by multiplying back."
+        }
+      ],
+      "example": {
+        "problem": "A rectangle has an area of 54 square centimetres and a width of 6 cm. Find its length.",
+        "steps": "1. Area = length × width, so 54 = length × 6.\n2. Undo the multiplication by dividing: length = 54 ÷ 6.\n3. 54 ÷ 6 = 9.\n4. Check: 9 × 6 = 54. Correct.\n5. The length is 9 cm.",
+        "expression": "54/6",
+        "answer": "9"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students multiply the two given numbers (54 × 6) to get the missing side.",
+          "response": "Ask whether the side could be bigger than the area. Remind them that the area is the product, so to go back we divide. Then check by multiplying."
+        },
+        {
+          "mistake": "Students give the missing side in square units, such as 9 cm².",
+          "response": "A side is a length, so it is measured in cm. Only the area uses square units."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "How do I know when to divide?",
+          "answer": "If the area is given and one side is missing, divide the area by the side you know. Area is the product, and division undoes a product."
+        },
+        {
+          "question": "Can there be more than one answer?",
+          "answer": "If you know the area and one side, there is only one possible other side. If you only know the area, many rectangles could fit."
+        },
+        {
+          "question": "Why does checking by multiplying work?",
+          "answer": "Area is length × width, so if the length is right, length × width must give back the area you started with."
+        }
+      ],
+      "check_question": {
+        "question": "A rectangle has an area of 35 square centimetres and a width of 5 cm. What is its length?",
+        "solution": "Length = 35 ÷ 5 = 7 cm. Check: 7 × 5 = 35.",
+        "expression": "35/5",
+        "answer": "7"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "A garden is 12 m long and 7 m wide. What is its area?",
+      "solution": "Area = length × width = 12 × 7 = 84. The area is 84 square metres.",
+      "expression": "12*7",
+      "answer": "84"
+    },
+    {
+      "problem": "A rectangle has an area of 72 square centimetres and a length of 9 cm. How wide is it?",
+      "solution": "Width = area ÷ length = 72 ÷ 9 = 8 cm. Check: 9 × 8 = 72.",
+      "expression": "72/9",
+      "answer": "8"
+    },
+    {
+      "problem": "Rectangle A is 6 cm by 5 cm. Rectangle B is 4 cm by 8 cm. Which has the larger area, and by how many square centimetres?",
+      "solution": "A = 6 × 5 = 30 square cm. B = 4 × 8 = 32 square cm. B is larger by 32 − 30 = 2 square centimetres.",
+      "expression": "4*8-6*5",
+      "answer": "2"
+    }
+  ],
+  "meta": {
+    "concept": "area-of-rectangles",
+    "title": "Area of rectangles",
+    "model": "sonnet",
+    "cost_usd": 0.04805,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Area+of+rectangles"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Area+of+rectangles"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Area+of+rectangles"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Area+of+rectangles"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Area+of+rectangles+math"
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "idea": "The coordinate plane is a flat grid made by two number lines that cross at right angles at the origin (0, 0). Every point on it has an address, an ordered pair (x, y): x tells you how far to go right (positive) or left (negative), and y tells you how far to go up (positive) or down (negative). The grid lets us turn rules like y = 2x + 1 into pictures.",
+  "why": "Two numbers are needed to fix a spot on a flat surface, and the order matters because we agree to always give the horizontal move first. The signs tell direction, so the axes split the plane into four quadrants, and the signs of (x, y) tell you which quadrant a point is in. A point lies on the graph of a rule exactly when its coordinates make the rule true. That is why we can test a point by substituting, and why plotting several such points builds the picture of the rule.",
+  "theory_example": {
+    "problem": "Plot the point (-3, 2), say which quadrant it is in, and check whether it lies on the line y = -x - 1.",
+    "steps": "1) Start at the origin. x = -3 means 3 steps left. 2) y = 2 means 2 steps up. Mark the point. 3) x is negative and y is positive, so it is in Quadrant II (upper left). 4) Substitute x = -3 into y = -x - 1: y = -(-3) - 1 = 3 - 1 = 2. 5) The rule gives y = 2, which matches the point's y, so the point is on the line.",
+    "expression": "-(-3) - 1",
+    "answer": "2"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Hook: draw a small street grid or seating chart on the board and ask how to tell someone exactly where a spot is. Lead to needing two numbers and an agreed order. Uses the subtopic 'Ordered pairs and plotting points'."
+    },
+    {
+      "minutes": 9,
+      "activity": "Draw the axes and the origin. Model plotting (4, -2) aloud: right 4, then down 2. Have students plot two or three more points on mini grids, including ones with a zero such as (0, 3). Uses 'Ordered pairs and plotting points'."
+    },
+    {
+      "minutes": 8,
+      "activity": "Label the four quadrants. Ask students what is true about the signs in each one, then work the example (-5, -3). Do the check question as a quick show of fingers for quadrant number. Uses 'Quadrants and the signs of coordinates'."
+    },
+    {
+      "minutes": 8,
+      "activity": "Build a table for y = 2x + 1 with x = -1, 0, 1, 2. Plot the points together, notice they line up, and draw the line with a ruler. Do the check question. Uses 'Points on a rule: tables and lines'."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work the three extra examples one at a time, letting students try each before you show the solution, and leave time to answer any student questions. Uses extra_examples."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Ordered pairs and plotting points",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Think of a treasure map: 'walk 4 steps east, then 2 steps south'. The first number is the sideways walk and the second is the up-or-down walk. Always sideways first, like walking into a building before taking the lift. Negative means the opposite direction: west or down."
+        },
+        {
+          "kind": "procedure",
+          "text": "To plot (x, y): 1) Put your pencil on the origin. 2) Move along the x-axis by x (right if positive, left if negative). 3) From there, move straight up or down by y. 4) Mark the point and label it. To read a point, do the reverse: count how far across, then how far up or down."
+        }
+      ],
+      "example": {
+        "problem": "Plot the point (4, -2) and say how many steps in total you take from the origin.",
+        "steps": "Start at (0, 0). x = 4: move 4 steps right. y = -2: move 2 steps down. Mark the point. Total steps: 4 + 2 = 6. The y-coordinate is -2.",
+        "expression": "-2",
+        "answer": "-2"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students swap the numbers and plot (2, 4) for (4, 2), going up first.",
+          "response": "Do not just say 'wrong'. Plot both (4, 2) and (2, 4) and show they are different spots. Offer a memory hook: x comes before y in the alphabet, and you walk along the floor before you climb."
+        },
+        {
+          "mistake": "Students count the starting from the wrong place, for example from the last point plotted instead of from the origin.",
+          "response": "Remind them that every ordered pair is a set of directions from the origin. Have them put a finger on (0, 0) before each point."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why does x come first?",
+          "answer": "It is only an agreement, so everyone reads the same pair the same way. Mathematicians chose across first, then up or down."
+        },
+        {
+          "question": "What does a 0 mean, like (0, 3)?",
+          "answer": "It means do not move in that direction. (0, 3) means stay at the origin sideways and go up 3, so it sits on the y-axis."
+        },
+        {
+          "question": "Why do we have negative numbers on the grid?",
+          "answer": "So we can name places to the left of and below the origin. Negative just means the opposite direction from positive."
+        }
+      ],
+      "check_question": {
+        "question": "Where is the point (-3, 5)? Describe the moves from the origin.",
+        "solution": "Move 3 steps left, then 5 steps up.",
+        "expression": "5",
+        "answer": "5"
+      }
+    },
+    {
+      "title": "Quadrants and the signs of coordinates",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw the axes as a plus sign. The four regions are numbered 1 to 4 going counterclockwise, starting at the upper right: I (+, +), II (-, +), III (-, -), IV (+, -). Write the signs in each region so students can see right/left changes the first sign and up/down changes the second."
+        },
+        {
+          "kind": "procedure",
+          "text": "To find the quadrant: look at the sign of x (right or left of the y-axis), then the sign of y (above or below the x-axis). Match the pair of signs to the quadrant. If either coordinate is 0, the point lies on an axis and is in no quadrant."
+        }
+      ],
+      "example": {
+        "problem": "Which quadrant is the point (-5, -3) in?",
+        "steps": "x = -5 is negative, so the point is left of the y-axis. y = -3 is negative, so it is below the x-axis. Left and below is the lower left region, which is Quadrant III.",
+        "expression": "3",
+        "answer": "3"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students number the quadrants clockwise, or start from the lower left.",
+          "response": "Show the counterclockwise order starting from the upper right, where both numbers are positive. Trace it with a finger as a class."
+        },
+        {
+          "mistake": "Students say a point like (0, 4) is in Quadrant I.",
+          "response": "Plot it and show it sits on the y-axis. Points on an axis are on the border between quadrants, so they belong to none."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why are they numbered counterclockwise?",
+          "answer": "It is a convention. Angles in math are also measured counterclockwise, and Quadrant I is the one where everything is positive."
+        },
+        {
+          "question": "Can a point be in two quadrants?",
+          "answer": "No. The signs of x and y fix exactly one region, unless the point is on an axis, in which case it is in none."
+        },
+        {
+          "question": "Do I need to plot the point to find the quadrant?",
+          "answer": "No. Just look at the signs. Plotting is a good way to check, though."
+        }
+      ],
+      "check_question": {
+        "question": "Which quadrant is (6, -1) in?",
+        "solution": "x is positive (right) and y is negative (down), so it is Quadrant IV.",
+        "expression": "4",
+        "answer": "4"
+      }
+    },
+    {
+      "title": "Points on a rule: tables and lines",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "To graph a rule such as y = 2x + 1: 1) Pick some x values, including a negative and zero. 2) For each, substitute into the rule to get y. 3) Write each pair (x, y) in a table. 4) Plot the points. 5) If they line up, draw a straight line through them with a ruler and extend it with arrows, because the rule works for every x, not just the ones in the table."
+        },
+        {
+          "kind": "story",
+          "text": "Imagine a machine that takes in x, doubles it, then adds 1. Put in 2 and out comes 5. Each input and its output is one address, (2, 5). Feeding in many numbers gives many addresses, and they all land on the same straight path."
+        }
+      ],
+      "example": {
+        "problem": "Make a table for y = 2x + 1 using x = -1, 0, 1, 2, then plot the points. What is y when x = 2?",
+        "steps": "x = -1: y = 2(-1) + 1 = -1, point (-1, -1). x = 0: y = 1, point (0, 1). x = 1: y = 3, point (1, 3). x = 2: y = 2(2) + 1 = 5, point (2, 5). The four points lie on one straight line, so draw the line through them. When x = 2, y = 5.",
+        "expression": "2*2 + 1",
+        "answer": "5"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "2*x + 1",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students make a sign error with a negative x, such as 2(-1) + 1 = 3.",
+          "response": "Slow down and write 2 times (-1) as -2 first, then add 1 to get -1. Putting the negative number in brackets helps."
+        },
+        {
+          "mistake": "Students stop the line at the first and last plotted points, as if it were a segment.",
+          "response": "Ask whether x = 10 would also work in the rule. Since it does, the line goes on forever, so we draw arrows at both ends."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is it a straight line?",
+          "answer": "Each time x goes up by 1, y goes up by exactly 2. A steady change like that always makes a straight line."
+        },
+        {
+          "question": "How many points do I need?",
+          "answer": "Two points are enough to fix a line, but plotting three checks your work. If the third point is off the line, something is wrong."
+        },
+        {
+          "question": "How can I check whether a point is on the line without drawing?",
+          "answer": "Substitute its x into the rule. If you get its y, it is on the line. If not, it is not."
+        }
+      ],
+      "check_question": {
+        "question": "Is the point (3, 7) on the line y = 2x + 1?",
+        "solution": "Substitute x = 3: y = 2(3) + 1 = 7. This matches, so yes it is on the line.",
+        "expression": "2*3 + 1",
+        "answer": "7"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "A point is 3 steps left and 4 steps up from the origin. Write its coordinates and give its quadrant number.",
+      "solution": "Left 3 means x = -3, up 4 means y = 4, so the point is (-3, 4). x is negative and y is positive, so it is in Quadrant II.",
+      "expression": "2",
+      "answer": "2"
+    },
+    {
+      "problem": "Three corners of a rectangle with sides parallel to the axes are (1, 1), (5, 1) and (5, 4). Find the fourth corner and the area.",
+      "solution": "The fourth corner shares x with (1, 1) and y with (5, 4), so it is (1, 4). Width = 5 - 1 = 4, height = 4 - 1 = 3. Area = 4 x 3 = 12.",
+      "expression": "(5 - 1)*(4 - 1)",
+      "answer": "12"
+    },
+    {
+      "problem": "Does the point (3, -4) lie on the line y = 2x - 10?",
+      "solution": "Substitute x = 3: y = 2(3) - 10 = 6 - 10 = -4. This equals the point's y, so yes it lies on the line.",
+      "expression": "2*3 - 10",
+      "answer": "-4"
+    }
+  ],
+  "meta": {
+    "concept": "coordinate-plane",
+    "title": "The coordinate plane",
+    "model": "sonnet",
+    "cost_usd": 0.05964,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=The+coordinate+plane"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=The+coordinate+plane"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/The+coordinate+plane"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=The+coordinate+plane"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=The+coordinate+plane+math"
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "idea": "Multiplicative comparison says one amount is a certain number of times as big as another, for example 12 is 3 times as many as 4. Instead of asking how many more, we ask how many equal groups of the smaller amount fit into the larger one. Every such sentence links three numbers: the smaller amount, the larger amount and the multiplier. If you know two of them, you can find the third.",
+  "why": "Saying 'Mia has 3 times as many as Tom' means Mia's amount is made of 3 equal groups, each the size of Tom's amount. Finding a whole from equal groups is multiplication: larger = smaller x multiplier. Multiplication and division undo each other, so the same sentence also gives smaller = larger / multiplier, and multiplier = larger / smaller. Subtraction answers a different question (how many more), because it measures the gap and does not count how many copies of the smaller amount fit.",
+  "theory_example": {
+    "problem": "A ribbon is 6 m long. A rope is 4 times as long as the ribbon. How long is the rope? Then check the other two directions: if the rope is 24 m, how many times as long as the ribbon is it, and what is the ribbon's length if the rope is 24 m and 4 times as long?",
+    "steps": "Picture one bar of 6 m for the ribbon and a bar made of 4 of those pieces for the rope. Rope = 6 x 4 = 24 m. Going back: 24 / 6 = 4, so the rope is 4 times as long. Knowing the rope is 24 m and 4 times as long, the ribbon is 24 / 4 = 6 m. One picture, three questions: multiply to find the larger, divide by the multiplier to find the smaller, divide the two amounts to find the multiplier.",
+    "expression": "6*4",
+    "answer": "24"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 6,
+      "activity": "Warm-up: hold up 3 pencils, then show 'three times as many' (9 pencils) and '3 more' (6 pencils). Ask which is which. Draw one short bar and a bar made of 3 copies of it. This leads into 'Finding the larger amount'."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Finding the larger amount': read the worked example, draw the bars, and let students say the multiplication aloud. Ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Finding the smaller amount': start from the same bars with the smaller one hidden. Show that dividing into equal parts finds it. Address the mistakes on multiplying or subtracting. Ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Finding how many times as many': give two amounts and ask how many copies of the smaller fit in the larger. Contrast 'how many more' (subtract) with 'how many times' (divide). Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work through the 3 extra examples together, asking students first which of the three numbers is missing. Leave time for open questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Finding the larger amount",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a short bar for Tom's 4 stickers. Under it draw a bar made of 3 copies of that short bar. Count the blocks: 4, 8, 12. 'Three times as many' means three copies of Tom's bar placed end to end."
+        },
+        {
+          "kind": "procedure",
+          "text": "1. Find the amount you are comparing to (the 'as many as' amount). 2. Find the number before 'times'. 3. Multiply them: amount x times. 4. Check that the answer is bigger than the starting amount."
+        }
+      ],
+      "example": {
+        "problem": "Tom has 4 stickers. Mia has 3 times as many stickers as Tom. How many stickers does Mia have?",
+        "steps": "Tom's amount is 4. 'Three times as many' means 3 groups of 4. Multiply: 4 x 3 = 12. Mia has 12 stickers. Check: 4 + 4 + 4 = 12.",
+        "expression": "4*3",
+        "answer": "12"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Tom;Mia",
+        "a": 4,
+        "b": 12,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Adding instead of multiplying: 4 + 3 = 7.",
+          "response": "Ask them to draw it. Does 7 make three bars of 4? Show that '3 more' would be 7 but '3 times as many' is 3 groups of 4. Say both phrases side by side a few times."
+        },
+        {
+          "mistake": "Adding the two amounts together, e.g. giving 16 as the answer because 'Tom and Mia' are both in the problem.",
+          "response": "Ask what the question asks for: only Mia's stickers. Point to Mia's bar on the drawing. The 12 is the whole of Mia's bar, and Tom's bar is a separate thing to compare with."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why do we multiply and not add?",
+          "answer": "Adding 3 would make Mia's pile just a bit bigger than Tom's. 'Times as many' means copies of Tom's whole pile. Making 3 equal copies and counting them all is what multiplication does."
+        },
+        {
+          "question": "Is 'times as many' the same as 'times more'?",
+          "answer": "In school problems we treat them as the same and read both as multiplication. If a sentence is unclear, I would draw the bars first and agree what the picture shows."
+        },
+        {
+          "question": "What if the number before 'times' is 1?",
+          "answer": "Then the amounts are equal. One copy of Tom's 4 is 4. So 'one times as many' means exactly the same amount."
+        }
+      ],
+      "check_question": {
+        "question": "Lena has 5 apples. Ben has 4 times as many apples as Lena. How many apples does Ben have?",
+        "solution": "Ben has 4 groups of 5 apples. 5 x 4 = 20.",
+        "expression": "5*4",
+        "answer": "20"
+      }
+    },
+    {
+      "title": "Finding the smaller amount",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Mia has 12 stickers, and that is 3 times as many as Tom. Tom shares his stickers into 3 equal piles to match Mia's bar. Share Mia's 12 into 3 equal groups of 4. Each group is Tom's amount, so Tom has 4."
+        },
+        {
+          "kind": "procedure",
+          "text": "1. Find the larger amount and the multiplier. 2. Divide the larger amount by the multiplier. 3. Check by multiplying the answer by the multiplier: you should get back to the larger amount."
+        }
+      ],
+      "example": {
+        "problem": "Mia has 12 stickers. That is 3 times as many as Tom has. How many stickers does Tom have?",
+        "steps": "Mia's 12 stickers are made of 3 equal groups, and each group is Tom's amount. Divide: 12 / 3 = 4. Tom has 4 stickers. Check: 4 x 3 = 12.",
+        "expression": "12/3",
+        "answer": "4"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Tom;Mia",
+        "a": 4,
+        "b": 12,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Multiplying again: 12 x 3 = 36.",
+          "response": "Ask whether Tom has more or fewer than Mia. The answer 36 is bigger than 12, so it cannot be right. Point to the bars: 12 is the long bar, and we are looking for the short one."
+        },
+        {
+          "mistake": "Subtracting: 12 - 3 = 9.",
+          "response": "Check by testing 9: is 12 three times as many as 9? 9 x 3 = 27, not 12. Then test 4: 4 x 3 = 12. Subtracting finds the gap, but this problem gives the number of equal groups."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why do we divide here? The problem says 'times'.",
+          "answer": "The word 'times' tells us the bars are related by equal groups. Here the total is known and the group size is missing, and finding the size of one equal group is division."
+        },
+        {
+          "question": "How do I know which number is the big one?",
+          "answer": "The amount that is 'times as many' is the larger one. Here that is Mia's 12. The multiplier, 3, is not an amount of stickers, only a count of groups."
+        },
+        {
+          "question": "Can I check my answer?",
+          "answer": "Yes. Multiply your answer by the multiplier. If you get the larger amount, you are right: 4 x 3 = 12."
+        }
+      ],
+      "check_question": {
+        "question": "A rope is 18 m long. It is 3 times as long as a stick. How long is the stick?",
+        "solution": "The rope is 3 equal pieces, each the length of the stick. 18 / 3 = 6 m.",
+        "expression": "18/3",
+        "answer": "6"
+      }
+    },
+    {
+      "title": "Finding how many times as many",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a red bar of 5 blocks and a blue bar of 20 blocks. Ask how many red bars fit along the blue bar. Cut the blue bar into pieces of 5: there are 4 pieces. So blue is 4 times as long as red."
+        },
+        {
+          "kind": "procedure",
+          "text": "1. Name which amount is larger and which is smaller. 2. Divide the larger by the smaller: larger / smaller. 3. Say the answer in a sentence: 'The larger is ... times as many as the smaller.' If the question asks 'how many more', subtract instead."
+        }
+      ],
+      "example": {
+        "problem": "A blue tower has 20 blocks. A red tower has 5 blocks. How many times as many blocks does the blue tower have as the red tower?",
+        "steps": "Ask how many groups of 5 fit into 20. Divide: 20 / 5 = 4. The blue tower has 4 times as many blocks. Check: 5 x 4 = 20. (How many more? That is a different question: 20 - 5 = 15 more.)",
+        "expression": "20/5",
+        "answer": "4"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Red;Blue",
+        "a": 5,
+        "b": 20,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Subtracting: 20 - 5 = 15 and saying 15 times.",
+          "response": "Show that 15 copies of 5 would be 75. Explain that subtraction answers 'how many more', and division answers 'how many times'. Have them say both sentences about the same bars."
+        },
+        {
+          "mistake": "Dividing the smaller by the larger: 5 / 20, then getting confused by the result.",
+          "response": "Ask them to count how many red bars fit into the blue bar. Remind them we divide the bigger amount by the smaller to count the copies. 5 / 20 would say that red is one quarter of blue, which is true but is a different sentence."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is the answer 4 and not 15?",
+          "answer": "15 is how many blocks more the blue tower has. 4 is how many red towers it takes to match blue. Both are true, they just answer different questions."
+        },
+        {
+          "question": "What if the larger number does not divide evenly?",
+          "answer": "Then the larger amount is not a whole number of times the smaller one. For example 20 compared with 8 gives 20 / 8 = 2.5 times. At this level, I would stick to problems that divide evenly."
+        },
+        {
+          "question": "Can the answer be less than 1?",
+          "answer": "Yes, if you compare the smaller to the larger, like 5 compared to 20 gives one quarter. But we usually put the larger amount first, so the answer is at least 1."
+        }
+      ],
+      "check_question": {
+        "question": "Class A collected 6 cans and class B collected 42 cans. How many times as many cans did class B collect?",
+        "solution": "How many groups of 6 fit into 42? 42 / 6 = 7. Class B collected 7 times as many.",
+        "expression": "42/6",
+        "answer": "7"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Sam runs 3 km. His dad runs 4 times as far as Sam. How far does his dad run?",
+      "solution": "Dad's distance is 4 groups of 3 km. 3 x 4 = 12 km.",
+      "expression": "3*4",
+      "answer": "12"
+    },
+    {
+      "problem": "A book costs 24 dollars. That is 6 times as much as a pen costs. How much does the pen cost?",
+      "solution": "The book is 6 equal groups, each the price of a pen. 24 / 6 = 4 dollars.",
+      "expression": "24/6",
+      "answer": "4"
+    },
+    {
+      "problem": "A bean plant is 8 cm tall and a sunflower is 40 cm tall. How many times as tall as the bean plant is the sunflower?",
+      "solution": "How many groups of 8 fit into 40? 40 / 8 = 5. The sunflower is 5 times as tall. (It is 32 cm taller, which is a different question.)",
+      "expression": "40/8",
+      "answer": "5"
+    }
+  ],
+  "meta": {
+    "concept": "multiplicative-comparison",
+    "title": "Multiplicative comparison (times as many)",
+    "model": "sonnet",
+    "cost_usd": 0.07807,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Multiplicative+comparison+%28times+as+many%29"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Multiplicative+comparison+%28times+as+many%29"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Multiplicative+comparison+%28times+as+many%29"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Multiplicative+comparison+%28times+as+many%29"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Multiplicative+comparison+%28times+as+many%29+math"
+    }
+  ]
+}

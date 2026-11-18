@@ -1,0 +1,258 @@
+{
+  "idea": "A percent change tells how much a quantity goes up or down, measured in hundredths of its starting amount. A discount is just a percent decrease in a price. You can find the change first and then add or subtract it, or use one multiplier: 1 + the percent for an increase, 1 - the percent for a decrease.",
+  "why": "Percent means \"per hundred\", so 25% of a number is 25/100 of it. The new amount is the old amount plus or minus that part: new = old + old*p = old*(1+p) for an increase, and old*(1-p) for a decrease. So one multiplication does the job of two steps. Every percent is measured against the starting amount (the base). When the amount changes, the base changes too. That is why 20% off followed by 20% on does not return to the start, and why a percent change is always the change divided by the OLD amount.",
+  "theory_example": {
+    "problem": "A coat costs 80. It is reduced by 20%. Later the sale price goes up by 25%. What is the final price?",
+    "steps": "Step 1: 20% of 80 = 0.20 * 80 = 16, so the sale price is 80 - 16 = 64 (same as 80 * 0.80 = 64). Step 2: The new base is 64, not 80. 25% of 64 = 16, so the new price is 64 + 16 = 80 (same as 64 * 1.25 = 80). Step 3: One-line check: 80 * 0.80 * 1.25 = 80 * 1 = 80. The 25% rise is measured on the smaller price, so it exactly undoes the 20% drop. A 20% rise would not.",
+    "expression": "80*Rational(8,10)*Rational(125,100)",
+    "answer": "80"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: ask where students have seen \"30% off\" or \"prices up 10%\". Say today they will find the new amount after a percent change. Use the idea from your notes in your own words."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Percent increase': draw the bar picture of 80 growing by 25%, work the example together, then ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Discounts and the multiplier': show the 60 jacket with 30% off, link it to the multiplier 0.70, then ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Finding the percent change': go from old and new prices to the percent, stressing divide by the OLD amount. Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work the 3 extra examples with the class (let students try each first), and answer any open questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Percent increase",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a bar for the old amount, 80, and split it into 4 equal parts. Each part is 25% of 80, which is 20. Add one extra part of 20 on the end. The old bar plus the extra part is the new bar, 100."
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: turn the percent into a fraction or decimal (25% = 0.25). Step 2: multiply by the old amount to get the increase (0.25 * 80 = 20). Step 3: add it to the old amount (80 + 20 = 100). Shortcut: multiply by 1.25 once."
+        }
+      ],
+      "example": {
+        "problem": "A bike costs 80. The price goes up by 25%. What is the new price?",
+        "steps": "25% of 80 = 0.25 * 80 = 20. New price = 80 + 20 = 100. Check with the multiplier: 80 * 1.25 = 100.",
+        "expression": "80*(1+Rational(25,100))",
+        "answer": "100"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Old;Increase;New",
+        "a": 80,
+        "b": 20,
+        "c": 100,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students give only the increase (20) as the answer, forgetting to add it to the old price.",
+          "response": "Ask: 'Is 20 the new price, or how much it went up by?' Have them re-read the question and point to the bar picture: the new price is the whole long bar."
+        },
+        {
+          "mistake": "Students add the percent number directly: 80 + 25 = 105.",
+          "response": "Say that 25% is a part of 80, not 25 units. Ask them to find 25% of 80 first. Show that 25 would be the right increase only if the old amount were 100."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we multiply by 1.25 and not 0.25?",
+          "answer": "0.25 times 80 gives only the increase, the extra bit. The whole new price is the old 100% plus the extra 25%, which is 125% = 1.25. So we multiply by 1.25 to get everything at once."
+        },
+        {
+          "question": "Can a price go up by more than 100%?",
+          "answer": "Yes. If it goes up 100%, it doubles. Up 150% means the new price is 2.5 times the old one. The extra part can be bigger than the old amount."
+        },
+        {
+          "question": "Why is it 25% of the OLD price?",
+          "answer": "Because the old price is what you are comparing against. A change is described relative to where you started. It is the usual agreement unless a question says otherwise."
+        }
+      ],
+      "check_question": {
+        "question": "A plant is 40 cm tall and grows by 10%. How tall is it now?",
+        "solution": "10% of 40 = 4. New height = 40 + 4 = 44 cm. Or 40 * 1.10 = 44.",
+        "expression": "40*(1+Rational(10,100))",
+        "answer": "44"
+      }
+    },
+    {
+      "title": "Discounts and the multiplier",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "You are in a shop and a jacket costs 60. A sign says 30% off. Imagine the price tag as 100 equal small pieces. The shop removes 30 of them and you pay for the other 70. So you pay 70% of 60, which is 42. Saving 30% means paying 70%."
+        },
+        {
+          "kind": "procedure",
+          "text": "Method A: find the discount (30% of 60 = 18), then subtract (60 - 18 = 42). Method B: subtract the percent from 100% to get what you pay (100% - 30% = 70% = 0.70), then multiply (60 * 0.70 = 42). Both give the same answer."
+        }
+      ],
+      "example": {
+        "problem": "A jacket costs 60. It is on sale for 30% off. What is the sale price?",
+        "steps": "Discount = 30% of 60 = 0.30 * 60 = 18. Sale price = 60 - 18 = 42. Check with the multiplier: you pay 100% - 30% = 70%, and 60 * 0.70 = 42.",
+        "expression": "60*(1-Rational(30,100))",
+        "answer": "42"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Original;Discount;Sale",
+        "a": 60,
+        "b": 18,
+        "c": 42,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students give the discount (18) as the final price.",
+          "response": "Ask what the question wants: the amount saved or the amount paid. Point to the bars: 18 is the small piece taken off, and the sale price is what is left."
+        },
+        {
+          "mistake": "Students subtract the percent as a number of units: 60 - 30 = 30.",
+          "response": "Remind them that 30% is a part of 60, not 30 units. Ask them to find 30% of 60 first. Show that 60 - 30 would mean 50% off."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we use 0.70 when the sign says 30%?",
+          "answer": "The sign tells you what is taken off. 0.70 is what you still pay. 100% minus 30% is 70%, so you multiply by 0.70 to get the sale price directly."
+        },
+        {
+          "question": "Is it OK to find 10% first and then multiply?",
+          "answer": "Yes, it is a good method. 10% of 60 is 6. Then 30% is three tens, so 18. Subtract from 60 to get 42."
+        },
+        {
+          "question": "If there are two discounts, can I just add them?",
+          "answer": "No. The second discount is taken from the already reduced price. 20% off then 10% off is not 30% off. Multiply: 0.80 * 0.90 = 0.72, which is 28% off."
+        }
+      ],
+      "check_question": {
+        "question": "A game costs 50 and is 40% off. What do you pay?",
+        "solution": "You pay 100% - 40% = 60% of 50. 50 * 0.60 = 30.",
+        "expression": "50*(1-Rational(40,100))",
+        "answer": "30"
+      }
+    },
+    {
+      "title": "Finding the percent change",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Step 1: subtract to find the change (new - old, ignoring the sign). Step 2: divide the change by the OLD amount. Step 3: multiply by 100 to write it as a percent. Step 4: say whether it is an increase or a decrease."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw two bars: old 50 and new 40. The new bar is shorter by 10. Ask: how many 'old bars' fit in the gap? The gap 10 is one fifth of the old bar 50, and one fifth is 20%. So the price went down by 20%."
+        }
+      ],
+      "example": {
+        "problem": "A game used to cost 50 and now costs 40. What is the percent decrease?",
+        "steps": "Change = 50 - 40 = 10. Divide by the OLD price: 10 / 50 = 0.2. As a percent: 0.2 * 100 = 20%. It is a 20% decrease.",
+        "expression": "(50-40)*100/50",
+        "answer": "20"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Old;New",
+        "a": 50,
+        "b": 40,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students divide by the new amount (10/40 = 25%).",
+          "response": "Ask: 'Compared with what did the price change?' It changed from the old price. Check: 25% off 50 would give 37.50, not 40, so 25% cannot be right."
+        },
+        {
+          "mistake": "Students think an increase of 20% followed by a decrease of 20% brings you back to the start.",
+          "response": "Try 100: up 20% is 120, and 20% of 120 is 24, so down 20% gives 96. The second percent is of a different, bigger base, so it takes off more."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we divide by the old number?",
+          "answer": "A percent compares a change with a starting point. The old amount is the starting point, so we ask what fraction of it the change is."
+        },
+        {
+          "question": "Do I get a negative percent if it goes down?",
+          "answer": "You can write it as -20% to show a decrease, or say '20% decrease'. Either is fine. Just make the direction clear in your answer."
+        },
+        {
+          "question": "Why did going from 40 back to 50 not give 20%?",
+          "answer": "Going from 40 to 50 is a change of 10 out of an old amount of 40, which is 25%. The change is the same, but the starting point is different, so the percent is different."
+        }
+      ],
+      "check_question": {
+        "question": "A bag of apples goes from 25 to 30 apples. What is the percent increase?",
+        "solution": "Change = 30 - 25 = 5. 5 / 25 = 0.2 = 20%.",
+        "expression": "(30-25)*100/25",
+        "answer": "20"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "A book costs 15 and is sold at 20% off. What is the sale price?",
+      "solution": "You pay 100% - 20% = 80% of 15. 15 * 0.80 = 12. The sale price is 12.",
+      "expression": "15*(1-Rational(20,100))",
+      "answer": "12"
+    },
+    {
+      "problem": "Shoes cost 120 and are reduced to 90. What is the percent decrease?",
+      "solution": "Change = 120 - 90 = 30. Divide by the old price: 30 / 120 = 0.25 = 25%. It is a 25% decrease.",
+      "expression": "(120-90)*100/120",
+      "answer": "25"
+    },
+    {
+      "problem": "A price of 100 goes up by 20%, and then the new price goes down by 20%. What is the final price?",
+      "solution": "Up 20%: 100 * 1.20 = 120. Down 20% of 120: 120 * 0.80 = 96. The final price is 96, which is 4 less than the start, because the second 20% is taken from a bigger base.",
+      "expression": "100*Rational(12,10)*Rational(8,10)",
+      "answer": "96"
+    }
+  ],
+  "meta": {
+    "concept": "percent-change",
+    "title": "Percent increase, decrease and discounts",
+    "model": "sonnet",
+    "cost_usd": 0.12486,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Percent+increase%2C+decrease+and+discounts"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Percent+increase%2C+decrease+and+discounts"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Percent+increase%2C+decrease+and+discounts"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Percent+increase%2C+decrease+and+discounts"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Percent+increase%2C+decrease+and+discounts+math"
+    }
+  ]
+}

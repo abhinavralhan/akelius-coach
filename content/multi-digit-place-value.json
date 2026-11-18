@@ -1,0 +1,258 @@
+{
+  "idea": "Large numbers are read and written in groups of three digits (ones, thousands, millions), and every digit has a value that depends on its place. To compare two numbers you first compare how many digits they have, then look from the left for the first place where they differ. Nothing more is needed, and it works for numbers of any size.",
+  "why": "Each place is worth ten times the place to its right, so one step to the left always outweighs everything to its right. For example, one hundred thousand is bigger than 99 999, which is the biggest number you can make with all the places below it. That is why a number with more digits is larger (if it has no leading zeros), and why the leftmost place where two numbers differ decides which is larger. The digits further right can't change the result. Grouping in threes just makes the places easy to see and to say aloud: you read each group as a small number and then add its name (million, thousand).",
+  "theory_example": {
+    "problem": "Write 25 030 400 in words, then say which is larger: 25 030 400 or 25 003 999.",
+    "steps": "1. Split 25 030 400 into groups of three from the right: 25 | 030 | 400. 2. Read each group and add its name: 25 million, 30 thousand, 400. In words: twenty-five million, thirty thousand, four hundred. 3. Compare the digit counts: 25 030 400 has 8 digits and 25 003 999 has 8 digits, so they tie. 4. Compare from the left: 2 and 2 match, 5 and 5 match, then 0 and 0 match, then 3 against 0. The first difference is in the ten-thousands place (3 against 0). 5. 3 is more than 0, so 25 030 400 is larger.",
+    "expression": "25030400",
+    "answer": "25030400"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up using 'Place value and reading in groups of three'. Write 3 405 072 on the board and ask: how would you say this? Collect guesses without correcting yet. Then draw the place-value columns (ones, tens, hundreds | thousands | millions) and say that today the class will learn to read big numbers and compare them."
+    },
+    {
+      "minutes": 10,
+      "activity": "Teach 'Place value and reading in groups of three'. Work through the example 3 405 072 step by step with the place-value chart. Use one of the two explanations (the picture of the chart or the story of the zeros as empty seats). Ask the check question, and let students answer on mini whiteboards or in notebooks."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Comparing two numbers'. Write the example pair 6 284 910 and 6 248 910 on the board. First ask which has more digits, then circle the first place where they differ. Use the story or the procedure. Pose the check question and ask a few students to explain how they decided."
+    },
+    {
+      "minutes": 7,
+      "activity": "Teach 'Ordering several numbers'. Show the bar picture of four towns (in thousands) and ask the class to order them from smallest to largest, then check the order against the digits. Take the check question at the end."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Work through the three extra examples, mixing reading, writing and comparing. Let students try each one first, then ask one student to explain. Leave the last few minutes open for any questions the class still has."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Place value and reading in groups of three",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a table with the columns: hundreds, tens, ones under 'millions', then under 'thousands', then under 'ones'. Put the digits of 3 405 072 in the table, with one digit per box. Show that each group of three is read like a small number: 3 (million), 405 (thousand), 072 (read as seventy-two). A box with 0 is not read aloud but must stay in the table so the other digits stay in their places."
+        },
+        {
+          "kind": "story",
+          "text": "Think of a theatre with rows of three seats. Every digit sits in one seat, and the seat decides what it is worth. A zero is an empty seat: nobody sits there, but the seat is still in the row, so the people after it do not move up. If you remove the empty seat, everyone shifts and the number changes to something much smaller."
+        }
+      ],
+      "example": {
+        "problem": "Read 3 405 072 in words and say the value of the digit 4.",
+        "steps": "1. Group the digits from the right: 3 | 405 | 072. 2. The groups, from the left, are millions, thousands and ones. 3. Read each group and add its name: 3 million, 405 thousand, 72. 4. In words: three million, four hundred five thousand, seventy-two. 5. The digit 4 is the first digit of the thousands group, so it is in the hundreds-of-thousands place. Its value is 4 x 100 000 = 400 000.",
+        "expression": "4*100000",
+        "answer": "400000"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students drop the zeros when writing a number from words, for example writing 'four hundred five thousand seventy-two' as 405 72.",
+          "response": "Have them write it by groups: 405 thousand is 405 and then three digits for the last group, so 405 | 072. Say that every group after the first has exactly three digits, and a missing place is filled with 0."
+        },
+        {
+          "mistake": "Students say the digit instead of its value, for example saying the 4 in 3 405 072 is 'four' or '4 thousand'.",
+          "response": "Ask which place the 4 is in, using the chart. It is in the hundreds place of the thousands group, so it means 4 hundred thousand, or 400 000. Ask them to say 'the digit is 4, the value is 400 000'."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we split numbers into groups of three?",
+          "answer": "Because it makes long numbers easy to read, as it is hard to see where you are in 3405072. The names repeat every three places (ones, thousands, millions), so each group of three is read like a small number and then given its name."
+        },
+        {
+          "question": "Why do we write the zero if we don't say it?",
+          "answer": "The zero holds the place. Without it the digits to its left would slide to the right and become smaller. 405 072 and 4 572 are very different numbers."
+        },
+        {
+          "question": "Do I say 'and' in the number?",
+          "answer": "In maths it is fine to leave it out: 'four hundred five thousand, seventy-two'. Some people say 'and' before the last part, but it is not needed. What matters is reading every group and its name."
+        }
+      ],
+      "check_question": {
+        "question": "Write in numbers: seven million, twenty thousand, three hundred four.",
+        "solution": "Seven million gives 7. Twenty thousand is the thousands group 020. Three hundred four is the ones group 304. Together: 7 | 020 | 304 = 7 020 304.",
+        "expression": "7020304",
+        "answer": "7020304"
+      }
+    },
+    {
+      "title": "Comparing two numbers",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Step 1: count the digits. The number with more digits is larger. Step 2: if the digit counts are the same, compare from the left, place by place. Step 3: at the first place where the digits differ, the number with the larger digit there is larger. Stop there, and don't look at the digits to the right. Write the answer with < or >."
+        },
+        {
+          "kind": "story",
+          "text": "Imagine two piggy banks. One holds 6 million, 2 hundred thousand and the other holds 6 million, 2 hundred thousand too, but then the first has 8 ten-thousands and the second has only 4. You don't need to count the coins left over, because the first piggy bank is already ahead. The big places are decided first, and the small places only matter when all the bigger ones are equal."
+        }
+      ],
+      "example": {
+        "problem": "Which is larger, 6 284 910 or 6 248 910? Write the comparison with a symbol.",
+        "steps": "1. Count the digits: both have 7 digits, so they tie. 2. Compare from the left: 6 and 6 match, 2 and 2 match. 3. Next place (ten-thousands): 8 and 4 are different, so stop here. 4. 8 is more than 4, so 6 284 910 is larger. 5. Write: 6 284 910 > 6 248 910.",
+        "expression": "6284910",
+        "answer": "6284910"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students think a number with bigger digits is bigger, so they say 9 876 543 is larger than 12 345 678 because it starts with 9.",
+          "response": "Ask them to count the digits first. The first number has 7 digits and the second has 8, so the second is ten times bigger in its leading place. Show that 12 345 678 is more than 10 million while 9 876 543 is less than 10 million."
+        },
+        {
+          "mistake": "Students compare from the right, or compare the last digits first.",
+          "response": "Show with money: 6 284 910 euros against 6 248 910 euros. The 'ten-thousands' make a big difference and the ones do not. Remind them that we always begin on the left, where the biggest places are."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why does more digits mean a bigger number?",
+          "answer": "Each new place on the left is worth ten times the one before it. The largest 7-digit number is 9 999 999, and the smallest 8-digit number is 10 000 000, which is one more than that. So any 8-digit number beats any 7-digit number (as long as it doesn't begin with a zero)."
+        },
+        {
+          "question": "What if the numbers are exactly the same all the way through?",
+          "answer": "Then they are equal, and we write =. You only need a < or > when you find a place where the digits differ."
+        },
+        {
+          "question": "Which way does the < sign point?",
+          "answer": "The small end (the point) points to the smaller number, and the open end faces the larger number. So 3 < 7 and 7 > 3. Some students like to say the symbol is a mouth that wants to eat the bigger number."
+        }
+      ],
+      "check_question": {
+        "question": "Which is larger, 530 482 or 530 842?",
+        "solution": "Both have 6 digits. Compare from the left: 5, 3, 0 match. The next digits are 4 and 8, which differ, and 8 is more than 4. So 530 842 is larger.",
+        "expression": "530842",
+        "answer": "530842"
+      }
+    },
+    {
+      "title": "Ordering several numbers",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Show four bars for the number of people in four towns (in thousands): A 745, B 754, C 475, D 574. The longer the bar, the bigger the number. Read the order off the bars from shortest to longest: C, D, A, B. Then check this against the digits: the first digit gives 4 < 5 < 7 and the two 7s are split by the second digit (4 < 5). Remind students that the bars show thousands, so 745 means 745 000."
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: sort by number of digits. Step 2: among numbers with the same number of digits, group them by their first digit. Step 3: when the first digits match, compare the next digit, and so on. Step 4: write the list in the order asked (smallest to largest, or largest to smallest) and check each neighbouring pair with < or >."
+        }
+      ],
+      "example": {
+        "problem": "Four towns have 745 000, 754 000, 475 000 and 574 000 people. Put them in order from smallest to largest and name the largest number.",
+        "steps": "1. All four numbers have 6 digits, so compare the first digits. 2. First digits: 7, 7, 4, 5. 3. The smallest first digit is 4 (475 000), then 5 (574 000). 4. Two numbers begin with 7: 745 000 and 754 000. Compare the next digits: 4 and 5, and 4 is less. 5. Order, smallest to largest: 475 000 < 574 000 < 745 000 < 754 000. 6. The largest is 754 000.",
+        "expression": "754000",
+        "answer": "754000"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "A;B;C;D",
+        "a": 745,
+        "b": 754,
+        "c": 475,
+        "d": 574
+      },
+      "mistakes": [
+        {
+          "mistake": "Students compare only the first digits and treat 745 000 and 754 000 as equal, or put them in the wrong order.",
+          "response": "Tell them the first digit only decides when the first digits differ. When they match, move to the next place. Ask them to underline the first place where the two differ, here 4 and 5 in the ten-thousands."
+        },
+        {
+          "mistake": "Students order the numbers the wrong way round, writing largest to smallest when asked for smallest to largest.",
+          "response": "Have them underline the words 'smallest to largest' before they start. Then they check by reading the list aloud: 'starts small, ends big'. A number line or the bars help, since small is on the left and big on the right."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Do I have to compare every number with every other one?",
+          "answer": "No. Find the smallest first, write it down, then find the smallest of what is left, and so on. Or sort by number of digits and by first digit, as in the steps, and only compare the ones that tie."
+        },
+        {
+          "question": "In the picture, why do the bars show 745 and not 745 000?",
+          "answer": "The bars would be too tall to draw, so the picture counts in thousands. Each unit of bar height means one thousand people. The order is the same either way."
+        },
+        {
+          "question": "What about numbers like 82 450 and 8 245? They have the same digits.",
+          "answer": "They have different numbers of digits: 82 450 has 5 and 8 245 has 4. So 82 450 is larger. The same digits in a different place give a different value, which is why place matters."
+        }
+      ],
+      "check_question": {
+        "question": "Which is the greatest: 2 090 000, 2 009 000 or 2 900 000?",
+        "solution": "All have 7 digits, and all start with 2 in the millions. The next place (hundred-thousands) has 0, 0 and 9. 9 is the most, so 2 900 000 is the greatest.",
+        "expression": "2900000",
+        "answer": "2900000"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Write in numbers: four million, sixty thousand, nine.",
+      "solution": "Four million gives 4. Sixty thousand is the thousands group 060. Nine is the ones group, which needs three digits: 009. So the number is 4 | 060 | 009 = 4 060 009.",
+      "expression": "4060009",
+      "answer": "4060009"
+    },
+    {
+      "problem": "Which is larger, 5 099 999 or 5 100 001?",
+      "solution": "Both have 7 digits and both start with 5 million. Next place (hundred-thousands): 0 in the first number and 1 in the second. 1 is more than 0, so 5 100 001 is larger, even though the first number has many 9s further right.",
+      "expression": "5100001",
+      "answer": "5100001"
+    },
+    {
+      "problem": "Put 82 450, 8 245, 824 500 and 82 540 in order from smallest to largest. What is the second largest?",
+      "solution": "Count digits: 8 245 has 4, the two 82-numbers have 5, and 824 500 has 6. So 8 245 is smallest and 824 500 is largest. Compare 82 450 and 82 540: they match at 8 and 2, then 4 and 5 differ, so 82 450 is smaller. Order: 8 245 < 82 450 < 82 540 < 824 500. The second largest is 82 540.",
+      "expression": "82540",
+      "answer": "82540"
+    }
+  ],
+  "meta": {
+    "concept": "multi-digit-place-value",
+    "title": "Reading and comparing large numbers",
+    "model": "sonnet",
+    "cost_usd": 0.07881,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Reading+and+comparing+large+numbers"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Reading+and+comparing+large+numbers"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Reading+and+comparing+large+numbers"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Reading+and+comparing+large+numbers"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Reading+and+comparing+large+numbers+math"
+    }
+  ]
+}

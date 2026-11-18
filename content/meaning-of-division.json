@@ -1,0 +1,258 @@
+{
+  "idea": "Division answers one question about equal amounts: if a total is split into equal parts, how big is each part, or how many parts are there? It has two faces. Sharing: the total and the number of shares are known, and we find the size of one share. Grouping: the total and the size of a group are known, and we find how many groups. Both are written the same way, for example 12 ÷ 3, and both undo multiplication.",
+  "why": "Multiplication builds a total from equal parts: groups × size = total. If you know the total and one of the other two numbers, division finds the missing one. Sharing finds the size and grouping finds the number of groups, but both are the same missing-factor problem. For example 3 × 4 = 12 gives both 12 ÷ 3 = 4 and 12 ÷ 4 = 3. That is why one symbol covers two kinds of story, and why a division fact can be checked by multiplying back.",
+  "theory_example": {
+    "problem": "There are 24 sweets. (a) Share them equally into 6 bags: how many sweets are in each bag? (b) Put them 6 to a bag: how many bags do you fill?",
+    "steps": "Both questions use the same three numbers: total 24, 6, and an unknown. Both come from 6 × ? = 24. (a) Sharing: 6 bags, unknown size of each bag. 6 × 4 = 24, so each bag has 4 sweets. (b) Grouping: 6 sweets per bag, unknown number of bags. 6 × 4 = 24, so you fill 4 bags. Both are 24 ÷ 6 = 4. Check: 6 × 4 = 24.",
+    "expression": "24/6",
+    "answer": "4"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Open with the theory example: 24 sweets and the number 6. Ask the class to tell you one story where 6 is the number of bags and another where 6 is the number of sweets in a bag. Say that both are 24 ÷ 6. Uses all subtopics lightly."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach the subtopic 'Division as sharing equally'. Use real counters or drawn dots: deal 12 into 3 sets one by one. Show the bars drawing, then write 12 ÷ 3 = 4. Ask the check question."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach the subtopic 'Division as grouping'. Use the same 12 counters and circle groups of 4. Show the bars drawing, and point out that the same total gives a different question and answer (3 groups). Ask the check question."
+    },
+    {
+      "minutes": 7,
+      "activity": "Teach the subtopic 'Division undoes multiplication'. Write 5 × 4 = 20 and read off 20 ÷ 5 and 20 ÷ 4. Let students find missing numbers by asking 'what times 5 makes 20?'. Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work the three extra examples with the class, asking each time whether it is sharing or grouping and what multiplication sits behind it. Then take student questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Division as sharing equally",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "12 cookies are shared fairly among 3 children. Deal them out one at a time, like cards, until none are left. Each child ends up with 4. We write 12 ÷ 3 = 4. The 3 is the number of shares and the answer is the size of each share."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw 3 empty circles for the children. Put 12 dots into them one at a time, round and round. Count one circle: 4 dots. All circles hold the same number, which is what makes it division."
+        }
+      ],
+      "example": {
+        "problem": "12 cookies are shared equally among 3 children. How many does each child get?",
+        "steps": "Total is 12 and the number of shares is 3. Ask: 3 times what number makes 12? 3 × 4 = 12. So each child gets 4. Check by adding up: 4 + 4 + 4 = 12.",
+        "expression": "12/3",
+        "answer": "4"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Total cookies;Each of 3 shares",
+        "a": 12,
+        "b": 4,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students divide the small number by the big one, or write 3 ÷ 12, because they read it left to right as 'the 3 children'.",
+          "response": "Ask which number is the thing being split. The cookies are split, so the total goes first: 12 ÷ 3. Act it out with real counters so they see the total being broken up."
+        },
+        {
+          "mistake": "Students share unequally, for example 5, 4 and 3, and still say they divided 12.",
+          "response": "Say that division means every share is the same size. Ask them to count each share and check they match. If not, move one counter and try again."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why does each child get fewer cookies when there are more children?",
+          "answer": "The total stays the same, so more shares means the cookies are cut into more parts. Each part is smaller. 12 among 3 gives 4 each, and 12 among 4 gives 3 each."
+        },
+        {
+          "question": "Is dividing the same as taking away?",
+          "answer": "It is related. You could take away 3 cookies at a time, but sharing means every child gets the same amount. Dividing is a fast way of doing fair sharing."
+        },
+        {
+          "question": "Why do we write the total first?",
+          "answer": "The ÷ sign reads 'split this by that', so the thing being split comes first. 12 ÷ 3 means split 12 into 3 equal shares."
+        }
+      ],
+      "check_question": {
+        "question": "15 stickers are shared equally among 5 children. How many does each child get?",
+        "solution": "Ask what 5 times what number makes 15. 5 × 3 = 15, so each child gets 3 stickers.",
+        "expression": "15/5",
+        "answer": "3"
+      }
+    },
+    {
+      "title": "Division as grouping",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "You have 12 cookies and each plate holds 4. How many plates can you fill? Put 4 on one plate, then 4 on another, and so on. You fill 3 plates. We write 12 ÷ 4 = 3. Here the 4 is the size of a group and the answer counts the groups."
+        },
+        {
+          "kind": "procedure",
+          "text": "Repeated subtraction: start at 12 and take away 4 again and again: 12, 8, 4, 0. Count how many times you subtracted: 3 times. So 12 ÷ 4 = 3."
+        }
+      ],
+      "example": {
+        "problem": "12 cookies are put on plates, 4 cookies on each plate. How many plates are filled?",
+        "steps": "Total is 12 and the group size is 4. Ask: how many 4s make 12? Count in fours: 4, 8, 12. That is 3 fours. So 3 plates are filled. Check: 3 × 4 = 12.",
+        "expression": "12/4",
+        "answer": "3"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Total cookies;Per plate;Plates",
+        "a": 12,
+        "b": 4,
+        "c": 3,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students answer 4 for 12 ÷ 4 because they think the answer must be the number in the story.",
+          "response": "Ask what the answer is counting. Here it counts plates, not cookies. Ask them to say the answer with its unit: 3 plates."
+        },
+        {
+          "mistake": "Students think grouping and sharing give different calculations, so they do not trust that both are division.",
+          "response": "Show 12 ÷ 3 and 12 ÷ 4 side by side with the same 12 counters. Both are the unknown in a times fact, 3 × ? = 12 and ? × 4 = 12, just with a different story."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "How can the same 12 give 4 in one problem and 3 in another?",
+          "answer": "The questions are different. 12 ÷ 3 asks for the size of each share when you split into 3. 12 ÷ 4 asks how many groups of 4 you can make. Different questions have different answers."
+        },
+        {
+          "question": "Do I have to count in groups, or is there a faster way?",
+          "answer": "Counting in groups works for small numbers. Faster is to use times tables backwards: 4 times what is 12? As you learn more facts, it becomes quick."
+        },
+        {
+          "question": "What if the groups don't fit exactly?",
+          "answer": "Then there is something left over, called a remainder. 13 cookies with 4 per plate fills 3 plates with 1 cookie left. Today we stay with cases that fit exactly."
+        }
+      ],
+      "check_question": {
+        "question": "A ribbon is 18 metres long. You cut it into pieces of 3 metres each. How many pieces do you get?",
+        "solution": "How many 3s make 18? Counting in threes: 3, 6, 9, 12, 15, 18 is 6 threes. So you get 6 pieces.",
+        "expression": "18/3",
+        "answer": "6"
+      }
+    },
+    {
+      "title": "Division undoes multiplication",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Start with a multiplication fact such as 5 × 4 = 20. Read it as: 5 groups of 4 make 20. From it you can write two division facts: 20 ÷ 5 = 4 and 20 ÷ 4 = 5. To solve a division, ask which number times the divisor gives the total."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw an array of 5 rows with 4 dots in each row: 20 dots. Cover the number of dots and read the rows and columns. 20 dots in 5 rows is 4 in each row, and 20 dots in rows of 4 is 5 rows. One picture shows the whole fact family."
+        }
+      ],
+      "example": {
+        "problem": "Find 20 ÷ 5 by using multiplication.",
+        "steps": "Rewrite as a missing number: 5 × ? = 20. Count in fives: 5, 10, 15, 20. That is the 4th number, so ? = 4. So 20 ÷ 5 = 4. Check: 5 × 4 = 20.",
+        "expression": "20/5",
+        "answer": "4"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students say 20 ÷ 5 = 100 because they multiply instead of dividing.",
+          "response": "Ask whether the answer should be bigger or smaller than 20 when splitting 20 into 5 equal parts. Then have them check by multiplying back: 5 × 4 = 20."
+        },
+        {
+          "mistake": "Students think 20 ÷ 5 and 5 ÷ 20 are the same, as in multiplication.",
+          "response": "Division is not swappable. 20 split into 5 shares gives 4, but 5 split into 20 shares is not a whole number. Use counters to show it."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do I need to learn division if I know multiplication?",
+          "answer": "Many real problems give you a total and ask for the missing part, such as how many each or how many groups. Division is how you find it, and your times tables are the tool you use."
+        },
+        {
+          "question": "Is there always an answer in my times tables?",
+          "answer": "For exact division facts, yes. If the number is not in the table of the divisor, there will be a remainder."
+        },
+        {
+          "question": "Why can't I divide by 0?",
+          "answer": "Ask: 0 times what makes 20? Nothing does, because 0 times anything is 0. So there is no answer, and we say dividing by 0 is not allowed."
+        }
+      ],
+      "check_question": {
+        "question": "9 × ? = 63. What is 63 ÷ 9?",
+        "solution": "Use the times table of 9: 9 × 7 = 63. So 63 ÷ 9 = 7.",
+        "expression": "63/9",
+        "answer": "7"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "18 pencils are shared equally among 3 students. How many pencils does each student get? Is this sharing or grouping?",
+      "solution": "This is sharing, because we know the number of shares (3) and want the size of each. 3 × 6 = 18, so each student gets 6 pencils.",
+      "expression": "18/3",
+      "answer": "6"
+    },
+    {
+      "problem": "There are 20 apples. Each basket holds 5 apples. How many baskets can you fill? Is this sharing or grouping?",
+      "solution": "This is grouping, because we know the size of each group (5) and want the number of groups. 5 × 4 = 20, so you fill 4 baskets.",
+      "expression": "20/5",
+      "answer": "4"
+    },
+    {
+      "problem": "Use multiplication to find 56 ÷ 7.",
+      "solution": "Rewrite as 7 × ? = 56. From the times table, 7 × 8 = 56, so 56 ÷ 7 = 8. Check: 7 × 8 = 56.",
+      "expression": "56/7",
+      "answer": "8"
+    }
+  ],
+  "meta": {
+    "concept": "meaning-of-division",
+    "title": "What division means",
+    "model": "sonnet",
+    "cost_usd": 0.12471,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=What+division+means"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=What+division+means"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/What+division+means"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=What+division+means"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=What+division+means+math"
+    }
+  ]
+}

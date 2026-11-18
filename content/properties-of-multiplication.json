@@ -1,0 +1,254 @@
+{
+  "idea": "Multiplication follows a few rules that let us rearrange a problem without changing its answer. Order does not matter (commutative), grouping does not matter (associative), and a number multiplying a sum can be shared out over the parts (distributive). Also, multiplying by 1 changes nothing and multiplying by 0 gives 0. These rules are the tools behind mental math and, later, algebra.",
+  "why": "Each rule comes from what multiplication means: equal groups, or rows and columns of a rectangle. Turn a 3 by 5 rectangle sideways and it becomes 5 by 3 with the same number of squares, so a x b = b x a. A box of a x b x c blocks can be counted layer by layer in different ways, so grouping does not matter. Cutting a rectangle into two smaller rectangles shows the whole area is the sum of the parts, so a x (b + c) = a x b + a x c. These rules do not carry over to every operation: subtraction and division are not commutative or associative, and sharing out only works if you multiply every part of the sum.",
+  "theory_example": {
+    "problem": "Work out 6 x 14 in your head, and then 4 x 17 x 25.",
+    "steps": "6 x 14: split 14 into 10 + 4 (distributive). 6 x 10 = 60 and 6 x 4 = 24. Add: 60 + 24 = 84. For 4 x 17 x 25: change the order (commutative) to 4 x 25 x 17. Group the easy pair first (associative): (4 x 25) x 17 = 100 x 17 = 1700.",
+    "expression": "6*14",
+    "answer": "84"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 8,
+      "activity": "Teach 'Order does not matter (commutative), plus 1 and 0'. Draw a 3 by 5 array of dots on the board, then show it turned as 5 by 3. Ask students what stayed the same. Briefly try times 1 and times 0 with one example each, then ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Teach 'Grouping does not matter (associative)'. Write 2 x 5 x 7 and let pairs try both groupings. Ask which is easier and why. Mention that this works for multiplication, not for subtraction. Ask the check question."
+    },
+    {
+      "minutes": 12,
+      "activity": "Teach 'Splitting a number (distributive)'. Draw the 7 by 13 rectangle cut into 7 by 10 and 7 by 3 and show the bars. Work the 7 x 13 example together, then let students try 6 x 12 as the check question. Finish with the 'near 100' trick."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Work through the three extra examples, letting students suggest the rule to use before you show the steps. Leave the last minutes for any questions students have."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Order does not matter (commutative), plus 1 and 0",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw 6 rows of 4 muffins on a tray. Count 24. Now turn the tray a quarter turn: it is 4 rows of 6, and nobody added or removed a muffin. So 6 x 4 = 4 x 6. For 1 and 0: one row of any size is just that number, so n x 1 = n. Zero rows (or empty rows) means nothing on the tray, so n x 0 = 0."
+        },
+        {
+          "kind": "story",
+          "text": "Say: you buy 3 packs of 5 stickers, and your friend buys 5 packs of 3 stickers. Who has more? Let students argue, then count both: 15 each. Different packing, same total. Then ask: what if you buy 0 packs? What if every pack is one sticker?"
+        }
+      ],
+      "example": {
+        "problem": "A tray has 6 rows of 4 muffins. How many muffins? Check by thinking of 4 rows of 6.",
+        "steps": "6 x 4 = 24. Turn the tray: 4 x 6 = 24. Both give 24, so the order did not matter. Using it: 4 x 6 is the same as 6 x 4, so use whichever you know better.",
+        "expression": "6*4",
+        "answer": "24"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "6 rows of 4;4 rows of 6",
+        "a": 24,
+        "b": 24,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students think subtraction or division can also be turned around, e.g. 8 - 3 = 3 - 8, or 8 / 2 = 2 / 8.",
+          "response": "Let them test it with real numbers: 8 - 3 = 5 but 3 - 8 is below zero. Say that the turn-around rule belongs to multiplication (and addition), not everything."
+        },
+        {
+          "mistake": "Students say n x 1 = 1 or n x 0 = n.",
+          "response": "Return to groups: n x 1 is one group of n, so it is n. n x 0 is no groups, or nothing in each group, so the total is 0. Have them draw it."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why is 3 x 5 the same as 5 x 3 when they mean different things?",
+          "answer": "They do describe different pictures: 3 groups of 5 and 5 groups of 3. But when you count everything, the total is the same. A rectangle turned sideways shows it."
+        },
+        {
+          "question": "Does this mean I can always swap the numbers in any problem?",
+          "answer": "Only when the operation is multiplication (or addition). With subtraction or division, swapping changes the answer."
+        },
+        {
+          "question": "Why is anything times zero zero, even a huge number?",
+          "answer": "Zero groups of a million is nothing. A million groups of nothing is also nothing. Either way, you have no items."
+        }
+      ],
+      "check_question": {
+        "question": "Fill in the blank: 9 x __ = 7 x 9",
+        "solution": "Turn it around (commutative): 7 x 9 = 9 x 7, so the blank is 7.",
+        "expression": "7",
+        "answer": "7"
+      }
+    },
+    {
+      "title": "Grouping does not matter (associative)",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "When you multiply three numbers, you do two at a time. You may choose which two go first, because the answer is the same. Steps: look at the numbers, find a pair that makes an easy product (such as 2 and 5 for 10, or 4 and 25 for 100), multiply that pair first, then multiply the result by the last number. Use commutative to bring that pair next to each other if needed."
+        },
+        {
+          "kind": "picture",
+          "text": "Picture a box of blocks, 2 layers, each layer 3 rows of 4. You can count one layer first (3 x 4 = 12) and then 2 layers (2 x 12 = 24). Or you can count a slice 2 by 3 (6 blocks) and then 4 slices (6 x 4 = 24). It is the same box, so the same 24 blocks."
+        }
+      ],
+      "example": {
+        "problem": "Work out 2 x 5 x 7 in the easiest way.",
+        "steps": "Group the easy pair: (2 x 5) x 7. 2 x 5 = 10. Then 10 x 7 = 70. Check the other way: 2 x (5 x 7) = 2 x 35 = 70. Same answer, but the first way was easier.",
+        "expression": "2*5*7",
+        "answer": "70"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students write 2 x (3 x 4) = (2 x 3) x (2 x 4), multiplying the 2 into both numbers.",
+          "response": "Compute both: 2 x 12 = 24 but 6 x 8 = 48. Explain that with only multiplication inside the brackets, the 2 goes with just one of them. The sharing-out rule is for sums."
+        },
+        {
+          "mistake": "Students think the grouping rule works for subtraction, e.g. (10 - 4) - 3 = 10 - (4 - 3).",
+          "response": "Let them work both: 3 and 9. Differences show that grouping matters for subtraction. The rule is special to multiplication (and addition)."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we need this if the answer is always the same?",
+          "answer": "Because you can pick the easiest route. 4 x 17 x 25 is hard as written, but (4 x 25) x 17 = 100 x 17 is quick."
+        },
+        {
+          "question": "Can I use this with four or more numbers?",
+          "answer": "Yes. Multiply in any order and in any grouping you like. The answer stays the same."
+        },
+        {
+          "question": "Do brackets always have to be done first?",
+          "answer": "Yes, brackets tell you what to do first. This rule says that for multiplication only, moving brackets does not change the result."
+        }
+      ],
+      "check_question": {
+        "question": "What is 5 x 3 x 2? Which two numbers would you multiply first?",
+        "solution": "Multiply 5 x 2 = 10 first, then 10 x 3 = 30.",
+        "expression": "5*3*2",
+        "answer": "30"
+      }
+    },
+    {
+      "title": "Splitting a number (distributive)",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a rectangle 7 tall and 13 wide. Draw a line after 10 columns so you have a 7 by 10 rectangle and a 7 by 3 rectangle. The big area is 70 + 21 = 91. Say: the whole is the sum of the pieces, so 7 x 13 = 7 x 10 + 7 x 3."
+        },
+        {
+          "kind": "procedure",
+          "text": "To multiply a number by a sum: 1. Break one factor into easy parts (13 = 10 + 3). 2. Multiply the other factor by EACH part. 3. Add the results. Near 100 you can also subtract: 8 x 98 = 8 x 100 - 8 x 2 = 800 - 16 = 784."
+        }
+      ],
+      "example": {
+        "problem": "Work out 7 x 13 by splitting 13.",
+        "steps": "Split 13 = 10 + 3. 7 x 10 = 70. 7 x 3 = 21. Add: 70 + 21 = 91. So 7 x 13 = 91.",
+        "expression": "7*13",
+        "answer": "91"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "7 x 10;7 x 3;7 x 13",
+        "a": 70,
+        "b": 21,
+        "c": 91,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students multiply only the first part: 7 x (10 + 3) = 70 + 3 = 73.",
+          "response": "Go back to the rectangle: the 7 rows go through both pieces, so each piece gets multiplied by 7. Have them check by drawing."
+        },
+        {
+          "mistake": "Students split the factor into a product instead of a sum, e.g. 7 x 13 = 7 x 10 x 3.",
+          "response": "Show that 7 x 10 x 3 = 210, which is far too big. Splitting must be into a sum (10 + 3), then add the pieces at the end."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do I have to multiply both parts?",
+          "answer": "Because the 7 is multiplying the whole 13. When 13 is cut into 10 and 3, each part still needs the 7 rows."
+        },
+        {
+          "question": "Can I split into other numbers, like 5 + 8?",
+          "answer": "Yes, any split works: 7 x 5 + 7 x 8 = 35 + 56 = 91. Tens are just easier."
+        },
+        {
+          "question": "Does this work with subtraction too?",
+          "answer": "Yes. 7 x (13 - 3) = 7 x 13 - 7 x 3. It is handy for numbers just below a round number, like 98 = 100 - 2."
+        }
+      ],
+      "check_question": {
+        "question": "Use splitting to work out 6 x 12.",
+        "solution": "6 x (10 + 2) = 6 x 10 + 6 x 2 = 60 + 12 = 72.",
+        "expression": "6*12",
+        "answer": "72"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Work out 4 x 17 x 25 by choosing a smart order.",
+      "solution": "Change the order: 4 x 25 x 17. Group 4 x 25 = 100. Then 100 x 17 = 1700.",
+      "expression": "4*17*25",
+      "answer": "1700"
+    },
+    {
+      "problem": "Work out 8 x 102 by splitting 102.",
+      "solution": "102 = 100 + 2. 8 x 100 = 800 and 8 x 2 = 16. 800 + 16 = 816.",
+      "expression": "8*102",
+      "answer": "816"
+    },
+    {
+      "problem": "What is 1 x 58 x 0 x 7?",
+      "solution": "Times 1 changes nothing, and any product with a 0 in it is 0. So the answer is 0, whatever the order or grouping.",
+      "expression": "1*58*0*7",
+      "answer": "0"
+    }
+  ],
+  "meta": {
+    "concept": "properties-of-multiplication",
+    "title": "Properties of multiplication",
+    "model": "sonnet",
+    "cost_usd": 0.12071,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Properties+of+multiplication"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Properties+of+multiplication"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Properties+of+multiplication"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Properties+of+multiplication"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Properties+of+multiplication+math"
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "idea": "Our number system is built on tens. Multiplying by 10, 100 or 1000 makes every digit worth 10, 100 or 1000 times more, so each digit moves left that many places. Dividing by 10, 100 or 1000 does the opposite: each digit moves right.",
+  "why": "Each place in a number is worth ten times the place to its right. Take 3 in the ones place. Times 10 makes it 30, so the 3 now sits in the tens place, one step left. Times 100 makes it 300, two steps left. The decimal point does not move. The digits move, and zeros fill the empty places so every digit keeps its correct place value. Dividing is the reverse of multiplying, so the digits move right. The number of zeros in 10, 100 or 1000 tells you how many places to move. This works because 100 is 10 times 10, so it is two moves of one place each.",
+  "theory_example": {
+    "problem": "Work out 0.46 x 1000, and then 3700 / 100.",
+    "steps": "1) 1000 has three zeros, so move every digit three places left. 0.46 becomes 460: the 4 goes from tenths to hundreds, and the 6 goes from hundredths to tens. 2) 3700 / 100: 100 has two zeros, so move every digit two places right. 3700 becomes 37. Check by reversing: 37 x 100 = 3700.",
+    "expression": "Rational(46,100)*1000",
+    "answer": "460"
+  },
+  "subtopics": [
+    {
+      "title": "Multiplying by 10, 100 and 1000",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a place value chart with columns for thousands, hundreds, tens and ones. Put a 3 in the ones column. For times 10, move it to the tens column and write 0 in the ones column: 30. For times 100, move it one more column: 300. Students see that the digit moves and the 0s only hold the empty places."
+        },
+        {
+          "kind": "story",
+          "text": "A packet holds 1 sticker. A box holds 10 packets, and a carton holds 10 boxes, so a carton holds 100 packets. If each packet has 3 stickers, a box has 30 stickers and a carton has 300. Each time we group in tens, the total is ten times bigger."
+        }
+      ],
+      "example": {
+        "problem": "Work out 3 x 100.",
+        "steps": "100 has two zeros, so move the digit 3 two places left. 3 becomes 30 after one place and 300 after two. Fill the empty places with zeros. So 3 x 100 = 300. Check with 3 x 10 = 30, and then 30 x 10 = 300.",
+        "expression": "3*100",
+        "answer": "300"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Start;Times 10;Times 100",
+        "a": 3,
+        "b": 30,
+        "c": 300,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students say 'just add a zero', so they write 3.5 x 10 = 3.50.",
+          "response": "Ask whether 3.50 is bigger than 3.5. It is not, because they are equal. Return to the place value chart and show that the digits move. 3.5 x 10 = 35, because the 3 moves from ones to tens and the 5 from tenths to ones."
+        },
+        {
+          "mistake": "Students count the wrong number of zeros, for example 45 x 1000 = 4500.",
+          "response": "Have them say the multiplier as 'ten, ten, ten' for 1000, so that there are three moves. Then compare: 45 x 1000 is 45 thousands, which is 45000."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why does the number get bigger when we just add zeros?",
+          "answer": "The zeros are not the main thing. Each digit moves to a place worth ten times more. The zeros are there so that the digits stay in the right places."
+        },
+        {
+          "question": "Does the decimal point move?",
+          "answer": "You can picture it either way. It is clearer to say that the digits move and the point stays still. Then 0.46 x 10 gives 4.6, because the 4 moves from tenths to ones."
+        },
+        {
+          "question": "Is times 1000 the same as times 10 three times?",
+          "answer": "Yes. 10 x 10 x 10 = 1000, so three one-place moves make one three-place move."
+        }
+      ],
+      "check_question": {
+        "question": "What is 45 x 1000?",
+        "solution": "1000 has three zeros, so move each digit three places left. 45 becomes 45000.",
+        "expression": "45*1000",
+        "answer": "45000"
+      }
+    },
+    {
+      "title": "Dividing by 10, 100 and 1000",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Use the same place value chart. Put 600 in it, with the 6 in the hundreds column. Divide by 10 and the 6 moves to the tens column: 60. Divide by 100 and it moves to the ones column: 6. The digits move right and each place is worth less."
+        },
+        {
+          "kind": "procedure",
+          "text": "1) Count the zeros in 10, 100 or 1000. 2) Move each digit that many places to the right. 3) If the number has a decimal point, move the digits across it. Write a 0 before the point if the number begins with it. 4) Check by multiplying back. The result times the power of ten should give the start number."
+        }
+      ],
+      "example": {
+        "problem": "Work out 600 / 100.",
+        "steps": "100 has two zeros, so move the digits two places right. 600 becomes 60 after one place and 6 after two. Check: 6 x 100 = 600. So 600 / 100 = 6.",
+        "expression": "600/100",
+        "answer": "6"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Start;Divide by 10;Divide by 100",
+        "a": 600,
+        "b": 60,
+        "c": 6,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students move the digits the wrong way and write 600 / 10 = 6000.",
+          "response": "Ask: when we share 600 into 10 groups, should each group be bigger or smaller than 600? Dividing makes the number smaller, so the digits move right."
+        },
+        {
+          "mistake": "Students remove zeros without thinking, so 4050 / 10 becomes 45.",
+          "response": "Show the place value chart. Only move the digits and keep the 0 inside the number. 4050 / 10 = 405. Check: 405 x 10 = 4050."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Can you always just cross out zeros?",
+          "answer": "Only when the number ends in enough zeros. 3700 / 100 = 37 works. 35 / 10 does not, so we use the decimal point and get 3.5."
+        },
+        {
+          "question": "Why do we get a decimal when there are not enough zeros?",
+          "answer": "The answer lies between whole numbers. 35 shared into 10 equal parts is 3 and a half, which is 3.5."
+        },
+        {
+          "question": "Is dividing by 100 the same as dividing by 10 twice?",
+          "answer": "Yes. 600 / 10 = 60 and 60 / 10 = 6, which matches 600 / 100 = 6."
+        }
+      ],
+      "check_question": {
+        "question": "What is 7200 / 100?",
+        "solution": "100 has two zeros, so move each digit two places right. 7200 becomes 72.",
+        "expression": "7200/100",
+        "answer": "72"
+      }
+    },
+    {
+      "title": "Decimals and units",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "A path is 4.5 km long. There are 1000 metres in each km, so the length in metres is 4.5 x 1000. The 4 moves to the thousands place and the 5 to the hundreds, so we get 4500 metres. Going from a large unit to a small unit gives a bigger number, so we multiply."
+        },
+        {
+          "kind": "procedure",
+          "text": "1) Decide whether the new number should be bigger or smaller. 2) If bigger, multiply. If smaller, divide. 3) Count the zeros of the power of ten. 4) Move the digits that many places left or right. If a place is empty, fill it with 0. 5) Check that the size of the answer makes sense."
+        }
+      ],
+      "example": {
+        "problem": "A rope is 350 cm long. How many metres is that? (1 m = 100 cm)",
+        "steps": "Metres are a bigger unit than centimetres, so the number should get smaller. Divide by 100. Move the digits of 350 two places right: 3.50, which is 3.5. So 350 cm = 3.5 m. Check: 3.5 x 100 = 350.",
+        "expression": "350/100",
+        "answer": "7/2"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students multiply when they should divide, for example changing cm to m by multiplying by 100.",
+          "response": "Ask them to think about size first. A metre is a bigger unit, so we need fewer of them. The number must get smaller, so we divide."
+        },
+        {
+          "mistake": "Students forget to fill an empty place, for example 0.5 x 100 = 5 instead of 50.",
+          "response": "Show the chart: 0.5 is 5 tenths. Two places left puts the 5 in the tens place, and the ones place needs a 0. The answer is 50."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "How do I know whether to multiply or divide?",
+          "answer": "Ask whether the new number should be larger or smaller. Changing to a smaller unit gives a larger number, so multiply. Changing to a larger unit gives a smaller number, so divide."
+        },
+        {
+          "question": "Why is 3.50 the same as 3.5?",
+          "answer": "The 0 in the hundredths place says there are no hundredths, so it adds nothing. We can drop it."
+        },
+        {
+          "question": "Does this work with money?",
+          "answer": "Yes. 2.35 dollars is 235 cents, because there are 100 cents in a dollar. 2.35 x 100 = 235."
+        }
+      ],
+      "check_question": {
+        "question": "How many grams is 2.5 kg? (1 kg = 1000 g)",
+        "solution": "Grams are smaller than kilograms, so the number gets bigger. Multiply by 1000: 2.5 x 1000 = 2500 g.",
+        "expression": "Rational(5,2)*1000",
+        "answer": "2500"
+      }
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up. Write 3, 30, 300 on the board and ask what changes from one to the next. Draw a place value chart with columns for thousands, hundreds, tens and ones, and say that digits move, not only zeros. This prepares the first subtopic."
+    },
+    {
+      "minutes": 10,
+      "activity": "Teach 'Multiplying by 10, 100 and 1000'. Use the place value chart and the bar picture for 3 x 100. Work the example together, then ask the check question about 45 x 1000. Pick one mistake to discuss, such as 'just add a zero'."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Dividing by 10, 100 and 1000'. Run the chart backwards with 600 / 100 and show the bars getting shorter. Ask students to check by multiplying back. Ask the check question about 7200 / 100."
+    },
+    {
+      "minutes": 7,
+      "activity": "Teach 'Decimals and units'. Work through the rope example, 350 cm in metres, and ask 'bigger or smaller?' first each time. Ask the check question about 2.5 kg in grams."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Work through the three extra examples with the class, which mix multiplying, dividing, decimals and money. Let students explain which way the digits move before you show the answer. Leave time for their questions."
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Work out 0.072 x 1000.",
+      "solution": "1000 has three zeros, so move each digit three places left. 0.072 becomes 72.",
+      "expression": "Rational(72,1000)*1000",
+      "answer": "72"
+    },
+    {
+      "problem": "Work out 45000 / 1000.",
+      "solution": "1000 has three zeros, so move each digit three places right. 45000 becomes 45. Check: 45 x 1000 = 45000.",
+      "expression": "45000/1000",
+      "answer": "45"
+    },
+    {
+      "problem": "A pen costs 2.35 dollars. How many dollars do 100 pens cost?",
+      "solution": "Multiply by 100, so move the digits two places left. 2.35 becomes 235. The pens cost 235 dollars.",
+      "expression": "Rational(235,100)*100",
+      "answer": "235"
+    }
+  ],
+  "meta": {
+    "concept": "powers-of-ten",
+    "title": "Multiplying and dividing by powers of ten",
+    "model": "sonnet",
+    "cost_usd": 0.12566,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Multiplying+and+dividing+by+powers+of+ten"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Multiplying+and+dividing+by+powers+of+ten"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Multiplying+and+dividing+by+powers+of+ten"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Multiplying+and+dividing+by+powers+of+ten"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Multiplying+and+dividing+by+powers+of+ten+math"
+    }
+  ]
+}

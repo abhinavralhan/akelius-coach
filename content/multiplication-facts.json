@@ -1,0 +1,258 @@
+{
+  "idea": "Multiplication tells us how many there are in total when we have equal groups. 4 × 6 means 4 groups with 6 in each group, so 24 altogether. Facts within 100 are the products from 1 × 1 up to 10 × 10 whose answer is 100 or less. Students learn them best by connecting each new fact to facts they already know, not only by memorising.",
+  "why": "A product is repeated addition made short: 4 × 6 = 6 + 6 + 6 + 6. That is why a hard fact can be split into easy ones. 7 groups of 8 is 5 groups of 8 plus 2 groups of 8, and the total stays the same because you only split the groups into two piles. Turn-around facts work because 3 rows of 8 squares and 8 rows of 3 squares are the same rectangle turned on its side. Nine groups is one group fewer than ten groups, which is why 9 × 7 = 70 − 7.",
+  "theory_example": {
+    "problem": "An egg tray has 6 rows with 8 eggs in each row. How many eggs are there?",
+    "steps": "1. Equal groups: 6 rows of 8 eggs, so 6 × 8. 2. Split 6 into 5 and 1. 3. 5 × 8 = 40 (half of 10 × 8 = 80). 4. 1 × 8 = 8. 5. Add the parts: 40 + 8 = 48. 6. Check by turning around: 8 × 6 = 5 × 6 + 3 × 6 = 30 + 18 = 48. Same answer.",
+    "expression": "6*8",
+    "answer": "48"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 8,
+      "activity": "Teach 'Equal groups and repeated addition'. Draw 4 groups of 6 counters on the board. Students write the repeated addition and the multiplication sentence. Show the bars picture as each group is added. Finish with the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Teach 'Building from facts you know'. Start with 5 × 8 = 40 and 10 × 8 = 80, then build 7 × 8 by splitting 7 into 5 and 2. Show the bars picture. Then show 9 × 7 as 10 × 7 minus 7. Ask the check question."
+    },
+    {
+      "minutes": 7,
+      "activity": "Teach 'Turn-around facts'. Make 3 rows of 8 counters or squares, then turn the page sideways to see 8 rows of 3. Show the bars picture of the two equal totals. Ask students for other pairs, such as 4 × 9 and 9 × 4. Ask the check question."
+    },
+    {
+      "minutes": 5,
+      "activity": "Pair practice using 'Building from facts you know'. Each pair picks a fact such as 6 × 7 or 8 × 9, splits it in two easy facts, and explains it to their partner. Walk around and listen, and help where a split is unclear."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Work through the 3 extra examples together, asking students to suggest the method before you show it. Leave the last minutes for open questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Equal groups and repeated addition",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "A baker puts 6 rolls in each bag and fills 4 bags. Ask how many rolls she has. Students add 6 + 6 + 6 + 6 = 24 and learn that 4 × 6 is a short way to write that: 4 bags, 6 in each."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw 4 circles on the board with 6 dots in each. Count the dots one group at a time: 6, 12, 18, 24. Point out that the first number in 4 × 6 tells how many groups and the second tells how many in each group."
+        }
+      ],
+      "example": {
+        "problem": "There are 4 plates with 6 cookies on each plate. How many cookies are there in all?",
+        "steps": "1. Equal groups: 4 plates, 6 cookies each. 2. Write the repeated addition: 6 + 6 + 6 + 6. 3. Add: 6, 12, 18, 24. 4. Write the multiplication: 4 × 6 = 24.",
+        "expression": "4*6",
+        "answer": "24"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "1 group;2 groups;3 groups;4 groups",
+        "a": 6,
+        "b": 12,
+        "c": 18,
+        "d": 24
+      },
+      "mistakes": [
+        {
+          "mistake": "Students add the two numbers: 4 × 6 = 10.",
+          "response": "Go back to the picture. Ask 'How many groups? How many in each?' and have them count all the dots. Show that 4 + 6 counts only 10 dots, while the circles hold 24."
+        },
+        {
+          "mistake": "Students mix up which number is the number of groups and which is the size of each group.",
+          "response": "Tell them either reading gives the right total, but they should say it aloud: '4 groups of 6'. Keep wording consistent while they learn it, and note later that turning the facts around gives the same answer."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is it called times?",
+          "answer": "'Times' is just the word for 'groups of'. 4 times 6 means 4 groups of 6. It is a short way to say repeated addition."
+        },
+        {
+          "question": "Why not just add every time?",
+          "answer": "You can, and it works. But 9 groups of 7 takes a lot of adding and it is easy to slip. Multiplication is a faster way, and facts you know make it quicker still."
+        },
+        {
+          "question": "What does 1 × 6 mean?",
+          "answer": "One group of 6, so it is 6. Any number times 1 stays the same, because you have only one group."
+        }
+      ],
+      "check_question": {
+        "question": "There are 5 boxes with 3 pencils in each box. Write it as an addition and as a multiplication. How many pencils are there?",
+        "solution": "3 + 3 + 3 + 3 + 3 = 15, and 5 × 3 = 15.",
+        "expression": "5*3",
+        "answer": "15"
+      }
+    },
+    {
+      "title": "Building from facts you know",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Pick the facts you know well: 5s and 10s. Split the harder number into 5 + something. To do 7 × 8, split 7 into 5 + 2. Work out 5 × 8 = 40 and 2 × 8 = 16, then add: 40 + 16 = 56."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw 10 groups of 7 as a row of bars, then cover one group. The 9s fact is the 10s fact with one group taken away: 9 × 7 = 70 − 7 = 63. For 7 × 8, show a bar of 5 × 8 beside a bar of 2 × 8."
+        }
+      ],
+      "example": {
+        "problem": "Find 7 × 8 using the facts 5 × 8 and 2 × 8.",
+        "steps": "1. Split 7 into 5 and 2, so 7 × 8 = 5 × 8 + 2 × 8. 2. 5 × 8 = 40. 3. 2 × 8 = 16 (double 8). 4. Add: 40 + 16 = 56.",
+        "expression": "5*8+2*8",
+        "answer": "56"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "5 times 8;2 times 8;7 times 8",
+        "a": 40,
+        "b": 16,
+        "c": 56,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students split the number but forget to multiply both parts, for example 5 × 8 + 2 = 42.",
+          "response": "Draw it as 5 groups of 8 and 2 groups of 8. Ask 'What is in the 2 groups?' so they see the 2 also means 2 groups of 8, which is 16."
+        },
+        {
+          "mistake": "Students subtract wrongly in the 9s trick, for example 9 × 7 = 70 − 9.",
+          "response": "Ask how many groups you took away. You went from 10 groups to 9, so you take away one group of 7. Show it on the bars: 70 − 7 = 63."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why can I break up a number like that?",
+          "answer": "Because the groups stay the same, you are just putting them in two piles. 7 groups of 8 is 5 groups plus 2 groups, and the total does not change."
+        },
+        {
+          "question": "Which number should I split?",
+          "answer": "Either one works. Pick the split that gives facts you know, usually with 5 or 10. Try both and see which feels easier."
+        },
+        {
+          "question": "Why does the 9s trick work?",
+          "answer": "Nine groups is one group less than 10 groups. 10 × 7 is easy, 70, so take away one 7 to get 63."
+        }
+      ],
+      "check_question": {
+        "question": "Use 10 × 6 to find 9 × 6.",
+        "solution": "10 × 6 = 60. Take away one group of 6: 60 − 6 = 54.",
+        "expression": "10*6-6",
+        "answer": "54"
+      }
+    },
+    {
+      "title": "Turn-around facts",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Make an array of 3 rows with 8 dots in each row. Count 24 dots. Turn the page a quarter turn: now there are 8 rows with 3 dots in each row, and the dots are the same 24. So 3 × 8 = 8 × 3."
+        },
+        {
+          "kind": "story",
+          "text": "Ask: 'Would you rather have 3 bags of 8 sweets or 8 bags of 3 sweets?' The students find out it is the same number of sweets, 24, only packed differently. Then show that learning 3 × 8 means they also know 8 × 3, so about half the times table is already known."
+        }
+      ],
+      "example": {
+        "problem": "You know 3 × 8 = 24. What is 8 × 3?",
+        "steps": "1. Picture 3 rows of 8 dots. 2. Turn it a quarter turn to get 8 rows of 3 dots. 3. The number of dots does not change. 4. So 8 × 3 = 24.",
+        "expression": "8*3",
+        "answer": "24"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "3 times 8;8 times 3",
+        "a": 24,
+        "b": 24,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students think turning the numbers around changes the answer, so they treat 8 × 3 as a new fact.",
+          "response": "Build the array with counters and turn it. Let them count both ways so they see for themselves that the total is the same."
+        },
+        {
+          "mistake": "Students think the turn-around idea also works for subtraction or division, for example 8 − 3 = 3 − 8.",
+          "response": "Agree that it is a good question and say turn-arounds work for multiplication (and addition), but not for subtraction. Check with 8 − 3 = 5, while 3 − 8 is not 5."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Does this work for every pair of numbers?",
+          "answer": "Yes, for every multiplication. 6 × 9 and 9 × 6 are both 54. A rectangle with 6 rows of 9 has the same number of squares as one with 9 rows of 6."
+        },
+        {
+          "question": "So how many facts do I have to learn?",
+          "answer": "Fewer than you think. Once you know 6 × 7 = 42, you also know 7 × 6. About half of the table comes free."
+        },
+        {
+          "question": "Is 3 groups of 8 the same story as 8 groups of 3?",
+          "answer": "The story is different, since the groups are different, but the total is the same, 24."
+        }
+      ],
+      "check_question": {
+        "question": "If 6 × 7 = 42, what is 7 × 6?",
+        "solution": "Turn around the numbers. 7 × 6 = 42.",
+        "expression": "7*6",
+        "answer": "42"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "A shop sells 6 bags of apples with 7 apples in each bag. How many apples is that?",
+      "solution": "6 groups of 7. Split 6 into 5 and 1: 5 × 7 = 35 and 1 × 7 = 7. Add: 35 + 7 = 42.",
+      "expression": "6*7",
+      "answer": "42"
+    },
+    {
+      "problem": "Find 9 × 8 using 10 × 8.",
+      "solution": "10 × 8 = 80. Nine groups is one fewer group than ten, so take away one 8: 80 − 8 = 72.",
+      "expression": "10*8-8",
+      "answer": "72"
+    },
+    {
+      "problem": "You know 5 × 9 = 45. What is 9 × 5, and what picture shows why?",
+      "solution": "Turn around: 9 × 5 = 45. Picture 5 rows of 9 dots, then turn it so there are 9 rows of 5 dots. The number of dots is still 45.",
+      "expression": "9*5",
+      "answer": "45"
+    }
+  ],
+  "meta": {
+    "concept": "multiplication-facts",
+    "title": "Multiplication facts within 100",
+    "model": "sonnet",
+    "cost_usd": 0.08136,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Multiplication+facts+within+100"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Multiplication+facts+within+100"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Multiplication+facts+within+100"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Multiplication+facts+within+100"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Multiplication+facts+within+100+math"
+    }
+  ]
+}

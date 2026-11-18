@@ -1,0 +1,258 @@
+{
+  "idea": "To compare fractions with different denominators, first make the pieces the same size so the numerators can be compared fairly. You can do this with a common denominator, or use quick checks such as cross-multiplying or comparing each fraction to 1/2. Once the pieces match, the fraction with the larger numerator is the larger fraction.",
+  "why": "A denominator says how many equal pieces the whole is cut into, and a numerator says how many of those pieces we have. Fourths and thirds are different sizes, so 3 and 2 cannot be compared directly. If we rewrite both fractions with the same denominator, we count in the same size of piece, and the bigger count wins. Multiplying top and bottom by the same number does not change a fraction's value, because we are multiplying by 1 (for example 3/3). Cross-multiplying is the same idea in a shortcut: for a/b and c/d the common denominator b*d gives (a*d)/(b*d) and (c*b)/(b*d), so we only compare a*d with c*b. This works when all numbers are positive.",
+  "theory_example": {
+    "problem": "Which is larger, 3/4 or 2/3?",
+    "steps": "1. The denominators 4 and 3 differ, so the pieces are different sizes. 2. A common denominator is 12, a multiple of both 4 and 3. 3. 3/4 = (3*3)/(4*3) = 9/12. 4. 2/3 = (2*4)/(3*4) = 8/12. 5. Now the pieces match: 9 twelfths is more than 8 twelfths. 6. So 3/4 > 2/3.",
+    "expression": "Rational(3,4)",
+    "answer": "3/4"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Hook: two friends each ate part of the same size chocolate bar, one ate 3/4 and the other 2/3. Ask who ate more and let students guess and argue. Do not settle it yet; this leads into the subtopic Making pieces the same size."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach the subtopic Making pieces the same size: draw both bars, cut them into twelfths, and work the example 3/4 vs 2/3 step by step. Show the fraction bar picture of 9/12. Ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach the subtopic Cross-multiplying as a shortcut: do 5/8 vs 7/12 on the board, and explain that the two products are the numerators over the common denominator b*d. Ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach the subtopic Quick checks with 1/2 and same numerators: work the example 3/7 vs 5/9 using 1/2, then 3/5 vs 3/7 with the same numerator. Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work the 3 extra examples with the class, mixing all subtopics. Let students choose their method, then invite their questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Making pieces the same size",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw two identical bars. Cut one into 4 equal parts and shade 3. Cut the other into 3 equal parts and shade 2. It is hard to compare. Now cut both bars into 12 equal parts. The first shows 9 shaded parts, the second 8. Same size pieces, so counting is enough."
+        },
+        {
+          "kind": "procedure",
+          "text": "1. Find a number both denominators divide into (a common denominator). 2. Multiply top and bottom of each fraction by whatever turns its denominator into that number. 3. Compare the numerators. 4. Write the answer using the original fractions."
+        }
+      ],
+      "example": {
+        "problem": "Which is larger, 3/4 or 2/3?",
+        "steps": "Common denominator: 12. 3/4 = 9/12 (multiply by 3/3). 2/3 = 8/12 (multiply by 4/4). 9/12 > 8/12, so 3/4 > 2/3.",
+        "expression": "Rational(3,4)",
+        "answer": "3/4"
+      },
+      "visual": {
+        "kind": "fractionbar",
+        "expr": "",
+        "a": 9,
+        "b": 12,
+        "c": 1,
+        "d": 12
+      },
+      "mistakes": [
+        {
+          "mistake": "Comparing numerators only, or denominators only, without matching the pieces (for example saying 2/3 is bigger because 3 is smaller than 4, or because 3 is the larger numerator).",
+          "response": "Ask: are thirds and fourths the same size? Redraw both bars cut into twelfths so students see the sizes match before counting."
+        },
+        {
+          "mistake": "Changing only the denominator (turning 3/4 into 3/12).",
+          "response": "Remind them that cutting into more pieces means we need more shaded pieces too. We multiply top and bottom by the same number, which is multiplying by 1, so the value stays the same."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why can't I just compare the top numbers?",
+          "answer": "Because the top number counts pieces, and the pieces are different sizes. 3 fourths and 2 thirds are not counted in the same unit, like comparing 3 centimetres to 2 metres."
+        },
+        {
+          "question": "Does the common denominator have to be the smallest one?",
+          "answer": "No. Any common multiple works, for example 24 also works for 4 and 3. The smallest is just easier because the numbers stay small."
+        },
+        {
+          "question": "Why does multiplying top and bottom not change the fraction?",
+          "answer": "Because 3/3 is 1, and multiplying by 1 changes nothing. We cut each piece into smaller pieces, and we count more of them, so the amount stays the same."
+        }
+      ],
+      "check_question": {
+        "question": "Which is larger, 2/3 or 5/8?",
+        "solution": "Common denominator 24. 2/3 = 16/24 and 5/8 = 15/24. 16/24 > 15/24, so 2/3 is larger.",
+        "expression": "Rational(2,3)",
+        "answer": "2/3"
+      }
+    },
+    {
+      "title": "Cross-multiplying as a shortcut",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "For a/b and c/d: multiply a by d, and multiply c by b. Write each product next to its own fraction's top. The bigger product belongs to the bigger fraction. Example: for 5/8 and 7/12, 5*12 = 60 and 7*8 = 56."
+        },
+        {
+          "kind": "story",
+          "text": "Two bakers each have a different size tray. To compare fairly, each rewrites their share using a tray of 8*12 = 96 slots. The first baker's 5/8 becomes 60/96, and the second baker's 7/12 becomes 56/96. Cross-multiplying is just finding those two top numbers without writing the 96."
+        }
+      ],
+      "example": {
+        "problem": "Which is larger, 5/8 or 7/12?",
+        "steps": "Cross-multiply: 5*12 = 60 and 7*8 = 56. Since 60 > 56, 5/8 > 7/12. Check with denominator 96: 5/8 = 60/96 and 7/12 = 56/96.",
+        "expression": "Rational(5,8)",
+        "answer": "5/8"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Multiplying straight across (5*7 and 8*12) instead of diagonally.",
+          "response": "Show that the numerator must be multiplied by the OTHER fraction's denominator, which is what happens when we convert to a common denominator. Check with 96 together."
+        },
+        {
+          "mistake": "Putting the bigger product on the wrong fraction, so the answer is reversed.",
+          "response": "Tell students to write each product above its own fraction's numerator, so the product stays attached to the correct fraction."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why does cross-multiplying work?",
+          "answer": "It is the same as using the common denominator b*d. Both fractions then have the same bottom, so only the new tops matter, and those are a*d and c*b."
+        },
+        {
+          "question": "Can I use it for three fractions?",
+          "answer": "Not directly. Compare two at a time, or use a common denominator for all three."
+        },
+        {
+          "question": "Is it okay to use it instead of common denominators?",
+          "answer": "Yes, it is a valid method for comparing two fractions. Common denominators are still useful when you need to add or subtract, so it helps to know both."
+        }
+      ],
+      "check_question": {
+        "question": "Use cross-multiplying: which is larger, 3/5 or 4/7?",
+        "solution": "3*7 = 21 and 4*5 = 20. Since 21 > 20, 3/5 is larger.",
+        "expression": "Rational(3,5)",
+        "answer": "3/5"
+      }
+    },
+    {
+      "title": "Quick checks with 1/2 and same numerators",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a number line from 0 to 1 and mark 1/2. A fraction is less than 1/2 if its numerator is less than half its denominator, and more than 1/2 if it is greater. 3/7 sits left of the mark (3 is less than 3.5), while 5/9 sits right (5 is more than 4.5)."
+        },
+        {
+          "kind": "story",
+          "text": "Share one pizza. If it is cut into 5 slices you get 3, or cut into 7 slices you get 3. The slices are smaller when the pizza is cut into 7, so 3 slices of the 7 cut pizza is less. With the same numerator, the bigger denominator means the smaller fraction."
+        }
+      ],
+      "example": {
+        "problem": "Which is larger, 3/7 or 5/9?",
+        "steps": "Half of 7 is 3.5, and 3 is less than 3.5, so 3/7 < 1/2. Half of 9 is 4.5, and 5 is more than 4.5, so 5/9 > 1/2. Therefore 5/9 > 3/7. Check: cross-multiply 3*9 = 27 and 5*7 = 35, so 5/9 is larger.",
+        "expression": "Rational(5,9)",
+        "answer": "5/9"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Thinking that with the same numerator, the larger denominator gives the larger fraction (for example, 3/7 > 3/5 because 7 > 5).",
+          "response": "Go back to the pizza: more slices means smaller slices. Draw 3/5 and 3/7 as bars and compare the shaded lengths."
+        },
+        {
+          "mistake": "Using the 1/2 check when both fractions are on the same side of 1/2 and concluding they are equal.",
+          "response": "Explain that the 1/2 check only decides when the fractions are on opposite sides of 1/2. Otherwise, use a common denominator or cross-multiplying."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "How do I know if a fraction is more than half?",
+          "answer": "Double the numerator and compare it with the denominator. If the doubled numerator is bigger, the fraction is more than 1/2. For 5/9, 2*5 = 10 is greater than 9."
+        },
+        {
+          "question": "Why does a bigger denominator make the pieces smaller?",
+          "answer": "Because the same whole is shared among more pieces, so each piece is smaller."
+        },
+        {
+          "question": "What if the numerators are different and the denominators are too?",
+          "answer": "Then use 1/2 as a quick check if the fractions fall on different sides of it. If not, use a common denominator or cross-multiplying."
+        }
+      ],
+      "check_question": {
+        "question": "Which is larger, 4/9 or 4/7? Explain without calculating.",
+        "solution": "The numerators are the same, so compare piece sizes. Ninths are smaller than sevenths, so 4 ninths is less than 4 sevenths. 4/7 is larger.",
+        "expression": "Rational(4,7)",
+        "answer": "4/7"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Which is larger, 5/6 or 7/9?",
+      "solution": "Common denominator 18. 5/6 = 15/18 and 7/9 = 14/18. 15/18 > 14/18, so 5/6 is larger.",
+      "expression": "Rational(5,6)",
+      "answer": "5/6"
+    },
+    {
+      "problem": "How much larger is 3/4 than 7/10?",
+      "solution": "Common denominator 20. 3/4 = 15/20 and 7/10 = 14/20. So 3/4 is larger, by 15/20 - 14/20 = 1/20.",
+      "expression": "Rational(3,4) - Rational(7,10)",
+      "answer": "1/20"
+    },
+    {
+      "problem": "Put 2/5, 3/8 and 1/2 in order from smallest to largest. Which is the smallest?",
+      "solution": "Common denominator 40. 2/5 = 16/40, 3/8 = 15/40, and 1/2 = 20/40. Order: 15/40 < 16/40 < 20/40, so 3/8 < 2/5 < 1/2. The smallest is 3/8.",
+      "expression": "Rational(3,8)",
+      "answer": "3/8"
+    }
+  ],
+  "meta": {
+    "concept": "comparing-unlike-fractions",
+    "title": "Comparing fractions with different denominators",
+    "model": "sonnet",
+    "cost_usd": 0.13884,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Comparing+fractions+with+different+denominators"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Comparing+fractions+with+different+denominators"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Comparing+fractions+with+different+denominators"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Comparing+fractions+with+different+denominators"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Comparing+fractions+with+different+denominators+math"
+    }
+  ]
+}

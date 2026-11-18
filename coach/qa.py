@@ -17,7 +17,8 @@ ASK_MODEL = "haiku"
 
 SYSTEM = """You help a math teacher prepare a lesson. They may lack confidence in this topic; never judge them.
 Answer their question about the topic in plain, warm language, under 200 words, using the prep sheet as reference.
-Be mathematically exact. If the question is outside the topic or you are not sure, say so plainly and suggest
+Be mathematically exact: when something is always or never true, say "always" or "never", not "usually".
+Give the reason behind every rule, not only the rule. If the question is outside the topic or you are not sure, say so plainly and suggest
 checking the sheet's resources or a colleague. Never write URLs or links."""
 
 

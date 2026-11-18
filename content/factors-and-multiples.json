@@ -1,0 +1,258 @@
+{
+  "idea": "A factor of a number divides it exactly, with no remainder. A multiple of a number is what you get when you multiply it by 1, 2, 3 and so on. A prime number has exactly two factors, 1 and itself. Every whole number greater than 1 is either prime or can be built by multiplying primes.",
+  "why": "Factors and multiples are two views of one multiplication fact. 3 × 4 = 12 says that 3 and 4 are factors of 12, and that 12 is a multiple of both 3 and 4. A number is a multiple of n exactly when dividing by n leaves no remainder, and that is why checking factors means testing division. Primes are the numbers that cannot be broken into smaller factors. If you keep splitting a number into smaller factors, you must end at primes, because you cannot split further. That is why every number has a prime factorization. It is unique apart from the order of the factors, which is why it is useful for comparing numbers.",
+  "theory_example": {
+    "problem": "Write 60 as a product of primes, and say which of its factors are prime.",
+    "steps": "Start with any factor pair: 60 = 6 × 10. Neither 6 nor 10 is prime, so split again: 6 = 2 × 3 and 10 = 2 × 5. Now 2, 3, 2 and 5 are all prime, so we stop. So 60 = 2 × 2 × 3 × 5 = 2² × 3 × 5. The prime factors of 60 are 2, 3 and 5. Check: 2 × 2 = 4, 4 × 3 = 12, 12 × 5 = 60.",
+    "expression": "2**2*3*5",
+    "answer": "60"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 6,
+      "activity": "Open with a question: in how many ways can 12 cookies be shared equally into rows? Let students find 1×12, 2×6 and 3×4. Name these as factor pairs and teach the Factors subtopic, including the systematic pair-listing method."
+    },
+    {
+      "minutes": 7,
+      "activity": "Teach the Multiples subtopic. Count in 4s aloud together and show the bar drawing of 4, 8, 12, 16. Link it to factors: 12 is a multiple of 4 and 4 is a factor of 12. Ask students for tests for whether a number is a multiple."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach the Prime numbers and prime factorization subtopic. Ask which numbers up to 20 have exactly two factors. Then build the factor tree for 84 on the board, and ask students to call out the next split at each step."
+    },
+    {
+      "minutes": 9,
+      "activity": "Students work in pairs on the check questions from all three subtopics (factors of 20, is 51 a multiple of 3, prime factorization of 30). Walk round and use the common-mistake notes to guide your replies. Bring the class back to share methods."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work through the three extra examples with the class, letting students suggest the next step, then take open questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Factors",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw 12 dots and arrange them into rectangles: 1 row of 12, 2 rows of 6, 3 rows of 4. The side lengths of each rectangle are a factor pair. Every way to make a full rectangle with no dots left over gives two factors."
+        },
+        {
+          "kind": "procedure",
+          "text": "To list all factors of n: test 1, 2, 3, and so on in order, asking whether it divides n exactly. Each time it does, write down the pair (the divisor and the answer). Stop when the divisor reaches the answer or passes it. Then write the factors in order."
+        }
+      ],
+      "example": {
+        "problem": "List all the factors of 36.",
+        "steps": "Test in order. 1 × 36 = 36, so 1 and 36. 2 × 18 = 36, so 2 and 18. 3 × 12 = 36, so 3 and 12. 4 × 9 = 36, so 4 and 9. 5 does not divide 36. 6 × 6 = 36, so 6 (counted once). Next is 7, which is past 6, so stop. The factors in order are 1, 2, 3, 4, 6, 9, 12, 18, 36. That is 9 factors.",
+        "expression": "9",
+        "answer": "9"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students stop early and miss large factors, for example listing only 1, 2, 3, 4, 6 for 36.",
+          "response": "Remind them that factors come in pairs. Every small factor they find hands them a large one for free: 4 gives 9. Have them write the pairs before the list."
+        },
+        {
+          "mistake": "Students think a number's factors include numbers bigger than it, or forget that 1 and the number itself are factors.",
+          "response": "Ask whether a number bigger than 36 could divide 36 with no remainder. Then say that 1 × 36 = 36, so 1 and 36 always count."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we stop at 6 for 36 and not keep testing up to 36?",
+          "answer": "Because factors come in pairs. Once the small number in the pair reaches the large one, every pair has already been found. Anything we tested after 6 would just repeat a pair in reverse, like 9 × 4 after 4 × 9."
+        },
+        {
+          "question": "Is 1 a factor of every number?",
+          "answer": "Yes. Any number divided by 1 gives itself with no remainder, so 1 × n = n always works."
+        },
+        {
+          "question": "Why is 6 only listed once for 36?",
+          "answer": "The pair is 6 × 6, and both factors are the same number. A list of factors names each number once, so we write 6 one time."
+        }
+      ],
+      "check_question": {
+        "question": "List all the factors of 20. How many are there?",
+        "solution": "1 × 20, 2 × 10, 4 × 5. 3 does not divide 20. The factors are 1, 2, 4, 5, 10, 20, which makes 6 factors.",
+        "expression": "6",
+        "answer": "6"
+      }
+    },
+    {
+      "title": "Multiples",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "A bus stop is served by a bus every 4 minutes. The bus arrives at minutes 4, 8, 12, 16, 20 and so on. These times are the multiples of 4. If someone says a bus arrived at minute 52, ask whether 52 is on the list: 52 = 4 × 13, so yes."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw bars of height 4, 8, 12 and 16, each one step of 4 taller than the last. Each bar is a multiple of 4. Pointing to the 12 bar, show that it is made of exactly 3 blocks of 4, so 12 is a multiple of 4 and 4 is a factor of 12."
+        }
+      ],
+      "example": {
+        "problem": "Write the first five multiples of 4. Then decide whether 52 is a multiple of 4.",
+        "steps": "Multiply 4 by 1, 2, 3, 4, 5. That gives 4, 8, 12, 16, 20. The fifth multiple is 4 × 5 = 20. To test 52, divide: 52 ÷ 4 = 13 with no remainder, so 52 = 4 × 13 and 52 is a multiple of 4.",
+        "expression": "4*5",
+        "answer": "20"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "4;8;12;16",
+        "a": 4,
+        "b": 8,
+        "c": 12,
+        "d": 16
+      },
+      "mistakes": [
+        {
+          "mistake": "Students mix up factors and multiples, for example saying that 3 is a multiple of 12.",
+          "response": "Offer a memory hook: multiples are the big ones, they go on forever and are at least as large as the number. Factors are the small ones, there are only a few of them, and none is larger than the number. Ask them whether 3 can be reached by counting in 12s."
+        },
+        {
+          "mistake": "Students leave out the number itself, or start the list at 0 or at 2 × n, so they list 8, 12, 16 as the multiples of 4.",
+          "response": "Count in steps together from 4, saying that 1 × 4 is the first multiple. A number is always its own first multiple."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "How many multiples does a number have?",
+          "answer": "Infinitely many. You can always multiply by one more, so the list never ends. That is why we usually ask for the first few."
+        },
+        {
+          "question": "Is 0 a multiple of 4?",
+          "answer": "Yes, 0 = 4 × 0, so strictly it is. In school we usually list multiples starting from 1 × the number, so just follow the list your class uses."
+        },
+        {
+          "question": "What is a quick way to know if a big number is a multiple of 4?",
+          "answer": "Divide by 4 and see whether the remainder is zero. For 52, 52 ÷ 4 = 13 exactly. For other numbers you can use a shortcut: a number is a multiple of 4 when its last two digits make a multiple of 4."
+        }
+      ],
+      "check_question": {
+        "question": "Is 51 a multiple of 3? If so, what do you multiply 3 by to get it?",
+        "solution": "51 ÷ 3 = 17 with no remainder, so 51 = 3 × 17. Yes, it is a multiple of 3, and you multiply by 17.",
+        "expression": "51/3",
+        "answer": "17"
+      }
+    },
+    {
+      "title": "Prime numbers and prime factorization",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "A prime has exactly two factors: 1 and itself. To test a number, try dividing by the primes 2, 3, 5, 7 in order. If any divides it exactly, it is not prime. Stop once the prime you are testing, squared, is bigger than the number. The number 1 is not prime because it has only one factor."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw a factor tree for 84. Split 84 into 4 and 21, then 4 into 2 and 2, and 21 into 3 and 7. Circle every number that cannot be split further (2, 2, 3, 7). These circled numbers are the prime leaves, and 84 = 2 × 2 × 3 × 7."
+        }
+      ],
+      "example": {
+        "problem": "Write 84 as a product of primes. Then decide whether 91 is prime.",
+        "steps": "84 = 4 × 21. Split 4 = 2 × 2 and 21 = 3 × 7. All of 2, 2, 3, 7 are prime, so 84 = 2 × 2 × 3 × 7 = 2² × 3 × 7. Check: 2 × 2 = 4, 4 × 3 = 12, 12 × 7 = 84. Now 91: it is not even, the digits sum to 10 so it is not a multiple of 3, and it does not end in 0 or 5. Try 7: 7 × 13 = 91. So 91 has the factor 7 and is not prime.",
+        "expression": "2*2*3*7",
+        "answer": "84"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students call 1 prime, or call 9 or 91 prime because they look odd.",
+          "response": "Go back to the definition: exactly two factors. 1 has only one factor. 9 = 3 × 3 and 91 = 7 × 13, so they have more. Odd does not mean prime."
+        },
+        {
+          "mistake": "Students think 2 is not prime because it is even, or they stop a factor tree at a composite number such as 4 or 9.",
+          "response": "2 has exactly two factors, 1 and 2, so it is prime, and it is the only even prime. For the tree, tell them to check each leaf by asking whether it can be split again."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why isn't 1 a prime number?",
+          "answer": "A prime needs exactly two different factors, and 1 has only one. There is also a deeper reason: if 1 were prime, a number like 6 could be written as 2 × 3 or 1 × 2 × 3 or 1 × 1 × 2 × 3, and its prime factorization would no longer be unique."
+        },
+        {
+          "question": "Does it matter how I start the factor tree?",
+          "answer": "No. If you split 84 as 2 × 42 or 4 × 21 or 6 × 14, you end up with the same primes 2, 2, 3, 7. Only the order of the leaves changes."
+        },
+        {
+          "question": "Are there infinitely many primes?",
+          "answer": "Yes. The primes never run out, however large you go. A proof exists, but you can see for yourself that people keep finding larger ones."
+        }
+      ],
+      "check_question": {
+        "question": "Write 30 as a product of primes.",
+        "solution": "30 = 3 × 10 and 10 = 2 × 5, so 30 = 2 × 3 × 5. All three are prime. Check: 2 × 3 = 6 and 6 × 5 = 30.",
+        "expression": "2*3*5",
+        "answer": "30"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Find all the common factors of 12 and 18, and say which one is the greatest.",
+      "solution": "Factors of 12: 1, 2, 3, 4, 6, 12. Factors of 18: 1, 2, 3, 6, 9, 18. The numbers in both lists are 1, 2, 3, 6. The greatest common factor is 6.",
+      "expression": "6",
+      "answer": "6"
+    },
+    {
+      "problem": "List the first six multiples of 4 and of 6. What is the smallest number that is a multiple of both?",
+      "solution": "Multiples of 4: 4, 8, 12, 16, 20, 24. Multiples of 6: 6, 12, 18, 24, 30, 36. The numbers in both lists are 12 and 24. The smallest is 12, the lowest common multiple.",
+      "expression": "12",
+      "answer": "12"
+    },
+    {
+      "problem": "Write 72 as a product of primes.",
+      "solution": "72 = 8 × 9. Then 8 = 2 × 2 × 2 and 9 = 3 × 3. So 72 = 2 × 2 × 2 × 3 × 3 = 2³ × 3². Check: 8 × 9 = 72.",
+      "expression": "2**3*3**2",
+      "answer": "72"
+    }
+  ],
+  "meta": {
+    "concept": "factors-and-multiples",
+    "title": "Factors, multiples and prime numbers",
+    "model": "sonnet",
+    "cost_usd": 0.06413,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Factors%2C+multiples+and+prime+numbers"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Factors%2C+multiples+and+prime+numbers"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Factors%2C+multiples+and+prime+numbers"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Factors%2C+multiples+and+prime+numbers"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Factors%2C+multiples+and+prime+numbers+math"
+    }
+  ]
+}

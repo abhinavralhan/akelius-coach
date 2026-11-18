@@ -1,0 +1,258 @@
+{
+  "idea": "An algebraic expression is a short way to write a calculation when some number is not known yet. We use a letter (a variable) for that number. Writing an expression means turning words into symbols. Evaluating means putting a number in for the letter and calculating, following the order of operations.",
+  "why": "A letter stands for any number, so one expression describes the same rule for every case. Writing 8t + 5 once covers every ticket order. Evaluating works because substituting means replacing the letter with a number, so the expression becomes an ordinary arithmetic calculation. The order of operations is an agreement that lets everyone get the same value from the same expression: brackets first, then powers, then multiplication and division, then addition and subtraction. Students need to see that the letter is a placeholder for a number and that the number sits where the letter was.",
+  "theory_example": {
+    "problem": "Tickets cost $8 each and every order has a $5 booking fee. Write an expression for the cost of t tickets, then find the cost of 4 tickets.",
+    "steps": "1. The cost depends on the number of tickets, so let t be the number of tickets.\n2. Each ticket costs 8, so t tickets cost 8 times t, written 8t.\n3. The booking fee is added once: 8t + 5.\n4. To evaluate for 4 tickets, replace t with 4: 8 x 4 + 5.\n5. Multiply first: 32 + 5 = 37.\nThe cost is $37.",
+    "expression": "8*4 + 5",
+    "answer": "37"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: say 'I think of a number, double it, add 3' and ask for results when the number is 1, 4, 10. Write the pattern on the board as 2n + 3 and say that the letter holds the place of the number. This leads into the first subtopic."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Writing expressions from words'. Work through the stickers example, then give the 'five less than x' phrase and have pairs write the expression. Use the check question at the end."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Evaluating by substitution'. Use brackets around the substituted number in the example, and stress that 3x^2 means 3 times x squared. Let students try the check question on mini whiteboards or paper."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Expressions as rules: tables and graphs'. Make a table for the taxi cost at 0, 1, 2, 3, 4 km, then show the graph of 2x + 3 and read off the value at x = 4. Use the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra-examples and questions round: work the 3 extra examples with the class, letting students suggest each first step. Leave the last minutes for open questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Writing expressions from words",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Maya has some stickers and we don't know how many, so call that number n. Ben has 3 more than twice Maya's number. Ask: if Maya had 5, how many would Ben have? (13.) If she had 10? (23.) Each time you did the same steps: double, then add 3. Write those steps with n in place of the number: 2n + 3."
+        },
+        {
+          "kind": "procedure",
+          "text": "1. Decide what the unknown is and name it with a letter.\n2. Break the sentence into small pieces: 'twice a number' is 2n, '3 more than' means add 3.\n3. Put the pieces together in the order the words describe.\n4. Test with an easy number, like 5, to check the expression gives what the words say."
+        }
+      ],
+      "example": {
+        "problem": "Maya has n stickers. Ben has 3 more than twice as many as Maya. Write an expression for Ben's stickers, and find how many he has if Maya has 5.",
+        "steps": "1. Twice as many as Maya: 2 x n = 2n.\n2. 3 more than that: 2n + 3.\n3. If n = 5, replace n with 5: 2 x 5 + 3.\n4. 10 + 3 = 13.",
+        "expression": "2*5 + 3",
+        "answer": "13"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Writing 'five less than x' as 5 - x.",
+          "response": "Try a real number: five less than 20 is 15, which is 20 - 5. So with x it is x - 5. Say that 'less than' reverses the order of words: the thing you start from is written first."
+        },
+        {
+          "mistake": "Writing 'twice the sum of x and 3' as 2x + 3.",
+          "response": "Ask what gets doubled. Here both x and 3 are doubled, so we need brackets: 2(x + 3). Test with x = 1: the sum is 4, doubled is 8; 2x + 3 gives 5, which doesn't match."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we use letters at all?",
+          "answer": "Because we want to describe a rule that works for any number. A letter holds the place of a number we don't know yet or that can change."
+        },
+        {
+          "question": "Can I use any letter?",
+          "answer": "Yes. x and n are common, but it is often helpful to pick a letter that reminds you of the thing, like t for tickets. Just say what your letter means."
+        },
+        {
+          "question": "Why is 2n written without a multiplication sign?",
+          "answer": "It's a shortcut agreement. 2n means 2 times n. Between a number and a letter we leave the sign out so it isn't confused with the letter x."
+        }
+      ],
+      "check_question": {
+        "question": "A pencil costs p dollars. Write an expression for the cost of 4 pencils and a $2 ruler. What is the cost if p = 3?",
+        "solution": "4 pencils cost 4p, plus 2 for the ruler: 4p + 2. With p = 3: 4 x 3 + 2 = 14.",
+        "expression": "4*3 + 2",
+        "answer": "14"
+      }
+    },
+    {
+      "title": "Evaluating by substitution",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "1. Rewrite the expression, putting brackets in place of each letter.\n2. Put the number inside the brackets.\n3. Calculate in order: brackets, powers, multiplication and division (left to right), then addition and subtraction (left to right).\n4. Write the final number."
+        },
+        {
+          "kind": "story",
+          "text": "Think of an expression as a machine with a slot for a number. The expression 3x^2 - 2x + 5 tells the machine: square the input, multiply by 3, take away twice the input, then add 5. You drop in 4, and the machine gives back one number. Each person who follows the same order gets the same output."
+        }
+      ],
+      "example": {
+        "problem": "Evaluate 3x^2 - 2x + 5 when x = 4.",
+        "steps": "1. Replace x with 4: 3(4)^2 - 2(4) + 5.\n2. Powers first: 4^2 = 16, so 3 x 16 - 2 x 4 + 5.\n3. Multiply: 48 - 8 + 5.\n4. Add and subtract from left to right: 48 - 8 = 40, then 40 + 5 = 45.",
+        "expression": "3*4**2 - 2*4 + 5",
+        "answer": "45"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Computing 3x^2 as (3 x 4)^2 = 144.",
+          "response": "The power only applies to what it touches, which is x. Write 3 x 4^2, and do the power first. Show 3 x 16 = 48 on the board next to 12^2 = 144 to show they differ."
+        },
+        {
+          "mistake": "Treating 3x with x = 4 as 34.",
+          "response": "Say that 3x means 3 times x. Writing the substitution as 3(4) or 3 x 4 makes the multiplication visible. 34 would be 'thirty-four', which is not the same as 12."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we do powers before multiplying?",
+          "answer": "It is a convention that mathematicians agreed on so everyone reads the same expression the same way. A power is a quick way of writing repeated multiplication, so it sticks closely to the number it is attached to."
+        },
+        {
+          "question": "What if x is negative?",
+          "answer": "Keep brackets when you substitute. For x = -2, x^2 becomes (-2)^2 = 4, because we square the whole number including its sign."
+        },
+        {
+          "question": "Do I have to write the brackets when I substitute?",
+          "answer": "Not always, but they prevent mistakes, especially with negative numbers and with things like 3x. It's a good habit for now."
+        }
+      ],
+      "check_question": {
+        "question": "Evaluate 2(x + 3)^2 - x when x = 1.",
+        "solution": "Replace x with 1: 2(1 + 3)^2 - 1. Brackets: 1 + 3 = 4. Power: 4^2 = 16. Multiply: 2 x 16 = 32. Subtract: 32 - 1 = 31.",
+        "expression": "2*(1+3)**2 - 1",
+        "answer": "31"
+      }
+    },
+    {
+      "title": "Expressions as rules: tables and graphs",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a table with x in the top row and 2x + 3 in the bottom row. Fill in x = 0, 1, 2, 3, 4 to get 3, 5, 7, 9, 11. Then show the graph of 2x + 3: each table pair is a point on it. Point out that the value at x = 4 is the height of the line above 4 on the horizontal axis."
+        },
+        {
+          "kind": "story",
+          "text": "A taxi charges $3 just to get in, then $2 for every kilometre. The expression 2x + 3 is the rule for the price of a ride of x km. Ask the class: what is the price at 0 km? (3, the starting fee.) Each extra km adds $2, so the table goes up by 2 each time."
+        }
+      ],
+      "example": {
+        "problem": "A taxi charges $3 plus $2 per kilometre. Write the cost for x km and find the cost of a 4 km ride.",
+        "steps": "1. The per-kilometre part is 2 x x = 2x.\n2. The starting fee is added once: 2x + 3.\n3. For x = 4: 2 x 4 + 3.\n4. 8 + 3 = 11. On the graph, the line is at height 11 when x = 4.",
+        "expression": "2*4 + 3",
+        "answer": "11"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "2*x + 3",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Writing the taxi cost as 5x, adding 2 and 3 first.",
+          "response": "Ask about a 0 km ride. 5x would give 0, but the starting fee is still charged. The 3 is paid once, the 2 is paid for each kilometre, so they can't be combined."
+        },
+        {
+          "mistake": "Reading the graph value as the x number instead of the height.",
+          "response": "Have students put a finger on x = 4 on the bottom axis, move up to the line, then across to the vertical axis. The answer is the height, 11, which is the cost."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is the graph a straight line?",
+          "answer": "Because each extra kilometre adds the same $2. Equal steps across give equal steps up, and that makes a straight line."
+        },
+        {
+          "question": "Is 2x + 3 the same as 3 + 2x?",
+          "answer": "Yes. Addition can be done in either order, so both give the same value for every x. Try x = 4: both give 11."
+        },
+        {
+          "question": "Can x be any number on the graph?",
+          "answer": "For the expression alone, yes. For the taxi, distances can't be negative, so only x of 0 or more makes sense."
+        }
+      ],
+      "check_question": {
+        "question": "Use the taxi rule 2x + 3. What does a 6 km ride cost?",
+        "solution": "Replace x with 6: 2 x 6 + 3 = 12 + 3 = 15. The ride costs $15.",
+        "expression": "2*6 + 3",
+        "answer": "15"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "A gym charges a $10 joining fee plus $5 per visit. Write an expression for v visits and find the cost for 6 visits.",
+      "solution": "The visits cost 5v and the joining fee is added once: 5v + 10. For v = 6: 5 x 6 + 10 = 30 + 10 = 40.",
+      "expression": "5*6 + 10",
+      "answer": "40"
+    },
+    {
+      "problem": "A rectangle has width w and length 4 more than w. Write an expression for its perimeter and find the perimeter when w = 3.",
+      "solution": "The length is w + 4. Perimeter = 2 x width + 2 x length = 2w + 2(w + 4) = 4w + 8. For w = 3: 4 x 3 + 8 = 12 + 8 = 20. Check: width 3, length 7, perimeter 2 x 3 + 2 x 7 = 20.",
+      "expression": "4*3 + 8",
+      "answer": "20"
+    },
+    {
+      "problem": "Evaluate 2(x + 3)^2 - x when x = 1.",
+      "solution": "Replace x with 1: 2(1 + 3)^2 - 1. Brackets: 4. Power: 4^2 = 16. Multiply: 2 x 16 = 32. Subtract: 32 - 1 = 31.",
+      "expression": "2*(1+3)**2 - 1",
+      "answer": "31"
+    }
+  ],
+  "meta": {
+    "concept": "algebraic-expressions",
+    "title": "Writing and evaluating expressions",
+    "model": "sonnet",
+    "cost_usd": 0.06691,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Writing+and+evaluating+expressions"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Writing+and+evaluating+expressions"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Writing+and+evaluating+expressions"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Writing+and+evaluating+expressions"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Writing+and+evaluating+expressions+math"
+    }
+  ]
+}

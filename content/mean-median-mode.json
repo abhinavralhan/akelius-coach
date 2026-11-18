@@ -1,0 +1,258 @@
+{
+  "idea": "Mean, median and mode are three ways to describe a whole list of numbers with one \"typical\" number. The mean is the fair-share value (total divided by how many). The median is the middle value when the list is in order. The mode is the value that appears most often.",
+  "why": "Each one answers a different question about \"typical\". The mean asks: if everything were shared out equally, how much would each get? That is why you add everything up and divide by the count. The median asks: what value sits in the middle, with as many items below as above? That is why you must put the list in order first. The mode asks: what is most common? That is why you count how often each value appears. They can differ because one very large or small value pulls the mean but barely moves the median or mode.",
+  "theory_example": {
+    "problem": "Five students scored 4, 7, 5, 7 and 2 on a quiz. Find the mean, median and mode.",
+    "steps": "Mean: add all scores: 4 + 7 + 5 + 7 + 2 = 25. Divide by 5 scores: 25 / 5 = 5. Median: put in order: 2, 4, 5, 7, 7. The middle (3rd of 5) is 5. Mode: 7 appears twice, every other value once, so the mode is 7.",
+    "expression": "(4+7+5+7+2)/5",
+    "answer": "5"
+  },
+  "subtopics": [
+    {
+      "title": "Mean",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Four friends have 3, 5, 6 and 10 sweets. They pool them all (24) and share equally. Each gets 6. That 6 is the mean: the amount each would have if things were made fair."
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: add all the values. Step 2: count how many values there are. Step 3: divide the total by the count."
+        }
+      ],
+      "example": {
+        "problem": "Find the mean of 3, 5, 6 and 10.",
+        "steps": "Add: 3 + 5 + 6 + 10 = 24. Count: 4 values. Divide: 24 / 4 = 6.",
+        "expression": "(3+5+6+10)/4",
+        "answer": "6"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "A;B;C;D",
+        "a": 3,
+        "b": 5,
+        "c": 6,
+        "d": 10
+      },
+      "mistakes": [
+        {
+          "mistake": "Dividing the total by the wrong number, such as the largest value or the number of different values.",
+          "response": "Ask: how many items were added? Have them count the bars. Divide by that count, even if some values repeat."
+        },
+        {
+          "mistake": "Forgetting a zero value when counting, so dividing by too few.",
+          "response": "Show that a zero is still a person or item with nothing. Draw it as an empty bar. It counts in the divisor."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we divide by how many there are?",
+          "answer": "Because sharing the total equally among that many items is exactly dividing. The mean is each one's fair share."
+        },
+        {
+          "question": "Can the mean be a number that is not in the list?",
+          "answer": "Yes. The mean of 3, 5, 6 and 10 is 6, which happens to be in the list, but the mean of 1 and 2 is 1.5. It is a fair-share value, not a real item."
+        },
+        {
+          "question": "Can the mean be a decimal or fraction?",
+          "answer": "Yes. If 24 does not divide evenly, the answer can be a decimal or fraction. That is fine."
+        }
+      ],
+      "check_question": {
+        "question": "What is the mean of 2, 4 and 9?",
+        "solution": "Total 2 + 4 + 9 = 15, divided by 3 values gives 5.",
+        "expression": "(2+4+9)/3",
+        "answer": "5"
+      }
+    },
+    {
+      "title": "Median",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Line the values up in order from smallest to largest, like students lined up by height. Cross off one from each end, again and again, until you reach the middle. With two left in the middle, the median is halfway between them."
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: put the values in order. Step 2: if the count is odd, take the middle one. Step 3: if the count is even, add the two middle values and divide by 2."
+        }
+      ],
+      "example": {
+        "problem": "Find the median of 8, 3, 5 and 12.",
+        "steps": "Order them: 3, 5, 8, 12. There are 4 values, so two are in the middle: 5 and 8. Halfway between: (5 + 8) / 2 = 13/2 = 6.5.",
+        "expression": "(5+8)/2",
+        "answer": "13/2"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "A;B;C;D",
+        "a": 3,
+        "b": 5,
+        "c": 8,
+        "d": 12
+      },
+      "mistakes": [
+        {
+          "mistake": "Picking the middle of the list without sorting it first.",
+          "response": "Ask them to read the list out loud in order. Rewrite it from smallest to largest, then find the middle."
+        },
+        {
+          "mistake": "With an even count, picking one of the two middle values or averaging the wrong two.",
+          "response": "Cross off pairs from both ends until two remain. Point out the median sits halfway between them, so add and halve."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we have to put the numbers in order?",
+          "answer": "The median means the middle position in size. Without order, the number in the middle of the list could be anything."
+        },
+        {
+          "question": "Why average the two middle numbers?",
+          "answer": "With an even count there is no single middle item. The point halfway between the two middle values has equal numbers of items on each side."
+        },
+        {
+          "question": "When is the median better than the mean?",
+          "answer": "When there is a very large or small value. For 1, 2, 3, 100 the median is 2.5 but the mean is 26.5, which is not typical of most values."
+        }
+      ],
+      "check_question": {
+        "question": "What is the median of 6, 1, 9, 2 and 4?",
+        "solution": "Order: 1, 2, 4, 6, 9. The middle (3rd of 5) is 4.",
+        "expression": "4",
+        "answer": "4"
+      }
+    },
+    {
+      "title": "Mode",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a bar chart where each bar shows how many times a value appears. The tallest bar is the mode. The answer is the value under that bar, not the bar's height."
+        },
+        {
+          "kind": "story",
+          "text": "A shoe shop asks which size to stock the most of. They do not need an average size. They need the size customers buy most often. That is the mode."
+        }
+      ],
+      "example": {
+        "problem": "Shoe sizes sold were 5, 6, 6, 7, 6, 8, 7. Find the mode.",
+        "steps": "Count each size: size 5 once, size 6 three times, size 7 twice, size 8 once. The most frequent is size 6, so the mode is 6.",
+        "expression": "6",
+        "answer": "6"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Size 5;Size 6;Size 7;Size 8",
+        "a": 1,
+        "b": 3,
+        "c": 2,
+        "d": 1
+      },
+      "mistakes": [
+        {
+          "mistake": "Giving the count (for example 3) instead of the value (6).",
+          "response": "Ask: what is the question about, how many times or which value? The mode is the value that is most common, and the count only helps you find it."
+        },
+        {
+          "mistake": "Saying there is no mode, or picking just one, when two values tie.",
+          "response": "Explain that two values tied for most often are both modes. If every value appears equally often, we say there is no mode."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Can a list have more than one mode?",
+          "answer": "Yes. In 1, 2, 2, 3, 3 both 2 and 3 appear twice, so both are modes."
+        },
+        {
+          "question": "Can the mode be used for things that are not numbers?",
+          "answer": "Yes. The most common favourite colour is a mode. You cannot take a mean of colours, so mode is useful there."
+        },
+        {
+          "question": "Do I need to put the numbers in order for the mode?",
+          "answer": "You do not have to, but ordering puts equal values side by side and makes counting easier."
+        }
+      ],
+      "check_question": {
+        "question": "What is the mode of 3, 4, 4, 5, 5, 5, 6?",
+        "solution": "5 appears three times, more than any other value, so the mode is 5.",
+        "expression": "5",
+        "answer": "5"
+      }
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 4,
+      "activity": "Hook: ask five students how many siblings or pets they have and write the numbers on the board. Ask what single number could describe the group. Introduce the three words: mean, median, mode."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach Mean: use the sweets sharing story and the bars for 3, 5, 6, 10. Work the example together, then ask the Mean check question."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach Median: line up the values in order using the bars 3, 5, 8, 12. Do the odd count first, then the even count example. Ask the Median check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach Mode: use the shoe size example and its bars. Discuss ties and no mode. Ask the Mode check question. Then go back to the board data from the hook and find all three."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work the three extra examples with the class, mixing mean, median and mode, and leave time for student questions."
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Five quiz scores are 6, 8, 8, 9 and 4. Find the mean. (Then ask the class for the median and mode.)",
+      "solution": "Mean: 6 + 8 + 8 + 9 + 4 = 35, and 35 / 5 = 7. For the follow-up: ordered 4, 6, 8, 8, 9 gives median 8, and the mode is 8.",
+      "expression": "(6+8+8+9+4)/5",
+      "answer": "7"
+    },
+    {
+      "problem": "Find the median of 10, 2, 7, 3, 8 and 6.",
+      "solution": "Order: 2, 3, 6, 7, 8, 10. There are 6 values, so the middle two are 6 and 7. Median = (6 + 7) / 2 = 6.5.",
+      "expression": "(6+7)/2",
+      "answer": "13/2"
+    },
+    {
+      "problem": "The mean of 4 test scores is 70. A fifth score of 80 is added. What is the new mean?",
+      "solution": "The total of the first four is 4 x 70 = 280. Adding 80 gives 360. New mean: 360 / 5 = 72.",
+      "expression": "(4*70+80)/5",
+      "answer": "72"
+    }
+  ],
+  "meta": {
+    "concept": "mean-median-mode",
+    "title": "Mean, median and mode",
+    "model": "sonnet",
+    "cost_usd": 0.05116,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Mean%2C+median+and+mode"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Mean%2C+median+and+mode"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Mean%2C+median+and+mode"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Mean%2C+median+and+mode"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Mean%2C+median+and+mode+math"
+    }
+  ]
+}

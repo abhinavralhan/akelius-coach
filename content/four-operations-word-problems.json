@@ -1,0 +1,258 @@
+{
+  "idea": "A two-step problem hides two calculations inside one story. The first answer is not the final answer, it is a stepping stone you need before you can answer the question. Students learn to find the hidden first step, do it, then use its result for the second step, using any of the four operations.",
+  "why": "Each step of a story changes the amount in one way: more arrives (add), some leaves (subtract), equal groups appear (multiply), or things are shared equally (divide). The question asks about the end of the story, so we follow the story in order, one change at a time. Writing it as one expression only works if the order matches the story. That is why brackets matter: (24 + 12) / 4 means \"add first, then share\", while 24 + 12 / 4 would mean something different, because multiplication and division are done before addition and subtraction.",
+  "theory_example": {
+    "problem": "Ana has 24 stickers and her friend gives her 12 more. She shares all of them equally among 4 people (herself included). Then she gives 2 of her own stickers to her cousin. How many stickers does Ana have now?",
+    "steps": "Step 1: Add the stickers she has altogether: 24 + 12 = 36. Step 2: Share equally among 4: 36 / 4 = 9. Step 3: She gives away 2 of her 9: 9 - 2 = 7. (This one has three small steps. It shows all four operations, but each step is done one at a time, in story order.) As one expression: (24 + 12) / 4 - 2.",
+    "expression": "(24 + 12) / 4 - 2",
+    "answer": "7"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up with the idea: tell a very short story out loud, for example 'I had 10 sweets, got 5 more, then ate 3.' Ask what changed at each moment. Explain that today the question needs two steps, and the first answer is a stepping stone."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Add and subtract in a story (two steps)': use the sticker example, draw the three bars on the board (start, after more, left), and let students say each step before you write it."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Multiply first, then add or subtract': work through the ticket and change example. Ask students to name the hidden first step (the cost of all tickets) before any calculating."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Division in a two-step problem and checking': work through the pencils example, show the brackets, then ask students to check whether the answer is sensible. Finish with the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: use the 3 extra_examples, mixing the subtopics. Let students try each in pairs for a minute, then ask a pair to explain the hidden first step. Leave time for open questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Add and subtract in a story (two steps)",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Tell it like a movie in order. 'Mia starts with 45 stickers. Scene one: a friend gives her 18 more. How many does she have now? Scene two: she gives 23 to her brother.' Each scene is one calculation, and the answer of scene one is the starting amount of scene two."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw three bars in a row: Start (45), After getting more (63), Left (40). The second bar is taller because stickers were added, the third is shorter because some were given away. Students see that the middle bar is the stepping stone."
+        }
+      ],
+      "example": {
+        "problem": "Mia has 45 stickers. A friend gives her 18 more. Then she gives 23 stickers to her brother. How many stickers does she have left?",
+        "steps": "Step 1: Stickers after the gift: 45 + 18 = 63. Step 2: Stickers after giving some away: 63 - 23 = 40. Mia has 40 stickers left.",
+        "expression": "45 + 18 - 23",
+        "answer": "40"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Start;After more;Left",
+        "a": 45,
+        "b": 63,
+        "c": 40,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students combine all the numbers the same way, for example 45 + 18 + 23 = 86.",
+          "response": "Ask: 'Did Mia get 23 or give 23?' Have them act the story with counters. Show that the word 'gives' means the amount goes away, so it is taken off."
+        },
+        {
+          "mistake": "Students subtract the smaller number from the larger in the wrong order, or use the original number again, such as 45 - 23 = 22 and forget the 18.",
+          "response": "Ask them to point to the middle bar and say its value. The second step must start from 63, not from 45. Write the answer to step one on the board with a label."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why can't I just do all the numbers in one go?",
+          "answer": "You can, but only if you keep the story's order. Here 45 + 18 - 23 works because the add comes first and the take-away comes second. Doing one step at a time just keeps you from getting lost."
+        },
+        {
+          "question": "Does it matter if I take away first and then add?",
+          "answer": "In this one, 45 - 23 + 18 also gives 40, because both steps are just changes to the same amount. But it can matter if you run out in the middle, for example if she only had 20 stickers. So following the story order is the safe habit."
+        },
+        {
+          "question": "How do I know which step comes first?",
+          "answer": "Read the story from the start and listen for 'then', 'after', and 'later'. The order of the story is the order of your steps."
+        }
+      ],
+      "check_question": {
+        "question": "Jo has 30 marbles. He wins 14 more, then loses 20. How many marbles does Jo have now?",
+        "solution": "30 + 14 = 44, then 44 - 20 = 24. Jo has 24 marbles.",
+        "expression": "30 + 14 - 20",
+        "answer": "24"
+      }
+    },
+    {
+      "title": "Multiply first, then add or subtract",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "1) Ask: what does the question want at the end? 2) Find the hidden first step: usually 'how much for all of them?' which is a multiplication (price times number). 3) Do it and write the result with a label. 4) Use the result in the second step (add or subtract). 5) Write the answer as a sentence."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw bars: Paid (50), Tickets (40), Change (10). Show that the Tickets bar plus the Change bar together make the Paid bar. So change = paid - cost of tickets, and the cost of tickets is 5 groups of 8."
+        }
+      ],
+      "example": {
+        "problem": "Tickets cost 8 euros each. Leo buys 5 tickets and pays with a 50 euro note. How much change does he get?",
+        "steps": "Step 1 (hidden step): the cost of 5 tickets: 5 x 8 = 40 euros. Step 2: the change: 50 - 40 = 10 euros. Leo gets 10 euros change.",
+        "expression": "50 - 8 * 5",
+        "answer": "10"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Paid;Tickets;Change",
+        "a": 50,
+        "b": 40,
+        "c": 10,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students subtract the price from the note: 50 - 8 = 42, forgetting the number of tickets.",
+          "response": "Ask: 'Did Leo buy one ticket or five?' Have them write 'cost of all tickets' as a label before they start. The hidden step is the one that is not written in the question."
+        },
+        {
+          "mistake": "When writing one expression, students do 50 - 8 first and then multiply by 5, so (50 - 8) x 5 = 210.",
+          "response": "Show that the answer 210 is more than he paid, which is impossible for change. Explain that multiplication is done before subtraction, so 50 - 8 x 5 means 50 minus 40. Encourage doing it in two lines first."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do I multiply and not add 8 five times?",
+          "answer": "Adding 8 five times gives the same answer, 40. Multiplying is just a faster way to add equal groups."
+        },
+        {
+          "question": "Why is it subtraction in the second step and not addition?",
+          "answer": "The money Leo paid is more than what he spent, and change is the part left over. So you take what he spent away from what he paid."
+        },
+        {
+          "question": "Is the answer always the last number I calculate?",
+          "answer": "Usually yes, but always reread the question. Here the question asks for the change, not the cost of the tickets, so the answer is 10, not 40."
+        }
+      ],
+      "check_question": {
+        "question": "Pencils cost 4 euros each. Sara buys 6 pencils and pays with 30 euros. How much change does she get?",
+        "solution": "6 x 4 = 24 euros for the pencils, then 30 - 24 = 6 euros change.",
+        "expression": "30 - 4 * 6",
+        "answer": "6"
+      }
+    },
+    {
+      "title": "Division in a two-step problem and checking",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "A teacher has 75 pencils for the class, but 3 are broken, so she throws them away. She shares the good ones equally among 8 students. First she must find how many good pencils there are (75 - 3 = 72), because only good ones are shared. Then she shares: 72 / 8 = 9 pencils each."
+        },
+        {
+          "kind": "procedure",
+          "text": "Solve in order, then check. 1) Do the step that makes the amount to share. 2) Divide. 3) Check by multiplying back: 8 x 9 = 72, and 72 + 3 = 75, which is what she started with. If it gets back to the start, the answer fits the story."
+        }
+      ],
+      "example": {
+        "problem": "A teacher has 75 pencils. 3 of them are broken and are thrown away. She shares the rest equally among 8 students. How many pencils does each student get?",
+        "steps": "Step 1: Pencils that can be shared: 75 - 3 = 72. Step 2: Share equally among 8: 72 / 8 = 9. Check: 9 x 8 = 72 and 72 + 3 = 75. Each student gets 9 pencils.",
+        "expression": "(75 - 3) / 8",
+        "answer": "9"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students divide first and then subtract: 75 / 8 and then take away 3, which gives a messy number.",
+          "response": "Ask: 'Who gets the broken pencils?' Nobody, so they must be removed before sharing. A messy decimal answer in a sharing problem is a hint that the order may be wrong."
+        },
+        {
+          "mistake": "Students forget to give the answer in context, or divide by the wrong number, for example 72 / 3.",
+          "response": "Ask them to label each number: 72 is pencils, 8 is students. We share pencils among students, so the pencils are divided by 8. Ask them to finish with a full sentence."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we need brackets in (75 - 3) / 8?",
+          "answer": "Without brackets, division is done before subtraction, so 75 - 3 / 8 would take away only one eighth of 3. Brackets say: do the subtraction first."
+        },
+        {
+          "question": "How do I know whether to divide or multiply?",
+          "answer": "If equal groups are being made from a total, or a total is being shared, you divide. If you know the size of each group and the number of groups and want the total, you multiply."
+        },
+        {
+          "question": "What if the division does not come out even?",
+          "answer": "In these lessons it should come out even. If it does not, recheck the first step, as you may have used the wrong order or a wrong number."
+        }
+      ],
+      "check_question": {
+        "question": "There are 48 sweets. 8 are eaten, and the rest are shared equally among 5 children. How many sweets does each child get?",
+        "solution": "48 - 8 = 40 sweets are left, then 40 / 5 = 8 sweets each.",
+        "expression": "(48 - 8) / 5",
+        "answer": "8"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "A baker makes 9 trays of 8 rolls. She sells 58 rolls. How many rolls are left?",
+      "solution": "Hidden step: 9 x 8 = 72 rolls made. Then 72 - 58 = 14 rolls left.",
+      "expression": "9 * 8 - 58",
+      "answer": "14"
+    },
+    {
+      "problem": "Tom has 50 euros. He buys 4 books at 6 euros each. He then shares the money he has left equally between his 2 sisters. How much does each sister get?",
+      "solution": "4 x 6 = 24 euros spent. 50 - 24 = 26 euros left. 26 / 2 = 13 euros each.",
+      "expression": "(50 - 4 * 6) / 2",
+      "answer": "13"
+    },
+    {
+      "problem": "63 marbles are shared equally into 7 bags. Then 4 more marbles are put into each bag. How many marbles are in each bag now?",
+      "solution": "63 / 7 = 9 marbles in each bag at first. Then 9 + 4 = 13 marbles in each bag.",
+      "expression": "63 / 7 + 4",
+      "answer": "13"
+    }
+  ],
+  "meta": {
+    "concept": "four-operations-word-problems",
+    "title": "Two-step problems with all four operations",
+    "model": "sonnet",
+    "cost_usd": 0.06381,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Two-step+problems+with+all+four+operations"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Two-step+problems+with+all+four+operations"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Two-step+problems+with+all+four+operations"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Two-step+problems+with+all+four+operations"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Two-step+problems+with+all+four+operations+math"
+    }
+  ]
+}

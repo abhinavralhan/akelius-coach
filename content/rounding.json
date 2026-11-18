@@ -1,0 +1,258 @@
+{
+  "idea": "Rounding replaces a number with a nearby \"friendly\" number: a multiple of 10 or of 100. You find the two friendly numbers on either side, then pick the closer one. If the number is exactly halfway, the school rule is to round up.",
+  "why": "Every number sits between two multiples of 10 (or 100). The halfway point is 5 ones (or 50) past the lower one. So the digit just to the right of the place you are rounding to tells you which side you are on. If it is 5 or more, you are at or past halfway and go up. If it is 4 or less, you are before halfway and go down. Only that one digit matters, because everything further right adds less than one more step of the rounding place. That is why you never round in stages. Rounding 449 to 450 and then to 500 is wrong, because 449 is closer to 400.",
+  "theory_example": {
+    "problem": "Round 674 to the nearest 10 and to the nearest 100.",
+    "steps": "Nearest 10: 674 lies between 670 and 680. The ones digit is 4, which is less than 5, so 674 is closer to 670. Nearest 100: 674 lies between 600 and 700. Look at the tens digit, which is 7. That is 5 or more, so go up to 700. Check: 674 is 74 above 600 but only 26 below 700, so 700 is closer.",
+    "expression": "700",
+    "answer": "700"
+  },
+  "subtopics": [
+    {
+      "title": "Rounding to the nearest 10",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a number line from 40 to 50 and mark the middle, 45. Put a dot at 47. Ask which end it is nearer to. It is 3 steps from 50 and 7 steps from 40, so it is nearer to 50. Then try 42, 45 and 49. Anything past the middle goes up, and anything before it goes down."
+        },
+        {
+          "kind": "procedure",
+          "text": "1) Underline the tens digit, because that is the place you keep. 2) Look at the digit just to its right, the ones digit. 3) If it is 0 to 4, keep the tens digit. If it is 5 to 9, add one to the tens digit. 4) Write 0 in the ones place."
+        }
+      ],
+      "example": {
+        "problem": "Round 47 to the nearest 10.",
+        "steps": "47 is between 40 and 50. The ones digit is 7, which is 5 or more, so round up. The answer is 50. Check: 47 is 3 away from 50 and 7 away from 40.",
+        "expression": "50",
+        "answer": "50"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "A student looks at the tens digit to decide, so 47 becomes 40 because the 4 is small.",
+          "response": "Say: the digit you keep is not the digit that decides. Ask them to place 47 on the 40 to 50 number line and see which end it is closer to. Then name the deciding digit as the one right next door, on the right."
+        },
+        {
+          "mistake": "A student writes 57 or 47 unchanged, or forgets the zero, and writes 5 for 50.",
+          "response": "Remind them that a rounded number must be a multiple of 10, so it ends in 0. Have them read their answer aloud, for example 'fifty', and check that it fits on the number line."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we round up when it is 5?",
+          "answer": "5 is exactly halfway between the two tens, so it is not closer to either. People agreed on one rule so everyone gets the same answer: halfway goes up."
+        },
+        {
+          "question": "Why do we only look at the ones digit?",
+          "answer": "The ones digit tells you how far past the lower ten you are. Less than 5 means you are before the middle. 5 or more means you are at or past it."
+        },
+        {
+          "question": "Why would anyone round?",
+          "answer": "Round numbers are easier to remember, compare and estimate with. Saying about 50 people is quicker than saying 47."
+        }
+      ],
+      "check_question": {
+        "question": "What is 38 rounded to the nearest 10?",
+        "solution": "38 is between 30 and 40. The ones digit is 8, so round up to 40.",
+        "expression": "40",
+        "answer": "40"
+      }
+    },
+    {
+      "title": "Rounding to the nearest 100",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Imagine a shop that prices things in whole hundreds. A bike costs 362 dollars, and the sign must show the nearest hundred. The shopkeeper asks which is closer, 300 or 400. 362 is 62 above 300 and 38 below 400, so the sign says 400."
+        },
+        {
+          "kind": "procedure",
+          "text": "1) Underline the hundreds digit, the place you keep. 2) Look at the tens digit just to its right. 3) If it is 0 to 4, keep the hundreds digit. If it is 5 to 9, add one to the hundreds digit. 4) Write zeros in the tens and ones places. The ones digit does not matter."
+        }
+      ],
+      "example": {
+        "problem": "Round 362 to the nearest 100.",
+        "steps": "362 is between 300 and 400. The tens digit is 6, which is 5 or more, so round up to 400. The ones digit 2 is not used. Check: 362 is 38 below 400 and 62 above 300.",
+        "expression": "400",
+        "answer": "400"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "A student looks at the ones digit, so 362 becomes 300 because of the 2.",
+          "response": "Ask which two hundreds the number sits between. Then ask which digit tells how far past 300 it is. Show that 62 is more than half of 100, so the tens digit decides."
+        },
+        {
+          "mistake": "A student rounds in stages: 449 to 450 and then to 500.",
+          "response": "Ask them to find the two hundreds around 449, which are 400 and 500, and the middle, which is 450. 449 is below the middle, so the answer is 400. Round once, using only the digit next door."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why don't we look at the ones digit now?",
+          "answer": "The ones are too small to change which hundred is nearer. The tens digit already tells us if we are past 50 or not."
+        },
+        {
+          "question": "Do we always get zeros at the end?",
+          "answer": "Yes. A number rounded to the nearest 100 is a multiple of 100, so it ends in 00."
+        },
+        {
+          "question": "Can the answer be the same as the starting number?",
+          "answer": "Yes. 400 rounded to the nearest 100 is 400, because it is already a multiple of 100."
+        }
+      ],
+      "check_question": {
+        "question": "What is 449 rounded to the nearest 100?",
+        "solution": "449 is between 400 and 500. The tens digit is 4, so round down to 400.",
+        "expression": "400",
+        "answer": "400"
+      }
+    },
+    {
+      "title": "Halfway numbers and rounding up past 9",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a number line from 900 to 1000 and mark the middle, 950. Put a dot at 953. It is just past the middle, so it goes up to 1000. Point out that the hundreds digit 9 becomes 10, so a new place appears in the answer."
+        },
+        {
+          "kind": "procedure",
+          "text": "When the digit to be raised is 9, adding one gives 10. Write 0 in that place and carry 1 to the next place, just like in addition. For example, 953 gives 900 + 100 = 1000. And 295 to the nearest 10 gives 290 + 10 = 300."
+        }
+      ],
+      "example": {
+        "problem": "Round 953 to the nearest 100.",
+        "steps": "953 is between 900 and 1000. The tens digit is 5, so it is halfway or more, and we round up. 900 + 100 = 1000. Check: 953 is 47 below 1000 and 53 above 900.",
+        "expression": "1000",
+        "answer": "1000"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "A student writes 9100 or 910 for 953, adding 1 to the digit 9 in the hundreds place without carrying.",
+          "response": "Go back to the number line. The next hundred after 900 is 1000, not 910. Compare it to counting by hundreds: 700, 800, 900, 1000."
+        },
+        {
+          "mistake": "A student rounds 295 to the nearest 10 as 290, saying that 5 rounds down.",
+          "response": "Show the middle of 290 and 300 on the number line. 295 is exactly halfway, and the agreed rule is that halfway rounds up, so the answer is 300."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why does 5 round up and not down?",
+          "answer": "It is a rule we all agree on so everyone gets the same answer. Halfway is equally close to both, so we had to choose, and we chose up."
+        },
+        {
+          "question": "Why does the answer have more digits than the number I started with?",
+          "answer": "Because 99 or 999 is so close to the next round number. 96 rounds to 100, which has three digits. That is fine."
+        },
+        {
+          "question": "Is rounding the same as the exact number?",
+          "answer": "No, it is an estimate. It is close to the real number, but it can be a little bigger or a little smaller."
+        }
+      ],
+      "check_question": {
+        "question": "What is 295 rounded to the nearest 10?",
+        "solution": "295 is between 290 and 300. The ones digit is 5, so round up to 300.",
+        "expression": "300",
+        "answer": "300"
+      }
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up with Rounding to the nearest 10. Draw a number line from 40 to 50 on the board and ask students where 43, 45 and 47 go. Ask which ten each is closer to. Introduce the middle point and the idea of 'closer'."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach Rounding to the nearest 10. Show the digit rule with the 47 example, then have students round 38, 62, 85 and 91 on mini whiteboards. Ask the check question and use the common mistakes to correct anything you hear."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach Rounding to the nearest 100. Use the shop story and the 362 example. Stress that you look at the tens digit now. Students try 249, 450 and 781. Ask the check question about 449."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach Halfway numbers and rounding up past 9. Draw the 900 to 1000 number line and work the 953 example. Then do 295 to the nearest 10 together. Answer the question about why 5 rounds up."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Work through the three extra examples, letting students answer before you show the solution. Leave time at the end for their questions."
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Round 1,486 to the nearest 100.",
+      "solution": "1,486 is between 1,400 and 1,500. The tens digit is 8, which is 5 or more, so round up to 1,500.",
+      "expression": "1500",
+      "answer": "1500"
+    },
+    {
+      "problem": "Round 8,995 to the nearest 10.",
+      "solution": "8,995 is between 8,990 and 9,000. The ones digit is 5, so round up. 8,990 + 10 = 9,000.",
+      "expression": "9000",
+      "answer": "9000"
+    },
+    {
+      "problem": "Round 649 to the nearest 100.",
+      "solution": "649 is between 600 and 700. The tens digit is 4, so round down to 600. Do not round to 650 first, because that would wrongly give 700.",
+      "expression": "600",
+      "answer": "600"
+    }
+  ],
+  "meta": {
+    "concept": "rounding",
+    "title": "Rounding to the nearest 10 or 100",
+    "model": "sonnet",
+    "cost_usd": 0.11922,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Rounding+to+the+nearest+10+or+100"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Rounding+to+the+nearest+10+or+100"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Rounding+to+the+nearest+10+or+100"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Rounding+to+the+nearest+10+or+100"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Rounding+to+the+nearest+10+or+100+math"
+    }
+  ]
+}

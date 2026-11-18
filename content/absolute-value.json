@@ -1,0 +1,258 @@
+{
+  "idea": "The absolute value of a number is how far it is from 0 on the number line, so it is never negative. We write it with bars: |-7| = 7 and |7| = 7. The same idea also gives the distance between any two numbers: |a - b|.",
+  "why": "Distance is a length, and a length can't be negative. Walking from -7 to 0 takes 7 steps, just as walking from 7 to 0 does. So the bars ask \"how many steps from zero?\" and not \"what is the sign?\". The bars do not just erase a minus sign. They act on the final value of whatever is inside: for |3 - 10| you work out 3 - 10 = -7 first, then take the distance, 7. For two numbers a and b, the gap between them is b - a or a - b, whichever is positive, and that is exactly |a - b|.",
+  "theory_example": {
+    "problem": "Find |-4| + |3 - 9|, then find the distance between -4 and 3.",
+    "steps": "1) |-4| = 4, because -4 is 4 steps from zero. 2) Inside the second bars, 3 - 9 = -6, and |-6| = 6. 3) Add: 4 + 6 = 10. 4) Distance between -4 and 3: 3 - (-4) = 7, and |7| = 7. Check on the number line: from -4 to 0 is 4 steps and from 0 to 3 is 3 more steps, 7 in total.",
+    "expression": "4+6",
+    "answer": "10"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: draw a number line on the board and mark 0. Ask one student to walk to -3 and another to 3, and ask how many steps each took. Collect the idea that both walked 3 steps. This leads into 'Absolute value as distance from zero'."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Absolute value as distance from zero': show the number line drawing for -7 and 7, say the bar notation aloud as 'distance from zero', then do the check question."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Working with the bars': work through |3 - 10| + |-2| on the board, stressing 'inside first, then distance'. Let students call out each step."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Distance between two numbers': draw -4 and 3 on the number line, count the steps, then show that |3 - (-4)| gives the same 7. Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work the three extra examples with the class, mixing all subtopics, and leave time for students to ask their own questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Absolute value as distance from zero",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a number line with 0 in the middle. Mark -7 and 7. Draw a arc from each to 0 and label both 7 steps. Say: the absolute value is the length of that arc, so |-7| = 7 and |7| = 7."
+        },
+        {
+          "kind": "story",
+          "text": "Two friends live on the same straight road, one 7 km west of the school and one 7 km east. Ask: who lives farther from school? Neither, both are 7 km away. Direction (the sign) is different, but distance (the absolute value) is the same."
+        }
+      ],
+      "example": {
+        "problem": "Find |-7|, |7| and |0|.",
+        "steps": "1) -7 is 7 steps from 0, so |-7| = 7. 2) 7 is 7 steps from 0, so |7| = 7. 3) 0 is 0 steps from 0, so |0| = 0.",
+        "expression": "7",
+        "answer": "7"
+      },
+      "visual": {
+        "kind": "numberline",
+        "expr": "",
+        "a": -7,
+        "b": 7,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students think |-7| = -7, because they see the minus sign and keep it.",
+          "response": "Go back to the number line: can you walk -7 steps? A distance can't be negative. Ask them to count the steps from -7 to 0 aloud."
+        },
+        {
+          "mistake": "Students think the bars just mean 'delete the minus sign', so they also change positive numbers or think |0| is something else.",
+          "response": "Say the bars mean 'distance from zero'. For 5 and 0 there is no minus to delete, and the distances are still 5 and 0."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why can't the answer be negative?",
+          "answer": "Because it measures how far away something is. You can be 7 steps away, but not -7 steps away. A distance is just a length."
+        },
+        {
+          "question": "Is |0| really 0?",
+          "answer": "Yes. 0 is zero steps from 0, so the distance is 0. It is the only number whose absolute value is 0."
+        },
+        {
+          "question": "Which numbers have absolute value 7?",
+          "answer": "Two numbers: 7 and -7, because both are 7 steps from zero, one on each side."
+        }
+      ],
+      "check_question": {
+        "question": "How far from 0 is -9? So what is |-9|?",
+        "solution": "-9 is 9 steps from 0, so |-9| = 9.",
+        "expression": "9",
+        "answer": "9"
+      }
+    },
+    {
+      "title": "Working with the bars",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Treat the bars like brackets that also take the distance. Step 1: work out everything inside the bars. Step 2: take the absolute value of that single result. Step 3: then do any adding or subtracting outside the bars."
+        },
+        {
+          "kind": "story",
+          "text": "Think of the bars as a machine at the end of a conveyor belt. Whatever number arrives, positive or negative, the machine hands out its distance from zero. First the inside calculation finishes and the number arrives, then the machine works."
+        }
+      ],
+      "example": {
+        "problem": "Find |3 - 10| + |-2|.",
+        "steps": "1) Inside the first bars: 3 - 10 = -7. 2) |-7| = 7. 3) |-2| = 2. 4) Add: 7 + 2 = 9.",
+        "expression": "7+2",
+        "answer": "9"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students take the bars on each number separately: |3 - 10| becomes 3 - 10 or 3 + 10.",
+          "response": "Ask them to finish the inside first: 3 - 10 is -7, one number. Then the bars give 7. The bars apply to the result, not to each piece."
+        },
+        {
+          "mistake": "Students write |-8| - |3| = -8 - 3 or 8 + 3 and lose the subtraction sign outside the bars.",
+          "response": "Work out each bar first: 8 and 3. Then rewrite the problem as 8 - 3 = 5. The minus outside the bars stays a minus."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Is |3 - 10| the same as |3| - |10|?",
+          "answer": "No. The first is |-7| = 7. The second is 3 - 10 = -7. The bars must wait until the inside is finished."
+        },
+        {
+          "question": "Can an absolute value be bigger than the number inside?",
+          "answer": "Yes, if the number is negative. |-7| = 7, and 7 is bigger than -7. The result is never smaller than the number inside."
+        },
+        {
+          "question": "Why do we do the inside first?",
+          "answer": "It's the same rule as brackets. The bars need one number to measure the distance of, so we make that number first."
+        }
+      ],
+      "check_question": {
+        "question": "What is |2 - 9| + |-1|?",
+        "solution": "2 - 9 = -7, so |-7| = 7. |-1| = 1. The total is 7 + 1 = 8.",
+        "expression": "7+1",
+        "answer": "8"
+      }
+    },
+    {
+      "title": "Distance between two numbers",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Mark -4 and 3 on a number line. Count the steps from -4 to 3: 7 steps. Then show that 3 - (-4) = 7, so the subtraction gives the same gap. If the order is reversed, -4 - 3 = -7, and the bars turn it back into 7."
+        },
+        {
+          "kind": "procedure",
+          "text": "To find the distance between a and b: subtract one from the other (either order), then take the absolute value. So the distance is |a - b|. Since |a - b| = |b - a|, the order doesn't matter."
+        }
+      ],
+      "example": {
+        "problem": "Find the distance between -4 and 3.",
+        "steps": "1) Subtract: 3 - (-4) = 3 + 4 = 7. 2) Take the absolute value: |7| = 7. 3) Check on the number line: 4 steps from -4 to 0, then 3 steps from 0 to 3, total 7.",
+        "expression": "3-(-4)",
+        "answer": "7"
+      },
+      "visual": {
+        "kind": "numberline",
+        "expr": "",
+        "a": -4,
+        "b": 3,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students compute -4 + 3 = -1, or 4 - 3 = 1, and say the distance is 1.",
+          "response": "Use the number line and count the steps. Show that subtracting a negative means adding: 3 - (-4) = 7."
+        },
+        {
+          "mistake": "Students think that the order matters, so they get -7 and stop.",
+          "response": "Remind them that distance can't be negative. Either order gives 7 or -7, and the bars make both 7."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we subtract to find distance?",
+          "answer": "Subtracting tells you how far apart the two numbers are, the size of the gap between them. The bars then remove the direction."
+        },
+        {
+          "question": "Does it matter which number I write first?",
+          "answer": "No. 3 - (-4) = 7 and -4 - 3 = -7, and both have absolute value 7."
+        },
+        {
+          "question": "What if both numbers are negative?",
+          "answer": "It works the same. For -9 and -2: -2 - (-9) = 7, so the distance is 7."
+        }
+      ],
+      "check_question": {
+        "question": "What is the distance between -6 and 2?",
+        "solution": "2 - (-6) = 8, and |8| = 8. On the number line, 6 steps to 0 plus 2 more steps is 8.",
+        "expression": "2-(-6)",
+        "answer": "8"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Solve |x| = 6. Give the positive solution (there is also a negative one).",
+      "solution": "Numbers 6 steps from zero are 6 and -6. So x = 6 or x = -6. The positive solution is 6.",
+      "expression": "6",
+      "answer": "6"
+    },
+    {
+      "problem": "Find |-12| + |5| - |-2|.",
+      "solution": "|-12| = 12, |5| = 5, |-2| = 2. So 12 + 5 - 2 = 15.",
+      "expression": "12+5-2",
+      "answer": "15"
+    },
+    {
+      "problem": "Find the distance between -9 and -2.",
+      "solution": "-2 - (-9) = -2 + 9 = 7, and |7| = 7. On the number line, -9 to -2 is 7 steps.",
+      "expression": "-2-(-9)",
+      "answer": "7"
+    }
+  ],
+  "meta": {
+    "concept": "absolute-value",
+    "title": "Absolute value",
+    "model": "sonnet",
+    "cost_usd": 0.06934,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Absolute+value"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Absolute+value"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Absolute+value"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Absolute+value"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Absolute+value+math"
+    }
+  ]
+}

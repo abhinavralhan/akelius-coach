@@ -1,0 +1,258 @@
+{
+  "idea": "When a calculation has several operations, mathematicians agree on one order so everyone gets the same answer. Brackets come first, then powers, then multiplication and division, then addition and subtraction. Operations of the same level are done from left to right.",
+  "why": "The order is an agreement, but it is not random. Multiplication is repeated addition, so 5 + 2 × 6 means 5 plus two sixes, and 2 × 6 belongs together as one chunk. Powers are repeated multiplication, so they bind even tighter. Brackets are the tool for overriding the default: they say \"treat this as one number first\". Without one agreed order, the same expression could have several answers. Operations of the same level go left to right because subtraction and division are not order-free: 10 − 4 + 2 is 8, but doing 4 + 2 first would wrongly give 4.",
+  "theory_example": {
+    "problem": "Work out 3 + 2 × (8 − 5)².",
+    "steps": "Brackets first: 8 − 5 = 3, so the expression becomes 3 + 2 × 3². Powers next: 3² = 9, so it becomes 3 + 2 × 9. Multiplication next: 2 × 9 = 18, so it becomes 3 + 18. Addition last: 3 + 18 = 21.",
+    "expression": "3 + 2*(8 - 5)**2",
+    "answer": "21"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Hook: write 5 + 2 × 6 on the board and ask students to calculate it silently. Collect the answers (some will say 42, some 17) and say that today we learn why one of them is the agreed answer. Use the story from 'Multiplication and division before addition and subtraction'."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Multiplication and division before addition and subtraction'. Work through its example, show the bar picture comparing 42 and 17, then ask its check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Brackets first'. Show the same numbers with brackets, (5 + 2) × 6 = 42, using the bar picture to compare with 17. Work through its example and ask its check question."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Same level: left to right'. Work through its example slowly, writing one line per step. Address the BODMAS or PEMDAS letters question. Ask its check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: students try the 3 extra examples on their own or in pairs, then you go through the solutions and answer questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Multiplication and division before addition and subtraction",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "You have 5 euros. Then you earn 2 euros an hour for 6 hours. How much do you have? 5 + 2 × 6. The work money is 2 × 6 = 12, and you add it to the 5, so you have 17 euros. The 2 × 6 has to be worked out as one amount before it is added."
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: look for any multiplication or division and underline it. Step 2: work out each underlined part. Step 3: rewrite the expression with those results. Step 4: do the remaining additions and subtractions."
+        }
+      ],
+      "example": {
+        "problem": "Work out 5 + 2 × 6.",
+        "steps": "Underline 2 × 6 and work it out: 12. Rewrite: 5 + 12. Add: 17. Going left to right instead would give (5 + 2) × 6 = 42, which is not the agreed answer.",
+        "expression": "5 + 2*6",
+        "answer": "17"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Left to right;Multiply first",
+        "a": 42,
+        "b": 17,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students work strictly left to right and get 42 for 5 + 2 × 6.",
+          "response": "Do not just say it is wrong. Use the money story so they see that 2 × 6 is one amount of money. Then show that 42 would mean you earned 7 × 6, which is not what the story says."
+        },
+        {
+          "mistake": "Students think addition always comes before subtraction, or multiplication always before division.",
+          "response": "Explain that multiplication and division share one level, and addition and subtraction share one level. Within a level, go left to right. Examples: 8 ÷ 2 × 3 = 12 and 9 − 3 + 2 = 8."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why does multiplication go first?",
+          "answer": "Because 2 × 6 is shorthand for 6 + 6. So 5 + 2 × 6 really means 5 + 6 + 6. The multiplication is already bundled together, so we treat it as one chunk."
+        },
+        {
+          "question": "Who decided this?",
+          "answer": "Mathematicians agreed on it over many years so that everyone reads the same expression the same way. It is a shared rule, like spelling, and it is also useful because it matches how real situations work, such as the money story."
+        },
+        {
+          "question": "My calculator gives a different answer from my first try. Who is right?",
+          "answer": "A calculator that follows the order of operations is right here. Check whether you went left to right. If you did, redo it with multiplication first and you should match."
+        }
+      ],
+      "check_question": {
+        "question": "What is 10 − 2 × 3?",
+        "solution": "Multiply first: 2 × 3 = 6. Then subtract: 10 − 6 = 4. Going left to right would wrongly give 24.",
+        "expression": "10 - 2*3",
+        "answer": "4"
+      }
+    },
+    {
+      "title": "Brackets first",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw the brackets as a box around part of the expression. Say that everything in the box is worked out into a single number before anything outside the box is touched. In (5 + 2) × 6, the box becomes 7, and then 7 × 6 = 42."
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: find the brackets and work out what is inside, using the usual order inside them. Step 2: replace the bracket by its value. Step 3: continue with the rest of the expression in the usual order."
+        }
+      ],
+      "example": {
+        "problem": "Work out (5 + 2) × 6 and compare it with 5 + 2 × 6.",
+        "steps": "Brackets first: 5 + 2 = 7. Rewrite: 7 × 6. Multiply: 42. Without brackets, 5 + 2 × 6 = 17. The brackets changed the answer from 17 to 42.",
+        "expression": "(5 + 2)*6",
+        "answer": "42"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Without brackets;With brackets",
+        "a": 17,
+        "b": 42,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students ignore the brackets and multiply first, giving 5 + 12 = 17 for (5 + 2) × 6.",
+          "response": "Ask what the brackets are for. Remind them that brackets are an instruction to do that part first. Have them draw a box around the bracket and work it out before anything else."
+        },
+        {
+          "mistake": "Students drop the multiplication sign next to a bracket, for example reading 3(4 + 1) as 3 and then 4 + 1 separately.",
+          "response": "Say that a number touching a bracket means multiply: 3(4 + 1) = 3 × (4 + 1) = 3 × 5 = 15. Write the × in explicitly until they are comfortable."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we need brackets at all?",
+          "answer": "They let us break the usual order when we need to. If you want to add first and then multiply, brackets are the way to say so."
+        },
+        {
+          "question": "Do I always work out brackets first even if it is a tiny one?",
+          "answer": "Yes. Even a bracket with just a number like (7) is simple, but any bracket with a calculation inside should be worked out first."
+        },
+        {
+          "question": "What if there are brackets inside brackets?",
+          "answer": "Start with the innermost bracket and work outward. For 2 × (3 + (4 − 1)), first 4 − 1 = 3, then 3 + 3 = 6, then 2 × 6 = 12."
+        }
+      ],
+      "check_question": {
+        "question": "What is 2 × (3 + 4)?",
+        "solution": "Brackets first: 3 + 4 = 7. Then 2 × 7 = 14. Without the brackets, 2 × 3 + 4 would be 10.",
+        "expression": "2*(3 + 4)",
+        "answer": "14"
+      }
+    },
+    {
+      "title": "Same level: left to right",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "After brackets and powers, there are two levels. Level 1: multiplication and division, done in the order they appear, left to right. Level 2: addition and subtraction, also left to right. Write a new line after every single step so nothing gets skipped."
+        },
+        {
+          "kind": "story",
+          "text": "You have 10 sweets, give away 4, then get 2 more. That is 10 − 4 + 2 = 8, because the events happen in the order told. If you added 4 + 2 first you would be pretending you got 2 more and gave away 6 at once, which is a different story and gives 4."
+        }
+      ],
+      "example": {
+        "problem": "Work out 20 − 12 ÷ 3 × 2 + 1.",
+        "steps": "Level 1 first, left to right. 12 ÷ 3 = 4, giving 20 − 4 × 2 + 1. Then 4 × 2 = 8, giving 20 − 8 + 1. Level 2, left to right: 20 − 8 = 12, then 12 + 1 = 13.",
+        "expression": "20 - 12/3*2 + 1",
+        "answer": "13"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students do multiplication before division always, so 12 ÷ 3 × 2 becomes 12 ÷ 6 = 2.",
+          "response": "Show that 12 ÷ 3 × 2 reads as 'twelve shared by 3, then doubled', which is 8. Explain that the two operations are equal in rank, so the one on the left goes first."
+        },
+        {
+          "mistake": "Students add before subtracting, so 10 − 4 + 2 becomes 10 − 6 = 4.",
+          "response": "Use the sweets story. Then stress that addition and subtraction are equal in rank and are done left to right: 10 − 4 = 6, then 6 + 2 = 8."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "What about BODMAS or PEMDAS? The D comes before the M in one of them.",
+          "answer": "Good question. The letters are only a memory aid. Division and multiplication are the same level, and so are addition and subtraction. Always go left to right within a level, whichever letter comes first."
+        },
+        {
+          "question": "Why left to right and not right to left?",
+          "answer": "It is another agreement, matching the way we read. It matters because 10 − 4 + 2 gives 8 left to right, but going right to left would give 4."
+        },
+        {
+          "question": "Where do powers go?",
+          "answer": "Powers come after brackets and before multiplication. In 3 + 2 × 3², do 3² = 9 first, then 2 × 9 = 18, then 3 + 18 = 21."
+        }
+      ],
+      "check_question": {
+        "question": "What is 16 ÷ 4 × 2?",
+        "solution": "Same level, so go left to right: 16 ÷ 4 = 4, then 4 × 2 = 8. Doing the multiplication first would wrongly give 2.",
+        "expression": "16/4*2",
+        "answer": "8"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Work out 18 − 6 ÷ 2 + 4.",
+      "solution": "Division first: 6 ÷ 2 = 3, giving 18 − 3 + 4. Then left to right: 18 − 3 = 15, then 15 + 4 = 19.",
+      "expression": "18 - 6/2 + 4",
+      "answer": "19"
+    },
+    {
+      "problem": "Work out (7 + 5) ÷ 3 × 2.",
+      "solution": "Brackets first: 7 + 5 = 12, giving 12 ÷ 3 × 2. Then left to right: 12 ÷ 3 = 4, then 4 × 2 = 8.",
+      "expression": "(7 + 5)/3*2",
+      "answer": "8"
+    },
+    {
+      "problem": "Work out 5 × (10 − 4) − 2².",
+      "solution": "Brackets: 10 − 4 = 6, giving 5 × 6 − 2². Powers: 2² = 4, giving 5 × 6 − 4. Multiplication: 5 × 6 = 30, giving 30 − 4. Subtraction: 26.",
+      "expression": "5*(10 - 4) - 2**2",
+      "answer": "26"
+    }
+  ],
+  "meta": {
+    "concept": "order-of-operations",
+    "title": "Order of operations and brackets",
+    "model": "sonnet",
+    "cost_usd": 0.13983,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Order+of+operations+and+brackets"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Order+of+operations+and+brackets"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Order+of+operations+and+brackets"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Order+of+operations+and+brackets"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Order+of+operations+and+brackets+math"
+    }
+  ]
+}

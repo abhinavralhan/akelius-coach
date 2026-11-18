@@ -1,0 +1,258 @@
+{
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Open with the story: 3 pizzas shared fairly among 4 friends. Let students guess how much each gets. Do not name the rule yet. Say that today a fraction bar means 'divided by'. (Uses the idea and the story from 'A fraction is a division'.)"
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'A fraction is a division'. Draw the 3 pizzas and the cut-into-quarters picture, then show the fraction bar picture for 3/4. Write 3 ÷ 4 = 3/4. Ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Dividing a smaller number by a larger one, and a larger by a smaller'. Work through 7 ÷ 2 = 7/2 = 3 1/2 with the bar picture. Compare it with 3 ÷ 4. Ask the check question."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Turning a fraction into a decimal by dividing'. Do 3/8 by long division together on the board, then check by multiplying 0.375 × 8. Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: put up the 3 extra examples one at a time. Let students try each for a minute with a partner before you show the solution. Use the remaining time for student questions."
+    }
+  ],
+  "idea": "A fraction is a division written in a different way. The fraction a/b means a ÷ b: the top number is what you share, and the bottom number is how many equal shares there are. So 3/4 is the amount one person gets when 3 wholes are shared equally among 4 people.",
+  "why": "Dividing a by b asks: what number times b gives a? Take 3 ÷ 4. Cut each of the 3 wholes into 4 equal parts. That makes 12 quarters, and 4 people each get 3 of them, which is 3/4. Check: 3/4 × 4 = 3, so 3/4 really is the answer to 3 ÷ 4. This works for any whole numbers a and b (b not zero). It also explains why the answer can be less than 1 (when a is smaller than b) or more than 1 (when a is bigger than b).",
+  "theory_example": {
+    "problem": "Share 3 pizzas equally among 4 friends. How much pizza does each friend get? Write it as a fraction and as a decimal.",
+    "steps": "1. Sharing equally means dividing: 3 ÷ 4.\n2. Cut each pizza into 4 equal slices. That gives 12 slices in all.\n3. Each of the 4 friends gets 12 ÷ 4 = 3 slices, and each slice is 1/4 of a pizza. So each gets 3/4.\n4. So 3 ÷ 4 = 3/4.\n5. For the decimal, divide 3 by 4: 3 ÷ 4 = 0.75.\n6. Check: 0.75 × 4 = 3.",
+    "expression": "Rational(3,4)",
+    "answer": "3/4"
+  },
+  "subtopics": [
+    {
+      "title": "A fraction is a division",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "3 pizzas are shared fairly among 4 friends. Nobody can get a whole pizza, so cut every pizza into 4 slices. That is 12 slices, and each friend gets 3 slices. Each slice is one quarter, so each friend gets 3/4 of a pizza. So 3 ÷ 4 = 3/4."
+        },
+        {
+          "kind": "procedure",
+          "text": "To write a division as a fraction: the number being divided (the dividend) goes on top, and the number you divide by (the divisor) goes on the bottom. 3 ÷ 4 becomes 3/4. To read a fraction as a division, say the bar as 'divided by'. 5/6 means 5 ÷ 6."
+        }
+      ],
+      "example": {
+        "problem": "Write 5 ÷ 6 as a fraction. Then say what 5/6 means when 5 cakes are shared among 6 people.",
+        "steps": "1. The number being shared is 5, so it goes on top.\n2. The number of shares is 6, so it goes on the bottom.\n3. So 5 ÷ 6 = 5/6.\n4. Meaning: cut each of the 5 cakes into 6 pieces. That gives 30 pieces, and each of the 6 people gets 5 pieces. Each piece is 1/6, so each person gets 5/6 of a cake.",
+        "expression": "Rational(5,6)",
+        "answer": "5/6"
+      },
+      "visual": {
+        "kind": "fractionbar",
+        "expr": "",
+        "a": 3,
+        "b": 4,
+        "c": 1,
+        "d": 4
+      },
+      "mistakes": [
+        {
+          "mistake": "Students write 3 ÷ 4 as 4/3, putting the divisor on top.",
+          "response": "Ask: can 4/3 be one person's share of 3 pizzas? 4/3 is more than 1 whole pizza, but 3 pizzas shared among 4 people cannot give each more than 1. Remind them: the top is what you have, the bottom is how many ways you share it."
+        },
+        {
+          "mistake": "Students think the fraction bar and the division sign are unrelated, so they treat 3/4 only as 'a piece of a shape'.",
+          "response": "Say that both ideas are true. Show a bar cut into 4 equal parts with 3 shaded. Then show the same amount as 3 wholes shared among 4. Write 3 ÷ 4 = 3/4 beside both."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why is the top number the one being shared?",
+          "answer": "Because the top counts how many things you have, and the bottom tells you how many equal parts or people there are. In 3 pizzas for 4 friends, 3 is what you have and 4 is how many friends. So 3 goes on top."
+        },
+        {
+          "question": "Is 3/4 a number or a division problem?",
+          "answer": "Both. It is a division problem, 3 ÷ 4, and it is also the answer, which is a number between 0 and 1. A fraction is a number that you get by dividing."
+        },
+        {
+          "question": "Why can't I divide by 0 in a fraction like 3/0?",
+          "answer": "It would mean sharing 3 things among 0 people, and that makes no sense. In maths we say we cannot find a number that times 0 gives 3, so 3/0 is not allowed."
+        }
+      ],
+      "check_question": {
+        "question": "2 cakes are shared equally among 5 children. Write the share of one child as a division and as a fraction.",
+        "solution": "Each child gets 2 ÷ 5 = 2/5 of a cake.",
+        "expression": "Rational(2,5)",
+        "answer": "2/5"
+      }
+    },
+    {
+      "title": "Dividing a smaller number by a larger one, and a larger by a smaller",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw 7 bars (wholes) and cut each in half. Count the halves: there are 14. Shared among... no: draw 7 ÷ 2 as 7 wholes split into 2 groups. Each group gets 3 whole bars and one more bar is left over. Cut that bar in half and give each group one half. Each group has 3 and a half, which is 7/2 = 3 1/2."
+        },
+        {
+          "kind": "procedure",
+          "text": "To write a division with a remainder as a mixed number: divide as usual, 7 ÷ 2 = 3 remainder 1. The whole-number part of the answer is 3. The remainder 1 is shared among 2, so it becomes 1/2. The answer is 3 1/2. As an improper fraction, 7 ÷ 2 = 7/2, and 3 × 2 + 1 = 7 shows the two forms match."
+        }
+      ],
+      "example": {
+        "problem": "Write 7 ÷ 2 as a fraction and as a mixed number.",
+        "steps": "1. A division a ÷ b is the fraction a/b, so 7 ÷ 2 = 7/2.\n2. To find the mixed number, divide: 7 ÷ 2 = 3 remainder 1.\n3. The remainder 1 is shared among 2, so it is 1/2.\n4. So 7/2 = 3 1/2.\n5. Check: 3 1/2 × 2 = 7.",
+        "expression": "Rational(7,2)",
+        "answer": "7/2"
+      },
+      "visual": {
+        "kind": "fractionbar",
+        "expr": "",
+        "a": 7,
+        "b": 2,
+        "c": 1,
+        "d": 2
+      },
+      "mistakes": [
+        {
+          "mistake": "Students say 7 ÷ 2 = 3 remainder 1 and stop, or say 7 ÷ 2 cannot be written as a fraction because it is bigger than 1.",
+          "response": "Show that the remainder can be shared too. Cut the leftover 1 into halves so each group gets 1/2. Tell them any fraction can be bigger than 1, and 7/2 is a perfectly good number."
+        },
+        {
+          "mistake": "Students write the mixed number as 3 + 1/2 = 3 1/2 but then write the fraction as 3/2 or 1/2 and lose the whole part.",
+          "response": "Have them check by multiplying back: 3/2 × 2 = 3, not 7. Then 7/2 × 2 = 7 works. The top number must hold all 7 halves, which is 6 halves plus 1 half."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why does 7/2 have a bigger top number than bottom?",
+          "answer": "Because you have more to share than the number of shares. 7 wholes shared among 2 gives each more than 1 whole. When the top is bigger than the bottom, the fraction is bigger than 1."
+        },
+        {
+          "question": "Which is right, 7/2 or 3 1/2?",
+          "answer": "Both are right. They are the same number written two ways. 7/2 means 7 halves, and 3 1/2 means 3 wholes and one half, which is 6 halves plus 1 half."
+        },
+        {
+          "question": "Is 6 ÷ 2 a fraction too?",
+          "answer": "Yes. 6 ÷ 2 = 6/2, and that is the same as 3. A whole number can always be written as a fraction. It just happens that 2 shares exactly with nothing left over."
+        }
+      ],
+      "check_question": {
+        "question": "What is 9 ÷ 4 as a fraction and as a mixed number?",
+        "solution": "9 ÷ 4 = 9/4. Dividing, 9 ÷ 4 = 2 remainder 1, so 9/4 = 2 1/4.",
+        "expression": "Rational(9,4)",
+        "answer": "9/4"
+      }
+    },
+    {
+      "title": "Turning a fraction into a decimal by dividing",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "To change a fraction to a decimal, divide the top by the bottom. For 3/8, write 3 ÷ 8. Put a decimal point after the 3 and add zeros: 3.000. Divide: 30 ÷ 8 = 3 remainder 6, 60 ÷ 8 = 7 remainder 4, 40 ÷ 8 = 5. So the digits are 0.375. Check by multiplying: 0.375 × 8 = 3."
+        },
+        {
+          "kind": "story",
+          "text": "You have 3 litres of juice for 8 glasses. Each glass needs the same amount. 3 litres is 3000 millilitres, and 3000 ÷ 8 = 375 millilitres per glass. 375 millilitres is 0.375 litres, so 3/8 = 0.375."
+        }
+      ],
+      "example": {
+        "problem": "Write 3/8 as a decimal.",
+        "steps": "1. The fraction bar means divide, so 3/8 = 3 ÷ 8.\n2. 8 does not go into 3, so write 0 and a decimal point. Make it 3.000.\n3. 30 ÷ 8 = 3 remainder 6. Write 3.\n4. 60 ÷ 8 = 7 remainder 4. Write 7.\n5. 40 ÷ 8 = 5 remainder 0. Write 5.\n6. So 3/8 = 0.375.\n7. Check: 0.375 × 8 = 3.",
+        "expression": "Rational(3,8)",
+        "answer": "3/8"
+      },
+      "visual": {
+        "kind": "fractionbar",
+        "expr": "",
+        "a": 3,
+        "b": 8,
+        "c": 1,
+        "d": 8
+      },
+      "mistakes": [
+        {
+          "mistake": "Students divide the bottom by the top, 8 ÷ 3, and get 2.67.",
+          "response": "Ask whether 3/8 should be more or less than 1. Since 3 is less than 8, the answer must be less than 1. Remind them that the top is divided by the bottom, the same order as the fraction is read."
+        },
+        {
+          "mistake": "Students forget the 0 before the decimal point and write 375, or say 3/8 = 3.75.",
+          "response": "Estimate first: 3/8 is a bit less than half, and half is 0.5. So the answer must be a bit less than 0.5, which is 0.375, not 3.75. Then check by multiplying 0.375 × 8."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we add zeros after the 3?",
+          "answer": "Because 3 is the same as 3.0 or 3.000. Adding zeros after the decimal point does not change the number, but it lets us keep dividing the leftover parts, like tenths and hundredths."
+        },
+        {
+          "question": "Does every fraction stop like 3/8 does?",
+          "answer": "No. Some fractions repeat forever. 1/3 = 0.333... and the 3s never stop. Fractions like 3/8 stop because dividing by 8 eventually leaves no remainder."
+        },
+        {
+          "question": "Why do we divide when we want a decimal? It's a fraction!",
+          "answer": "Because a fraction is a division. 3/8 means 3 ÷ 8, so doing the division gives the number in decimal form. It is the same number in a different form."
+        }
+      ],
+      "check_question": {
+        "question": "Write 1/4 as a decimal by dividing.",
+        "solution": "1/4 = 1 ÷ 4. 10 ÷ 4 = 2 remainder 2, 20 ÷ 4 = 5. So 1/4 = 0.25. Check: 0.25 × 4 = 1.",
+        "expression": "Rational(1,4)",
+        "answer": "1/4"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "5 cookies are shared equally among 8 children. How much does each child get?",
+      "solution": "Sharing equally means dividing: 5 ÷ 8 = 5/8. Each child gets 5/8 of a cookie.",
+      "expression": "Rational(5,8)",
+      "answer": "5/8"
+    },
+    {
+      "problem": "Write 11 ÷ 4 as an improper fraction and as a mixed number.",
+      "solution": "11 ÷ 4 = 11/4. Dividing, 11 ÷ 4 = 2 remainder 3, so the mixed number is 2 3/4. Check: 2 3/4 × 4 = 8 + 3 = 11.",
+      "expression": "Rational(11,4)",
+      "answer": "11/4"
+    },
+    {
+      "problem": "Write 7/20 as a decimal.",
+      "solution": "7/20 means 7 ÷ 20. 70 ÷ 20 = 3 remainder 10, then 100 ÷ 20 = 5. So 7/20 = 0.35. Check: 0.35 × 20 = 7.",
+      "expression": "Rational(7,20)",
+      "answer": "7/20"
+    }
+  ],
+  "meta": {
+    "concept": "fractions-as-division",
+    "title": "Fractions as division",
+    "model": "sonnet",
+    "cost_usd": 0.06902,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Fractions+as+division"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Fractions+as+division"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Fractions+as+division"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Fractions+as+division"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Fractions+as+division+math"
+    }
+  ]
+}

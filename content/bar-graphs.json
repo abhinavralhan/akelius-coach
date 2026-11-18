@@ -1,0 +1,258 @@
+{
+  "idea": "A picture graph uses small pictures or symbols to show how many of something there are, and a bar graph uses the lengths of bars. Both turn a list of counts into something you can compare at a glance. To read either one, you first read the title, the labels, and the key (picture graph) or the scale (bar graph).",
+  "why": "A graph is a shortcut for a table of numbers. In a picture graph, one symbol stands for a set number (say 2 or 5), so counting symbols is really skip counting or multiplying: 4 symbols with a key of 5 means 4 × 5 = 20. In a bar graph, the length of the bar matches the number, and the scale tells how much each grid line is worth. A bar ending halfway between two lines is halfway between the two numbers. Because the bars share one scale, a longer bar always means a bigger number. To find how many more, you subtract the two values (the difference).",
+  "theory_example": {
+    "problem": "A picture graph shows favorite sports. The key says each symbol = 5 students. Soccer has 4 symbols, Swimming has 3 symbols, Chess has 2 symbols. How many more students chose Soccer than Chess?",
+    "steps": "1. Read the key: one symbol = 5 students. 2. Soccer: 4 × 5 = 20 students. 3. Chess: 2 × 5 = 10 students. 4. 'How many more' means subtract: 20 - 10 = 10. 5. Check: Soccer has 2 more symbols than Chess, and 2 symbols = 2 × 5 = 10. It matches.",
+    "expression": "4*5 - 2*5",
+    "answer": "10"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: ask 'What is your favorite fruit: apple, banana or cherry?' Take a quick hand count and write the numbers on the board. Ask how we could show them in a picture instead of a list. Introduce the words title, label, key and scale."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Reading a picture graph with a key'. Draw the fruit graph with the key 1 symbol = 2 students. Walk through the example, then ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Reading a bar graph with a scale'. Draw the pets bar graph and show the visual. Practice reading the bar that ends between two lines. Ask the check question."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Comparing and combining data'. Use the books-read bar graph. Ask 'how many more' and 'how many in all' questions and have students explain which operation they chose and why. Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work the three extra examples together, one at a time. Let students try each before you show the solution. Leave the last few minutes for open questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Reading a picture graph with a key",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw three rows on the board: Apple with 4 circles, Banana with 3 circles, Cherry with 5 circles. Write the key 'each circle = 2 students' in a box. Point to the key first, then touch each circle and skip count aloud: 2, 4, 6, 8, 10 for Cherry."
+        },
+        {
+          "kind": "story",
+          "text": "Say: 'Imagine each circle is a bus carrying 2 students. Cherry has 5 buses. How many students came?' The key tells how many students ride on one bus. Counting buses alone is not enough. You must count students."
+        }
+      ],
+      "example": {
+        "problem": "In a class graph, each symbol = 2 students. Apple has 4 symbols, Banana 3, Cherry 5. How many students chose Cherry, and how many students are in the graph in all?",
+        "steps": "1. Read the key: 1 symbol = 2 students. 2. Cherry: 5 symbols × 2 = 10 students. 3. Apple: 4 × 2 = 8. Banana: 3 × 2 = 6. 4. Total: 8 + 6 + 10 = 24 students.",
+        "expression": "5*2",
+        "answer": "10"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Apple;Banana;Cherry",
+        "a": 8,
+        "b": 6,
+        "c": 10,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students count the symbols and ignore the key, saying Cherry has 5 students.",
+          "response": "Ask 'What does one symbol stand for?' and have them point to the key before counting. Make it a habit: key first, then count."
+        },
+        {
+          "mistake": "Students add the key instead of multiplying or skip counting, for example 5 + 2 = 7.",
+          "response": "Go back to the buses story: 5 buses with 2 students each is 2 + 2 + 2 + 2 + 2. Skip count together, then show that this is 5 × 2."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why don't they just write the number?",
+          "answer": "Pictures let us compare quickly. You can see which row is longest without reading any numbers. The key keeps the picture small when the numbers are big."
+        },
+        {
+          "question": "Why does one symbol equal 2 and not 1?",
+          "answer": "The person who makes the graph chooses the key. If there were 100 students, 100 symbols would be too many to draw, so a key such as 1 symbol = 10 keeps it small."
+        },
+        {
+          "question": "What if the key changes in another graph?",
+          "answer": "Then the numbers change too. The same 4 symbols are 8 students with a key of 2, but 20 students with a key of 5. Always check the key first."
+        }
+      ],
+      "check_question": {
+        "question": "A graph has the key 1 symbol = 5 books. Reading has 6 symbols. How many books is that?",
+        "solution": "6 × 5 = 30 books, or skip count by 5 six times: 5, 10, 15, 20, 25, 30.",
+        "expression": "6*5",
+        "answer": "30"
+      }
+    },
+    {
+      "title": "Reading a bar graph with a scale",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a bar graph with the scale 0, 10, 20, 30 up the side. Draw bars for Dog (to 30), Cat (to 20), Fish (halfway between 10 and 20) and Bird (to 5). Trace a finger from the top of each bar across to the scale. For Fish, mark the line in the middle between 10 and 20 and ask what number is halfway."
+        },
+        {
+          "kind": "procedure",
+          "text": "Steps to read any bar: 1. Read the title and labels. 2. Find the top of the bar. 3. Slide across to the scale with a finger or ruler. 4. If the top is between two scale numbers, find the number halfway between them by adding them and dividing by 2, or by counting what each small step is worth."
+        }
+      ],
+      "example": {
+        "problem": "A bar graph of class pets has the scale 0, 10, 20, 30. Dog reaches 30, Cat reaches 20, Fish ends halfway between 10 and 20, and Bird reaches 5. How many Fish are there?",
+        "steps": "1. Find the top of the Fish bar. 2. It is between the lines for 10 and 20. 3. Halfway between 10 and 20 is (10 + 20) ÷ 2 = 15. 4. So there are 15 fish.",
+        "expression": "(10+20)/2",
+        "answer": "15"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Dog;Cat;Fish;Bird",
+        "a": 30,
+        "b": 20,
+        "c": 15,
+        "d": 5
+      },
+      "mistakes": [
+        {
+          "mistake": "Students read the nearest grid line instead of the exact value, saying Fish is 10 or 20.",
+          "response": "Ask 'Is the bar at the line, or between lines?' Mark the halfway point together and count up from the lower line."
+        },
+        {
+          "mistake": "Students count the grid lines instead of reading the scale numbers. For example, they say a bar that is 3 lines tall is 3, when each line is worth 10.",
+          "response": "Have them find what each step is worth by looking at two neighbouring scale numbers (the gap between 10 and 20 is 10). Then count by that amount."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do the bars have gaps between them?",
+          "answer": "The gaps show that each bar is a separate group, such as dogs and cats. It also makes the bars easier to read."
+        },
+        {
+          "question": "Does the scale always start at 0?",
+          "answer": "In the graphs we use in class, yes. Starting at 0 means a bar twice as tall really is twice the number."
+        },
+        {
+          "question": "Can a bar graph go sideways?",
+          "answer": "Yes. The bars can be horizontal. You still read the end of each bar against the scale, just across instead of up."
+        }
+      ],
+      "check_question": {
+        "question": "On the same scale (0, 10, 20, 30), a bar ends halfway between 20 and 30. What number is it?",
+        "solution": "Halfway between 20 and 30 is 25, since (20 + 30) ÷ 2 = 25.",
+        "expression": "(20+30)/2",
+        "answer": "25"
+      }
+    },
+    {
+      "title": "Comparing and combining data",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Tell this story: 'Mia read 15 books on Thursday and Sam read 7 on Tuesday. How many more books did Mia read?' We are asking about the gap between the two numbers, so we subtract the smaller from the larger. If the question asks 'how many in all', we put the amounts together and add."
+        },
+        {
+          "kind": "procedure",
+          "text": "1. Read the question and underline the key words. 'How many more' or 'how many fewer' means subtract. 'In all' or 'total' means add. 2. Read each value from the graph, using the key or scale. 3. Do the calculation. 4. Check by asking whether the answer fits the picture: a big gap in the bars needs a big difference."
+        }
+      ],
+      "example": {
+        "problem": "A bar graph shows books read: Monday 12, Tuesday 7, Wednesday 9, Thursday 15. How many more books were read on Thursday than on Tuesday?",
+        "steps": "1. Read Thursday's bar: 15. 2. Read Tuesday's bar: 7. 3. 'How many more' means subtract: 15 - 7 = 8. 4. Check: 7 + 8 = 15.",
+        "expression": "15-7",
+        "answer": "8"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Mon;Tue;Wed;Thu",
+        "a": 12,
+        "b": 7,
+        "c": 9,
+        "d": 15
+      },
+      "mistakes": [
+        {
+          "mistake": "Students add the two numbers when the question says 'how many more'.",
+          "response": "Ask whether the question is about the gap between the bars or about both bars together. Show the gap on the graph with a finger and relate it to 7 + ? = 15."
+        },
+        {
+          "mistake": "Students pick the wrong bars because they misread the labels, such as using Wednesday instead of Tuesday.",
+          "response": "Ask them to circle the two labels in the question before reading values. Then say the values aloud with the day names."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "How do I know whether to add or subtract?",
+          "answer": "Look at the key words. 'In all' and 'total' mean put together, so add. 'How many more' and 'how many fewer' mean find the gap, so subtract."
+        },
+        {
+          "question": "Does it matter which number I subtract from which?",
+          "answer": "Yes. Subtract the smaller from the larger to find the gap: 15 - 7 = 8. If you did 7 - 15, you would get a negative number, and we are not asking for that."
+        },
+        {
+          "question": "Why use a graph instead of just a list of numbers?",
+          "answer": "A graph lets us see the biggest and smallest right away. The numbers are still there for the exact answers, and the graph gives us a quick check that they make sense."
+        }
+      ],
+      "check_question": {
+        "question": "Using the same books graph, how many more books were read on Monday (12) than on Wednesday (9)?",
+        "solution": "12 - 9 = 3 more books on Monday.",
+        "expression": "12-9",
+        "answer": "3"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "A picture graph has the key 1 symbol = 3 students. Rainy days has 4 symbols and Sunny days has 7 symbols. How many more sunny days are there than rainy days?",
+      "solution": "Sunny: 7 × 3 = 21. Rainy: 4 × 3 = 12. The difference is 21 - 12 = 9 more sunny days.",
+      "expression": "7*3 - 4*3",
+      "answer": "9"
+    },
+    {
+      "problem": "A bar graph shows favorite colors: Red 8, Blue 6, Green 10, Yellow 4. How many students were asked in all?",
+      "solution": "'In all' means add all the bars: 8 + 6 + 10 + 4 = 28 students.",
+      "expression": "8+6+10+4",
+      "answer": "28"
+    },
+    {
+      "problem": "A picture graph has the key 1 whole symbol = 4 stickers. A row shows 2 whole symbols and 1 half symbol. How many stickers does this row stand for?",
+      "solution": "A half symbol is half of 4, which is 2. Two whole symbols are 2 × 4 = 8. So the total is 8 + 2 = 10 stickers.",
+      "expression": "(2 + Rational(1,2))*4",
+      "answer": "10"
+    }
+  ],
+  "meta": {
+    "concept": "bar-graphs",
+    "title": "Picture graphs and bar graphs",
+    "model": "sonnet",
+    "cost_usd": 0.13169,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Picture+graphs+and+bar+graphs"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Picture+graphs+and+bar+graphs"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Picture+graphs+and+bar+graphs"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Picture+graphs+and+bar+graphs"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Picture+graphs+and+bar+graphs+math"
+    }
+  ]
+}

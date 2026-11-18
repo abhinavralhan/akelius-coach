@@ -1,0 +1,258 @@
+{
+  "idea": "A decimal is a fraction written in a different way. The first place after the decimal point counts tenths, and the second place counts hundredths. So 0.7 means 7/10, and 0.37 means 37/100.",
+  "why": "Our number system is built on groups of ten. Each place is ten times smaller than the one to its left. The first place right of the point splits one whole into 10 equal parts, and the second place splits each of those into 10 more, giving 100 parts. The digits only say how many of those equal parts we have. That is why the number of decimal places tells you the denominator (1 place means 10, 2 places means 100), and the digits, read as a whole number, give the numerator. Writing 0.3 as 0.30 does not change its size, because 3 tenths and 30 hundredths cover the same amount of the whole.",
+  "theory_example": {
+    "problem": "Write 0.45 as a fraction in simplest form.",
+    "steps": "0.45 has two decimal places, so the parts are hundredths. The digits 45 say we have 45 of them, so 0.45 = 45/100. Both 45 and 100 can be divided by 5: 45 ÷ 5 = 9 and 100 ÷ 5 = 20. So 45/100 = 9/20.",
+    "expression": "Rational(45,100)",
+    "answer": "9/20"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 6,
+      "activity": "Start with tenths. Draw a strip cut into 10 equal parts on the board and shade 7 of them. Ask what fraction is shaded (7/10), then show it is also written 0.7. Use the subtopic 'Tenths: one decimal place'."
+    },
+    {
+      "minutes": 8,
+      "activity": "Move to hundredths. Draw a 10 by 10 square and shade 37 small squares. Link it to 37/100 and 0.37. Have students say aloud how to read 0.05 and 0.37. Use the subtopic 'Hundredths: two decimal places'."
+    },
+    {
+      "minutes": 8,
+      "activity": "Connect the two. Show the bar picture for 3 tenths and 30 hundredths covering the same length. Then show simplifying, for example 25/100 = 1/4. Use the subtopic 'Linking tenths and hundredths'."
+    },
+    {
+      "minutes": 8,
+      "activity": "Students work in pairs on short problems from all three subtopics, such as 0.9, 0.06 and 0.50 as fractions. Walk around and use the mistakes and student questions in each subtopic to guide you. Finish with each subtopic's check question asked to the whole class."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra-examples and questions round. Work through the 3 extra examples together on the board, letting students suggest each step. Leave the last few minutes for any questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Tenths: one decimal place",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw one long strip and cut it into 10 equal parts. Each part is one tenth, written 1/10 or 0.1. Shade 7 parts. That is 7/10, and the decimal is 0.7. The digit after the point tells how many tenths are shaded."
+        },
+        {
+          "kind": "procedure",
+          "text": "One digit after the decimal point means the denominator is 10. Write the digit as the numerator. So 0.7 = 7/10 and 0.9 = 9/10. Read it aloud as 'seven tenths' to match the fraction."
+        }
+      ],
+      "example": {
+        "problem": "Write 0.7 as a fraction.",
+        "steps": "There is one digit after the decimal point, so the parts are tenths. The digit is 7, so we have 7 tenths. 0.7 = 7/10.",
+        "expression": "Rational(7,10)",
+        "answer": "7/10"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "A student writes 0.7 as 1/7, using the digit as the denominator.",
+          "response": "Go back to the strip. Ask how many equal parts the whole is cut into (10) and how many are shaded (7). The whole is always cut into 10 for one decimal place, so 10 is the denominator and 7 is the numerator."
+        },
+        {
+          "mistake": "A student reads 0.7 as 'zero point seven' and does not link it to a fraction, so 0.7 feels unrelated to 7/10.",
+          "response": "Have them read it as 'seven tenths' for a while. The words themselves give the fraction."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is the first place after the point called tenths?",
+          "answer": "Because it counts how many parts you have when the whole is cut into ten equal parts. One part is a tenth, so 0.1 is one tenth."
+        },
+        {
+          "question": "Is 0.1 the same as 1/10?",
+          "answer": "Yes. They are two ways to write the same amount: one part out of ten equal parts."
+        },
+        {
+          "question": "What does 0.0 or a 0 before the point mean?",
+          "answer": "A 0 before the point means no whole ones. For example, 0.7 is less than one whole, just 7 tenths."
+        }
+      ],
+      "check_question": {
+        "question": "Write 0.9 as a fraction.",
+        "solution": "One decimal place means tenths. The digit is 9, so 0.9 = 9/10.",
+        "expression": "Rational(9,10)",
+        "answer": "9/10"
+      }
+    },
+    {
+      "title": "Hundredths: two decimal places",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a square and split it into 10 rows and 10 columns, which makes 100 small squares. Each small square is one hundredth, 1/100 or 0.01. Shade 37 of them. That is 37/100, written 0.37."
+        },
+        {
+          "kind": "story",
+          "text": "Think of money. One dollar is 100 cents, so one cent is 1/100 of a dollar. If you have 37 cents, you have 37/100 of a dollar, which is $0.37. The two digits after the point are the cents."
+        }
+      ],
+      "example": {
+        "problem": "Write 0.37 as a fraction.",
+        "steps": "There are two digits after the decimal point, so the parts are hundredths. The digits 37 say we have 37 of them. 0.37 = 37/100.",
+        "expression": "Rational(37,100)",
+        "answer": "37/100"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "A student writes 0.05 as 5/10.",
+          "response": "Count the decimal places: there are two, so the denominator is 100. Show on the grid that 5 small squares is much less than 5 columns. 0.05 = 5/100."
+        },
+        {
+          "mistake": "A student writes 0.37 as 37/10.",
+          "response": "Ask how many decimal places there are. Two places means hundredths, so the denominator is 100. Also point out that 37/10 is more than 3 wholes, but 0.37 is less than 1."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why does 0.05 have a zero in it?",
+          "answer": "The zero holds the tenths place. It says there are 0 tenths, and then 5 hundredths. Without it, 0.5 would mean 5 tenths, which is much bigger."
+        },
+        {
+          "question": "Why is the second place hundredths and not twentieths or something else?",
+          "answer": "Each place is ten times smaller than the one before. Cutting a tenth into 10 equal parts gives 100 parts of the whole, so hundredths."
+        },
+        {
+          "question": "How do I know whether to use 10 or 100 as the denominator?",
+          "answer": "Count the digits after the point. One digit means 10, two digits mean 100."
+        }
+      ],
+      "check_question": {
+        "question": "Write 0.23 as a fraction.",
+        "solution": "Two decimal places means hundredths. The digits 23 are the numerator, so 0.23 = 23/100.",
+        "expression": "Rational(23,100)",
+        "answer": "23/100"
+      }
+    },
+    {
+      "title": "Linking tenths and hundredths",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw two bars of the same length. Split one into 10 parts and shade 3 (3 tenths). Split the other into 100 parts and shade 30 (30 hundredths). The shaded lengths match. So 0.3 = 3/10 = 30/100 = 0.30."
+        },
+        {
+          "kind": "procedure",
+          "text": "To change tenths to hundredths, multiply the top and bottom by 10: 3/10 = 30/100. In decimals this is adding a zero at the end, 0.3 = 0.30. To simplify a fraction like 25/100, divide the top and bottom by the same number: 25 ÷ 25 = 1 and 100 ÷ 25 = 4, so 0.25 = 1/4."
+        }
+      ],
+      "example": {
+        "problem": "Show that 0.3 is the same as 30/100, and write it in simplest form.",
+        "steps": "0.3 is 3 tenths, so 0.3 = 3/10. Multiply top and bottom by 10: 3/10 = 30/100. Also 0.30 has two decimal places and digits 30, which gives 30/100. Divide top and bottom by 10 to simplify: 30/100 = 3/10.",
+        "expression": "Rational(30,100)",
+        "answer": "3/10"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "3 tenths;30 hundredths",
+        "a": 30,
+        "b": 30,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "A student thinks 0.30 is bigger than 0.3 because 30 is bigger than 3.",
+          "response": "Show the two bars: they are the same length. The extra zero at the end only changes the size of the parts (hundredths instead of tenths), and the number of parts grows to match, so the amount is the same."
+        },
+        {
+          "mistake": "A student writes 0.3 as 3/100 because they have seen hundredths in the last problem.",
+          "response": "Ask them to count decimal places again. 0.3 has one place, so the denominator is 10. Only 0.03 is 3/100."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why can I add a zero at the end of a decimal?",
+          "answer": "Because 3/10 = 30/100. You multiplied the top and bottom by 10, which does not change the value. The zero at the end shows that."
+        },
+        {
+          "question": "Do I always have to simplify the fraction?",
+          "answer": "Not always, but it is a good habit. 25/100 is correct, and 1/4 is the same thing in simplest form. Say which one the question asks for."
+        },
+        {
+          "question": "How do I know what number to divide by when simplifying?",
+          "answer": "Find a number that goes into both the top and the bottom. The bigger it is, the fewer steps you need. For 25/100 you can use 25 at once, or 5 twice."
+        }
+      ],
+      "check_question": {
+        "question": "Write 0.5 as a fraction with denominator 100, and then in simplest form.",
+        "solution": "0.5 = 5/10 = 50/100. Divide top and bottom by 50: 50/100 = 1/2.",
+        "expression": "Rational(50,100)",
+        "answer": "1/2"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Write 0.8 as a fraction in simplest form.",
+      "solution": "One decimal place means tenths, so 0.8 = 8/10. Divide top and bottom by 2: 8/10 = 4/5.",
+      "expression": "Rational(8,10)",
+      "answer": "4/5"
+    },
+    {
+      "problem": "Write 0.07 as a fraction.",
+      "solution": "Two decimal places means hundredths. The digits are 07, which is 7. So 0.07 = 7/100. It cannot be simplified, because 7 and 100 share no common factor besides 1.",
+      "expression": "Rational(7,100)",
+      "answer": "7/100"
+    },
+    {
+      "problem": "Add 0.6 and 0.25 using fractions, and give the answer in simplest form.",
+      "solution": "0.6 = 6/10 = 60/100 and 0.25 = 25/100. Add: 60/100 + 25/100 = 85/100. Divide top and bottom by 5: 85/100 = 17/20.",
+      "expression": "Rational(6,10)+Rational(25,100)",
+      "answer": "17/20"
+    }
+  ],
+  "meta": {
+    "concept": "decimals-and-fractions",
+    "title": "Decimals as fractions (tenths and hundredths)",
+    "model": "sonnet",
+    "cost_usd": 0.05748,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Decimals+as+fractions+%28tenths+and+hundredths%29"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Decimals+as+fractions+%28tenths+and+hundredths%29"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Decimals+as+fractions+%28tenths+and+hundredths%29"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Decimals+as+fractions+%28tenths+and+hundredths%29"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Decimals+as+fractions+%28tenths+and+hundredths%29+math"
+    }
+  ]
+}

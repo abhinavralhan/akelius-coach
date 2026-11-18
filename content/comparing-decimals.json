@@ -1,0 +1,258 @@
+{
+  "idea": "A decimal is a number written with a point. Digits to the right of the point are parts of one: tenths, then hundredths, then thousandths. Each place is worth one tenth of the place to its left. To compare decimals, compare place by place from the left, the same way you compare whole numbers.",
+  "why": "Place value works the same on both sides of the point: moving one place to the right makes the value ten times smaller. So the leftmost place where two numbers differ decides which is bigger, because one step in a bigger place is worth more than all the smaller places can add up to. For example, 1 tenth (0.1) is more than 9 hundredths (0.09). Adding zeros at the end of a decimal does not change its value (0.4 = 0.40 = 0.400), so numbers of different lengths can be matched up. The number of digits does not tell you the size. The size of the places does.",
+  "theory_example": {
+    "problem": "Put 0.6, 0.58 and 0.612 in order from smallest to largest.",
+    "steps": "Step 1: Give every number three decimal places by adding zeros: 0.600, 0.580, 0.612. Step 2: Compare the tenths. 0.580 has 5 tenths, the other two have 6 tenths, so 0.58 is the smallest. Step 3: Compare 0.600 and 0.612. The tenths are equal (6). The hundredths are 0 and 1, so 0.612 is bigger. Step 4: The order is 0.58 < 0.6 < 0.612. The largest is 0.612, which is 612 thousandths.",
+    "expression": "612/1000",
+    "answer": "153/250"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up. Write 0.4 and 0.35 on the board and ask which is bigger. Take a few guesses without saying who is right. Tell the class you will settle it during the lesson."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Reading decimals with place value'. Draw a place value chart with tenths, hundredths and thousandths. Work through the example 3.047. Have pairs read 3 or 4 more decimals aloud. Finish with the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Comparing decimals with the same number of places'. Use the 0.52 and 0.47 example and the bar picture. Say aloud: look at the biggest place first. Finish with the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Comparing decimals with different numbers of places'. Return to the warm-up pair 0.4 and 0.35 and settle it by writing 0.4 as 0.40. Show the bar picture. Finish with the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Work through the 3 extra examples with the class, letting students try each one first. Use the remaining time for student questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Reading decimals with place value",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a chart with columns: ones | point | tenths | hundredths | thousandths. Write 3.047 in it, one digit per column: 3 ones, 0 tenths, 4 hundredths, 7 thousandths. Point out that each column is ten times smaller than the one on its left. Zero holds the tenths place so the 4 lands in hundredths."
+        },
+        {
+          "kind": "procedure",
+          "text": "To read a decimal: say the whole part, say 'and' (or 'point'), then read the digits after the point as one number and name the last place. 3.047 is 'three and forty-seven thousandths'. Or read digit by digit: 'three point zero four seven'. Both are correct. The last digit tells you the name of the place to say."
+        }
+      ],
+      "example": {
+        "problem": "Read 3.047 aloud and say what the digit 4 is worth.",
+        "steps": "Step 1: The whole part is 3. Step 2: After the point the digits are 0, 4, 7: tenths 0, hundredths 4, thousandths 7. Step 3: Read it: three and forty-seven thousandths, or three point zero four seven. Step 4: The 4 is in the hundredths place, so it is worth 4 hundredths = 4/100.",
+        "expression": "4/100",
+        "answer": "1/25"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students read 3.047 as 'three point forty-seven' or treat 0.05 as 5 tenths, ignoring the zero as a place holder.",
+          "response": "Go back to the chart. Show that the zero fills the tenths column, so the 5 sits in hundredths. Ask: what would change if the zero was not there? (0.5 is 5 tenths, which is ten times bigger.)"
+        },
+        {
+          "mistake": "Students say the digits after the point are whole numbers, for example 'three point forty-seven' meaning 3 and 47 ones.",
+          "response": "Remind them the digits after the point are parts of one. Say the place name at the end: 'forty-seven hundredths' for 0.47. Ask how many hundredths make one whole (100)."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is there a point at all?",
+          "answer": "The point shows where the ones place is. Digits to its left count whole things, digits to its right count parts of one. Without it we could not tell 35 from 3.5."
+        },
+        {
+          "question": "Why do the names end in 'ths'?",
+          "answer": "Because they are parts of a whole. Tenths means ten equal parts, hundredths means a hundred equal parts. The 'th' tells us we are splitting one into that many pieces."
+        },
+        {
+          "question": "Is 0.5 the same as 0.50?",
+          "answer": "Yes. 5 tenths is the same amount as 50 hundredths, since one tenth is ten hundredths. The zero at the end changes nothing."
+        }
+      ],
+      "check_question": {
+        "question": "What is the value of the digit 7 in 0.374?",
+        "solution": "The digits after the point are 3 tenths, 7 hundredths, 4 thousandths. So the 7 is worth 7 hundredths, 7/100.",
+        "expression": "7/100",
+        "answer": "7/100"
+      }
+    },
+    {
+      "title": "Comparing decimals with the same number of places",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Show two bars measured in hundredths: one with 52 small units and one with 47. The longer bar is the bigger number. Then link it to the digits: the tenths are 5 and 4, and 5 tenths is more than 4 tenths, so you already know without counting the rest."
+        },
+        {
+          "kind": "procedure",
+          "text": "Line up the decimal points. Start at the left. Compare the whole parts first, then tenths, then hundredths, and so on. Stop at the first place where the digits differ. The number with the bigger digit there is the bigger number."
+        }
+      ],
+      "example": {
+        "problem": "Which is larger, 0.52 or 0.47?",
+        "steps": "Step 1: Whole parts are both 0. Step 2: Tenths are 5 and 4. Step 3: 5 is greater than 4, so we can stop. Step 4: 0.52 is larger than 0.47. Check with hundredths: 52 hundredths is more than 47 hundredths.",
+        "expression": "52/100",
+        "answer": "13/25"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "52 hundredths;47 hundredths",
+        "a": 52,
+        "b": 47,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students compare from the right, or look at the last digit only: 0.52 vs 0.47, 7 is bigger than 2, so 0.47 is bigger.",
+          "response": "Ask them to compare 52 and 47 as whole numbers of hundredths. Remind them that the biggest place counts first, just like 52 and 47 in whole numbers."
+        },
+        {
+          "mistake": "Students ignore the whole part, for example saying 2.3 is smaller than 1.9 because 3 is more than 9 is false, or comparing only the digits after the point.",
+          "response": "Always compare the whole parts first. Ask: is 2 something bigger than 1? Then the decimal part does not matter."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we start from the left?",
+          "answer": "Because the left places are worth the most. One tenth is bigger than any number of thousandths you could fit in the rest. So the first difference from the left decides."
+        },
+        {
+          "question": "Do I have to look at all the digits?",
+          "answer": "No. Stop at the first place where the digits differ. If they are all the same, the numbers are equal."
+        },
+        {
+          "question": "Is it like comparing whole numbers?",
+          "answer": "Yes, exactly. With 52 and 47 you compare tens first. Here you compare tenths first. The idea is the same."
+        }
+      ],
+      "check_question": {
+        "question": "Which is bigger, 6.38 or 6.41?",
+        "solution": "The whole parts are both 6 and the tenths are 3 and 4. Since 4 is more than 3, 6.41 is bigger.",
+        "expression": "641/100",
+        "answer": "641/100"
+      }
+    },
+    {
+      "title": "Comparing decimals with different numbers of places",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Add zeros at the end of the shorter decimal until both have the same number of places. Then compare as before. 0.4 becomes 0.40, and now you compare 40 hundredths with 35 hundredths."
+        },
+        {
+          "kind": "story",
+          "text": "Imagine two runners. One ran 0.4 of a kilometre and the other ran 0.35 of a kilometre. Measure both in hundredths of a kilometre. The first ran 40 hundredths and the second ran 35 hundredths. So the first ran further, even though 0.35 has more digits."
+        }
+      ],
+      "example": {
+        "problem": "Which is larger, 0.4 or 0.35?",
+        "steps": "Step 1: Write 0.4 as 0.40 so both have two decimal places. Step 2: Compare tenths: 4 and 3. Step 3: 4 is more than 3, so 0.40 is larger. Step 4: So 0.4 is larger than 0.35. As hundredths: 40 is more than 35.",
+        "expression": "4/10",
+        "answer": "2/5"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "0 4 is 40 hundredths;0 35 is 35 hundredths",
+        "a": 40,
+        "b": 35,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students think the decimal with more digits is bigger, so 0.35 is bigger than 0.4.",
+          "response": "Have them write 0.4 as 0.40 and compare 40 with 35. Ask them to picture 4 tenths of a bar versus 3 tenths and a bit."
+        },
+        {
+          "mistake": "Students think 0.4 and 0.40 are different numbers, or that a zero at the end makes it bigger like in whole numbers (40 is bigger than 4).",
+          "response": "Show with the chart: 0.4 is 4 tenths. 0.40 is 4 tenths and 0 hundredths. A zero after the last digit adds nothing. A zero before the point or between digits is different."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why can I add zeros at the end?",
+          "answer": "Because they add 0 of that place. 0.4 is 4 tenths and 0 hundredths, which is exactly 0.40. The amount is the same."
+        },
+        {
+          "question": "So is 0.3 bigger than 0.25?",
+          "answer": "Yes. 0.3 is 0.30, which is 30 hundredths, and that is more than 25 hundredths."
+        },
+        {
+          "question": "Is 0.09 bigger than 0.1 because 9 is bigger than 1?",
+          "answer": "No. 0.1 is 0.10, which is 10 hundredths, and 0.09 is only 9 hundredths. Compare in the same place."
+        }
+      ],
+      "check_question": {
+        "question": "Which is bigger, 0.7 or 0.65?",
+        "solution": "Write 0.7 as 0.70. 70 hundredths is more than 65 hundredths, so 0.7 is bigger.",
+        "expression": "7/10",
+        "answer": "7/10"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Which is larger, 2.35 or 2.4?",
+      "solution": "Write 2.4 as 2.40. The whole parts are equal (2). Tenths: 3 and 4. 4 is bigger, so 2.40 is larger. 2.4 is larger.",
+      "expression": "24/10",
+      "answer": "12/5"
+    },
+    {
+      "problem": "Put 0.09, 0.9 and 0.19 in order from smallest to largest. What is the smallest?",
+      "solution": "Write all with two places: 0.09, 0.90, 0.19. Compare tenths: 0, 9, 1. So the order is 0.09 < 0.19 < 0.9. The smallest is 0.09, which is 9 hundredths.",
+      "expression": "9/100",
+      "answer": "9/100"
+    },
+    {
+      "problem": "Read 5.206 aloud and say what the digit 6 is worth.",
+      "solution": "Five and two hundred six thousandths (or five point two zero six). The digits after the point are 2 tenths, 0 hundredths, 6 thousandths. So the 6 is worth 6 thousandths = 6/1000.",
+      "expression": "6/1000",
+      "answer": "3/500"
+    }
+  ],
+  "meta": {
+    "concept": "comparing-decimals",
+    "title": "Reading and comparing decimals",
+    "model": "sonnet",
+    "cost_usd": 0.14991,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Reading+and+comparing+decimals"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Reading+and+comparing+decimals"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Reading+and+comparing+decimals"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Reading+and+comparing+decimals"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Reading+and+comparing+decimals+math"
+    }
+  ]
+}

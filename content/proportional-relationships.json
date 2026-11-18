@@ -1,0 +1,258 @@
+{
+  "idea": "Two quantities are in a proportional relationship when one is always the same number of times the other. That fixed number is the constant of proportionality, k, and the relationship is written y = kx. Its graph is a straight line through the origin (0, 0).",
+  "why": "If y is always k times x, then y/x gives the same value k for every pair. Doubling x doubles y, because k·(2x) = 2·(kx). When x = 0, y = k·0 = 0, so the graph passes through (0, 0). The steady \"same k each step\" is why the points lie on a straight line. Once you know k from one pair, you can find any other pair by multiplying or dividing.",
+  "theory_example": {
+    "problem": "4 notebooks cost 10 dollars, and the price per notebook is the same for any number bought. How much do 10 notebooks cost?",
+    "steps": "1. Find k = cost ÷ notebooks = 10 ÷ 4 = 5/2 = 2.50 dollars per notebook. 2. Write the equation: y = (5/2)x, where x is the number of notebooks and y is the cost. 3. Put in x = 10: y = (5/2)·10 = 25. 4. Check: 10 notebooks is 2.5 times as many as 4, and 2.5 × 10 = 25. It matches.",
+    "expression": "Rational(5,2)*10",
+    "answer": "25"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: ask 'If 1 pen costs 2 dollars, what do 2, 3 and 5 pens cost?' Write the pairs in a table and let students say what they notice. Name it a proportional relationship. This leads into 'Finding the constant of proportionality'."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Finding the constant of proportionality'. Use the table example, divide y by x in each row, and show that a non-proportional table gives different ratios. Ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Writing and using y = kx'. Work through the water-tank example, then let students suggest the equation for the pens from the warm-up. Ask the check question."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Graphing a proportional relationship'. Show the line y = 3x, point out that it passes through (0, 0), and read off values together. Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra-examples and questions round: work through the 3 extra examples, mixing tables, equations and graphs. Let students try each first for a minute, then go through it together. Leave time for any student questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Finding the constant of proportionality",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Pick any row of the table and divide y by x. Do the same for the other rows. If every row gives the same number, the relationship is proportional and that number is k. If the quotients differ, it is not proportional."
+        },
+        {
+          "kind": "story",
+          "text": "Imagine buying apples at a stall with a fixed price per kilo. Whether you buy 2 kilos or 6 kilos, the price for one kilo is the same. That 'price for one' is k. A table is proportional when every row gives the same 'price for one'."
+        }
+      ],
+      "example": {
+        "problem": "Is the table proportional? x: 2, 4, 6 and y: 6, 12, 18. If so, what is k?",
+        "steps": "1. Row 1: 6 ÷ 2 = 3. 2. Row 2: 12 ÷ 4 = 3. 3. Row 3: 18 ÷ 6 = 3. 4. All the quotients equal 3, so the relationship is proportional and k = 3.",
+        "expression": "18/6",
+        "answer": "3"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students check whether y goes up by the same amount (6, 12, 18 goes up by 6) and decide that this is what makes it proportional. They might also call 5, 9, 13 proportional because it goes up by 4 each time.",
+          "response": "Say that adding the same amount is a different pattern. Show 2→5, 4→9, 6→13 and divide: 5/2, 9/4, 13/6 are all different. Proportional means the quotient y ÷ x stays the same."
+        },
+        {
+          "mistake": "Students divide x by y in some rows and y by x in others, then get different numbers.",
+          "response": "Fix the direction. Write 'y ÷ x' on the board and have students keep to it for every row. Then k is 'how many y for each 1 x'."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we divide y by x and not the other way around?",
+          "answer": "Either direction works if you stay consistent. We use y ÷ x because it tells us how much y we get for 1 of x, and that is the k in y = kx."
+        },
+        {
+          "question": "Can k be a fraction or a decimal?",
+          "answer": "Yes. For example, 4 notebooks for 10 dollars gives k = 2.5. k is any fixed number you multiply x by to get y."
+        },
+        {
+          "question": "What if just one row gives a different number?",
+          "answer": "Then the table is not proportional. For a proportional relationship, every row must give the same k."
+        }
+      ],
+      "check_question": {
+        "question": "A table has x: 1, 3, 5 and y: 4, 12, 20. Is it proportional, and what is k?",
+        "solution": "4 ÷ 1 = 4, 12 ÷ 3 = 4, 20 ÷ 5 = 4. All the same, so it is proportional with k = 4.",
+        "expression": "20/5",
+        "answer": "4"
+      }
+    },
+    {
+      "title": "Writing and using y = kx",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Step 1: find k by dividing y by x for one known pair. Step 2: write y = kx with that number. Step 3: put the known x into the equation to find y, or put the known y in and solve for x by dividing by k."
+        },
+        {
+          "kind": "story",
+          "text": "A tank fills at 5 liters every minute. After 1 minute there are 5 liters, after 2 minutes 10 liters, after x minutes 5 times x liters. The equation y = 5x is just that story in short form: 'the minutes, times 5'."
+        }
+      ],
+      "example": {
+        "problem": "A tank fills at a constant 5 liters per minute. How many minutes does it take to hold 35 liters?",
+        "steps": "1. Let x be the minutes and y the liters. k = 5, so y = 5x. 2. We know y = 35, so 35 = 5x. 3. Divide both sides by 5: x = 35 ÷ 5 = 7. 4. Check: 5 × 7 = 35. It takes 7 minutes.",
+        "expression": "35/5",
+        "answer": "7"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students multiply 35 by 5 when they should divide, because they see 'x' and 'y' and put the number in the wrong place.",
+          "response": "Ask them to say what each letter means first: x is minutes, y is liters. Then ask 'Should the answer be bigger or smaller than 35 liters?' Minutes should be fewer, so divide. Check by multiplying back."
+        },
+        {
+          "mistake": "Students write the equation as x = ky, with the letters swapped.",
+          "response": "Say that y is the amount that depends on x, and it is x that gets multiplied by k. Use the story to test it: 'Is it minutes × 5 or liters × 5?'"
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why does y = kx have no plus sign?",
+          "answer": "Because at x = 0 we have y = 0. Nothing has been bought, filled or travelled yet, so there is no starting amount to add. Just the multiplying remains."
+        },
+        {
+          "question": "How do I know which number is x and which is y?",
+          "answer": "x is the thing you choose or count (minutes, notebooks). y is the thing that results from it (liters, cost). Write down what each means before using the equation."
+        },
+        {
+          "question": "Could I solve it without the equation?",
+          "answer": "Yes. You could say 'one minute is 5 liters, so how many 5s make 35?' That is the same as dividing 35 by 5. The equation is a tidy way to write down that same thinking."
+        }
+      ],
+      "check_question": {
+        "question": "A bike travels 12 km every hour. Write the equation and find how far it goes in 3 hours.",
+        "solution": "y = 12x. For x = 3, y = 12 × 3 = 36 km.",
+        "expression": "12*3",
+        "answer": "36"
+      }
+    },
+    {
+      "title": "Graphing a proportional relationship",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Plot the points from the table, such as (0, 0), (1, 3), (2, 6), (3, 9). They line up on a straight line that starts at the origin. Each step of 1 to the right goes up by 3. That 'up 3 for every 1 across' is k."
+        },
+        {
+          "kind": "procedure",
+          "text": "To graph y = kx: 1. Mark (0, 0). 2. Choose x = 1 and mark (1, k). 3. Draw a straight line through the two points and extend it. To read a value, go across to x, then up to the line, then read y."
+        }
+      ],
+      "example": {
+        "problem": "The graph of y = 3x shows the cost in dollars of x kilograms of grapes. What does 4 kilograms cost?",
+        "steps": "1. Mark (0, 0) and (1, 3), then draw a line through them. 2. Find x = 4 on the horizontal axis. 3. Go up to the line, then across to the vertical axis. 4. You land on y = 12. Check: 3 × 4 = 12. So 4 kilograms cost 12 dollars.",
+        "expression": "3*4",
+        "answer": "12"
+      },
+      "visual": {
+        "kind": "graph",
+        "expr": "3*x",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students join the points with a line that does not start at the origin, or they think any straight line is proportional.",
+          "response": "Ask 'What does it cost for 0 kilograms?' It must be 0, so a proportional line must pass through (0, 0). A line such as y = 3x + 2 is straight but misses the origin, so it is not proportional."
+        },
+        {
+          "mistake": "Students read k as the x-coordinate of a point, or mix up the axes when reading the graph.",
+          "response": "Point out that k is the y-value at x = 1, so it is how far up you go for each 1 across. Practice reading with 'across first, then up'."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is the graph a straight line and not a curve?",
+          "answer": "Each time x goes up by 1, y goes up by the same amount k. Equal steps up for equal steps across make a straight line."
+        },
+        {
+          "question": "What does a steeper line mean?",
+          "answer": "A bigger k. With y = 5x the line climbs faster than with y = 2x, because each 1 across gives 5 up rather than 2."
+        },
+        {
+          "question": "Do I have to draw the line past the points I know?",
+          "answer": "You can extend it, since the relationship carries on. But in a real story, such as kilograms of grapes, we only use values that make sense, such as x ≥ 0."
+        }
+      ],
+      "check_question": {
+        "question": "A proportional graph passes through (0, 0) and (1, 3). What is y when x = 5?",
+        "solution": "k = 3, so y = 3x. When x = 5, y = 3 × 5 = 15.",
+        "expression": "3*5",
+        "answer": "15"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "A machine makes 45 bottles in 9 minutes at a constant rate. How many bottles does it make in 20 minutes?",
+      "solution": "k = 45 ÷ 9 = 5 bottles per minute. y = 5x. For x = 20, y = 5 × 20 = 100 bottles.",
+      "expression": "45/9*20",
+      "answer": "100"
+    },
+    {
+      "problem": "y is proportional to x. When x = 4, y = 14. Find y when x = 10.",
+      "solution": "k = 14 ÷ 4 = 7/2 = 3.5. So y = 3.5x. When x = 10, y = 3.5 × 10 = 35.",
+      "expression": "Rational(14,4)*10",
+      "answer": "35"
+    },
+    {
+      "problem": "A straight line through the origin also passes through the point (5, 20). What is y on the line when x = 3?",
+      "solution": "Since the line goes through the origin, y = kx. k = 20 ÷ 5 = 4. When x = 3, y = 4 × 3 = 12.",
+      "expression": "20/5*3",
+      "answer": "12"
+    }
+  ],
+  "meta": {
+    "concept": "proportional-relationships",
+    "title": "Proportional relationships",
+    "model": "sonnet",
+    "cost_usd": 0.05607,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Proportional+relationships"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Proportional+relationships"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Proportional+relationships"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Proportional+relationships"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Proportional+relationships+math"
+    }
+  ]
+}

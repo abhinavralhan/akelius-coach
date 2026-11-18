@@ -1,0 +1,258 @@
+{
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: have a student walk the edge of the classroom or a desk top while you count the steps. Say: 'the distance all the way around is the perimeter.' Use the idea in your notes, then introduce the title 'Perimeter as the distance around'."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Perimeter as the distance around'. Draw the 3-sided example (7, 5, 9 cm) on the board, put the bar picture beside it, and add the sides together. Ask the check question and take answers aloud."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Rectangles and squares: using equal sides'. Draw an 8 by 3 rectangle, mark the pairs of equal sides, and show both 8+3+8+3 and 2 × (8+3). Then do a square. Ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Finding a missing side'. Work the 30 cm perimeter example step by step: halve first, then subtract the known side. Let students say each step aloud before you write it. Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work the 3 extra examples one at a time (students try first, then you show the solution), then open the floor for any questions. These mix all three subtopics."
+    }
+  ],
+  "idea": "Perimeter is the total distance around the outside edge of a flat shape. You find it by adding the lengths of all the sides, and it is measured in ordinary length units such as cm or m. For rectangles and squares, equal sides let you use shortcuts.",
+  "why": "Perimeter is just the length of a path that goes once around the shape and ends where it started. Walking that path means covering every side once, so you add every side length. A rectangle has two sides of the length and two of the width, so adding them gives l + w + l + w, which is 2 × (l + w). In other words, the perimeter is two 'half-trips' of (l + w) each. Running that backwards explains the missing-side method: halve the perimeter to get l + w, then take away the side you know. The answer is a length, not an area, so you add and never multiply the two different sides together.",
+  "theory_example": {
+    "problem": "A rectangular garden is 12 m long and 5 m wide. How much fencing is needed to go all the way around it?",
+    "steps": "Fencing goes around the edge, so we need the perimeter. A rectangle has two sides of 12 m and two sides of 5 m. Add them: 12 + 5 + 12 + 5 = 34. Shortcut check: 2 × (12 + 5) = 2 × 17 = 34. Both ways agree.",
+    "expression": "2*(12+5)",
+    "answer": "34"
+  },
+  "subtopics": [
+    {
+      "title": "Perimeter as the distance around",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Imagine an ant walking once around the edge of a shape, starting and finishing at the same spot. Each side is one part of its walk. The total distance the ant walks is the perimeter, so you add up the lengths of all the parts. Ask students: 'If the ant skipped one side, would it be back at the start?' (No, so every side must be counted.)"
+        },
+        {
+          "kind": "picture",
+          "text": "Draw the shape and mark a starting dot. Trace each side with a finger or coloured chalk and write its length next to it as you go. Tick each side once you have counted it. When you are back at the dot and every side has a number, add the numbers. The bar picture shows each side as a bar, so students see that the perimeter is all the bars laid end to end."
+        }
+      ],
+      "example": {
+        "problem": "A triangle has sides of 7 cm, 5 cm and 9 cm. What is its perimeter?",
+        "steps": "The perimeter is the distance all the way around, so add all three sides. 7 + 5 = 12. 12 + 9 = 21. The perimeter is 21 cm. Remember to write the unit.",
+        "expression": "7+5+9",
+        "answer": "21"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Side A;Side B;Side C",
+        "a": 7,
+        "b": 5,
+        "c": 9,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Leaving out a side, usually one that is hidden or on the far side of the drawing, so the total is too small.",
+          "response": "Have the student trace the shape with a finger and tick each side as they add it. Ask: 'Did you get back to where you started?' Then compare the count of numbers with the count of sides."
+        },
+        {
+          "mistake": "Multiplying the side lengths instead of adding them (for example 7 × 5 × 9).",
+          "response": "Go back to the ant: it walks 7 cm, then 5 cm, then 9 cm, so the distances are joined one after another, which is adding. Say that multiplying is for covering the inside (area), which comes later."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we add the sides instead of multiplying?",
+          "answer": "Because the sides are pieces of one walk, one after the other. When you join lengths end to end you add them. Multiplying would be for covering a surface with squares."
+        },
+        {
+          "question": "Does it matter which side I start with?",
+          "answer": "No. Adding can be done in any order and gives the same total. Just make sure you count every side exactly once."
+        },
+        {
+          "question": "Why do we write cm and not cm squared?",
+          "answer": "We are measuring a length, the distance along a line, so the unit is cm. Squared units are for area, which measures a flat surface."
+        }
+      ],
+      "check_question": {
+        "question": "A shape has four sides: 3 cm, 4 cm, 5 cm and 6 cm. What is its perimeter?",
+        "solution": "Add all four sides: 3 + 4 + 5 + 6 = 18. The perimeter is 18 cm.",
+        "expression": "3+4+5+6",
+        "answer": "18"
+      }
+    },
+    {
+      "title": "Rectangles and squares: using equal sides",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a rectangle and mark the two long sides with one colour and the two short sides with another. Show that the perimeter is two long sides plus two short sides. Then slide one long and one short side together in a row: that makes a length of (l + w). There are two such rows, so the perimeter is 2 × (l + w). For a square all four sides are equal, so the perimeter is 4 × side."
+        },
+        {
+          "kind": "procedure",
+          "text": "Rectangle: 1) Add the length and the width. 2) Double the result. Square: 1) Take one side. 2) Multiply it by 4. Always check by drawing the shape and thinking: 'Have I counted all four sides?'"
+        }
+      ],
+      "example": {
+        "problem": "A rectangle is 8 cm long and 3 cm wide. Find its perimeter.",
+        "steps": "Opposite sides of a rectangle are equal, so there are two sides of 8 cm and two of 3 cm. Long way: 8 + 3 + 8 + 3 = 22. Shortcut: add length and width, 8 + 3 = 11, then double it, 2 × 11 = 22. The perimeter is 22 cm.",
+        "expression": "2*(8+3)",
+        "answer": "22"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Length;Width;Length;Width",
+        "a": 8,
+        "b": 3,
+        "c": 8,
+        "d": 3
+      },
+      "mistakes": [
+        {
+          "mistake": "Doubling only one side, such as 2 × 8 + 3 = 19, or writing 2 × 8 × 3.",
+          "response": "Ask the student to point to all four sides of the drawing and say each length. They should find two 8s and two 3s. Remind them to double the whole sum (8 + 3) using brackets."
+        },
+        {
+          "mistake": "Multiplying length by width, which gives 24 instead of 22.",
+          "response": "Say that length times width counts the squares inside the rectangle (area), but perimeter is the walk around the edge. Let them walk the edge and compare it with the Long way: 8 + 3 + 8 + 3."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why can we use 2 × (l + w)?",
+          "answer": "A rectangle has two long sides and two short sides. Pair one long side with one short side and that is (l + w). There are two such pairs, so double it."
+        },
+        {
+          "question": "Is a square a rectangle? Can I use the rectangle rule?",
+          "answer": "Yes, a square is a rectangle with all sides equal. For side 5 the rectangle rule gives 2 × (5 + 5) = 20, and 4 × 5 = 20 too. The square rule is just quicker."
+        },
+        {
+          "question": "Do I have to use the shortcut?",
+          "answer": "No. Adding all four sides is always correct. The shortcut is just a faster way to get the same answer, so use whichever you trust more."
+        }
+      ],
+      "check_question": {
+        "question": "A square has sides of 7 cm. What is its perimeter?",
+        "solution": "All four sides are 7 cm, so 4 × 7 = 28. The perimeter is 28 cm.",
+        "expression": "4*7",
+        "answer": "28"
+      }
+    },
+    {
+      "title": "Finding a missing side",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "For a rectangle when you know the perimeter and one side: 1) Halve the perimeter. This gives length + width. 2) Subtract the side you know. 3) What is left is the missing side. 4) Check by adding all four sides and comparing with the perimeter."
+        },
+        {
+          "kind": "story",
+          "text": "A farmer has 30 m of fence to go around a rectangular pen, and one side must be 9 m. Walking the full fence is two trips of 'a long side plus a short side'. So one trip is 15 m. The long side takes 9 m of that trip, which leaves 6 m for the short side. Ask students to walk through that story as you do the numbers."
+        }
+      ],
+      "example": {
+        "problem": "A rectangle has a perimeter of 30 cm and a length of 9 cm. Find its width.",
+        "steps": "The perimeter is 2 × (length + width), so length + width is half of 30, which is 15. Take away the length: 15 - 9 = 6. The width is 6 cm. Check: 9 + 6 + 9 + 6 = 30, which matches.",
+        "expression": "30/2-9",
+        "answer": "6"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Subtracting the known side from the perimeter and stopping, such as 30 - 9 = 21.",
+          "response": "Ask: 'Did the 30 go around the whole rectangle, with two 9s and two unknown sides?' Show that taking away only one 9 leaves a lot of other sides. Halve first, or take away both 9s and then halve what is left."
+        },
+        {
+          "mistake": "Halving the perimeter and treating that as the answer, so the width is 15.",
+          "response": "Have them check by adding the sides: 9 + 15 + 9 + 15 = 48, not 30. Explain that 15 is length plus width, so the known length still has to come off."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we divide the perimeter by 2 first?",
+          "answer": "The perimeter is two trips of (length + width). Halving it gives one trip, which has just one length and one width in it."
+        },
+        {
+          "question": "Could I take away both 9s first instead?",
+          "answer": "Yes. 30 - 9 - 9 = 12 is the two widths together, and 12 ÷ 2 = 6. It is the same answer by a different route."
+        },
+        {
+          "question": "How do I know my answer is right?",
+          "answer": "Put it back in. Add all four sides and see if you get the perimeter. Here 9 + 6 + 9 + 6 = 30, so it works."
+        }
+      ],
+      "check_question": {
+        "question": "A rectangle has a perimeter of 20 cm and a length of 6 cm. What is its width?",
+        "solution": "Half of 20 is 10, which is length + width. Then 10 - 6 = 4. The width is 4 cm. Check: 6 + 4 + 6 + 4 = 20.",
+        "expression": "20/2-6",
+        "answer": "4"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "A triangle has sides of 6 cm, 8 cm and 11 cm. What is its perimeter?",
+      "solution": "Add all three sides: 6 + 8 + 11 = 25. The perimeter is 25 cm.",
+      "expression": "6+8+11",
+      "answer": "25"
+    },
+    {
+      "problem": "A rectangular poster is 15 cm long and 4 cm wide. How long is the border around its edge?",
+      "solution": "The border is the perimeter. Add length and width: 15 + 4 = 19. Double it: 2 × 19 = 38. The border is 38 cm long.",
+      "expression": "2*(15+4)",
+      "answer": "38"
+    },
+    {
+      "problem": "A rectangle has a perimeter of 46 m and a width of 8 m. What is its length?",
+      "solution": "Half the perimeter is 46 ÷ 2 = 23, which is length + width. Take away the width: 23 - 8 = 15. The length is 15 m. Check: 15 + 8 + 15 + 8 = 46.",
+      "expression": "46/2-8",
+      "answer": "15"
+    }
+  ],
+  "meta": {
+    "concept": "perimeter",
+    "title": "Perimeter",
+    "model": "sonnet",
+    "cost_usd": 0.05928,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Perimeter"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Perimeter"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Perimeter"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Perimeter"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Perimeter+math"
+    }
+  ]
+}

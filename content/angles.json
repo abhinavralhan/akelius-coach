@@ -1,0 +1,258 @@
+{
+  "idea": "An angle measures how far one line has turned away from another around a shared point, called the vertex. We measure it in degrees: a full turn is 360 degrees, a half turn (a straight line) is 180, and a quarter turn (a right angle) is 90. A protractor lets us read an angle, and these fixed totals let us work out missing angles without measuring.",
+  "why": "One degree is 1/360 of a full turn, so every angle is just a share of a turn. That is why the totals are fixed: two angles that together make a straight line fill a half turn, so they add to 180. A triangle's angles add to 180 because, if you draw a line through one corner parallel to the opposite side, the two angles beside the corner match the other two triangle angles (alternate angles). Together with the triangle's own angle at that corner, they fill a straight line. So you can subtract from 180 or 360 instead of measuring.",
+  "theory_example": {
+    "problem": "A triangle has angles of 50 degrees and 60 degrees. Find the third angle.",
+    "steps": "1. The three angles of any triangle add to 180 degrees (a half turn). 2. Add the known angles: 50 + 60 = 110. 3. Subtract from 180: 180 - 110 = 70. 4. Check: 50 + 60 + 70 = 180. The third angle is 70 degrees, which is acute.",
+    "expression": "180 - 50 - 60",
+    "answer": "70"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Hook using the subtopic What an angle is and how to measure it: have students stand and turn a quarter, half and full turn. Say that a full turn is 360 degrees, a half turn 180 and a quarter turn 90. Draw one acute, one right and one obtuse angle on the board and name them."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach What an angle is and how to measure it: demonstrate the protractor on the board (baseline on one arm, centre on the vertex, start from 0). Students measure two angles on paper in pairs. Use the check question, and the two-scale mistake as your talking point."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach Angles on a straight line and around a point: work the example, then ask students to draw a straight line with one angle and predict the other before measuring it. Use the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach Angles in a triangle: have students draw any triangle, measure the three angles and add them (expect about 180, small errors are fine). Then work the example with the equal-leg right triangle and use the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work the three extra examples, mixing protractor reading, straight line and point angles, and triangles. Let students try each before you show the solution, then take open questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "What an angle is and how to measure it",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Think of a door. Closed, the angle is 0. Open a little and it is a small (acute) angle. A quarter turn is a right angle, 90 degrees, like a corner of the page. Open it wider and the angle is obtuse, between 90 and 180. Fully flat against the wall is 180. The degrees tell how far the door has swung."
+        },
+        {
+          "kind": "procedure",
+          "text": "1. Put the protractor's centre mark on the vertex. 2. Line up the baseline with one arm so that arm points to 0. 3. Read the scale that starts at 0 on that arm. 4. Check against what you can see: if the angle looks smaller than a right angle, the answer must be below 90."
+        }
+      ],
+      "example": {
+        "problem": "One arm of an angle lies on the 0 of the protractor's right-hand scale. The other arm crosses 65 on that scale and 115 on the other scale. What is the angle?",
+        "steps": "1. The arm on 0 tells us which scale to use: the scale that starts at 0 on that arm. 2. That scale reads 65. 3. Check by eye: the angle is smaller than a right angle, so 65 (not 115) makes sense. The angle is 65 degrees, an acute angle.",
+        "expression": "65",
+        "answer": "65"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Reading the wrong scale, for example giving 115 for an angle that is clearly acute.",
+          "response": "Ask: is this angle smaller or bigger than the corner of the page? Estimate first, then choose the scale that matches. Also remind them to start from the scale that has 0 on their baseline arm."
+        },
+        {
+          "mistake": "Putting the protractor's edge, not its centre mark, on the vertex, or not lining up the baseline with an arm.",
+          "response": "Show a slow demo on the board. Name the two things that must match: centre mark on the vertex, baseline along one arm. Let students try again and compare with a partner."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why are there 360 degrees in a full turn and not 100?",
+          "answer": "It is a choice made long ago. 360 divides neatly by many numbers (2, 3, 4, 5, 6, 8, 9, 10, 12 and more), so common fractions of a turn come out as whole numbers of degrees."
+        },
+        {
+          "question": "Does a longer arm make the angle bigger?",
+          "answer": "No. The angle is the amount of turn between the arms, not their length. You can imagine extending the arms and the turn stays the same."
+        },
+        {
+          "question": "Why does the protractor have two sets of numbers?",
+          "answer": "So you can measure from either arm. Pick the scale that starts at 0 on the arm lying on the baseline."
+        }
+      ],
+      "check_question": {
+        "question": "An angle's arm crosses 70 on one scale and 110 on the other. It looks smaller than a right angle. What is its size?",
+        "solution": "A right angle is 90, so the angle is below 90. The reading is 70 degrees.",
+        "expression": "70",
+        "answer": "70"
+      }
+    },
+    {
+      "title": "Angles on a straight line and around a point",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a straight line and a ray from a point on it. The line is a half turn, 180 degrees, and the ray splits it into two angles. Whatever one angle takes, the other gets the rest. Around a point the same idea applies, but the whole is a full turn of 360."
+        },
+        {
+          "kind": "procedure",
+          "text": "1. Decide what the whole is: 180 for a straight line, 360 around a point. 2. Add the angles you know. 3. Subtract that sum from the whole. 4. Check by adding all the angles back up to the whole."
+        }
+      ],
+      "example": {
+        "problem": "Two angles sit on a straight line. One is 128 degrees. Find the other.",
+        "steps": "1. Angles on a straight line add to 180. 2. The other angle is 180 - 128. 3. 180 - 128 = 52. 4. Check: 128 + 52 = 180. The other angle is 52 degrees.",
+        "expression": "180 - 128",
+        "answer": "52"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Using 360 for angles on a straight line, or 180 for angles around a point.",
+          "response": "Ask: is it a half turn or a full turn? A straight line is half a turn, so 180. Around a point you go all the way round, so 360."
+        },
+        {
+          "mistake": "Subtracting wrongly, such as getting 62 for 180 - 128.",
+          "response": "Have them check by adding the two angles back: do they make 180? Encourage counting up from 128 to 180 (to 130 is 2, then 50 more, so 52)."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do the angles on a line add to 180 exactly?",
+          "answer": "A straight line is a half turn, which is 180 degrees. Any angles that fill it together must share those 180."
+        },
+        {
+          "question": "Does it still work if the line is tilted?",
+          "answer": "Yes. Turning the picture does not change any angle. A straight line is still a half turn however you hold it."
+        },
+        {
+          "question": "Can I use this when there are three angles on the line?",
+          "answer": "Yes. Add all the angles you know, then subtract from 180. The rule is about the whole line, not just two angles."
+        }
+      ],
+      "check_question": {
+        "question": "Two angles are on a straight line and one is 75 degrees. What is the other?",
+        "solution": "180 - 75 = 105 degrees.",
+        "expression": "180 - 75",
+        "answer": "105"
+      }
+    },
+    {
+      "title": "Angles in a triangle",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw any triangle, tear off its three corners and place them side by side with the points meeting. They form a straight line, so together they make 180 degrees. This works for every triangle."
+        },
+        {
+          "kind": "procedure",
+          "text": "1. Write 180 as the total. 2. Add the angles you know. 3. Subtract that sum from 180. 4. If two angles are equal (isosceles), halve what is left after taking away the known angle."
+        }
+      ],
+      "example": {
+        "problem": "A right triangle has two equal legs. Find its other two angles.",
+        "steps": "1. The right angle is 90, and the three angles add to 180. 2. The other two add to 180 - 90 = 90. 3. The legs are equal, so the angles opposite them are equal. 4. Each is 90 / 2 = 45. Check: 90 + 45 + 45 = 180. Each other angle is 45 degrees.",
+        "expression": "(180 - 90)/2",
+        "answer": "45"
+      },
+      "visual": {
+        "kind": "triangle",
+        "expr": "",
+        "a": 1,
+        "b": 1,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Thinking a bigger triangle has a bigger angle sum.",
+          "response": "Let them measure a small and a large triangle. Both total about 180. Size changes the sides, not the angle total."
+        },
+        {
+          "mistake": "Forgetting to halve when two angles are equal and giving 90 for each.",
+          "response": "Ask them to add the three angles: 90 + 90 + 90 is 270, too much. Then show that the remaining 90 must be shared between the two equal angles."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is it always 180?",
+          "answer": "Draw a line through one corner parallel to the opposite side. The two angles beside the corner match the other two triangle angles, and together with the corner's angle they fill a straight line, 180 degrees."
+        },
+        {
+          "question": "Can a triangle have two right angles?",
+          "answer": "No. Two right angles already make 180, leaving nothing for the third angle."
+        },
+        {
+          "question": "Why are the angles equal when the sides are equal?",
+          "answer": "Equal sides make the triangle look the same from both ends, so the angles opposite them are equal. You can fold the triangle along its line of symmetry to see it."
+        }
+      ],
+      "check_question": {
+        "question": "A triangle has angles of 35 degrees and 85 degrees. What is the third angle?",
+        "solution": "35 + 85 = 120. 180 - 120 = 60 degrees.",
+        "expression": "180 - 35 - 85",
+        "answer": "60"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "A ray stands on a straight line and makes a 140 degree angle on one side. What angle does it make on the other side?",
+      "solution": "Angles on a straight line add to 180, so the other angle is 180 - 140 = 40 degrees.",
+      "expression": "180 - 140",
+      "answer": "40"
+    },
+    {
+      "problem": "Three angles around a point are 120 degrees, 95 degrees and x. Find x.",
+      "solution": "Angles around a point add to 360. 120 + 95 = 215. x = 360 - 215 = 145 degrees.",
+      "expression": "360 - 120 - 95",
+      "answer": "145"
+    },
+    {
+      "problem": "An isosceles triangle has a 100 degree angle between its two equal sides. Find each of the other two angles.",
+      "solution": "The angles add to 180, so the other two add to 180 - 100 = 80. They are equal, so each is 80 / 2 = 40 degrees.",
+      "expression": "(180 - 100)/2",
+      "answer": "40"
+    }
+  ],
+  "meta": {
+    "concept": "angles",
+    "title": "Angles and measuring in degrees",
+    "model": "sonnet",
+    "cost_usd": 0.075,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Angles+and+measuring+in+degrees"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Angles+and+measuring+in+degrees"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Angles+and+measuring+in+degrees"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Angles+and+measuring+in+degrees"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Angles+and+measuring+in+degrees+math"
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "idea": "Adding and subtracting fractions means combining or removing pieces of the same size. When the pieces are the same size (same denominator), we just count them: add or subtract the numerators. When the pieces differ, we first cut them into a common size, then count. Mixed numbers are a whole number plus a fraction; we can turn them into improper fractions, or handle wholes and fractions separately.",
+  "why": "The denominator names the size of the piece and the numerator counts the pieces. You can only add things of the same kind: 3 apples + 2 apples = 5 apples, so 3 eighths + 2 eighths = 5 eighths. The piece size does not change, so the denominator stays. To make different sizes comparable, we rewrite each fraction as an equal fraction by multiplying top and bottom by the same number. That does not change the value, because it is multiplying by 1. For mixed numbers, a whole is also a number of pieces (1 = 4/4, for example), so converting to improper fractions, or borrowing one whole, uses the same idea.",
+  "theory_example": {
+    "problem": "Work out 2 1/2 + 1 3/4.",
+    "steps": "1. Write as improper fractions: 2 1/2 = 5/2 and 1 3/4 = 7/4. 2. Common denominator is 4: 5/2 = 10/4. 3. Add numerators, keep the denominator: 10/4 + 7/4 = 17/4. 4. Convert back: 17 divided by 4 is 4 remainder 1, so 4 1/4. Check: 2 + 1 = 3 and 1/2 + 3/4 = 1 1/4, so 3 + 1 1/4 = 4 1/4. It matches.",
+    "expression": "Rational(5,2)+Rational(7,4)",
+    "answer": "17/4"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: draw a rectangle cut into 8 equal parts on the board. Shade 3 parts, then 2 more, and ask 'how much is shaded?' so students say 'five eighths'. This leads into the first subtopic, 'Same denominators: count the pieces'."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Same denominators: count the pieces'. Use the bar picture and the worked example 3/8 + 2/8, then do a subtraction together. Ask the check question and talk through the two common mistakes."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Different denominators: make the pieces the same size'. Start with the story or picture, then work the example 2/3 + 1/4 on the board while students copy. Ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Mixed numbers: wholes and parts'. Work the example 3 1/4 - 1 2/3 using improper fractions. Show the 'borrow one whole' way as an alternative. Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: students try the 3 extra examples (mixing all subtopics) in pairs, you go through each solution on the board, and you take any questions they still have."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Same denominators: count the pieces",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a bar cut into 8 equal parts. Shade 3 parts, then shade 2 more. Count the shaded parts: 5 of the 8. The parts did not change size, so the answer is 5/8. For subtraction, cross out parts instead."
+        },
+        {
+          "kind": "story",
+          "text": "A pizza is cut into 8 slices. You eat 3 slices and your friend eats 2 slices. Together you ate 5 slices out of 8, which is 5/8. The slices are still eighths, so we do not add the 8s."
+        }
+      ],
+      "example": {
+        "problem": "Work out 3/8 + 2/8.",
+        "steps": "1. The denominators are both 8, so the pieces are the same size. 2. Add the numerators: 3 + 2 = 5. 3. Keep the denominator: 5/8. 4. Check whether it simplifies: 5/8 does not.",
+        "expression": "Rational(3,8)+Rational(2,8)",
+        "answer": "5/8"
+      },
+      "visual": {
+        "kind": "fractionbar",
+        "expr": "",
+        "a": 5,
+        "b": 8,
+        "c": 1,
+        "d": 8
+      },
+      "mistakes": [
+        {
+          "mistake": "Adding the denominators too: 3/8 + 2/8 = 5/16.",
+          "response": "Ask 'what size are the pieces?' Use the pizza: after eating, the slices are still eighths, so the 8 stays. Compare with 3 apples + 2 apples, where we do not get 'apples apples'."
+        },
+        {
+          "mistake": "Forgetting to simplify, e.g. leaving 7/10 - 3/10 as 4/10.",
+          "response": "4/10 is correct but not finished. Ask 'can both numbers be divided by the same number?' Divide by 2 to get 2/5. Show on a bar that 4 of 10 and 2 of 5 cover the same amount."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why don't we add the bottom numbers?",
+          "answer": "The bottom number only tells the size of the pieces. We are counting how many pieces we have, and the pieces stay the same size. So only the top numbers change."
+        },
+        {
+          "question": "What if the answer on top is bigger than the bottom?",
+          "answer": "Then you have more than one whole. For example 5/8 + 6/8 = 11/8, which is 1 and 3/8. Both forms are right; a mixed number is often easier to picture."
+        },
+        {
+          "question": "Do we have to simplify?",
+          "answer": "The answer is the same value either way, but we normally write fractions in simplest form so they are easy to compare and read. Check whether the top and bottom share a factor."
+        }
+      ],
+      "check_question": {
+        "question": "What is 7/10 - 3/10? Give it in simplest form.",
+        "solution": "7 - 3 = 4, so 4/10. Divide top and bottom by 2 to get 2/5.",
+        "expression": "Rational(7,10)-Rational(3,10)",
+        "answer": "2/5"
+      }
+    },
+    {
+      "title": "Different denominators: make the pieces the same size",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "1. Find a common denominator, a number both denominators go into (the lowest one is easiest). 2. Rewrite each fraction as an equal fraction by multiplying top and bottom by the same number. 3. Add or subtract the numerators and keep the denominator. 4. Simplify if you can."
+        },
+        {
+          "kind": "story",
+          "text": "You have 2/3 of a chocolate bar and get 1/4 of another bar. Thirds and quarters are different-sized pieces, so you cannot count them together. Cut every piece into twelfths: a third is 4 twelfths, a quarter is 3 twelfths. Now 8 twelfths plus 3 twelfths makes 11 twelfths."
+        }
+      ],
+      "example": {
+        "problem": "Work out 2/3 + 1/4.",
+        "steps": "1. Denominators are 3 and 4. The lowest common multiple is 12. 2. Rewrite 2/3 = (2x4)/(3x4) = 8/12. 3. Rewrite 1/4 = (1x3)/(4x3) = 3/12. 4. Add: 8/12 + 3/12 = 11/12. 5. 11/12 cannot be simplified.",
+        "expression": "Rational(2,3)+Rational(1,4)",
+        "answer": "11/12"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Adding across: 2/3 + 1/4 = 3/7.",
+          "response": "Ask whether 3/7 is bigger than 2/3. It is not (it is less than 1/2 while 2/3 is more than 1/2). Adding should make it bigger than either part. Then go back to cutting into twelfths."
+        },
+        {
+          "mistake": "Changing only the bottom number: 2/3 = 2/12.",
+          "response": "Say 'whatever you do to the bottom, do to the top'. Multiplying top and bottom by 4 keeps the value, because 4/4 is 1. Showing 2/3 and 2/12 side by side on bars makes the difference clear."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Do I have to use the smallest common denominator?",
+          "answer": "No. Any common multiple works, for example 24 here. The smallest one just keeps numbers small, and you may need to simplify at the end if you use a larger one."
+        },
+        {
+          "question": "How do I find the common denominator?",
+          "answer": "List multiples of each denominator until one appears in both lists: 3, 6, 9, 12 and 4, 8, 12. If it is hard, multiplying the two denominators always works."
+        },
+        {
+          "question": "Why is changing 2/3 to 8/12 allowed?",
+          "answer": "Multiplying top and bottom by 4 is multiplying by 4/4, which is 1. The amount stays the same, only cut into smaller pieces."
+        }
+      ],
+      "check_question": {
+        "question": "What is 1/2 + 1/5?",
+        "solution": "Common denominator 10. 1/2 = 5/10 and 1/5 = 2/10. Sum is 7/10.",
+        "expression": "Rational(1,2)+Rational(1,5)",
+        "answer": "7/10"
+      }
+    },
+    {
+      "title": "Mixed numbers: wholes and parts",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Method 1: turn each mixed number into an improper fraction (whole x denominator + numerator, over the denominator), add or subtract with a common denominator, then turn the result back into a mixed number. Method 2: work with wholes and fractions separately, and borrow or carry one whole when needed."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw 3 whole bars and one quarter of another. To take away 1 and 2/3, notice you only have a quarter, which is less than 2/3. Break one whole bar into twelfths and see how the pieces combine. This shows why we 'borrow' a whole, and that a whole is the same as 12/12."
+        }
+      ],
+      "example": {
+        "problem": "Work out 3 1/4 - 1 2/3.",
+        "steps": "1. Improper fractions: 3 1/4 = 13/4 and 1 2/3 = 5/3. 2. Common denominator 12: 13/4 = 39/12 and 5/3 = 20/12. 3. Subtract: 39/12 - 20/12 = 19/12. 4. Convert: 19 divided by 12 is 1 remainder 7, so 1 7/12. Check: 1 7/12 + 1 2/3 = 1 7/12 + 1 8/12 = 2 15/12 = 3 3/12 = 3 1/4. It matches.",
+        "expression": "Rational(13,4)-Rational(5,3)",
+        "answer": "19/12"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Subtracting the smaller fraction from the bigger one regardless of order: 3 1/4 - 1 2/3 gives 2 and 5/12 (taking 1/4 from 2/3).",
+          "response": "Ask whether 1/4 - 2/3 is possible with whole numbers. Show that you must borrow one whole from the 3, or use improper fractions. Check the answer by adding back."
+        },
+        {
+          "mistake": "Writing the improper fraction wrongly, e.g. 3 1/4 = 4/4 or 3/4 + 1/4.",
+          "response": "Show with a picture: 3 wholes is 12 quarters, plus 1 quarter is 13 quarters, so 13/4. Practise the rule whole x denominator + numerator."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Which method should I use, improper fractions or wholes separately?",
+          "answer": "Either works. Improper fractions are safest when borrowing is needed. Separating wholes is quicker when the fractions add without going past one."
+        },
+        {
+          "question": "How do I turn 19/12 back into a mixed number?",
+          "answer": "Divide 19 by 12. It goes in once with 7 left over, so 1 whole and 7/12."
+        },
+        {
+          "question": "Why can we borrow a whole?",
+          "answer": "One whole is the same amount as 12/12 (or 4/4, or any fraction with the top equal to the bottom). We are just cutting a whole into pieces so we have enough to take away."
+        }
+      ],
+      "check_question": {
+        "question": "What is 5 1/6 - 2 5/6?",
+        "solution": "5 1/6 = 31/6 and 2 5/6 = 17/6. 31/6 - 17/6 = 14/6 = 7/3, which is 2 1/3.",
+        "expression": "Rational(31,6)-Rational(17,6)",
+        "answer": "7/3"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Work out 5/6 - 1/3.",
+      "solution": "Common denominator 6: 1/3 = 2/6. Then 5/6 - 2/6 = 3/6 = 1/2.",
+      "expression": "Rational(5,6)-Rational(1,3)",
+      "answer": "1/2"
+    },
+    {
+      "problem": "Work out 2 3/5 + 1 4/5.",
+      "solution": "Improper fractions: 13/5 + 9/5 = 22/5. As a mixed number that is 4 2/5. Check: 2 + 1 = 3 and 3/5 + 4/5 = 7/5 = 1 2/5, so 4 2/5.",
+      "expression": "Rational(13,5)+Rational(9,5)",
+      "answer": "22/5"
+    },
+    {
+      "problem": "Work out 4 - 1 3/8.",
+      "solution": "Write 4 as 32/8 and 1 3/8 as 11/8. Then 32/8 - 11/8 = 21/8, which is 2 5/8.",
+      "expression": "4-Rational(11,8)",
+      "answer": "21/8"
+    }
+  ],
+  "meta": {
+    "concept": "adding-like-fractions",
+    "title": "Adding and subtracting fractions and mixed numbers",
+    "model": "sonnet",
+    "cost_usd": 0.12513,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Adding+and+subtracting+fractions+and+mixed+numbers"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Adding+and+subtracting+fractions+and+mixed+numbers"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Adding+and+subtracting+fractions+and+mixed+numbers"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Adding+and+subtracting+fractions+and+mixed+numbers"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Adding+and+subtracting+fractions+and+mixed+numbers+math"
+    }
+  ]
+}

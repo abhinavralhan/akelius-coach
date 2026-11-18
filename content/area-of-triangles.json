@@ -1,0 +1,258 @@
+{
+  "idea": "The area of a shape is how many unit squares cover it. A rectangle's area is base × height. Triangles, parallelograms and trapezoids can all be built from, or cut into, rectangles and triangles. That is why each of their formulas comes from base × height.",
+  "why": "A rectangle cut along a diagonal gives two identical triangles, so a right triangle is half a rectangle: area = base × height ÷ 2. Any triangle sits inside a rectangle with the same base and height, and fills exactly half of it. A parallelogram can have a triangle cut from one end and slid to the other end, which makes a rectangle with the same base and height. A trapezoid splits along a diagonal into two triangles with the same height, so its area is (sum of the parallel sides) × height ÷ 2. The height must always be the perpendicular distance, never the slanted side.",
+  "theory_example": {
+    "problem": "A trapezoid has parallel sides 6 and 10, and the distance between them is 4. Find its area.",
+    "steps": "Draw a diagonal. It cuts the trapezoid into two triangles. One has base 6 and height 4. The other has base 10 and height 4. The heights are equal because the parallel sides are always 4 apart. First triangle: 6 × 4 ÷ 2 = 12. Second triangle: 10 × 4 ÷ 2 = 20. Add them: 12 + 20 = 32. Check with the shortcut: (6 + 10) ÷ 2 × 4 = 8 × 4 = 32.",
+    "expression": "6*4/2 + 10*4/2",
+    "answer": "32"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 6,
+      "activity": "Draw a 6 by 4 rectangle and ask for its area. Cut it along a diagonal and show the two matching triangles. Teach the subtopic 'Right triangle as half a rectangle': do its example and ask its check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach the subtopic 'Any triangle: base and perpendicular height'. Draw a slanted triangle, mark the height with a dashed line, and work the example together. Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Teach the subtopic 'Parallelogram and trapezoid'. Use paper cut-outs if you have them: cut a triangle from a parallelogram and slide it to make a rectangle. Work the trapezoid example, then ask the check question."
+    },
+    {
+      "minutes": 6,
+      "activity": "Pair work: students draw one triangle and one parallelogram on squared paper, mark the base and the perpendicular height, and find each area. Walk round and use the common mistakes from all three subtopics to guide your comments."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work the 3 extra examples on the board, letting students suggest the first step each time. Then take open questions from the class."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Right triangle as half a rectangle",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a rectangle 6 wide and 4 tall. Draw one diagonal. The two triangles match exactly: turn one half-turn and it lands on the other. So each triangle has half the rectangle's area."
+        },
+        {
+          "kind": "story",
+          "text": "A square sandwich is cut corner to corner. Two people each get a triangle, and both get the same amount. The whole sandwich is base × height, so each person gets half of that."
+        }
+      ],
+      "example": {
+        "problem": "A right triangle has legs 6 cm and 4 cm. Find its area.",
+        "steps": "The two legs meet at the right angle, so one leg is the base and the other is the height. The matching rectangle is 6 by 4, with area 24. The triangle is half of it: 24 ÷ 2 = 12 square centimetres.",
+        "expression": "6*4/2",
+        "answer": "12"
+      },
+      "visual": {
+        "kind": "triangle",
+        "expr": "",
+        "a": 6,
+        "b": 4,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students multiply the two legs and forget to halve, giving 24.",
+          "response": "Point back to the rectangle picture and ask: 'Is the triangle bigger or smaller than the rectangle?' Then ask what the 24 stands for."
+        },
+        {
+          "mistake": "Students multiply the longest side (the hypotenuse) by a leg.",
+          "response": "Explain that the base and height must meet at a right angle. In a right triangle, those are the two legs."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why is it exactly half?",
+          "answer": "The diagonal cuts the rectangle into two triangles that are copies of each other. Turn one half-turn and it fits on the other. Two equal pieces that make the whole means each is half."
+        },
+        {
+          "question": "Why do we write square centimetres?",
+          "answer": "Area counts little squares that are 1 cm by 1 cm. So the answer is a number of those squares, written cm²."
+        },
+        {
+          "question": "Does this work for triangles without a right angle?",
+          "answer": "Yes, and that's our next part. We'll find the right 'height' for those triangles."
+        }
+      ],
+      "check_question": {
+        "question": "A right triangle has legs 5 and 8. What is its area?",
+        "solution": "5 × 8 = 40, and half of 40 is 20.",
+        "expression": "5*8/2",
+        "answer": "20"
+      }
+    },
+    {
+      "title": "Any triangle: base and perpendicular height",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a triangle. Pick a side as the base. Draw the dashed height from the opposite corner straight down, making a right angle with the base. Draw a rectangle round the triangle with that base and that height. The dashed line splits the picture into two parts, and in each part the triangle fills exactly half. So the triangle is half the rectangle."
+        },
+        {
+          "kind": "procedure",
+          "text": "1. Pick any side as the base. 2. Find the height: the straight, perpendicular distance from the base to the opposite corner. It is not a slanted side. 3. Multiply base × height. 4. Halve the result. 5. Write square units."
+        }
+      ],
+      "example": {
+        "problem": "A triangle has a base of 10 cm. The perpendicular height to that base is 7 cm. The other two sides are slanted and are 8 cm and 9 cm long. Find the area.",
+        "steps": "The slanted sides, 8 and 9, are not the height, so ignore them. Base × height = 10 × 7 = 70. Half of 70 is 35 square centimetres.",
+        "expression": "10*7/2",
+        "answer": "35"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students use a slanted side as the height.",
+          "response": "Ask them to hold a book against the base: the height is how tall the triangle stands. A slanted side is a ramp and is longer than the height. Have them mark the right-angle square on the dashed line."
+        },
+        {
+          "mistake": "Students think only one particular side can be the base, or that the height must be inside the triangle.",
+          "response": "Any side can be the base, but then the height must be the perpendicular to that side. For a wide, flat triangle, the height may be drawn outside it, and the formula still works."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Which side should I choose as the base?",
+          "answer": "Any side works. Choose the one whose perpendicular height is given or easy to find. You'll get the same area each time."
+        },
+        {
+          "question": "Why must the height be straight up?",
+          "answer": "The height measures how many rows of squares fit between the base and the top corner. Rows are counted straight up, not along a slant."
+        },
+        {
+          "question": "What if the triangle leans over and the height falls outside?",
+          "answer": "Extend the base line with a dotted line and drop the perpendicular to it. The formula still works: base × height ÷ 2."
+        }
+      ],
+      "check_question": {
+        "question": "A triangle has base 9 and perpendicular height 4. What is its area?",
+        "solution": "9 × 4 = 36, and half of 36 is 18.",
+        "expression": "9*4/2",
+        "answer": "18"
+      }
+    },
+    {
+      "title": "Parallelogram and trapezoid",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a parallelogram. Cut off the triangle at one end along the height line and slide it to the other end. You get a rectangle with the same base and the same height. So the area is base × height. For a trapezoid, draw a diagonal. You get two triangles with the same height, one on each parallel side."
+        },
+        {
+          "kind": "procedure",
+          "text": "Parallelogram: area = base × perpendicular height. Trapezoid: add the two parallel sides, halve the sum to get the average length, then multiply by the height. Area = (a + b) ÷ 2 × height. Always use the perpendicular height, not a slanted side."
+        }
+      ],
+      "example": {
+        "problem": "A trapezoid has parallel sides of 5 cm and 9 cm. The distance between them is 6 cm. Find its area.",
+        "steps": "Add the parallel sides: 5 + 9 = 14. Halve: 14 ÷ 2 = 7, which is the average width. Multiply by the height: 7 × 6 = 42 square centimetres. As a check, split into two triangles: 5 × 6 ÷ 2 = 15 and 9 × 6 ÷ 2 = 27, and 15 + 27 = 42.",
+        "expression": "(5+9)/2*6",
+        "answer": "42"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "For a parallelogram, students multiply the base by the slanted side.",
+          "response": "Show the cut-and-slide picture: the rectangle's height is the straight distance between the parallel sides, not the slanted side. Use a leaning stack of books to show that the slanted side changes while the height and area don't."
+        },
+        {
+          "mistake": "For a trapezoid, students add the parallel sides and multiply by the height, forgetting to halve, or use a slanted side as the height.",
+          "response": "Use the two-triangle picture: each triangle has a halving step. Or ask them to estimate: the area should be about average width × height. Remind them the height is the perpendicular distance between the parallel sides."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why can we cut a piece off and move it?",
+          "answer": "Moving a piece doesn't change how much space it covers. The area stays the same, and the new shape is a rectangle whose area we know."
+        },
+        {
+          "question": "Why do we find the average of the two parallel sides?",
+          "answer": "A trapezoid is wider at one side and narrower at the other. The average width is the width it would have if it were a rectangle of the same area. Then area = average width × height."
+        },
+        {
+          "question": "What about other quadrilaterals?",
+          "answer": "Draw a diagonal to split any quadrilateral into two triangles. Find each triangle's area and add them."
+        }
+      ],
+      "check_question": {
+        "question": "A parallelogram has base 7 cm, slanted side 5 cm and perpendicular height 3 cm. What is its area?",
+        "solution": "Area = base × height = 7 × 3 = 21 square centimetres. The slanted side 5 is not used.",
+        "expression": "7*3",
+        "answer": "21"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "A triangle has a base of 13 cm and a perpendicular height of 6 cm. Find its area.",
+      "solution": "13 × 6 = 78. Half of 78 is 39 square centimetres.",
+      "expression": "13*6/2",
+      "answer": "39"
+    },
+    {
+      "problem": "A parallelogram has a base of 12 cm, a slanted side of 6 cm and a perpendicular height of 5 cm. Find its area.",
+      "solution": "Use base × perpendicular height: 12 × 5 = 60 square centimetres. The slanted side 6 is not used.",
+      "expression": "12*5",
+      "answer": "60"
+    },
+    {
+      "problem": "A trapezoid has parallel sides 4 m and 10 m, and the distance between them is 3 m. Find its area.",
+      "solution": "(4 + 10) ÷ 2 = 7. Then 7 × 3 = 21 square metres.",
+      "expression": "(4+10)/2*3",
+      "answer": "21"
+    }
+  ],
+  "meta": {
+    "concept": "area-of-triangles",
+    "title": "Area of triangles and quadrilaterals",
+    "model": "sonnet",
+    "cost_usd": 0.08468,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Area+of+triangles+and+quadrilaterals"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Area+of+triangles+and+quadrilaterals"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Area+of+triangles+and+quadrilaterals"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Area+of+triangles+and+quadrilaterals"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Area+of+triangles+and+quadrilaterals+math"
+    }
+  ]
+}

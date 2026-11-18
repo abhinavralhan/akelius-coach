@@ -1,0 +1,258 @@
+{
+  "idea": "Multi-digit multiplication means multiplying numbers that have two or more digits. We split one number by place value (for example 24 = 20 + 4), multiply each part, and add the pieces. The written method with carrying is a short way of recording exactly these pieces.",
+  "why": "Multiplication spreads over addition: 35 x 12 = 35 x (10 + 2) = 35 x 10 + 35 x 2. Each partial product is easy to find, and nothing is lost when we add them back together. In the written method, the carried digit is the tens part of a partial product (the 4 in 48) that is saved and added into the next place. The placeholder zero in the second row is there because multiplying by tens makes the value ten times bigger.",
+  "theory_example": {
+    "problem": "Find 35 x 12.",
+    "steps": "Split 12 into 10 + 2. First, 35 x 10 = 350. Next, 35 x 2 = 70. Add the pieces: 350 + 70 = 420. Quick check by estimating: 35 x 12 is a bit more than 30 x 12 = 360 and a bit less than 40 x 12 = 480, and 420 sits in between.",
+    "expression": "35*12",
+    "answer": "420"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up and big idea: ask how they might work out 35 x 12 without a calculator. Show the theory example on the board (35 x 10 + 35 x 2 = 420) and say that today we split numbers into easy pieces."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Splitting by place value': tell the pencil-box story, work 23 x 4 on the board with the bar picture, then ask the check question."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'The written method with carrying': link it to the splitting you just did, work 346 x 7 slowly, say each carry aloud, then ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Two-digit by two-digit numbers': work 24 x 13 as 24 x 10 plus 24 x 3 with the bar picture, show the placeholder zero in the written form, then ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work the 3 extra examples with the class (let students suggest the first step each time), then take any questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Splitting by place value",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Four boxes each hold 23 pencils. Each box has 2 packs of 10 and 3 loose pencils. Four boxes give 4 x 20 = 80 pencils in packs and 4 x 3 = 12 loose pencils. Together that is 92 pencils."
+        },
+        {
+          "kind": "procedure",
+          "text": "1) Write the bigger number as tens and ones: 23 = 20 + 3. 2) Multiply each part by the other number: 20 x 4 and 3 x 4. 3) Add the two answers. Say the true value aloud: 'twenty times four', not 'two times four'."
+        }
+      ],
+      "example": {
+        "problem": "Find 23 x 4.",
+        "steps": "Split 23 into 20 + 3. 20 x 4 = 80. 3 x 4 = 12. Add: 80 + 12 = 92.",
+        "expression": "23*4",
+        "answer": "92"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "20 x 4;3 x 4;Total",
+        "a": 80,
+        "b": 12,
+        "c": 92,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students multiply the tens digit as if it were ones: 2 x 4 = 8, then 8 + 12 = 20.",
+          "response": "Ask: 'Is it 2 packs or 2 tens?' Return to the pencils: each pack holds 10, so the 2 stands for 20. Have them estimate first: 23 x 4 is about 20 x 4 = 80, so 20 is far too small."
+        },
+        {
+          "mistake": "Students multiply only the ones digit and forget the tens digit: 3 x 4 = 12.",
+          "response": "Point to the bars: there are two pieces, and both must be counted. Ask 'Where did the 20 pencils per box go?'"
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why can we split 23 into 20 and 3?",
+          "answer": "Because 23 really is 20 + 3, just a different way of writing it. Four groups of 23 is the same as four groups of 20 and four groups of 3 put together."
+        },
+        {
+          "question": "Can I split it a different way, like 10 + 13?",
+          "answer": "Yes, any split works as long as the pieces add up to the number. Splitting into tens and ones is just the easiest, because tens are easy to multiply."
+        },
+        {
+          "question": "Why do we add at the end?",
+          "answer": "Each piece counts only part of the pencils. To get the total, we put the parts back together, and putting together means adding."
+        }
+      ],
+      "check_question": {
+        "question": "Use splitting to find 31 x 3. What are the two pieces?",
+        "solution": "31 = 30 + 1. 30 x 3 = 90 and 1 x 3 = 3. Total 93.",
+        "expression": "31*3",
+        "answer": "93"
+      }
+    },
+    {
+      "title": "The written method with carrying",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Write the numbers one above the other. Multiply the ones digit first, write the ones of the answer, and carry the tens. Then multiply the next digit, add the carried number, write the ones, and carry again. Continue until the last digit, where you write the whole number."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw 346 x 7 as three splits: 300 x 7 = 2100, 40 x 7 = 280, 6 x 7 = 42. Then show the written method does the same: 42 gives a 2 in the ones place and 4 tens that are carried, and so on. The carried digits are just the tens of each piece, waiting to be added in."
+        }
+      ],
+      "example": {
+        "problem": "Find 346 x 7.",
+        "steps": "6 x 7 = 42: write 2, carry 4. 4 x 7 = 28, plus the carried 4 = 32: write 2, carry 3. 3 x 7 = 21, plus the carried 3 = 24: write 24. The answer is 2422. Check by splitting: 2100 + 280 + 42 = 2422.",
+        "expression": "346*7",
+        "answer": "2422"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students forget to add the carried number, or add it before multiplying (for example (4 + 4) x 7).",
+          "response": "Say the order aloud: first multiply, then add the carry. Show with the split picture that the carry is leftover tens from the previous piece, so it is added to the product, not multiplied."
+        },
+        {
+          "mistake": "Students write the whole product instead of only the ones digit (for example writing 42 and then continuing).",
+          "response": "Use place-value language: 42 is 4 tens and 2 ones. Only the 2 ones belong in the ones place; the 4 tens go over to the tens place as a carry."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we carry?",
+          "answer": "Each place can hold only one digit. When a place has 10 or more, we trade 10 of them for 1 of the next bigger place. That traded one is the carry."
+        },
+        {
+          "question": "Why do we start from the right?",
+          "answer": "Carries move to the left, to bigger places. Starting at the ones means each carry is ready before we need it."
+        },
+        {
+          "question": "Is this different from splitting?",
+          "answer": "No, it is the same thing written in a shorter way. The carried numbers keep track of the pieces we would otherwise add at the end."
+        }
+      ],
+      "check_question": {
+        "question": "Find 524 x 3 with the written method. What do you carry at each step?",
+        "solution": "4 x 3 = 12: write 2, carry 1. 2 x 3 = 6, plus 1 = 7: write 7, no carry. 5 x 3 = 15: write 15. The answer is 1572.",
+        "expression": "524*3",
+        "answer": "1572"
+      }
+    },
+    {
+      "title": "Two-digit by two-digit numbers",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "A theatre has 13 rows with 24 seats in each row. Count 10 rows first: 10 x 24 = 240 seats. Then the other 3 rows: 3 x 24 = 72 seats. In total, 240 + 72 = 312 seats."
+        },
+        {
+          "kind": "procedure",
+          "text": "Multiply the first number by the ones digit of the second number. Then multiply it by the tens digit, written as a tens number: put a 0 in the ones place of the second row first. Add the two rows."
+        }
+      ],
+      "example": {
+        "problem": "Find 24 x 13.",
+        "steps": "Split 13 into 10 + 3. 24 x 10 = 240. 24 x 3 = 72. Add: 240 + 72 = 312. In the written form, the first row is 24 x 3 = 72, the second row is 24 x 10 = 240 (a 0 goes first, then 24 x 1), and 72 + 240 = 312.",
+        "expression": "24*13",
+        "answer": "312"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "24 x 10;24 x 3;Total",
+        "a": 240,
+        "b": 72,
+        "c": 312,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students leave out the placeholder zero in the second row, so the tens row is 10 times too small (24 + 72 = 96).",
+          "response": "Ask what the 1 in 13 stands for: it is 10, not 1. So the row is 24 x 10 = 240. Compare with the estimate 24 x 13 is about 25 x 10 = 250 or more, so 96 cannot be right."
+        },
+        {
+          "mistake": "Students multiply only the ones digit across, or multiply digit by digit (2 x 1 and 4 x 3) and join the answers.",
+          "response": "Remind them that every part of one number must multiply every part of the other. Here there are 4 products in all: 20 x 10, 4 x 10, 20 x 3, 4 x 3 (200 + 40 + 60 + 12 = 312). Group them into the two rows."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we put a zero in the second row?",
+          "answer": "The second row is for the tens digit, so it is really 10 times what we multiply. The zero holds the ones place, so the digits land in the tens place."
+        },
+        {
+          "question": "Does it matter which number I split?",
+          "answer": "No, the answer is the same either way, because 24 x 13 = 13 x 24. Choose the split that makes the easier numbers."
+        },
+        {
+          "question": "How do I know my answer is sensible?",
+          "answer": "Round both numbers and multiply: 24 x 13 is about 20 x 10 = 200 at the least and 25 x 15 = 375 at the most. 312 fits."
+        }
+      ],
+      "check_question": {
+        "question": "Find 21 x 14 by splitting 14 into 10 + 4. What are the two pieces?",
+        "solution": "21 x 10 = 210 and 21 x 4 = 84. Add: 210 + 84 = 294.",
+        "expression": "21*14",
+        "answer": "294"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Find 52 x 6 by splitting.",
+      "solution": "52 = 50 + 2. 50 x 6 = 300 and 2 x 6 = 12. Add: 300 + 12 = 312.",
+      "expression": "52*6",
+      "answer": "312"
+    },
+    {
+      "problem": "Find 407 x 5 with the written method. Watch the zero in the middle.",
+      "solution": "7 x 5 = 35: write 5, carry 3. 0 x 5 = 0, plus 3 = 3: write 3. 4 x 5 = 20: write 20. The answer is 2035. Check: 400 x 5 = 2000 and 7 x 5 = 35, so 2035.",
+      "expression": "407*5",
+      "answer": "2035"
+    },
+    {
+      "problem": "Find 36 x 25.",
+      "solution": "Split 25 into 20 + 5. 36 x 20 = 720. 36 x 5 = 180. Add: 720 + 180 = 900.",
+      "expression": "36*25",
+      "answer": "900"
+    }
+  ],
+  "meta": {
+    "concept": "multi-digit-multiplication",
+    "title": "Multi-digit multiplication",
+    "model": "sonnet",
+    "cost_usd": 0.13571,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Multi-digit+multiplication"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Multi-digit+multiplication"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Multi-digit+multiplication"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Multi-digit+multiplication"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Multi-digit+multiplication+math"
+    }
+  ]
+}

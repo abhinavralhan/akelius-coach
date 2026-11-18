@@ -1,0 +1,258 @@
+{
+  "idea": "Long division is a written way to share a big number into equal groups, one digit at a time. You repeat four moves: divide, multiply, subtract, bring down the next digit. The answer (the quotient) is built digit by digit, and whatever is left at the end is the remainder.",
+  "why": "Each digit of the number has a place value. You start at the left and share the biggest places first (hundreds, then tens, then ones). Whatever can't be shared in one place is traded for 10 of the next place down, and that is what \"bring down\" does: 3 leftover tens plus 4 ones is 34 ones. Multiplying and subtracting simply check how much you have handed out and how much is still waiting. The remainder is the part too small to make another full group.",
+  "theory_example": {
+    "problem": "Work out 1845 ÷ 15.",
+    "steps": "1) 18 ÷ 15 = 1 (the first two digits are needed because 1 is too small). Write 1 above the 8. 1 × 15 = 15. 18 − 15 = 3.\n2) Bring down the 4 to make 34. 34 ÷ 15 = 2. 2 × 15 = 30. 34 − 30 = 4.\n3) Bring down the 5 to make 45. 45 ÷ 15 = 3. 3 × 15 = 45. 45 − 45 = 0.\n4) The quotient is 123 with remainder 0.\nCheck: 15 × 123 = 1500 + 345 = 1845.",
+    "expression": "1845/15",
+    "answer": "123"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Hook and overview. Ask: 'How would you share 846 stickers among 6 children?' Let students suggest ideas (hundreds first, then tens, then ones). Show the four moves (divide, multiply, subtract, bring down) using the theory example 1845 ÷ 15 briefly, or just name the moves."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Divide, multiply, subtract, bring down'. Work through the example 846 ÷ 6 on the board, saying each move aloud. Use the place value explanation. Then ask the class the check question and let them work on it in pairs."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Remainders'. Work through 487 ÷ 4, show the bars drawing (total, taken out, left over). Stress that the remainder must be smaller than the divisor. Ask the check question."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Two-digit divisors'. Work through 952 ÷ 28 with the estimate-by-rounding idea (28 is about 30) and show the bars drawing. Let students try the check question, then go over it together."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Work through the 3 extra examples on the board, with students calling out each move. Invite questions, and finish by checking one answer by multiplying back."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Divide, multiply, subtract, bring down",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Say the same four words every time: Divide, Multiply, Subtract, Bring down. Start at the left. Ask 'how many times does the divisor go into this part?' Write that digit above, multiply it by the divisor, write the product below, subtract, and bring down the next digit. Repeat until no digits are left."
+        },
+        {
+          "kind": "story",
+          "text": "846 stickers shared among 6 children. First share the 8 hundreds: each child gets 1 hundred, with 2 hundreds left. Trade those 2 hundreds for 20 tens, add the 4 tens you already have: 24 tens. Each child gets 4 tens. Nothing left, so the 6 ones go next: each child gets 1. Each child gets 141 stickers."
+        }
+      ],
+      "example": {
+        "problem": "Work out 846 ÷ 6.",
+        "steps": "1) 8 ÷ 6 = 1. Write 1 above the 8. 1 × 6 = 6. 8 − 6 = 2.\n2) Bring down the 4 to make 24. 24 ÷ 6 = 4. Write 4. 4 × 6 = 24. 24 − 24 = 0.\n3) Bring down the 6 to make 6. 6 ÷ 6 = 1. Write 1. 1 × 6 = 6. 6 − 6 = 0.\n4) The answer is 141.\nCheck: 6 × 141 = 846.",
+        "expression": "846/6",
+        "answer": "141"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Leaving out a zero in the answer, e.g. writing 618 ÷ 6 = 13 instead of 103.",
+          "response": "Show the steps: after 6 ÷ 6 = 1, bring down 1. 1 ÷ 6 is 0, so write a 0, then bring down 8 to make 18, and 18 ÷ 6 = 3. Ask: 'What is 6 × 13?' (78, not 618). Multiplying back shows the answer is wrong and that every digit brought down needs a digit in the answer."
+        },
+        {
+          "mistake": "Forgetting to bring down the next digit, or bringing down the wrong one.",
+          "response": "Make it a routine: after every subtraction, point at the next digit and say 'bring down'. Having students draw a small arrow from the digit to the new number can help. Remind them that digits are brought down one at a time, left to right."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we start from the left, when adding and subtracting start from the right?",
+          "answer": "Because we are sharing, and it is best to share the biggest pieces first. Any hundreds left over can be traded for tens and shared again. In adding we carry up to bigger places; in division we trade down to smaller places."
+        },
+        {
+          "question": "Why do we only look at 8 and not 846 at first?",
+          "answer": "6 goes into 8 once already, so we only need the first digit. If 8 were smaller than 6 we would use the first two digits. We always take the fewest digits that are big enough for the divisor to fit in."
+        },
+        {
+          "question": "Why do we subtract after multiplying?",
+          "answer": "Multiplying tells us how much we have handed out. Subtracting tells us how much is left to share. If the leftover is not less than the divisor, we could have handed out more."
+        }
+      ],
+      "check_question": {
+        "question": "Work out 728 ÷ 4 using the four moves.",
+        "solution": "7 ÷ 4 = 1, 1 × 4 = 4, 7 − 4 = 3. Bring down 2 to make 32. 32 ÷ 4 = 8, 8 × 4 = 32, remainder 0. Bring down 8. 8 ÷ 4 = 2. The answer is 182. Check: 4 × 182 = 728.",
+        "expression": "728/4",
+        "answer": "182"
+      }
+    },
+    {
+      "title": "Remainders",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "487 sweets are packed into bags of 4. You can fill 121 bags, using 484 sweets. There are 3 sweets left, which is not enough for another bag of 4. So the answer is 121 bags with 3 left over: remainder 3."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw a long bar for the total (487). Under it draw a bar for what was shared out (4 × 121 = 484) and a very short bar for what is left (3). The short bar must be shorter than one group of 4, otherwise another group could be made. The drawing shows total = shared + left over."
+        }
+      ],
+      "example": {
+        "problem": "Work out 487 ÷ 4 and give the remainder.",
+        "steps": "1) 4 ÷ 4 = 1. 1 × 4 = 4. 4 − 4 = 0.\n2) Bring down the 8. 8 ÷ 4 = 2. 2 × 4 = 8. 8 − 8 = 0.\n3) Bring down the 7. 7 ÷ 4 = 1. 1 × 4 = 4. 7 − 4 = 3.\n4) No digits left. The quotient is 121 and the remainder is 3, so 487 ÷ 4 = 121 remainder 3.\nCheck: 4 × 121 + 3 = 484 + 3 = 487.",
+        "expression": "487 - 4*121",
+        "answer": "3"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Total;Shared out;Left over",
+        "a": 487,
+        "b": 484,
+        "c": 3,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Getting a remainder that is as big as or bigger than the divisor, e.g. 7 ÷ 4 = 0 remainder 7 or 1 remainder 4.",
+          "response": "Ask: 'Can we make another group of 4 from the leftovers?' If yes, the quotient digit was too small. Raise it by 1 and subtract again. The remainder must always be less than the divisor."
+        },
+        {
+          "mistake": "Forgetting to write the remainder, or writing the answer as 121 only.",
+          "response": "Check by multiplying back: 4 × 121 = 484, not 487. The missing 3 must be written as the remainder. Encourage the check 'quotient × divisor + remainder = starting number'."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why can't we keep dividing the 3 that is left?",
+          "answer": "We can, but then the answer is not a whole number. With whole groups we stop and call the rest the remainder. Later you can carry on with decimals: 487 ÷ 4 = 121.75, because 3 left over shared by 4 is three quarters."
+        },
+        {
+          "question": "Why must the remainder be smaller than the divisor?",
+          "answer": "If it were as big as the divisor, there would be enough left to make one more group. So we would not be finished sharing."
+        },
+        {
+          "question": "How do I know my remainder is right?",
+          "answer": "Multiply the quotient by the divisor and add the remainder. You should get back the number you started with: 4 × 121 + 3 = 487."
+        }
+      ],
+      "check_question": {
+        "question": "Work out 275 ÷ 6. What is the remainder?",
+        "solution": "27 ÷ 6 = 4, 4 × 6 = 24, 27 − 24 = 3. Bring down 5 to make 35. 35 ÷ 6 = 5, 5 × 6 = 30, 35 − 30 = 5. So 275 ÷ 6 = 45 remainder 5. Check: 6 × 45 + 5 = 275.",
+        "expression": "275 - 6*45",
+        "answer": "5"
+      }
+    },
+    {
+      "title": "Two-digit divisors",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "The moves are the same; the new part is guessing the quotient digit. Round the divisor to a friendly number (28 is about 30) and ask how many 30s fit into the first digits. Try that digit, multiply by the real divisor and subtract. If the result is negative, the guess was too big; if the result is not smaller than the divisor, the guess was too small. Adjust and try again."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw a long bar for 952, split into two pieces: 28 × 30 = 840 and 28 × 4 = 112. The tens digit of the answer (3) matches the 840 piece and the ones digit (4) matches the 112 piece. Together 30 + 4 = 34 groups of 28."
+        }
+      ],
+      "example": {
+        "problem": "Work out 952 ÷ 28.",
+        "steps": "1) 9 is smaller than 28 and 95 is big enough, so start with 95. Estimate: 28 is about 30, and 95 is about 3 lots of 30. Try 3: 3 × 28 = 84. 95 − 84 = 11.\n2) Bring down the 2 to make 112. Estimate: 112 is about 4 lots of 28 (since 4 × 28 = 112). Write 4. 4 × 28 = 112. 112 − 112 = 0.\n3) The answer is 34.\nCheck: 28 × 34 = 840 + 112 = 952.",
+        "expression": "952/28",
+        "answer": "34"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Total;28 x 30;28 x 4",
+        "a": 952,
+        "b": 840,
+        "c": 112,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Choosing a quotient digit that is too big, so the subtraction goes negative.",
+          "response": "Say: 'It's fine to guess wrong. If you can't subtract, the guess was too big. Lower it by 1 and try again.' Encourage estimating with a rounded divisor first."
+        },
+        {
+          "mistake": "Making an arithmetic slip when multiplying by a two-digit number, e.g. 3 × 28 = 74.",
+          "response": "Suggest writing the multiplication in a small side box (3 × 20 = 60, 3 × 8 = 24, total 84). Also have students check by multiplying the final answer back."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we look at 95 and not 9?",
+          "answer": "28 does not fit into 9 at all, so we need more digits. We take the smallest number of digits that is at least as big as the divisor. That is 95."
+        },
+        {
+          "question": "How do I guess the digit?",
+          "answer": "Round the divisor to a nearby easy number, like 28 to 30, and ask how many of those fit. Then test the guess with the real divisor and adjust by 1 if needed."
+        },
+        {
+          "question": "Is it okay to get the digit wrong the first time?",
+          "answer": "Yes. Estimating is part of the method. If the subtraction goes negative, go one lower. If the leftover is still as big as the divisor, go one higher."
+        }
+      ],
+      "check_question": {
+        "question": "Work out 725 ÷ 25.",
+        "solution": "72 ÷ 25 = 2 (2 × 25 = 50), 72 − 50 = 22. Bring down 5 to make 225. 225 ÷ 25 = 9 (9 × 25 = 225), remainder 0. The answer is 29. Check: 25 × 29 = 725.",
+        "expression": "725/25",
+        "answer": "29"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Work out 624 ÷ 12.",
+      "solution": "62 ÷ 12 = 5 (5 × 12 = 60), 62 − 60 = 2. Bring down 4 to make 24. 24 ÷ 12 = 2, remainder 0. The answer is 52. Check: 12 × 52 = 624.",
+      "expression": "624/12",
+      "answer": "52"
+    },
+    {
+      "problem": "Work out 905 ÷ 7 and give the remainder.",
+      "solution": "9 ÷ 7 = 1, 1 × 7 = 7, 9 − 7 = 2. Bring down 0 to make 20. 20 ÷ 7 = 2, 2 × 7 = 14, 20 − 14 = 6. Bring down 5 to make 65. 65 ÷ 7 = 9, 9 × 7 = 63, 65 − 63 = 2. So 905 ÷ 7 = 129 remainder 2. Check: 7 × 129 + 2 = 903 + 2 = 905.",
+      "expression": "905 - 7*129",
+      "answer": "2"
+    },
+    {
+      "problem": "Work out 1376 ÷ 32.",
+      "solution": "137 ÷ 32 = 4 (4 × 32 = 128), 137 − 128 = 9. Bring down 6 to make 96. 96 ÷ 32 = 3 (3 × 32 = 96), remainder 0. The answer is 43. Check: 32 × 43 = 1280 + 96 = 1376.",
+      "expression": "1376/32",
+      "answer": "43"
+    }
+  ],
+  "meta": {
+    "concept": "long-division",
+    "title": "Long division",
+    "model": "sonnet",
+    "cost_usd": 0.08448,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Long+division"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Long+division"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Long+division"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Long+division"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Long+division+math"
+    }
+  ]
+}

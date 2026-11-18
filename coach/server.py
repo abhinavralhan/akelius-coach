@@ -1,4 +1,5 @@
 """Web layer only: routes map to coach.sheet and coach.qa. Run: uvicorn coach.server:app"""
+import logging
 from pathlib import Path
 
 import yaml
@@ -10,6 +11,7 @@ from coach import qa, sheet
 
 ROOT = Path(__file__).resolve().parent.parent
 app = FastAPI(title="Akelius math teacher coach")
+log = logging.getLogger("uvicorn.error")  # internal details go to the server log, never to teachers
 
 
 class Ask(BaseModel):
@@ -50,7 +52,8 @@ def get_sheet(concept: str):
     except LookupError:
         raise HTTPException(404, "These notes are being prepared and checked. They will be available soon.")
     except (RuntimeError, ValueError) as e:  # model failed or the sheet failed a check: show nothing unverified
-        raise HTTPException(502, f"We could not prepare a sheet we can vouch for. Please try again later. ({e})")
+        log.error("sheet %s failed: %s", concept, e)
+        raise HTTPException(502, "We could not prepare notes we can vouch for. Please try again later.")
 
 
 @app.post("/api/ask")
@@ -62,7 +65,8 @@ def ask(body: Ask):
     except ValueError as e:
         raise HTTPException(400, str(e))
     except RuntimeError as e:
-        raise HTTPException(502, f"No reliable answer this time; nothing was saved. ({e})")
+        log.error("ask on %s failed: %s", body.concept, e)
+        raise HTTPException(502, "No reliable answer this time; nothing was saved. Please try again later.")
 
 
 @app.post("/api/feedback")

@@ -1,0 +1,145 @@
+{
+  "idea": "Solving a linear equation means finding the value of the unknown that makes both sides equal. You do it by doing the same thing to both sides, step by step, until the unknown is alone: x = number.",
+  "why": "An equation says two expressions have the same value, like a balanced scale. If you add, subtract, multiply or divide both sides by the same number (not dividing by zero), the balance stays true, so the new equation has exactly the same solution as the old one. Each step is also reversible: you can undo it by doing the opposite. So we use opposite operations (undo + with -, undo × with ÷) to peel away everything around x. The last line x = 4 is just the original equation in its simplest form, and substituting 4 back into the original checks it.",
+  "explanations": [
+    {
+      "kind": "picture",
+      "text": "Draw a balance scale. On the left pan: 3 bags (each holding x) and 2 loose counters. On the right pan: 14 counters. Take 2 counters off each side and the scale stays level: 3 bags = 12 counters. Now split each pan into 3 equal groups: 1 bag = 4 counters. So x = 4."
+    },
+    {
+      "kind": "story",
+      "text": "A taxi charges a fixed 2 dollars to start, plus 3 dollars per kilometre. The ride cost 14 dollars. How far did it go? Take off the starting fee: 12 dollars is left, all from the per-kilometre part. 12 divided by 3 is 4 km. In symbols: 3x + 2 = 14, so 3x = 12, so x = 4."
+    },
+    {
+      "kind": "procedure",
+      "text": "1) Expand brackets and collect like terms on each side if needed. 2) If x appears on both sides, add or subtract to gather the x terms on one side. 3) Undo adding or subtracting by doing the opposite to both sides. 4) Undo multiplying by dividing both sides by the coefficient of x. 5) Check by substituting your answer into the original equation."
+    }
+  ],
+  "student_questions": [
+    {
+      "question": "Why can I do the same thing to both sides?",
+      "answer": "Because the equation says the two sides are equal. If two things are equal and you do the same thing to both, they are still equal, like adding the same weight to both pans of a level scale."
+    },
+    {
+      "question": "Why do we use the opposite operation?",
+      "answer": "We want x alone. If x has 2 added to it, subtracting 2 cancels that and leaves x. Adding 2 and subtracting 2 undo each other, so the opposite is the step that removes it."
+    },
+    {
+      "question": "Why does the sign change when a number moves across the equals sign?",
+      "answer": "Nothing really moves. You are subtracting the same number from both sides. For x + 5 = 9, subtract 5 from both sides: the 5 vanishes on the left and shows up as minus 5 on the right. It looks like it jumped and flipped, but it was subtracted from both sides."
+    },
+    {
+      "question": "How do I know my answer is right?",
+      "answer": "Put it back into the original equation. If both sides give the same number, it works. For 3x + 2 = 14 with x = 4: 3 times 4 plus 2 is 14, and 14 equals 14."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Doing an operation to only one side, e.g. subtracting 2 from the left but not the right.",
+      "response": "Go back to the balance picture and ask, 'What happened to the other pan?' Have the student write the step on both sides, in a column, each time."
+    },
+    {
+      "mistake": "Undoing in a messy order, or dividing only one term: 3x + 2 = 14 becomes x + 2 = 14/3 or x + 2 = 14 ÷ 3 wrongly.",
+      "response": "Remind them that dividing by 3 must apply to every term on both sides. Easier: subtract 2 first to get 3x = 12, then divide. Let them check their answer by substituting, so they find the error themselves."
+    },
+    {
+      "mistake": "Sign errors with negatives, e.g. from x - 5 = 2 writing x = -3, or from -2x = 8 writing x = 4.",
+      "response": "Ask them to substitute. For x = -3: -3 - 5 = -8, not 2. Then show that x - 5 = 2 needs adding 5 to both sides, and that -2x = 8 needs dividing by -2, giving x = -4."
+    }
+  ],
+  "worked_examples": [
+    {
+      "problem": "Solve 3x + 2 = 14.",
+      "steps": "Subtract 2 from both sides: 3x = 12. Divide both sides by 3: x = 4. Check: 3(4) + 2 = 14.",
+      "expression": "(14 - 2)/3",
+      "answer": "4"
+    },
+    {
+      "problem": "Solve 5x - 7 = 2x + 8.",
+      "steps": "Subtract 2x from both sides: 3x - 7 = 8. Add 7 to both sides: 3x = 15. Divide by 3: x = 5. Check: 5(5) - 7 = 18 and 2(5) + 8 = 18.",
+      "expression": "(8 + 7)/(5 - 2)",
+      "answer": "5"
+    },
+    {
+      "problem": "Solve 2(x + 3) = 5x - 3.",
+      "steps": "Expand: 2x + 6 = 5x - 3. Subtract 2x from both sides: 6 = 3x - 3. Add 3 to both sides: 9 = 3x. Divide by 3: x = 3. Check: 2(6) = 12 and 5(3) - 3 = 12.",
+      "expression": "(6 + 3)/(5 - 2)",
+      "answer": "3"
+    }
+  ],
+  "try_it": [
+    {
+      "problem": "Solve 4x + 5 = 29.",
+      "solution": "Subtract 5: 4x = 24. Divide by 4: x = 6.",
+      "expression": "(29 - 5)/4",
+      "answer": "6"
+    },
+    {
+      "problem": "Solve 7x - 3 = 3x + 9.",
+      "solution": "Subtract 3x: 4x - 3 = 9. Add 3: 4x = 12. Divide by 4: x = 3.",
+      "expression": "(9 + 3)/(7 - 3)",
+      "answer": "3"
+    },
+    {
+      "problem": "Solve 3(x - 2) = 2x + 1.",
+      "solution": "Expand: 3x - 6 = 2x + 1. Subtract 2x: x - 6 = 1. Add 6: x = 7. Check: 3(5) = 15 and 2(7) + 1 = 15.",
+      "expression": "1 + 6",
+      "answer": "7"
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up with the balance picture: 3 bags and 2 counters equal 14 counters. Students say what to remove from each side."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach the idea: do the same to both sides, use opposites. Work through 3x + 2 = 14 on the board, including the check."
+    },
+    {
+      "minutes": 8,
+      "activity": "Worked example 2 (x on both sides), with students suggesting each step. Discuss why we subtract 2x from both sides."
+    },
+    {
+      "minutes": 5,
+      "activity": "Worked example 3 with brackets. Expand first, then continue as before."
+    },
+    {
+      "minutes": 10,
+      "activity": "Students work the three Try it problems in pairs, writing each step on both sides and checking by substitution."
+    },
+    {
+      "minutes": 4,
+      "activity": "Go over answers and discuss the common mistakes, especially signs and one-sided steps."
+    }
+  ],
+  "meta": {
+    "concept": "linear-equations",
+    "title": "Solving linear equations",
+    "model": "sonnet",
+    "cost_usd": 0.02927,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Solving+linear+equations"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Solving+linear+equations"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Solving+linear+equations"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Solving+linear+equations"
+    }
+  ]
+}

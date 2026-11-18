@@ -71,3 +71,9 @@ Each step ends with a commit and a step-log entry with **start and end times** (
 - **Achieved:** tested against a throwaway DB. The first question cost $0.00085 with Haiku (the model predicted $0.00081). A repeated question was served from the cache at $0. Bad inputs are rejected. Feedback is saved. Promotion works. The JS passes `node --check`.
 - **Not yet verified:** how the drawings look in a real browser.
 - **Next:** Step 6, evals.
+
+### Step 6: eval — 17:01–17:05
+- **Did:** generated 3 more sheets on demand (fractions as numbers, linear equations, quadratics; all passed checks, $0.029–0.049 each), so there are now 6 sheets. Wrote `evals/cases.yaml` (10 questions, grades 3–9, with traps: a false premise, a notation trap, an off-topic question) and `evals/run.py` (real ask pipeline with Haiku → Sonnet judge with a JSON rubric → `evals/results.md`).
+- **Achieved:** correct 10/10, explains why 9/10 (the off-topic case; a rubric limit), plain 10/10, respectful 10/10, honest scope 10/10. Run cost: $0.16.
+- **Learned:** run 1 scored honest scope 8/10. The judge didn't see the sheet, so it flagged real references to the sheet as invented. Fixed the eval (the judge now sees the same context). Documented in the results file.
+- **Next:** Step 7, finish the README, then zip and push.

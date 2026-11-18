@@ -1,0 +1,12 @@
+# Teacher questions across grades 3-9, scored by a rubric. "expect" is what a correct answer must get right.
+# Includes traps: a false premise and an off-topic question, where the honest answer is to correct or decline.
+- {concept: fractions-as-numbers, question: "Is 1/3 bigger than 1/4? My students say 4 is bigger so 1/4 is bigger.", expect: "1/3 > 1/4 because thirds are larger pieces than quarters (the whole is split into fewer parts)"}
+- {concept: fractions-as-numbers, question: "How do I explain that a fraction is a number on the number line?", expect: "1/b is one part of the interval 0 to 1 split into b equal parts; a/b is a such parts from 0"}
+- {concept: dividing-fractions, question: "Why do we flip the second fraction and not the first?", expect: "dividing by a number = multiplying by its reciprocal; the reciprocal of the divisor undoes it; flipping the first changes the problem"}
+- {concept: dividing-fractions, question: "My student says 1/2 ÷ 1/4 = 1/8. Is that right?", expect: "No. 1/2 ÷ 1/4 = 2 (two quarters fit in a half); 1/8 is 1/2 × 1/4"}
+- {concept: multiplying-negative-numbers, question: "Why is a negative times a negative positive?", expect: "a valid reason (pattern, distributive law or a context); result is positive"}
+- {concept: multiplying-negative-numbers, question: "Is -3 squared equal to 9 or -9?", expect: "(-3)^2 = 9 but -3^2 = -9 (exponent before the minus sign); explains the notation difference"}
+- {concept: linear-equations, question: "How do I solve 3x + 5 = 20 and explain each step?", expect: "x = 5; subtract 5 from both sides then divide by 3, keeping the equation balanced"}
+- {concept: pythagorean-theorem, question: "Can I use a² + b² = c² for any triangle?", expect: "No, only right triangles; c is the side opposite the right angle"}
+- {concept: quadratic-equations, question: "What are the solutions of x² - 5x + 6 = 0?", expect: "x = 2 and x = 3 (factor (x-2)(x-3))"}
+- {concept: pythagorean-theorem, question: "What is the capital of France?", expect: "politely says this is outside the topic and does not pretend it is math help (mentioning Paris is fine)"}

@@ -1,0 +1,141 @@
+{
+  "idea": "Sometimes a number does not split into equal groups with nothing left over. Division with remainders tells us how many full equal groups we can make and how many are left over. We write a = b × q + r, where r is the remainder and r is less than b (and at least 0). For example, 17 ÷ 5 = 3 remainder 2, because 5 × 3 + 2 = 17.",
+  "why": "When we divide a by b, we take away as many full groups of b as we can. The leftovers are the remainder. The remainder must be smaller than b, because if r were b or more, we could make one more full group, and q would not be as large as it could be. So the rule a = b × q + r with 0 ≤ r < b gives exactly one answer for q and r. This also explains the check: multiply the groups by the group size, then add the leftovers, and you must get the starting number back. A remainder of 0 is the special case where everything shares equally, which is ordinary division.",
+  "explanations": [
+    {
+      "kind": "picture",
+      "text": "Draw 17 dots. Circle groups of 5: you can circle 3 groups, using 15 dots. Two dots sit outside any circle. Say: 3 full groups, 2 left over. Write 17 ÷ 5 = 3 R 2. Then show that if 5 or more dots were left outside, you could circle another group, so the leftover must be 0, 1, 2, 3 or 4."
+    },
+    {
+      "kind": "story",
+      "text": "There are 23 students and each minibus seats 6. Fill the buses one by one: 6, 12, 18, then a 4th bus would hold 24, which is too many. So 3 buses are full and 5 students are left over. Those 5 still need a ride, so the answer depends on the question: 3 full buses with 5 left over, or 4 buses are needed in total. Talk about how the meaning of the remainder changes with the question."
+    },
+    {
+      "kind": "procedure",
+      "text": "To divide a by b: 1) Find the biggest multiple of b that is not more than a (count up in b's times table). 2) The number you multiplied b by is the quotient q. 3) Subtract that multiple from a to get the remainder r. 4) Check that r is less than b. 5) Check that b × q + r = a. Example: 38 ÷ 7. 7 × 5 = 35, and 7 × 6 = 42 is too big. So q = 5, r = 38 − 35 = 3. Check: 7 × 5 + 3 = 38."
+    }
+  ],
+  "student_questions": [
+    {
+      "question": "But why can't the remainder be bigger than the number we divide by?",
+      "answer": "If the leftover is as big as the group size, you can make another full group out of it. So you haven't made as many groups as you can. Try 17 ÷ 5 with 3 groups and 2 left, versus 2 groups and 7 left. The 7 left over could still make one more group of 5."
+    },
+    {
+      "question": "Why do we get a remainder at all? Can't we just share the rest out?",
+      "answer": "Sometimes we can, and that gives fractions or decimals, like 17 ÷ 5 = 3.4. But with things that can't be split, such as people, buses or pencils, we use a remainder. Both ways describe the same leftover."
+    },
+    {
+      "question": "What does it mean when the remainder is 0?",
+      "answer": "It means the number divides evenly. Everything fits into full groups with nothing left. For example 20 ÷ 5 = 4 R 0, so we just say 4."
+    },
+    {
+      "question": "Why do we multiply and add to check?",
+      "answer": "Because division undoes that. The full groups give b × q objects, and the leftovers are added on. Together they must be the number we started with."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Writing a remainder that is too big, such as 25 ÷ 4 = 5 R 5.",
+      "response": "Ask: can you make another group of 4 from the 5 left? Let them check, see that they can, and fix it to 6 R 1. Remind them the remainder must be less than the divisor."
+    },
+    {
+      "mistake": "Rounding up to the next multiple, so 38 ÷ 7 gives q = 6 because 7 × 6 = 42 is closer to the number than... or subtracting a multiple that is too big and getting a negative remainder.",
+      "response": "Have them list multiples of 7: 7, 14, 21, 28, 35, 42. Ask which is the last one that does not go past 38. Use the rule that the multiple must be at most the starting number."
+    },
+    {
+      "mistake": "Mixing up the quotient and remainder, or forgetting to say what the remainder means, for example writing 3 R 2 when the bus question needs 4 buses.",
+      "response": "Ask them to re-read the question and say what the leftover is in words. Practice with a context: 'the 5 leftover students still need a bus.' Always label the answer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "problem": "Work out 17 ÷ 5 with a remainder.",
+      "steps": "Count up in 5s: 5, 10, 15, 20. 15 is the largest not above 17, so q = 3. Remainder is 17 − 15 = 2. Since 2 < 5, this is fine. Check: 5 × 3 + 2 = 17.",
+      "expression": "3",
+      "answer": "3"
+    },
+    {
+      "problem": "Work out 38 ÷ 7. Give the quotient (the number of full groups of 7).",
+      "steps": "7 × 5 = 35 and 7 × 6 = 42 is too big, so q = 5. Remainder is 38 − 35 = 3. Check: 7 × 5 + 3 = 38.",
+      "expression": "5",
+      "answer": "5"
+    },
+    {
+      "problem": "There are 23 students and each minibus seats 6. How many buses are needed in total so that everyone has a seat?",
+      "steps": "23 ÷ 6 = 3 remainder 5, since 6 × 3 = 18 and 23 − 18 = 5. Three buses are full, and 5 students are left, who need one more bus. So 3 + 1 = 4 buses.",
+      "expression": "3 + 1",
+      "answer": "4"
+    }
+  ],
+  "try_it": [
+    {
+      "problem": "Find the remainder when 29 is divided by 4.",
+      "solution": "4 × 7 = 28 and 4 × 8 = 32 is too big. So the quotient is 7 and the remainder is 29 − 28 = 1. Check: 4 × 7 + 1 = 29.",
+      "expression": "29 - 4*7",
+      "answer": "1"
+    },
+    {
+      "problem": "Find the quotient when 53 is divided by 8 (how many full groups of 8).",
+      "solution": "8 × 6 = 48 and 8 × 7 = 56 is too big. So the quotient is 6 (remainder 5). Check: 8 × 6 + 5 = 53.",
+      "expression": "6",
+      "answer": "6"
+    },
+    {
+      "problem": "Pencils come in boxes of 12. You need 50 pencils. How many boxes must you buy?",
+      "solution": "50 ÷ 12 = 4 remainder 2, since 12 × 4 = 48. Four boxes give only 48 pencils, which is not enough, so you need one more box: 4 + 1 = 5 boxes.",
+      "expression": "4 + 1",
+      "answer": "5"
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: share 13 counters between 4 students. Ask what is left over and whether it can be shared. Introduce the word remainder."
+    },
+    {
+      "minutes": 10,
+      "activity": "Picture and story: draw 17 dots in groups of 5, then the minibus problem. Write 17 ÷ 5 = 3 R 2 and discuss that the remainder must be smaller than the group size."
+    },
+    {
+      "minutes": 10,
+      "activity": "Procedure: model 38 ÷ 7 using multiples and the check b × q + r = a. Then students do 29 ÷ 4 with a partner."
+    },
+    {
+      "minutes": 10,
+      "activity": "Practice: students solve a mix of problems, including 53 ÷ 8 and the pencil box problem, and write what the remainder means."
+    },
+    {
+      "minutes": 5,
+      "activity": "Wrap-up: discuss mistakes, such as a remainder that is too big, and ask students to explain in their own words why the remainder is less than the divisor."
+    }
+  ],
+  "meta": {
+    "concept": "division-with-remainders",
+    "title": "Division with remainders",
+    "model": "sonnet",
+    "cost_usd": 0.03184,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Division+with+remainders"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Division+with+remainders"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Division+with+remainders"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Division+with+remainders"
+    }
+  ]
+}

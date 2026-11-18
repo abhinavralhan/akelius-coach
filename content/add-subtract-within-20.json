@@ -1,0 +1,145 @@
+{
+  "idea": "Adding and subtracting within 20 means working with numbers up to 20 by using what you already know: number partners of 10, counting on and back, and \"making a ten\" to bridge past 10. Subtraction is the undoing of addition, so a fact like 8 + 5 = 13 also tells you 13 − 5 = 8 and 13 − 8 = 5.",
+  "why": "Our number system is built on groups of ten. When we add 8 + 5, the sum crosses 10, so it helps to split the 5 into 2 + 3: 8 + 2 makes a full ten, and 3 more makes 13. Nothing changes in the total, because 2 + 3 is still 5, so we have only regrouped the same amount. For subtraction, 13 − 5 can go back through ten: take away 3 to reach 10, then 2 more to reach 8. This works because taking away 5 is the same as taking away 3 and then 2. Subtraction also asks \"what do I add to 5 to get 13?\", so the answer is the missing partner, and that is why addition facts help you subtract.",
+  "explanations": [
+    {
+      "kind": "picture",
+      "text": "Draw two ten-frames (2 rows of 5 boxes each). Put 8 counters in the first frame, leaving 2 empty boxes. Put 5 counters in the second. Move 2 counters from the second frame to fill the first. Now the first frame is full (10) and the second has 3 left: 10 + 3 = 13. For 13 − 5, show 13 counters (a full frame and 3), remove the 3 first, then 2 from the full frame, leaving 8."
+    },
+    {
+      "kind": "story",
+      "text": "Tell this story: Maya has 9 stickers and her friend gives her 4 more. She wants to fill a sticker card that holds 10. She puts 1 sticker on to fill the card, and she still has 3 left over to start a new card. So she has 10 and 3 more, which is 13. Then for subtraction: she has 13 stickers and gives 5 away. She takes the 3 loose ones first, then 2 from the full card, so 8 are left."
+    },
+    {
+      "kind": "procedure",
+      "text": "Make a ten to add, for example 7 + 6. Step 1: Start with the bigger number, 7. Step 2: Ask how many more make 10 (3). Step 3: Split the other number: 6 = 3 + 3. Step 4: 7 + 3 = 10. Step 5: 10 + 3 = 13. To subtract through ten, for example 15 − 8: Step 1: Subtract down to 10 (15 − 5 = 10). Step 2: Work out how much is left to take away (8 − 5 = 3). Step 3: 10 − 3 = 7. Check by adding: 7 + 8 = 15."
+    }
+  ],
+  "student_questions": [
+    {
+      "question": "Why do we break a number apart? Isn't that more work?",
+      "answer": "It feels longer at first, but 10 is an easy number to work with. When you split 5 into 2 and 3, you turn a hard sum into two easy ones. The total stays the same because 2 and 3 together are still 5. With practice you will do it in your head."
+    },
+    {
+      "question": "Why does 13 − 5 give the same answer as 5 + ? = 13?",
+      "answer": "Because subtraction asks how much is left, and that is also how much you must add back to get to where you started. If 8 are left after taking away 5, then 8 and 5 make 13. Addition and subtraction are two ways of looking at the same three numbers."
+    },
+    {
+      "question": "Does it matter which number I start with when adding?",
+      "answer": "No. 3 + 9 and 9 + 3 are both 12. But starting with the bigger number is quicker for counting on, because you have fewer steps to count. Subtraction is different: 9 − 3 and 3 − 9 are not the same."
+    },
+    {
+      "question": "Why can't I just count on my fingers?",
+      "answer": "You can, and that is a fine way to start. But counting gets slow and mistakes creep in as numbers grow. Number partners of 10 are quicker and you will use them for much bigger numbers later."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Counting the starting number as the first step when counting on, so 8 + 3 becomes 8, 9, 10 and the answer is given as 10.",
+      "response": "Show it with counters or a number line. Say the start number, then put a finger up for each jump: 8, then 9 (1), 10 (2), 11 (3). The answer is where you land after 3 jumps, 11. Let the student check with a different method."
+    },
+    {
+      "mistake": "Making the wrong partner of 10, such as splitting 8 + 5 by saying 8 needs 3 to make 10.",
+      "response": "Go back to a ten-frame. Put 8 counters in and ask how many empty boxes there are. Count them together: 2. Practise number partners of 10 as a quick warm-up so they become automatic."
+    },
+    {
+      "mistake": "Subtracting the smaller number from the bigger one regardless of order, or thinking 5 − 13 is 8.",
+      "response": "Use a story: you cannot give away 13 stickers if you only have 5. Say that in subtraction we start with the whole and take a part away. Link to the fact family so students see which number is the whole (the biggest one)."
+    }
+  ],
+  "worked_examples": [
+    {
+      "problem": "Find 8 + 5 by making a ten.",
+      "steps": "8 needs 2 more to make 10. Split 5 into 2 and 3. 8 + 2 = 10. 10 + 3 = 13.",
+      "expression": "8 + 5",
+      "answer": "13"
+    },
+    {
+      "problem": "Find 15 − 8 by going back through ten.",
+      "steps": "15 − 5 = 10 to reach ten. 8 − 5 = 3 is still to take away. 10 − 3 = 7. Check: 7 + 8 = 15.",
+      "expression": "15 - 8",
+      "answer": "7"
+    },
+    {
+      "problem": "Find 17 − 9 using the related addition fact.",
+      "steps": "Ask: 9 plus what makes 17? 9 + 1 = 10, then 10 + 7 = 17, so 1 + 7 = 8 is needed. So 17 − 9 = 8. Check: 8 + 9 = 17.",
+      "expression": "17 - 9",
+      "answer": "8"
+    }
+  ],
+  "try_it": [
+    {
+      "problem": "Find 9 + 6 by making a ten.",
+      "solution": "9 needs 1 more to make 10. Split 6 into 1 and 5. 9 + 1 = 10, then 10 + 5 = 15.",
+      "expression": "9 + 6",
+      "answer": "15"
+    },
+    {
+      "problem": "Find 14 − 6 by going back through ten.",
+      "solution": "14 − 4 = 10. 6 − 4 = 2 left to take away. 10 − 2 = 8. Check: 8 + 6 = 14.",
+      "expression": "14 - 6",
+      "answer": "8"
+    },
+    {
+      "problem": "Maya has 12 apples and eats 7. How many are left?",
+      "solution": "12 − 2 = 10. 7 − 2 = 5 left to take away. 10 − 5 = 5. Check: 5 + 7 = 12.",
+      "expression": "12 - 7",
+      "answer": "5"
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: partners of 10 with fingers or ten-frames. Call out a number, students show the partner."
+    },
+    {
+      "minutes": 10,
+      "activity": "Introduce making a ten with ten-frames and counters: model 8 + 5 and 9 + 4, then talk about what was moved."
+    },
+    {
+      "minutes": 10,
+      "activity": "Pairs practise addition within 20 with counters and ten-frames. Teacher circulates and asks them to explain each step."
+    },
+    {
+      "minutes": 8,
+      "activity": "Subtraction through ten: model 13 − 5 and 15 − 8, then check each by adding. Introduce fact families."
+    },
+    {
+      "minutes": 5,
+      "activity": "Short independent practice: a mix of 4 addition and subtraction problems."
+    },
+    {
+      "minutes": 2,
+      "activity": "Wrap-up: students tell a partner one strategy that helped them today."
+    }
+  ],
+  "meta": {
+    "concept": "add-subtract-within-20",
+    "title": "Adding and subtracting within 20",
+    "model": "sonnet",
+    "cost_usd": 0.03161,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Adding+and+subtracting+within+20"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Adding+and+subtracting+within+20"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Adding+and+subtracting+within+20"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Adding+and+subtracting+within+20"
+    }
+  ]
+}

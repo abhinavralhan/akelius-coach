@@ -1,0 +1,141 @@
+{
+  "idea": "A percent is a number of parts out of 100. So 25% means 25 out of every 100, which is 25/100 or 0.25. To find a percent of an amount, multiply the amount by the percent written as a fraction or decimal.",
+  "why": "The word percent means \"per hundred\". Cutting a whole into 100 equal parts makes every percent a count of those small parts. 25% of 80 means: split 80 into 100 equal parts (each is 0.8), then take 25 of them, which gives 25 x 0.8 = 20. That is the same as 80 x 25/100. The same idea explains changes. Taking 15% off means keeping 85% of the price, so you multiply by 0.85. Adding 20% means you now have 120% of the original, so you multiply by 1.2. For percent change, you compare the change to the starting amount, because the percent says how big the change is relative to where you began. That is why percent change is (new - old) / old.",
+  "explanations": [
+    {
+      "kind": "picture",
+      "text": "Draw a 10 by 10 grid of 100 small squares and call it the whole. Shade 25 squares: that is 25%. Now say the whole grid is worth 80. Each small square is worth 0.8, so the 25 shaded squares are worth 20. You can also draw a bar split into 10 equal pieces. Each piece is 10%. Label the bar 0% to 100% above and 0 to 80 below, and students can read off 10% = 8, 50% = 40, and so on."
+    },
+    {
+      "kind": "story",
+      "text": "A shop has a jacket that costs 60 dollars and puts up a sign: 15% off. Ask students what they actually pay. The shop takes 15 of every 100 parts of the price away, so you keep 85 of every 100 parts. Ten percent of 60 is 6, and 5% is 3, so the discount is 9 dollars and you pay 51. Then tell them there is a quicker way: pay 85% of 60, which is 0.85 x 60 = 51. Both routes land on the same price."
+    },
+    {
+      "kind": "procedure",
+      "text": "To find a percent of an amount: 1) Write the percent as a fraction over 100 (or a decimal). 2) Multiply by the amount. For a percent increase or decrease: 1) Find the multiplier: 100% plus the increase, or 100% minus the decrease, written as a decimal. 2) Multiply the original amount by it. To find what percent one number is of another: 1) Divide the part by the whole. 2) Multiply by 100 and add the % sign. For percent change: 1) Subtract old from new. 2) Divide by the old number. 3) Multiply by 100."
+    }
+  ],
+  "student_questions": [
+    {
+      "question": "But why is percent always out of 100? Why not out of 10 or 50?",
+      "answer": "It is just an agreement, like using the same units for centimetres. When everyone uses 100, we can compare easily. 50 out of 80 and 60 out of 100 are hard to compare, but if both are turned into a percent, we see 62.5% and 60% straight away."
+    },
+    {
+      "question": "Why can a percent be more than 100%?",
+      "answer": "100% means the whole amount you started with. If you have more than the whole, you have more than 100%. If a plant was 20 cm tall and is now 40 cm, it is 200% of its old height. It is just two wholes."
+    },
+    {
+      "question": "If a price goes up 10% and then goes down 10%, why isn't it back to the start?",
+      "answer": "Because the two percentages are of different amounts. Start with 100. Up 10% gives 110. Down 10% takes 10% of 110, which is 11, so you get 99. The second percent is taken from a bigger number, so it removes more than the first added."
+    },
+    {
+      "question": "Why do we divide by the old number when we find percent change?",
+      "answer": "The percent says how big the change is compared to where you started. A change of 10 is big if you started with 20 but small if you started with 1000. So we compare the change to the starting amount."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Students take 15% off 60 and then write 15 as the answer, or they subtract 15 from 60 as though it were 15 dollars.",
+      "response": "Ask them what 15% means: 15 out of every 100. Have them check with an easy case, such as 50% of 60 being 30. Then show that 15% of 60 is 9, not 15, and that the final price is 60 - 9 = 51."
+    },
+    {
+      "mistake": "Students add or subtract percents from different wholes, for example thinking up 10% then down 10% returns to the start.",
+      "response": "Have them try it with a real number like 100. Up 10% is 110, and 10% of 110 is 11, so the result is 99. Ask: what was each percent a percent of? Make 'of what?' a habit."
+    },
+    {
+      "mistake": "When finding percent change, students divide by the new number instead of the old one, or they find what percent the old is of the new.",
+      "response": "Use a doubling case. Going from 40 to 80 should be a 100% increase. Dividing by the old number gives 40/40 = 100%. Dividing by the new gives 40/80 = 50%, which is wrong. Remind them: the change is compared to the start."
+    }
+  ],
+  "worked_examples": [
+    {
+      "problem": "Find 25% of 80.",
+      "steps": "Write 25% as 25/100. Multiply by 80: 25/100 x 80 = 20. Check: 25% is one quarter, and one quarter of 80 is 20.",
+      "expression": "25/100*80",
+      "answer": "20"
+    },
+    {
+      "problem": "A jacket costs 60 dollars. It is on sale for 15% off. What is the sale price?",
+      "steps": "Taking 15% off means paying 100% - 15% = 85% of the price. Write 85% as 0.85, or 85/100. Multiply: 0.85 x 60 = 51. The sale price is 51 dollars. Check: 15% of 60 is 9, and 60 - 9 = 51.",
+      "expression": "60*(1-15/100)",
+      "answer": "51"
+    },
+    {
+      "problem": "A number goes from 40 to 50. What is the percent increase?",
+      "steps": "The change is 50 - 40 = 10. Compare it to the old number: 10/40 = 1/4. As a percent, 1/4 = 25/100 = 25%. The increase is 25%.",
+      "expression": "(50-40)/40*100",
+      "answer": "25"
+    }
+  ],
+  "try_it": [
+    {
+      "problem": "Find 30% of 150.",
+      "solution": "30% is 30/100. Multiply by 150: 30/100 x 150 = 45.",
+      "expression": "30/100*150",
+      "answer": "45"
+    },
+    {
+      "problem": "A book costs 35 dollars. The price goes up by 20%. What is the new price?",
+      "solution": "The new price is 120% of the old price, so multiply by 1.2 (or 120/100). 35 x 1.2 = 42 dollars.",
+      "expression": "35*(1+20/100)",
+      "answer": "42"
+    },
+    {
+      "problem": "A student got 18 questions right out of 24. What percent is that?",
+      "solution": "Divide the part by the whole: 18/24 = 3/4. Multiply by 100: 75%.",
+      "expression": "18/24*100",
+      "answer": "75"
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: show a 10 by 10 grid with some squares shaded. Ask students to say what fraction is shaded and then to write it out of 100. Introduce the word percent as per hundred."
+    },
+    {
+      "minutes": 10,
+      "activity": "Teach percent of an amount using the grid and the bar picture. Work example 1 (25% of 80) together. Show the easy benchmarks: 50%, 25%, 10%, 1%."
+    },
+    {
+      "minutes": 10,
+      "activity": "Discounts and increases with the jacket story. Work example 2 and show the multiplier idea (0.85 and 1.2). Pairs then try try-it problems 1 and 2."
+    },
+    {
+      "minutes": 10,
+      "activity": "Percent change and what percent one number is of another. Work example 3, then try-it problem 3. Include the up 10% then down 10% puzzle and let students discover the answer 99."
+    },
+    {
+      "minutes": 5,
+      "activity": "Wrap-up: students write one sentence for 'a percent is a percent of what?'. Go over the three common mistakes and answer questions."
+    }
+  ],
+  "meta": {
+    "concept": "percentages",
+    "title": "Percentages",
+    "model": "sonnet",
+    "cost_usd": 0.03449,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Percentages"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Percentages"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Percentages"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Percentages"
+    }
+  ]
+}

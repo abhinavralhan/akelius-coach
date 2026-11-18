@@ -1,0 +1,141 @@
+{
+  "idea": "Slope tells you how steeply a line rises or falls: slope = (change in y) / (change in x). A linear function y = mx + b has a constant slope m (the change in y for each 1 step right) and a starting value b (where it crosses the y-axis).",
+  "why": "On a straight line, the steepness is the same everywhere. Take any two points and make a right triangle with a horizontal \"run\" and a vertical \"rise\". Triangles from different spots on the line are similar (same shape, different size), so rise/run is the same ratio each time. That is why we can pick ANY two points and get the same slope. In y = mx + b, going 1 step right always adds m to y, so after x steps you have added m x times, starting from b. That gives y = b + m·x. A negative slope means y goes down as x goes right. A slope of 0 means no change in y (a flat line).",
+  "explanations": [
+    {
+      "kind": "picture",
+      "text": "Draw a line on grid paper going up to the right through (0,1), (1,3), (2,5). Draw staircase steps between the points: each step goes 1 right and 2 up. Label the 'run' (right) and 'rise' (up). Say: the slope is 2 because every stair is 2 up for 1 across. Then draw a line going down to the right and show the stairs going down: rise is negative, so slope is negative."
+    },
+    {
+      "kind": "story",
+      "text": "A hill road: for every 10 metres you walk forward, the road climbs 1 metre. The slope is 1/10, a gentle hill. Another road climbs 5 metres for every 10 metres forward: slope 1/2, steeper. A mobile phone plan costs 5 dollars to start plus 2 dollars per gigabyte: cost = 2x + 5. The 2 is the slope (cost added per gigabyte) and the 5 is where you start (x = 0)."
+    },
+    {
+      "kind": "procedure",
+      "text": "To find the slope from two points (x1, y1) and (x2, y2): 1) Subtract the y-values: y2 - y1. 2) Subtract the x-values in the SAME order: x2 - x1. 3) Divide: m = (y2 - y1)/(x2 - x1). 4) Simplify. To write the equation: put m into y = mx + b, substitute one point to find b, then write y = mx + b."
+    }
+  ],
+  "student_questions": [
+    {
+      "question": "But why does it not matter which two points I pick?",
+      "answer": "Because the line is straight, it climbs at the same rate everywhere. Every little staircase on the line is the same shape, just bigger or smaller, so rise divided by run always gives the same number. Try it with two different pairs and see."
+    },
+    {
+      "question": "But why is a vertical line's slope 'undefined' and not zero?",
+      "answer": "On a vertical line the run is 0, because x never changes. The slope would be rise divided by 0, and we can't divide by 0. A flat horizontal line has rise 0, and 0 divided by a nonzero number is 0, so its slope is 0. Those two are different."
+    },
+    {
+      "question": "But why does it matter which point I call first?",
+      "answer": "It doesn't, as long as you use the same order on top and bottom. If you swap both, both signs flip and the negatives cancel: (5-1)/(2-0) is the same as (1-5)/(0-2). Mixing the order gives the wrong sign."
+    },
+    {
+      "question": "But why is b the place where the line crosses the y-axis?",
+      "answer": "The y-axis is where x = 0. Put x = 0 into y = mx + b and the mx part becomes 0, so y = b. So b is the starting value."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Putting run over rise (x change over y change).",
+      "response": "Ask: 'If a hill rises 1 and goes 10 across, is it steep?' Remind them the slope is about how much up for each step across: rise over run. A memory aid: you have to rise before you can run, or 'y over x'. Let them check with a quick sketch."
+    },
+    {
+      "mistake": "Subtracting in different orders, for example y2 - y1 on top but x1 - x2 on the bottom, giving the wrong sign.",
+      "response": "Have them label the points (x1, y1) and (x2, y2) and write both subtractions before calculating. Then check against the picture: the line goes up to the right, so the slope should be positive. If the sign disagrees with the sketch, something was flipped."
+    },
+    {
+      "mistake": "Reading the slope from a graph by counting the grid squares without checking the scale, or by reading b as the slope.",
+      "response": "Have them mark two clear points on grid crossings and draw the stairs, then write the rise and run as numbers. Remind them that b is where the line meets the y-axis and m is the steepness. Ask: 'Which number tells how fast it changes?'"
+    }
+  ],
+  "worked_examples": [
+    {
+      "problem": "Find the slope of the line through (1, 2) and (5, 10).",
+      "steps": "Rise: 10 - 2 = 8. Run: 5 - 1 = 4. Slope = 8/4 = 2.",
+      "expression": "(10-2)/(5-1)",
+      "answer": "2"
+    },
+    {
+      "problem": "Find the slope of the line through (-2, 5) and (4, -1).",
+      "steps": "Rise: -1 - 5 = -6. Run: 4 - (-2) = 6. Slope = -6/6 = -1. The line goes down to the right, so a negative slope makes sense.",
+      "expression": "(-1-5)/(4-(-2))",
+      "answer": "-1"
+    },
+    {
+      "problem": "A line has slope 3/2 and passes through (2, 4). Find b in y = mx + b.",
+      "steps": "Substitute: 4 = (3/2)(2) + b. So 4 = 3 + b, and b = 1. The equation is y = (3/2)x + 1.",
+      "expression": "4-Rational(3,2)*2",
+      "answer": "1"
+    }
+  ],
+  "try_it": [
+    {
+      "problem": "Find the slope of the line through (0, 3) and (4, 11).",
+      "solution": "Rise: 11 - 3 = 8. Run: 4 - 0 = 4. Slope = 8/4 = 2.",
+      "expression": "(11-3)/(4-0)",
+      "answer": "2"
+    },
+    {
+      "problem": "Find the slope of the line through (1, 7) and (4, 1).",
+      "solution": "Rise: 1 - 7 = -6. Run: 4 - 1 = 3. Slope = -6/3 = -2.",
+      "expression": "(1-7)/(4-1)",
+      "answer": "-2"
+    },
+    {
+      "problem": "For y = 2x + 5, find the value of y when x = 4.",
+      "solution": "Substitute x = 4: y = 2·4 + 5 = 8 + 5 = 13.",
+      "expression": "2*4+5",
+      "answer": "13"
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: show two hill pictures, one gentle and one steep. Ask which is steeper and how we could measure it with a number."
+    },
+    {
+      "minutes": 10,
+      "activity": "Introduce rise and run with a staircase drawn on a line on grid paper. Students count rise and run for two different pairs of points and see that the ratio is the same."
+    },
+    {
+      "minutes": 10,
+      "activity": "Teach the formula m = (y2 - y1)/(x2 - x1) with worked examples 1 and 2. Stress using the same order on top and bottom and checking the sign against the picture."
+    },
+    {
+      "minutes": 8,
+      "activity": "Introduce y = mx + b with the phone plan story. Do worked example 3 together: find b from a point and a slope."
+    },
+    {
+      "minutes": 7,
+      "activity": "Students work on the three Try it problems in pairs. Walk around and use the common mistakes to guide your questions."
+    }
+  ],
+  "meta": {
+    "concept": "slope",
+    "title": "Slope and linear functions",
+    "model": "sonnet",
+    "cost_usd": 0.03017,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Slope+and+linear+functions"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Slope+and+linear+functions"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Slope+and+linear+functions"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Slope+and+linear+functions"
+    }
+  ]
+}

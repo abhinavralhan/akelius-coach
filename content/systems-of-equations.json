@@ -1,0 +1,145 @@
+{
+  "idea": "A system of linear equations is two (or more) equations that must be true at the same time. For two unknowns, the solution is the pair of numbers (x, y) that makes both equations true. Graphically, it is the point where the two lines cross.",
+  "why": "Each equation alone has endless solutions: every point on its line. Asking for both at once keeps only the points the two lines share. Two different lines that are not parallel share exactly one point, so one pair of numbers remains. Substitution works because if y equals something, you may swap that something in for y without changing the truth. Elimination works because adding equal amounts to both sides of an equation keeps it true. So adding two true equations gives another true equation, and if the y-terms are opposites they cancel and leave one unknown. Every step turns a true statement into another true statement, so the final answer still satisfies the originals. You can always check by putting it back into both.",
+  "explanations": [
+    {
+      "kind": "picture",
+      "text": "Draw the line x + y = 10 on a grid. It passes through (0,10), (4,6), (6,4), (10,0). Now draw x - y = 2 through (2,0), (6,4), (8,6). The lines cross at exactly one point, (6,4). Say: every point on a line is a solution to that one equation, and the crossing point is the only point on both lines."
+    },
+    {
+      "kind": "story",
+      "text": "At a bakery, one muffin and one coffee cost 7 dollars in total. Two muffins and one coffee cost 11 dollars. The second order has exactly one extra muffin, and it costs 4 dollars more. So a muffin is 4 dollars, and the coffee is 3 dollars. Comparing two orders to see what the difference tells you is exactly what elimination does."
+    },
+    {
+      "kind": "procedure",
+      "text": "Elimination: 1) Line up the equations with x under x, y under y, and numbers under numbers. 2) Multiply one or both equations so that one letter has matching coefficients, equal or opposite. 3) Add or subtract the equations to make that letter disappear. 4) Solve the one-unknown equation. 5) Put the value into an original equation to find the other unknown. 6) Check in both equations. Substitution: if one equation is already y = something, replace y in the other with that something, solve, then find the other value."
+    }
+  ],
+  "student_questions": [
+    {
+      "question": "Why can I add two equations together? It feels like cheating.",
+      "answer": "Each equation says two amounts are equal. If you add equal amounts to equal amounts, the totals are still equal. So adding the left sides and adding the right sides is allowed. It is the same as adding the same number to both sides, except that the number is written in a different way."
+    },
+    {
+      "question": "Why do I need two equations for two unknowns?",
+      "answer": "One equation like x + y = 10 has endless solutions: 1 and 9, 2 and 8, 3 and 7, and so on. A second equation is a second clue that rules out all but one pair. With one clue you cannot pin down two numbers."
+    },
+    {
+      "question": "Does it matter whether I use substitution or elimination?",
+      "answer": "No. Both give the same answer, because both keep every step true. Substitution is handy when one letter is already alone, like y = 2x + 1. Elimination is handy when the equations are lined up with x and y on the left."
+    },
+    {
+      "question": "What if the letters do not cancel, or I end up with something odd like 0 = 5?",
+      "answer": "If you get a false statement like 0 = 5, the lines are parallel and never meet, so there is no solution. If you get a true statement like 0 = 0, both equations describe the same line, so there are infinitely many solutions. Neither means you made a mistake; it is the answer."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Finding x and then stopping, forgetting to find y.",
+      "response": "Ask: what does the solution need to be? Remind students that the answer is a pair, and the point (x, y) must work in both equations. Have them always write the pair and check it."
+    },
+    {
+      "mistake": "Subtracting equations and only changing the sign of the first term, for example 3x + 2y minus (x - y) written as 2x + y.",
+      "response": "Show subtraction with brackets: (3x + 2y) - (x - y) = 3x + 2y - x + y = 2x + 3y. Or suggest multiplying the second equation by -1 and then adding, which makes sign errors easier to see."
+    },
+    {
+      "mistake": "Multiplying only one term of an equation when scaling it, for example turning x - y = 1 into 3x - 3y = 1.",
+      "response": "Say: the equation is a balance, so everything on both sides must be multiplied. Write it as 3(x - y) = 3(1) and then expand to get 3x - 3y = 3."
+    }
+  ],
+  "worked_examples": [
+    {
+      "problem": "Two numbers add to 10 and their difference is 2. Find the larger number. That is, solve x + y = 10 and x - y = 2 for x.",
+      "steps": "The y-terms are already opposites. Add the equations: (x + y) + (x - y) = 10 + 2, so 2x = 12 and x = 6. Then y = 10 - 6 = 4. Check: 6 + 4 = 10 and 6 - 4 = 2. Both are true.",
+      "expression": "(10 + 2)/2",
+      "answer": "6"
+    },
+    {
+      "problem": "Solve y = 2x + 1 and 3x + y = 16. Find y.",
+      "steps": "Substitute 2x + 1 for y in the second equation: 3x + (2x + 1) = 16. So 5x + 1 = 16, 5x = 15, x = 3. Then y = 2(3) + 1 = 7. Check: 3(3) + 7 = 16. True.",
+      "expression": "2*(16 - 1)/5 + 1",
+      "answer": "7"
+    },
+    {
+      "problem": "Solve 2x + 3y = 12 and x - y = 1. Find x.",
+      "steps": "Multiply the second equation by 3 to get 3x - 3y = 3. Add this to the first equation: 2x + 3y + 3x - 3y = 12 + 3, so 5x = 15 and x = 3. Then y = x - 1 = 2. Check: 2(3) + 3(2) = 12 and 3 - 2 = 1. Both true.",
+      "expression": "(12 + 3)/5",
+      "answer": "3"
+    }
+  ],
+  "try_it": [
+    {
+      "problem": "Two adult tickets and one child ticket cost 11 dollars. One adult ticket and one child ticket cost 7 dollars. What is the price of one adult ticket?",
+      "solution": "Subtract the second equation from the first: (2a + c) - (a + c) = 11 - 7, so a = 4. The child ticket is 7 - 4 = 3. Check: 2(4) + 3 = 11.",
+      "expression": "11 - 7",
+      "answer": "4"
+    },
+    {
+      "problem": "Solve y = x + 3 and 2x + y = 12. Find y.",
+      "solution": "Substitute: 2x + (x + 3) = 12, so 3x = 9 and x = 3. Then y = 3 + 3 = 6. Check: 2(3) + 6 = 12.",
+      "expression": "(12 - 3)/3 + 3",
+      "answer": "6"
+    },
+    {
+      "problem": "Solve 3x + 2y = 16 and x + 2y = 8. Find y.",
+      "solution": "Subtract the second equation from the first: 2x = 8, so x = 4. Put into x + 2y = 8: 4 + 2y = 8, so y = 2. Check: 3(4) + 2(2) = 16.",
+      "expression": "(8 - (16 - 8)/2)/2",
+      "answer": "2"
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: Ask for two numbers that add to 10. List many pairs. Then add the clue that they differ by 2 and find the only pair, 6 and 4."
+    },
+    {
+      "minutes": 8,
+      "activity": "Picture: Draw both lines on a grid, plot points, and show that they cross at (6,4). Discuss why one crossing point means one solution."
+    },
+    {
+      "minutes": 10,
+      "activity": "Teach elimination with the muffin and coffee story, then work example 1 and example 3 on the board, checking each answer in both equations."
+    },
+    {
+      "minutes": 7,
+      "activity": "Teach substitution with worked example 2. Ask students when each method is easier."
+    },
+    {
+      "minutes": 8,
+      "activity": "Students work the three Try it problems in pairs. Walk around and ask them to check in both equations."
+    },
+    {
+      "minutes": 2,
+      "activity": "Wrap-up: Students say in their own words why adding two equations is allowed. Mention parallel lines (no solution) as a preview."
+    }
+  ],
+  "meta": {
+    "concept": "systems-of-equations",
+    "title": "Systems of linear equations",
+    "model": "sonnet",
+    "cost_usd": 0.0408,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Systems+of+linear+equations"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Systems+of+linear+equations"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Systems+of+linear+equations"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Systems+of+linear+equations"
+    }
+  ]
+}

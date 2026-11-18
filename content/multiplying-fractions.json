@@ -1,0 +1,145 @@
+{
+  "idea": "To multiply two fractions, multiply the numerators together and multiply the denominators together: (a/b) × (c/d) = (a×c)/(b×d). Multiplying by a fraction means taking that fraction OF an amount, so 2/3 × 3/4 means \"two-thirds of three-quarters\".",
+  "why": "A fraction a/b means a pieces, each one b-th of a whole. Taking c/d of a/b is a two-step cut. First, cut the whole into b columns and d rows. That makes b×d equal small boxes, so each box is 1/(b×d) of the whole. The fraction a/b covers a columns. The fraction c/d of that covers c rows inside those columns. That gives a×c boxes, each worth 1/(b×d). So the answer is (a×c)/(b×d). The denominators multiply because we are cutting pieces into smaller pieces, which makes the pieces smaller by a factor of b×d. The numerators multiply because that counts the boxes we keep. Unlike addition, no common denominator is needed. We are not combining pieces of the same size. We are making new pieces. Multiplying by a fraction smaller than 1 gives less than you started with, which is not a contradiction: \"of\" means we are taking only part of the amount.",
+  "explanations": [
+    {
+      "kind": "picture",
+      "text": "Draw a square to stand for one whole. To show 2/3 × 3/4, cut it into 3 equal columns and shade 2 of them (that is 2/3). Then cut it into 4 equal rows across the columns and shade 3 of the rows with a different direction of hatching (that is 3/4). You now have 12 equal boxes, because 3 × 4 = 12. The boxes shaded both ways are 2 columns by 3 rows, which is 6 boxes. So the answer is 6/12, which simplifies to 1/2. The picture shows both numerators multiplying (2×3 = 6 boxes) and both denominators multiplying (3×4 = 12 boxes in total)."
+    },
+    {
+      "kind": "story",
+      "text": "You have half a pizza left over (1/2). Your friend says, 'I'll eat a third of what's left.' How much of the whole pizza does your friend eat? Cut each half into 3 equal slices. The whole pizza would then have 6 slices of that size. Your friend takes 1 of them. So the friend eats 1/6 of the whole pizza. In numbers, 1/2 × 1/3 = 1/6. The friend ate a third of a half, and that is smaller than both, which makes sense: it's a part of a part."
+    },
+    {
+      "kind": "procedure",
+      "text": "Step 1: Write the multiplication, for example 3/4 × 2/5. Step 2: Multiply the numerators: 3 × 2 = 6. Step 3: Multiply the denominators: 4 × 5 = 20. Step 4: Write the result 6/20. Step 5: Simplify by dividing top and bottom by their greatest common factor: 6/20 = 3/10. Shortcut: you can cancel before multiplying. Here the 2 on top and the 4 on the bottom share a factor of 2, giving 3/2 × 1/5... precisely, 3/4 × 2/5 becomes 3/2 × 1/5 after dividing 4 and 2 by 2? No: dividing 4 and 2 by 2 gives 3/2 × 1/5 only if you write it as 3×1 over 2×5 = 3/10. Both routes agree. For a whole number, write it over 1: 4 × 2/3 = 4/1 × 2/3 = 8/3. For mixed numbers, first turn them into improper fractions."
+    }
+  ],
+  "student_questions": [
+    {
+      "question": "Why don't we need a common denominator like when adding?",
+      "answer": "When you add, you're joining pieces, so they have to be the same size to be counted together. When you multiply, you're taking a part of a part, which makes new, smaller pieces. Nothing needs to be matched first. The picture with the grid shows this: the new little boxes are what we count."
+    },
+    {
+      "question": "Why does multiplying make the number smaller? I thought multiplying makes things bigger.",
+      "answer": "Multiplying by a number bigger than 1 makes things bigger. Multiplying by a fraction less than 1 means taking only part of the amount. Half of 8 is 4, and that is 1/2 × 8. So you get less, because you are taking only a part."
+    },
+    {
+      "question": "Why do we multiply the bottoms? Shouldn't the bottom stay the same?",
+      "answer": "The bottom tells you how many equal pieces make a whole. When you cut pieces into even smaller pieces, you need more of them to make a whole. A half cut into thirds gives sixths, since 2 × 3 = 6. So the bottoms multiply."
+    },
+    {
+      "question": "Can I simplify before I multiply?",
+      "answer": "Yes. If a number on top and a number on the bottom, in either fraction, share a factor, divide both by it. For 2/3 × 3/4, divide the two 3s by 3 and the 2 and 4 by 2. You get 1/1 × 1/2 = 1/2. It gives the same answer with smaller numbers."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Finding a common denominator and then multiplying only the numerators, for example 1/2 × 1/3 = 3/6 × 2/6 = 6/6 or writing 1/6 × ... wrongly, or keeping the denominator the same, like 1/4 × 1/4 = 1/4.",
+      "response": "Ask: 'What is half of a quarter?' Let them draw it. They will see 1/8, not 1/4. Explain that a common denominator is for adding and subtracting. In multiplication, the denominators multiply because the pieces get smaller."
+    },
+    {
+      "mistake": "Multiplying only the numerators or only the denominators, or adding instead, such as 2/3 × 3/4 = 6/3 or 5/7.",
+      "response": "Go back to the grid picture. Ask them to count the shaded boxes and the total boxes. The top counts the boxes kept and the bottom counts all the boxes. Both numbers come from multiplying."
+    },
+    {
+      "mistake": "Forgetting to simplify, or being surprised that the answer is smaller than both fractions, and so thinking they made an error.",
+      "response": "Praise the correct multiplication first. Then ask if 6/12 can be written with smaller numbers, and show how to divide top and bottom by the same number. For the size, bring back 'of': half of a half is a quarter, which is less than both."
+    }
+  ],
+  "worked_examples": [
+    {
+      "problem": "Multiply 2/3 × 3/5.",
+      "steps": "Multiply the numerators: 2 × 3 = 6. Multiply the denominators: 3 × 5 = 15. So the result is 6/15. Divide top and bottom by 3 to simplify: 2/5. Check by cancelling first: the 3 on the bottom of the first fraction and the 3 on top of the second cancel, leaving 2/1 × 1/5 = 2/5.",
+      "expression": "Rational(2,3)*Rational(3,5)",
+      "answer": "2/5"
+    },
+    {
+      "problem": "A recipe needs 3/4 of a cup of milk. You make 2/3 of the recipe. How much milk do you need?",
+      "steps": "'Of' means multiply, so we need 2/3 × 3/4. Multiply the numerators: 2 × 3 = 6. Multiply the denominators: 3 × 4 = 12. That gives 6/12, which simplifies to 1/2. You need 1/2 a cup of milk. This is less than 3/4, which makes sense because you are making only part of the recipe.",
+      "expression": "Rational(2,3)*Rational(3,4)",
+      "answer": "1/2"
+    },
+    {
+      "problem": "Multiply 4 × 5/6.",
+      "steps": "Write 4 as 4/1. Multiply the numerators: 4 × 5 = 20. Multiply the denominators: 1 × 6 = 6. That gives 20/6. Divide top and bottom by 2 to simplify: 10/3, which is also 3 and 1/3. Check: 5/6 is a bit less than 1, so four of them should be a bit less than 4. But 3 1/3 is less than 4, so that fits.",
+      "expression": "4*Rational(5,6)",
+      "answer": "10/3"
+    }
+  ],
+  "try_it": [
+    {
+      "problem": "Multiply 1/2 × 3/5.",
+      "solution": "Multiply the numerators: 1 × 3 = 3. Multiply the denominators: 2 × 5 = 10. The result is 3/10, which is already simplified.",
+      "expression": "Rational(1,2)*Rational(3,5)",
+      "answer": "3/10"
+    },
+    {
+      "problem": "Multiply 3/4 × 8/9.",
+      "solution": "Multiply the numerators: 3 × 8 = 24. Multiply the denominators: 4 × 9 = 36. That gives 24/36. Divide top and bottom by 12 to get 2/3. Or cancel first: 3 and 9 share 3, and 8 and 4 share 4, which gives 1/1 × 2/3 = 2/3.",
+      "expression": "Rational(3,4)*Rational(8,9)",
+      "answer": "2/3"
+    },
+    {
+      "problem": "A garden is 2/5 of a field. Beans take up 1/4 of the garden. What fraction of the whole field is beans?",
+      "solution": "We need 1/4 of 2/5, which is 1/4 × 2/5. Multiply the numerators: 1 × 2 = 2. Multiply the denominators: 4 × 5 = 20. That gives 2/20, which simplifies to 1/10. Beans take up 1/10 of the field.",
+      "expression": "Rational(1,4)*Rational(2,5)",
+      "answer": "1/10"
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: ask 'What is half of 8? What is half of a half?' Have students draw a square and shade half of it, then half of that half. Collect the answer 1/4 and say that this is the idea of the day."
+    },
+    {
+      "minutes": 10,
+      "activity": "Teach the grid picture with 2/3 × 3/4 on the board. Cut the square into columns and rows, shade, and count boxes. Let students say where the 6 and the 12 come from."
+    },
+    {
+      "minutes": 5,
+      "activity": "Introduce the procedure: multiply tops, multiply bottoms, simplify. Connect each step back to the picture. Show the story of half a pizza and eating a third of it."
+    },
+    {
+      "minutes": 7,
+      "activity": "Work through the three worked examples together, including the whole number written as 4/1 and the word problem with 'of'. Show cancelling before multiplying as an option."
+    },
+    {
+      "minutes": 10,
+      "activity": "Students work in pairs on the three Try it problems. They draw a picture for the first one. Walk around and use the mistake responses as needed."
+    },
+    {
+      "minutes": 3,
+      "activity": "Wrap-up: ask students why the answer is smaller than both fractions and why no common denominator is needed. Collect one sentence from a few students."
+    }
+  ],
+  "meta": {
+    "concept": "multiplying-fractions",
+    "title": "Multiplying fractions",
+    "model": "sonnet",
+    "cost_usd": 0.04162,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Multiplying+fractions"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Multiplying+fractions"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Multiplying+fractions"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Multiplying+fractions"
+    }
+  ]
+}

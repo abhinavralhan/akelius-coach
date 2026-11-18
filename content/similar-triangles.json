@@ -1,0 +1,145 @@
+{
+  "idea": "Two triangles are similar when they have the same shape but possibly different sizes: all matching angles are equal, and all matching sides are in the same ratio (the scale factor). If two angles of one triangle equal two angles of another, the triangles are similar (AA), because the third angles must match too.",
+  "why": "Similar triangles come from scaling. If you enlarge a figure by a factor k, every length is multiplied by k and every angle stays the same. That is why corresponding sides share one ratio: each is the original side times k. It also works in reverse. Once two angles match, the third angle is forced (angles add to 180 degrees), so the shape is fixed. A triangle with given angles can only be one shape; only its size can change. So the side ratios are fixed too. That is why we can find a missing side with a proportion: a/a' = b/b', which is the same as saying both equal k. Area is different: it scales by k squared, because it measures length times length.",
+  "explanations": [
+    {
+      "kind": "picture",
+      "text": "Draw a small triangle with sides 3, 4, 5. Next to it, draw a bigger one with sides 6, 8, 10. Mark the matching angles with the same arcs: the smallest angle sits opposite the 3 and opposite the 6. Show that the big triangle is the small one under a photocopier set to 200 percent. Then draw a tiny triangle inside a big one using a line parallel to the base. The small top triangle and the whole triangle share the top angle, and the parallel line makes the other angles match. Same shape, different size."
+    },
+    {
+      "kind": "story",
+      "text": "A 1.5 m tall person casts a 2 m shadow at the same moment a flagpole casts a 12 m shadow. The sun hits both at the same angle, so the person and the pole each make a triangle with the ground and the sun's ray, and these triangles have the same angles. The pole's shadow is 6 times longer (12 divided by 2), so the pole is 6 times as tall: 1.5 times 6 = 9 m. Nobody had to climb the pole."
+    },
+    {
+      "kind": "procedure",
+      "text": "1) Check similarity: find two pairs of equal angles (or all three side ratios equal). 2) Match corresponding parts: the side opposite the same angle in each triangle. Write them in matching order. 3) Find the scale factor from a pair where both sides are known: big divided by small. 4) Use it: multiply or divide the known side to get the unknown. Or set up a proportion and solve. 5) Check: the longest side should match the longest side, and the answer should look sensible in the picture."
+    }
+  ],
+  "student_questions": [
+    {
+      "question": "But why do we only need two angles? Don't we need three?",
+      "answer": "The angles in a triangle always add to 180 degrees. If two angles match, the third has to be 180 minus those two, so it matches as well. You get the third one for free."
+    },
+    {
+      "question": "Why are the sides in the same ratio and not the same difference?",
+      "answer": "Enlarging is multiplying, not adding. If you add 2 to every side of a 3-4-5 triangle you get 5-6-7, and that is a different shape. If you double every side you get 6-8-10, and the shape stays the same. Try drawing both and compare."
+    },
+    {
+      "question": "How do I know which sides match?",
+      "answer": "Match the sides opposite equal angles. The shortest side is opposite the smallest angle in both triangles, and the longest side is opposite the largest angle. Matching shortest to shortest and longest to longest is a good check."
+    },
+    {
+      "question": "Does the area also get multiplied by the scale factor?",
+      "answer": "No. Area is length times length, so it is multiplied by the scale factor twice, that is, by k squared. Double the sides and the area becomes 4 times bigger. You can see it by fitting four small triangles inside the big one."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Matching sides in the wrong order, for example putting the shortest side of one triangle against the longest of the other.",
+      "response": "Ask: which angle is this side opposite? Have the student mark the equal angles with arcs and match the sides opposite the same arc. Also check that the shortest goes with the shortest."
+    },
+    {
+      "mistake": "Adding the same amount instead of multiplying by the scale factor, for example saying a 3-4-5 triangle with the 3 turned into 5 has sides 5-6-7.",
+      "response": "Ask the student to test it: does the ratio 5/3 give 4 times 5/3 = 20/3 for the second side? Let them draw both and see they look different. Remind them that similar means scaled, which is multiplying."
+    },
+    {
+      "mistake": "Using the scale factor upside down, so the answer for the bigger triangle comes out smaller.",
+      "response": "Ask: should the answer be bigger or smaller than the known side? If we go from small to big, we multiply by a number greater than 1. Make a quick estimate before calculating."
+    }
+  ],
+  "worked_examples": [
+    {
+      "problem": "Triangle ABC has sides 3, 4, 5. A similar triangle has its shortest side equal to 9. Find its longest side.",
+      "steps": "The shortest sides match: 3 and 9. Scale factor = 9 / 3 = 3. The longest side is 5, so the new longest side is 5 times 3 = 15.",
+      "expression": "5*(9/3)",
+      "answer": "15"
+    },
+    {
+      "problem": "Two similar triangles: the small one has sides 6 and 8, and the matching sides of the large one are 9 and x. Find x.",
+      "steps": "Set up the proportion 6/9 = 8/x. Scale factor from small to large = 9/6 = 3/2. So x = 8 times 3/2 = 12. Check: 12 is larger than 8, as expected for the bigger triangle.",
+      "expression": "8*(9/6)",
+      "answer": "12"
+    },
+    {
+      "problem": "A 2 m stick casts a 3 m shadow. At the same time a tree casts a 15 m shadow. How tall is the tree?",
+      "steps": "The triangles are similar because the sun's angle is the same and both objects stand upright. Scale factor = 15 / 3 = 5 (tree shadow over stick shadow). Tree height = 2 times 5 = 10 m.",
+      "expression": "2*(15/3)",
+      "answer": "10"
+    }
+  ],
+  "try_it": [
+    {
+      "problem": "Triangle PQR has sides 4, 6, 8. A similar triangle has its shortest side equal to 10. What is its longest side?",
+      "solution": "Shortest sides match: 4 and 10. Scale factor = 10/4 = 5/2. Longest side = 8 times 5/2 = 20.",
+      "expression": "8*(10/4)",
+      "answer": "20"
+    },
+    {
+      "problem": "Two similar triangles have matching sides 5 and 15. In the small triangle another side is 7. How long is the matching side in the large triangle?",
+      "solution": "Scale factor = 15/5 = 3. The matching side = 7 times 3 = 21.",
+      "expression": "7*(15/5)",
+      "answer": "21"
+    },
+    {
+      "problem": "A 1.2 m child casts a 1.5 m shadow. A building casts a 25 m shadow at the same time. How tall is the building?",
+      "solution": "Scale factor = 25 / 1.5 = 50/3. Height = 1.2 times 50/3 = 6/5 times 50/3 = 20 m.",
+      "expression": "Rational(6,5)*Rational(50,3)",
+      "answer": "20"
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: show a photo and its enlargement, or a 3-4-5 triangle and a 6-8-10 triangle. Ask what changed and what stayed the same (sizes changed, shape and angles did not)."
+    },
+    {
+      "minutes": 10,
+      "activity": "Introduce the idea with the picture explanation. Students draw two triangles with matching angles (for example 40, 60, 80 degrees), measure the sides with a ruler and find that the ratios are about the same."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach the procedure with worked example 1 and 2: match sides, find the scale factor, multiply. Stress matching the side opposite equal angles."
+    },
+    {
+      "minutes": 7,
+      "activity": "Shadow story and worked example 3. Discuss why the sun's angle makes the triangles similar. Take questions, including the 'two angles are enough' one."
+    },
+    {
+      "minutes": 8,
+      "activity": "Students work on the three try-it problems in pairs. Walk round and use the mistakes list to respond."
+    },
+    {
+      "minutes": 2,
+      "activity": "Exit question: if all sides are doubled, what happens to the angles? To the lengths? Briefly mention that area is multiplied by 4."
+    }
+  ],
+  "meta": {
+    "concept": "similar-triangles",
+    "title": "Similar triangles",
+    "model": "sonnet",
+    "cost_usd": 0.03333,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Similar+triangles"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Similar+triangles"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Similar+triangles"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Similar+triangles"
+    }
+  ]
+}

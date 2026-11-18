@@ -83,3 +83,9 @@ Each step ends with a commit and a step-log entry with **start and end times** (
 - **Achieved:** the prototype is complete and runs. 9/9 tests pass. Eval run 2 passes every case except one rubric limit.
 - **Open:** not pushed to GitHub yet (waiting for the user's go). Drawings not yet checked by eye in a browser.
 - **Next (future scope):** research-notes §6: native language, sign-up/auth, educator review screen, more country standards, semantic matching, production LLM backend.
+
+### Step 8: pre-generate the whole library — 17:12–17:15
+- **Did:** at the user's request, generated the remaining 21 sheets (6 in parallel), then re-ran `verify()` over all 27.
+- **Decided (D24):** check every sheet before launch; on-demand generation is only a fallback for topics added later. Sheets stay as versioned JSON files (reviewable, CDN-ready); SQLite holds the dynamic data. Moving the sheets into the DB is a small change (only `sheet.get`/`generate` touch storage) if we want it later, e.g. for a reviewer UI.
+- **Achieved:** 27/27 sheets passed the checks first try. The library cost $1.12. README and cost model updated with the measured numbers. Zip rebuilt.
+- **Open:** push to GitHub (waiting for the user); check the drawings by eye in a browser.

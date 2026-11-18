@@ -1,0 +1,145 @@
+{
+  "idea": "A polynomial is a sum of terms like 3x^2, 5x and 7. To add polynomials, combine like terms (same power of x). To multiply, give every term in one polynomial a turn multiplying every term in the other (the distributive property), then combine like terms.",
+  "why": "Adding works because of the distributive property in reverse: 3x^2 + x^2 = (3+1)x^2 = 4x^2, just as 3 apples + 1 apple = 4 apples. Terms with different powers are different kinds of thing (x^2 is not x), so they cannot merge. Multiplying works because a(b+c) = ab + ac. When you multiply (x+3)(x+2), you treat (x+2) as one number and distribute: x(x+2) + 3(x+2). Then distribute again. That gives four small products, which is exactly what FOIL or an area box records. The exponent rule x^a * x^b = x^(a+b) comes from counting factors: x^2 * x^3 is (x*x)*(x*x*x), five x's in all. A handy check: a polynomial identity holds for every number, so plugging in x = 2 into the question and the answer should give the same value.",
+  "explanations": [
+    {
+      "kind": "picture",
+      "text": "Draw an area box. For (x+3)(x+2), draw a rectangle with width x+3 and height x+2. Split the width into x and 3, and the height into x and 2. You get four pieces: an x-by-x square (x^2), an x-by-2 strip (2x), a 3-by-x strip (3x), and a 3-by-2 block (6). The total area is x^2 + 2x + 3x + 6 = x^2 + 5x + 6. For addition, picture piles of tiles: a pile of x^2 tiles, a pile of x tiles, a pile of single unit tiles. Adding polynomials means pouring matching piles together."
+    },
+    {
+      "kind": "story",
+      "text": "A school shop sells two kinds of boxes. Big boxes hold x^2 items, small boxes hold x items, and there are loose items. Monday's stock is 3 big boxes, 2 small boxes and 1 loose item. Tuesday's delivery is 1 big box, 5 small boxes and 4 loose items. Total stock: 4 big, 7 small, 5 loose. You would never add a big box to a small box and call it 'big-small boxes', and that is why only like terms combine. For multiplying, tell it as a garden: a garden is (x+3) metres long and (x+2) metres wide, and the area is the product."
+    },
+    {
+      "kind": "procedure",
+      "text": "Adding: 1) Write the polynomials, removing brackets (if subtracting, flip every sign in the second one). 2) Underline or circle terms with the same power of x. 3) Add the coefficients of each group. 4) Write the result with the highest power first. Multiplying: 1) Take the first term of the first polynomial and multiply it by every term of the second. 2) Repeat with the next term of the first polynomial. 3) Remember to multiply coefficients and add exponents. 4) Collect like terms. 5) Check by plugging in x = 2 into the original and the answer."
+    }
+  ],
+  "student_questions": [
+    {
+      "question": "But why can't I add 3x^2 and 2x to get 5x^3?",
+      "answer": "Try x = 10. 3x^2 is 300 and 2x is 20, so together 320. But 5x^3 would be 5000. They are different sizes of thing, like square metres and metres. So 3x^2 + 2x just stays as it is."
+    },
+    {
+      "question": "But why do I add the exponents when I multiply, not multiply them?",
+      "answer": "Count the x's. x^2 means x times x, and x^3 means x times x times x. Multiply them and you have five x's in a row, which is x^5. You are counting how many x's are being multiplied, and counting means adding."
+    },
+    {
+      "question": "Why do I have to multiply every term by every term?",
+      "answer": "Because each term in the first bracket is part of the total, and each one has to be shared with the whole second bracket. In (x+3)(x+2), the x has to multiply both x and 2, and the 3 has to as well. In the area box, that is all four pieces of the rectangle, and missing one means missing some of the area."
+    },
+    {
+      "question": "Is FOIL the only way to multiply two brackets?",
+      "answer": "FOIL is just a memory trick for two brackets with two terms each. The real rule is every term times every term, and it works for any size of polynomial. The area box or the distributive method works for everything, including a bracket with three terms."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding unlike terms, such as writing 3x^2 + 2x = 5x^3 or 5x^2.",
+      "response": "Do not just say 'wrong'. Ask them to try a number, say x = 10, and compare both sides. Then bring back the picture of different tiles. Show that only the coefficients of the same power get added, and the power stays the same."
+    },
+    {
+      "mistake": "Multiplying only some pairs, for example (x+3)(x+2) = x^2 + 6, which drops the middle terms.",
+      "response": "Draw the area box and ask which two pieces are missing. Then test with x = 2: (5)(4) = 20, but 2^2 + 6 = 10. The mismatch shows that something is missing. Encourage them to count: two terms times two terms means four products."
+    },
+    {
+      "mistake": "Sign errors, especially when subtracting a polynomial: (3x + 2) - (x + 5) written as 2x - 3 or 2x + 7 instead of 2x - 3 is correct, but many write 3x + 2 - x + 5.",
+      "response": "Remind them that the minus sign applies to every term inside the bracket. Have them rewrite as 'plus negative one times the bracket' and distribute the -1 first: 3x + 2 - x - 5 = 2x - 3. Then check with a number."
+    }
+  ],
+  "worked_examples": [
+    {
+      "problem": "Add (3x^2 + 2x + 1) + (x^2 + 5x + 4). Then check the result by evaluating it at x = 2.",
+      "steps": "Group like terms: x^2 terms: 3x^2 + x^2 = 4x^2. x terms: 2x + 5x = 7x. Constants: 1 + 4 = 5. So the sum is 4x^2 + 7x + 5. Check at x = 2: the first polynomial gives 12 + 4 + 1 = 17, the second gives 4 + 10 + 4 = 18, and 17 + 18 = 35. The answer gives 4(4) + 14 + 5 = 35. They match.",
+      "expression": "4*2**2 + 7*2 + 5",
+      "answer": "35"
+    },
+    {
+      "problem": "Multiply (x + 3)(x + 2). Then check by evaluating at x = 2.",
+      "steps": "Distribute x: x*x + x*2 = x^2 + 2x. Distribute 3: 3*x + 3*2 = 3x + 6. Add: x^2 + 2x + 3x + 6 = x^2 + 5x + 6. Check at x = 2: (2+3)(2+2) = 5*4 = 20, and the answer gives 4 + 10 + 6 = 20. They match.",
+      "expression": "(2 + 3)*(2 + 2)",
+      "answer": "20"
+    },
+    {
+      "problem": "Multiply (2x - 1)(x^2 + 3x - 4). Then check by evaluating at x = 2.",
+      "steps": "Distribute 2x: 2x*x^2 = 2x^3, 2x*3x = 6x^2, 2x*(-4) = -8x. Distribute -1: -x^2, -3x, +4. Combine: 2x^3 + (6x^2 - x^2) + (-8x - 3x) + 4 = 2x^3 + 5x^2 - 11x + 4. Check at x = 2: (4-1)(4+6-4) = 3*6 = 18, and the answer gives 16 + 20 - 22 + 4 = 18. They match.",
+      "expression": "(2*2 - 1)*(2**2 + 3*2 - 4)",
+      "answer": "18"
+    }
+  ],
+  "try_it": [
+    {
+      "problem": "Add (4x^2 - 3x + 7) + (2x^2 + 3x - 2). Evaluate your result at x = 3.",
+      "solution": "x^2 terms: 4x^2 + 2x^2 = 6x^2. x terms: -3x + 3x = 0. Constants: 7 - 2 = 5. The sum is 6x^2 + 5. At x = 3: 6*9 + 5 = 59.",
+      "expression": "6*3**2 + 5",
+      "answer": "59"
+    },
+    {
+      "problem": "Multiply (x + 4)(x - 4). Evaluate your result at x = 5.",
+      "solution": "x*x = x^2, x*(-4) = -4x, 4*x = 4x, 4*(-4) = -16. The middle terms cancel, so the product is x^2 - 16. At x = 5: 25 - 16 = 9. Check: (9)(1) = 9.",
+      "expression": "(5 + 4)*(5 - 4)",
+      "answer": "9"
+    },
+    {
+      "problem": "Multiply (x - 2)(x^2 + x + 1). Evaluate your result at x = 3.",
+      "solution": "x times the bracket: x^3 + x^2 + x. -2 times the bracket: -2x^2 - 2x - 2. Combine: x^3 - x^2 - x - 2. At x = 3: 27 - 9 - 3 - 2 = 13. Check: (1)(9+3+1) = 13.",
+      "expression": "(3 - 2)*(3**2 + 3 + 1)",
+      "answer": "13"
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: ask students what 3 apples + 2 apples is, and what 3 apples + 2 bananas is. Link to like terms. Quick mental check by substituting x = 10."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach addition and subtraction with tile or box stories. Work example 1 together on the board, including the x = 2 check. Stress the sign flip when subtracting."
+    },
+    {
+      "minutes": 10,
+      "activity": "Teach multiplication with the area box for (x+3)(x+2). Then show the same thing with distribution. Work example 3 to show a bigger polynomial and the idea of every term times every term."
+    },
+    {
+      "minutes": 10,
+      "activity": "Pairs practice with the three Try it problems. Students check each answer by substituting a number. Walk around and look for dropped terms and sign errors."
+    },
+    {
+      "minutes": 5,
+      "activity": "Whole-class review of mistakes: put a wrong answer such as x^2 + 6 on the board and let students find the error using a number check and the area box."
+    },
+    {
+      "minutes": 2,
+      "activity": "Exit question: students write in one sentence why 3x^2 + 2x cannot be simplified further."
+    }
+  ],
+  "meta": {
+    "concept": "polynomials",
+    "title": "Adding and multiplying polynomials",
+    "model": "sonnet",
+    "cost_usd": 0.04919,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Adding+and+multiplying+polynomials"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Adding+and+multiplying+polynomials"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Adding+and+multiplying+polynomials"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Adding+and+multiplying+polynomials"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "idea": "Adding a negative number moves you left on the number line, and subtracting a negative number moves you right. Subtracting a number is the same as adding its opposite, so 5 - (-3) = 5 + 3 = 8.",
+  "why": "Numbers have a size and a direction: positive means one way, negative means the opposite way. Adding means \"combine\" and moves in the direction of the number you add, so adding -3 moves 3 steps left. Subtracting means \"undo adding\". Since adding -3 moves 3 left, undoing it moves 3 right, which is the same as adding +3. So subtracting -3 gives the same result as adding 3. A pattern shows it too: 5 - 2 = 3, 5 - 1 = 4, 5 - 0 = 5, 5 - (-1) = 6, 5 - (-2) = 7. Each time the number we subtract goes down by 1, the answer goes up by 1, so the pattern continues with subtracting a negative giving a larger result. Subtraction is also the distance from the second number up to the first: 5 - (-3) is how far it is from -3 up to 5, which is 8 steps.",
+  "explanations": [
+    {
+      "kind": "picture",
+      "text": "Draw a number line from -10 to 10. To work out 2 + (-5), put a finger on 2 and take 5 steps left, landing on -3. To work out 2 - (-5), start at 2 and take 5 steps right, landing on 7. Say: adding a negative goes left, subtracting a negative goes right. Then show 2 - 5 as 5 steps left, landing on -3, so students see that subtracting a positive also goes left."
+    },
+    {
+      "kind": "story",
+      "text": "Use money and debt. Your balance is 10 euros. You take on a debt of 4 euros: that is adding -4, so you now have 6 euros. Now suppose you were at -7 (you owe 7) and a 4 euro debt is cancelled. Cancelling a debt is subtracting a negative: -7 - (-4) = -3. You are better off, so the number went up. Subtracting a negative makes you richer."
+    },
+    {
+      "kind": "procedure",
+      "text": "Step 1: Rewrite subtraction as adding the opposite, so a - b becomes a + (-b), and a - (-b) becomes a + b. Step 2: If the signs are now the same, add the sizes and keep the sign. Step 3: If the signs differ, subtract the smaller size from the larger and keep the sign of the number with the larger size. Step 4: Check with a quick number line sketch or by asking whether the answer should be higher or lower than the start."
+    }
+  ],
+  "student_questions": [
+    {
+      "question": "But why does subtracting a negative make the number bigger? Subtracting should make things smaller.",
+      "answer": "Subtracting a positive number does make things smaller. But a negative number is like a debt, and taking away a debt leaves you better off. Look at the pattern: 5 - 2 = 3, 5 - 1 = 4, 5 - 0 = 5, 5 - (-1) = 6. The answers keep going up by one each time, so the pattern says 6."
+    },
+    {
+      "question": "Why do two minus signs make a plus?",
+      "answer": "A minus sign in front of a number can mean the opposite. The opposite of the opposite of 3 is 3 again. In 5 - (-3), the minus says to take away -3, which is the same as adding its opposite, 3. So you get 5 + 3. Flipping direction twice brings you back facing the original way."
+    },
+    {
+      "question": "Is -3 + 5 the same as 5 - 3?",
+      "answer": "Yes. Adding can be done in either order, so -3 + 5 = 5 + (-3), and that is 5 - 3 = 2. On the number line, start at -3 and go 5 to the right, and you land on 2."
+    },
+    {
+      "question": "Is -4 smaller than -2? 4 is bigger than 2.",
+      "answer": "On the number line, -4 is further left than -2, so it is smaller. Think of temperatures: -4 degrees is colder than -2 degrees. With negatives, a bigger size means further below zero."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Writing 3 - 7 = 4 by taking the smaller from the larger and ignoring the sign.",
+      "response": "Ask them to start at 3 on a number line and move 7 steps left. They pass 0 and land on -4. Point out that 7 is more than 3, so you must end below zero. Practise estimating: should the answer be above or below zero?"
+    },
+    {
+      "mistake": "Treating 5 - (-3) as 5 - 3 = 2, ignoring the second sign.",
+      "response": "Show that 5 - 3 and 5 - (-3) are different questions by putting both on the number line. Use the pattern 5 - 2, 5 - 1, 5 - 0, 5 - (-1) and let students continue it. Encourage them to rewrite as 5 + 3 before calculating."
+    },
+    {
+      "mistake": "Writing -2 + (-3) = -1 or 1, as if adding made the number move toward zero.",
+      "response": "Use debt or temperature: you owe 2 and then owe 3 more, so you owe 5. Move 3 steps left from -2 on the number line to land on -5. Adding a negative always moves left."
+    }
+  ],
+  "worked_examples": [
+    {
+      "problem": "Work out -4 + 9.",
+      "steps": "Start at -4 on the number line. Move 9 steps right. 4 steps get you to 0, and 5 more steps get you to 5. Or: the signs differ, 9 - 4 = 5, and 9 is larger and positive, so the answer is +5.",
+      "expression": "-4 + 9",
+      "answer": "5"
+    },
+    {
+      "problem": "Work out 3 - (-6).",
+      "steps": "Subtracting -6 is the same as adding 6. So 3 - (-6) = 3 + 6 = 9. Check: the answer should be bigger than 3, and 9 is.",
+      "expression": "3 - (-6)",
+      "answer": "9"
+    },
+    {
+      "problem": "Work out -5 - (-8).",
+      "steps": "Rewrite as -5 + 8. The signs differ. 8 - 5 = 3, and 8 is larger and positive, so the answer is 3. Check on the number line: start at -5 and move 8 right, landing on 3.",
+      "expression": "-5 - (-8)",
+      "answer": "3"
+    }
+  ],
+  "try_it": [
+    {
+      "problem": "Work out -7 + 3.",
+      "solution": "Start at -7 and move 3 right. The signs differ: 7 - 3 = 4, and 7 is larger and negative, so the answer is -4.",
+      "expression": "-7 + 3",
+      "answer": "-4"
+    },
+    {
+      "problem": "Work out 4 - (-9).",
+      "solution": "Subtracting -9 is the same as adding 9. So 4 + 9 = 13.",
+      "expression": "4 - (-9)",
+      "answer": "13"
+    },
+    {
+      "problem": "Work out -6 - (-2).",
+      "solution": "Rewrite as -6 + 2. The signs differ: 6 - 2 = 4, and 6 is larger and negative, so the answer is -4.",
+      "expression": "-6 - (-2)",
+      "answer": "-4"
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: temperatures and money. Ask which is colder, -4 or -2 degrees, and how a debt changes a balance. Draw a number line on the board."
+    },
+    {
+      "minutes": 10,
+      "activity": "Adding negatives and positives on the number line. Model -4 + 9 and 2 + (-5) with steps left and right. Students do a few with mini whiteboards."
+    },
+    {
+      "minutes": 10,
+      "activity": "Subtracting: first subtracting positives going left, then the pattern 5 - 2, 5 - 1, 5 - 0, 5 - (-1), 5 - (-2) to discover subtracting a negative. State the rule: subtract = add the opposite."
+    },
+    {
+      "minutes": 10,
+      "activity": "Practice in pairs with mixed problems like the worked examples and Try it. Students rewrite each subtraction as addition, then check on a number line."
+    },
+    {
+      "minutes": 5,
+      "activity": "Wrap-up: discuss the common mistakes, then an exit ticket with one problem such as -3 - (-5), asking students to explain their steps in words."
+    }
+  ],
+  "meta": {
+    "concept": "adding-negative-numbers",
+    "title": "Adding and subtracting negative numbers",
+    "model": "sonnet",
+    "cost_usd": 0.07363,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Adding+and+subtracting+negative+numbers"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Adding+and+subtracting+negative+numbers"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Adding+and+subtracting+negative+numbers"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Adding+and+subtracting+negative+numbers"
+    }
+  ]
+}

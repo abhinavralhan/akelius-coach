@@ -1,0 +1,149 @@
+{
+  "idea": "A whole-number exponent tells you how many copies of a base to multiply together. 2^5 means 2 × 2 × 2 × 2 × 2 = 32. The exponent counts the copies of the base, not the number you multiply by. Also: a^0 = 1 for any nonzero a, and a^(-n) = 1/(a^n).",
+  "why": "Exponents are repeated multiplication, the way multiplication is repeated addition. The rules come from counting copies. a^m × a^n: you write m copies, then n more, so m+n copies in all, giving a^(m+n). Dividing a^m by a^n cancels n copies from the top and leaves m−n copies, so a^m / a^n = a^(m−n). Now keep that pattern going. 2^3=8, 2^2=4, 2^1=2: each step down divides by 2. The next step gives 2^0 = 2/2 = 1, and then 2^(-1) = 1/2. So a^0 = 1 and negative exponents mean reciprocals, because that is the only choice that keeps the division rule true. For (a^m)^n you have n groups of m copies, so m×n copies in all.",
+  "explanations": [
+    {
+      "kind": "picture",
+      "text": "Draw 3^4 as a tree. Start with 1 box. Each box splits into 3 boxes, and you do that 4 times: 3, 9, 27, 81. Label each row with its exponent: 3^1, 3^2, 3^3, 3^4. Students can see that the exponent counts the rows (the number of times you multiply by 3). Another picture: 5^2 is a 5 by 5 square of dots, and 5^3 is a 5 by 5 by 5 cube. This is where the words 'squared' and 'cubed' come from."
+    },
+    {
+      "kind": "story",
+      "text": "A rumor spreads. Today you tell 2 friends. Tomorrow each of them tells 2 new people, then each of those tells 2 more. After 1 day, 2 people hear it. After 2 days, 2×2 = 4 new people hear it. After 3 days, 8. After 5 days, 2^5 = 32 new people hear it. The exponent is the number of days, and the base 2 is the number of people each person tells. Run it backwards for the zero case: 1 day before the first telling there is just 1 person, the one who started it. That is 2^0 = 1."
+    },
+    {
+      "kind": "procedure",
+      "text": "To evaluate a^n for a whole number n: 1) Name the base (the number being multiplied) and the exponent (how many copies). 2) Write out the copies: a × a × ... × a, with n copies. 3) Multiply left to right, step by step. 4) Check: the exponent 0 gives 1, and the exponent 1 gives the base itself. For a negative exponent, flip first: a^(-n) = 1/(a^n), then evaluate a^n. Watch the sign: (-2)^3 = (-2)(-2)(-2) = -8, but -2^3 means -(2^3) = -8 as well, while (-2)^2 = 4 and -2^2 = -4. Only what is directly next to the exponent is the base."
+    }
+  ],
+  "student_questions": [
+    {
+      "question": "But why is anything to the power 0 equal to 1? Shouldn't it be 0?",
+      "answer": "Look at the pattern going down: 2^3 is 8, 2^2 is 4, 2^1 is 2. Each time the exponent drops by one, we divide by 2. So the next one is 2 divided by 2, which is 1. Also, 2^0 means 'no 2s multiplied.' When you multiply nothing at all, you start from 1, the number that does not change a product. So the answer is 1, not 0."
+    },
+    {
+      "question": "Why isn't 2^3 equal to 2 × 3?",
+      "answer": "2 × 3 means 3 copies of 2 added: 2+2+2 = 6. 2^3 means 3 copies of 2 multiplied: 2×2×2 = 8. The exponent tells you how many copies of the base to write down, and the operation between the copies is multiplication."
+    },
+    {
+      "question": "Why do we add the exponents when we multiply, like 2^3 × 2^4 = 2^7?",
+      "answer": "Write it out. 2^3 is 2×2×2, and 2^4 is 2×2×2×2. Put them side by side and you have 7 twos multiplied together, which is 2^7. You are just counting how many copies there are altogether. This only works when the bases are the same."
+    },
+    {
+      "question": "Why does a negative exponent make a fraction and not a negative number?",
+      "answer": "The exponent says how many times to divide by the base, not that the answer is negative. Continuing the pattern: 2^1 = 2, 2^0 = 1, 2^(-1) = 1/2, 2^(-2) = 1/4. The numbers keep halving and stay positive. So 2^(-3) = 1/(2^3) = 1/8."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Multiplying the base by the exponent: writing 4^3 = 12.",
+      "response": "Ask the student to write 4^3 out as 4 × 4 × 4 and compute it: 16, then 64. Then ask what 4 × 3 would mean (4+4+4). Have them say 'three copies of 4, multiplied.' Using small cases such as 2^3 = 8 versus 2×3 = 6 helps, since the two answers differ."
+    },
+    {
+      "mistake": "Sign errors with negatives: reading (-3)^2 as -9, or confusing -3^2 with (-3)^2.",
+      "response": "Show that the base is whatever sits right under the exponent. (-3)^2 = (-3)(-3) = 9 because the parentheses make -3 the base. -3^2 means -(3×3) = -9, since only the 3 is squared. Have students write both with the copies spelled out, and say aloud 'negative times negative is positive.'"
+    },
+    {
+      "mistake": "Applying the product rule to different bases or adding the bases: 2^3 × 3^2 = 6^5, or 2^3 × 2^4 = 4^7.",
+      "response": "Go back to copies. 2^3 × 3^2 = 8 × 9 = 72, while 6^5 = 7776, so the shortcut fails. Explain that adding exponents only counts copies of the same base. And when the base is the same, the base stays: 2^3 × 2^4 = 2^7, not 4^7, because we are not making new twos, only counting them."
+    }
+  ],
+  "worked_examples": [
+    {
+      "problem": "Evaluate 3^4.",
+      "steps": "The base is 3 and the exponent is 4, so write four 3s: 3 × 3 × 3 × 3. Multiply step by step: 3×3 = 9, 9×3 = 27, 27×3 = 81.",
+      "expression": "3**4",
+      "answer": "81"
+    },
+    {
+      "problem": "Simplify 2^3 × 2^4 and give its value.",
+      "steps": "The bases are the same, so add the exponents: 3 + 4 = 7, giving 2^7. Check by counting copies: three 2s and four 2s make seven 2s. Then 2^7 = 128 (2, 4, 8, 16, 32, 64, 128).",
+      "expression": "2**3*2**4",
+      "answer": "128"
+    },
+    {
+      "problem": "Evaluate 5^(-2) + 4^0.",
+      "steps": "A negative exponent means a reciprocal: 5^(-2) = 1/(5^2) = 1/25. Any nonzero number to the power 0 is 1, so 4^0 = 1. Add: 1/25 + 1 = 26/25.",
+      "expression": "Rational(1,25) + 1",
+      "answer": "26/25"
+    }
+  ],
+  "try_it": [
+    {
+      "problem": "Evaluate 6^3.",
+      "solution": "Write three 6s: 6 × 6 × 6. 6×6 = 36, and 36×6 = 216.",
+      "expression": "6**3",
+      "answer": "216"
+    },
+    {
+      "problem": "Evaluate (-2)^5.",
+      "solution": "Five copies of -2: (-2)(-2) = 4, 4×(-2) = -8, -8×(-2) = 16, 16×(-2) = -32. An odd number of negatives gives a negative answer.",
+      "expression": "(-2)**5",
+      "answer": "-32"
+    },
+    {
+      "problem": "Evaluate 10^5 / 10^3 using the division rule.",
+      "solution": "Same base, so subtract exponents: 5 − 3 = 2, giving 10^2 = 100. Check: 100000 / 1000 = 100.",
+      "expression": "10**5/10**3",
+      "answer": "100"
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: the rumor story. Students work out how many people hear it each day (2, 4, 8, 16) and notice the repeated multiplication."
+    },
+    {
+      "minutes": 8,
+      "activity": "Introduce base and exponent with the tree picture and the square/cube pictures. Write 3^4 out as 3×3×3×3 together. Contrast 4^3 with 4×3."
+    },
+    {
+      "minutes": 8,
+      "activity": "Discover the product and division rules by writing out copies (2^3 × 2^4, 2^5 / 2^2). Students state the rule in their own words."
+    },
+    {
+      "minutes": 6,
+      "activity": "The pattern going down: 2^3, 2^2, 2^1, then 2^0 and 2^(-1), 2^(-2). Agree why a^0 = 1 and what a negative exponent means."
+    },
+    {
+      "minutes": 4,
+      "activity": "Sign care: compare (-3)^2 with -3^2 and (-2)^3 on the board. Pairs check each other."
+    },
+    {
+      "minutes": 7,
+      "activity": "Try it: students do the three problems on their own, then compare with a partner and explain one answer aloud."
+    },
+    {
+      "minutes": 2,
+      "activity": "Exit question: 'Explain in one sentence why 2^3 is not 6.'"
+    }
+  ],
+  "meta": {
+    "concept": "exponents",
+    "title": "Whole-number exponents",
+    "model": "sonnet",
+    "cost_usd": 0.03762,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Whole-number+exponents"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Whole-number+exponents"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Whole-number+exponents"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Whole-number+exponents"
+    }
+  ]
+}

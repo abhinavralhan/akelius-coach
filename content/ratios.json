@@ -1,0 +1,149 @@
+{
+  "idea": "A ratio compares two quantities by saying how much of one there is for a given amount of the other (for example 3 cups of flour to 2 cups of sugar, written 3:2). A rate is a ratio of two quantities with different units, such as 60 km per 2 hours. A unit rate is the rate for exactly 1 of the second quantity (30 km per 1 hour). Equivalent ratios come from multiplying or dividing both parts by the same number.",
+  "why": "Ratios work because they describe a repeated group. If a recipe is 3 cups flour to 2 cups sugar, making the recipe twice means 6 to 4, and the mixture tastes the same, because each part is multiplied by the same number. That is why multiplying or dividing both parts by the same number keeps the ratio equivalent. Adding the same number to both parts does not work, because it changes the makeup of the group instead of repeating it. A unit rate works the same way: dividing both quantities by the same number (the time) shrinks the group down to one hour, one item or one litre. Once you have the amount for 1, you can scale to any amount by multiplying. This is why 'find the unit rate first' solves most rate problems, and why comparing prices or speeds is easy when both are written per 1.",
+  "explanations": [
+    {
+      "kind": "picture",
+      "text": "Draw a ratio table. Top row, cups of flour: 3, 6, 9. Bottom row, cups of sugar: 2, 4, 6. Each step across adds one more batch of 3 and 2. Students can see that every column is the same ratio, and that you move between columns by multiplying both rows by the same number. You can also draw 3 red counters and 2 blue counters in a ring, then repeat the ring."
+    },
+    {
+      "kind": "story",
+      "text": "Ana makes orange paint by mixing 2 tins of yellow with 3 tins of red. A friend needs more, so Ana makes the same mix three times: 6 yellow and 9 red. The colour is exactly the same. Her brother instead adds 3 tins of each to the original mix, giving 5 yellow and 6 red. Now the amounts are almost equal, so the paint is noticeably more yellow than Ana's. Repeating the batch keeps the ratio. Adding the same amount to both parts changes it. Ask students which paint matches Ana's colour."
+    },
+    {
+      "kind": "procedure",
+      "text": "To solve a ratio or rate problem: 1) Write the rate with units, in order (150 km for 3 hours). 2) Find the unit rate by dividing by the second quantity (150 ÷ 3 = 50 km for 1 hour). 3) Multiply the unit rate by the amount you need (50 × 5 = 250 km in 5 hours). 4) Write the answer with its units and check it makes sense (more time, more distance). To simplify a ratio, divide both parts by their greatest common factor: 12:18 becomes 2:3."
+    }
+  ],
+  "student_questions": [
+    {
+      "question": "But why can't I just add the same number to both sides, like 2:3 becomes 4:5?",
+      "answer": "Because a ratio is about repeating groups, not about the gap. Picture 2 red and 3 blue. Doubling the group gives 4 red and 6 blue. If you add 2 to each you get 4 and 5, and now blue is only a little bigger than red, so the mixture looks different. Multiplying keeps the picture the same, adding changes it."
+    },
+    {
+      "question": "What is the difference between a ratio and a fraction?",
+      "answer": "They look alike and are closely related. A fraction usually compares a part to the whole, like 2 out of 5. A ratio can compare part to part, like 2 red to 3 blue. Here red is 2/5 of all the counters, but the ratio of red to blue is 2:3. So you often add the parts to get the whole before you write a fraction."
+    },
+    {
+      "question": "Why do we divide to get a unit rate? How do I know what to divide by?",
+      "answer": "A unit rate asks 'how much for 1?' so we share the first amount equally among the second amount. If 4 apples cost 6 dollars, sharing 6 dollars among 4 apples gives 1.50 dollars for 1 apple. The word 'per' tells you what to divide by: dollars per apple means dollars divided by apples."
+    },
+    {
+      "question": "Does the order in a ratio matter?",
+      "answer": "Yes. 3:2 means 3 of the first thing for every 2 of the second. 2:3 is the other way round. Always say what each number belongs to, for example 3 flour to 2 sugar."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding instead of multiplying to make an equivalent ratio (2:3 becomes 4:5).",
+      "response": "Do not just say it is wrong. Have the student draw both groups with counters and compare. Ask 'does the mix look the same?' Then show doubling both parts to get 4:6. Use a ratio table so the multiplier is visible in every column."
+    },
+    {
+      "mistake": "Dividing the wrong way when finding a unit rate (hours divided by km when asked for km per hour), or writing a ratio in the wrong order.",
+      "response": "Ask them to read the rate aloud with the word 'per'. 'Kilometres per hour' means kilometres divided by hours. Have them label every number with its unit and check that the answer has the units they were asked for."
+    },
+    {
+      "mistake": "Confusing part-to-part with part-to-whole, for example saying that in a 3:2 ratio of flour to sugar, flour is 1/3 of the mix.",
+      "response": "Ask 'how many parts are there altogether?' Add 3 + 2 = 5 parts. Flour is 3 of the 5 parts, so 3/5 of the mix. A bar model with 5 equal boxes, 3 shaded, makes this clear."
+    }
+  ],
+  "worked_examples": [
+    {
+      "problem": "A car travels 150 km in 3 hours at a steady speed. How far does it travel in 5 hours?",
+      "steps": "Step 1: Find the unit rate. 150 km ÷ 3 hours = 50 km per hour. Step 2: Multiply by 5 hours. 50 × 5 = 250. Step 3: Check: 5 hours is more than 3 hours, so the distance should be more than 150 km. 250 km is reasonable.",
+      "expression": "150/3*5",
+      "answer": "250"
+    },
+    {
+      "problem": "Juice is made by mixing concentrate and water in the ratio 2:5. A jug holds 2100 millilitres of juice in total. How much concentrate is in the jug?",
+      "steps": "Step 1: Add the parts. 2 + 5 = 7 parts in total. Step 2: Find the size of one part. 2100 ÷ 7 = 300 millilitres. Step 3: Concentrate is 2 parts. 2 × 300 = 600 millilitres. Step 4: Check: water is 5 × 300 = 1500, and 600 + 1500 = 2100.",
+      "expression": "2100/7*2",
+      "answer": "600"
+    },
+    {
+      "problem": "Shop A sells 4 notebooks for 6 dollars. Shop B sells 7 notebooks for 10 dollars. Which shop is cheaper per notebook? Give the price per notebook at Shop A in dollars.",
+      "steps": "Step 1: Shop A: 6 ÷ 4 = 1.50 dollars per notebook. Step 2: Shop B: 10 ÷ 7 is about 1.43 dollars per notebook. Step 3: 1.43 is less than 1.50, so Shop B is cheaper per notebook. The Shop A price is 3/2 dollars.",
+      "expression": "Rational(6,4)",
+      "answer": "3/2"
+    }
+  ],
+  "try_it": [
+    {
+      "problem": "A tap fills 12 litres of water in 4 minutes. How many litres does it fill in 10 minutes?",
+      "solution": "Unit rate: 12 ÷ 4 = 3 litres per minute. Then 3 × 10 = 30 litres.",
+      "expression": "12/4*10",
+      "answer": "30"
+    },
+    {
+      "problem": "Red and blue beads are in the ratio 3:4. There are 28 beads in total. How many are red?",
+      "solution": "3 + 4 = 7 parts. 28 ÷ 7 = 4 beads per part. Red is 3 parts: 3 × 4 = 12 beads.",
+      "expression": "28/7*3",
+      "answer": "12"
+    },
+    {
+      "problem": "2 kg of rice cost 7 dollars. How many dollars do 5 kg cost?",
+      "solution": "Unit price: 7 ÷ 2 = 3.50 dollars per kg. Then 3.50 × 5 = 17.50 dollars, which is 35/2.",
+      "expression": "Rational(7,2)*5",
+      "answer": "35/2"
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: show a drink recipe of 2 cups juice to 3 cups water. Ask students to make a double batch and a half batch. Collect ideas on the board."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach the idea with the ratio table and counters: equivalent ratios by multiplying both parts. Contrast with adding the same number to both parts (the paint story)."
+    },
+    {
+      "minutes": 7,
+      "activity": "Introduce rates and unit rates using the 'per' language. Work example 1 (150 km in 3 hours) together."
+    },
+    {
+      "minutes": 6,
+      "activity": "Part-to-part and part-to-whole using a bar model. Work example 2 (the juice mix) together."
+    },
+    {
+      "minutes": 4,
+      "activity": "Compare prices with unit rates (example 3). Discuss why unit rates make comparing fair."
+    },
+    {
+      "minutes": 8,
+      "activity": "Students work the three Try it problems in pairs, then check answers and explain their method."
+    },
+    {
+      "minutes": 2,
+      "activity": "Exit question: 'Why does adding 3 to both parts of 2:3 not give an equivalent ratio?' Collect one sentence from each student."
+    }
+  ],
+  "meta": {
+    "concept": "ratios",
+    "title": "Ratios and rates",
+    "model": "sonnet",
+    "cost_usd": 0.09016,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Ratios+and+rates"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Ratios+and+rates"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Ratios+and+rates"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Ratios+and+rates"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "idea": "An exponent counts how many times a base is used as a factor: 2^4 = 2·2·2·2. The rules of exponents are shortcuts that come straight from this counting. (1) a^m · a^n = a^(m+n). (2) a^m / a^n = a^(m−n). (3) (a^m)^n = a^(m·n). (4) (ab)^n = a^n · b^n. (5) a^0 = 1 for a not 0. (6) a^(−n) = 1 / a^n.",
+  "why": "Each rule is just counting factors. In a^m · a^n you write m copies of a and then n more copies, so there are m+n copies in all: 2^3 · 2^2 = (2·2·2)(2·2) = 2^5. In a^m / a^n, n copies on top cancel n copies on the bottom, leaving m−n copies: 2^5 / 2^2 = (2·2·2·2·2)/(2·2) = 2^3. In (a^m)^n you have n groups, each holding m copies of a, so m·n copies: (3^2)^3 = (3·3)(3·3)(3·3) = 3^6. In (ab)^n each of the n factors of (ab) brings one a and one b, so you get n copies of each. Zero and negative exponents follow from keeping the division rule true: 2^3 / 2^3 = 2^(3−3) = 2^0, but any nonzero number divided by itself is 1, so 2^0 = 1. Likewise 2^2 / 2^3 = 2^(−1), and writing it out gives (2·2)/(2·2·2) = 1/2, so 2^(−1) = 1/2. The rules only work when the bases are the same (rules 1 and 2) and they do not apply to sums: (a+b)^n is not a^n + b^n.",
+  "explanations": [
+    {
+      "kind": "picture",
+      "text": "Draw 2^3 as a row of three 2s joined by dots, then 2^2 as a row of two 2s. Put the rows side by side and circle them as one long row: five 2s, so 2^5. For division, write 2^5 over 2^2 as a fraction, and cross out two 2s from the top against two 2s from the bottom. Three are left. For (3^2)^3, draw three boxes, each holding two 3s, and count six 3s in all."
+    },
+    {
+      "kind": "story",
+      "text": "Imagine a rumor that doubles every hour. After 3 hours, 2^3 = 8 people know it. If it keeps going for 2 more hours, that is 2 more doublings, so you multiply by 2^2, and the total is 2^5 = 32. Doublings add up, which is why exponents add when you multiply. Going backwards in time, 2 hours ago there were half as many as 1 hour ago, which is why 2^0 = 1 (the one person who started it) and 2^(−1) = 1/2 (half a person's worth, meaning before the start)."
+    },
+    {
+      "kind": "procedure",
+      "text": "Step 1: Check that the bases are the same. Step 2: Look at the operation. Multiplying same bases: add exponents. Dividing same bases: subtract exponents (top minus bottom). Power of a power: multiply exponents. Power of a product: give the exponent to each factor. Step 3: Handle zero and negatives: a^0 = 1, and a^(−n) = 1 / a^n. Step 4: If unsure, write out the factors and count them. For numbers, you can check by computing both sides."
+    }
+  ],
+  "student_questions": [
+    {
+      "question": "But why do we add the exponents when we multiply? Why not multiply them?",
+      "answer": "Because the exponent counts factors. 2^3 means three 2s and 2^2 means two 2s. Putting them together gives five 2s, so 3+2 = 5. Let's write it out: (2·2·2)(2·2). You can count five."
+    },
+    {
+      "question": "But why is anything to the power of 0 equal to 1? Shouldn't it be 0?",
+      "answer": "Zero copies of the base doesn't mean zero. It means you haven't multiplied anything yet, and the starting value for multiplying is 1. Also, 5^3 / 5^3 = 1 because it's a number divided by itself, and the subtraction rule gives 5^(3−3) = 5^0. For the rule to keep working, 5^0 must be 1."
+    },
+    {
+      "question": "But why does a negative exponent give a fraction? Is the answer negative?",
+      "answer": "No, the negative sign means 'flip', not 'make negative'. Each time you lower the exponent by 1 you divide by the base: 2^3 = 8, 2^2 = 4, 2^1 = 2, 2^0 = 1, then 2^(−1) = 1/2, 2^(−2) = 1/4. The pattern keeps going."
+    },
+    {
+      "question": "But why can't I add exponents in 2^3 · 3^2?",
+      "answer": "The rule counts copies of the same base. Here you have three 2s and two 3s, and those are different things, like 3 apples and 2 oranges. You just calculate: 8 · 9 = 72."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Multiplying the exponents when multiplying powers: 2^3 · 2^4 = 2^12.",
+      "response": "Ask the student to write out both powers as factors and count. They will see 7 twos, so 2^7. Then contrast it with (2^3)^4, where multiplying is correct because you have 4 groups of 3 twos."
+    },
+    {
+      "mistake": "Multiplying the bases too: 2^3 · 2^4 = 4^7.",
+      "response": "Remind them the base tells what is being multiplied, and it doesn't change when you count more copies. Check with small numbers: 2^1 · 2^1 = 4, but 4^2 = 16. That shows the base must stay 2."
+    },
+    {
+      "mistake": "Treating (a+b)^2 as a^2 + b^2, or (−3)^2 as −9.",
+      "response": "Test with numbers: (1+2)^2 = 9, but 1^2 + 2^2 = 5. Show that (a+b)^2 means (a+b)(a+b). For (−3)^2, the parentheses mean the base is −3, so (−3)(−3) = 9. Without parentheses, −3^2 means −(3^2) = −9."
+    }
+  ],
+  "worked_examples": [
+    {
+      "problem": "Simplify and evaluate 2^3 · 2^4.",
+      "steps": "Same base 2, multiplying, so add exponents: 2^(3+4) = 2^7. Then 2^7 = 128. Check: 8 · 16 = 128.",
+      "expression": "2**3 * 2**4",
+      "answer": "128"
+    },
+    {
+      "problem": "Evaluate 5^6 / 5^4.",
+      "steps": "Same base 5, dividing, so subtract exponents: 5^(6−4) = 5^2 = 25. Check: 15625 / 625 = 25.",
+      "expression": "5**6 / 5**4",
+      "answer": "25"
+    },
+    {
+      "problem": "Evaluate (2^3)^2 · 2^(−2).",
+      "steps": "Power of a power: (2^3)^2 = 2^6. Then multiply by 2^(−2): 2^(6−2) = 2^4 = 16. Check: 64 · 1/4 = 16.",
+      "expression": "(2**3)**2 * 2**(-2)",
+      "answer": "16"
+    }
+  ],
+  "try_it": [
+    {
+      "problem": "Evaluate 3^2 · 3^3.",
+      "solution": "Same base, add exponents: 3^(2+3) = 3^5 = 243.",
+      "expression": "3**2 * 3**3",
+      "answer": "243"
+    },
+    {
+      "problem": "Evaluate (2^2)^3 / 2^4.",
+      "solution": "(2^2)^3 = 2^6. Then 2^6 / 2^4 = 2^2 = 4.",
+      "expression": "(2**2)**3 / 2**4",
+      "answer": "4"
+    },
+    {
+      "problem": "Evaluate 10^(−2) · 10^0 · 5^2.",
+      "solution": "10^(−2) = 1/100, 10^0 = 1, and 5^2 = 25. So (1/100) · 1 · 25 = 1/4.",
+      "expression": "Rational(1,100) * 1 * 25",
+      "answer": "1/4"
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: students write 2^4 and 3^3 as repeated multiplication and evaluate them. Name the base and the exponent."
+    },
+    {
+      "minutes": 10,
+      "activity": "Discover the product and quotient rules: students write out 2^3 · 2^2 and 2^5 / 2^2 as factors, count, and state the pattern in their own words."
+    },
+    {
+      "minutes": 8,
+      "activity": "Power of a power and power of a product, using the boxes picture. Compare with the product rule so they see the difference between adding and multiplying exponents."
+    },
+    {
+      "minutes": 7,
+      "activity": "Zero and negative exponents: build the table 2^3, 2^2, 2^1, 2^0, 2^(−1), 2^(−2) and watch the pattern of dividing by 2."
+    },
+    {
+      "minutes": 7,
+      "activity": "Pairs practice with the three try-it problems. Students check each answer by computing both ways."
+    },
+    {
+      "minutes": 3,
+      "activity": "Exit ticket: one sentence on when you add exponents and when you multiply them."
+    }
+  ],
+  "meta": {
+    "concept": "exponent-rules",
+    "title": "Rules of exponents",
+    "model": "sonnet",
+    "cost_usd": 0.03577,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Rules+of+exponents"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Rules+of+exponents"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Rules+of+exponents"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Rules+of+exponents"
+    }
+  ]
+}

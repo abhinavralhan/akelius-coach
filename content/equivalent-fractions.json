@@ -1,0 +1,145 @@
+{
+  "idea": "Equivalent fractions are different names for the same amount. Multiplying or dividing the numerator and denominator by the same non-zero number gives a fraction that sits at the same point on the number line. For example, 1/2 = 2/4 = 3/6 = 50/100.",
+  "why": "A fraction a/b means a pieces, each of size 1/b. If you cut every piece into n smaller equal parts, the whole has b×n parts and you hold a×n of them. The pieces are smaller, but there are more of them, so the amount is unchanged. In symbols, (a×n)/(b×n) = (a/b)×(n/n) = (a/b)×1 = a/b. Multiplying by n/n is multiplying by 1, which never changes a value. Adding the same number to top and bottom does not work, because that is not multiplying by 1. Dividing top and bottom by a common factor is the same idea in reverse (simplifying).",
+  "explanations": [
+    {
+      "kind": "picture",
+      "text": "Draw two identical rectangles. Split the first into 2 equal columns and shade 1. Split the second into 4 equal columns (draw one extra line through each column) and shade 2. The shaded area is the same in both. Say: we cut each piece in 2, so there are twice as many pieces in total and twice as many shaded, but the shaded area is unchanged. Repeat with a number line from 0 to 1, marking 1/2, 2/4, 3/6 at the same point."
+    },
+    {
+      "kind": "story",
+      "text": "Two friends share identical chocolate bars. Sam breaks his bar into 3 big pieces and eats 2, so he eats 2/3. Priya's bar has been scored into 6 smaller pieces, and she eats 4. Who ate more? Neither: Priya's pieces are half the size, so she needed twice as many. 2/3 = 4/6. Same chocolate, different counting. Money works too: 50 cents is 1/2 of a dollar, and so is 2 quarters out of 4."
+    },
+    {
+      "kind": "procedure",
+      "text": "To make an equivalent fraction: 1) Choose a non-zero number n, or work out what is needed, e.g. to turn 3/4 into a fraction with denominator 20, ask 4 × ? = 20, so n = 5. 2) Multiply the numerator and the denominator by n: 3×5 = 15 and 4×5 = 20, so 3/4 = 15/20. 3) To simplify, divide both by a common factor, ideally the greatest one: 18/24, both divisible by 6, gives 3/4. 4) To check two fractions, cross-multiply: a/b = c/d when a×d = b×c."
+    }
+  ],
+  "student_questions": [
+    {
+      "question": "But if the numbers get bigger, how can it be the same fraction?",
+      "answer": "The top and bottom numbers are counting pieces, and the pieces got smaller. More pieces, each smaller, makes the same total amount. Look at the picture: the shaded area didn't change, only how many lines we drew."
+    },
+    {
+      "question": "Why do I have to do the same thing to the top and the bottom?",
+      "answer": "Doing the same multiplication to both is the same as multiplying the fraction by 1, like 3/3 or 5/5. Multiplying by 1 changes how it looks, not what it is. If you only change one number, you multiply by something that is not 1, so the value changes."
+    },
+    {
+      "question": "Why can't I add 2 to the top and the bottom? 1/2 becomes 3/4, that seems fair.",
+      "answer": "Test it: 1/2 is half a pizza, but 3/4 is more than half. Adding changes the size of the amount, while multiplying by n/n does not. Only multiplying or dividing both numbers by the same number keeps the value."
+    },
+    {
+      "question": "Is there only one equivalent fraction for each fraction?",
+      "answer": "No, there are endlessly many. Multiply top and bottom by 2, 3, 4, and so on, and you get a new one each time. They all land at the same point on the number line."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding the same number to the numerator and denominator, e.g. 2/3 = 4/5.",
+      "response": "Don't just say it's wrong. Have the student draw both on strips or a number line and see they differ. Then contrast: adding changes the amount, multiplying by 2/2 does not. Ask: what did we do to get from 1/2 to 2/4?"
+    },
+    {
+      "mistake": "Multiplying only the denominator, or only the numerator, e.g. 3/4 = 3/8.",
+      "response": "Ask which is bigger, 3 quarters or 3 eighths of a pizza. Eighths are smaller pieces, so 3/8 is less. Remind them that the fraction must be multiplied by n/n, so both numbers change."
+    },
+    {
+      "mistake": "Thinking simplifying only works once, or stopping early, e.g. 12/24 = 6/12 and calling it done.",
+      "response": "Ask: can the top and bottom both be divided by something again? 6/12 = 3/6 = 1/2. Teach finding the greatest common factor, or simply repeat dividing until the only common factor is 1. The answer 6/12 is not wrong, just not fully simplified."
+    }
+  ],
+  "worked_examples": [
+    {
+      "problem": "Write a fraction equivalent to 2/3 with denominator 12.",
+      "steps": "Ask what 3 must be multiplied by to get 12: 3 × 4 = 12. Multiply the top by 4 as well: 2 × 4 = 8. So 2/3 = 8/12. Check: 8/12 divided by 4 on top and bottom gives 2/3.",
+      "expression": "2*4",
+      "answer": "8"
+    },
+    {
+      "problem": "Simplify 18/24 fully. Give the numerator of the answer.",
+      "steps": "The greatest common factor of 18 and 24 is 6. Divide the top: 18 ÷ 6 = 3. Divide the bottom: 24 ÷ 6 = 4. So 18/24 = 3/4, and no common factor greater than 1 remains.",
+      "expression": "18/6",
+      "answer": "3"
+    },
+    {
+      "problem": "Are 5/8 and 15/24 equivalent? Find the number that 5/8 is multiplied by, n/n, to get 15/24.",
+      "steps": "8 × 3 = 24 and 5 × 3 = 15, so 5/8 = 15/24. They are equivalent, with n = 3. Cross-check: 5 × 24 = 120 and 8 × 15 = 120, which are equal.",
+      "expression": "15/5",
+      "answer": "3"
+    }
+  ],
+  "try_it": [
+    {
+      "problem": "Fill in the blank: 3/5 = ?/20.",
+      "solution": "5 × 4 = 20, so multiply the top by 4 as well: 3 × 4 = 12. So 3/5 = 12/20.",
+      "expression": "3*4",
+      "answer": "12"
+    },
+    {
+      "problem": "Simplify 28/42 fully. What is the denominator of the answer?",
+      "solution": "The greatest common factor of 28 and 42 is 14. 28 ÷ 14 = 2 and 42 ÷ 14 = 3. So 28/42 = 2/3, and the denominator is 3.",
+      "expression": "42/14",
+      "answer": "3"
+    },
+    {
+      "problem": "7/9 = 35/?. Find the missing denominator.",
+      "solution": "7 × 5 = 35, so multiply the bottom by 5 as well: 9 × 5 = 45. So 7/9 = 35/45.",
+      "expression": "9*5",
+      "answer": "45"
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: show a bar split into 2 parts with 1 shaded, and another split into 4 with 2 shaded. Ask: same or different? Collect ideas without correcting yet."
+    },
+    {
+      "minutes": 10,
+      "activity": "Fraction strips or paper folding: students fold strips into halves, quarters and eighths and line them up to find matching amounts. Record the pairs, such as 1/2 = 2/4 = 4/8."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach the idea: multiplying top and bottom by the same number is multiplying by 1. Work through examples 1 and 2 on the board. Link back to the strips."
+    },
+    {
+      "minutes": 4,
+      "activity": "Address the 'add the same number' misconception: test 1/2 and 3/4 on the strips and discuss what went wrong."
+    },
+    {
+      "minutes": 10,
+      "activity": "Practice: students work through the three Try it problems in pairs, then add their own pair of equivalent fractions for a partner to check."
+    },
+    {
+      "minutes": 3,
+      "activity": "Wrap-up: each student writes on an exit slip how they know 3/6 and 1/2 are the same, using a picture or words."
+    }
+  ],
+  "meta": {
+    "concept": "equivalent-fractions",
+    "title": "Equivalent fractions",
+    "model": "sonnet",
+    "cost_usd": 0.03378,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Equivalent+fractions"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Equivalent+fractions"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Equivalent+fractions"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Equivalent+fractions"
+    }
+  ]
+}

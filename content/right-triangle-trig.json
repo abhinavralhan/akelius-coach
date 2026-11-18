@@ -1,0 +1,141 @@
+{
+  "idea": "In a right triangle, the sine of an acute angle is the ratio: length of the side opposite the angle divided by the length of the hypotenuse. Written: sin(A) = opposite / hypotenuse. The value depends only on the angle, not on how big the triangle is.",
+  "why": "Any two right triangles that share an acute angle are similar: they have the same shape, and one is an enlargement of the other. In similar triangles, matching sides are in the same ratio, so opposite/hypotenuse comes out the same in both. That is why we can give that ratio a name, sine, and attach it to the angle alone. Because the hypotenuse is the longest side, the opposite side is never longer than it, so the sine of an acute angle is always between 0 and 1. Once you know sin of an angle, you can use it two ways: find a missing opposite side (opposite = hypotenuse × sin) or a missing hypotenuse (hypotenuse = opposite ÷ sin).",
+  "explanations": [
+    {
+      "kind": "picture",
+      "text": "Draw a right triangle with the angle A at the bottom left. Label the side across from A as 'opposite' and the long slanted side as 'hypotenuse'. Now draw a second, bigger triangle sharing the same angle A, with the same bottom-left corner, so the two triangles are nested. Show that every side of the big one is, say, twice the small one. Opposite doubles and hypotenuse doubles, so the fraction opposite/hypotenuse does not change. Students can see that the fraction belongs to the angle."
+    },
+    {
+      "kind": "story",
+      "text": "A ramp builder is asked: for every metre you travel along the ramp surface, how many metres do you rise? That number is the sine of the ramp's angle. A gentle ramp might rise 0.1 m per metre of surface; a steep one 0.5 m. A 10 m long ramp at the steep angle rises 5 m, and a 20 m ramp at that same angle rises 10 m. The 'rise per metre of ramp' stays fixed for a given steepness. That fixed number is the sine."
+    },
+    {
+      "kind": "procedure",
+      "text": "1) Mark the angle you care about. 2) Find the hypotenuse: the side across from the right angle. 3) Find the opposite side: the one across from your marked angle, not touching it. 4) Write the fraction opposite over hypotenuse. 5) Simplify if possible. To find a missing side, put the known numbers into sin(A) = opposite / hypotenuse and solve like any one-unknown equation."
+    }
+  ],
+  "student_questions": [
+    {
+      "question": "But why is it called sine, and what is it really?",
+      "answer": "It is just a name for a ratio: opposite divided by hypotenuse. We needed a name because we use this ratio so often. Every angle has its own sine value, and a calculator stores those values for us."
+    },
+    {
+      "question": "But why does the triangle size not matter?",
+      "answer": "Triangles with the same angles are enlargements of each other. When every side is multiplied by the same number, the fraction opposite over hypotenuse stays the same, just like 3/5 and 6/10 are equal."
+    },
+    {
+      "question": "But why can sine never be bigger than 1?",
+      "answer": "The hypotenuse is the longest side of a right triangle. So the opposite side is shorter than it, and a shorter number divided by a longer number is less than 1."
+    },
+    {
+      "question": "But which side is 'opposite'? It changes!",
+      "answer": "Yes, it depends on which angle you are looking at. Opposite is the side across from your angle. If you switch to the other acute angle, opposite and the other leg swap roles. The hypotenuse never changes."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Using the side next to the angle (adjacent) instead of the opposite side.",
+      "response": "Ask the student to put a finger on the angle and slide it straight across the triangle to the far side. That is the opposite side. Have them label all three sides before writing any fraction."
+    },
+    {
+      "mistake": "Putting the hypotenuse on top, giving hypotenuse/opposite.",
+      "response": "Remind them that sine of an acute angle is at most 1, so the fraction must be less than 1. If their answer is bigger than 1, they flipped it."
+    },
+    {
+      "mistake": "Dividing when they should multiply (or the reverse) when finding a missing side, for example computing 10 ÷ 0.5 for the opposite side.",
+      "response": "Have them write the equation first: sin(A) = opposite / hypotenuse. Then substitute and solve. Check against common sense: the opposite side must be shorter than the hypotenuse."
+    }
+  ],
+  "worked_examples": [
+    {
+      "problem": "A right triangle has legs 3 and 4 and hypotenuse 5. Find the sine of the angle opposite the side of length 3.",
+      "steps": "The opposite side is 3 and the hypotenuse is 5. sin(A) = opposite / hypotenuse = 3/5. This is already simplified and is less than 1, as expected.",
+      "expression": "Rational(3,5)",
+      "answer": "3/5"
+    },
+    {
+      "problem": "A ramp is 10 m long and makes a 30° angle with the ground. Given that sin(30°) = 1/2, how high does it rise?",
+      "steps": "The ramp is the hypotenuse, 10 m. The height is the side opposite the 30° angle. From sin(30°) = opposite / 10, we get opposite = 10 × 1/2 = 5. The ramp rises 5 m.",
+      "expression": "10*Rational(1,2)",
+      "answer": "5"
+    },
+    {
+      "problem": "A right triangle has two equal legs of length 1. Find the sine of one of its acute angles.",
+      "steps": "By the Pythagorean theorem, hypotenuse = sqrt(1² + 1²) = sqrt(2). The opposite side is 1. So sin(A) = 1/sqrt(2). Multiply top and bottom by sqrt(2) to get sqrt(2)/2, about 0.707. This is the angle 45°.",
+      "expression": "1/sqrt(2)",
+      "answer": "sqrt(2)/2"
+    }
+  ],
+  "try_it": [
+    {
+      "problem": "A right triangle has legs 5 and 12 and hypotenuse 13. Find the sine of the angle opposite the side of length 12.",
+      "solution": "Opposite is 12 and hypotenuse is 13, so sin = 12/13.",
+      "expression": "Rational(12,13)",
+      "answer": "12/13"
+    },
+    {
+      "problem": "A ladder 20 m long leans so that it makes a 30° angle with the ground... wait, use this version: a kite string is 20 m long and makes a 30° angle with the flat ground. Given sin(30°) = 1/2, how high is the kite above the ground (string pulled straight)?",
+      "solution": "The string is the hypotenuse, 20 m. Height is the opposite side: 20 × 1/2 = 10 m.",
+      "expression": "20*Rational(1,2)",
+      "answer": "10"
+    },
+    {
+      "problem": "In a right triangle, an angle has sine 1/2 and the side opposite it is 4 cm. How long is the hypotenuse?",
+      "solution": "sin = opposite / hypotenuse, so 1/2 = 4 / h. Then h = 4 ÷ 1/2 = 8 cm. Check: the hypotenuse is longer than 4, good.",
+      "expression": "4/Rational(1,2)",
+      "answer": "8"
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: ask students to draw a right triangle and name its hypotenuse. Then ask which side is across from a chosen angle. Introduce the word opposite."
+    },
+    {
+      "minutes": 10,
+      "activity": "Picture explanation: nested similar triangles on the board. Students measure opposite and hypotenuse in two triangles and compare the ratios. Name the ratio sine."
+    },
+    {
+      "minutes": 10,
+      "activity": "Worked examples 1 to 3 together: find a sine from sides, then find a missing side using a known sine."
+    },
+    {
+      "minutes": 10,
+      "activity": "Students work the three Try it problems in pairs; teacher circulates and uses the mistakes list to respond."
+    },
+    {
+      "minutes": 5,
+      "activity": "Wrap-up: review the questions students asked, restate that sine is opposite over hypotenuse and is always between 0 and 1 for acute angles. Quick exit question: which side goes on top?"
+    }
+  ],
+  "meta": {
+    "concept": "right-triangle-trig",
+    "title": "Sine",
+    "model": "sonnet",
+    "cost_usd": 0.03788,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Sine"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Sine"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Sine"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Sine"
+    }
+  ]
+}

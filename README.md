@@ -20,7 +20,7 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/uvicorn coach.server:app --port 8000      # open http://127.0.0.1:8000
 ```
 
-You need the [Claude Code CLI](https://claude.com/claude-code), logged in. It is the development LLM backend (see "Design"). Six topics have pre-generated notes in `content/`. Any other topic is generated, checked and cached the first time someone opens it.
+You need the [Claude Code CLI](https://claude.com/claude-code), logged in. It is the development LLM backend (see "Design"). All 27 topics (grades 1–10) have notes pre-generated and checked in `content/`. A topic added later is generated, checked and cached the first time someone opens it (fallback).
 
 ```bash
 .venv/bin/python -m unittest tests.test_check tests.test_qa   # 9 tests, no LLM calls
@@ -62,7 +62,7 @@ evals/              10 teacher questions + rubric, graded by a stronger model
 
 | Decision | Trade-off |
 |---|---|
-| **Generate notes once per concept and share them** with every teacher | The first teacher waits about a minute; everyone after gets a file. The cost doesn't grow with the number of teachers, and an educator can review each sheet once. |
+| **Generate and check all notes before launch, then share them** with every teacher (D24) | Nothing reaches a teacher unchecked, and nobody waits. Notes are versioned JSON files (reviewable diffs, CDN-ready); dynamic data is in SQLite. Topics added later fall back to generate-on-first-open. The cost doesn't grow with the number of teachers, and an educator can review each sheet once. |
 | **Strong model (Sonnet) for notes, small model (Haiku) for live questions** | Notes are generated once, so quality is worth the price. Live questions are the cost driver, and only small models fit the budget (see cost). |
 | **Ground notes in short lessons we wrote** (`curriculum/lessons/`, CC BY) | They have to be written and checked by hand, but the model then elaborates on checked facts instead of its memory. Topics without a lesson are labelled. |
 | **SymPy verifies every worked answer**; model expressions are whitelisted first, because `sympify` evaluates code | It checks the arithmetic, not the wording of the problem. A sheet that fails is never cached or shown. |
@@ -84,7 +84,7 @@ Full list: [docs/research-notes.md §6](docs/research-notes.md).
 ## How we know the coach gives good answers
 
 1. **Grounding:** notes are generated from lessons we checked by hand (their arithmetic is verified with Python).
-2. **A deterministic gate:** `coach/check.py` recomputes every worked example and try-it answer with SymPy. All 6 sheets passed on the first try. Tests prove the gate catches a wrong answer, an injected expression, a model-written URL and a missing section.
+2. **A deterministic gate:** `coach/check.py` recomputes every worked example and try-it answer with SymPy. All 27 sheets passed on the first try. Tests prove the gate catches a wrong answer, an injected expression, a model-written URL and a missing section.
 3. **Eval** ([evals/results.md](evals/results.md)): 10 teacher questions across grades 3–9 go through the live pipeline. They include traps: a student's wrong answer to correct, a notation trap (−3² vs (−3)²) and an off-topic question. Claude Sonnet grades each answer on a fixed rubric. **Result: correct 10/10, explains why 9/10 (the 1 is the off-topic question, where there is nothing to explain), plain language 10/10, respectful 10/10, honest about scope 10/10.** The first run caught a flaw in the eval itself (the judge couldn't see the sheet the answers referred to), and the results file documents the fix. Limits: a small sample, a same-family judge, English only.
 4. **Honesty in the product:** everything AI-written says so and shows "not yet reviewed". Failures show a plain message, never a broken answer.
 
@@ -94,7 +94,7 @@ Full model with every assumption and a script to rerun: [docs/cost-model.md](doc
 
 - **Constraints:** 50k teachers, at most 50 live questions each per month, a $2k monthly budget enforced in code.
 - **Worst case** (everyone uses all 50): about **$0.04 per teacher** with Claude Haiku 5.5 (about $1,970 a month). **Realistic case** (half the teachers active, 15 questions each): about **$0.006 per teacher** (about $300 a month).
-- **Measured in the prototype:** a live answer cost **$0.00085** (the model predicted $0.00081), and a sheet cost **$0.038–0.047** once, shared by all teachers.
+- **Measured in the prototype:** a live answer cost **$0.00085** (the model predicted $0.00081), and the whole 27-sheet library cost **$1.12** once (about $0.04 per sheet), shared by all teachers.
 - **Accuracy is part of the cost:** a cheaper model with more errors costs more once its errors are re-answered by a stronger model. Sonnet or Opus on the live path would cost 15–30× the budget.
 - **How to lower it:** caching (repeated questions are free); promoting popular questions into the static notes; low reasoning effort; capped answer length; the Batch API for generating notes; a cheaper open-weight host if the eval shows the same quality.
 

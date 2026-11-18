@@ -1,0 +1,145 @@
+{
+  "idea": "The circumference of a circle is C = 2πr (or πd), and its area is A = πr². The number π is the same for every circle: it is the ratio of circumference to diameter, about 3.14. Circumference is a length (measured in cm, m); area is the space inside (measured in cm², m²).",
+  "why": "Circumference: take any circle and measure around it and across it (the diameter). The ratio circumference ÷ diameter is always the same number, because all circles are scaled copies of each other. We call that number π. So C = πd = 2πr. Area: cut a circle into many thin wedges and lay them alternately side by side. They form a shape close to a rectangle. Its length is about half the circumference (πr), because half the wedges point up and half point down. Its height is about r. So area ≈ πr × r = πr². With more, thinner wedges the shape gets closer to a true rectangle, so the formula is exact. This also explains why area has r squared: doubling the radius doubles the circumference but multiplies the area by 4.",
+  "explanations": [
+    {
+      "kind": "picture",
+      "text": "Draw a circle and cut it into 8 or 16 equal wedges (pizza slices). Arrange them point-up, point-down, alternating, so they interlock into a bumpy rectangle. Label the height r (the radius) and the length half the circumference, which is πr. Rectangle area = length × height = πr × r = πr². Have students do this with a paper circle if possible."
+    },
+    {
+      "kind": "story",
+      "text": "Imagine a bicycle wheel rolling one full turn along the ground. The distance it travels is exactly the circumference. If the wheel is 70 cm across, it travels a bit more than 3 times that, about 3.14 × 70 ≈ 220 cm, in one turn. Every wheel, big or small, travels π times its width in one turn. That is what π means. Now imagine painting the flat face of the wheel: the paint needed is the area, which depends on r × r, so a wheel twice as wide needs four times the paint."
+    },
+    {
+      "kind": "procedure",
+      "text": "Step 1: Decide what is asked. Distance around is circumference; space inside is area. Step 2: Find the radius. If given the diameter, halve it. Step 3: For circumference, compute 2 × π × r. For area, first square r, then multiply by π. Step 4: Write the unit: cm for circumference, cm² for area. Step 5: Leave the answer in terms of π for an exact value, or use 3.14 or a calculator for an approximation, and check it is sensible."
+    }
+  ],
+  "student_questions": [
+    {
+      "question": "But why is π always the same number for every circle?",
+      "answer": "Because all circles have the same shape, just bigger or smaller, like zooming a photo. When you zoom, the distance around and the distance across grow by the same factor, so their ratio never changes. That fixed ratio is π."
+    },
+    {
+      "question": "But why is the area r times r and not just r?",
+      "answer": "Area measures square units, so it has two directions, like length times width. In the wedge rectangle, one side is r and the other is πr. Both depend on the radius, which gives r × r. That is why doubling the radius makes the area four times bigger."
+    },
+    {
+      "question": "Is π exactly 3.14 or 22/7?",
+      "answer": "No. Both are only close approximations. π is a never-ending decimal that does not repeat, 3.14159... We use 3.14 or 22/7 to get a handy estimate. Writing π in the answer keeps it exact."
+    },
+    {
+      "question": "Why do we get two formulas for circumference, 2πr and πd?",
+      "answer": "They are the same thing. The diameter is twice the radius, d = 2r, so πd = π × 2r = 2πr. Use whichever matches what you are given."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Using the diameter in place of the radius in A = πr², for example squaring 10 when the diameter is 10.",
+      "response": "Ask, 'What does r stand for?' and have them sketch the circle and mark the radius as the line from the centre to the edge. Make halving the diameter the first written step every time."
+    },
+    {
+      "mistake": "Computing (πr)² or 2πr² instead of π × r², or mixing up the formulas, for example giving area when asked for circumference.",
+      "response": "Show that the square applies only to r. Practise with r = 3: r² = 9 first, then × π. Also ask 'is this a length or a space?' and check the units: cm for circumference, cm² for area."
+    },
+    {
+      "mistake": "Forgetting units, or writing cm instead of cm² for area.",
+      "response": "Link units to the picture: circumference is a string around the edge, measured in cm; area is covered by little 1 cm squares, so cm². Ask students to write the unit before they calculate."
+    }
+  ],
+  "worked_examples": [
+    {
+      "problem": "Find the circumference of a circle with radius 5 cm. Give the exact value.",
+      "steps": "Use C = 2πr. Substitute r = 5: C = 2 × π × 5 = 10π cm. (About 31.4 cm.)",
+      "expression": "10*pi",
+      "answer": "10*pi"
+    },
+    {
+      "problem": "Find the area of a circle with diameter 12 cm. Give the exact value.",
+      "steps": "The radius is half of the diameter: r = 6. Use A = πr² = π × 6² = 36π cm². (About 113.1 cm².)",
+      "expression": "36*pi",
+      "answer": "36*pi"
+    },
+    {
+      "problem": "A circle has a circumference of 18π cm. Find its radius and then its area.",
+      "steps": "C = 2πr = 18π, so 2r = 18 and r = 9. Then A = πr² = π × 81 = 81π cm².",
+      "expression": "81*pi",
+      "answer": "81*pi"
+    }
+  ],
+  "try_it": [
+    {
+      "problem": "Find the circumference of a circle with diameter 9 cm. Give the exact value.",
+      "solution": "C = πd = π × 9 = 9π cm.",
+      "expression": "9*pi",
+      "answer": "9*pi"
+    },
+    {
+      "problem": "Find the area of a circle with radius 7 cm. Give the exact value.",
+      "solution": "A = πr² = π × 49 = 49π cm².",
+      "expression": "49*pi",
+      "answer": "49*pi"
+    },
+    {
+      "problem": "A circle has circumference 16π cm. Find its area as an exact value.",
+      "solution": "2πr = 16π, so r = 8. A = π × 8² = 64π cm².",
+      "expression": "64*pi",
+      "answer": "64*pi"
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Hook: bring a few round objects (cups, lids). Students measure around and across with string and ruler, then divide. Notice the ratio is about 3."
+    },
+    {
+      "minutes": 7,
+      "activity": "Name π as that ratio. Build C = πd = 2πr. Do worked example 1 on the board."
+    },
+    {
+      "minutes": 8,
+      "activity": "Area discovery: cut a paper circle into wedges, rearrange into a near-rectangle, and derive A = πr². Discuss why r is squared."
+    },
+    {
+      "minutes": 7,
+      "activity": "Worked examples 2 and 3. Stress halving the diameter first and writing units (cm and cm²)."
+    },
+    {
+      "minutes": 10,
+      "activity": "Students work on the three Try it problems in pairs; the teacher circulates and uses the common mistakes list to respond."
+    },
+    {
+      "minutes": 3,
+      "activity": "Wrap up: students say aloud the difference between circumference and area, and one sentence on why π is the same for all circles."
+    }
+  ],
+  "meta": {
+    "concept": "circles",
+    "title": "Circumference and area of a circle",
+    "model": "sonnet",
+    "cost_usd": 0.0295,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Circumference+and+area+of+a+circle"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Circumference+and+area+of+a+circle"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Circumference+and+area+of+a+circle"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Circumference+and+area+of+a+circle"
+    }
+  ]
+}

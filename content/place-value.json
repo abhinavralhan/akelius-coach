@@ -1,0 +1,145 @@
+{
+  "idea": "In our number system, a digit's value depends on its place. Each place is worth 10 times the place to its right. So in 347, the 3 means 3 hundreds (300), the 4 means 4 tens (40), and the 7 means 7 ones (7). 347 = 300 + 40 + 7.",
+  "why": "We only have ten digits, 0 to 9, but we want to write any number. The trick is to group. Ten ones make one ten, ten tens make one hundred, ten hundreds make one thousand. When a place reaches 10, we trade those 10 for 1 of the next place to the left. That is why we never write a digit bigger than 9 in one place. The position tells us the size of the group, and the digit tells us how many groups. This is why 0 matters: in 305 the 0 holds the tens place open, so the 3 still means hundreds. Without it, 35 and 305 would look alike. And it is why 40 is 4 tens, not just 4: moving a digit one place left makes it worth 10 times as much.",
+  "explanations": [
+    {
+      "kind": "picture",
+      "text": "Draw three columns labeled Hundreds, Tens, Ones. For 347, draw 3 big squares in the hundreds column, 4 long sticks in the tens column and 7 small dots in the ones column. Point out that a long stick looks like 10 dots in a row, and a big square looks like 10 sticks side by side. Then write the digits 3, 4, 7 under the columns so students see the digits count the pieces."
+    },
+    {
+      "kind": "story",
+      "text": "Imagine a bakery that sells cookies singly, in boxes of 10, and in crates of 10 boxes (100 cookies). The baker has 3 crates, 4 boxes and 7 loose cookies. Her sign says 347. If she bakes 3 more loose cookies, she has 10 loose ones, so she packs them into a new box. Now she has 3 crates, 5 boxes and 0 loose cookies: 350. The story shows why we trade 10 of one thing for 1 of the next. The 0 is on the sign to say there are no loose cookies."
+    },
+    {
+      "kind": "procedure",
+      "text": "To find the value of a digit: 1) Write the number in a place value chart, one digit per column, lining up from the right. 2) Name the column the digit is in (ones, tens, hundreds). 3) Multiply the digit by the column value. For the 4 in 347: it is in the tens column, 4 x 10 = 40. 4) To write the number in expanded form, do this for every digit and add: 300 + 40 + 7."
+    }
+  ],
+  "student_questions": [
+    {
+      "question": "But why is the 4 in 347 worth 40 and not 4?",
+      "answer": "Because of where it sits. The 4 is in the tens place, so it counts groups of ten. 4 groups of ten is 40. If it sat in the ones place, like in 7 4... I mean in 304, it would be just 4 ones."
+    },
+    {
+      "question": "Why do we need zero in a number like 305?",
+      "answer": "The zero is a placeholder. It says there are no tens. Without it we would write 35, and the 3 would slide into the tens place and be worth 30 instead of 300. The zero keeps every other digit in its right place."
+    },
+    {
+      "question": "Why do we group in tens and not in some other number?",
+      "answer": "Long ago people counted on ten fingers, so ten became the natural group size. Other group sizes work too, and computers use twos. But in our system, every place is worth 10 times the one to its right."
+    },
+    {
+      "question": "Is the 5 in 55 worth the same both times?",
+      "answer": "No. The right 5 is in the ones place, so it is worth 5. The left 5 is in the tens place, so it is worth 50. Same digit, different place, different value. Together, 50 + 5 = 55."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Saying the value of the 4 in 347 is 4, reading the digit instead of its place value.",
+      "response": "Ask, 'How many tens are there?' Have the student build 347 with sticks and dots and count. Then write 4 tens = 40. Repeat with another digit until they say the place name first."
+    },
+    {
+      "mistake": "Writing a number like three hundred five as 35 or 3005 by writing what they hear.",
+      "response": "Use a three-column chart. Ask: how many hundreds? 3. How many tens? 0. How many ones? 5. Fill each column, then read off 305. Point out the zero holds the tens place."
+    },
+    {
+      "mistake": "Mixing up the order of places, for example thinking the leftmost digit is the ones place.",
+      "response": "Tell students to start from the right: ones first, then tens, then hundreds. Have them label each column above the number, from the right, before answering any question. Show that the biggest place is on the left."
+    }
+  ],
+  "worked_examples": [
+    {
+      "problem": "What is the value of the 6 in 862?",
+      "steps": "Write 862 in a chart: 8 in hundreds, 6 in tens, 2 in ones. The 6 is in the tens place. Its value is 6 x 10 = 60.",
+      "expression": "6*10",
+      "answer": "60"
+    },
+    {
+      "problem": "Write 5,284 in expanded form and check that it adds back to the number.",
+      "steps": "Places from the left: thousands, hundreds, tens, ones. 5 thousands = 5000, 2 hundreds = 200, 8 tens = 80, 4 ones = 4. Add: 5000 + 200 + 80 + 4 = 5284.",
+      "expression": "5000+200+80+4",
+      "answer": "5284"
+    },
+    {
+      "problem": "A number has 3 hundreds, 0 tens and 9 ones. What is the number?",
+      "steps": "3 hundreds = 300. 0 tens = 0. 9 ones = 9. Add: 300 + 0 + 9 = 309. The 0 keeps the 3 in the hundreds place.",
+      "expression": "3*100+0*10+9",
+      "answer": "309"
+    }
+  ],
+  "try_it": [
+    {
+      "problem": "What is the value of the 7 in 573?",
+      "solution": "Write the chart: 5 hundreds, 7 tens, 3 ones. The 7 is in the tens place, so its value is 7 x 10 = 70.",
+      "expression": "7*10",
+      "answer": "70"
+    },
+    {
+      "problem": "What number is 4 hundreds + 2 tens + 6 ones?",
+      "solution": "4 x 100 = 400, 2 x 10 = 20, 6 x 1 = 6. Add: 400 + 20 + 6 = 426.",
+      "expression": "4*100+2*10+6",
+      "answer": "426"
+    },
+    {
+      "problem": "What number is 7 thousands + 0 hundreds + 5 tens + 1 one?",
+      "solution": "7 x 1000 = 7000, 0 hundreds = 0, 5 x 10 = 50, 1 x 1 = 1. Add: 7000 + 0 + 50 + 1 = 7051.",
+      "expression": "7*1000+0*100+5*10+1",
+      "answer": "7051"
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: show 23 as 2 sticks and 3 dots. Ask how many in all. Then show 32 with the same pieces and ask what changed."
+    },
+    {
+      "minutes": 10,
+      "activity": "Build numbers with sticks, dots and squares. Trade 10 dots for a stick and 10 sticks for a square. Introduce the Hundreds, Tens, Ones chart."
+    },
+    {
+      "minutes": 10,
+      "activity": "Teach the procedure with 347 and 862. Students say the place name first, then the value. Write expanded form together."
+    },
+    {
+      "minutes": 5,
+      "activity": "The zero: build 305 and 350 side by side. Discuss why the zero is needed."
+    },
+    {
+      "minutes": 7,
+      "activity": "Pairs practice: one student says a number, the partner writes the chart and the expanded form. Swap. Teacher circulates and uses the mistake responses."
+    },
+    {
+      "minutes": 3,
+      "activity": "Wrap-up: ask 'In 55, why is one 5 worth more than the other?' Students answer on a slip of paper."
+    }
+  ],
+  "meta": {
+    "concept": "place-value",
+    "title": "Place value (ones",
+    "model": "sonnet",
+    "cost_usd": 0.03137,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Place+value+%28ones"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Place+value+%28ones"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Place+value+%28ones"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Place+value+%28ones"
+    }
+  ]
+}

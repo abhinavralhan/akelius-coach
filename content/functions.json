@@ -1,0 +1,145 @@
+{
+  "idea": "A function is a rule that takes each input and gives exactly one output. The same input must never give two different outputs. Different inputs may share an output.",
+  "why": "The key requirement is \"exactly one output for each input\". This makes a function predictable: if you know the rule and the input, the output is settled. That is why we can write f(3) and mean one specific number, draw a graph, and trust a table. Think of a vending machine. Press B2 and you always get the same snack. If B2 sometimes gave chips and sometimes gave a cookie, you could not rely on it, and it would not be a function. Two buttons giving the same snack is fine, because each button still gives only one result. This is why y = 2x + 1 is a function (each x gives one y). It is also why x = y² is not a function of x: x = 4 gives y = 2 and y = -2, so one input has two outputs. On a graph, this is the vertical line test. A vertical line at any x must cross the graph at most once, because two crossings would mean two outputs for that input.",
+  "explanations": [
+    {
+      "kind": "picture",
+      "text": "Draw two ovals. Put inputs 1, 2, 3 in the left oval and outputs 2, 4, 6 in the right oval. Draw one arrow from each input to its output (the rule is 'double'). Point out that every input has exactly one arrow leaving it. Then draw a second picture where 3 has two arrows going to two different outputs, and say 'this is not a function'. Finally show 1 and 2 both pointing to the same output. This is allowed, because each input still has just one arrow."
+    },
+    {
+      "kind": "story",
+      "text": "A school canteen has a price list. You say the name of a item, and the cashier tells you one price. 'Apple' always means 50 cents. If the cashier gave you 50 cents one day and 80 cents the next for the same apple, nobody could trust the list. Two different items can cost the same, such as apple and banana both at 50 cents, and the list still works. The items are the inputs, the prices are the outputs, and the price list is the function."
+    },
+    {
+      "kind": "procedure",
+      "text": "To decide whether something is a function: (1) List or imagine the inputs. (2) For each input, find all outputs the rule gives. (3) If every input has exactly one output, it is a function. If any input has two or more outputs, it is not. For a table, look for a repeated input with different outputs. For a graph, use the vertical line test. For a formula such as f(x) = 3x - 2, substitute a number for x and calculate: you get one value."
+    }
+  ],
+  "student_questions": [
+    {
+      "question": "But why can't one input have two outputs?",
+      "answer": "Because a function is a rule you can rely on. If I put 3 in and sometimes get 5 and sometimes get 7, I cannot predict anything. A function promises one answer for each input, like a vending machine button giving the same snack each time."
+    },
+    {
+      "question": "Can two different inputs have the same output?",
+      "answer": "Yes. The rule f(x) = x² gives 4 for both 2 and -2. That is fine. The rule only has to give one output for each input. Each of 2 and -2 gets just one answer, 4."
+    },
+    {
+      "question": "Why do we write f(x) instead of just y?",
+      "answer": "f is the name of the rule and f(x) means 'the output of the rule f when the input is x'. It is useful because we can name different rules, such as f and g, and say exactly which input we mean, like f(3)."
+    },
+    {
+      "question": "Does a function always have a formula?",
+      "answer": "No. A function can be given by a table, a graph, a list of arrows, or words. A formula is only one way to describe the rule. A price list is a function even without a formula."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Students think two inputs with the same output breaks the rule, so a function must have different outputs for different inputs.",
+      "response": "Return to the arrow picture. Ask: does any input have two arrows leaving it? If not, it is a function. Show f(x) = x² with 2 and -2 both going to 4, and say the rule is about arrows leaving each input, not arrows arriving at outputs."
+    },
+    {
+      "mistake": "Students think every function must have a formula such as y = 2x + 3.",
+      "response": "Show a table or a price list and ask the 'one input, one output?' question. Explain that a formula is just one way of writing a rule, and that tables, graphs and words can all describe functions."
+    },
+    {
+      "mistake": "Students mix up input and output, for example reading a table backwards and saying a repeated output means 'not a function'.",
+      "response": "Label the columns 'input' and 'output' clearly. Say 'check each input and see how many outputs it has'. Practise with a table where the outputs repeat but the inputs do not, then one where an input repeats with different outputs, and compare."
+    }
+  ],
+  "worked_examples": [
+    {
+      "problem": "A function is given by f(x) = 3x - 2. Find f(4).",
+      "steps": "Replace x with 4 in the rule. Multiply 3 by 4 to get 12. Subtract 2 to get 10. The input 4 gives exactly one output, 10.",
+      "expression": "3*4 - 2",
+      "answer": "10"
+    },
+    {
+      "problem": "A taxi charges a fixed 5 dollars plus 2 dollars per kilometre. The cost is a function of distance. What is the cost for 7 km?",
+      "steps": "Write the rule: cost = 5 + 2 × distance. Put in 7 for the distance: 2 × 7 = 14. Add the fixed 5: 14 + 5 = 19. Each distance has just one cost, so this is a function.",
+      "expression": "5 + 2*7",
+      "answer": "19"
+    },
+    {
+      "problem": "Is the rule 'input x, output y where y² = 9' a function? Find the outputs when x = 9 is not needed; instead, take the input 'the number 9 is the value of y squared' and count how many outputs y satisfy y² = 9, then give the positive one.",
+      "steps": "Solve y² = 9. Both y = 3 and y = -3 work, so the single rule y² = 9 gives two outputs. This means it is not a function. If we choose the rule 'y is the positive square root of 9', we get only one output, 3. The positive square root of 9 is sqrt(9).",
+      "expression": "sqrt(9)",
+      "answer": "3"
+    }
+  ],
+  "try_it": [
+    {
+      "problem": "Let g(x) = 5x + 1. Find g(3).",
+      "solution": "Replace x with 3: 5 × 3 = 15, then add 1 to get 16.",
+      "expression": "5*3 + 1",
+      "answer": "16"
+    },
+    {
+      "problem": "A function h is given by h(x) = x² - 4. Find h(5).",
+      "solution": "Square 5 to get 25, then subtract 4 to get 21.",
+      "expression": "5**2 - 4",
+      "answer": "21"
+    },
+    {
+      "problem": "A gym charges 10 dollars to join plus 3 dollars per visit. How much does it cost for 6 visits?",
+      "solution": "Cost = 10 + 3 × visits. With 6 visits, 3 × 6 = 18. Add 10 to get 28 dollars.",
+      "expression": "10 + 3*6",
+      "answer": "28"
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: the vending machine or price list. Ask students what they expect when they press the same button twice. Collect ideas."
+    },
+    {
+      "minutes": 10,
+      "activity": "Introduce the arrow picture. Draw three examples on the board: a function, a non-function with one input having two arrows, and a function with a shared output. Students say which are functions and why."
+    },
+    {
+      "minutes": 8,
+      "activity": "Introduce f(x) notation. Work through the worked examples f(4) for f(x) = 3x - 2 and the taxi cost."
+    },
+    {
+      "minutes": 5,
+      "activity": "Tables and graphs: show a table with a repeated input and a simple graph. Introduce the vertical line test."
+    },
+    {
+      "minutes": 10,
+      "activity": "Students work on the three Try It problems in pairs, then compare answers."
+    },
+    {
+      "minutes": 2,
+      "activity": "Exit question: in one sentence, finish 'A function is a rule where each input has...'."
+    }
+  ],
+  "meta": {
+    "concept": "functions",
+    "title": "What a function is",
+    "model": "sonnet",
+    "cost_usd": 0.03136,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=What+a+function+is"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=What+a+function+is"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/What+a+function+is"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=What+a+function+is"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "idea": "Multiplication means counting equal groups: a × b is the total when you have a groups with b in each group. It is a fast way to do repeated addition, and it also describes rows and columns in an array and equal-sized jumps on a number line.",
+  "why": "When every group has the same size, adding the same number again and again gives the same total as multiplying. 4 × 3 means 3 + 3 + 3 + 3 = 12, and that is exactly what multiplying does, only faster. An array shows why order does not change the total. 3 rows of 4 can be turned on its side to make 4 rows of 3, and no counters were added or removed, so 3 × 4 = 4 × 3. Multiplying by 1 gives the same number (one group of 5 is 5), and multiplying by 0 gives 0 (no groups, or groups with nothing in them, means nothing in total). The method only works when the groups are equal. If the groups are different sizes, you add them instead.",
+  "explanations": [
+    {
+      "kind": "picture",
+      "text": "Draw 3 rows of 4 dots. Say: 3 rows, 4 dots in each row, 12 dots in all. Write 3 × 4 = 12. Now turn the page on its side. You see 4 rows of 3 dots, still 12 dots, so 4 × 3 = 12. Draw a number line too: 4 jumps of size 3 land on 12."
+    },
+    {
+      "kind": "story",
+      "text": "There are 5 plates and each plate has 2 cookies. How many cookies? Students may count 2, 4, 6, 8, 10. Say: 5 plates with 2 cookies each is 5 groups of 2, written 5 × 2 = 10. Then ask what changes if there are 2 plates with 5 cookies each. The total is still 10, but the picture is different: 2 groups of 5."
+    },
+    {
+      "kind": "procedure",
+      "text": "Step 1: Ask what the groups are and how many there are. Step 2: Check that every group has the same size. Step 3: Write the repeated addition, for example 6 + 6 + 6. Step 4: Write it as multiplication: 3 groups of 6 is 3 × 6. Step 5: Find the total, 18, and say it with the unit: 18 apples."
+    }
+  ],
+  "student_questions": [
+    {
+      "question": "Why is 3 × 4 the same as 4 × 3 when the stories are different?",
+      "answer": "The stories are different, but the total is the same. Look at 3 rows of 4 dots. Turn it on its side and it is 4 rows of 3 dots. Nothing was added or taken away, so both are 12."
+    },
+    {
+      "question": "Why is any number times 0 equal to 0?",
+      "answer": "3 × 0 means 3 groups with nothing in each group. If you add 0 + 0 + 0 you get 0. There is nothing there to count."
+    },
+    {
+      "question": "Why does multiplying not always make the number bigger?",
+      "answer": "Multiplying by 1 keeps the number the same, because one group of 7 is 7. Multiplying by 0 gives 0, which is smaller. Later, when you multiply by a fraction like a half, the answer is smaller too. It only grows when you have more than one whole group."
+    },
+    {
+      "question": "Why do we need multiplication if we can just add?",
+      "answer": "You can add, and the answer is the same. But for 8 groups of 6, writing 6 + 6 + 6 + 6 + 6 + 6 + 6 + 6 is long and easy to get wrong. Multiplication is a shorter way to write and work out the same thing."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Adding the two numbers instead of multiplying, for example 4 × 3 = 7.",
+      "response": "Ask the student to draw 4 groups of 3 and count everything. They will find 12. Then show the 4 groups as 3 + 3 + 3 + 3 so they see that the number of groups and the group size play different roles."
+    },
+    {
+      "mistake": "Using unequal groups and still writing a multiplication, such as 3 plates with 2, 3 and 4 cookies written as 3 × 3.",
+      "response": "Ask: are all the plates the same? Explain that multiplication needs equal groups. Here we add 2 + 3 + 4 = 9. Let them make the groups equal and compare."
+    },
+    {
+      "mistake": "Thinking that 5 × 0 = 5, or that multiplying always makes the number bigger.",
+      "response": "Draw 5 plates with no cookies on any of them. Ask how many cookies there are. Then do 5 × 1 with one cookie on each plate. Let the pictures show the difference."
+    }
+  ],
+  "worked_examples": [
+    {
+      "problem": "There are 4 bags with 6 marbles in each bag. How many marbles are there in all?",
+      "steps": "The 4 bags are 4 equal groups, and each group has 6 marbles. Write the repeated addition: 6 + 6 + 6 + 6 = 24. Write it as multiplication: 4 × 6 = 24.",
+      "expression": "4*6",
+      "answer": "24"
+    },
+    {
+      "problem": "A tray has 3 rows of 5 muffins. How many muffins are on the tray?",
+      "steps": "Draw the array: 3 rows, 5 muffins in each row. Count by fives: 5, 10, 15. This is 3 × 5 = 15. Check by turning the tray: 5 rows of 3 is also 15.",
+      "expression": "3*5",
+      "answer": "15"
+    },
+    {
+      "problem": "A frog jumps 7 times and each jump is 2 metres long. How far does it go?",
+      "steps": "Mark 7 jumps of size 2 on a number line: 2, 4, 6, 8, 10, 12, 14. That is 7 groups of 2, so 7 × 2 = 14 metres.",
+      "expression": "7*2",
+      "answer": "14"
+    }
+  ],
+  "try_it": [
+    {
+      "problem": "There are 5 boxes with 4 pencils in each box. How many pencils are there in all?",
+      "solution": "5 groups of 4 is 4 + 4 + 4 + 4 + 4 = 20, so 5 × 4 = 20.",
+      "expression": "5*4",
+      "answer": "20"
+    },
+    {
+      "problem": "A garden has 6 rows of 3 plants. How many plants are there?",
+      "solution": "6 rows with 3 in each row: 3 + 3 + 3 + 3 + 3 + 3 = 18, so 6 × 3 = 18.",
+      "expression": "6*3",
+      "answer": "18"
+    },
+    {
+      "problem": "A rabbit hops 8 times and each hop is 2 metres. How far does it hop in all?",
+      "solution": "8 jumps of size 2: 2 × 8 = 16 metres.",
+      "expression": "8*2",
+      "answer": "16"
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up: show 3 plates with 2 counters each. Ask how many counters and how they counted. Collect counting and adding answers."
+    },
+    {
+      "minutes": 10,
+      "activity": "Introduce 'groups of' and the × sign. Build 4 groups of 3 with counters, write 3 + 3 + 3 + 3 and 4 × 3. Do worked example 1."
+    },
+    {
+      "minutes": 8,
+      "activity": "Arrays and the number line: draw 3 rows of 5, turn it on its side, and show 3 × 5 = 5 × 3. Do worked examples 2 and 3."
+    },
+    {
+      "minutes": 10,
+      "activity": "Pairs practise the try-it problems. Each pair draws a picture and writes both the repeated addition and the multiplication."
+    },
+    {
+      "minutes": 4,
+      "activity": "Talk about unequal groups, and about times 0 and times 1, using the common mistakes and student questions."
+    },
+    {
+      "minutes": 3,
+      "activity": "Wrap-up: each student writes one story for 4 × 5 and shows the picture. Share one or two."
+    }
+  ],
+  "meta": {
+    "concept": "meaning-of-multiplication",
+    "title": "What multiplication means",
+    "model": "sonnet",
+    "cost_usd": 0.03052,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=What+multiplication+means"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=What+multiplication+means"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/What+multiplication+means"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=What+multiplication+means"
+    }
+  ]
+}

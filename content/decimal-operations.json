@@ -1,0 +1,141 @@
+{
+  "idea": "Decimals follow the same place-value rules as whole numbers. To add or subtract, line up matching places (the decimal points). To multiply, multiply as if there were no decimal points, then put the point back so the answer has as many decimal places as the two factors together. To divide, scale both numbers by the same power of 10 so you are dividing by a whole number.",
+  "why": "Each digit's value depends on its place: tenths are ten times smaller than ones, and hundredths are ten times smaller than tenths. Adding or subtracting only makes sense for the same kind of unit (tenths with tenths, hundredths with hundredths), so we line up the places. For multiplication, 0.3 x 0.04 is (3 tenths) x (4 hundredths) = 12 thousandths = 0.012. Tenths times hundredths gives thousandths, which is why we count decimal places (1 + 2 = 3). For division, multiplying both numbers by 10 or 100 does not change the quotient: 6.3 / 0.9 = (6.3 x 10) / (0.9 x 10) = 63 / 9. So we can swap a decimal divisor for a whole number without changing the answer.",
+  "explanations": [
+    {
+      "kind": "picture",
+      "text": "Draw a place-value chart with columns Ones | . | Tenths | Hundredths. Write 2.35 and 1.4 one under the other, with 1.4 written as 1.40. Because the points and columns line up, you can add column by column: 5 hundredths, then 7 tenths, then 3 ones, giving 3.75. For multiplication, draw a 10 by 10 grid as 1 whole. Shade 0.3 of the width and 0.4 of the height: the overlap is 12 small squares out of 100, so 0.3 x 0.4 = 0.12."
+    },
+    {
+      "kind": "story",
+      "text": "You buy a drink for 2.35 and a snack for 1.40. Money makes decimals natural: 2.35 is 2 dollars and 35 cents, and 1.40 is 1 dollar and 40 cents. You add dollars to dollars and cents to cents, never cents to dollars. That is exactly why the decimal points must line up. For division: you have 6 dollars and want half-dollar coins. How many half-dollars are in 6? 12. So 6 / 0.5 = 12, and dividing by a half doubles."
+    },
+    {
+      "kind": "procedure",
+      "text": "Add or subtract: 1) Write the numbers with the decimal points in a vertical line. 2) Fill in empty places with zeros. 3) Add or subtract as with whole numbers. 4) Bring the point straight down. Multiply: 1) Ignore the points and multiply the whole numbers. 2) Count the decimal places in both factors together. 3) Put the point so the answer has that many places. Divide: 1) Move the decimal point in the divisor right until it is whole. 2) Move the point in the dividend the same number of places. 3) Divide, placing the point in the answer directly above the point in the dividend."
+    }
+  ],
+  "student_questions": [
+    {
+      "question": "Why do we line up the decimal points when adding, but not when multiplying?",
+      "answer": "Adding only works with the same size of unit: tenths with tenths, hundredths with hundredths. Lining up the points puts same-size units in the same column. In multiplication we are not combining like units. Tenths times hundredths makes a new unit, thousandths, so we count places afterwards instead."
+    },
+    {
+      "question": "Why is 0.3 x 0.4 smaller than both 0.3 and 0.4? I thought multiplying makes things bigger.",
+      "answer": "Multiplying by a number less than 1 means taking only a part of something. 0.4 x 0.3 is 4 tenths of 0.3, so it is a part of 0.3 and must be smaller. The answer is 0.12."
+    },
+    {
+      "question": "Why can we move the decimal point in both numbers when dividing?",
+      "answer": "Because multiplying both numbers by 10 keeps the answer the same. 6.3 / 0.9 asks how many 0.9s fit in 6.3. If everything is ten times bigger, the same number of pieces still fit: 63 / 9 = 7. It is like measuring in millimeters instead of centimeters: the number of times one length fits into the other does not change."
+    },
+    {
+      "question": "Why do 0.5 and 0.50 mean the same thing?",
+      "answer": "5 tenths is the same amount as 50 hundredths. Writing a zero at the end of the decimal part does not change the value, it only cuts the same amount into smaller pieces. That is why we can add zeros to line up columns."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Lining up numbers by their right-hand digits instead of the decimal points, e.g. writing 2.35 + 1.4 with the 4 under the 5 and getting 2.49.",
+      "response": "Ask: what does the 4 stand for in 1.4? Tenths. And the 5 in 2.35? Hundredths. Can we add them directly? Have the student rewrite 1.4 as 1.40 and see that the 4 sits under the 3. Money helps: 1.40 versus 1.04."
+    },
+    {
+      "mistake": "Misplacing the point in multiplication, e.g. 0.3 x 0.4 = 1.2, or 0.3 x 0.04 = 0.12 because they only counted one place.",
+      "response": "Have the student estimate first: 0.3 is about a third and 0.4 is a bit less than a half, so the answer should be small, near 0.1. Then 1.2 clearly cannot be right. Then return to counting places in both factors: 1 + 1 = 2 places, so 12 becomes 0.12."
+    },
+    {
+      "mistake": "When dividing by a decimal, moving the point in the divisor but not in the dividend, e.g. treating 6.3 / 0.9 as 6.3 / 9 = 0.7.",
+      "response": "Remind them that both numbers must be scaled by the same factor. Ask them to check by multiplying: does 0.9 x 0.7 give 6.3? No, it gives 0.63. Then redo it as 63 / 9 = 7 and check 0.9 x 7 = 6.3."
+    }
+  ],
+  "worked_examples": [
+    {
+      "problem": "Add 2.35 + 1.4",
+      "steps": "Line up the points and write 1.4 as 1.40. Hundredths: 5 + 0 = 5. Tenths: 3 + 4 = 7. Ones: 2 + 1 = 3. Bring down the point: 3.75.",
+      "expression": "Rational(235,100) + Rational(14,10)",
+      "answer": "15/4"
+    },
+    {
+      "problem": "Multiply 0.3 x 0.04",
+      "steps": "Ignore the points: 3 x 4 = 12. Count decimal places: 0.3 has 1, 0.04 has 2, total 3. So 12 becomes 0.012 (three places, so add a zero at the front). Check: 3 tenths of 4 hundredths is 12 thousandths.",
+      "expression": "Rational(3,10) * Rational(4,100)",
+      "answer": "3/250"
+    },
+    {
+      "problem": "Divide 6.3 / 0.9",
+      "steps": "Multiply both numbers by 10 so the divisor is whole: 63 / 9. 63 / 9 = 7. Check: 0.9 x 7 = 6.3.",
+      "expression": "Rational(63,10) / Rational(9,10)",
+      "answer": "7"
+    }
+  ],
+  "try_it": [
+    {
+      "problem": "Subtract 5.2 - 1.75",
+      "solution": "Write 5.2 as 5.20 and line up the points. 5.20 - 1.75 = 3.45.",
+      "expression": "Rational(52,10) - Rational(175,100)",
+      "answer": "69/20"
+    },
+    {
+      "problem": "Multiply 1.2 x 0.5",
+      "solution": "12 x 5 = 60. There are 1 + 1 = 2 decimal places, so 0.60 = 0.6.",
+      "expression": "Rational(12,10) * Rational(5,10)",
+      "answer": "3/5"
+    },
+    {
+      "problem": "Divide 4.5 / 0.15",
+      "solution": "Multiply both by 100: 450 / 15 = 30. Check: 0.15 x 30 = 4.5.",
+      "expression": "Rational(45,10) / Rational(15,100)",
+      "answer": "30"
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up with money: add 2.35 + 1.40 and discuss why dollars go with dollars. Ask what 0.5 and 0.50 mean."
+    },
+    {
+      "minutes": 10,
+      "activity": "Add and subtract: place-value chart, line up the points, pad with zeros. Work 2.35 + 1.4 together, then students try 5.2 - 1.75 in pairs."
+    },
+    {
+      "minutes": 10,
+      "activity": "Multiply: 10 by 10 grid for 0.3 x 0.4, then the count-the-places rule with 0.3 x 0.04. Estimate first each time."
+    },
+    {
+      "minutes": 10,
+      "activity": "Divide: ask how many 0.5s fit in 6, then scale both numbers by 10 with 6.3 / 0.9. Check each answer by multiplying."
+    },
+    {
+      "minutes": 5,
+      "activity": "Exit check: students do one question of each type, then talk through the most common mistakes."
+    }
+  ],
+  "meta": {
+    "concept": "decimal-operations",
+    "title": "Operations with decimals",
+    "model": "sonnet",
+    "cost_usd": 0.08486,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Operations+with+decimals"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Operations+with+decimals"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Operations+with+decimals"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Operations+with+decimals"
+    }
+  ]
+}

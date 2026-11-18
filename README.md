@@ -32,6 +32,7 @@ You need the [Claude Code CLI](https://claude.com/claude-code), logged in. It is
 .venv/bin/python -m evals.run                                 # answer-quality eval → evals/results.md
 .venv/bin/python -m coach.sheet pythagorean-theorem           # (re)generate one sheet
 .venv/bin/python -m coach.promote                             # move most-asked questions into the sheets
+YOUTUBE_API_KEY=... .venv/bin/python -m coach.videos         # top 3 YouTube videos per topic (official API + oEmbed check)
 ```
 
 ## What the coach does, and why (product decisions)
@@ -109,6 +110,7 @@ Full model with every assumption and a script to rerun: [docs/cost-model.md](doc
 - **Prep notes** are the same for every teacher and contain nothing personal.
 - **When a teacher asks a question**, the question, the topic and the topic's notes are sent to the AI provider (in this prototype Anthropic, through the Claude Code CLI). Nothing that identifies the teacher is sent.
 - **Stored on our server** (SQLite): each question and its answer (to reuse for the next teacher), a count of questions per random ID per month, the monthly AI spend, and feedback text. The feedback box asks teachers not to write personal details.
+- **YouTube videos** are looked up when content is prepared, not when a teacher visits. A teacher's browser contacts YouTube only if they click a video link.
 - **Teachers' own notes and sketches** stay in their browser (local storage). They are never sent to our server or to the AI.
 - **Not collected:** names, emails, locations, scores, progress.
 - **AI transparency:** all generated content is labelled as written by AI and not yet reviewed, in line with the EU AI Act's transparency duties. Akelius is EU-based.

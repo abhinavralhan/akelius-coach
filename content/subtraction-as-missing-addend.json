@@ -1,0 +1,254 @@
+{
+  "idea": "Subtraction answers the question \"how much must I add to the small number to reach the big number?\" So 8 − 3 = ? means the same as 3 + ? = 8. Students who see subtraction this way can use addition facts they already know, and can check any subtraction by adding back.",
+  "why": "Addition and subtraction undo each other. If a + b = c, then c is made of two parts, a and b, so c − a must be b, and c − b must be a. The difference c − a is exactly the gap between a and c, and the missing addend is that same gap. On a number line, \"take away\" and \"count up\" both measure the same distance between two points. Counting up is often easier, especially when the two numbers are close, such as 62 − 47.",
+  "theory_example": {
+    "problem": "Mia has saved 64 euro. A bike costs 100 euro. How much more does she need?",
+    "steps": "1. Write it as a missing addend: 64 + ? = 100.\n2. Count up to the next ten: 64 + 6 = 70.\n3. Count up from 70 to 100: 70 + 30 = 100.\n4. Add the jumps: 6 + 30 = 36.\n5. So 100 − 64 = 36.\n6. Check by adding back: 64 + 36 = 100. Correct.",
+    "expression": "100-64",
+    "answer": "36"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 8,
+      "activity": "Start with a story: 'I have 3 sweets and want 8. How many more?' Write 3 + ? = 8 and 8 − 3 = ?, and show they ask the same question. Then draw the jump on the number line. Uses the subtopic 'Subtraction asks: what must I add?'"
+    },
+    {
+      "minutes": 9,
+      "activity": "Show counting up with 15 − 9 on the number line, stopping at 10. Then let pairs try 14 − 8 and 16 − 9 by counting up. Uses the subtopic 'Counting up on the number line'."
+    },
+    {
+      "minutes": 9,
+      "activity": "Move to bigger numbers and word problems, such as ? + 27 = 61. Practise writing the missing addend, solving it, and checking by adding back. Uses the subtopic 'Missing addend and checking by adding back'."
+    },
+    {
+      "minutes": 4,
+      "activity": "Quick recap. Ask students to say in their own words why 'what do I add?' and 'what is left?' give the same number. Collect one or two answers and clear up any confusion before the last round."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Work through the 3 extra examples with the class (15 − 9, 83 − 58, 120 − 85). Let students suggest the jumps, then take any remaining questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Subtraction asks: what must I add?",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "You have 3 sweets and your friend wants you to have 8. How many more do you need? You think '3 and what makes 8?' and the answer is 5. That thinking is subtraction: 8 − 3 = 5."
+        },
+        {
+          "kind": "procedure",
+          "text": "Turn any subtraction into a missing addend. Rewrite 8 − 3 = ? as 3 + ? = 8. The small number (the one being subtracted) comes first, the big number is the total, and the blank is the answer. Then use the addition facts you know."
+        }
+      ],
+      "example": {
+        "problem": "Find 8 − 3 by asking 'what do I add to 3 to get 8?'",
+        "steps": "1. Rewrite as 3 + ? = 8.\n2. Start at 3 on the number line and jump right until you land on 8.\n3. The jump is 5 steps long.\n4. So the missing addend is 5, and 8 − 3 = 5.\n5. Check: 3 + 5 = 8.",
+        "expression": "8-3",
+        "answer": "5"
+      },
+      "visual": {
+        "kind": "numberline",
+        "expr": "",
+        "a": 8,
+        "b": 3,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students write 8 + 3 = ? or put the numbers in the wrong places, such as 8 + ? = 3.",
+          "response": "Ask: 'Is the total the bigger or smaller number?' The total is always the biggest number, so it goes after the equals sign: 3 + ? = 8. Point at both numbers on the number line."
+        },
+        {
+          "mistake": "Students think the answer is the number they land on (8), not the length of the jump.",
+          "response": "Say 'the answer is how far we travelled, not where we stopped'. Have them draw the jump as an arrow and write the number of steps above it."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why is subtraction the same as adding?",
+          "answer": "It isn't the same operation, but they are linked. Subtracting 3 from 8 asks how far it is from 3 to 8. That distance is what you add to 3 to reach 8."
+        },
+        {
+          "question": "Do I have to do it this way? I can just take away.",
+          "answer": "No, taking away is fine too. Counting up is another tool. It is often quicker when the two numbers are close together, and it lets you check your answer."
+        },
+        {
+          "question": "Does it work for every subtraction?",
+          "answer": "Yes. Any subtraction c − a = ? can be turned into a + ? = c. It works for every size of number."
+        }
+      ],
+      "check_question": {
+        "question": "Write 9 − 4 = ? as a missing addend question and solve it.",
+        "solution": "4 + ? = 9, so the missing addend is 5. Check: 4 + 5 = 9.",
+        "expression": "9-4",
+        "answer": "5"
+      }
+    },
+    {
+      "title": "Counting up on the number line",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a number line. Mark the small number, then jump to the next ten, then jump from the ten to the big number. Write each jump above the line and add the jumps. Stopping at ten makes each jump easy."
+        },
+        {
+          "kind": "story",
+          "text": "A shopkeeper gives change by counting up. A sweet costs 9 and you pay with 15. She says 'nine... ten' (1 coin), then 'ten... fifteen' (5 more). Your change is 6. She never actually subtracts."
+        }
+      ],
+      "example": {
+        "problem": "Find 15 − 9 by counting up from 9 to 15.",
+        "steps": "1. Rewrite as 9 + ? = 15.\n2. Start at 9 and jump 1 to reach 10.\n3. Jump from 10 to 15, which is 5 more.\n4. Add the jumps: 1 + 5 = 6.\n5. So 15 − 9 = 6.\n6. Check: 9 + 6 = 15.",
+        "expression": "15-9",
+        "answer": "6"
+      },
+      "visual": {
+        "kind": "numberline",
+        "expr": "",
+        "a": 15,
+        "b": 9,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students give only the last jump (5) and forget the first jump (1).",
+          "response": "Ask them to circle every jump on the line and add all of them. Ask: 'Did we start at 9 or at 10?' If we started at 9, the first step counts too."
+        },
+        {
+          "mistake": "Students count the starting number as 1 when they count the jumps, so they are off by one.",
+          "response": "Show with a finger or counter that you count the steps between the numbers, not the numbers themselves. From 9 to 10 is one step."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why stop at 10?",
+          "answer": "Ten is an easy number to work from. Getting from 9 to 10 is simple, and getting from 10 to 15 is simple too. You don't have to stop at 10, it just makes the jumps easier."
+        },
+        {
+          "question": "Could I jump in a different way?",
+          "answer": "Yes. You could jump 6 in one go, or 3 and then 3. Any jumps that get you from 9 to 15 give the same total, 6."
+        },
+        {
+          "question": "Is counting up better than counting back?",
+          "answer": "Neither is always better. Counting up is usually quicker when the two numbers are close, like 62 − 59. Counting back is usually quicker when you take away a small number from a big one."
+        }
+      ],
+      "check_question": {
+        "question": "Use counting up through 10 to find 14 − 8.",
+        "solution": "8 + 2 = 10, then 10 + 4 = 14. The jumps are 2 and 4, and 2 + 4 = 6. So 14 − 8 = 6.",
+        "expression": "14-8",
+        "answer": "6"
+      }
+    },
+    {
+      "title": "Missing addend and checking by adding back",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "For ? + 27 = 61, or 61 − 27 = ?, follow three steps: 1) count up from 27 to the next ten (30), 2) count up to 61 in tens and ones (30 to 60, then 1 more), 3) add the jumps (3 + 31 = 34). Then check by adding: 27 + 34 should be 61."
+        },
+        {
+          "kind": "story",
+          "text": "A book has 61 pages and you are on page 27. How many pages are still to read? You need to find the missing part of the book, 27 + ? = 61. The two parts must add up to the whole, so you can always check your answer by adding them."
+        }
+      ],
+      "example": {
+        "problem": "27 + ? = 61. Find the missing addend, then check it.",
+        "steps": "1. This is the same as 61 − 27.\n2. From 27 jump 3 to reach 30.\n3. From 30 jump 30 to reach 60.\n4. From 60 jump 1 to reach 61.\n5. Add the jumps: 3 + 30 + 1 = 34.\n6. Check: 27 + 34 = 61. Correct.",
+        "expression": "61-27",
+        "answer": "34"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students add the two numbers shown (27 + 61 = 88) because they see a plus sign.",
+          "response": "Ask: 'Is the answer more or less than 61?' The total is 61, so the missing part must be smaller. Ask them to estimate first."
+        },
+        {
+          "mistake": "Students skip the check, or check by redoing the same steps.",
+          "response": "Show that adding back is a different calculation. If 27 + their answer doesn't make 61, something went wrong. Make adding back a habit."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why does checking by adding work?",
+          "answer": "Subtraction finds the missing part. If you put the part you found together with the part you started with, you must get the whole again."
+        },
+        {
+          "question": "What if my check doesn't match?",
+          "answer": "Then there is a mistake somewhere. Go back and look at each jump on the number line, and count again. A check that fails is useful because it tells you to look again."
+        },
+        {
+          "question": "Does the order of the addends matter?",
+          "answer": "No. 27 + 34 and 34 + 27 are both 61. So the missing addend can be in either place and the answer is the same."
+        }
+      ],
+      "check_question": {
+        "question": "A bag has 50 marbles. 23 are red and the rest are blue. How many are blue?",
+        "solution": "23 + ? = 50. Jump 7 to 30, then 20 to 50. 7 + 20 = 27. Check: 23 + 27 = 50. So 27 are blue.",
+        "expression": "50-23",
+        "answer": "27"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Find 15 − 9 by finding the missing addend.",
+      "solution": "Write 9 + ? = 15. Jump 1 to 10, then 5 to 15. 1 + 5 = 6. Check: 9 + 6 = 15.",
+      "expression": "15-9",
+      "answer": "6"
+    },
+    {
+      "problem": "Find 83 − 58 by counting up from 58.",
+      "solution": "Write 58 + ? = 83. Jump 2 to reach 60, then 23 to reach 83. 2 + 23 = 25. Check: 58 + 25 = 83.",
+      "expression": "83-58",
+      "answer": "25"
+    },
+    {
+      "problem": "A book has 120 pages. Sam has read 85 pages. How many pages are left?",
+      "solution": "Write 85 + ? = 120. Jump 15 to reach 100, then 20 to reach 120. 15 + 20 = 35. Check: 85 + 35 = 120. So 35 pages are left.",
+      "expression": "120-85",
+      "answer": "35"
+    }
+  ],
+  "meta": {
+    "concept": "subtraction-as-missing-addend",
+    "title": "Subtraction as finding a missing addend",
+    "model": "sonnet",
+    "cost_usd": 0.05639,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Subtraction+as+finding+a+missing+addend"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Subtraction+as+finding+a+missing+addend"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Subtraction+as+finding+a+missing+addend"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Subtraction+as+finding+a+missing+addend"
+    }
+  ]
+}

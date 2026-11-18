@@ -1,0 +1,254 @@
+{
+  "idea": "Comparing two-digit numbers means deciding which is greater, which is less, or whether they are equal. Every two-digit number is made of tens and ones, so we compare the tens digits first. Only if the tens match do we compare the ones.",
+  "why": "A digit's value depends on its place. In 47 the 4 means 4 tens (40) and the 7 means 7 ones. Whole tens outweigh any ones left over: even 49 is less than 50, because 4 tens and 9 ones is one short of 5 tens. So the tens digit decides the comparison, and the ones digit only breaks a tie when the tens are equal. It is the same as putting words in alphabetical order: the first place where they differ decides.",
+  "theory_example": {
+    "problem": "Put 64, 46 and 68 in order from least to greatest. Which number is in the middle?",
+    "steps": "Step 1: Write each as tens and ones. 64 = 6 tens 4 ones. 46 = 4 tens 6 ones. 68 = 6 tens 8 ones. Step 2: Compare the tens. 4 tens is less than 6 tens, so 46 is the least. Step 3: 64 and 68 have the same tens (6), so compare the ones. 4 ones is less than 8 ones, so 64 < 68. Step 4: The order is 46 < 64 < 68. The middle number is 64.",
+    "expression": "64",
+    "answer": "64"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up. Write 47 and 52 on the board and ask which is greater and how students know. Take a few answers without correcting yet. Then show that a two-digit number is tens plus ones (47 = 4 tens and 7 ones), using the idea and why from your notes."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach the subtopic 'Compare the tens first'. Show the bar picture of 47 and 52 and tell the bundles-of-ten story. Work the example together, then ask the check question and take a few answers."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach the subtopic 'Same tens: compare the ones'. Show 63 and 68 with the bars and give the tie-breaker procedure. Ask the check question and let students explain to a partner."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach the subtopic 'Symbols and ordering numbers'. Introduce < and > with the open-mouth idea, then order 39, 54 and 93 using the bars. Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Work the three extra examples one at a time, letting students suggest the first step each time. Leave the last minutes for any student questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Compare the tens first",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Imagine packing pencils in boxes of 10. 47 is 4 full boxes and 7 loose pencils. 52 is 5 full boxes and 2 loose pencils. One more full box is worth 10 pencils, which is more than the loose ones can make up, so 52 has more. Ask: who has more boxes?"
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: Look at the left digit of each number (the tens). Step 2: The number with the bigger tens digit is the greater number. Step 3: Stop. You do not need to look at the ones."
+        }
+      ],
+      "example": {
+        "problem": "Which is greater, 47 or 52?",
+        "steps": "Step 1: 47 has 4 tens and 52 has 5 tens. Step 2: 5 tens is more than 4 tens. Step 3: So 52 is greater than 47. We do not need the ones digits.",
+        "expression": "52",
+        "answer": "52"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "47;52",
+        "a": 47,
+        "b": 52,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students pick the number with the biggest single digit, for example saying 19 is greater than 31 because 9 is bigger than 3.",
+          "response": "Ask what the 1 in 19 is worth (10) and what the 3 in 31 is worth (30). Build both with tens and ones, or draw bars, so they see 31 is bigger. Remind them that the left digit is worth more."
+        },
+        {
+          "mistake": "Students compare the ones digits first because they read the numbers from the right, or because the ones look easier.",
+          "response": "Say that we start with the biggest place, as with money: dollars before cents. Compare 29 and 41 with them: 2 tens is less than 4 tens, so the ones do not matter."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why does the tens digit count more? 9 is bigger than 5!",
+          "answer": "Because of where it sits. The 9 in 49 is 9 ones, only 9. The 5 in 52 is 5 tens, which is 50. Fifty is more than 49, so the place matters more than the digit."
+        },
+        {
+          "question": "Do I always look at the tens first?",
+          "answer": "Yes. Start at the left, the biggest place. If the tens are different, you already have your answer."
+        },
+        {
+          "question": "What if one number has only one digit, like 7 and 23?",
+          "answer": "7 has 0 tens, and 23 has 2 tens. So 23 is greater. A number with more digits is greater when both are whole numbers without a leading zero."
+        }
+      ],
+      "check_question": {
+        "question": "Which is greater, 29 or 41? How do you know?",
+        "solution": "41 is greater. 4 tens is more than 2 tens, so we do not need the ones.",
+        "expression": "41",
+        "answer": "41"
+      }
+    },
+    {
+      "title": "Same tens: compare the ones",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw two bars: 63 and 68. Both reach the 60 mark (6 tens). Beyond 60, 63 sticks out 3 more and 68 sticks out 8 more. The bar that sticks out further is greater, so 68 is greater."
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: Compare the tens. Step 2: If they are the same, say so out loud: 'same tens'. Step 3: Now compare the ones digits. The bigger ones digit is the greater number. Step 4: If the ones are also the same, the numbers are equal."
+        }
+      ],
+      "example": {
+        "problem": "Which is greater, 63 or 68?",
+        "steps": "Step 1: Both have 6 tens, so the tens are equal. Step 2: Compare the ones: 3 and 8. Step 3: 8 is more than 3. Step 4: So 68 is greater than 63.",
+        "expression": "68",
+        "answer": "68"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "63;68",
+        "a": 63,
+        "b": 68,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students say the numbers are equal because both start with the same tens digit.",
+          "response": "Ask them to count up from 63 to 68 and see that it takes 5 steps. Explain that equal tens only means we need to look at the next place."
+        },
+        {
+          "mistake": "Students compare the ones digits when the tens are different, for example saying 58 is greater than 63 because 8 is more than 3.",
+          "response": "Go back to the rule: the ones only decide when the tens are the same. Compare the tens first: 5 tens is less than 6 tens, so 63 is greater. Draw the bars to show it."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do the ones matter now but not before?",
+          "answer": "Because the tens did not settle it. When the tens are equal, the only difference left is in the ones, so the ones decide."
+        },
+        {
+          "question": "What if both digits are the same, like 55 and 55?",
+          "answer": "Then the numbers are equal. Same tens and same ones means they are the same number."
+        },
+        {
+          "question": "Is 60 less than 61?",
+          "answer": "Yes. The tens are the same, 6. The ones are 0 and 1, and 0 is less than 1. So 60 < 61."
+        }
+      ],
+      "check_question": {
+        "question": "Which is greater, 75 or 72? What do you compare?",
+        "solution": "The tens are equal (7), so compare the ones: 5 is more than 2. So 75 is greater.",
+        "expression": "75",
+        "answer": "75"
+      }
+    },
+    {
+      "title": "Symbols and ordering numbers",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "The symbols < and > are like a hungry mouth that opens toward the bigger number and wants to eat the greater amount. 47 < 52 reads 'forty-seven is less than fifty-two'. The small point is at the smaller number, the wide opening at the bigger number."
+        },
+        {
+          "kind": "procedure",
+          "text": "To order numbers: Step 1: Compare the tens and find the least and the greatest. Step 2: If two numbers share a tens digit, compare their ones. Step 3: Write them in order, putting the symbol < between each pair (least to greatest). Step 4: Re-read the list to check it grows."
+        }
+      ],
+      "example": {
+        "problem": "Write 39, 93 and 54 in order from least to greatest. Which number is in the middle?",
+        "steps": "Step 1: The tens are 3, 9 and 5. Step 2: 3 tens is least, 5 tens is next, and 9 tens is greatest. Step 3: So 39 < 54 < 93. Step 4: The middle number is 54.",
+        "expression": "54",
+        "answer": "54"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "39;54;93",
+        "a": 39,
+        "b": 54,
+        "c": 93,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students mix up < and >, writing 52 < 47.",
+          "response": "Have them read the sentence aloud: 'fifty-two is less than forty-seven'. Does that sound true? Remind them the wide opening faces the bigger number, and let them check with the bars."
+        },
+        {
+          "mistake": "Students order from greatest to least when asked for least to greatest, or the reverse.",
+          "response": "Ask them to say the first word of the task: 'least' means the smallest number goes first. Have them circle the smallest number first, then write it down."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Does 39 < 54 mean the same as 54 > 39?",
+          "answer": "Yes. They say the same thing in different order. The opening always faces the bigger number."
+        },
+        {
+          "question": "Why do we write the symbol and not just the words?",
+          "answer": "It is shorter, and everyone in the world reads it the same way. It is like a small shortcut."
+        },
+        {
+          "question": "Can I use the equals sign when numbers are different?",
+          "answer": "No. The equals sign means exactly the same amount. 39 and 54 are not the same, so we use < or >."
+        }
+      ],
+      "check_question": {
+        "question": "Fill in the symbol: 58 __ 85. Which number is greater?",
+        "solution": "The tens are 5 and 8, and 5 is less than 8. So 58 < 85. The greater number is 85.",
+        "expression": "85",
+        "answer": "85"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Which is greater, 86 or 68?",
+      "solution": "Compare the tens first: 8 tens is more than 6 tens. So 86 is greater than 68. The ones digits are the same two digits swapped, but they do not decide here.",
+      "expression": "86",
+      "answer": "86"
+    },
+    {
+      "problem": "Which is the smallest of 45, 49 and 41?",
+      "solution": "All have 4 tens, so compare the ones: 5, 9 and 1. The least ones digit is 1, so 41 is the smallest. The order is 41 < 45 < 49.",
+      "expression": "41",
+      "answer": "41"
+    },
+    {
+      "problem": "Use the digits 4 and 7 to make two different two-digit numbers. Which one is greater?",
+      "solution": "The numbers are 47 and 74. Compare the tens: 4 tens is less than 7 tens, so 47 < 74. The greater number is 74.",
+      "expression": "74",
+      "answer": "74"
+    }
+  ],
+  "meta": {
+    "concept": "comparing-two-digit-numbers",
+    "title": "Comparing two-digit numbers",
+    "model": "sonnet",
+    "cost_usd": 0.09169,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Comparing+two-digit+numbers"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Comparing+two-digit+numbers"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Comparing+two-digit+numbers"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Comparing+two-digit+numbers"
+    }
+  ]
+}

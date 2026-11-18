@@ -6,6 +6,7 @@ TEMPLATES = {
     "Wolfram|Alpha (check a calculation)": "https://www.wolframalpha.com/input?i={q}",
     "GeoGebra (interactive models)": "https://www.geogebra.org/search/{q}",
     "Wikipedia (background)": "https://en.wikipedia.org/w/index.php?search={q}",
+    "YouTube (search videos)": "https://www.youtube.com/results?search_query={q}+math",
 }
 
 

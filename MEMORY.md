@@ -101,3 +101,7 @@ Each step ends with a commit and a step-log entry with **start and end times** (
 
 ### Step 11: "My notes" tab
 - **Did:** the main area has two tabs: **Prep notes** (ours) and **My notes** (the teacher's notes for the lesson and each part, plus the sketch pad). The teacher's material no longer sits inside our sections. The tab is built when opened, so the sketch pad gets its real size. Storage is unchanged (browser only).
+
+### Step 12: 97 topics + YouTube videos
+- **Did:** expanded the curriculum to 97 concepts (9–10 per grade, CCSS-mapped); pre-generation of the 71 missing sheets is running. Added `coach/videos.py`: top 3 per topic from the official YouTube Data API, each confirmed via oEmbed, saved into the sheet as `videos`, shown at the bottom of the page and labelled as external and not reviewed. Resources are rebuilt from the templates whenever a sheet is served; a "Search YouTube" link is added. `tests/test_videos.py` (fake network) checks bad IDs and unconfirmed videos are skipped. 15/15 tests pass.
+- **Open:** needs `YOUTUBE_API_KEY` to fetch the actual videos (not set yet). Until then, the Search YouTube link is shown.

@@ -1,0 +1,254 @@
+{
+  "idea": "Addition has two helpful properties. Order: you can swap the numbers and the sum stays the same (a + b = b + a). Grouping: when adding three or more numbers, it does not matter which two you add first, so (a + b) + c = a + (b + c). Together they let you add in any order and group however you like.",
+  "why": "Adding means joining amounts. Joining 8 things with 5 things gives the same total as joining 5 with 8, because the total is just how many things there are altogether, however you line them up. For three amounts, the parentheses only say which pair you count first. The total number of items does not change, so the result does not either. This is why we can pick the order that is easiest, such as pairs that make 10 or 100. These rules belong to addition (and multiplication), not to subtraction: 8 - 5 is 3, but 5 - 8 is -3.",
+  "theory_example": {
+    "problem": "Find 25 + 38 + 75 in a smart way.",
+    "steps": "1. Notice that 25 and 75 make a round number. 2. Use the order property to swap: 25 + 38 + 75 = 25 + 75 + 38. 3. Use the grouping property: (25 + 75) + 38. 4. Add the first group: 100 + 38. 5. The result is 138. Check by going left to right: 25 + 38 = 63, and 63 + 75 = 138. Same answer.",
+    "expression": "25 + 38 + 75",
+    "answer": "138"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up with the subtopic 'Order does not matter'. Ask two students to stand on the left and right of the board with 8 and 5 counters. Count the total, then have them swap sides and count again. Ask what changed and what did not."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Order does not matter'. Work the example 8 + 5 = 5 + 8 with the bar picture, then ask the check question. Briefly mention that subtraction does not work this way (8 - 5 versus 5 - 8)."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Grouping does not matter'. Show (6 + 4) + 7 and 6 + (4 + 7) with the bars. Explain that parentheses mean 'do this first'. Students try the check question in pairs."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Using both to add smartly'. Work 38 + 47 + 12 by moving 12 next to 38 to make 50. Ask students which pairs they would join first in other sums, then ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Work through the 3 extra examples with the class (mixing all subtopics). Let students suggest the first step each time, and leave the last few minutes for their own questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Order does not matter",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "You have 8 red marbles in one hand and 5 blue in the other. Pour them into a bowl: 13 marbles. Now swap hands, so 5 blue first and then 8 red. Still 13 marbles in the bowl. The marbles did not change, only the order in which you mentioned them."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw a bar with 8 squares followed by 5 squares. Under it draw a bar with 5 squares followed by 8 squares. Both bars are the same length, 13 squares. Same length means same sum."
+        }
+      ],
+      "example": {
+        "problem": "Show that 8 + 5 and 5 + 8 give the same total.",
+        "steps": "1. Compute 8 + 5: start at 8 and count on 5 to get 13. 2. Compute 5 + 8: start at 5 and count on 8 to get 13. 3. Both are 13, so 8 + 5 = 5 + 8. Tip: it is easier to start with the bigger number and count on the smaller one.",
+        "expression": "8 + 5",
+        "answer": "13"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "8 then 5;5 then 8",
+        "a": 13,
+        "b": 13,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students think that swapping also works for subtraction, e.g. 5 - 8 = 8 - 5.",
+          "response": "Do not just say no. Ask them to try with 8 - 5 = 3 and 5 - 8. Use a story: you have 5 sweets and give away 8, which is not possible without owing 3. Say that swapping works for addition only."
+        },
+        {
+          "mistake": "Students think that a swapped sum is a different problem and recount from 1 each time.",
+          "response": "Let them build both with counters and see that the pile is the same. Then show 'count on from the bigger number' as a shortcut that uses the swap."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why does the order not matter?",
+          "answer": "Because adding just asks how many there are altogether. Putting the 8 first or the 5 first does not add or remove anything, so the total is the same."
+        },
+        {
+          "question": "Does this work with big numbers too?",
+          "answer": "Yes, it works with any numbers. 3,482 + 915 is the same as 915 + 3,482. Try it on a calculator if you like."
+        },
+        {
+          "question": "Is it also true for subtraction?",
+          "answer": "No. 8 - 5 is 3, but 5 - 8 is -3. Order matters in subtraction, so be careful there."
+        }
+      ],
+      "check_question": {
+        "question": "If you know that 17 + 26 = 43, what is 26 + 17 without calculating?",
+        "solution": "26 + 17 is the same as 17 + 26 because order does not matter, so it is 43.",
+        "expression": "17 + 26",
+        "answer": "43"
+      }
+    },
+    {
+      "title": "Grouping does not matter",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Parentheses tell us what to do first. Calculate (6 + 4) + 7: first 6 + 4 = 10, then 10 + 7 = 17. Calculate 6 + (4 + 7): first 4 + 7 = 11, then 6 + 11 = 17. Different first step, same final result."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw a bar of 6, 4 and 7 squares in a row. Draw a loop around the first two to show (6 + 4) + 7. Draw a loop around the last two on a second bar to show 6 + (4 + 7). The loops are in different places but the whole bar has the same length, 17."
+        }
+      ],
+      "example": {
+        "problem": "Check that (6 + 4) + 7 and 6 + (4 + 7) are equal.",
+        "steps": "1. Left side: 6 + 4 = 10, then 10 + 7 = 17. 2. Right side: 4 + 7 = 11, then 6 + 11 = 17. 3. Both give 17, so the grouping did not change the sum.",
+        "expression": "(6 + 4) + 7",
+        "answer": "17"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "6 4 then 7;6 then 4 7",
+        "a": 17,
+        "b": 17,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students think that the parentheses change the answer in all sums.",
+          "response": "Show that for addition only the grouping differs, not the total. Mention that other operations can behave differently, and that for now they only need to trust it for adding."
+        },
+        {
+          "mistake": "Students ignore the parentheses and do not do the bracketed part first.",
+          "response": "Remind them that brackets mean 'first'. Have them write the middle result under the bracket, e.g. 10, before moving on."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we need parentheses at all?",
+          "answer": "They show which two numbers to add first. For addition the answer is the same either way, but they help us show our thinking and are very important later with other operations."
+        },
+        {
+          "question": "Can I move numbers around and group them at the same time?",
+          "answer": "Yes. With addition you can do both, as long as you keep every number exactly once."
+        },
+        {
+          "question": "Does it work with four or five numbers?",
+          "answer": "Yes. You can add any amount of numbers in any order and any grouping, and the total stays the same."
+        }
+      ],
+      "check_question": {
+        "question": "What is 9 + (1 + 15)?",
+        "solution": "You can group 9 and 1 first: 9 + 1 = 10, then 10 + 15 = 25. Or compute 1 + 15 = 16 first and 9 + 16 = 25. Both give 25.",
+        "expression": "9 + (1 + 15)",
+        "answer": "25"
+      }
+    },
+    {
+      "title": "Using both to add smartly",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Look at a sum and search for two numbers that make a round number like 10, 50 or 100. Swap the numbers so that they stand next to each other, group them, add them first, then add the remaining number."
+        },
+        {
+          "kind": "story",
+          "text": "Imagine you are packing eggs into boxes. You have 38 eggs, 47 eggs and 12 eggs. The 38 and 12 together make exactly 50, so you count them first. Then you add the 47 and get 97 eggs, which is much easier than doing the sum in the original order."
+        }
+      ],
+      "example": {
+        "problem": "Find 38 + 47 + 12 in a smart way.",
+        "steps": "1. Spot that 38 + 12 = 50. 2. Swap the order: 38 + 47 + 12 = 38 + 12 + 47. 3. Group: (38 + 12) + 47 = 50 + 47. 4. Add: 50 + 47 = 97. 5. Check left to right: 38 + 47 = 85 and 85 + 12 = 97.",
+        "expression": "38 + 47 + 12",
+        "answer": "97"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "38;47;12;total",
+        "a": 38,
+        "b": 47,
+        "c": 12,
+        "d": 97
+      },
+      "mistakes": [
+        {
+          "mistake": "Students drop a number when rearranging, for example writing 38 + 12 and forgetting 47.",
+          "response": "Have them cross out each number in the original sum as they use it. Then they check that every number was used exactly once."
+        },
+        {
+          "mistake": "Students think that the smart way is the only correct way, or they refuse to use the usual left-to-right method.",
+          "response": "Say that every order is correct. The smart way is a choice that saves effort, so use it when it looks easier."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "How do I know which numbers to pair up?",
+          "answer": "Look at the last digits. If two numbers end in digits that add to 10, such as 8 and 2, they make a round number together."
+        },
+        {
+          "question": "Is this cheating?",
+          "answer": "Not at all. It is allowed because of the order and grouping rules, and mathematicians use it all the time."
+        },
+        {
+          "question": "What if there are no pairs that make 10?",
+          "answer": "Then just add in the order you like best. The answer is the same anyway."
+        }
+      ],
+      "check_question": {
+        "question": "Which two numbers would you add first in 64 + 29 + 36, and what is the total?",
+        "solution": "64 and 36 make 100. Then 100 + 29 = 129.",
+        "expression": "64 + 29 + 36",
+        "answer": "129"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Find 9 + 14 + 11 in a smart way.",
+      "solution": "9 and 11 make 20, so swap and group: (9 + 11) + 14 = 20 + 14 = 34.",
+      "expression": "9 + 14 + 11",
+      "answer": "34"
+    },
+    {
+      "problem": "Fill the gap: 17 + ? = 24 + 17.",
+      "solution": "By the order property 24 + 17 = 17 + 24, so the missing number is 24. Check: 17 + 24 = 41 and 24 + 17 = 41.",
+      "expression": "24",
+      "answer": "24"
+    },
+    {
+      "problem": "Find 36 + 18 + 14 in a smart way, and say which properties you used.",
+      "solution": "Swap the order to 36 + 14 + 18 (order property). Group (36 + 14) + 18 (grouping property). 36 + 14 = 50, then 50 + 18 = 68.",
+      "expression": "36 + 18 + 14",
+      "answer": "68"
+    }
+  ],
+  "meta": {
+    "concept": "properties-of-addition",
+    "title": "Properties of addition (order and grouping)",
+    "model": "sonnet",
+    "cost_usd": 0.11752,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Properties+of+addition+%28order+and+grouping%29"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Properties+of+addition+%28order+and+grouping%29"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Properties+of+addition+%28order+and+grouping%29"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Properties+of+addition+%28order+and+grouping%29"
+    }
+  ]
+}

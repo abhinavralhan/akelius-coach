@@ -146,6 +146,13 @@ async function openTopic(id) {
   const res = add(el('section'), el('h2', 'More resources')); const rl = el('ul');
   s.resources.forEach(r => { const a = el('a', r.name); a.href = r.url; a.target = '_blank'; a.rel = 'noopener'; rl.append(add(el('li'), a)); });
   res.append(rl); main.append(res);
+  if (s.videos?.length) {  // from the YouTube Data API, confirmed via oEmbed; titles are YouTube's, not ours
+    const vs = add(el('section'), el('h2', 'Top videos on this topic (YouTube)'),
+      el('p', 'Chosen by YouTube search with SafeSearch on. External videos: not reviewed by us. Please watch before showing them in class.', 'muted'));
+    const vl = el('ol'); s.videos.forEach(v => { const a = el('a', v.title); a.href = v.url; a.target = '_blank'; a.rel = 'noopener';
+      vl.append(add(el('li'), a, el('span', ` · ${v.channel}`, 'muted'))); });
+    vs.append(vl); main.append(vs);
+  }
   const exp = $('explain'); exp.replaceChildren(new Option('Choose a part…', ''), new Option('Short theory', 'Short theory'));
   s.subtopics.forEach((t, i) => exp.append(new Option(`Part ${i + 1}: ${t.title}`, t.title)));
 }

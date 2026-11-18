@@ -1,0 +1,254 @@
+{
+  "idea": "Word problems are short stories about quantities. Addition and subtraction answer three kinds of story: something is added or taken away (change), a whole is made of parts (part-part-whole), or two amounts are compared (how many more or fewer). The skill is not the calculation but seeing which kind of story it is and drawing it before choosing + or -.",
+  "why": "Addition and subtraction are two views of one relationship: part + part = whole. If the whole is unknown, we add the parts. If a part is unknown, we subtract the other part from the whole, because that is what is left over. A comparison works the same way: the smaller amount plus the difference equals the larger amount, so the difference is found by subtracting. When students draw bars, they can see which piece is missing, and that tells them the operation. This works better than hunting for keywords like \"more\" or \"left\", which can mislead (for example \"Tom has 5 more than Ana\" can need subtraction if you are looking for Ana).",
+  "theory_example": {
+    "problem": "A library had 120 books on the shelf. On Monday 35 were borrowed. On Tuesday 18 were returned. How many books are on the shelf now?",
+    "steps": "Read the story in order. Start: 120. Borrowed means taking away: 120 - 35 = 85. Returned means adding back: 85 + 18 = 103. Check: 103 is less than 120, which makes sense because 35 left and only 18 came back (net loss of 17, and 120 - 17 = 103).",
+    "expression": "120 - 35 + 18",
+    "answer": "103"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up. Tell a short story aloud (for example, 'I had 9 pencils and found 4 more') and ask what is happening: more, less, or comparing? Introduce the idea that we draw the story as bars before we calculate. No subtopic yet, just the habit of picturing."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach 'Adding to and taking away (change stories)'. Work the example on the board with the bar drawing, then use the two ways to explain. Ask the check question and let students answer in pairs."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Parts and a whole (finding a missing part)'. Show the whole-bar split into two parts, work the example, and talk through the common mistakes. Ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Comparing two amounts (how many more or fewer)'. Draw two bars side by side and show the gap. Work the example, address the mistakes, and ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Work the three extra examples one at a time: let students draw the bars first, share what the missing piece is, then calculate. Leave time at the end for any student questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Adding to and taking away (change stories)",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Imagine a jar of marbles. If someone puts marbles in, the jar gets fuller, so we add. If someone takes marbles out, it gets emptier, so we subtract. Ask students to act it out with counters: start with a pile, then add to it or remove from it as the story says."
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: Find the start amount. Step 2: Decide whether the amount goes up (add) or down (subtract). Step 3: Calculate. Step 4: Ask 'Does my answer make sense? Should it be bigger or smaller than the start?'"
+        }
+      ],
+      "example": {
+        "problem": "Mia has 45 stickers. Her friend gives her 27 more. How many stickers does Mia have now?",
+        "steps": "Start: 45. Her friend gives more, so the amount goes up: add. 45 + 27 = 72. Check: 72 is bigger than 45, as expected.",
+        "expression": "45 + 27",
+        "answer": "72"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Start;Added;Total",
+        "a": 45,
+        "b": 27,
+        "c": 72,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students pick the operation from a keyword, for example they see 'left' and always subtract.",
+          "response": "Ask 'What is happening in the story?' and have them act it out or draw it. Show a story where a keyword points the wrong way so they see why the picture matters more than the word."
+        },
+        {
+          "mistake": "Students add the numbers in the story even when the story is about something being taken away, because they just combine the two numbers they see.",
+          "response": "Have them say aloud whether the total goes up or down. If it should go down, the answer must be smaller than the start, so they can catch an answer that grew."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "How do I know whether to add or subtract?",
+          "answer": "Ask yourself whether the amount is getting bigger or smaller as the story goes on. Bigger means add, smaller means subtract. Drawing it helps you see which."
+        },
+        {
+          "question": "Why can't I just look for words like 'more' or 'left'?",
+          "answer": "Sometimes they trick you. 'Tom has 5 more than Ana' can mean you subtract if you want Ana's amount. Understanding the story is safer than guessing from one word."
+        },
+        {
+          "question": "Does the order of the numbers matter?",
+          "answer": "For adding, no: 45 + 27 is the same as 27 + 45. For subtracting, yes: you start with the bigger amount and take away the smaller, so 45 - 27 is not the same as 27 - 45."
+        }
+      ],
+      "check_question": {
+        "question": "A bus has 38 people. At the next stop 25 more people get on. How many people are on the bus now?",
+        "solution": "People get on, so the number goes up: 38 + 25 = 63.",
+        "expression": "38 + 25",
+        "answer": "63"
+      }
+    },
+    {
+      "title": "Parts and a whole (finding a missing part)",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw one long bar for the whole and split it into two pieces underneath. Write the numbers you know on the bar and put a question mark on the piece you do not know. If the question mark is on the whole, add the parts. If it is on a part, subtract the known part from the whole."
+        },
+        {
+          "kind": "story",
+          "text": "Think of a box of 63 chocolates. Some are dark and some are milk. If you know 28 are dark and you take those out, what is left in the box must be the milk ones. Taking out the known part leaves the missing part."
+        }
+      ],
+      "example": {
+        "problem": "A bus has 63 passengers. 28 of them are children and the rest are adults. How many adults are on the bus?",
+        "steps": "The whole is 63. One part is 28 (children). The other part (adults) is missing. Missing part = whole - known part: 63 - 28 = 35. Check: 28 + 35 = 63, so the parts make the whole.",
+        "expression": "63 - 28",
+        "answer": "35"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Whole;Children;Adults",
+        "a": 63,
+        "b": 28,
+        "c": 35,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students add the two numbers in the problem (63 + 28) because the story does not contain a word that signals subtraction.",
+          "response": "Ask which number is the whole, the biggest group. Have them draw the whole-bar and point to the missing piece. A part can never be bigger than the whole, so 91 would not make sense."
+        },
+        {
+          "mistake": "Students subtract in the wrong order, such as 28 - 63, or get confused about which number is the whole.",
+          "response": "Say 'The whole always goes first.' Ask 'Which group contains the other?' The group that contains the others is the whole."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we subtract when we are finding a part?",
+          "answer": "Because the whole is made of the parts added together. If we take away the part we know, the part we do not know is what remains."
+        },
+        {
+          "question": "Can I check my answer?",
+          "answer": "Yes. Add the two parts back together. If they make the whole, you are right. For 28 + 35 you get 63."
+        },
+        {
+          "question": "What if there are three parts?",
+          "answer": "Same idea. Take away each known part from the whole, one after the other, or add the known parts first and take that total away."
+        }
+      ],
+      "check_question": {
+        "question": "A box has 80 apples. 35 are red and the rest are green. How many are green?",
+        "solution": "The whole is 80, one part is 35. Green = 80 - 35 = 45. Check: 35 + 45 = 80.",
+        "expression": "80 - 35",
+        "answer": "45"
+      }
+    },
+    {
+      "title": "Comparing two amounts (how many more or fewer)",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw two bars one above the other, lined up at the left. The longer bar sticks out past the shorter one. The part that sticks out is the difference. To find its size, subtract the smaller number from the larger."
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: Identify the two amounts being compared. Step 2: Decide which one is larger. Step 3: Subtract the smaller from the larger to find the difference. Step 4: Check by adding the difference to the smaller amount. You should get the larger amount."
+        }
+      ],
+      "example": {
+        "problem": "Sam has 52 marbles and Lena has 37 marbles. How many more marbles does Sam have than Lena?",
+        "steps": "Sam has the larger amount, 52. Lena has the smaller amount, 37. The difference is 52 - 37 = 15. Check: 37 + 15 = 52.",
+        "expression": "52 - 37",
+        "answer": "15"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Sam;Lena;Difference",
+        "a": 52,
+        "b": 37,
+        "c": 15,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students add the two amounts when they see 'how many more', thinking more means plus.",
+          "response": "Point to the picture: we are not combining the marbles, we are measuring the gap between the bars. Ask 'Are we putting them together or finding the gap?'"
+        },
+        {
+          "mistake": "Students give the wrong sign to the answer, such as saying Lena has 15 more, because they mix up which person has more.",
+          "response": "Ask them to point to the longer bar first and name who it belongs to. The longer bar's owner has more, and the shorter bar's owner has fewer, by the same difference."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we subtract to compare?",
+          "answer": "Because the difference is how much extra the larger amount has. Taking the smaller amount away from the larger leaves exactly that extra part."
+        },
+        {
+          "question": "Is 'how many more' the same as 'how many fewer'?",
+          "answer": "The number is the same. Sam has 15 more than Lena, and Lena has 15 fewer than Sam. We just change the word depending on who we talk about."
+        },
+        {
+          "question": "What if the story says 'Lena has 15 fewer than Sam' and I need Lena's amount?",
+          "answer": "Then Lena's amount is smaller than Sam's by 15, so you subtract: Sam's amount minus 15. Draw it to see this."
+        }
+      ],
+      "check_question": {
+        "question": "Ana read 84 pages and Ben read 59 pages. How many more pages did Ana read than Ben?",
+        "solution": "Ana's amount is larger. Difference = 84 - 59 = 25. Check: 59 + 25 = 84.",
+        "expression": "84 - 59",
+        "answer": "25"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Tom had some coins. He spent 14 of them and now has 29 coins left. How many coins did Tom have at the start?",
+      "solution": "Spending made the number go down, so the start must be bigger than 29. Start = what is left + what was spent = 29 + 14 = 43. Check: 43 - 14 = 29.",
+      "expression": "29 + 14",
+      "answer": "43"
+    },
+    {
+      "problem": "A school has 150 pupils. 78 of them are girls and the rest are boys. How many boys are there?",
+      "solution": "The whole is 150. One part is 78 (girls). Boys = 150 - 78 = 72. Check: 78 + 72 = 150.",
+      "expression": "150 - 78",
+      "answer": "72"
+    },
+    {
+      "problem": "A red tower is made of 64 blocks. A blue tower has 19 fewer blocks than the red tower. How many blocks are in the blue tower?",
+      "solution": "The blue tower is shorter than the red one by 19, so we subtract from the red tower: 64 - 19 = 45. Check: 45 + 19 = 64.",
+      "expression": "64 - 19",
+      "answer": "45"
+    }
+  ],
+  "meta": {
+    "concept": "addition-subtraction-word-problems",
+    "title": "Addition and subtraction word problems",
+    "model": "sonnet",
+    "cost_usd": 0.05568,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Addition+and+subtraction+word+problems"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Addition+and+subtraction+word+problems"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Addition+and+subtraction+word+problems"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Addition+and+subtraction+word+problems"
+    }
+  ]
+}

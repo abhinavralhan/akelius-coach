@@ -103,7 +103,9 @@ def get(concept_id):
         raise KeyError(concept_id)
     path = CONTENT / f"{concept_id}.json"
     if path.exists():
-        return json.loads(path.read_text())
+        s = json.loads(path.read_text())
+        s["resources"] = links(CONCEPTS[concept_id]["title"])  # always from the current templates
+        return s
     if os.environ.get("COACH_ALLOW_GENERATE") != "1":
         raise LookupError("these notes are not ready yet")
     return generate(concept_id)

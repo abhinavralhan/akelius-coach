@@ -1,0 +1,250 @@
+{
+  "idea": "Our numbers are built from groups of ten and left-over ones. In a two-digit number, the left digit tells how many tens and the right digit tells how many ones. So 53 means 5 tens and 3 ones, which is 50 + 3.",
+  "why": "Ten ones are swapped for one ten, so we can write big numbers with only ten digits. The same digit is worth different amounts depending on where it sits: a 5 in the tens place means 5 groups of ten (50), while a 5 in the ones place means just 5. This is why we compare numbers by looking at tens first. More tens always beats any number of left-over ones, because there are never more than 9 ones left over (10 ones would make another ten).",
+  "theory_example": {
+    "problem": "There are 53 beads. How many full tens and how many ones are there, and how do we write 53 as a sum?",
+    "steps": "1. Put the beads in groups of 10. You can make 5 full groups. 2. Count what is left over: 3 beads. 3. So there are 5 tens and 3 ones. 4. Each ten is worth 10, so 5 tens is 5 x 10 = 50. 5. Add the ones: 50 + 3 = 53.",
+    "expression": "5*10+3",
+    "answer": "53"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 10,
+      "activity": "Start with a handful of counters or sticks (about 30 to 40) on a desk. Ask pupils to guess how many, then show how to group them in tens to count faster. Make bundles of 10 together and count the leftover ones. Uses the subtopic 'Grouping into tens and ones'. Draw the tens and ones bars for 28 on the board."
+    },
+    {
+      "minutes": 10,
+      "activity": "Write 47 on the board. Ask what each digit means, and use the tens and ones bars. Practice saying 'the 4 is worth 40, the 7 is worth 7' with a few numbers, including one with a zero such as 50. Uses the subtopic 'What each digit is worth (place value)'."
+    },
+    {
+      "minutes": 10,
+      "activity": "Write two numbers like 58 and 61. Ask pupils which is greater and why. Show tens first with the bars, and only look at ones if the tens are equal. Let pairs make up their own pairs of numbers and compare them. Uses the subtopic 'Comparing two-digit numbers'."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Work through the three extra examples on the board, letting pupils answer first. Leave the last few minutes for any questions the class has."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Grouping into tens and ones",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw 28 dots. Circle groups of 10 dots. You get 2 circled groups and 8 dots left outside. The circled groups are the tens, the loose dots are the ones. Write 2 tens and 8 ones."
+        },
+        {
+          "kind": "story",
+          "text": "A shopkeeper sells eggs in boxes of 10. If she has 2 full boxes and 8 loose eggs, she has 28 eggs. Boxes are tens, loose eggs are ones. She never keeps 10 or more loose eggs, because she would pack them into another box."
+        }
+      ],
+      "example": {
+        "problem": "Count 28 sticks by making bundles of 10. How many tens and ones are there?",
+        "steps": "1. Make a bundle of 10 sticks. Make another bundle of 10. That is 2 bundles. 2. Only 8 sticks are left, which is not enough for another bundle. 3. So there are 2 tens and 8 ones. 4. Check: 2 x 10 = 20, and 20 + 8 = 28.",
+        "expression": "2*10+8",
+        "answer": "28"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Tens;Ones",
+        "a": 2,
+        "b": 8,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students count the leftover ones as bundles, or say 28 sticks is 2 tens and 10 ones, leaving 10 or more loose ones.",
+          "response": "Ask: 'Can we make another bundle from these loose sticks?' Let them try. If they can make a group of 10, they must make it. Stop only when fewer than 10 are loose."
+        },
+        {
+          "mistake": "Students say there are '2 tens' but then write 2 tens and 8 ones as 2 + 8 = 10.",
+          "response": "Go back to the bundles. Ask how many sticks are in the bundles altogether: 10 + 10 = 20. Then add the 8 loose ones to get 28."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we make groups of 10 and not 5 or 7?",
+          "answer": "Our number system is built on ten. It is a choice people made long ago, probably because we have ten fingers. Once everyone agrees on groups of ten, the numbers are easy to write and read."
+        },
+        {
+          "question": "What if there are no ones left over?",
+          "answer": "Then there are 0 ones. For example, 30 sticks make 3 tens and 0 ones. We write the zero so we know the 3 means tens."
+        },
+        {
+          "question": "Is 2 tens and 8 ones the same as 28?",
+          "answer": "Yes. They are two ways of saying the same amount. 2 tens is 20, and 20 and 8 more is 28."
+        }
+      ],
+      "check_question": {
+        "question": "There are 3 full boxes of 10 pencils and 6 loose pencils. How many pencils is that?",
+        "solution": "3 boxes of 10 is 30. Add the 6 loose pencils: 30 + 6 = 36.",
+        "expression": "3*10+6",
+        "answer": "36"
+      }
+    },
+    {
+      "title": "What each digit is worth (place value)",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "To find what a digit is worth: 1. Look at which place it sits in. 2. If it is in the ones place, its value is the digit itself. 3. If it is in the tens place, multiply the digit by 10. For 62, the 6 is in the tens place, so it is worth 6 x 10 = 60. The 2 is in the ones place, so it is worth 2."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw a tall bar for the tens and a short bar for the ones. Under 62 draw 6 tens as six strips of ten, and 2 ones as two small squares. Show that the same digit 6 would only be 6 small squares if it were in the ones place."
+        }
+      ],
+      "example": {
+        "problem": "What is the value of the 6 in the number 62?",
+        "steps": "1. Find the place of the 6. It is the left digit, so it is in the tens place. 2. That means 6 tens. 3. 6 tens is 6 x 10 = 60. 4. So the 6 in 62 is worth 60. (The 2 is worth just 2.)",
+        "expression": "6*10",
+        "answer": "60"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Tens;Ones",
+        "a": 6,
+        "b": 2,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students say the 6 in 62 is worth 6, because that is the digit they see.",
+          "response": "Ask them to build 62 with ten-strips and unit squares. Count how many squares the 6 strips are worth. The digit tells how many groups, and the place tells the size of the group."
+        },
+        {
+          "mistake": "Students write 5 tens as 5 and leave out the zero, for example writing 50 as 5.",
+          "response": "Show that 5 means 5 ones, while 50 means 5 tens and 0 ones. The zero in the ones place keeps the 5 in the tens place. Have them show both with the bars."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why does the zero matter in 50? It's nothing.",
+          "answer": "It means there are no ones, and it holds the tens place. Without it, 5 would mean five ones. With it, the 5 is in the tens place, so it means five tens."
+        },
+        {
+          "question": "Are 47 and 74 the same, since they use the same digits?",
+          "answer": "No. In 47 there are 4 tens and 7 ones, which is 47. In 74 there are 7 tens and 4 ones, which is 74. The places are different, so the values are different."
+        },
+        {
+          "question": "Why is the tens digit on the left?",
+          "answer": "It is how everyone writes numbers, so we can all read them the same way. The bigger groups go on the left and the smaller ones on the right."
+        }
+      ],
+      "check_question": {
+        "question": "What is the value of the 8 in 83?",
+        "solution": "The 8 is in the tens place, so it is 8 tens, or 8 x 10 = 80.",
+        "expression": "8*10",
+        "answer": "80"
+      }
+    },
+    {
+      "title": "Comparing two-digit numbers",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "To compare two numbers: 1. Look at the tens digits first. 2. The number with more tens is greater. 3. Only if the tens are equal, compare the ones. For 58 and 61: 5 tens against 6 tens, so 61 is greater."
+        },
+        {
+          "kind": "story",
+          "text": "Two children have coins. Mia has 5 ten-coins and 8 one-coins. Sam has 6 ten-coins and 1 one-coin. Who has more money? Sam does. One extra ten-coin is worth more than the 7 extra one-coins Mia has. Mia would need 10 ones to match one more ten."
+        }
+      ],
+      "example": {
+        "problem": "Which is greater, 58 or 61?",
+        "steps": "1. Write each as tens and ones: 58 is 5 tens and 8 ones. 61 is 6 tens and 1 one. 2. Compare the tens: 6 tens is more than 5 tens. 3. So 61 is greater than 58. 4. Check: 58 + 3 = 61, so 61 is 3 more.",
+        "expression": "6*10+1",
+        "answer": "61"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "58 tens;58 ones;61 tens;61 ones",
+        "a": 5,
+        "b": 8,
+        "c": 6,
+        "d": 1
+      },
+      "mistakes": [
+        {
+          "mistake": "Students compare the ones first, so they say 58 is greater than 61 because 8 is more than 1.",
+          "response": "Bring out the coin story or the bars. Ask: 'Which is worth more, 5 tens or 6 tens?' Remind them to always start with the biggest place, the tens."
+        },
+        {
+          "mistake": "When the tens are equal, students say the numbers are equal, for example 43 and 47.",
+          "response": "Point out that the tens match, so the ones decide. Have them show 43 and 47 with bars and see that 7 ones is more than 3 ones."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But 58 has an 8 and 61 only has a 1. Why is 61 bigger?",
+          "answer": "The 8 is only 8 ones, but the 6 in 61 is 6 tens, which is 60. The tens are worth much more, so we look there first."
+        },
+        {
+          "question": "What if both the tens and the ones are the same?",
+          "answer": "Then the numbers are equal. For example, 35 and 35 are the same number."
+        },
+        {
+          "question": "Does this work with bigger numbers?",
+          "answer": "Yes. We always start with the biggest place and move right. With three digits, you would start with the hundreds."
+        }
+      ],
+      "check_question": {
+        "question": "Which is greater, 79 or 85? Say how you know.",
+        "solution": "85 is greater. 85 has 8 tens and 79 has only 7 tens, so we do not need to look at the ones.",
+        "expression": "8*10+5",
+        "answer": "85"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "A number has 7 tens and 3 ones. What is the number?",
+      "solution": "7 tens is 7 x 10 = 70. Add the 3 ones: 70 + 3 = 73.",
+      "expression": "7*10+3",
+      "answer": "73"
+    },
+    {
+      "problem": "What is the value of the 4 in 49?",
+      "solution": "The 4 is in the tens place, so it means 4 tens, which is 4 x 10 = 40.",
+      "expression": "4*10",
+      "answer": "40"
+    },
+    {
+      "problem": "Which is greater, 79 or 97?",
+      "solution": "79 has 7 tens and 97 has 9 tens. 9 tens is more than 7 tens, so 97 is greater. The ones do not matter here.",
+      "expression": "9*10+7",
+      "answer": "97"
+    }
+  ],
+  "meta": {
+    "concept": "tens-and-ones",
+    "title": "Tens and ones",
+    "model": "sonnet",
+    "cost_usd": 0.05821,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Tens+and+ones"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Tens+and+ones"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Tens+and+ones"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Tens+and+ones"
+    }
+  ]
+}

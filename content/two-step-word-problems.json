@@ -1,0 +1,258 @@
+{
+  "idea": "A two-step word problem needs two calculations before you can answer the question. The first calculation finds a number the story does not tell you. The second uses that number to answer what was asked. The skill is spotting the hidden question in the middle.",
+  "why": "One calculation turns the story's numbers into a new fact, and the final question needs that fact. For example, you cannot find the change until you know the total cost. If students name the hidden number first (\"how much did the shirts cost altogether?\"), they choose operations by meaning and not by guessing from key words. Drawing bars shows each quantity as a length, so the order of the steps can be seen.",
+  "theory_example": {
+    "problem": "Tom has 50 dollars. He buys 3 shirts that cost 12 dollars each. How much money does he have left?",
+    "steps": "Step 1, hidden question: how much did the shirts cost altogether? 3 x 12 = 36 dollars. Step 2, the real question: how much is left? 50 - 36 = 14 dollars. Check: 36 + 14 = 50, so the spent money and the leftover money make up what he started with.",
+    "expression": "50 - 3*12",
+    "answer": "14"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up. Read the Tom shirts problem from the theory example aloud and ask: can we answer it in one calculation? Let students say what is missing. Name this the hidden question, then introduce the topic."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach the subtopic 'Find the hidden question'. Use the example, draw the bars with the class, and give the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach the subtopic 'Multiply first, then add or subtract'. Work the notebooks-and-pen example, discuss the two mistakes, and give the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach the subtopic 'Add up first, then divide to share'. Work the cans example, take student questions, and give the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Put the 3 extra examples on the board one at a time. Students name the hidden question first, then calculate. Leave time for any student questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Find the hidden question",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Tell it as a story of one pile of stickers. Sam starts with 12. A friend gives him 5, so now he has a new amount. Ask 'how many does he have right now?' That is the hidden question. Then he gives 8 away from that new amount."
+        },
+        {
+          "kind": "procedure",
+          "text": "Three questions: 1) What is the question at the end? 2) What do I need to know first to answer it? 3) Which calculation gives me that? Students write the hidden question in words before any numbers."
+        }
+      ],
+      "example": {
+        "problem": "Sam has 12 stickers. A friend gives him 5 more. Then Sam gives 8 stickers to his sister. How many stickers does Sam have now?",
+        "steps": "Hidden question: how many stickers after the friend's gift? 12 + 5 = 17. Real question: how many after giving 8 away? 17 - 8 = 9. Sam has 9 stickers.",
+        "expression": "12 + 5 - 8",
+        "answer": "9"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Start;After gift;Now",
+        "a": 12,
+        "b": 17,
+        "c": 9,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students stop after the first step and give 17 as the answer.",
+          "response": "Ask them to reread the last sentence and say what the question wants. Have them point to the words in the problem that match their answer. 17 is how many Sam had before giving some away."
+        },
+        {
+          "mistake": "Students combine all the numbers in one way, such as 12 + 5 + 8 = 25.",
+          "response": "Ask what happens to Sam's pile in each sentence: does it grow or shrink? Act it out with counters. Gifts add, giving away subtracts."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "How do I know which number to use first?",
+          "answer": "Follow the story in order. Do what happens first, then what happens next. When the order is unclear, ask what number you need before you can answer the question."
+        },
+        {
+          "question": "Why can't I just do it all in one go?",
+          "answer": "Sometimes you can, by writing 12 + 5 - 8. But doing it in two steps is safer because you can check each step."
+        },
+        {
+          "question": "Does the answer to step one go in my final answer?",
+          "answer": "No. It is a middle number that helps you. The final answer is what the last sentence asks for, and it should come with its unit, here stickers."
+        }
+      ],
+      "check_question": {
+        "question": "A bus has 25 people. At the first stop 9 get off. At the next stop 4 get on. How many people are on the bus now?",
+        "solution": "Step 1: 25 - 9 = 16 people after the first stop. Step 2: 16 + 4 = 20 people.",
+        "expression": "25 - 9 + 4",
+        "answer": "20"
+      }
+    },
+    {
+      "title": "Multiply first, then add or subtract",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw 4 equal boxes for the notebooks, each labelled 3, and one small box labelled 2 for the pen. Join the notebook boxes into one long bar of 12, then put the pen bar next to it. The total is the whole length."
+        },
+        {
+          "kind": "procedure",
+          "text": "Find the group part first: number of groups times the amount in each group. Then deal with the single extra amount by adding it or subtracting it. Only the equal groups are multiplied."
+        }
+      ],
+      "example": {
+        "problem": "Mia buys 4 notebooks that cost 3 dollars each and 1 pen that costs 2 dollars. How much does she spend altogether?",
+        "steps": "Hidden question: how much do the notebooks cost? 4 x 3 = 12 dollars. Real question: how much with the pen? 12 + 2 = 14 dollars.",
+        "expression": "4*3 + 2",
+        "answer": "14"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Notebooks;Pen;Total",
+        "a": 12,
+        "b": 2,
+        "c": 14,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students add first and compute (4 + 3 + 2) or (3 + 2) x 4.",
+          "response": "Ask what the 2 belongs to. The pen is not bought 4 times. Redraw the bars so only the notebooks form 4 equal groups."
+        },
+        {
+          "mistake": "Students use the wrong operation for the second step, for example subtracting the pen price when it should be added.",
+          "response": "Ask whether Mia spends more or less because of the pen. Spending more means the total grows, so we add."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we multiply and not add 3 four times?",
+          "answer": "You can add 3 + 3 + 3 + 3 and get 12. Multiplication is a quick way to add equal groups."
+        },
+        {
+          "question": "What if the pen was bought first in the story?",
+          "answer": "The order in the story does not change the total here. We still multiply the equal groups and add the pen. Adding can be done in any order."
+        },
+        {
+          "question": "When do I subtract in the second step?",
+          "answer": "When something is taken away or paid from a bigger amount, such as change from 20 dollars. For example, 20 - 14 = 6 dollars of change."
+        }
+      ],
+      "check_question": {
+        "question": "Ben has 3 packs of 6 cards and 5 loose cards. How many cards does he have?",
+        "solution": "Step 1: 3 x 6 = 18 cards in packs. Step 2: 18 + 5 = 23 cards.",
+        "expression": "3*6 + 5",
+        "answer": "23"
+      }
+    },
+    {
+      "title": "Add up first, then divide to share",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Two classes collect cans for a recycling drive. Pour everyone's cans into one big pile and count the pile. Only then can you share it fairly into 6 boxes. You cannot share until the pile exists."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw a bar for Class A (18) and a bar for Class B (24) joined into one long bar of 42. Then cut the long bar into 6 equal pieces and write the value of one piece."
+        }
+      ],
+      "example": {
+        "problem": "Class A collected 18 cans and Class B collected 24 cans. They put all the cans equally into 6 boxes. How many cans are in each box?",
+        "steps": "Hidden question: how many cans altogether? 18 + 24 = 42. Real question: how many in each box? 42 / 6 = 7. Each box has 7 cans. Check: 6 x 7 = 42.",
+        "expression": "(18 + 24) / 6",
+        "answer": "7"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Class A;Class B;Total",
+        "a": 18,
+        "b": 24,
+        "c": 42,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students divide only one number, such as 18 / 6 = 3, or divide 24 / 6 and add 18.",
+          "response": "Ask who is sharing into the boxes. Both classes' cans go in the boxes, so we need all the cans first. Use the joined bar to show it."
+        },
+        {
+          "mistake": "Students write 18 + 24 / 6 and get 22 because they divide before adding.",
+          "response": "Point out that the story says to add first. Write brackets, (18 + 24) / 6, to show which calculation is done first. Check with 6 x 7 = 42."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we divide at the end and not the start?",
+          "answer": "The boxes hold cans from both classes, so we need the whole pile before we can share it."
+        },
+        {
+          "question": "What if it does not divide evenly?",
+          "answer": "Then there is a remainder, and the story tells you what to do with it. Today the numbers divide evenly."
+        },
+        {
+          "question": "How can I check my answer?",
+          "answer": "Multiply back. 6 boxes of 7 cans is 42, which matches the total number of cans."
+        }
+      ],
+      "check_question": {
+        "question": "Ana has 14 marbles and Raj has 22 marbles. They share all the marbles equally among 4 friends. How many marbles does each friend get?",
+        "solution": "Step 1: 14 + 22 = 36 marbles. Step 2: 36 / 4 = 9 marbles each.",
+        "expression": "(14 + 22) / 4",
+        "answer": "9"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "There are 5 bags with 8 apples in each bag. Seven apples are eaten. How many apples are left?",
+      "solution": "Step 1: 5 x 8 = 40 apples. Step 2: 40 - 7 = 33 apples left.",
+      "expression": "5*8 - 7",
+      "answer": "33"
+    },
+    {
+      "problem": "A shop has 35 red balloons and 29 blue balloons. They are packed equally into 8 bags. How many balloons are in each bag?",
+      "solution": "Step 1: 35 + 29 = 64 balloons. Step 2: 64 / 8 = 8 balloons per bag.",
+      "expression": "(35 + 29) / 8",
+      "answer": "8"
+    },
+    {
+      "problem": "Lena has 30 dollars. She buys 2 books at 7 dollars each. How much money does she have left?",
+      "solution": "Step 1: the books cost 2 x 7 = 14 dollars. Step 2: 30 - 14 = 16 dollars left.",
+      "expression": "30 - 2*7",
+      "answer": "16"
+    }
+  ],
+  "meta": {
+    "concept": "two-step-word-problems",
+    "title": "Two-step word problems",
+    "model": "sonnet",
+    "cost_usd": 0.11693,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Two-step+word+problems"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Two-step+word+problems"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Two-step+word+problems"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Two-step+word+problems"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Two-step+word+problems+math"
+    }
+  ]
+}

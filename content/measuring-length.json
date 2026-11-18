@@ -1,0 +1,254 @@
+{
+  "idea": "Length tells how far it is from one end of an object to the other. We can compare two lengths directly by lining them up, or measure them with equal units (paper clips, then centimetres) so that we can use numbers to compare. Measuring gives each length a number, and then \"how much longer\" becomes a subtraction.",
+  "why": "Comparing only works fairly when both objects start at the same place, because then the extra part sticking out is exactly the difference. Measuring works because length is built from equal pieces: if every unit is the same size and none overlaps or leaves a gap, counting the units tells the length. A ruler is just a row of equal units with numbers on the marks, where each number counts how many units have been covered since 0. That is why a length is the difference between the end mark and the start mark, and why the difference between two lengths is found by subtracting, as long as both use the same unit.",
+  "theory_example": {
+    "problem": "A ribbon lies along a ruler. Its left end is at the 2 cm mark and its right end is at the 17 cm mark. A string is 9 cm long. How much longer is the ribbon than the string?",
+    "steps": "1. The ribbon does not start at 0, so we cannot just read the 17. Count the units it covers: 17 - 2 = 15 cm. 2. Both lengths are now in centimetres, so we can compare them. 3. The ribbon is longer. Difference: 15 - 9 = 6 cm.",
+    "expression": "(17 - 2) - 9",
+    "answer": "6"
+  },
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up. Hold up two objects of clearly different length (pencil and a marker). Ask which is longer and how students know. Let a couple of students try, and collect the words longer, shorter, longest, shortest. Do not correct yet; this sets up the next step."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach the subtopic 'Comparing lengths directly'. Show the line-up-at-the-same-start idea with real objects, then show the bar picture of pencil, crayon and eraser. Work the example, then ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Teach the subtopic 'Measuring with equal units and a ruler'. Let pairs measure a desk item with paper clips, then with a ruler. Work the example of the book starting at 3 on the ruler. Ask the check question."
+    },
+    {
+      "minutes": 7,
+      "activity": "Teach the subtopic 'Comparing measured lengths: how much longer?'. Show the bars for rope and string, work the subtraction, and stress the same unit. Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round. Work the 3 extra examples with the class, mixing all subtopics. Let students try each one before you show the solution, and leave time for their questions."
+    }
+  ],
+  "subtopics": [
+    {
+      "title": "Comparing lengths directly",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw or show objects lined up with their left ends on the same straight line, like runners at a starting line. The one whose right end goes further is longer. The part that sticks out is how much longer it is."
+        },
+        {
+          "kind": "story",
+          "text": "Two children each hold a scarf and say, 'Mine is longer!' One holds hers at her shoulder and one holds his at his knee, so it is hard to tell. Ask: what could they do so it is fair? They put both scarves on the floor with one end touching the wall. Now the one that reaches further is longer."
+        }
+      ],
+      "example": {
+        "problem": "A pencil is 12 paper clips long, a crayon is 9 paper clips long, and an eraser is 5 paper clips long. Put them in order from longest to shortest. How many paper clips longer is the pencil than the crayon?",
+        "steps": "1. Compare the numbers: 12 is more than 9, and 9 is more than 5. 2. Order: pencil (longest), crayon, eraser (shortest). 3. To find how much longer the pencil is than the crayon, find the part that sticks out: 12 - 9 = 3 paper clips.",
+        "expression": "12 - 9",
+        "answer": "3"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Pencil;Crayon;Eraser",
+        "a": 12,
+        "b": 9,
+        "c": 5,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students compare objects without lining up the start, for example one object starts further to the right, and say it is longer.",
+          "response": "Do it both ways with real objects: first unfair, then fair. Ask 'Where does each one start?' and make 'same starting line' a class rule."
+        },
+        {
+          "mistake": "Students think a thicker, wider or curvier object is longer, or call a bent object shorter when it is bent (for example a curled string).",
+          "response": "Say that length means from one end to the other end. Straighten the curled string next to a straight one and let them see it is the same or longer."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why do the ends have to start at the same place?",
+          "answer": "Because the extra part that sticks out is what we want to see. If one starts further along, part of its length is hidden by the shift and we could fool ourselves."
+        },
+        {
+          "question": "What if two things end at exactly the same place?",
+          "answer": "Then they are the same length. We say 'equal in length' or 'as long as'."
+        },
+        {
+          "question": "Is 'longer' the same as 'taller'?",
+          "answer": "It is the same idea. We say taller for things that stand up, like a tree, and longer for things lying down, like a snake. Both compare how far it is from one end to the other."
+        }
+      ],
+      "check_question": {
+        "question": "A red ribbon is 8 paper clips long and a blue ribbon is 6 paper clips long, lined up at the same start. Which is longer, and by how many paper clips?",
+        "solution": "The red ribbon is longer. It sticks out by 8 - 6 = 2 paper clips.",
+        "expression": "8 - 6",
+        "answer": "2"
+      }
+    },
+    {
+      "title": "Measuring with equal units and a ruler",
+      "ways_to_explain": [
+        {
+          "kind": "procedure",
+          "text": "Steps for measuring: 1) Put the 0 mark (or the first unit) at one end of the object. 2) Keep the object straight along the ruler. 3) Look at where the other end is and read the number there. With units like paper clips: no gaps, no overlaps, all the same size. Say the unit with the number, for example '12 cm'."
+        },
+        {
+          "kind": "picture",
+          "text": "Draw a ruler as a row of equal boxes, each 1 cm, with numbers on the lines between them. Show a pencil from 0 to 14: it covers 14 boxes. Then show a book from 3 to 11 and shade the boxes it covers: you can count 8 boxes, and 11 - 3 = 8."
+        }
+      ],
+      "example": {
+        "problem": "A book is placed along a ruler. Its left edge is at the 3 cm mark and its right edge is at the 11 cm mark. How long is the book?",
+        "steps": "1. The book does not start at 0, so 11 cm is not its length. 2. Count the centimetre boxes from 3 to 11: 4, 5, 6, 7, 8, 9, 10, 11, that is 8 boxes. 3. Check by subtracting: 11 - 3 = 8. The book is 8 cm long.",
+        "expression": "11 - 3",
+        "answer": "8"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students read only the end number (11 cm) when the object does not start at 0.",
+          "response": "Have them shade the boxes covered and count them. Ask 'Where did the book begin?' Then show that a shifted object gives the same count of boxes."
+        },
+        {
+          "mistake": "Students measure with units that leave gaps or overlap, or mix unit sizes (a big paper clip and a small one).",
+          "response": "Let them redo it and ask 'Are all the pieces the same size? Do they touch without overlap?' Show that two different sized clips would give different counts for the same pencil."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we start at 0 on the ruler?",
+          "answer": "Because 0 means nothing has been measured yet. The number at the other end then tells how many units were covered. You can start elsewhere, but then you must subtract."
+        },
+        {
+          "question": "Why do we use centimetres instead of paper clips?",
+          "answer": "Paper clips can be different sizes, so two people could get different answers. A centimetre is always the same size, so everybody gets the same measure."
+        },
+        {
+          "question": "What if the end is between two numbers?",
+          "answer": "Then it is between two whole centimetres. In this lesson we say it is about the nearer number, for example 'about 9 cm'."
+        }
+      ],
+      "check_question": {
+        "question": "A line starts at the 4 cm mark and ends at the 10 cm mark. How long is the line?",
+        "solution": "10 - 4 = 6, so the line is 6 cm long.",
+        "expression": "10 - 4",
+        "answer": "6"
+      }
+    },
+    {
+      "title": "Comparing measured lengths: how much longer?",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw two bars for the lengths, side by side from the same baseline. The difference is the extra part of the taller bar above the top of the shorter bar. Label that part with the subtraction, for example 45 - 28."
+        },
+        {
+          "kind": "story",
+          "text": "Two friends jump in a sand pit. Mia jumps 48 cm and Tom jumps 62 cm. Ask: who jumped further, and by how much? Tom did, and the gap between their landing spots is 62 - 48 = 14 cm. The story shows that 'how much more' is the gap between two numbers, so we subtract. And we can only subtract when both are in the same unit."
+        }
+      ],
+      "example": {
+        "problem": "A rope is 45 cm long and a string is 28 cm long. How much longer is the rope than the string?",
+        "steps": "1. Both lengths are in centimetres, so we can compare them. 2. 45 is more than 28, so the rope is longer. 3. Find the difference: 45 - 28 = 17. The rope is 17 cm longer.",
+        "expression": "45 - 28",
+        "answer": "17"
+      },
+      "visual": {
+        "kind": "bars",
+        "expr": "Rope;String",
+        "a": 45,
+        "b": 28,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students subtract numbers that have different units (for example 1 m and 85 cm gives 85 - 1).",
+          "response": "Ask 'Are these the same unit?' Change one to match: 1 m is 100 cm, then 100 - 85 = 15 cm. Write the unit next to every number."
+        },
+        {
+          "mistake": "Students add instead of subtract when asked 'how much longer', or subtract the smaller from the bigger the wrong way round.",
+          "response": "Go back to the bar picture. Ask 'Are we looking for the whole or the extra part?' The extra part is the difference, found by taking the shorter length away from the longer length."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why do we subtract to find 'how much longer'?",
+          "answer": "The shorter length is already inside the longer one. If we take that part away, what is left over is the extra, which is the difference."
+        },
+        {
+          "question": "Can we compare 2 m and 50 cm?",
+          "answer": "Yes, but first change them to the same unit. 2 m is 200 cm, so 200 cm is longer than 50 cm by 150 cm."
+        },
+        {
+          "question": "Does the answer need a unit?",
+          "answer": "Yes. '17' alone could mean anything. '17 cm' tells us it is a length, and in which units."
+        }
+      ],
+      "check_question": {
+        "question": "Tom jumped 62 cm and Mia jumped 48 cm. How much further did Tom jump?",
+        "solution": "62 - 48 = 14, so Tom jumped 14 cm further.",
+        "expression": "62 - 48",
+        "answer": "14"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "A pencil lies on a ruler from 0 to 16 cm. An eraser is 5 cm long. How much longer is the pencil than the eraser?",
+      "solution": "The pencil starts at 0, so it is 16 cm long. Both lengths are in centimetres. 16 - 5 = 11, so the pencil is 11 cm longer.",
+      "expression": "16 - 5",
+      "answer": "11"
+    },
+    {
+      "problem": "A ribbon lies on a ruler from the 6 cm mark to the 15 cm mark. How long is the ribbon?",
+      "solution": "It does not start at 0, so we count the covered centimetres: 15 - 6 = 9. The ribbon is 9 cm long.",
+      "expression": "15 - 6",
+      "answer": "9"
+    },
+    {
+      "problem": "A rope is 1 m long and a string is 85 cm long. How many centimetres longer is the rope? (1 m = 100 cm)",
+      "solution": "Change to the same unit: 1 m = 100 cm. The rope is longer. 100 - 85 = 15, so the rope is 15 cm longer.",
+      "expression": "100 - 85",
+      "answer": "15"
+    }
+  ],
+  "meta": {
+    "concept": "measuring-length",
+    "title": "Comparing and measuring length",
+    "model": "sonnet",
+    "cost_usd": 0.0635,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Comparing+and+measuring+length"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Comparing+and+measuring+length"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Comparing+and+measuring+length"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Comparing+and+measuring+length"
+    }
+  ]
+}

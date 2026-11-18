@@ -1,0 +1,262 @@
+{
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up with 'Adding tens and ones without regrouping': ask what 30 + 20 is, then 4 + 5. Show 34 + 25 as 3 tens 4 ones and 2 tens 5 ones, using one of the two explanations."
+    },
+    {
+      "minutes": 4,
+      "activity": "Work the example 34 + 25 together on the board, then ask the check question for 'Adding tens and ones without regrouping' (42 + 36). Use the mistakes list if you see 'tens' answers like 5 instead of 50."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach 'Adding with regrouping (making a new ten)'. Start with the bundle story or the ones-first procedure, then work through 68 + 27 step by step. Let students say each step aloud."
+    },
+    {
+      "minutes": 4,
+      "activity": "Ask the check question for 'Adding with regrouping (making a new ten)' (56 + 28). Walk around, and use the mistakes and student questions if the new ten causes trouble."
+    },
+    {
+      "minutes": 6,
+      "activity": "Teach 'Jumping on a number line and rounding to a friendly number'. Draw a number line by hand and do 58 + 39 as 58 + 40 - 1. Compare it to the written method."
+    },
+    {
+      "minutes": 3,
+      "activity": "Ask the check question for 'Jumping on a number line and rounding to a friendly number' (67 + 29). Ask a student to explain which method they like and why."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work the 3 extra examples together, mixing the three subtopics. Let students choose a method, ask for different methods for the same sum, and leave time for open questions."
+    }
+  ],
+  "idea": "Adding within 100 means adding two numbers where the total is 100 or less, such as 47 + 38. We use place value: add the ones with the ones and the tens with the tens. When the ones make 10 or more, we trade 10 ones for 1 new ten.",
+  "why": "Every two-digit number is made of tens and ones, for example 47 = 40 + 7. Addition can be done in any order, so we can add the tens together and the ones together, and then combine them. We only add things of the same size together: tens with tens, ones with ones. That is why digits are lined up by place. When the ones add up to 10 or more, 10 ones are worth exactly 1 ten, so we trade them. That trade is the 'carry'. It does not change the total, it only writes the same amount in a tidier way. Jumping on a number line or rounding to a friendly number such as 40 works because adding 39 is the same as adding 40 and then taking 1 back.",
+  "theory_example": {
+    "problem": "Find 47 + 38.",
+    "steps": "Split into tens and ones: 47 = 40 + 7 and 38 = 30 + 8. Add the ones: 7 + 8 = 15, which is 1 ten and 5 ones. Add the tens: 40 + 30 = 70. Add the new ten: 70 + 10 = 80. Add the remaining ones: 80 + 5 = 85. So 47 + 38 = 85.",
+    "expression": "47 + 38",
+    "answer": "85"
+  },
+  "subtopics": [
+    {
+      "title": "Adding tens and ones without regrouping",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw 34 as 3 long sticks (tens) and 4 dots (ones), and 25 as 2 sticks and 5 dots. Put the sticks together: 5 sticks, which is 50. Put the dots together: 9 dots. The total is 5 sticks and 9 dots, which is 59."
+        },
+        {
+          "kind": "procedure",
+          "text": "Write the numbers one under the other so ones are under ones and tens under tens. Add the ones column first: 4 + 5 = 9. Then add the tens column: 3 tens + 2 tens = 5 tens, which is 50. Write the answer as 59."
+        }
+      ],
+      "example": {
+        "problem": "Find 34 + 25.",
+        "steps": "Split: 34 = 30 + 4 and 25 = 20 + 5. Add the tens: 30 + 20 = 50. Add the ones: 4 + 5 = 9. Combine: 50 + 9 = 59.",
+        "expression": "34 + 25",
+        "answer": "59"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "A student says 3 + 2 = 5 for the tens and writes 5 + 9 = 14, or writes the tens digit as if it were ones.",
+          "response": "Ask 'Are these 3 ones or 3 tens?' Show with sticks that 3 tens + 2 tens = 5 tens, which is 50. Say 'thirty plus twenty' aloud instead of 'three plus two'."
+        },
+        {
+          "mistake": "A student lines the numbers up wrongly, for example adding 4 to the 2 of 25 (the tens) so that the sum is wrong.",
+          "response": "Draw two columns labelled Tens and Ones. Ask the student to put each digit in its column first. Remind them we only add things of the same kind."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we start with the ones?",
+          "answer": "You can start with either. Starting with the ones helps later, because if the ones make a new ten you can pass it to the tens. So it is a good habit now."
+        },
+        {
+          "question": "Why is 3 + 2 in the tens really 30 + 20?",
+          "answer": "The 3 stands for 3 tens, which is 30, and the 2 for 2 tens, which is 20. 3 tens and 2 tens make 5 tens, which is 50."
+        },
+        {
+          "question": "Can I add the tens first?",
+          "answer": "Yes. The order does not change the total. 30 + 20 = 50, then 4 + 5 = 9, and 50 + 9 = 59. Both orders give the same answer."
+        }
+      ],
+      "check_question": {
+        "question": "What is 42 + 36? Say how you split the numbers.",
+        "solution": "42 = 40 + 2 and 36 = 30 + 6. Tens: 40 + 30 = 70. Ones: 2 + 6 = 8. Total: 70 + 8 = 78.",
+        "expression": "42 + 36",
+        "answer": "78"
+      }
+    },
+    {
+      "title": "Adding with regrouping (making a new ten)",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Think of ten-packs of pencils and single pencils. You have 6 packs and 8 single pencils, and a friend gives you 2 packs and 7 singles. You now have 15 single pencils. That is more than a pack, so you put 10 of them into a new pack and keep 5 singles. Now you count 6 + 2 + 1 = 9 packs and 5 singles, which is 95."
+        },
+        {
+          "kind": "procedure",
+          "text": "Add the ones first. If the ones total is 10 or more, write only the ones digit and carry 1 ten to the tens column. Then add the tens, including the carried ten. For 68 + 27: ones 8 + 7 = 15, write 5 and carry 1. Tens 6 + 2 + 1 = 9. The answer is 95."
+        }
+      ],
+      "example": {
+        "problem": "Find 68 + 27.",
+        "steps": "Split: 68 = 60 + 8 and 27 = 20 + 7. Ones: 8 + 7 = 15, which is 1 ten and 5 ones. Tens: 60 + 20 = 80. Add the new ten: 80 + 10 = 90. Add the 5 ones: 90 + 5 = 95.",
+        "expression": "68 + 27",
+        "answer": "95"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "A student writes the whole 15 in the ones place, for example 68 + 27 = 8015 or 6 + 2 = 8 and then 815.",
+          "response": "Ask how many ones can fit in the ones place. Show with packs that 15 ones is 1 ten and 5 ones. Only the 5 stays in ones and the ten moves to the tens."
+        },
+        {
+          "mistake": "A student carries the ten but forgets to add it, so 68 + 27 becomes 85.",
+          "response": "Ask them to estimate first: 70 + 30 = 100, so 85 is too small. Then draw the carried 1 as a small ten-stick on top of the tens column so it is not forgotten."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we carry a 1 and not a 10?",
+          "answer": "The 1 sits in the tens column, so it means 1 ten. That is the same as 10 ones. The place of the digit tells you its size."
+        },
+        {
+          "question": "Does carrying change the answer?",
+          "answer": "No. 15 ones and 1 ten plus 5 ones are the same amount. We only write it in a neater way so each place has a single digit."
+        },
+        {
+          "question": "How do I know when to carry?",
+          "answer": "When the ones add up to 10 or more. 8 + 7 = 15 is more than 10, so we carry. 4 + 5 = 9 is less than 10, so we do not."
+        }
+      ],
+      "check_question": {
+        "question": "What is 56 + 28? Tell me what happens to the ones.",
+        "solution": "Ones: 6 + 8 = 14, which is 1 ten and 4 ones. Tens: 50 + 20 = 70, plus the new ten is 80. Add the 4 ones: 84.",
+        "expression": "56 + 28",
+        "answer": "84"
+      }
+    },
+    {
+      "title": "Jumping on a number line and rounding to a friendly number",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a number line by hand. Start at 58. To add 39, make one big jump of 40 to land on 98, then take one small step back of 1 to land on 97. Explain that 39 is just one short of 40, so we jumped one too far and corrected."
+        },
+        {
+          "kind": "story",
+          "text": "You have 58 stickers and buy a pack that should hold 40 stickers, but it is 1 short, so it has 39. Think: 58 + 40 would be 98, but you get one sticker fewer, so you have 97."
+        }
+      ],
+      "example": {
+        "problem": "Find 58 + 39 by using a friendly number.",
+        "steps": "39 is close to 40, so add 40 first: 58 + 40 = 98. We added 1 too many, so take 1 away: 98 - 1 = 97.",
+        "expression": "58 + 39",
+        "answer": "97"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "A student adds 40 but forgets to take 1 back, and answers 98.",
+          "response": "Ask 'Did we add 39 or 40?' Say we added 1 more than we should, so the answer must be 1 smaller. Check by adding the ones: 8 + 9 = 17, so the answer must end in 7."
+        },
+        {
+          "mistake": "A student adds 1 back instead of taking 1 away and answers 99.",
+          "response": "Use the sticker story: the pack has fewer stickers than 40, so the total is less than 98. Ask whether the answer should be bigger or smaller than 98."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why does adding 40 and then subtracting 1 work?",
+          "answer": "Because 39 is 40 - 1. Adding 39 is the same as adding 40 and then taking 1 away."
+        },
+        {
+          "question": "Can I use this trick with any number?",
+          "answer": "It works best when a number is close to a tens number, like 9, 19, 29, 39 or 8, 18, 28. With numbers like 54 the written method is usually easier."
+        },
+        {
+          "question": "Which way is better, this or the written way?",
+          "answer": "Neither is always better. Use the one that feels easy and that you can explain. If you get the same answer both ways, you can be more sure it is right."
+        }
+      ],
+      "check_question": {
+        "question": "What is 67 + 29? Which friendly number did you use?",
+        "solution": "Use 30: 67 + 30 = 97. We added 1 too many, so 97 - 1 = 96.",
+        "expression": "67 + 29",
+        "answer": "96"
+      }
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Find 52 + 36.",
+      "solution": "No regrouping. Tens: 50 + 30 = 80. Ones: 2 + 6 = 8. Total: 80 + 8 = 88.",
+      "expression": "52 + 36",
+      "answer": "88"
+    },
+    {
+      "problem": "Find 69 + 24.",
+      "solution": "Ones: 9 + 4 = 13, which is 1 ten and 3 ones. Tens: 60 + 20 = 80, plus the new ten is 90. Add the 3 ones: 93.",
+      "expression": "69 + 24",
+      "answer": "93"
+    },
+    {
+      "problem": "Find 35 + 49 using a friendly number.",
+      "solution": "49 is 1 less than 50. 35 + 50 = 85. Take away 1: 85 - 1 = 84.",
+      "expression": "35 + 49",
+      "answer": "84"
+    }
+  ],
+  "meta": {
+    "concept": "adding-within-100",
+    "title": "Adding within 100",
+    "model": "sonnet",
+    "cost_usd": 0.06021,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Adding+within+100"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Adding+within+100"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Adding+within+100"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Adding+within+100"
+    }
+  ]
+}

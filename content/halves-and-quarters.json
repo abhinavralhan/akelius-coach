@@ -1,0 +1,258 @@
+{
+  "idea": "A half is one of 2 equal parts of a whole shape. A quarter is one of 4 equal parts of a whole shape. The key word is equal: the parts must be the same size, though they do not have to look the same.",
+  "why": "A fraction describes how many equal parts the whole is split into (the bottom number) and how many of those parts we are talking about (the top number). If the parts are not equal, the name \"half\" or \"quarter\" does not fit, because the parts have no common size to count. A quarter is half of a half because splitting each of 2 equal parts into 2 equal pieces gives 4 equal pieces. So 2 quarters fill 1 half, and 4 quarters fill the whole. The more parts the whole is cut into, the smaller each part is, which is why a quarter is smaller than a half.",
+  "theory_example": {
+    "problem": "A square is cut into 4 equal parts and 2 of the parts are shaded. What fraction of the square is shaded, and what is another name for it?",
+    "steps": "1. The square is cut into 4 equal parts, so each part is 1/4 (one quarter). 2. Two parts are shaded, so the shaded fraction is 2/4 (two quarters). 3. Cut the square once down the middle into 2 equal parts. The 2 shaded quarters fill exactly one of those 2 parts. 4. So 2/4 is the same amount as 1/2, which is one half.",
+    "expression": "Rational(2,4)",
+    "answer": "1/2"
+  },
+  "subtopics": [
+    {
+      "title": "Halves",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a rectangle on the board. Fold a paper copy so the two edges meet exactly, and open it. The fold line makes 2 parts that match when stacked. Say: each part is one half. Then draw a line that makes 2 unequal parts and show that the pieces do not match, so these are not halves."
+        },
+        {
+          "kind": "story",
+          "text": "Two friends share one sandwich. To be fair, each must get the same amount. Each friend gets one half. If one friend gets a bigger piece, it is not fair, and the pieces are not halves."
+        }
+      ],
+      "example": {
+        "problem": "A rectangle is cut into 2 equal parts. What fraction of the rectangle is one part?",
+        "steps": "1. Count the equal parts: there are 2. 2. One part out of 2 equal parts is written 1/2. 3. Both parts are the same size, so each is one half.",
+        "expression": "Rational(1,2)",
+        "answer": "1/2"
+      },
+      "visual": {
+        "kind": "fractionbar",
+        "expr": "",
+        "a": 1,
+        "b": 2,
+        "c": 1,
+        "d": 2
+      },
+      "mistakes": [
+        {
+          "mistake": "Students call any two parts halves, even when the parts are different sizes.",
+          "response": "Ask them to cut out the two parts and place one on top of the other. If they do not match, they are not halves. Say: halves must be equal."
+        },
+        {
+          "mistake": "Students think a half must be a left and right split only.",
+          "response": "Show a square cut down the middle, across the middle and along the diagonal. All three give two matching parts. Cut and stack to check."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why do the parts have to be equal?",
+          "answer": "Because the word half means one of two equal shares. If the shares are not equal, one is bigger, and then the name half would not be fair or true."
+        },
+        {
+          "question": "Why is a half written with a 2 on the bottom?",
+          "answer": "The bottom number tells how many equal parts the whole is cut into. We cut into 2 parts, so the bottom number is 2. The top number 1 says we take one part."
+        },
+        {
+          "question": "Can a half look different from the other half?",
+          "answer": "Yes, if the shapes are different but cover the same amount of space. For example, a square cut along the diagonal gives two triangles, and each is half. The key is the same size, not the same look in every cut."
+        }
+      ],
+      "check_question": {
+        "question": "A square is cut into 2 equal parts. What fraction of the square is one part?",
+        "solution": "There are 2 equal parts and we take 1, so one part is 1/2 of the square.",
+        "expression": "Rational(1,2)",
+        "answer": "1/2"
+      }
+    },
+    {
+      "title": "Quarters",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a circle or square and split it into 4 equal parts with two lines crossing in the middle. Label each part 1/4. Shade 3 parts and say: three quarters are shaded, written 3/4, and one quarter is not shaded."
+        },
+        {
+          "kind": "story",
+          "text": "A pizza is cut into 4 equal slices for 4 people. Each person gets one quarter. If 3 slices are eaten, three quarters of the pizza are gone and one quarter is left."
+        }
+      ],
+      "example": {
+        "problem": "A pizza is cut into 4 equal slices and 3 slices are eaten. What fraction of the pizza was eaten?",
+        "steps": "1. The pizza is cut into 4 equal slices, so each slice is 1/4. 2. Three slices are eaten, so we count three quarters. 3. Write it as 3/4. 4. One slice, 1/4, is left, and 3/4 + 1/4 makes the whole pizza.",
+        "expression": "Rational(3,4)",
+        "answer": "3/4"
+      },
+      "visual": {
+        "kind": "fractionbar",
+        "expr": "",
+        "a": 3,
+        "b": 4,
+        "c": 1,
+        "d": 4
+      },
+      "mistakes": [
+        {
+          "mistake": "Students think a quarter is bigger than a half because 4 is bigger than 2.",
+          "response": "Fold two paper squares, one into halves and one into quarters. Lay a quarter on a half and see that it covers only part. More parts means smaller parts."
+        },
+        {
+          "mistake": "Students count the cut lines instead of the parts, for example saying 2 cuts means halves.",
+          "response": "Say: count the parts, not the lines. Two lines crossing in the middle make 4 parts. Have students point to and count each part aloud."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is it called a quarter?",
+          "answer": "Quarter comes from the idea of four. A quarter is one of four equal parts. It is the same idea as a quarter of an hour, which is 15 minutes out of 60."
+        },
+        {
+          "question": "Do all four quarters have to be the same shape?",
+          "answer": "They must be the same size. They often have the same shape too, but different shapes with equal area are still quarters."
+        },
+        {
+          "question": "How many quarters make a whole?",
+          "answer": "Four quarters make a whole, because we cut the whole into 4 equal parts, and putting all 4 back together gives the whole shape again."
+        }
+      ],
+      "check_question": {
+        "question": "A circle is cut into 4 equal parts and 2 parts are shaded. What fraction is shaded?",
+        "solution": "Each part is 1/4. Two parts are 2/4, and that is the same as one half.",
+        "expression": "Rational(2,4)",
+        "answer": "1/2"
+      }
+    },
+    {
+      "title": "A quarter is half of a half",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Fold a paper into halves and open it. Fold again the other way so there are 4 equal parts. Show that each half has been split into 2 quarters. Two quarters fit exactly on one half."
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: start with one half of a shape. Step 2: cut that half into 2 equal parts. Step 3: each new part is one of 4 equal parts of the whole, so it is a quarter. In numbers: 1/2 divided into 2 equal parts is 1/4."
+        }
+      ],
+      "example": {
+        "problem": "Half of a square is shaded. The shaded half is cut into 2 equal parts. What fraction of the whole square is each new part?",
+        "steps": "1. The shaded half is 1/2 of the square. 2. Cutting it into 2 equal parts means 1/2 divided by 2. 3. Each part is 1/4 of the whole, because the whole now has 4 equal parts. 4. So half of a half is one quarter.",
+        "expression": "Rational(1,2)/2",
+        "answer": "1/4"
+      },
+      "visual": {
+        "kind": "fractionbar",
+        "expr": "",
+        "a": 1,
+        "b": 2,
+        "c": 2,
+        "d": 1
+      },
+      "mistakes": [
+        {
+          "mistake": "Students say half of a half is a half.",
+          "response": "Use paper. Fold into half, then fold that half again. Ask how many of these small parts fill the whole sheet. There are 4, so each is a quarter."
+        },
+        {
+          "mistake": "Students say that 2 quarters is 2/2 because they add the bottom numbers or change them.",
+          "response": "Remind them that the bottom number is the size of the part and stays 4 when we count quarters. Two quarters is 2/4. Show on the folded paper that 2/4 covers the same amount as 1/2."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why is half of a half not a half?",
+          "answer": "Because half of a half is only a part of the half. If you take a half and cut it in two, each piece is smaller than that half, so it cannot be a half of the whole."
+        },
+        {
+          "question": "So are two quarters the same as one half?",
+          "answer": "Yes. Two quarters cover the same amount of the shape as one half. We can write 2/4 = 1/2, and fold paper to see the two parts match."
+        },
+        {
+          "question": "Can I cut a quarter in half too?",
+          "answer": "Yes. You get 8 equal parts of the whole, called eighths. We will not use that today, but it follows the same pattern."
+        }
+      ],
+      "check_question": {
+        "question": "How many quarters make one half?",
+        "solution": "A half is split into 2 equal parts to make quarters, so 2 quarters make one half.",
+        "expression": "2",
+        "answer": "2"
+      }
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up with Halves: hold up a paper rectangle and ask how to share it fairly between two people. Fold it, and name each part one half. Show one unequal cut and ask whether it is fair."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach Halves: use the rectangle example. Have students fold paper squares in different ways to find several halves. Use the fraction bar drawing, and ask the check question for Halves."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach Quarters: use the pizza example with 4 equal slices and 3 eaten. Students fold a second paper into 4 equal parts and shade 3. Use the fraction bar drawing, and ask the check question for Quarters."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach A quarter is half of a half: fold a paper in half, then in half again, and compare a half with two quarters. Use the fraction bar drawing, and ask the check question for A quarter is half of a half."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work through the 3 extra examples together, mixing halves and quarters, then take any student questions."
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "A square is cut into 4 equal parts and 1 part is shaded. What fraction of the square is not shaded?",
+      "solution": "Each part is 1/4. One part is shaded, so 3 parts are not shaded. The unshaded fraction is 3/4.",
+      "expression": "Rational(3,4)",
+      "answer": "3/4"
+    },
+    {
+      "problem": "A strip of paper is folded in half, and then folded in half again. When opened, it has equal parts. What fraction of the strip is each part?",
+      "solution": "The first fold makes 2 equal parts. The second fold cuts each of those into 2, making 4 equal parts. Each part is 1/4 of the strip.",
+      "expression": "Rational(1,4)",
+      "answer": "1/4"
+    },
+    {
+      "problem": "A chocolate bar has 4 equal pieces. Sam eats half of the bar. How many pieces does Sam eat?",
+      "solution": "Half of the bar is 1/2. The bar has 4 equal pieces, and half of 4 is 2. Sam eats 2 pieces, which is 2 quarters, the same as one half.",
+      "expression": "4/2",
+      "answer": "2"
+    }
+  ],
+  "meta": {
+    "concept": "halves-and-quarters",
+    "title": "Halves and quarters of shapes",
+    "model": "sonnet",
+    "cost_usd": 0.11873,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Halves+and+quarters+of+shapes"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Halves+and+quarters+of+shapes"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Halves+and+quarters+of+shapes"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Halves+and+quarters+of+shapes"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Halves+and+quarters+of+shapes+math"
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "idea": "Mental strategies are quick, flexible ways to add and subtract small numbers in your head by using what children already know, like pairs that make 10 and doubles. Within 20, three strategies do most of the work: make ten, doubles and near doubles, and subtracting by going back through ten. The aim is for students to choose a handy route, not to count one by one.",
+  "why": "Numbers can be split and put back together without changing the total. Ten is the anchor, because our number system is built on tens, so 10 plus a small number is easy to see (10 + 3 = 13). Make ten works because 8 + 5 = 8 + (2 + 3) = (8 + 2) + 3 = 10 + 3. Doubles work because equal groups are well known, and a near double is a double plus or minus 1. Subtraction through ten works because we can remove a number in two pieces: 15 - 8 = 15 - 5 - 3 = 10 - 3. The total is the same each time, only the route is easier.",
+  "theory_example": {
+    "problem": "Work out 9 + 6 in your head, then 15 - 9.",
+    "steps": "For 9 + 6: 9 needs 1 more to make 10. Take 1 from the 6, leaving 5. So 9 + 6 = 9 + 1 + 5 = 10 + 5 = 15. For 15 - 9: take away 5 to reach 10, then take away 4 more (because 5 + 4 = 9). So 15 - 9 = 15 - 5 - 4 = 10 - 4 = 6. Check: 6 + 9 = 15, so the subtraction is right.",
+    "expression": "9+6",
+    "answer": "15"
+  },
+  "subtopics": [
+    {
+      "title": "Make ten to add",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a ten frame with 8 counters. Draw 5 more counters beside it. Move 2 of the 5 into the empty spaces so the frame is full. Now you see one full ten and 3 left over: 13. On a number line, jump from 8 to 10, then jump 3 more to 13."
+        },
+        {
+          "kind": "procedure",
+          "text": "1) Pick the bigger number (8). 2) Ask: how many to reach 10? (2) 3) Split the other number into that part and the rest (5 = 2 + 3). 4) Add: 8 + 2 = 10. 5) Add the rest: 10 + 3 = 13."
+        }
+      ],
+      "example": {
+        "problem": "Work out 8 + 5.",
+        "steps": "8 needs 2 to make 10. Split 5 into 2 and 3. 8 + 2 = 10. Then 10 + 3 = 13.",
+        "expression": "8+5",
+        "answer": "13"
+      },
+      "visual": {
+        "kind": "numberline",
+        "expr": "",
+        "a": 8,
+        "b": 5,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students split the number but forget to add the leftover part, so they say 8 + 5 = 10.",
+          "response": "Ask: where did the other 3 go? Use counters so they see the 3 still sitting next to the full ten. Have them say it aloud: 'to ten, then the rest'."
+        },
+        {
+          "mistake": "Students split 5 into the wrong parts, such as 1 and 4, so the first jump does not reach 10.",
+          "response": "Have them ask first: how many from 8 to 10? Show the gap on the ten frame, and the split follows from it."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we always go to 10?",
+          "answer": "Because 10 is an easy number to add to. 10 + 3 is just 13, so there is nothing hard left to work out."
+        },
+        {
+          "question": "Can I split the 8 instead of the 5?",
+          "answer": "Yes. 8 + 5 = 5 + 8, so you can start from either. Choose the one closer to 10, because it needs a smaller split."
+        },
+        {
+          "question": "Does the answer change if I split numbers?",
+          "answer": "No. You are only cutting the same amount into pieces. All the pieces together are still the same total."
+        }
+      ],
+      "check_question": {
+        "question": "How would you work out 9 + 4 by making ten?",
+        "solution": "9 needs 1 to make 10. Split 4 into 1 and 3. 9 + 1 = 10, then 10 + 3 = 13.",
+        "expression": "9+4",
+        "answer": "13"
+      }
+    },
+    {
+      "title": "Doubles and near doubles",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "Two friends each have the same number of stickers: 7 each. Together they have 14. A new friend gives one of them 1 more sticker. Now it is 7 and 8, and together they have 14 + 1 = 15."
+        },
+        {
+          "kind": "procedure",
+          "text": "1) Look at the two numbers. Are they next to each other (like 7 and 8)? 2) Double the smaller one: 7 + 7 = 14. 3) Add 1 for the extra: 14 + 1 = 15. You can also double the bigger one and take 1 away: 8 + 8 = 16, 16 - 1 = 15."
+        }
+      ],
+      "example": {
+        "problem": "Work out 7 + 8.",
+        "steps": "7 and 8 are neighbours. Double 7 is 14. 8 is one more than 7, so add 1: 14 + 1 = 15. Check by doubling 8: 16, then take away 1 to get 15.",
+        "expression": "7+8",
+        "answer": "15"
+      },
+      "visual": {
+        "kind": "numberline",
+        "expr": "",
+        "a": 7,
+        "b": 8,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students double the number but forget the extra 1, so they say 7 + 8 = 14.",
+          "response": "Ask them to check: is 8 the same as 7? Draw 7 dots and 8 dots in two rows and show the one dot that is left over."
+        },
+        {
+          "mistake": "Students use near doubles when the numbers are not neighbours, like 6 + 9, and give 6 + 6 + 1 = 13.",
+          "response": "Show that 9 is 3 more than 6, not 1 more. Near doubles only work when the numbers differ by 1. For 6 + 9, use make ten instead."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is a double easy?",
+          "answer": "Doubles come up all the time, so we get to know them well: 2 + 2, 5 + 5, 6 + 6. We can use them as stepping stones for other sums."
+        },
+        {
+          "question": "Do I add 1 or take away 1?",
+          "answer": "Start from a double. If you double the smaller number, add 1. If you double the bigger number, take away 1. Both give the same answer."
+        },
+        {
+          "question": "What about numbers that are 2 apart, like 6 + 8?",
+          "answer": "Good thinking. The number in the middle is 7, so 6 + 8 is double 7, which is 14. You take 1 from one number and give 1 to the other."
+        }
+      ],
+      "check_question": {
+        "question": "What is 6 + 7? Which double did you use?",
+        "solution": "Double 6 is 12, plus 1 is 13. Or double 7 is 14, minus 1 is 13.",
+        "expression": "6+7",
+        "answer": "13"
+      }
+    },
+    {
+      "title": "Subtract by going back through ten",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a number line and put a dot at 15. To take away 8, hop back 5 to land on 10. You have used 5 of the 8, so hop back 3 more. You land on 7."
+        },
+        {
+          "kind": "procedure",
+          "text": "1) Look at the number you are taking from (15). 2) Subtract the ones digit to land on 10: 15 - 5 = 10. 3) Work out how much is left to subtract: 8 - 5 = 3. 4) Subtract that from 10: 10 - 3 = 7. Check by adding: 7 + 8 = 15."
+        }
+      ],
+      "example": {
+        "problem": "Work out 15 - 8.",
+        "steps": "15 - 5 = 10. We have taken away 5 out of 8, so 3 more are needed (8 = 5 + 3). 10 - 3 = 7. Check: 7 + 8 = 15.",
+        "expression": "15-8",
+        "answer": "7"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students stop at 10 and say 15 - 8 = 10, or they subtract the 5 and forget the other 3.",
+          "response": "Ask: how much did we need to take away in all? Have them say 'I took 5, I still need to take 3' and then finish the jump."
+        },
+        {
+          "mistake": "Students turn the subtraction around, like 8 - 5 = 3 for 15 - 8, because they take the smaller digit from the bigger one.",
+          "response": "Use a number line. Start at 15 and hop backwards. Remind them that the starting number is the one we take away from, so it stays first."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we stop at 10?",
+          "answer": "Because taking from 10 is easy and we know our facts for 10 well. It breaks one hard step into two easy ones."
+        },
+        {
+          "question": "Can I count up instead?",
+          "answer": "Yes. For 15 - 8, think what to add to 8 to reach 15. 8 + 2 = 10, then 5 more makes 15. So the answer is 2 + 5 = 7. It works well when the numbers are close."
+        },
+        {
+          "question": "How do I know my answer is right?",
+          "answer": "Add it back. If 7 + 8 makes 15, then 15 - 8 = 7 is right. Addition and subtraction undo each other."
+        }
+      ],
+      "check_question": {
+        "question": "How would you work out 13 - 5 by going back through ten?",
+        "solution": "13 - 3 = 10. We needed to take away 5 and have taken 3, so take 2 more. 10 - 2 = 8. Check: 8 + 5 = 13.",
+        "expression": "13-5",
+        "answer": "8"
+      }
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up with Make ten to add: show a ten frame with 8 counters, ask how many more to fill it, then count out pairs that make 10 together (1 and 9, 2 and 8, and so on)."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach Make ten to add: work through 8 + 5 on the ten frame and the number line, then let students try 9 + 4 and 7 + 6 with a partner, saying the steps aloud."
+    },
+    {
+      "minutes": 7,
+      "activity": "Teach Doubles and near doubles: recall doubles up to 10 + 10 together, then model 7 + 8 using double 7 plus 1. Ask students to say which sums they would do with doubles and which with make ten."
+    },
+    {
+      "minutes": 10,
+      "activity": "Teach Subtract by going back through ten: model 15 - 8 on a number line, hopping back to 10 first. Students then do 13 - 5 and 14 - 6 on mini whiteboards and check by adding."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra examples and questions round: work through the three extra examples, asking students to choose their strategy and explain it, and take questions."
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "Work out 6 + 7 in two different ways.",
+      "solution": "Near double: double 6 is 12, plus 1 is 13. Make ten: 7 needs 3 to make 10, split 6 into 3 and 3. 7 + 3 = 10, then 10 + 3 = 13. Both ways give 13.",
+      "expression": "6+7",
+      "answer": "13"
+    },
+    {
+      "problem": "Work out 16 - 9.",
+      "solution": "Go back through ten: 16 - 6 = 10. We need 9 in all, so 3 more. 10 - 3 = 7. Check: 7 + 9 = 16.",
+      "expression": "16-9",
+      "answer": "7"
+    },
+    {
+      "problem": "Work out 9 + 8 and say which strategy you chose.",
+      "solution": "Make ten: 9 needs 1 to make 10. Split 8 into 1 and 7. 9 + 1 = 10, then 10 + 7 = 17. Or near double: double 8 is 16, plus 1 is 17.",
+      "expression": "9+8",
+      "answer": "17"
+    }
+  ],
+  "meta": {
+    "concept": "mental-math-within-20",
+    "title": "Mental strategies within 20",
+    "model": "sonnet",
+    "cost_usd": 0.05528,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Mental+strategies+within+20"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Mental+strategies+within+20"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Mental+strategies+within+20"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Mental+strategies+within+20"
+    },
+    {
+      "name": "YouTube (search videos)",
+      "url": "https://www.youtube.com/results?search_query=Mental+strategies+within+20+math"
+    }
+  ]
+}

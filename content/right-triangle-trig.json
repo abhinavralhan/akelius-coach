@@ -1,0 +1,254 @@
+{
+  "idea": "Sine is a ratio in a right triangle. For an acute angle, sine = (length of the side opposite the angle) ÷ (length of the hypotenuse). It depends only on the size of the angle, not on how big the triangle is.",
+  "why": "Right triangles with the same acute angle are similar: one is an enlarged or shrunk copy of the other. In similar triangles, all lengths scale by the same factor, so the ratio opposite ÷ hypotenuse does not change. That is why one number, sin of the angle, can stand for the whole family of triangles with that angle. It also explains why sine is always between 0 and 1: the hypotenuse is the longest side, so the opposite side divided by it is less than 1. And it explains why we can use sine to find a missing side: if you know the ratio and one length, you can work out the other length.",
+  "theory_example": {
+    "problem": "A right triangle has legs 6 and 8. Find the sine of the angle opposite the leg of length 6.",
+    "steps": "1. Find the hypotenuse with Pythagoras: 6² + 8² = 36 + 64 = 100, so the hypotenuse is 10. 2. The side opposite the angle is 6. 3. sin = opposite ÷ hypotenuse = 6/10 = 3/5. 4. Check: a 3-4-5 triangle is half the size of this one and has the same angle, and gives 3/5 as well.",
+    "expression": "Rational(6,10)",
+    "answer": "3/5"
+  },
+  "subtopics": [
+    {
+      "title": "Sine as opposite over hypotenuse",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a right triangle and mark one acute angle with an arc. Stand at that angle: the side across from you, not touching the angle, is the opposite. The longest side, across from the right angle, is the hypotenuse. Write sin = opposite / hypotenuse beside the drawing. Then sketch a smaller copy inside it with the same angle and show the ratio is the same."
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: Mark the angle you are asked about. Step 2: Label the hypotenuse (opposite the right angle). Step 3: Label the opposite side (opposite your marked angle). Step 4: Write the fraction opposite over hypotenuse and simplify it."
+        }
+      ],
+      "example": {
+        "problem": "A right triangle has legs 3 and 4 and hypotenuse 5. Find the sine of the angle opposite the leg of length 3.",
+        "steps": "1. The opposite side to this angle is 3. 2. The hypotenuse is 5. 3. sin = 3/5 = 0.6.",
+        "expression": "Rational(3,5)",
+        "answer": "3/5"
+      },
+      "visual": {
+        "kind": "triangle",
+        "expr": "",
+        "a": 3,
+        "b": 4,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students divide by the other leg (the adjacent side) and get 3/4.",
+          "response": "Say calmly that 3/4 is a different ratio, called tangent. For sine, the denominator is always the longest side. Ask students to point to the hypotenuse before writing any fraction."
+        },
+        {
+          "mistake": "Students pick the opposite side from the wrong angle, for example using 4 for the same angle.",
+          "response": "Have them put a finger on the angle and then slide across the triangle to the side that does not touch it. Remind them that the opposite side changes when the angle changes."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "But why do we divide by the hypotenuse and not another side?",
+          "answer": "That is how sine is defined. It compares the side across from the angle with the longest side. Other comparisons exist and have their own names, but this one is called sine."
+        },
+        {
+          "question": "Does the sine change if I draw a bigger triangle?",
+          "answer": "No. A bigger triangle with the same angle has all sides scaled by the same number, so the fraction stays the same. For example, 6/10 is the same as 3/5."
+        },
+        {
+          "question": "Is sine a length or an angle?",
+          "answer": "Neither. It is a ratio, a plain number with no units. You put an angle in and get a number out."
+        }
+      ],
+      "check_question": {
+        "question": "A right triangle has legs 5 and 12 and hypotenuse 13. What is the sine of the angle opposite the leg 12?",
+        "solution": "Opposite is 12 and the hypotenuse is 13, so sin = 12/13.",
+        "expression": "Rational(12,13)",
+        "answer": "12/13"
+      }
+    },
+    {
+      "title": "Finding a missing side with sine",
+      "ways_to_explain": [
+        {
+          "kind": "story",
+          "text": "A 10 m ladder leans against a wall and makes a 30 degree angle with the ground. How high does it reach? The wall height is the side opposite the angle at the ground, and the ladder is the hypotenuse. Since sin 30° = 1/2, the ladder reaches half its length up the wall, which is 5 m."
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: Label the opposite side and the hypotenuse. Step 2: Write sin(angle) = opposite / hypotenuse. Step 3: Put in the known values. Step 4: Solve the equation. To find the opposite side, multiply: opposite = hypotenuse × sin(angle). To find the hypotenuse, divide: hypotenuse = opposite ÷ sin(angle)."
+        }
+      ],
+      "example": {
+        "problem": "A right triangle has a hypotenuse of 10 and an angle of 30°. Find the side opposite the 30° angle, using sin 30° = 1/2.",
+        "steps": "1. sin 30° = opposite / 10. 2. So 1/2 = opposite / 10. 3. Multiply both sides by 10: opposite = 10 × 1/2 = 5.",
+        "expression": "10*Rational(1,2)",
+        "answer": "5"
+      },
+      "visual": {
+        "kind": "none",
+        "expr": "",
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students divide instead of multiply and compute 10 ÷ 1/2 = 20 for the opposite side.",
+          "response": "Ask whether the opposite side can be longer than the hypotenuse. It cannot, so 20 is impossible. Then go back to the equation 1/2 = opposite / 10 and multiply both sides by 10."
+        },
+        {
+          "mistake": "Students use sin 30° = 30 or confuse the angle with a length.",
+          "response": "Remind them that the angle goes into sine and a ratio comes out. sin 30° is 1/2, not 30. Write sin 30° = 0.5 on the board and keep it visible."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why is sin 30° equal to 1/2?",
+          "answer": "In a right triangle with a 30° angle, the side opposite that angle is always half the hypotenuse. This comes from cutting an equilateral triangle in half. We can take this as a known value for now."
+        },
+        {
+          "question": "When do I multiply and when do I divide?",
+          "answer": "If you know the hypotenuse and want the opposite side, multiply by the sine. If you know the opposite side and want the hypotenuse, divide by the sine. Check that the hypotenuse comes out as the longest side."
+        },
+        {
+          "question": "Can I use a calculator for other angles?",
+          "answer": "Yes. A calculator gives sin of any angle. Make sure it is set to degrees, not radians, when the angle is given in degrees."
+        }
+      ],
+      "check_question": {
+        "question": "A right triangle has a hypotenuse of 20 and a 30° angle. How long is the side opposite the 30° angle?",
+        "solution": "opposite = 20 × sin 30° = 20 × 1/2 = 10.",
+        "expression": "20*Rational(1,2)",
+        "answer": "10"
+      }
+    },
+    {
+      "title": "Sine of 45° and 60°, and its range",
+      "ways_to_explain": [
+        {
+          "kind": "picture",
+          "text": "Draw a square with side 1 and cut it along a diagonal. You get a right triangle with two legs of length 1 and two 45° angles. The hypotenuse is sqrt(2). The sine of 45° is the opposite leg over the hypotenuse, which is 1/sqrt(2) = sqrt(2)/2. Then point out that the hypotenuse is the longest side, so the sine is always less than 1."
+        },
+        {
+          "kind": "procedure",
+          "text": "Step 1: Draw the triangle for the angle. For 45°, use legs 1 and 1. Step 2: Find the hypotenuse using Pythagoras. Step 3: Divide opposite by hypotenuse. Step 4: Rationalise if needed by multiplying top and bottom by sqrt(2). Values to know: sin 30° = 1/2, sin 45° = sqrt(2)/2, sin 60° = sqrt(3)/2."
+        }
+      ],
+      "example": {
+        "problem": "Find sin 45° using a right triangle with both legs equal to 1.",
+        "steps": "1. Hypotenuse = sqrt(1² + 1²) = sqrt(2). 2. Opposite side to a 45° angle is 1. 3. sin 45° = 1/sqrt(2). 4. Multiply top and bottom by sqrt(2): sqrt(2)/2, which is about 0.707.",
+        "expression": "sqrt(2)/2",
+        "answer": "sqrt(2)/2"
+      },
+      "visual": {
+        "kind": "triangle",
+        "expr": "",
+        "a": 1,
+        "b": 1,
+        "c": 0,
+        "d": 0
+      },
+      "mistakes": [
+        {
+          "mistake": "Students think sine can be bigger than 1, for example sin = 5/3.",
+          "response": "Ask which side is longest. The hypotenuse is the denominator, so the fraction cannot exceed 1. If they get a number bigger than 1, they probably swapped the sides."
+        },
+        {
+          "mistake": "Students write sin 45° = 1/sqrt(2) and think it is different from sqrt(2)/2.",
+          "response": "Show with a calculator that both are about 0.707. Explain that multiplying top and bottom by sqrt(2) gives the same number in a tidier form."
+        }
+      ],
+      "student_questions": [
+        {
+          "question": "Why do we rationalise the denominator?",
+          "answer": "It is a convention that makes answers easier to compare and add. Both forms are equal, so 1/sqrt(2) is not wrong."
+        },
+        {
+          "question": "Does sine get bigger as the angle gets bigger?",
+          "answer": "Yes, for angles between 0° and 90°. sin 30° = 0.5, sin 45° is about 0.71 and sin 60° is about 0.87. In a right triangle the larger angle has the longer opposite side."
+        },
+        {
+          "question": "What is sin 90°?",
+          "answer": "It is 1. As the angle gets close to 90°, the opposite side becomes almost as long as the hypotenuse. Right triangles can only show angles below 90°, so this is an extension of the idea."
+        }
+      ],
+      "check_question": {
+        "question": "A right triangle has a hypotenuse of 4 and a 60° angle. How long is the side opposite the 60° angle, using sin 60° = sqrt(3)/2?",
+        "solution": "opposite = 4 × sqrt(3)/2 = 2 sqrt(3), which is about 3.46.",
+        "expression": "4*sqrt(3)/2",
+        "answer": "2*sqrt(3)"
+      }
+    }
+  ],
+  "lesson_outline": [
+    {
+      "minutes": 5,
+      "activity": "Warm-up with Sine as opposite over hypotenuse: draw a right triangle, label the angle, opposite and hypotenuse together with the class, and write the definition."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach Sine as opposite over hypotenuse: work the 3-4-5 example, then draw a bigger similar triangle and show the ratio stays 3/5. Ask the check question about 5-12-13."
+    },
+    {
+      "minutes": 9,
+      "activity": "Teach Finding a missing side with sine: use the ladder story, then the 10 and 30° example. Discuss the multiply-or-divide mistake. Ask the check question."
+    },
+    {
+      "minutes": 8,
+      "activity": "Teach Sine of 45° and 60°, and its range: cut a unit square, find sin 45°, list the three special values, and discuss why sine is never above 1. Ask the check question."
+    },
+    {
+      "minutes": 10,
+      "activity": "Extra-examples and questions round: work the 3 extra examples with the class, mixing all subtopics, and answer student questions."
+    }
+  ],
+  "extra_examples": [
+    {
+      "problem": "A right triangle has legs 5 and 12 and hypotenuse 13. Find the sine of the angle opposite the leg 5.",
+      "solution": "The opposite side is 5 and the hypotenuse is 13, so sin = 5/13.",
+      "expression": "Rational(5,13)",
+      "answer": "5/13"
+    },
+    {
+      "problem": "An 8 m ladder leans against a wall and makes a 30° angle with the ground. How high up the wall does it reach? Use sin 30° = 1/2.",
+      "solution": "The height is opposite the 30° angle and the ladder is the hypotenuse. height = 8 × sin 30° = 8 × 1/2 = 4 m.",
+      "expression": "8*Rational(1,2)",
+      "answer": "4"
+    },
+    {
+      "problem": "A right triangle has a hypotenuse of 10 and a 45° angle. How long is the side opposite the 45° angle? Use sin 45° = sqrt(2)/2.",
+      "solution": "opposite = 10 × sqrt(2)/2 = 5 sqrt(2), which is about 7.07.",
+      "expression": "10*sqrt(2)/2",
+      "answer": "5*sqrt(2)"
+    }
+  ],
+  "meta": {
+    "concept": "right-triangle-trig",
+    "title": "Sine",
+    "model": "sonnet",
+    "cost_usd": 0.13306,
+    "generated": "2026-11-18",
+    "grounded_on": null,
+    "license": null,
+    "ai_generated": true,
+    "reviewed": false
+  },
+  "resources": [
+    {
+      "name": "Khan Academy (videos, practice)",
+      "url": "https://www.khanacademy.org/search?page_search_query=Sine"
+    },
+    {
+      "name": "Wolfram|Alpha (check a calculation)",
+      "url": "https://www.wolframalpha.com/input?i=Sine"
+    },
+    {
+      "name": "GeoGebra (interactive models)",
+      "url": "https://www.geogebra.org/search/Sine"
+    },
+    {
+      "name": "Wikipedia (background)",
+      "url": "https://en.wikipedia.org/w/index.php?search=Sine"
+    }
+  ]
+}

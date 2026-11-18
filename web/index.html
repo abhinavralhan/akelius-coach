@@ -104,6 +104,7 @@ const KIND = {picture: 'With a picture', story: 'With a story', procedure: 'Step
 const add = (parent, ...kids) => { parent.append(...kids); return parent; };
 
 async function openTopic(id) {
+  if (pending.size) saveAll();
   current = topics.find(t => t.concept === id);
   const main = $('notes'); main.replaceChildren(el('p', current.ready ? 'Loading…' : 'Preparing these notes for the first time and checking every answer. This can take a minute…', 'muted'));
   let s; try { s = await api(`/api/sheet/${id}`); current.ready = true; } catch (e) { main.replaceChildren(el('p', e.message, 'banner')); return; }
@@ -161,41 +162,67 @@ function exampleBlock(parent, x) { parent.append(el('p', x.problem), el('p', x.s
 
 // ---- Teacher's own notes and sketches: kept only in this browser, never sent to the server. ----
 // shortcut: device-only storage; move to the teacher's account once sign-in exists (see TODO).
-const store = {get: k => { try { return localStorage.getItem('coach:' + k); } catch { return null; } },
-               set: (k, v) => { try { localStorage.setItem('coach:' + k, v); } catch {} }};
+// Every write is read back, so "Saved" is only shown when the browser really kept the notes.
+const store = {
+  get: k => { try { return localStorage.getItem('coach:' + k); } catch { return null; } },
+  set: (k, v) => { try { localStorage.setItem('coach:' + k, v); return localStorage.getItem('coach:' + k) === v; } catch { return false; } },
+};
+const pending = new Map();  // edits not yet confirmed saved: key -> value
+let autosave = null;
+const value = k => pending.has(k) ? pending.get(k) : (store.get(k) || '');
+function setStatus(text, cls) { const st = $('savestatus'); if (st) { st.textContent = text; st.className = cls; } }
+function saveAll() {
+  clearTimeout(autosave);
+  for (const [k, v] of pending) if (store.set(k, v)) pending.delete(k);
+  if (pending.size) setStatus('Not saved: this browser is blocking storage (private window or storage full). Use "Download my notes" to keep a copy.', 'banner');
+  else setStatus(`All notes saved on this device at ${new Date().toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})}.`, 'muted');
+  return !pending.size;
+}
+function changed(k, v) { pending.set(k, v); setStatus('Unsaved changes… (saving automatically)', 'muted'); clearTimeout(autosave); autosave = setTimeout(saveAll, 1000); }
+addEventListener('beforeunload', e => { if (pending.size && !saveAll()) { e.preventDefault(); e.returnValue = ''; } });
+
 // "My notes" tab: the teacher's own space, kept apart from the notes we provide.
 function showTab(name) {
+  if (pending.size) saveAll();
   for (const t of ['notes', 'mine']) { $(t).hidden = t !== name; $('tab-' + t).setAttribute('aria-selected', t === name); }
   if (name === 'mine') renderMine();  // built when shown, so the sketch pad gets its real size
 }
 function renderMine() {
   const mine = $('mine');
   if (!current || !sheet) { mine.replaceChildren(el('p', 'Choose a grade and a topic first.', 'muted')); return; }
+  const boxes = [[`${current.concept}:lesson`, 'For the whole lesson'],
+                 ...sheet.subtopics.map((t, i) => [`${current.concept}:part${i + 1}`, `Part ${i + 1}: ${t.title}`])];
+  const save = el('button', 'Save'); save.className = 'primary'; save.onclick = saveAll;
+  const dl = el('button', 'Download my notes'); dl.onclick = () => {
+    const text = `My notes: ${current.title}\n\n` + boxes.map(([k, l]) => `## ${l}\n${value(k)}\n`).join('\n');
+    const a = el('a'); a.href = URL.createObjectURL(new Blob([text], {type: 'text/plain'})); a.download = `my-notes-${current.concept}.txt`; a.click();
+  };
+  const st = el('p', pending.size ? 'Unsaved changes…' : 'Saved on this device. Changes save automatically.', 'muted'); st.id = 'savestatus'; st.setAttribute('aria-live', 'polite');
   const sec = add(el('section'), el('h2', `My notes: ${current.title}`), el('p', 'Only you can see these. They are saved on this device and never sent anywhere.', 'muted'),
-    notesBox(`${current.concept}:lesson`, 'For the whole lesson'));
-  sheet.subtopics.forEach((t, i) => sec.append(notesBox(`${current.concept}:part${i + 1}`, `Part ${i + 1}: ${t.title}`)));
+    add(el('div', null, 'controls noprint'), save, dl), st);
+  boxes.forEach(([k, l]) => sec.append(notesBox(k, l)));
   sec.append(sketchPad(`${current.concept}:sketch`));
   mine.replaceChildren(sec);
 }
 function notesBox(key, label) {
-  const t = el('textarea'); t.className = 'notes'; t.value = store.get(key) || ''; t.setAttribute('aria-label', label);
-  t.placeholder = 'Your own points, examples or reminders. Saved only on this device.';
-  t.oninput = () => store.set(key, t.value);
+  const t = el('textarea'); t.className = 'notes'; t.value = value(key); t.setAttribute('aria-label', label);
+  t.placeholder = 'Your own points, examples or reminders.';
+  t.oninput = () => changed(key, t.value);
   return add(el('div'), el('h3', label), t);
 }
 function sketchPad(key) {
   const cv = el('canvas'); cv.className = 'sketch'; cv.setAttribute('aria-label', 'Sketch pad for your own drawings');
   const ctx = cv.getContext('2d'); let down = false;
-  const fit = () => { const r = cv.getBoundingClientRect(); cv.width = r.width; cv.height = r.height; const img = store.get(key);
+  const fit = () => { const r = cv.getBoundingClientRect(); cv.width = r.width; cv.height = r.height; const img = value(key);
     if (img) { const i = new Image(); i.onload = () => ctx.drawImage(i, 0, 0); i.src = img; } };
   const pos = e => { const r = cv.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; };
   cv.onpointerdown = e => { down = true; cv.setPointerCapture(e.pointerId); ctx.beginPath(); ctx.moveTo(...pos(e)); };
   cv.onpointermove = e => { if (!down) return; ctx.lineWidth = 2.5; ctx.lineCap = 'round'; ctx.strokeStyle = getComputedStyle(document.body).color; ctx.lineTo(...pos(e)); ctx.stroke(); };
-  cv.onpointerup = () => { down = false; store.set(key, cv.toDataURL()); };
-  const clear = el('button', 'Clear'); clear.onclick = () => { ctx.clearRect(0, 0, cv.width, cv.height); store.set(key, ''); };
+  cv.onpointerup = () => { down = false; changed(key, cv.toDataURL()); };
+  const clear = el('button', 'Clear'); clear.onclick = () => { ctx.clearRect(0, 0, cv.width, cv.height); changed(key, ''); };
   const save = el('button', 'Download image'); save.onclick = () => { const a = el('a'); a.href = cv.toDataURL(); a.download = `${key.replace(':', '-')}.png`; a.click(); };
   requestAnimationFrame(fit);
-  return add(el('div'), el('h3', 'My sketch pad'), el('p', 'Draw with a mouse, pen or finger. Saved only on this device.', 'muted noprint'), cv, add(el('div', null, 'controls noprint'), clear, save));
+  return add(el('div'), el('h3', 'My sketch pad'), el('p', 'Draw with a mouse, pen or finger.', 'muted noprint'), cv, add(el('div', null, 'controls noprint'), clear, save));
 }
 
 // ---- Drawings: fixed JSXGraph templates filled with checked values. The model never writes drawing code. ----

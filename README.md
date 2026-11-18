@@ -12,7 +12,7 @@ Math teachers who lack confidence in a topic open the coach the evening before a
    - a check question for the class.
 4. **Extra examples** for the final 10 minutes.
 
-A separate **My notes** tab holds the teacher's own notes (for the lesson and each part) and a **sketch pad**, kept apart from the notes we provide and saved only in their browser.
+A separate **My notes** tab holds the teacher's own notes (for the lesson and each part) and a **sketch pad**, kept apart from the notes we provide and saved only in their browser. Saves are verified (Save button, autosave, read-back check, warning before leaving, download as .txt).
 
 It is not a chatbot. The notes are the product. An optional side panel lets a teacher ask one question or have a part explained differently.
 
@@ -28,7 +28,8 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 You need the [Claude Code CLI](https://claude.com/claude-code), logged in. It is the development LLM backend (see "Design"). 26 of 27 topics (grades 1–10) have notes pre-generated and checked in `content/` (`right-triangle-trig` is pending: the generation run hit an account usage limit). Live, only these are served (D28). To generate a missing topic on first open in development, start with `COACH_ALLOW_GENERATE=1`.
 
 ```bash
-.venv/bin/python -m unittest tests.test_check tests.test_qa   # 9 tests, no LLM calls
+.venv/bin/python -m unittest tests.test_check tests.test_qa tests.test_videos   # 15 tests, no LLM or network calls
+node tests/notes_save.test.mjs                                # My notes saving: normal, blocked and silently-dropped storage
 .venv/bin/python -m evals.run                                 # answer-quality eval → evals/results.md
 .venv/bin/python -m coach.sheet pythagorean-theorem           # (re)generate one sheet
 .venv/bin/python -m coach.promote                             # move most-asked questions into the sheets

@@ -94,3 +94,7 @@ Each step ends with a commit and a step-log entry with **start and end times** (
 - **Did:** restructured the sheets (D25): the plan first, ending with a 10-minute extra round; short theory + example; 2–3 subtopics, each with 2 ways to explain it, an example, an optional drawing (D26), 2 mistakes, 3 student questions and a check question; 3 extra examples. The checker enforces all of it. Added a bars template, so every concept has one. The page removes empty drawings. Teacher notes + a sketch pad, stored only in the browser (D27). Live serves only pre-generated sheets (D28, `COACH_ALLOW_GENERATE=1` in dev). 14 tests pass.
 - **Achieved:** 26/27 sheets regenerated and re-verified ($2.28); drawings in 53 of 78 subtopics.
 - **Open:** `right-triangle-trig` failed: the Claude CLI hit the account's monthly spend limit (not a content failure). Regenerate it with `python -m coach.sheet right-triangle-trig` once the limit resets; until then it shows "coming soon". The eval was not rerun on the new structure (same limit). README eval numbers are from the previous structure. Not pushed to GitHub.
+
+### Step 10: grade + topic picker
+- **Did:** split the single topic dropdown into a **Grade** field and a **Topic** field. The topic list is rebuilt from the chosen grade (disabled until a grade is picked). Both are built from the standard's mapping file via `/api/topics`, so a new standard or topic needs no UI change.
+- **Next:** regenerate `right-triangle-trig`, rerun the eval on the new structure, push when the user says go.

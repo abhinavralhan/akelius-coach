@@ -37,8 +37,10 @@ ol, ul { padding-left:1.3em; } li { margin-bottom:6px; }
 <body>
 <header>
   <h1>Lesson Prep Coach</h1>
+  <label class="muted" for="grade">Grade</label>
+  <select id="grade"></select>
   <label class="muted" for="topic">Topic</label>
-  <select id="topic" aria-label="Choose a topic"></select>
+  <select id="topic" disabled></select>
   <button class="noprint" onclick="print()">Print notes</button>
 </header>
 <div class="layout">
@@ -76,15 +78,18 @@ async function api(path, body) {
 }
 
 async function loadTopics() {
-  const d = await api('/api/topics?standard=ccss');
-  topics = d.topics;
-  const sel = $('topic'); sel.append(new Option('Choose a topic…', ''));
-  for (const g of [...new Set(topics.map(t => t.grade))]) {
-    const og = document.createElement('optgroup'); og.label = `Grade ${g}`;
-    topics.filter(t => t.grade === g).forEach(t => og.append(new Option(`${t.title}${t.ready ? '' : ' (coming soon)'}`, t.concept)));
-    sel.append(og);
-  }
-  sel.onchange = () => sel.value && openTopic(sel.value);
+  topics = (await api('/api/topics?standard=ccss')).topics;
+  const grade = $('grade'), topic = $('topic');
+  // Grades and topics come from the standard's mapping file, so a new standard or topic needs no UI change.
+  grade.replaceChildren(new Option('Choose a grade…', ''), ...[...new Set(topics.map(t => t.grade))].map(g => new Option(`Grade ${g}`, g)));
+  grade.onchange = () => {
+    const list = topics.filter(t => String(t.grade) === grade.value);
+    topic.replaceChildren(new Option(list.length ? 'Choose a topic…' : 'Choose a grade first', ''),
+      ...list.map(t => new Option(`${t.title}${t.ready ? '' : ' (coming soon)'}`, t.concept)));
+    topic.disabled = !list.length;
+  };
+  topic.onchange = () => topic.value && openTopic(topic.value);
+  grade.onchange();
 }
 
 const KIND = {picture: 'With a picture', story: 'With a story', procedure: 'Step by step'};

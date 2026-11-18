@@ -155,6 +155,7 @@ No leaderboard measures these, so we use:
 | 21 | Keep the last 10 minutes for extra examples or a questions round | D25: the final plan step is exactly 10 minutes, with 3 verified extra examples; the checker enforces it |
 | 22 | Empty charts appear at random; remove them. Not every section needs a chart, only where necessary | D26: a drawing is optional per subtopic; the page never shows an empty drawing |
 | 23 | A space for teachers' own notes, and/or a canvas like Excalidraw for their thoughts; all notes prepared before going live; 20–30 minutes left | D27: notes per lesson and per part + a sketch pad, stored only on the device. D28: live serves only pre-generated, checked sheets. Full Excalidraw → TODO |
+| 24 | Commit now; add a grade field and a separate, dynamic topic field for that grade; brief, useful commit messages | The picker is now two fields: grade, then the topics for that grade, both built from the standard's mapping file |
 
 ## 8. Open questions
 

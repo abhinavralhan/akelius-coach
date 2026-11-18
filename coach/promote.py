@@ -1,28 +1,39 @@
-"""Promote the most-asked questions into each static sheet as a FAQ, in order of demand.
-Run: python -m coach.promote [top_n]. Promoted answers stay marked not reviewed, like the rest of the sheet."""
+"""Most-asked questions → a review queue; an educator approves them into the live notes.
+Teachers' typed questions can contain names or class details, so nothing reaches other teachers unreviewed.
+Run: python -m coach.promote            (writes content/faq_review/<topic>.json)
+     python -m coach.promote approve <topic>   (after editing/removing entries in that file)"""
 import json
 import sys
 
 from coach import qa, sheet
 
+REVIEW = sheet.CONTENT / "faq_review"
 
-def promote(top_n=5, min_hits=1):
+
+def promote(top_n=5):
     with qa.db() as con:
-        rows = con.execute("SELECT concept, question, answer, hits FROM questions WHERE hits >= ? "
-                           "ORDER BY concept, hits DESC", (min_hits,)).fetchall()
+        rows = con.execute("SELECT concept, question, answer, hits FROM questions WHERE hits >= 1 "
+                           "ORDER BY concept, hits DESC").fetchall()
     by_concept = {}
     for concept, question, answer, hits in rows:
-        by_concept.setdefault(concept, [])
-        if len(by_concept[concept]) < top_n:
-            by_concept[concept].append({"question": question, "answer": answer, "asked": hits + 1})
+        faq = by_concept.setdefault(concept, [])
+        if len(faq) < top_n:
+            faq.append({"question": question, "answer": answer, "asked": hits + 1})
+    REVIEW.mkdir(parents=True, exist_ok=True)
     for concept, faq in by_concept.items():
-        path = sheet.CONTENT / f"{concept}.json"
-        if path.exists():  # only sheets that already passed the checks
-            s = json.loads(path.read_text())
-            s["teacher_faq"] = faq
-            path.write_text(json.dumps(s, indent=2, ensure_ascii=False))
-            print(concept, len(faq), "promoted")
+        (REVIEW / f"{concept}.json").write_text(json.dumps(faq, indent=2, ensure_ascii=False))
+        print(concept, len(faq), "questions waiting for review")
+
+
+def approve(concept):
+    """Move a reviewed FAQ file into the live sheet."""
+    path = REVIEW / f"{concept}.json"
+    s = json.loads((sheet.CONTENT / f"{concept}.json").read_text())
+    s["teacher_faq"] = json.loads(path.read_text())
+    sheet.save(concept, s)
+    path.unlink()
+    print(concept, len(s["teacher_faq"]), "approved into the notes")
 
 
 if __name__ == "__main__":
-    promote(int(sys.argv[1]) if len(sys.argv) > 1 else 5)
+    approve(sys.argv[2]) if sys.argv[1:2] == ["approve"] else promote()

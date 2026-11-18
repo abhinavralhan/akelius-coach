@@ -7,3 +7,4 @@ data/*.db
 # assignment brief stays local, not published
 *assignment*.pdf
 content/.*.tmp
+content/faq_review/
